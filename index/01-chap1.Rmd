@@ -4,18 +4,21 @@ output:
   html_document: default
 ---
 
-# Introduction
+# Overview of chapter
+This chapter will provide some background information to put the thesis into context. It will provide information on obesity, in particular its prevalence and implications for cardiovascular disease. Possible mechanisms of disease will be introduced, such as the involvement of platelets. At the end of this chapter, the aims of the thesis will be introduced.
 
-## Obesity
-Obesity, defined as a body mass index (BMI) of over 30kg/m^2^,has tripled worldwide since 1975. It is currently estimated that 40% of adults in the United States and 26% of adults in the United Kingdom have obesity [@Bluher2019]. The average BMI of the UK adult population is ~27kg/m^2^ [@Wade2018], which is in the 'overweight' category (between 25 and 30 kg/m^2^). Overweight is also more common than 'normal-weight' in many other higher-income countries [@NCD-RisC2016], and increasing in lower-income countries [@Templin2019].
+# Background
 
-BMI is generally used as a proxy for adiposity as there are high correlations between BMI and objective measures of fat mass measured by dual-energy X-ray absorptiometry (DXA) [@Bell2018], such as total fat mass index and regional fat mass index. Due to the specialised equipment needed for fat mass measures, BMI is often much more widely available.
+## Obesity on the rise
+Obesity, defined as a body mass index (BMI) of greater than 30kg/m^2^, has tripled worldwide since 1975. It is currently estimated that 40% of adults in the United States and 26% of adults in the United Kingdom have obesity [@Bluher2019]. As of 2016, the number of individuals globally with obesity has surpassed 650 million [@TheLancetPublicHealth2018]. The average BMI of the UK adult population is ~27kg/m^2^ [@Wade2018], which is in the 'overweight' category (between 25 and 30 kg/m^2^). Overweight is also more common than 'normal-weight' in many other higher-income countries [@NCD-RisC2016], and prevalence of overweight is increasing in lower-income countries [@Templin2019].
+
+BMI is generally used as a proxy for adiposity as there are high correlations between BMI and objective measures of fat mass measured by dual-energy X-ray absorptiometry (DXA) [@Bell2018], such as total fat mass index and regional fat mass indices. Due to the specialised equipment needed for fat mass measures, BMI is often much more widely available within cohort studies.
 
 ## Obesity is a modifiable risk factor for cardiovascular disease
+Higher adiposity is a risk factor for certain non-communicable diseases. Such diseases include Type 2 Diabetes mellitus (T2D), musculoskeletal diseases, certain types of cancer and cardiovascular disease [@Garg2014; @Khan2018; @Kortt2002; @Bhaskaran2014]. Collectively, treatment for obesity-related diseases is costly for health services [@Dixon2019a; @Dixon2019]. Cardiovascular disease is one of the leading causes of death. Cardiovascular disease is a general term for diseases affecting the heart or circulatory system and can be subcategorised further into diseases such as coronary heart disease (CHD) and stroke. Obesity is associated with an increased risk of such cardiovascular events [@Khan2018]
 
-[@RN427].
-
-## Mechanisms of obesity related cardiovascular disease - changes in platelet activity?
+## Mendelian randomisation can be used to explore causality
+Mendelian randomisation is a technique which uses the random assortment of alleles to estimate the causal association between a modifiable risk factor (such as BMI) and disease outcomes. It can be likened to a natural randomised control trial (RCT) [FIG]. Associations between BMI and disease have been shown through use of prospective observational studies [@Khan2018], but more recently, through use of Mendelian randomisation studies [@Nordestgaard2012; @Dale2017; @Carreras-Torres2017a].  
 
 ## Limitations of current epidemiological research
 
