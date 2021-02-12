@@ -3,27 +3,19 @@ output:
   pdf_document: default
   html_document: default
 ---
-<!--
-This is for including Chapter 1.  Notice that it's also good practice to name your chunk.  This will help you debug potential issues as you knit.  The chunk above is called intro and the one below is called chapter1.  Feel free to change the name of the Rmd file as you wish, but don't forget to change it here from chap1.Rmd.
--->
-
-<!--
-The {#rmd-basics} text after the chapter declaration will allow us to link throughout the document back to the beginning of Chapter 1.  These labels will automatically be generated (if not specified) by changing the spaces to hyphens and capital letters to lowercase.  Look for the reference to this label at the beginning of Chapter 2.
--->
 
 # Introduction
 
-## Cardiovascular disease
+## Obesity
+Obesity, defined as a body mass index (BMI) of over 30kg/m^2^,has tripled worldwide since 1975. It is currently estimated that 40% of adults in the United States and 26% of adults in the United Kingdom have obesity [@Bluher2019]. The average BMI of the UK adult population is ~27kg/m^2^ [@Wade2018], which is in the 'overweight' category (between 25 and 30 kg/m^2^). Overweight is also more common than 'normal-weight' in many other higher-income countries [@NCD-RisC2016], and increasing in lower-income countries [@Templin2019].
 
-## Issues surrounding treatment of cardiovascular disease
+BMI is generally used as a proxy for adiposity as there are high correlations between BMI and objective measures of fat mass measured by dual-energy X-ray absorptiometry (DXA) [@Bell2018], such as total fat mass index and regional fat mass index. Due to the specialised equipment needed for fat mass measures, BMI is often much more widely available.
 
-## Obesity: a modifiable risk factor for cardiovascular disease
+## Obesity is a modifiable risk factor for cardiovascular disease
 
-## Mechanisms of obesity related cardiovascular disease
+[@RN427].
 
-### Plasma proteome changes
-
-### Platelet function changes
+## Mechanisms of obesity related cardiovascular disease - changes in platelet activity?
 
 ## Limitations of current epidemiological research
 
@@ -39,68 +31,29 @@ The {#rmd-basics} text after the chapter declaration will allow us to link throu
 
 ## Publications from the PhD (in preparation or published)
 
-## Presentations from the PhD {#Presentations}
+Redundant role of ASK1-mediated p38MAPK activation in human platelet function. Sledz, K. M., Moore, S. F., Vijayaragavan, V., Mallah, S., **Goudswaard, L. J.**, Williams, C. M., Hunter, R. W. & Hers, I., 1 Apr 2020, In : Cellular Signalling. 68, 11 p., 109528.
 
-Both
+Association between blood pressure variability and night time dipping with cardiac structure: cross-sectional study in adolescents
 
-**Platelet Society meeting**, 2018, Cambridge, UK. Title: Do the chemokines MDC and TARC to obesity related platelet hyperactivity and cardiovascular disease. Oral presentation.
+Effects of adiposity on the human plasma proteome: Observational and Mendelian randomization estimates
 
-**IEU Scientific Advisory Board meeting**, 2020, Bristol, UK, Title: Effect of adiposity on the human plasma proteome: a Mendelian randomisation study using individual level data. Poster.
-
-**International Genetic Epidemiological Society meeting** 2020, Virtual conference, Title: Effects of body mass index on the human proteome: a Mendelian randomization study using individual level data. Selected for short talk as one of the top ranked posters.
-
-**International Society of Thrombosis and Haemostasis meeting** 2020, Virtual conference, Title: Effects of body mass index on the human plasma proteome – potential drivers of obesity-related cardiovascular disease? Poster. 
+Estimating the causal association of body mass index and intrinsic platelet properties: evidence for a positive causal relationship with immature platelet count
 
 
-# R Markdown Basics {#rmd-basics}
+## Presentations from the PhD
+
+**Platelet Society meeting**, 2018, Cambridge, UK. Title: Do the chemokines MDC and TARC to obesity related platelet hyperactivity and cardiovascular disease? (Oral presentation).
+
+**IEU Scientific Advisory Board meeting**, 2020, Bristol, UK. Title: Effect of adiposity on the human plasma proteome: a Mendelian randomisation study using individual level data (Poster).
+
+**International Genetic Epidemiological Society meeting**, 2020, Virtual conference. Title: Effects of body mass index on the human proteome: a Mendelian randomization study using individual level data (Selected for short talk as one of the top ranked posters).
+
+**International Society of Thrombosis and Haemostasis meeting**, 2020, Virtual conference. Title: Effects of body mass index on the human plasma proteome – potential drivers of obesity-related cardiovascular disease? (Poster). 
 
 
-Here is a brief introduction into using _R Markdown_. _Markdown_ is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. _R Markdown_ provides the flexibility of _Markdown_ with the implementation of **R** input and output.  For more details on using _R Markdown_ see <http://rmarkdown.rstudio.com>.  
 
-Be careful with your spacing in _Markdown_ documents.  While whitespace largely is ignored, it does at times give _Markdown_ signals as to how to proceed.  As a habit, try to keep everything left aligned whenever possible, especially as you type a new paragraph.  In other words, there is no need to indent basic text in the Rmd document (in fact, it might cause your text to do funny things if you do).
 
-## Lists
 
-It's easy to create a list.  It can be unordered like
-
-* Item 1
-* Item 2
-
-or it can be ordered like
-
-1. Item 1
-4. Item 2
-
-Notice that I intentionally mislabeled Item 2 as number 4.  _Markdown_ automatically figures this out!  You can put any numbers in the list and it will create the list.  Check it out below.
-
-To create a sublist, just indent the values a bit (at least four spaces or a tab).  (Here's one case where indentation is key!)
-
-1. Item 1
-1. Item 2
-1. Item 3
-    - Item 3a
-    - Item 3b
-
-## Line breaks
-
-Make sure to add white space between lines if you'd like to start a new paragraph.  Look at what happens below in the outputted document if you don't:
-
-Here is the first sentence.  Here is another sentence.  Here is the last sentence to end the paragraph.
-This should be a new paragraph.
-
-*Now for the correct way:* 
-
-Here is the first sentence.  Here is another sentence.  Here is the last sentence to end the paragraph.
-
-This should be a new paragraph.
-
-## R chunks
-
-When you click the **Knit** button above a document will be generated that includes both content as well as the output of any embedded **R** code chunks within the document. You can embed an **R** code chunk like this (`cars` is a built-in **R** dataset):
-
-```{r cars}
-summary(cars)
-```
 
 ## Inline code
 
