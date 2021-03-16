@@ -4,49 +4,51 @@ output:
   html_document: default
 ---
 
-# Overview of chapter
+# Introduction
+
+## Format
 This chapter will provide some background information to put the thesis into context. It will provide information on obesity, in particular its prevalence and implications for cardiovascular disease. Possible mechanisms of disease will be introduced, such as the involvement of platelets. At the end of this chapter, the aims of the thesis will be introduced.
 
-# Background
+## Background
 
-## Obesity on the rise
+### Obesity on the rise
 Obesity, defined as a body mass index (BMI) of greater than 30kg/m^2^, has tripled worldwide since 1975. It is currently estimated that 40% of adults in the United States and 26% of adults in the United Kingdom have obesity [@Bluher2019]. As of 2016, the number of individuals globally with obesity surpassed 650 million [@TheLancetPublicHealth2018]. The average BMI of the UK adult population is ~27kg/m^2^ [@Wade2018], which is in the 'overweight' category (between 25 and 30 kg/m^2^). Overweight is also more common than 'normal-weight' in many other higher-income countries [@NCD-RisC2016], and prevalence of overweight is increasing in lower-income countries [@Templin2019].
 
 BMI is generally used as a proxy for adiposity as there are high correlations between BMI and objective measures of fat mass measured by dual-energy X-ray absorptiometry (DXA) [@Bell2018], such as total fat mass index and regional fat mass indices. Due to the specialised equipment needed for fat mass measures, BMI is often much more widely available within cohort studies.
 
-## Obesity is a modifiable risk factor for cardiovascular disease
+### Obesity is a modifiable risk factor for cardiovascular disease
 Higher adiposity is a risk factor for certain non-communicable diseases. Such diseases include Type 2 Diabetes mellitus (T2D), musculoskeletal diseases, certain types of cancer and cardiovascular disease [@Garg2014; @Khan2018; @Kortt2002; @Bhaskaran2014]. Collectively, treatment for obesity-related diseases is costly for health services [@Dixon2019a; @Dixon2019]. Cardiovascular disease is one of the leading causes of death. Cardiovascular disease is a general term for diseases affecting the heart or circulatory system and can be subcategorised further into diseases such as coronary heart disease (CHD) and stroke. Obesity is associated with an increased risk of such cardiovascular events [@Khan2018]
 
-## Mendelian randomisation can be used to explore causality
+### Mendelian randomisation can be used to explore causality
 Mendelian randomisation is a technique which uses the random assortment of alleles to estimate the causal association between a modifiable risk factor (such as BMI) and disease outcomes. It can be likened to a natural randomised control trial (RCT) [FIG]. Associations between BMI and disease have been shown through use of prospective observational studies [@Khan2018], but more recently, through use of Mendelian randomisation studies [@Nordestgaard2012; @Dale2017; @Carreras-Torres2017a]. These studies have provided evidence for a causal relationship between adiposity and ischaemic heart disease (IHD) [@Nordestgaard2012], coronary heart disease (CHD), T2D [@Dale2017] and types of cancer including pancreatic cancer [@Carreras-Torres2017a]. Studies have also found that weight loss improves cardiovascular risk factors [@Wing2011; other refs]. Despite the evidence for a causal association between adiposity and cardiovascular disease, mechanisms of obesity-related disease remain unclear.
 
-## Mechanisms of obesity-related cardiovascular disease
+### Mechanisms of obesity-related cardiovascular disease
 Obesity is caused by an increase in fat deposition and generally occurs when energy intake exceeds energy expenditure. There are two types of fat: white adipose tissue (WAT) and brown adipose tissue (BAT). WAT secretes proteins and peptides which have pro-inflammatory effects [@Cercato2019; @Kern2001]. Due to these adipose tissue effects, obesity results in a state of chronic low-grade inflammation [@Esser2014], with an increase in adipose tumour necrosis factor-alpha (TNF-alpha) and interleukin-6 (IL-6) [@Kern2001]. Efforts have been made to understand how adiposity causes cardiovascular disease, with suggestion that inflammation, increased production of reactive oxygen species and endothelial dysfunction contribute to increased cardiovascular risk [@Cercato2019, add other refs].
 
-## Plasma markers of obesity
+### Plasma markers of obesity
 Studies which have explored the molecular footprint of adiposity have tended to focus on the lipidome, such as cholesterol and triglycerides in lipoprotein subtypes, inlcuding low-density lipoproteins (LDL), very-low-density lipoproteins (VLDL) and high-density lipoproteins (HDL) [@Bell2018a; @Wurtz2014], where a higher BMI is associated with an increase in LDLs and a decrease in large HDLs. This has been expored in a causal framework. 
 
 As the majority of druggable targets are proteins, it is also valuable to explore the effects of BMI on circulating plasma proteins. It is estimated that 25% of proteins in the human proteome circulate in the blood [@Imming2006], including enzymes, protein kinases and transport proteins. Therefore, focusing on effects of adiposity on the circulating proteome may allow for the development of or repurposing of therapeutic interventions to reduce obesity-related disease. Previous studies that have explored the effect of adiposity on the circulating proteome have used hypothesis driven approaches [ref]. Attempts to evaluate the effect of BMI on the general proteome have been performed using observational analyses [refs]. Recent technologies have been developed which allow protein detection in unprecedented scope and detail, for example the SOMAscan by SomaLogic [@Gold2012], which can detect over 3,500 unique proteins. Although identifying alterations of individual proteins may provide therapeutic opportunities, assessing the overall protein profile of adiposity may provide more of a mechanistic insight into how adiposity causes disease.
 
 
-## Platelets are key cells involved in thrombosis
+### Platelets are key cells involved in thrombosis
 
 
-## Importance of an interdisciplinary approach
+### Importance of an interdisciplinary approach
 
-## Thesis aims and objectives
+### Thesis aims and objectives
 The aims of the thesis are
 
 1) 
 
-## Thesis structure
+### Thesis structure
 There will be xx results chapters in this thesis.
 1)
 2)
 3)
 4)
 
-## Publications from the PhD (in preparation or published)
+### Publications from the PhD (in preparation or published)
 
 Redundant role of ASK1-mediated p38MAPK activation in human platelet function. Sledz, K. M., Moore, S. F., Vijayaragavan, V., Mallah, S., **Goudswaard, L. J.**, Williams, C. M., Hunter, R. W. & Hers, I., 1 Apr 2020, In : Cellular Signalling. 68, 11 p., 109528.
 
@@ -57,7 +59,7 @@ Effects of adiposity on the human plasma proteome: Observational and Mendelian r
 Estimating the causal association of body mass index and intrinsic platelet properties: evidence for a positive causal relationship with immature platelet count
 
 
-## Presentations from the PhD
+### Presentations from the PhD
 
 **Platelet Society meeting**, 2018, Cambridge, UK. Title: Do the chemokines MDC and TARC to obesity related platelet hyperactivity and cardiovascular disease? (Oral presentation).
 
@@ -72,7 +74,7 @@ Estimating the causal association of body mass index and intrinsic platelet prop
 
 
 
-## Inline code
+### Inline code
 
 If you'd like to put the results of your analysis directly into your discussion, add inline code like this:
 
@@ -90,7 +92,7 @@ Note the use of `>` here, which signifies a quotation environment that will be i
 
 As you see with `$2 \pi$` above, mathematics can be added by surrounding the mathematical text with dollar signs.  More examples of this are in [Mathematics and Science] if you uncomment the code in [Math].  
 
-## Including plots
+### Including plots
 
 You can also embed plots.  For example, here is a way to use the base **R** graphics package to produce a plot using the built-in `pressure` dataset:
 
@@ -102,7 +104,7 @@ Note that the `echo=FALSE` parameter was added to the code chunk to prevent prin
 
 Another useful chunk option is the setting of `cache=TRUE` as you see here.  If document rendering becomes time consuming due to long computations or plots that are expensive to generate you can use knitr caching to improve performance.  Later in this file, you'll see a way to reference plots created in **R** or external figures.
 
-## Loading and exploring data
+### Loading and exploring data
 
 Included in this template is a file called `flights.csv`.  This file includes a subset of the larger dataset of information about all flights that departed from Seattle and Portland in 2014.  More information about this dataset and its **R** package is available at <http://github.com/ismayc/pnwflights14>.  This subset includes only Portland flights and only rows that were complete with no missing values.  Merges were also done with the `airports` and `airlines` data sets in the `pnwflights14` package to get more descriptive airport and airline names.
 

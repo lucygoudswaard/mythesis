@@ -1,1 +1,35 @@
-# Title of Chapter 4
+# Effects of adiposity on the human plasma proteome: Observational and Mendelian randomization estimates
+
+## Background
+
+## Methods
+
+## Results
+
+```{r ObsMRforesplot2, echo = FALSE, out.width = "100%", out.height = "60%", fig.cap="Forest plot of the strongest Mendelian randomisation estimates and the corresponding observational estimates"}
+include_graphics(path = "figure/BMI_protein_INTERVAL/MR_obs_compar_forestplot.pdf", dpi = NA)
+```
+
+
+----------------------------------------------------------------------------------
+  Variable                    Mean (SD) or %                           N
+------------------------- ----------------------------------------- --------------
+  Age (years)                                45.0 (14.1)                2,737
+  
+  Sex                                                                   2,737
+  
+  Male                              51.7%                             1,415
+    
+  Female                           48.3 %                             1,322 
+  
+  Weight (kg)                                    78.5 (16.1)            2,736
+  
+  Height (cm)                                   172.7 (9.7)            2,730
+    
+  Body mass index (kg/m2)                     25.9 (4.8)               2,729
+   
+------------------------- ----------------------------------------- --------------
+Table: (\#tab:INTERVALpop) Characteristics of included participants
+
+## Discussion
+
