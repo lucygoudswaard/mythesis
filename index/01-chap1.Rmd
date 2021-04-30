@@ -61,7 +61,7 @@ Estimating the causal association of body mass index and intrinsic platelet prop
 
 ### Presentations from the PhD
 
-**Platelet Society meeting**, 2018, Cambridge, UK. Title: Do the chemokines MDC and TARC to obesity related platelet hyperactivity and cardiovascular disease? (Oral presentation).
+**Platelet Society meeting**, 2018, Cambridge, UK. Title: Do the chemokines MDC and TARC contribute to obesity related platelet hyperactivity and cardiovascular disease? (Oral presentation).
 
 **IEU Scientific Advisory Board meeting**, 2020, Bristol, UK. Title: Effect of adiposity on the human plasma proteome: a Mendelian randomisation study using individual level data (Poster).
 
@@ -69,6 +69,15 @@ Estimating the causal association of body mass index and intrinsic platelet prop
 
 **International Society of Thrombosis and Haemostasis meeting**, 2020, Virtual conference. Title: Effects of body mass index on the human plasma proteome – potential drivers of obesity-related cardiovascular disease? (Poster). 
 
+**Platelet society meeting**, 2021, Virtual conference. Title: Altered platelet proteome, enhanced basal platelet procoagulant activity, and increased platelet-leukocyte interactions in patients with Covid-19. (Oral presentation)
+
+**Platelet society meeting**, 2021, Virtual conference. Title: Estimating the causal association between body mass index and platelet properties: evidence for a positive association with immature platelet count (Poster)
+
+**British Heart Foundation PhD Student Conference**, 2021, Virtual conference. Title: Estimating the association of body mass index and platelet properties: an observational and Mendelian randomization study (Poster)
+
+**International Society of Thrombosis and Haemostasis meeting**, 2021, Virtual conference. Title: Altered platelet proteome and platelet-leukocyte interactions in patients with COVID-19 (Oral presentation and Travel Award)
+
+**International Society of Thrombosis and Haemostasis meeting**, 2021, Virtual conference. Title: Estimating the causal association between body mass index and platelet properties: evidence for a positive association with immature platelet count (Oral presentation and Travel Award)
 
 
 
