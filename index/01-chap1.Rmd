@@ -56,7 +56,7 @@ Association between blood pressure variability and night time dipping with cardi
 
 Effects of adiposity on the human plasma proteome: Observational and Mendelian randomization estimates
 
-Estimating the causal association of body mass index and intrinsic platelet properties: evidence for a positive causal relationship with immature platelet count
+Higher body mass index raises immature platelet count: evidence from Mendelian randomization analyses
 
 
 ### Presentations from the PhD
@@ -79,7 +79,9 @@ Estimating the causal association of body mass index and intrinsic platelet prop
 
 **International Society of Thrombosis and Haemostasis meeting**, 2021, Virtual conference. Title: Estimating the causal association between body mass index and platelet properties: evidence for a positive association with immature platelet count (Oral presentation and Travel Award)
 
+**IGES**
 
+**World Congress of Epidemiology**
 
 
 

@@ -8,8 +8,21 @@
 
 ```{r ObsMRforesplot2, echo = FALSE, out.width = "100%", out.height = "60%", fig.cap="Forest plot of the strongest Mendelian randomisation estimates and the corresponding observational estimates"}
 include_graphics(path = "figure/BMI_protein_INTERVAL/MR_obs_compar_forestplot.pdf", dpi = NA)
+
 ```
 
+
+```{r}
+options(knitr.kable.NA = " ")
+f = c("Age", "Sex", "Male", "Female", "Weight (kg)", "Height (cm)", "Body mass index (kg/m2)", "Smoking frequency", "Never", "Occasional", "Most days or every day", "Alcohol intake frequency", "Rarely", "Less than once a week", "One or two times a week", "Three to five times a week / most days")
+co = c("45.0 (14.1)", "NA", "51.7 %", "48.3 %", "78.5 (16.1)", "172.7 (9.7)", "25.9 (4.8)", "NA", "59.1 %", "11.9 %", "29.0 %", "NA" ,"11.7 %", "16.9 %", "37.4 %", "34.1 %")
+i = c(2737, 2737, NA, NA, 2736, 2730, 2729, 2675, NA, NA, NA, 2422, NA, NA, NA, NA)
+mytable = data.frame("Variable"  = f, "Mean (SD) or %" = co, "N" = i)
+mytable %>% kable(caption = "Characteristics of included participants") %>% 
+  kable_classic_2(full_width = F) %>%
+  #kable_paper("hover", full_width = F)
+   add_indent(c(3, 4, 9, 10, 11, 13, 14, 15, 16), level_of_indent = 1)
+```
 
 ----------------------------------------------------------------------------------
   Variable                    Mean (SD) or %                           N
