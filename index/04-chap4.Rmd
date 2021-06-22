@@ -1,3 +1,45 @@
+---
+output:
+    thesisdown::thesis_pdf: default
+bibliography: bib/thesis.bib
+csl: csl/nature.csl
+space_betwee_paragraphs: true
+fig_caption: true
+always_allow_html: yes
+link-citations: true
+toc-depth: 2
+lot: true
+lof: true
+editor_options:
+  chunk_output_type: console
+---
+
+```{r thesis-setup, include = FALSE}
+# you need these packages
+if(!require(devtools))
+  install.packages("devtools", repos = "http://cran.rstudio.com")
+if(!require(thesisdown))
+  devtools::install_github("ismayc/thesisdown")
+library(thesisdown)
+if(!require(kableExtra))
+  devtools::install_github("haozhu233/kableExtra")
+library(kableExtra)
+if(!require(tinytex))
+  devtools::install_github('yihui/tinytex')
+library(tinytex)
+options(tinytex.verbose = TRUE)
+if(!require(flextable))
+  devtools::install_github("davidgohel/flextable")
+library(flextable)
+library(dplyr)
+library(ggplot2)
+library(knitr)
+
+
+# this will allow us to make word documents with relatively ok tables
+doc.type <- knitr::opts_knit$get('rmarkdown.pandoc.to')
+```
+
 # Effects of adiposity on the human plasma proteome: Observational and Mendelian randomization estimates
 
 ## Background
@@ -12,37 +54,81 @@ include_graphics(path = "figure/BMI_protein_INTERVAL/MR_obs_compar_forestplot.pd
 ```
 
 
-```{r}
-options(knitr.kable.NA = " ")
-f = c("Age", "Sex", "Male", "Female", "Weight (kg)", "Height (cm)", "Body mass index (kg/m2)", "Smoking frequency", "Never", "Occasional", "Most days or every day", "Alcohol intake frequency", "Rarely", "Less than once a week", "One or two times a week", "Three to five times a week / most days")
-co = c("45.0 (14.1)", "NA", "51.7 %", "48.3 %", "78.5 (16.1)", "172.7 (9.7)", "25.9 (4.8)", "NA", "59.1 %", "11.9 %", "29.0 %", "NA" ,"11.7 %", "16.9 %", "37.4 %", "34.1 %")
-i = c(2737, 2737, NA, NA, 2736, 2730, 2729, 2675, NA, NA, NA, 2422, NA, NA, NA, NA)
-mytable = data.frame("Variable"  = f, "Mean (SD) or %" = co, "N" = i)
-mytable %>% kable(caption = "Characteristics of included participants") %>% 
-  kable_classic_2(full_width = F) %>%
-  #kable_paper("hover", full_width = F)
-   add_indent(c(3, 4, 9, 10, 11, 13, 14, 15, 16), level_of_indent = 1)
+```{r Estimate-comparison-obs, echo = FALSE, out.width = "100%", out.height = "65%", fig.cap="Scatter plot of the unadjusted (age and sex adjusted) observational estimates and the confounder-adjusted observational estimates for BMI and protein traits with a regression line "}
+include_graphics(path = "figure/BMI_protein_INTERVAL/obs_v_obs_adj_scatter.pdf", dpi = NA)
+
 ```
 
-----------------------------------------------------------------------------------
-  Variable                    Mean (SD) or %                           N
-------------------------- ----------------------------------------- --------------
-  Age (years)                                45.0 (14.1)                2,737
-  
-  Sex                                                                   2,737
-  
-  Male                              51.7%                             1,415
-    
-  Female                           48.3 %                             1,322 
-  
-  Weight (kg)                                    78.5 (16.1)            2,736
-  
-  Height (cm)                                   172.7 (9.7)            2,730
-    
-  Body mass index (kg/m2)                     25.9 (4.8)               2,729
-   
-------------------------- ----------------------------------------- --------------
-Table: (\#tab:INTERVALpop) Characteristics of included participants
+
+```{r Estimate-comparison-obs-mr, echo = FALSE, fig.cap="Scatter plot of the unadjusted (age and sex adjusted) observational estimates and the MR estimates for BMI and protein traits with a regression line "}
+include_graphics(path = "figure/BMI_protein_INTERVAL/unadj_obs_MR_scatter_small.pdf", dpi = NA)
+
+```
+
+```{r Corr-mat-proteins, echo = FALSE, fig.cap="Correlation matrix of all protein traits (4,034) where the colour corresponds to the correlation coefficient ranging from 1 (dark blue) to -1 (dark red)"}
+include_graphics(path = "figure/BMI_protein_INTERVAL/Correlation_matrix_proteins.pdf", dpi = NA)
+
+```
+
+\blandscape
+```{r Dend_proteins, echo = FALSE, fig.cap="Cluster dendrogram showing the hierarchical relationship between protein levels. Height is calculated as (1-correlation coefficient). At a height of 0.2 and 0.4 (red dashed lines), the number of independent proteins was 3,655 and 3,016 respectively. "}
+include_graphics(path = "figure/BMI_protein_INTERVAL/dendrogram.pdf", dpi = NA)
+
+```
+\elandscape
+
+```{r INT-participants,  echo=FALSE}
+options(knitr.kable.NA = "")
+f = c("Age", "Sex", "Male", "Female", "Weight (kg)", "Height (cm)", "Body mass index (kg/m2)", "Smoking frequency", "Never", "Occasional", "Most days or every day", "Alcohol intake frequency", "Rarely", "Less than once a week", "One or two times a week", "Three to five times a week / most days")
+co = c("45.0 (14.1)", NA, "51.7 %", "48.3 %", "78.5 (16.1)", "172.7 (9.7)", "25.9 (4.8)", NA, "59.1 %", "11.9 %", "29.0 %", NA ,"11.7 %", "16.9 %", "37.4 %", "34.1 %")
+i = c(2737, 2737, NA, NA, 2736, 2730, 2729, 2675, NA, NA, NA, 2422, NA, NA, NA, NA)
+mytable = data.frame("Variable"  = f, "Mean (SD) or %" = co, "N" = i)
+colnames(mytable) <- c("Variable",  "Mean (SD) or %", "N" )
+mytable %>% kable(caption = "Characteristics of included participants", booktabs = TRUE) %>% 
+  kable_classic_2(full_width = F) %>%
+  #kable_paper("hover", full_width = F)
+   add_indent(c(3, 4, 9, 10, 11, 13, 14, 15, 16), level_of_indent = 1) %>%
+ kable_styling(full_width = TRUE) %>%
+column_spec(1, width = "8cm")
+```
+
+Here we see in Table \@ref(tab:INT-participants)
+
+```{r INT-GRS-confounders,  echo=FALSE}
+options(knitr.kable.NA = "")
+V = c("BMI (SDs)", "BMI (kg/m2)", "Age", "Sex (1=female, 2=male)", "Smoking frequency (1=never, 2=occasinal, 3=most days/ every day)", "Alcohol intake frequency (1=rarely, 2=<1 a week, 3=1-2 times a week, 4=most days/every day)")
+N = c(2729, 2729, 2737, 2737, 2675, 2422)
+B = c(0.57, 2.54, -1.47, -0.04, -0.02, -0.06)
+SE <- c(0.06, 0.31, 0.92, 0.03, 0.14, 0.07)
+P <- c(1.64E-18, 4.82E-16, 0.11, 0.28, 0.91, 0.44)
+AdjR <- c(0.028, 0.024, 0.001, 5.96E-05, -0.0004, -0.0002)
+Fstat <- c(78.20, 66.68, 2.55, 1.16, 0.01, 0.60)
+mytable = data.frame(cbind(V, N, B, SE, P, AdjR, Fstat))
+colnames(mytable) <- c('Variable',	'N',	'Beta coefficient (per 1-unit increase in GRS)',	'Standard error',	'P value',	'Adjusted R2',	'F statistic' )
+mytable %>% kable(caption = "Associations of the genetic risk score for BMI with reported BMI and covariables", booktabs = TRUE) %>% 
+  kable_classic_2(full_width = F) %>%
+ kable_styling(full_width = TRUE) %>%
+  landscape()
+```
+
+```{r DAVID-enrichment-cluster2,  echo=FALSE}
+options(knitr.kable.NA = "")
+Term = c('Cardiovascular', 'Renal', 'Cancer', 'Pharmacogenomic', 'Metabolic', 'Vision', 'Haematological', 'Reproduction', 'Immune', 'Neurological', 'Aging')
+Count = c(439,216,401,357,504,100,168,152,360,311,117)
+Percentage = c(34.1, 16.8,31.2,27.8,39.2,7.8,13.1,11.8,28.0,24.2,9.1)
+List <- c(1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024 )
+Pophits <- c(1023, 472,958,856,1243,216,388,351,886,759,278)
+Poptotal <- c(2723, 2723, 2723, 2723, 2723, 2723 ,2723 ,2723 ,2723 ,2723 ,2723)
+FE <- c(1.14, 1.22, 1.11, 1.11, 1.08, 1.23, 1.15, 1.15, 1.08, 1.09, 1.12)
+Pval <- c(7.3E-06,5.8E-05,5.3E-04,1.9E-03,2.4E-03,5.9E-03,9.8E-03,1.4E-02,1.5E-02,1.6E-02,7.5E-02)
+Bonf_adj_P <- c(1.3E-04,1.0E-03, 9.5E-03,3.4E-02,4.2E-02,1.0E-01,1.6E-01,2.3E-01,2.4E-01,2.5E-01,7.5E-01)
+mytable = data.frame(cbind(Term, Count, Percentage, List, Pophits, Poptotal, FE, Pval, Bonf_adj_P))
+colnames(mytable) <- c('Term (Genetic Association Database disease class)',	'Count',	'%',	'List Total','	Population Hits',	'Population Total',	'Fold Enrichment',	'P Value',	'Bonferroni-adjusted P value' )
+mytable %>% kable(caption = "Cluster 2 vs full SomaLogic protein enrichment results for disease class using DAVID bioinformatics 6.8", booktabs = TRUE) %>% 
+  kable_classic_2(full_width = F) %>%
+ kable_styling(full_width = TRUE) %>%
+  landscape()
+```
 
 ## Discussion
 
