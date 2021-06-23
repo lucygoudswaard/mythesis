@@ -1,46 +1,6 @@
----
-output:
-    thesisdown::thesis_pdf: default
-bibliography: bib/thesis.bib
-csl: csl/nature.csl
-space_betwee_paragraphs: true
-fig_caption: true
-always_allow_html: yes
-link-citations: true
-toc-depth: 2
-lot: true
-lof: true
-editor_options:
-  chunk_output_type: console
----
-
-```{r thesis-setup, include = FALSE}
-# you need these packages
-if(!require(devtools))
-  install.packages("devtools", repos = "http://cran.rstudio.com")
-if(!require(thesisdown))
-  devtools::install_github("ismayc/thesisdown")
-library(thesisdown)
-if(!require(kableExtra))
-  devtools::install_github("haozhu233/kableExtra")
-library(kableExtra)
-if(!require(tinytex))
-  devtools::install_github('yihui/tinytex')
-library(tinytex)
-options(tinytex.verbose = TRUE)
-if(!require(flextable))
-  devtools::install_github("davidgohel/flextable")
-library(flextable)
-library(dplyr)
-library(ggplot2)
-library(knitr)
-
-
-# this will allow us to make word documents with relatively ok tables
-doc.type <- knitr::opts_knit$get('rmarkdown.pandoc.to')
-```
-
 # Effects of adiposity on the human plasma proteome: Observational and Mendelian randomization estimates
+
+This protein was submitted as a manuscript to the International Journal of Obesity. I performed all analsyses, created all figures and tables and wrote the manuscript.
 
 ## Background
 
@@ -48,34 +8,24 @@ doc.type <- knitr::opts_knit$get('rmarkdown.pandoc.to')
 
 ## Results
 
-```{r ObsMRforesplot2, echo = FALSE, out.width = "100%", out.height = "60%", fig.cap="Forest plot of the strongest Mendelian randomisation estimates and the corresponding observational estimates"}
-include_graphics(path = "figure/BMI_protein_INTERVAL/MR_obs_compar_forestplot.pdf", dpi = NA)
-
-```
-
-
-```{r Estimate-comparison-obs, echo = FALSE, out.width = "100%", out.height = "65%", fig.cap="Scatter plot of the unadjusted (age and sex adjusted) observational estimates and the confounder-adjusted observational estimates for BMI and protein traits with a regression line "}
-include_graphics(path = "figure/BMI_protein_INTERVAL/obs_v_obs_adj_scatter.pdf", dpi = NA)
-
-```
-
-
-```{r Estimate-comparison-obs-mr, echo = FALSE, fig.cap="Scatter plot of the unadjusted (age and sex adjusted) observational estimates and the MR estimates for BMI and protein traits with a regression line "}
-include_graphics(path = "figure/BMI_protein_INTERVAL/unadj_obs_MR_scatter_small.pdf", dpi = NA)
-
-```
-
 ```{r Corr-mat-proteins, echo = FALSE, fig.cap="Correlation matrix of all protein traits (4,034) where the colour corresponds to the correlation coefficient ranging from 1 (dark blue) to -1 (dark red)"}
 include_graphics(path = "figure/BMI_protein_INTERVAL/Correlation_matrix_proteins.pdf", dpi = NA)
 
 ```
 
 \blandscape
-```{r Dend_proteins, echo = FALSE, fig.cap="Cluster dendrogram showing the hierarchical relationship between protein levels. Height is calculated as (1-correlation coefficient). At a height of 0.2 and 0.4 (red dashed lines), the number of independent proteins was 3,655 and 3,016 respectively. "}
+```{r Dend-proteins, echo = FALSE, out.height="90%", out.width="95%", fig.cap="Principal component analysis (PCA) and k-means clustering provides evidence for five clusters. A-D) Principal component (PC) 1 vs PC2-PC5 for the study protein data. Each dot represents a protein, and the colors represent the clusters identified by the k-means analysis (1=black, 2=red, 3=green, 4=dark blue, 5=light blue, 6=pink). E) PC scree plot displaying the proportion of variance explained by each of the first 20 PCs. F) K-means scree like plot displaying the variance explained by clusters for each of the 19 k-means analysis, where in each analysis k (the number of clusters) was set from two to 20."}
 include_graphics(path = "figure/BMI_protein_INTERVAL/dendrogram.pdf", dpi = NA)
-
 ```
 \elandscape
+
+
+
+```{r PCs, echo = FALSE, out.width = "90%", out.height = "80%", fig.cap="Principal component analysis (PCA) and k-means clustering provides evidence for five clusters. A-D) Principal component (PC) 1 vs PC2-PC5 for the study protein data. Each dot represents a protein, and the colors represent the clusters identified by the k-means analysis (1=black, 2=red, 3=green, 4=dark blue, 5=light blue, 6=pink). E) PC scree plot displaying the proportion of variance explained by each of the first 20 PCs. F) K-means scree like plot displaying the variance explained by clusters for each of the 19 k-means analysis, where in each analysis k (the number of clusters) was set from two to 20."}
+ include_graphics(path = "figure/BMI_protein_INTERVAL/PCs2to5v1.pdf", dpi = NA)
+ 
+```
+
 
 ```{r INT-participants,  echo=FALSE}
 options(knitr.kable.NA = "")
@@ -92,7 +42,55 @@ mytable %>% kable(caption = "Characteristics of included participants", booktabs
 column_spec(1, width = "8cm")
 ```
 
-Here we see in Table \@ref(tab:INT-participants)
+
+```{r Inc-excl-participants,  echo=FALSE}
+options(knitr.kable.NA = "")
+var = c("Age", "Sex", "Male", "Female", "Weight (kg)", "Height (cm)", "Body mass index (kg/m2)", "Smoking frequency", "Never", "Occasional", "Most days or every day", "Alcohol intake frequency", "Rarely", "Less than once a week", "One or two times a week", "Three to five times a week / most days")
+incmean = c('45.0 (14.1)', NA, '51.70%','48.30%','78.5 (16.1)','172.7 (9.7)','25.9 (4.8)', NA, '59.10%','11.90%','29.00%', NA, '11.70%','16.90%','37.40%','34.10%')
+ninc = c(2737, 2737, NA, NA, 2736, 2730, 2729, 2675, NA, NA, NA, 2422, NA, NA, NA, NA)
+excmean = c('44.9 (14.2)', NA, '49.70%','50.30%','78.6 (16.0)','172.2 (9.6)','26.4 (4.7)', NA, '59.40%','12.00%','28.50%', NA,'12.60%','17.10%','37.70%','32.50%')
+excn <- c(30721, 30721, NA, NA, 30719, 30661, 30659, 29958, NA, NA, NA, 27124, NA, NA, NA, NA)
+ChiP <- c(0.76, 0.04, NA, NA, 0.26, 0.005, 0.66, 0.88, NA, NA, NA, 0.34, NA, NA, NA, NA)
+mytable = cbind(var, incmean, ninc, excmean, excn, ChiP)
+colnames(mytable) <- c("Variable",  "Included Mean (SD) or %", "Included N", "Excluded Mean (SD) or %", "Excluded N", "P value for difference (Two tailed t-test or Chi2 test)" )
+mytable %>% kable(caption = "", booktabs = TRUE) %>% 
+  kable_classic_2(full_width = F) %>%
+  #kable_paper("hover", full_width = F)
+   add_indent(c(3, 4, 9, 10, 11, 13, 14, 15, 16), level_of_indent = 1) %>%
+ kable_styling(full_width = TRUE) %>%
+column_spec(1, width = "6cm") %>%
+  landscape()
+```
+
+
+```{r INT-confounders-BMI,  echo=FALSE}
+options(knitr.kable.NA = "")
+V = c( "Age (years)", "Sex (1=female, 2=male)", "Smoking frequency (1=never, 2=occasinal, 3=most days/ every day)", "Alcohol intake frequency (1=rarely, 2=<1 a week, 3=1-2 times a week, 4=most days/every day)")
+N = c(2729, 2729, 2667, 2415)
+B = c(00.012, 0.17, 0.022, 0.021)
+SE <- c(0.001, 0.038, 0.022, 0.021)
+P <- c(1.23E-18, 5.80E-6, 3.16E-5, 7.08E-5)
+AdjR <- c(0.028, 0.007, 0.006, 0.006)
+Fstat <- c(78.8, 20.6, 17.4, 15.8)
+CI <- c(0.003, 0.075, 0.043, 0.041)
+LowerCI <- c(0.009, 0.10, 0.05, -0.12)
+UpperCI <- c(0.015, 0.25, 0.13, -0.04)
+mytable = data.frame(cbind(V, N, B, SE, P, AdjR, Fstat, CI, LowerCI, UpperCI))
+colnames(mytable) <- c('Variable',	'N',	'Beta coefficient (per 1-unit increase in GRS)',	'Standard error',	'P value',	'Adjusted R2',	'F statistic' , "95% CI", "Lower 95% CI", "Upper 95% CI")
+mytable %>% kable(caption = "Associations between covariates (exposure) and standardised BMI (outcome)", booktabs = TRUE) %>% 
+  kable_classic_2(full_width = F) %>%
+ kable_styling(full_width = TRUE) %>%
+column_spec(1, width = "5cm")   %>%
+  column_spec(3, width = "3cm")   %>%
+  landscape()
+```
+
+
+```{r QQ-confounder-proteins, echo = FALSE, out.width = "100%", out.height = "100%", fig.cap="Q-Q plots for the expected against observed -log10(p) values for the association of age (A), sex (B), smoking (C) and alcohol (D) with protein traits"}
+include_graphics(path = "figure/BMI_protein_INTERVAL/QQ_confounder_proteins.pdf", dpi = NA)
+
+```
+
 
 ```{r INT-GRS-confounders,  echo=FALSE}
 options(knitr.kable.NA = "")
@@ -108,6 +106,76 @@ colnames(mytable) <- c('Variable',	'N',	'Beta coefficient (per 1-unit increase i
 mytable %>% kable(caption = "Associations of the genetic risk score for BMI with reported BMI and covariables", booktabs = TRUE) %>% 
   kable_classic_2(full_width = F) %>%
  kable_styling(full_width = TRUE) %>%
+column_spec(1, width = "5cm")   %>%
+  landscape()
+```
+
+
+```{r ObsMRforesplot2, echo = FALSE, out.width = "100%", out.height = "60%", fig.cap="Forest plot of the strongest Mendelian randomisation estimates and the corresponding observational estimates"}
+include_graphics(path = "figure/BMI_protein_INTERVAL/MR_obs_compar_forestplot.pdf", dpi = NA)
+
+```
+
+
+```{r QQ-obs-MR, echo = FALSE, out.width = "95%", out.height = "60%", fig.cap="A) Q-Q plot of expected against observed -log10(p) values for the unadjusted observational BMI-protein trait estimates B) Q-Q plot of expected against observed -log10(p) values for the Mendelian Randomization BMI-protein trait estimates."}
+include_graphics(path = "figure/BMI_protein_INTERVAL/QQ_obs_MR.pdf", dpi = NA)
+
+```
+
+
+```{r Estimate-comparison-obs, echo = FALSE, out.width = "100%", out.height = "65%", fig.cap="Scatter plot of the unadjusted (age and sex adjusted) observational estimates and the confounder-adjusted observational estimates for BMI and protein traits with a regression line."}
+include_graphics(path = "figure/BMI_protein_INTERVAL/obs_v_obs_adj_scatter.pdf", dpi = NA)
+
+```
+
+
+```{r Estimate-comparison-obs-mr, echo = FALSE, fig.cap="Scatter plot of the unadjusted (age and sex adjusted) observational estimates and the MR estimates for BMI and protein traits with a regression line "}
+include_graphics(path = "figure/BMI_protein_INTERVAL/unadj_obs_MR_scatter_small.pdf", dpi = NA)
+
+```
+
+```{r Obs-MR-without-top8, echo = FALSE, out.width = "95%", out.height = "95%", fig.cap="A) Scatter plot of the unadjusted (age and sex adjusted) observational estimates and the confounder-adjusted observational estimates for BMI and protein traits with a regression line (blue), with the top eight MR BMI-associated proteins excluded. 6B) Scatter plot of the unadjusted (age and sex adjusted) observational estimates and the MR estimates for BMI and protein traits with a regression line (blue), with the top eight MR BMI-associated proteins excluded."}
+include_graphics(path = "figure/BMI_protein_INTERVAL/Obs_MR_scatter_without_top8.pdf", dpi = NA)
+
+```
+
+
+```{r Cluster-estimates,  echo=FALSE}
+options(knitr.kable.NA = "")
+Cluster = c(1, 2, 3, 4, 5, "All")
+N <- c(1061, 1406, 581, 502, 484, 4034)
+Medobs <- c('3.28 (1.56-5.26)','3.79 (1.62-7.06)','2.77 (1.39-4.30)','3.01 (1.25-5.6)','4.44 (2.2-7.05)','3.35 (1.57-5.83)')
+Pobs <- c(1, 3.70E-4, 1, 1, 1.80E-5, NA)
+MedMR <- c('0.69 (0.31-1.22)','0.85 (0.41-1.46)','0.74 (0.37-1.25)','0.68 (0.34-1.19)','0.63 (0.32-1.14)','0.74 (0.35-1.28)')
+PMR <- c(1, 5.3E-6, 1, 1, 1, NA)
+mytable = data.frame(cbind(Cluster, N, Medobs, Pobs, MedMR, PMR))
+colnames(mytable) <- c( 'Cluster',	'N',	'Median absolute observational beta coefficient divided by SE (IQR)',	'P value* for cluster v all proteins (Observational)',	'Median MR beta coefficient divided by SE (IQR)',	'P value* for cluster v all proteins (MR)')
+mytable %>% kable(caption = "Comparison of cluster mean(absolute beta coefficient / SE) with the overall mean for observational and MR analysis, *One-tailed pairwise Wilcox test", booktabs = TRUE) %>% 
+  kable_classic_2(full_width = F) %>%
+ kable_styling(full_width = TRUE) %>%
+column_spec(3, width = "3cm")   %>%
+ column_spec(5, width = "3cm")  %>%
+  landscape()
+```
+
+
+```{r DAVID-enrichment-obs,  echo=FALSE}
+options(knitr.kable.NA = "")
+Term = c('Renal', 'Pharmacogenomic', 'Metabolic', 'Aging', 'Cardiovascular', 'Unknown', "Psych", 'Reproduction', "Normal variation", "Other", 'Cancer', 'Haematological', 'Neurological', "Developmental" )
+Count = c(218,372,515,129,424,233,228,154,86,211,391,164,309,160)
+Percentage = c(16.4,28.0,38.8,9.7,32.0,17.6,17.2,11.6,6.5,15.9,29.5,12.4,23.3,12.1)
+List <- c(1039,1039,1039,1039,1039,1039,1039,1039,1039,1039,1039,1039,1039,1039 )
+Pophits <- c(472,856,1243,278,1023,541,534,351,185,497,958,388,759,381)
+Poptotal <- c(2723, 2723, 2723, 2723, 2723, 2723 ,2723 ,2723 ,2723 ,2723 ,2723, 2723, 2723, 2723)
+FE <- c(1.21,1.14,1.09,1.22,1.09,1.13,1.12,1.15,1.22,1.11,1.07,1.11,1.07,1.10)
+Pval <- c(7.7E-05,8.8E-05,8.3E-04,2.7E-03,4.1E-03,6.4E-03,1.2E-02,1.4E-02,1.5E-02,2.1E-02,2.2E-02,5.0E-02,5.5E-02,6.6E-02)
+Bonf_adj_P <- c(0.001,0.002,0.015,0.047,0.072,0.109,0.189,0.228,0.236,0.313,0.332,0.605,0.638,0.708)
+mytable = data.frame(cbind(Term, Count, Percentage, List, Pophits, Poptotal, FE, Pval, Bonf_adj_P))
+colnames(mytable) <- c('Term (Genetic Association Database disease class)',	'Count',	'%',	'List Total','	Population Hits',	'Population Total',	'Fold Enrichment',	'P Value',	'Bonferroni-adjusted P value' )
+mytable %>% kable(caption = "Disease enrichment of proteins associated with BMI in confounder adjusted model compared with all proteins in SomaLogic (DAVID Bioinformatics)", booktabs = TRUE) %>% 
+  kable_classic_2(full_width = F) %>%
+ kable_styling(full_width = TRUE) %>%
+  column_spec(1, width = "5cm")   %>%
   landscape()
 ```
 
@@ -127,8 +195,10 @@ colnames(mytable) <- c('Term (Genetic Association Database disease class)',	'Cou
 mytable %>% kable(caption = "Cluster 2 vs full SomaLogic protein enrichment results for disease class using DAVID bioinformatics 6.8", booktabs = TRUE) %>% 
   kable_classic_2(full_width = F) %>%
  kable_styling(full_width = TRUE) %>%
+  column_spec(1, width = "5cm")   %>%
   landscape()
 ```
 
-## Discussion
 
+## Discussion
+ \@ref(tab:INT-participants)
