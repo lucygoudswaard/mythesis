@@ -2,6 +2,8 @@
 
 This protein was submitted as a manuscript to the International Journal of Obesity. I performed all analsyses, created all figures and tables and wrote the manuscript.
 
+Supp tables can be found here https://github.com/lucygoudswaard/mythesis/blob/master/index/figure/BMI_protein_INTERVAL/BMI_protein_supplementary_Tables.xlsx 
+
 ## Background
 
 ## Methods

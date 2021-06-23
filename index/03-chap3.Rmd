@@ -1,3 +1,9 @@
+# Pathways linking BMI and platelet function: do the chemokines MDC and TARC play a role?
 
-# HEllo
+Why these? Suggested they could be raised in obesity.
+
+```{r MDC-TARC-agg, echo = FALSE, fig.cap="The effect of preincubating platelets with MDC or TARC (5 mins) before application of PAR1-AP (5 mins) on aggregation. One-way repeated measures ANOVA with Dunnett’s multiple comparisons. N=7. Mean+SEM displayed."}
+include_graphics(path = "figure/Chemokines/Max_aggregation_TARC_MDC.pdf", dpi = NA)
+
+```
 

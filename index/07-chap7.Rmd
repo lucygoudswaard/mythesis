@@ -1,1 +1,111 @@
-# Title of Chapter 7
+# Higher body mass index raises immature platelet count: evidence from Mendelian randomization analyses
+
+This work is under review at xxxxxxxxx.
+
+```{r INTERVAL-STROBE, echo = FALSE, fig.cap="A STROBE diagram outlining participants included in the INTERVAL study (N=33388)."}
+include_graphics(path = "figure/BMI_platelets/STROBE_diagram.pdf", dpi = NA)
+
+```
+
+
+```{r Platelet-traits,  echo=FALSE}
+options(knitr.kable.NA = "")
+Name = c('P-LCR','H-IPF','PLT (F)','PLT (I)','PCT','PDW','IPC','IPF','MPV','SFL','FSC','SSC')
+FullName = c('Platelet large cell ratio','High fluorescence immature platelet fraction','Platelet count (PLT-F channel)','Platelet count (impedance channel)','Plateletcrit','Platelet distribution width' ,'Immature platelet count' ,'Immature platelet fraction','Mean platelet volume','Side fluorescence', 'Forward scatter','Side scatter')
+Deriv = c('(platelet number with volume>12 fL)/(platelet number of ordinary volume)  x 100', '(high fluorescence immature platelet number)/(platelet count)  x 100','Total number of platelets per litre','Total number of platelets per litre','Volume percentage of blood occupied by platelets','Standard deviation of platelet volume distribution, estimated as width at 20% modal height of platelet volume histogram','Immature platelet count','(Immature platelet number)/(platelet count)   x 100', 'Mean platelet volume','Side fluorescence measures the nucleic acid (mRNA) content of the platelet','Forward scatter is a measure of the size of the platelet' ,'Side scatter is a measure of the granularity of the platelet')
+
+Units <- c('%','%','109/L','109/L','%','fL','109/L','%','fL','RFUs','RFUs','RFUs')
+MeanSD <- c('36.9 (7.7)','1.3 (1.0)','255 (57)','250 (55)','0.28 (0.06)','14.0 (1.8)','10.1 (5.0)','4.2 (2.5)','11.1 (1.0)','80.3 (5.0)','53.0 (6.4)','37.9 (2.9)')
+mytable = data.frame(cbind(Name, FullName, Deriv, Units, MeanSD))
+colnames(mytable) <- c('Short name',	'Full name',	'Derivation of platelet trait',	'Units',	'Mean (SD)')
+mytable %>% kable(caption = "Platelet traits measured by Sysmex XN-1000", booktabs = TRUE) %>% 
+  kable_classic_2(full_width = F) %>%
+ kable_styling(full_width = TRUE) %>%
+column_spec(2, width = "4cm")   %>%
+  column_spec(3, width = "6cm")   %>%
+  landscape()
+```
+
+```{r Linear-reg-MR, echo = FALSE, out.height="50%", out.width="85%", fig.cap="Schematic of linear regression and Mendelian randomization analyses. A) Linear regression assesses the association between BMI (exposure) and platelet traits (outcome), with adjustment for potential confounders. B) Under the assumptions of Mendelian randomization (MR), the genetic risk score (GRS) for body mass index (BMI) does not associate with confounding variables, and if there is a causal association, the GRS should only associate with platelet outcomes through its association with body mass index."}
+include_graphics(path = "figure/BMI_platelets/obsvMRexample.pdf", dpi = NA)
+
+```
+
+```{r INT-participants-platelets,  echo=FALSE}
+options(knitr.kable.NA = "")
+f = c("Age", "Sex", "Male", "Female", "Weight (kg)", "Height (cm)", "Body mass index (kg/m2)", "Smoking frequency", "Never", "Previous", "Current", "Alcohol intake frequency", "Rarely", "Less than once a week", "One or two times a week", "Three to five times a week / most days")
+co = c( '45.3 (14.2)', NA, '49.8%','50.2%','78.2 (16.0)','171.8 (9.6)','26.4 (4.7)', NA,'58.9%','33.3%','7.8%',NA, '12.5%','17.1%','37.7%','32.7%')
+i = c(33388, 33388, NA, NA, 33455, 33388, 33388, 32867, NA, NA, NA, 29538, NA, NA, NA, NA)
+mytable = data.frame("Variable"  = f, "Mean (SD) or %" = co, "N" = i)
+colnames(mytable) <- c("Variable",  "Mean (SD) or %", "N" )
+mytable %>% kable(caption = "Characteristics of included participants", booktabs = TRUE) %>% 
+  kable_classic_2(full_width = F) %>%
+  #kable_paper("hover", full_width = F)
+   add_indent(c(3, 4, 9, 10, 11, 13, 14, 15, 16), level_of_indent = 1) %>%
+ kable_styling(full_width = TRUE) %>%
+column_spec(1, width = "8cm")
+```
+
+```{r Corr-mat-dend, echo = FALSE, out.height="50%", out.width="85%", fig.cap="Correlation matrix and dendrogram of the relationship between platelet traits. A) Correlation coefficients are provided within the matrix. Dark blue indicates a correlation coefficient (r) of 1, with dark red indicating a correlation coefficient of -1. B) A dendrogram showing the hierarchical relationship between platelet traits, where the height at which two platelet traits join is (1 – Pearson correlation coefficient (r)). PCT = plateletcrit, PLT (F) = platelet count (PLT-F channel), PLT (I) = platelet count (impedance channel), SSC = side scatter, SFL = side fluorescence, FSC = side scatter, IPC = immature platelet count, H-IPF = high fluorescence immature platelet fraction, IPF = immature platelet fraction, MPV = mean platelet volume, P-LCR = platelet large cell ratio, PDW = platelet distribution width. Dashed red lines indicate a height of 0.2, 0.3 and 0.4."}
+include_graphics(path = "figure/BMI_platelets/Corrmatrix_dendrogram.pdf", dpi = NA)
+
+```
+
+```{r BMI-platelets-adjust,  echo=FALSE}
+options(knitr.kable.NA = "")
+Name = c('PCT','PLT (I)','PLT (F)','SFL','IPC','PDW','FSC','H-IPF','IPF','P-LCR','SSC','MPV')
+N = c(24562,26044,23921,26082,23909,24563,26082,26068,23909,27015,26082,24559)
+Beta = c(0.12,0.11,0.10,0.06,0.06,0.03,0.02,-0.02,0.01,0.01,0.01,0.01)
+SE <- c(0.006,0.006,0.006,0.006,0.007,0.007,0.006,0.006,0.007,0.006,0.006,0.007)
+P <- c(9.17E-88,1.03E-67,5.62E-57,4.73E-23,4.84E-22,5.21E-05,0.01,0.01,0.04,0.19,0.28,0.37)
+R <- c(0.133,0.096,0.094,0.020,0.008,0.006,0.026,0.006,0.008,0.003,0.040,0.007)
+Eta <- c(0.107,0.081,0.082,0.000,0.001,0.004,0.001,0.005,0.007,0.000,0.000,0.000)
+CI <- c(0.012,0.012,0.012,0.012,0.013,0.013,0.012,0.012,0.013,0.012,0.012,0.013)
+Lower <- c(0.11,0.09,0.09,0.05,0.05,0.01,0.01,-0.03,0.00,0.00,-0.01,-0.01)
+Upper <- c(0.13,0.12,0.11,0.07,0.08,0.04,0.03,-0.01,0.03,0.02,0.02,0.02)
+mytable = data.frame(cbind(Name, N, Beta, SE, P, R, Eta, CI, Lower, Upper))
+colnames(mytable) <- c('Platelet trait',	'N',	'Βeta coefficient',	'SE',	'P value',	'R2',	'Eta2',	'95% CI',	'Lower 95% CI',	'Upper 95% CI')
+mytable %>% kable(caption = "Observational associations between BMI and platelet measures (adjusted for age, sex, smoking status and alcohol consumption). Βeta coefficient is the change in platelet measure in SDs per normalized SD increase in BMI. PCT = plateletcrit, PLT (I) = platelet count (impedance channel), PLT (F) = platelet count (PLT-F channel), SFL = side fluorescence, IPC = immature platelet count, PDW = platelet distribution width, FSC = forward scatter, H-IPF = high fluorescence immature platelet fraction, IPF = immature platelet fraction, P-LCR = platelet large cell ration, SSC = side scatter, MPV = mean platelet volume. Eta2 is the proportion of variance explained by the platelet trait in an ANOVA, whereas adjusted R squared is the variance explained by all the predictor variables in the regression model.", booktabs = TRUE) %>% 
+  kable_classic_2(full_width = F) %>%
+ kable_styling(full_width = TRUE) %>%
+  landscape()
+```
+
+```{r BMI-platelets-unadjust,  echo=FALSE}
+options(knitr.kable.NA = "")
+FullName <- c('Plateletcrit','Platelet count (impedence channel)','Platelet count (PLT-F channel)','Side fluorescence','Immature platelet count' ,'Platelet distribution width' ,'Forward scatter','High fluorescence immature platelet fraction','Immature platelet fraction','Side scatter','Platelet large cell ratio','Mean platelet volume')
+Name = c('PCT','PLT (I)','PLT (F)','SFL','IPC','PDW','FSC','H-IPF','IPF','P-LCR','SSC','MPV')
+N = c(27997,29682,27268,29721,27255,27998,29721,29708,27255,29721,30788,27994)
+Beta = c(0.126,0.110,0.104,0.064,0.067,0.029,0.022,-0.017,0.015,0.010,0.010,0.009)
+SE <- c(0.006,0.006,0.006,0.006,0.006,0.006,0.006,0.006,0.006,0.006,0.006,0.006)
+P <- c(1.46E-108,4.50E-84,6.50E-70,4.08E-28,1.27E-27,2.09E-06,1.40E-04,4.43E-03,1.29E-02,7.81E-02,9.09E-02,1.55E-01)
+R <- c(0.132,0.097,0.094,0.021,0.007,0.006,0.026,0.005,0.007,0.041,0.002,0.006)
+Eta <- c(0.107,0.082,0.083,0.000,0.001,0.004,0.001,0.005,0.007,1.58E-04,4.37E-05,4.57E-06)
+CI <- c(0.011,0.011,0.012,0.011,0.012,0.012,0.011,0.012,0.012,0.011,0.011,0.012)
+Lower <- c(0.115,0.099,0.093,0.053,0.055,0.017,0.011,-0.028,0.003,-0.001,-0.002,-0.003)
+Upper <- c(0.137,0.121,0.116,0.076,0.079,0.041,0.034,-0.005,0.027,0.022,0.021)
+mytable = data.frame(cbind(FullName, Name, N, Beta, SE, P, R, Eta, CI, Lower, Upper))
+colnames(mytable) <- c('Full name', 'Short Name',	'N',	'Βeta coefficient',	'SE',	'P value',	'R2',	'Eta2',	'95% CI',	'Lower 95% CI',	'Upper 95% CI')
+mytable %>% kable(caption = " Age and sex adjusted estimates for the association between BMI and platelet traits. Βeta coefficient is the change in platelet measure in SDs per SD higher BMI. Eta squared is the proportion of variance explained by the platelet trait in an ANOVA, whereas adjusted R squared is the variance explained by all the predictor variables in the regression model.", booktabs = TRUE) %>% 
+  kable_classic_2(full_width = F) %>%
+ kable_styling(full_width = TRUE) %>%
+  column_spec(1, width = "6cm")   %>%
+  landscape()
+```
+
+
+Supp2,3,4,5,6 Table 4, Supp Table 7, Fig 4, Table 5, Fig 5
+```{r BMI-platelet-forest, echo = FALSE, fig.cap="Forest plot of the unadjusted observational associations and MR estimates for BMI and platelet traits. Forest plot of the Mendelian randomization (MR) and unadjusted observational estimates for the effect of BMI on platelet traits. Estimate points are filled where P < 0.05. SFL = side fluorescence, IPC = immature platelet count, H-IPF = high fluorescence immature platelet function, FSC = forward scatter, P-LCR = platelet large cell ratio, PDW = platelet distribution width, MPV = mean platelet volume, PCT = plateletcrit, PLT (I) = platelet count (impedance channel), PLT (F) = platelet count (PLT-F channel), SSC = side scatter."}
+include_graphics(path = "figure/BMI_platelets/BMI_platelet_forestplot.pdf", dpi = NA)
+
+```
+
+```{r IPC-aggregation, echo = FALSE, out.height="70%", out.width="85%", fig.cap="Forest plot of the unadjusted observational associations and MR estimates for BMI and platelet traits. Forest plot of the Mendelian randomization (MR) and unadjusted observational estimates for the effect of BMI on platelet traits. Estimate points are filled where P < 0.05. SFL = side fluorescence, IPC = immature platelet count, H-IPF = high fluorescence immature platelet function, FSC = forward scatter, P-LCR = platelet large cell ratio, PDW = platelet distribution width, MPV = mean platelet volume, PCT = plateletcrit, PLT (I) = platelet count (impedance channel), PLT (F) = platelet count (PLT-F channel), SSC = side scatter."}
+include_graphics(path = "figure/BMI_platelets/IPC_aggregation.pdf", dpi = NA)
+
+```
+
+```{r BMI-platelet-cartoon, echo = FALSE, out.height="80%", out.width="85%", fig.cap="Graphical summary of findings"}
+include_graphics(path = "figure/BMI_platelets/Visual_abstract.pdf", dpi = NA)
+
+```

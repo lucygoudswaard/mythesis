@@ -1,6 +1,6 @@
 ---
 author: 'Lucy Goudswaard'
-date: 'October 2021' # Month and year of submission
+date: 'March 2022' # Month and year of submission
 title: "The association between adiposity and platelet function: implications for cardiovascular disease"
 university: "University of Bristol"
 faculty: "Life Sciences"
