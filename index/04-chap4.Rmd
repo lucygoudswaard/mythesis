@@ -69,7 +69,7 @@ column_spec(1, width = "6cm") %>%
 options(knitr.kable.NA = "")
 V = c( "Age (years)", "Sex (1=female, 2=male)", "Smoking frequency (1=never, 2=occasinal, 3=most days/ every day)", "Alcohol intake frequency (1=rarely, 2=<1 a week, 3=1-2 times a week, 4=most days/every day)")
 N = c(2729, 2729, 2667, 2415)
-B = c(00.012, 0.17, 0.022, 0.021)
+B = c(0.012, 0.17, 0.022, 0.021)
 SE <- c(0.001, 0.038, 0.022, 0.021)
 P <- c(1.23E-18, 5.80E-6, 3.16E-5, 7.08E-5)
 AdjR <- c(0.028, 0.007, 0.006, 0.006)
@@ -78,8 +78,8 @@ CI <- c(0.003, 0.075, 0.043, 0.041)
 LowerCI <- c(0.009, 0.10, 0.05, -0.12)
 UpperCI <- c(0.015, 0.25, 0.13, -0.04)
 mytable = data.frame(cbind(V, N, B, SE, P, AdjR, Fstat, CI, LowerCI, UpperCI))
-colnames(mytable) <- c('Variable',	'N',	'Beta coefficient (per 1-unit increase in GRS)',	'Standard error',	'P value',	'Adjusted R2',	'F statistic' , "95% CI", "Lower 95% CI", "Upper 95% CI")
-mytable %>% kable(caption = "Associations between covariates (exposure) and standardised BMI (outcome)", booktabs = TRUE) %>% 
+colnames(mytable) <- c('Variable',	'N',	'Beta coefficient per 1-unit increase in confounder (SDs)',	'Standard error',	'P value',	'Adjusted R2',	'F statistic' , "95% CI", "Lower 95% CI", "Upper 95% CI")
+mytable %>% kable(caption = "Associations between covariables (exposure) and standardised BMI (outcome)", booktabs = TRUE) %>% 
   kable_classic_2(full_width = F) %>%
  kable_styling(full_width = TRUE) %>%
 column_spec(1, width = "5cm")   %>%
