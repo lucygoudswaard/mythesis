@@ -62,6 +62,7 @@ library(dplyr)
 library(ggplot2)
 library(knitr)
 library(readxl)
+library(kableExtra)
 
 # this will allow us to make word documents with relatively ok tables
 doc.type <- knitr::opts_knit$get('rmarkdown.pandoc.to')

@@ -1,1 +1,93 @@
-# Title of Chapter 6
+# Exploring the effects of caloric restriction-induced weight loss on the plasma proteome
+
+## Abstract
+
+## Introduction
+
+## Methods
+
+### Study design and participants
+Samples analysed within this study were collected from participants enrolled in the Diabetes Remission clinical trial (DiRECT). DiRECT was a cluster-randomised trial which took place at 49 primary care practices in Scotland and Tyneside [@Lean2018]. Ethics approval was granted from West 3 Ethics Committee (January, 2014) and the National Health Service (NHS). Participants were recruited between 25th July 2014 and 5th August 2016. Details of the protocol have previously been published [@Leslie2016]. Participants enrolled were between 20-65 years, diagnosed with type 2 diabetes within previous 6 years, had a BMI of between 27-45kg/m^2^. Participants were excluded if they were: using insulin, had a HbA1c concentration of ≥12 % (≥108 mmol/mol), weight loss of >5 kg in the preceding 6 months, an estimated glomerular filtration rate of <30 mL/min per 1.732 m^2^. More exclusion criteria are included in the main trial paper [@Lean2018]. Participants in the control group received best-practice care by guidelines. The intervention group were asked to follow the Counterweright-Plus weight management programme [@Lean2013]. This programme consisted of a total diet replacement (TDR) phase using a low energy diet (825-853 kcal/day) for 3-5 months, followed by structured food reintroduction of 2-8 weeks, with ongoing monthly long-term weight loss maintenance visits. Those in the intervention group had their antidiabetic and antihypertensive drugs discontinued. In total, there were 146 patients in the control group and 119 in the intervention group who remained enrolled in the study at 1 year.
+
+### Included variables
+Age and sex were self-reported. Height was measured with the Frankfort plane horizonal with a protable stadiometer (Chasmors Ltd, London). Weight was measured using Class 111 approved calibrated scales (Marsden Group UK). Blood was donated at various timepoints including at baseline (week 0) and at 1 year (week 52), where HDL cholesterol, tryglycerides, HbA1c and plasma glucose were measured. Systolic blood pressure was measured with the patient seated, rested and with legs uncrossed for ≥5 mins. BMI was calculated by dividing the weight (kg) by the square of the height (m). BMI change was calculated by subtracting BMI at baseline from BMI at 1 year. This BMI change was rank normal transformed (function rntransform() from "moosefun" R package https://github.com/hughesevoanth/moosefun/). The centre attended and list size of the practice (>5700 or ≤5700) determined whether participants were allocated to control or intervention and therefore were recorded.
+ 
+### Proteomics
+Plasma samples were taken from participants at baseline at and 1-year post-randomisation. Protein detection was performed by the SomaScan assay by SomaLogic. As mentioned before, this technique uses Slow Off-rate Modified Aptamers (SOMAmers) which make direct contact with proteins and quantifies protein levels by using a DNA microarray [@Rohloff2014]. There were 5284 proteins included in the array, of which 4601 proteins passed internal quality control checks. The proteomic data was further cleaned using the "metaboprep" R package (https://github.com/MRCIEU/metaboprep), with protein levels from both timepoints all QC'd together. This R package identified no extreme missingness, removed outliers based on principal component analyses and calculated the number of independent proteins by using pairwise correlation coefficients between proteins (869 representative proteins). The package also implemented the Shapiro-Wilk test and took the W statistic to identify proteins which have a normal distribution (W≥0.95). Only 399 proteins had W statistics ≥0.95. This data was then log2 transformed to match protein transformation by Sun et al. [@Sun2018] then adjusted for age and sex (data had already undergone technical adjustment). Protein change was calculated for each individual by subtracting the baseline protein levels from protein levels at one-year. These protein change values were rank normal transformed.
+
+### Statistical analysis
+
+Analyses were performed using R version 3.6.1. 
+
+A total of 265 participants were included in the current analysis. Participant baseline characteristics were summarised as the mean and SD. Baseline characteristics were calculated for both control group (N=146) and intervention (N=119) and were compared across groups using either a two-tailed t-test or a Chi^2^ test. 
+
+The association between BMI change and protein change was explored using multiple linear regression adjusting for centre, list size, age and sex (function lm() from base R "stats" package). Due to the nature of linear regression, outputs of regression provide the mean individual change in protein (in SDs) per SD increase in BMI. Therefore if more weight loss reduces the levels of protein, the beta coefficient is positive [@Figarska2020]. The association between potential confounders (age and sex) and both exposure (BMI change) and outcome (protein change) were explored using linear regression. The difference in BMI change in intervention group compared to control was performed using linear regression, adjusting for centre, list size, age and sex. Covariables (age, sex, centre and list size) were compared across treatment groups. Treatment group was therefore used as an instrument for BMI change in a two stage least squares analysis to estimate the effects of BMI change on protein change using ivreg() function from the "AER" R package (https://github.com/cran/AER/blob/master/R/ivreg.R). As a sensitivity analysis, for proteins which associate with BMI change, baseline protein levels were compared across control and intervention groups. P values were adjusted for multiple testing based on the number of representative proteins (0.05/869 = 5.8x10^-5^). 
+
+Enrichment analysis was performed by xxxxxxxxxx.
+
+BMI change-protein change estimates from the multiple linear regression analyses and two stage least squares analyses were compared using a Deming regression (deming() function from "Deming" R package. Deming regression is a special type of total least squares (TSL) and differs from linear regression (OLS) as it accounts for error in both the x- and y- axes. In efforts to further elucidate which proteins are altered by adiposity, a comparison between the BMI-protein associations in INTERVAL (ref chunk) and the BMI change-protein change associations in the current analyses was also performed using a Deming regression. There were 2803 unique proteins overlapping across the two cohorts. Estimates across the two cohorts were compared using a Deming regression. 
+
+## Results
+
+### Participant characteristics
+
+Participants displayed similar characteristics across control and intervention groups (Table \@ref(tab:DiRECT-participants)). The participants in the intervention group were younger and included fewer participants from Scotland but more from Tyneside.
+
+
+```{r DiRECT-participants,  echo=FALSE}
+options(knitr.kable.NA = "")
+var = c("Age", "Sex", "Male", "Female", "Body mass index (kg/m2)", "Systolic Blood Pressue (mmHg)", "HbA1c (mmol/mol", "Glucose (mmol/l)", "Insulin (uu/ml)", "Cholesterol (mmol/l)", "HDL (mmol/l)", "Triglycerides (mmol/l)", "Diabetes duration (years)", "Number of antidiabetic medications", 0, 1, 2, 3, 4, "Centre", "Scotland", "Tyneside", "List size", ">5700", "=<5700")
+incmean = c('56.2 (6.9)',NA,'62 %','38 %','34.2 (4.3)','137 (15)','58 (11)','8.8 (2.5)','22 (14)','4.3(1.1)','1.2 (0.3)','1.9 (0.9)','3.0 (1.7)', NA, '23 %','53 %','18 %','5 %','1 %', NA, '77 %','23 %', NA, '49 %','51 %')
+ninc = c(146, 146, NA, NA, 146, 146, 146,146, 146,146,146,146,146,146, NA, NA, NA, NA, NA, 146, NA, NA, 146, NA, NA)
+excmean = c('53.9 (7.1)', NA, '57 %','43 %','35.0 (4.6)','135 (17)','60 (13)','9.2 (3.2)','24 (15)','4.3 (1.1)','1.1 (0.3)','2.0 (1.4)','3.2 (1.6)', NA, '24 %','44 %','23 %','7 %','3 %', NA, '62 %','38 %', NA, '58 %','42 %')
+excn <- c(119,119,NA,NA,119,119,119,118,119,118,118,118,119,119,NA,NA,NA,NA,NA,119,NA,NA,119,NA,NA)
+ChiP <- c(0.01,0.54,NA,NA,0.19,0.19,0.15,0.24,0.27,0.90,0.04,0.48,0.37,0.50,NA,NA,NA,NA,NA,0.01,NA,NA,0.20,NA,NA)
+mytable = cbind(var, incmean, ninc, excmean, excn, ChiP)
+colnames(mytable) <- c("Variable",  "Control mean (SD) or %", "Control N", "Intervention mean (SD) or %", "Intervention N", "P value for difference (Two tailed t-test or Chi2 test)" )
+mytable %>% kable(caption = "DiRECT participant characteristics", booktabs = TRUE) %>% 
+  kable_classic_2(full_width = F) %>%
+  #kable_paper("hover", full_width = F)
+   add_indent(c(3, 4, 15:19, 21, 22, 24, 25), level_of_indent = 1) %>%
+ kable_styling(full_width = TRUE) %>%
+column_spec(1, width = "6cm") %>%
+  landscape()
+```
+### Association between intervention and BMI change
+Mean BMI change in all participants was -1.8kg/m^2^ (SD 2.5 kg/m^2^), with a mean change in the control group of -0.36kg/m^2^ (SD 1.3) vs -3.6kg/m^2^ (SD 2.5) in the intervention. After rank normal transformation of BMI change, the mean BMI change was 0.57 SDs in control group and -0.69 SDs in the intervention, giving a difference in BMI change of -1.26 SDs (SE 0.099, p=9.83x10^-29^). 
+
+(Figure of boxplot for Intervention effect on BMI change)
+
+### Association between BMI change and protein change
+Linear regression was used to estimate the effect of BMI change on protein change. After adjusting for multiple testing (p<5.8x10^-5^), 254 proteins out of 4601 proteins were associated with BMI change (5.5 %). Although overall there was weight loss, beta coefficients can be interpreted as the change in protein level (SDs) per SD increase in BMI. A negative association was observed with BMI and scavenger receptor class A member 5 (SCAR5, -0.62 SDs increase per SD increase in BMI, 95% CI -0.72 to -0.53 p=3.7x10^-29^). 
+
+### Association between confounders and exposure/outcome
+Age and sex were not associated with BMI change. Age and sex were also not associated with protein change after multiple adjustment.
+
+### Two-stage least squares analysis
+Treatment group was used as an instrument for BMI change in a two-stage least squares analysis. After adjustment for multiple testing, BMI change was associated with changes in levels of 171 proteins (3.7 %). These estimates are shown in Fig xx, along with each proteins BMI change-protein change estimate from the simple linear regression model. The protein which showed the strongest association with BMI change was SCAR5 (-0.91 SDs per SD increase in BMI, 95% CI -1.07 to -0.75, p=1.54x10^-23^). Other proteins displayed a positive association with BMI change, including Fatty acid-binding protein, heart (FABP1, 0.86 SDs increase per SD increase in BMI, 95% CI 0.69-1.04, p=6.3x10^-19^). Aminoacyclase-1 was also positively associated with BMI change (0.80 SDs increase in protein per SD increase in BMI, 95% CI 0.64 to 0.97, p=4.9x10^-18^).
+
+### Sensitivity analysis
+Proteins which were associated with BMI change were compared across control and intervention groups at baseline. There was not strong evidence for any differences in baseline levels of proteins. Potentially handful...
+
+### Comparison of OLS and TSLS results
+144 proteins were associated with BMI in both analyses (Fig ref), with largest effect estimates across methods for SCAR5, Adiponectin, ApoF, growth hormone receptor (GHR), PTPRU, SHBG.. ? No of consistent/not.  
+
+### Enrichment analysis
+
+### Comparison of BMI effects across DiRECT and INTERVAL
+BMI-protein estimates from this study were compared with effect estimates from INTERVAL (ref chunk). Both cohorts provided evidence for an effect of BMI on a range of proteins. Figure xx shows the BMI-protein estimates for the proteins which were included in both DiRECT and INTERVAL. There was consistent evidence across both studies for a BMI-increasing effect on proteins including fumarylacetoacetase (FAAA), alcohol dehydrogenase 4 (ADH4), growth hormone receptor (GHR) and carboxypeptidase M (CBPM). Furthermore, higher BMI had a lowering effect on levels of sex hormone binding globulin (SHBG), as well as insulin-like growth factor binding protein 1/2 (IGFBP1/2). 
+
+
+## Discussion
+ 1. Overall effect
+ 2. Comparison to other studies? Caloric restriction and bariatric surgery?
+ - [@Geyer2016] Longitudinal weight loss (7 time points over 14 months) in 43 obese participants using mass spec. Weight loss led to increase in ApoF, increase in ITIH3 and an increase in SHBG, and increase in Corticosteroid-binding globulin.
+ - Figarska 130/263 olink proteins associated with changes in BMI. If protein decreased upon weight loss = positive beta coefficient. 118 decreased with weight loss, 12 increased. Supp Table 2. Those in agreement = igfb1/igfbp2, e-selectin, cd163.
+ - [@OllerMoreno2018] Using LC-MS/MS. Compared before and after. 473 individuals with overweight/obesity. SHBG, Adiponectin, IGFBP2, galectin-3-binding protein.  
+ - [@Piening2018] Hypercaloric challenge followed by hypocaloric challenge in 23 subjects. Supplementary Tables have results but they are confusing.
+ - [@Carayol2017] 512 participants on low calorie diet for 8 weeks. DIOgenes SomaLogic. 1129 proteins - 104 associated with weight loss. Weight loss led to changes in leptin, GHR, TIG2, IGFBP2, RET proto-oncogene (granulysin)
+ - [@Bruderer2019] DiOGenes. Low calorie for 8 weeks, followed by weight maintenance diet. Overlap with proteins (supplement). Apolipoprotein F, INHBC, SHBG. 
+ 3. Comparison of estimates across study designs.
+ 4. Biology - inflammation?
+ 5. Implications for platelet function / thrombosis. Strindb. input beta coefficients with uniprot IDs and there is pathway enrichment for platelet function and platelet aggregation (256 genes).
+
