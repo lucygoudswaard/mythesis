@@ -1,4 +1,13 @@
-\textbf{ACR} - acronym <br>
 
-\textbf{aACR} - another acronym <br>
+```{r abbreviations,  echo=FALSE}
+library(readxl)
+library(tidyr)
+library(kableExtra)
+abbreviations <- read_xlsx("figure/Abbreviations/Abbreviations.xlsx")
+abbreviations <- abbreviations[order(abbreviations$Abbreviation),]
 
+abbreviations %>% kable(caption = "Full list of abbreviations", booktabs = TRUE) %>% 
+  kable_classic_2(full_width = F) %>%
+ kable_styling(full_width = TRUE) %>%
+  column_spec(1, width = "3cm") 
+```

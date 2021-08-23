@@ -1,9 +1,73 @@
-# Pathways linking BMI and platelet function: do the chemokines MDC and TARC play a role?
+# The effect of obesity on platelet function: a clinical pilot study
 
-Why these? Suggested they could be raised in obesity.
+The following results section is a clinical study. Recruitment into this study has been severely affected by COVID-19 as we had approvals to start recruitment in March 2020. All data in this chapter was collected by myself, apart from the platelet-neutrophil assay data, which was performed by Dr Chris Williams. 
 
-```{r MDC-TARC-agg, echo = FALSE, fig.cap="The effect of preincubating platelets with MDC or TARC (5 mins) before application of PAR1-AP (5 mins) on aggregation. One-way repeated measures ANOVA with Dunnett’s multiple comparisons. N=7. Mean+SEM displayed."}
-include_graphics(path = "figure/Chemokines/Max_aggregation_TARC_MDC.pdf", dpi = NA)
+## Background
+### Obesity is associated with cardiovascular events e.g. heart attacks and stroke
+
+### Platelets are a key cell involved in thrombosis
+
+The aims of this study were to determine whether an increased BMI is associated with an increase in platelet function and an alteration in platelet signalling compared to healthy controls.
+
+## Methods
+### Materials
+Protease-activated receptor 1 (PAR-1)-activating peptide (SFLLRN-NH2) was from Bachem (Bubendorf, Switzerland), crosslinked collagen-related peptide (CRP-XL) from Prof. Richard Farndale (Department of Biochemistry, University of Cambridge, UK). Adenosine diphosphate (ADP) was from Sigma-Aldrich (Poole, UK). cOmplete mini protease inhibitor tablets and phosSTOP phosphatase inhibitors were from Roche Life Sciences (Welwyn Garden City, UK). The Pierce bicinchoninic acid (BCA) assay was from ThermoFisher Scientific (Altrincham, UK). Sodium Citrate Vacutainer® tubes, FixLyse, PE-Cy5-conjugated anti-CD42b, FITC-conjugated CD61 antibody, Fc block, PE-conjugated human platelet GPVI antibody, PAC1-FITC and anti-CD62P-PE antibodies were from BD (Wokingham, UK). FITC-conjugated anti-human CD41 and CD42b antibody were from BioLegend (London, UK). PKCα antibody was obtained from Cell Signalling Technology (New England Biolabs, Hitchin, UK).  
+
+### Study population
+This study was approved by the London Riverside Research Ethics Committee. Patients with a body mass index of >40kg/m^2^ were recruited from Bristol Bariatric Service at Southmead Hospital, Bristol. Participants with a BMI between 18 and 25 kg/m^2^ were recruited from the University of Bristol. Inclusion criteria for participants were: aged 18 years and over and able to give written informed consent. Participants were excluded if they were pregnant or lactating, had any known clotting or bleeding disorders (e.g. von Willebrand disease or drug-induced thrombocytopenia), or if they had taken any antiplatelet medication within the previous 14 days such as clopidogrel, ticagrelor or aspirin. Recruitment occurred between May and June 2021. As a pilot study, a total of four bariatric patients with obesity and four controls with a BMI in the normal range were recruited.
+
+### Isolation of platelet rich plasma (PRP) and platelet lysates
+Blood was taken by venipuncture into vacutainers containing sodium citrate (3.2%). Blood was centrifuged (1000 RPM, 17 mins). PRP was isolated and diluted 1:40 in HEPES Tyrode's (145 mM NaCl, 3 mM KCl, 0.5 mM Na~2~HPO~4~, 1 mM MgS0~4~.7H~2~O, 10 mM HEPES, pH 7.4, 0.1% [w/v] D‐glucose).  To create platelet lysates, acid citrate dextrose (1:7) and apyrase (0.02 U/mL) were added  to isolated PRP. PRP was centrifuged (1700 RPM, 10 mins). Platelets were double washed in CGS buffer (120 mM NaCl, 25.8 mM sodium citrate dihydrate, 0.1% [w/v] D‐glucose, 0.02 U/mL apyrase, pH 6.5). Platelets were resuspended in radioimmunoprecipitation assay buffer (RIPA: 25 mM HEPES, 200 mM NaCL, 1mM EDTA, 1 % (v/v) NP40, 0.5 % (w/v) sodium deoxychelate, 0.1 % (w/v) SDS) supplemented with a protease and phosphatase inhibitor for 10 minutes on ice. Lysates were centrifuged at 10000 RPM, at 4°C for 5 minutes. Supernatant was removed and a bicinchoninic acid (BCA) assay was performed to calculate sample protein concentrations. Samples were stored in a -80°C freezer until used for proteomics analysis. 
+
+
+### Integrin aIIbB3 activation and P-selectin expression measured by flow cytometry
+
+### Surface receptor levels measured by flow cytometry
+
+### Platelet-neutrophil assay measured by flow cytometry
+
+### Tandem Mass Tag Mass Spectrometry (TMT-MS) quantification of platelet proteins
+
+## Results
+
+### Participant characteristics
+The characteristics of participants included in the study are shown in Table  \@ref(tab:obesity-platelets-participants)
+
+```{r obesity-platelets-participants,  echo=FALSE}
+options(knitr.kable.NA = "")
+f = c("Age", "Sex", "Body mass index (kg/m2)", "Smoker", "Hypertensive (140/90 mmHg)", "T2D", "T2D medication", "Metformin", "Dapagliflozin", "Dulaglutide", "Previous COVID-19 infection")
+co = c("42.2 (14.1)", "75 %", "21.8 (2.1)", "0 %", "0 %", "0 %", "NA", NA, NA,NA, "0 %")
+i = c('46 (18.0)','75 %','49.3 (8.8)','0 %','25 %','50 %', NA, '25 %','25 %','25 %','75 %')
+p <- c(0.77,1.0,0.0009,1.0,1.0,0.43,"NA", NA, NA, NA, 0.14) 
+mytable = data.frame("Variable"  = f, "Control mean (SD) or %" = co, "Bariatric patient mean (SD) or %" = i, "P value for difference" = p)
+colnames(mytable) <- c('Variable', "Control mean (SD) or %", "Bariatric patient mean (SD) or %", "P value for difference" )
+mytable %>% kable(caption = "Characteristics of included participants", booktabs = TRUE) %>% 
+  kable_classic_2(full_width = F) %>%
+  #kable_paper("hover", full_width = F)
+   add_indent(c(8, 9, 10), level_of_indent = 1) %>%
+ kable_styling(full_width = TRUE) %>%
+column_spec(1, width = "3cm")
+```
+
+### Basal receptors
+(ref:scaption) Comparison of basal integrin α~IIb~β~3~ activation, P-selectin expression and surface receptors levels across control and bariatric patient groups
+(ref:caption) Bar graphs comparing A) B) and C) in diluted PRP. N=4.
+
+```{r basal-integrin-pselectin-receptor-bariatric, echo = FALSE, fig.cap="(ref:caption)", fig.scap= "(ref:scaption)"}
+include_graphics(path = "figure/Bariatric_study/Basal_surface_receptors.pdf", dpi = NA)
 
 ```
 
+
+### Agonist-induced integrin α~IIb~β~3~ and P-selectin expression
+
+(ref:scaption) Concentration response curves of integrin activation and P-selectin expression
+(ref:caption) Concentration response curves in diluted PRP of: integrin activation in response to A) PAR1-AP, B) ADP and C) CRP and P-selectin expression in response to D) PAR1-AP, E) ADP, F) CRP. N=4.
+
+```{r agonist-integrin-pselectin, echo = FALSE, fig.cap="(ref:caption)", fig.scap= "(ref:scaption)"}
+include_graphics(path = "figure/Bariatric_study/Agonist_Integrin_Pselectin.pdf", dpi = NA)
+
+```
+
+
+## Discussion
