@@ -1,41 +1,51 @@
 # The effect of obesity on platelet function: a clinical pilot study
 
-The following results section is a clinical study. Recruitment into this study has been severely affected by COVID-19 as we had approvals to start recruitment in March 2020. All data in this chapter was collected by myself, apart from the platelet-neutrophil assay data, which was performed by Dr Chris Williams. 
+The following results section is a clinical study. Recruitment into this study has been severely affected by COVID-19 as we had approvals to start recruitment in March 2020. All data in this chapter was collected by myself, apart from the platelet-neutrophil assay data, which was performed by Dr Chris Williams due to time constraints when receiving patient samples. The proteomic data was analysed by the Proteomics facility at the University of Bristol. 
 
 ## Background
 ### Obesity is associated with cardiovascular events e.g. heart attacks and stroke
 
+
 ### Platelets are a key cell involved in thrombosis
 
-The aims of this study were to determine whether an increased BMI is associated with an increase in platelet function and an alteration in platelet signalling compared to healthy controls.
+The aims of this clinical study were to determine whether an increased BMI is associated with an increase in platelet function and an alteration in platelet signalling compared to healthy controls. In light of the recent pandemic
 
 ## Methods
 ### Materials
-Protease-activated receptor 1 (PAR-1)-activating peptide (SFLLRN-NH2) was from Bachem (Bubendorf, Switzerland), crosslinked collagen-related peptide (CRP-XL) from Prof. Richard Farndale (Department of Biochemistry, University of Cambridge, UK). Adenosine diphosphate (ADP) was from Sigma-Aldrich (Poole, UK). cOmplete mini protease inhibitor tablets and phosSTOP phosphatase inhibitors were from Roche Life Sciences (Welwyn Garden City, UK). The Pierce bicinchoninic acid (BCA) assay was from ThermoFisher Scientific (Altrincham, UK). Sodium Citrate Vacutainer® tubes, FixLyse, PE-Cy5-conjugated anti-CD42b, FITC-conjugated CD61 antibody, Fc block, PE-conjugated human platelet GPVI antibody, PAC1-FITC and anti-CD62P-PE antibodies were from BD (Wokingham, UK). FITC-conjugated anti-human CD41 and CD42b antibody were from BioLegend (London, UK). PKCα antibody was obtained from Cell Signalling Technology (New England Biolabs, Hitchin, UK).  
+Protease-activated receptor 1 (PAR-1)-activating peptide (SFLLRN-NH2) was from Bachem (Bubendorf, Switzerland), crosslinked collagen-related peptide (CRP-XL) from Prof. Richard Farndale (Department of Biochemistry, University of Cambridge, UK). Adenosine diphosphate (ADP) was from Sigma-Aldrich (Poole, UK). cOmplete mini protease inhibitor tablets and phosSTOP phosphatase inhibitors were from Roche Life Sciences (Welwyn Garden City, UK). The Pierce bicinchoninic acid (BCA) assay was from ThermoFisher Scientific (Altrincham, UK). Sodium Citrate Vacutainer® tubes, FixLyse, PE-Cy5-conjugated anti-CD42b, FITC-conjugated CD61 antibody, Fc block, PE-conjugated human platelet GPVI antibody, PAC1-FITC and anti-CD62P-PE antibodies were from BD (Wokingham, UK). FITC-conjugated anti-human CD41 and CD42b antibody were from BioLegend (London, UK). 
 
 ### Study population
-This study was approved by the London Riverside Research Ethics Committee. Patients with a body mass index of >40kg/m^2^ were recruited from Bristol Bariatric Service at Southmead Hospital, Bristol. Participants with a BMI between 18 and 25 kg/m^2^ were recruited from the University of Bristol. Inclusion criteria for participants were: aged 18 years and over and able to give written informed consent. Participants were excluded if they were pregnant or lactating, had any known clotting or bleeding disorders (e.g. von Willebrand disease or drug-induced thrombocytopenia), or if they had taken any antiplatelet medication within the previous 14 days such as clopidogrel, ticagrelor or aspirin. Recruitment occurred between May and June 2021. As a pilot study, a total of four bariatric patients with obesity and four controls with a BMI in the normal range were recruited.
+This study was approved by the London Riverside Research Ethics Committee. Bariatric patients with a body mass index of >40kg/m^2^ were recruited from the Department of Bariatric and Metabolic Surgery at Southmead Hospital, Bristol. Participants with a BMI between 18 and 25 kg/m^2^ were recruited from the University of Bristol. Inclusion criteria for participants were: aged 18 years and over and able to give written informed consent. Participants were excluded if they were pregnant or lactating, had any known clotting or bleeding disorders (e.g. von Willebrand disease or drug-induced thrombocytopenia), or if they had taken any antiplatelet medication within the previous 14 days such as clopidogrel, ticagrelor or aspirin. Recruitment occurred between May and June 2021. As a pilot study, a total of four bariatric patients with obesity and four control participants were recruited. Bariatric patients donated blood before bariatric surgery.
 
 ### Isolation of platelet rich plasma (PRP) and platelet lysates
 Blood was taken by venipuncture into vacutainers containing sodium citrate (3.2%). Blood was centrifuged (1000 RPM, 17 mins). PRP was isolated and diluted 1:40 in HEPES Tyrode's (145 mM NaCl, 3 mM KCl, 0.5 mM Na~2~HPO~4~, 1 mM MgS0~4~.7H~2~O, 10 mM HEPES, pH 7.4, 0.1% [w/v] D‐glucose).  To create platelet lysates, acid citrate dextrose (1:7) and apyrase (0.02 U/mL) were added  to isolated PRP. PRP was centrifuged (1700 RPM, 10 mins). Platelets were double washed in CGS buffer (120 mM NaCl, 25.8 mM sodium citrate dihydrate, 0.1% [w/v] D‐glucose, 0.02 U/mL apyrase, pH 6.5). Platelets were resuspended in radioimmunoprecipitation assay buffer (RIPA: 25 mM HEPES, 200 mM NaCL, 1mM EDTA, 1 % (v/v) NP40, 0.5 % (w/v) sodium deoxychelate, 0.1 % (w/v) SDS) supplemented with a protease and phosphatase inhibitor for 10 minutes on ice. Lysates were centrifuged at 10000 RPM, at 4°C for 5 minutes. Supernatant was removed and a bicinchoninic acid (BCA) assay was performed to calculate sample protein concentrations. Samples were stored in a -80°C freezer until used for proteomics analysis. 
 
+### Platelet parameters measured by Sysmex
+Citrated whole blood (200 uL) was analysed using the Sysmex XE-2100 haematology analyser. Platelet readouts were platelet count (PLT), immature platelet fraction (IPF), immature platelet count (IPC), side fluorescence (SFL, a measure of mRNA content), forward scatter (FSC, a measure of platelet size), side scatter (SSC, a measure of granularity).
 
-### Integrin aIIbB3 activation and P-selectin expression measured by flow cytometry
+### Integrin α~IIb~β~3~ activation and P-selectin expression measured by flow cytometry
+Isolated PRP was diluted 1:40 in HEPES Tyrode's, with the antibodies FITC-conjugated PAC1 and PE-conjugated CD62P in a 2:1 ratio. Master mix was added to pre-prepared vacuum packed 96 well plates to a final folume of 50 uL. Agonists used were PAR1-AP, ADP and CRP, which were freeze-dried onto the plates [@Chan2018], as well as HEPES Tyrode's which was used for a measurement of unstimulated integrin α~IIb~β~3~ activation and P-selectin expression. Platelets were stimulated with agonists for 10 minutes and were fixed with 2 % paraformaldehyde (PFA) for 20 minutes. Plates were analysed using the BD Accuri C6 Plus flow cytometer (BD Biosciences, Wokingham, UK), where the median fluorescence intensity was derived from 10,000 gated platelets.
 
 ### Surface receptor levels measured by flow cytometry
+Diluted PRP (1:40) was used for unstimulated surface receptor detection. Antibody was added (1:10 v/v) to a final volume of 50 uL. Antibodies used include anti-human CD41, CD42b, CD61 (FITC-conjugated) and GPVI and CD110 (PE-conjugated). Platelets were gated and the median fluorescence was reported from a total of 10,000 events. 
 
 ### Platelet-neutrophil assay measured by flow cytometry
+Citrated whole blood was diluted 1 in 10 in HEPES-Tyrode's buffer and incubated with FITC-conjugated anti-CD41 and PE-conjugated anti-C45 antibodies at room temperature for 15 mins. Samples were either stimulated (+ 5 ug/mL CRP) or unstimulated (+ vehicle). Samples were fixed with FixLyse for 10 minutes, followed by 4 % PFA for 10 minutes. Fluorescence was quantified using the flow cytometer, where 1000 neutrophil events were analysed based on a gating of CD45 and SSC parameters. Aggregates of platelets and neutrophils were defined by being both CD41+ and CD45+.
 
 ### Tandem Mass Tag Mass Spectrometry (TMT-MS) quantification of platelet proteins
+Platelet lysate samples (50 ug total protein) were digested with trypsin and labelled with TMT 15 plex reagents (Thermo Fisher Scientific, Loughborough, UK). Labelled samples were pooled. The pooled sample was evaporated to dryness then resuspended in formic acid (5%). The pooled sample was then desalted using a SepPak cartridge (Waters, Milford, Massachussetts, USA). Eluate from the SepPak cartridge was evaporated to dryness and resuspended prior to fractionation by high pH reversed-phase chromatography using an Ultimate 3000 liquid chromatography system (Thermo Fisher Scientific). Further fractionation occurred using high pH RP fractions using the Ulitamte 3000 nano-LC system in line with an Orbitrap Fusion Tribrid Mass Spectrometer (Thermo Fisher Scientific).
+
+### Statistical analysis
+Data was analysed using GraphPad Prism 8. If data displayed a normal distribution (based on Shapiro-Wilk p-value and W statistic), a parametric test was used (e.g. unpaired t-test or one way ANOVA), otherwise a nonparametric test was used. Concentration-response curve were plotted using a four parameter variable slope. To compare concentration-response curve parameters, logEC50s and curve maxes were compared. A Fisher's exact test was used to compare proportions of categorical variables. Due to limited power, caution should be taken when considering p-values.
 
 ## Results
 
 ### Participant characteristics
-The characteristics of participants included in the study are shown in Table  \@ref(tab:obesity-platelets-participants)
+The characteristics of participants included in the study are shown in Table  \@ref(tab:obesity-platelets-participants). The mean BMI in the control group was 21.8 kg/m^2^ (SD 2.1 kg/m^2^) and 49.3 kg/m^2^ (SD 8.8 kg/m^2^). Participants in the control group and bariatric patient group were age and sex matched. Bariatric patients exhibited similar smoking habits to control participants, however they displayed increased rates of T2D and previous symptomatic COVID-19 infection.
 
 ```{r obesity-platelets-participants,  echo=FALSE}
 options(knitr.kable.NA = "")
-f = c("Age", "Sex", "Body mass index (kg/m2)", "Smoker", "Hypertensive (140/90 mmHg)", "T2D", "T2D medication", "Metformin", "Dapagliflozin", "Dulaglutide", "Previous COVID-19 infection")
+f = c("Age", "Sex", "Body mass index (kg/m2)", "Smoker", "Hypertensive (140/90 mmHg)", "Type 2 Diabetes", "Type 2 Diabetes medication", "Metformin", "Dapagliflozin", "Dulaglutide", "Previous COVID-19 infection")
 co = c("42.2 (14.1)", "75 %", "21.8 (2.1)", "0 %", "0 %", "0 %", "NA", NA, NA,NA, "0 %")
 i = c('46 (18.0)','75 %','49.3 (8.8)','0 %','25 %','50 %', NA, '25 %','25 %','25 %','75 %')
 p <- c(0.77,1.0,0.0009,1.0,1.0,0.43,"NA", NA, NA, NA, 0.14) 
@@ -49,9 +59,28 @@ mytable %>% kable(caption = "Characteristics of included participants", booktabs
 column_spec(1, width = "3cm")
 ```
 
+### Platelet parameters
+
+Platelet traits measured by Sysmex were compared across bariatric and control groups (Table \ref(tab:obesity-platelets-parameters)). There was no statistical evidence for an effect of obesity on platelet parameters. However, IPC and IPF did display larger mean values compared to controls, but they also had relatively large SDs in the bariatric patient group. A higher N would be required to detect whether there is any difference between groups. 
+```{r obesity-platelets-parameters,  echo=FALSE}
+options(knitr.kable.NA = "")
+f = c("Platelet count", "Immature platelet fraction", "Immature platelet count", "Side fluorescence", "Forward scatter", "Side scatter")
+co = c("257.8 (29.1)", "3.8 (2.3)", "9.3 (4.9)", "82.0 (5.8)", "53.8 (5.5)", "40.3 (1.1)")
+i = c("235.8 (61.5)", "7.3 (8.3)", "16.3 (16.3)", "85.1 (9.8)", "60.5 (8.8)", "41.8 (3.0)")
+p <- c(0.54,0.44,0.45,0.61,0.24,0.37) 
+mytable = data.frame("Platelet trait"  = f, "Control mean (SD) or %" = co, "Bariatric patient mean (SD) or %" = i, "P value for difference" = p)
+colnames(mytable) <- c('Variable', "Control mean (SD)", "Bariatric patient mean (SD)", "P value for difference" )
+mytable %>% kable(caption = "Platelet traits measured by Sysmex XE-2100", booktabs = TRUE) %>% 
+  kable_classic_2(full_width = F) %>%
+  #kable_paper("hover", full_width = F)
+ kable_styling(full_width = TRUE)
+```
+
 ### Basal receptors
-(ref:scaption) Comparison of basal integrin α~IIb~β~3~ activation, P-selectin expression and surface receptors levels across control and bariatric patient groups
-(ref:caption) Bar graphs comparing A) B) and C) in diluted PRP. N=4.
+Unstimulated platelet receptor levels were compared across bariatric patient and control participant groups. Basal integrin α~IIb~β~3~ activation and P-selectin expression were similar across groups. Similarly, other platelet receptors were not different across groups. 
+
+(ref:scaption1) Comparison of basal integrin α~IIb~β~3~ activation, P-selectin expression and surface receptors levels across control and bariatric patient groups
+(ref:caption1) Diluted PRP was used for experiments, where platelets were incubated with antibodies for 10 minutes before fixing. Bar graphs comparing A) Basal integrin α~IIb~β~3~ activation B) Basal  P-selectin expression and C) Basal surface receptor expression across bariatric patient and control groups. N=4. P-values indicated for unpaired t-test results.
 
 ```{r basal-integrin-pselectin-receptor-bariatric, echo = FALSE, fig.cap="(ref:caption)", fig.scap= "(ref:scaption)"}
 include_graphics(path = "figure/Bariatric_study/Basal_surface_receptors.pdf", dpi = NA)
@@ -61,13 +90,38 @@ include_graphics(path = "figure/Bariatric_study/Basal_surface_receptors.pdf", dp
 
 ### Agonist-induced integrin α~IIb~β~3~ and P-selectin expression
 
-(ref:scaption) Concentration response curves of integrin activation and P-selectin expression
-(ref:caption) Concentration response curves in diluted PRP of: integrin activation in response to A) PAR1-AP, B) ADP and C) CRP and P-selectin expression in response to D) PAR1-AP, E) ADP, F) CRP. N=4.
+Markers of platelet activation were compared in response to different platelet agonists. 
 
-```{r agonist-integrin-pselectin, echo = FALSE, fig.cap="(ref:caption)", fig.scap= "(ref:scaption)"}
+(ref:scaption2) Concentration response curves of integrin activation and P-selectin expression
+(ref:caption2) Concentration response curves in diluted PRP of: integrin activation in response to A) PAR1-AP, B) ADP and C) CRP and P-selectin expression in response to D) PAR1-AP, E) ADP, F) CRP. N=4.
+
+```{r agonist-integrin-pselectin, echo = FALSE, fig.cap="(ref:caption2)", fig.scap= "(ref:scaption2)"}
 include_graphics(path = "figure/Bariatric_study/Agonist_Integrin_Pselectin.pdf", dpi = NA)
 
 ```
 
+### Platelet-neutrophil aggregates
+(ref:scaption2b) Comparison of platelet-neutrophil aggregates
+(ref:caption2b) Comparison of platelet-neutrohpil aggregates across bariatric patient and control participant groups in unstimulated and stimulated (5 ug/mL CRP) conditions. N=4. P-values provided for the results of a two-way ANOVA with Sidak's multiple comparisons tests.
+
+```{r platelet-neutrophil, echo = FALSE, fig.cap="(ref:caption2b)", fig.scap= "(ref:scaption2b)"}
+include_graphics(path = "figure/Bariatric_study/Plt-neu_aggregates.pdf", dpi = NA)
+
+```
+
+### Proteomics
+
+#### PCA
+
+### Volcano plot
 
 ## Discussion
+
+This study has explored the effect of obesity on platelet parameters and platelet function. Initial analyses are inconclusive as the experiment lacks power. Despite this, optimisation of experimental techniques used within the study provides a means of exploring effects in the future. 
+
+
+
+
+Overall effects
+We have been able to optimise common platelet experiments to be more high throughput for patient studies.
+Limitations - what we initially aimed to do wasnt possible so power is limited.

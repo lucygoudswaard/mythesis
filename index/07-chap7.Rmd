@@ -1,13 +1,26 @@
 # Exploring the effects of caloric restriction-induced weight loss on the plasma proteome
 
-## Abstract
+## Background
 
-## Introduction
+
+
+The previous results chapter examined the effect of BMI on the plasma proteome and provided estimates for the average change in proteins per average difference in BMI in a general population, using Mendelian randomization. Triangulation of evidence by using different study is important to help determine the effects of adiposity. The Diabetes REmission Clinical Trial (DiRECT) consisted of a group of patients who had overweight/obesity and type 2 diabetes (T2D) and who were either given guideline T2D care or a intervention to help with weight loss. This chapter therefore aimed to
+
+1) Examine the effect of BMI change on the plasma proteome.
+2) Compare BMI-protein effects across study designs (Results from Chapter \@ref(BMI-protein-MR)).
 
 ## Methods
 
 ### Study design and participants
-Samples analysed within this study were collected from participants enrolled in the Diabetes Remission clinical trial (DiRECT). DiRECT was a cluster-randomised trial which took place at 49 primary care practices in Scotland and Tyneside [@Lean2018]. Ethics approval was granted from West 3 Ethics Committee (January, 2014) and the National Health Service (NHS). Participants were recruited between 25th July 2014 and 5th August 2016. Details of the protocol have previously been published [@Leslie2016]. Participants enrolled were between 20-65 years, diagnosed with type 2 diabetes within previous 6 years, had a BMI of between 27-45kg/m^2^. Participants were excluded if they were: using insulin, had a HbA1c concentration of ≥12 % (≥108 mmol/mol), weight loss of >5 kg in the preceding 6 months, an estimated glomerular filtration rate of <30 mL/min per 1.732 m^2^. More exclusion criteria are included in the main trial paper [@Lean2018]. Participants in the control group received best-practice care by guidelines. The intervention group were asked to follow the Counterweright-Plus weight management programme [@Lean2013]. This programme consisted of a total diet replacement (TDR) phase using a low energy diet (825-853 kcal/day) for 3-5 months, followed by structured food reintroduction of 2-8 weeks, with ongoing monthly long-term weight loss maintenance visits. Those in the intervention group had their antidiabetic and antihypertensive drugs discontinued. In total, there were 146 patients in the control group and 119 in the intervention group who remained enrolled in the study at 1 year.
+Samples analysed within this study were collected from participants enrolled in the Diabetes Remission clinical trial (DiRECT). DiRECT was a cluster-randomised trial which took place at 49 primary care practices in Scotland and Tyneside [@Lean2018]. Ethics approval was granted from West 3 Ethics Committee (January, 2014) and the National Health Service (NHS). Participants were recruited between 25th July 2014 and 5th August 2016. Details of the protocol have previously been published [@Leslie2016]. Participants enrolled were between 20-65 years, diagnosed with T2D within previous 6 years, had a BMI of between 27-45kg/m^2^. Participants were excluded if they were: using insulin, had a HbA1c concentration of ≥12 % (≥108 mmol/mol), weight loss of >5 kg in the preceding 6 months, an estimated glomerular filtration rate of <30 mL/min per 1.732 m^2^. More exclusion criteria are included in the main trial paper [@Lean2018]. Participants in the control group received best-practice care by guidelines. The intervention group were asked to follow the Counterweright-Plus weight management programme [@Lean2013]. This programme consisted of a total diet replacement (TDR) phase using a low energy diet (825-853 kcal/day) for 3-5 months, followed by structured food reintroduction of 2-8 weeks, with ongoing monthly long-term weight loss maintenance visits. Those in the intervention group had their antidiabetic and antihypertensive drugs discontinued. In total, there were 146 patients in the control group and 119 in the intervention group who remained enrolled in the study at 1 year, as detailed in Figure \@ref(fig:direct-participants).
+
+(ref:scaption-direct) Overview of participants in the DiRECT trial
+(ref:caption-direct) Overview of participants in the DiRECT trial
+
+```{r direct-participants, echo = FALSE, fig.cap="(ref:caption-direct)", fig.scap= "(ref:scaption-direct)"}
+include_graphics(path = "figure/DiRECT/DiRECT_study_summary.png", dpi = NA)
+
+```
 
 ### Included variables
 Age and sex were self-reported. Height was measured with the Frankfort plane horizonal with a protable stadiometer (Chasmors Ltd, London). Weight was measured using Class 111 approved calibrated scales (Marsden Group UK). Blood was donated at various timepoints including at baseline (week 0) and at 1 year (week 52), where HDL cholesterol, tryglycerides, HbA1c and plasma glucose were measured. Systolic blood pressure was measured with the patient seated, rested and with legs uncrossed for ≥5 mins. BMI was calculated by dividing the weight (kg) by the square of the height (m). BMI change was calculated by subtracting BMI at baseline from BMI at 1 year. This BMI change was rank normal transformed (function rntransform() from "moosefun" R package https://github.com/hughesevoanth/moosefun/). The centre attended and list size of the practice (>5700 or ≤5700) determined whether participants were allocated to control or intervention and therefore were recorded.
@@ -21,11 +34,18 @@ Analyses were performed using R version 3.6.1.
 
 A total of 265 participants were included in the current analysis. Participant baseline characteristics were summarised as the mean and SD. Baseline characteristics were calculated for both control group (N=146) and intervention (N=119) and were compared across groups using either a two-tailed t-test or a Chi^2^ test. 
 
-The association between BMI change and protein change was explored using multiple linear regression adjusting for centre, list size, age and sex (function lm() from base R "stats" package). Due to the nature of linear regression, outputs of regression provide the mean individual change in protein (in SDs) per SD increase in BMI. Therefore if more weight loss reduces the levels of protein, the beta coefficient is positive [@Figarska2020]. The association between potential confounders (age and sex) and both exposure (BMI change) and outcome (protein change) were explored using linear regression. The difference in BMI change in intervention group compared to control was performed using linear regression, adjusting for centre, list size, age and sex. Covariables (age, sex, centre and list size) were compared across treatment groups. Treatment group was therefore used as an instrument for BMI change in a two stage least squares analysis to estimate the effects of BMI change on protein change using ivreg() function from the "AER" R package (https://github.com/cran/AER/blob/master/R/ivreg.R). As a sensitivity analysis, for proteins which associate with BMI change, baseline protein levels were compared across control and intervention groups. P values were adjusted for multiple testing based on the number of representative proteins (0.05/869 = 5.8x10^-5^). 
+The association between BMI change and protein change was explored using multiple linear regression adjusting for centre, list size, age and sex (function lm() from base R "stats" package). Due to the nature of linear regression, outputs of regression provide the mean individual change in protein (in SDs) per SD increase in BMI. Therefore if more weight loss reduces the levels of protein, the beta coefficient is positive [@Figarska2020]. The association between potential confounders (age and sex) and both exposure (BMI change) and outcome (protein change) were explored using linear regression. The difference in BMI change in intervention group compared to control was performed using linear regression, adjusting for centre, list size, age and sex. Covariables (age, sex, centre and list size) were compared across treatment groups. Treatment group was therefore used as an instrument for BMI change in a two stage least squares analysis \:ref(fig:direct-tsls) to estimate the effects of BMI change on protein change using ivreg() function from the "AER" R package (https://github.com/cran/AER/blob/master/R/ivreg.R). As a sensitivity analysis, for proteins which associate with BMI change, baseline protein levels were compared across control and intervention groups. P values were adjusted for multiple testing based on the number of representative proteins (0.05/869 = 5.8x10^-5^). 
+
+(ref:scaption-direct-tsls) Schematic of two stage least squares analysis
+(ref:caption-direct-tsls) Schematic of two stage least squares analysis
+```{r direct-tsls, echo = FALSE, fig.cap="(ref:caption-direct-tsls)", fig.scap= "(ref:scaption-direct-tsls)"}
+include_graphics(path = "figure/DiRECT/DiRECT_analysis.png", dpi = NA)
+
+```
 
 Enrichment analysis was performed by xxxxxxxxxx.
 
-BMI change-protein change estimates from the multiple linear regression analyses and two stage least squares analyses were compared using a Deming regression (deming() function from "Deming" R package. Deming regression is a special type of total least squares (TLS) and differs from linear regression (OLS) as it accounts for error in both the x- and y- axes. In efforts to further elucidate which proteins are altered by adiposity, a comparison between the BMI-protein associations in INTERVAL (ref chunk) and the BMI change-protein change associations in the current analyses was also performed using a Deming regression. There were 2803 unique proteins overlapping across the two cohorts. Estimates across the two cohorts were compared using a Deming regression. 
+BMI change-protein change estimates from the multiple linear regression analyses and two stage least squares analyses were compared using a Deming regression (deming() function from "Deming" R package. Deming regression is a special type of total least squares (TLS) and differs from linear regression (OLS) as it accounts for error in both the x- and y- axes. In efforts to further elucidate which proteins are altered by adiposity, a comparison between the BMI-protein associations in INTERVAL (Chapter \@ref(BMI-protein-MR)) and the BMI change-protein change associations in the current analyses was also performed using a Deming regression. There were 2803 unique proteins overlapping across the two cohorts. Estimates across the two cohorts were compared using a Deming regression. 
 
 ## Results
 
@@ -66,17 +86,32 @@ Age and sex were not associated with BMI change. Age and sex were also not assoc
 ### Two-stage least squares analysis
 Treatment group was used as an instrument for BMI change in a two-stage least squares analysis. After adjustment for multiple testing, BMI change was associated with changes in levels of 171 proteins (3.7 %). These estimates are shown in Fig xx, along with each proteins BMI change-protein change estimate from the simple linear regression model. The protein which showed the strongest association with BMI change was SCAR5 (-0.91 SDs per SD increase in BMI, 95% CI -1.07 to -0.75, p=1.54x10^-23^). Other proteins displayed a positive association with BMI change, including Fatty acid-binding protein, heart (FABP1, 0.86 SDs increase per SD increase in BMI, 95% CI 0.69-1.04, p=6.3x10^-19^). Aminoacyclase-1 was also positively associated with BMI change (0.80 SDs increase in protein per SD increase in BMI, 95% CI 0.64 to 0.97, p=4.9x10^-18^).
 
+### Comparison of OLS and TSLS results
+144 proteins were associated with BMI in both analyses (\@ref(fig:circos)), with largest effect estimates across methods for SCAR5, Adiponectin, ApoF, growth hormone receptor (GHR), PTPRU, SHBG.. ? No of consistent/not.  
+
+(ref:scaption-circos) Circos plot of proteins associated with BMI change
+(ref:caption-circos) Circos
+```{r circos, echo = FALSE, out.width="95%", fig.cap="(ref:caption-circos)", fig.scap= "(ref:scaption-circos)"}
+include_graphics(path = "figure/DiRECT/circos_plot_BMI_change_protein_ols_tsls.pdf", dpi = NA)
+
+```
+
 ### Sensitivity analysis
 Proteins which were associated with BMI change were compared across control and intervention groups at baseline. There was not strong evidence for any differences in baseline levels of proteins. Potentially handful...
-
-### Comparison of OLS and TSLS results
-144 proteins were associated with BMI in both analyses (Fig ref), with largest effect estimates across methods for SCAR5, Adiponectin, ApoF, growth hormone receptor (GHR), PTPRU, SHBG.. ? No of consistent/not.  
 
 ### Enrichment analysis
 
 ### Comparison of BMI effects across DiRECT and INTERVAL
-BMI-protein estimates from this study were compared with effect estimates from INTERVAL (ref chunk). Both cohorts provided evidence for an effect of BMI on a range of proteins. Figure xx shows the BMI-protein estimates for the proteins which were included in both DiRECT and INTERVAL. There was consistent evidence across both studies for a BMI-increasing effect on proteins including fumarylacetoacetase (FAAA), alcohol dehydrogenase 4 (ADH4), growth hormone receptor (GHR) and carboxypeptidase M (CBPM). Furthermore, higher BMI had a lowering effect on levels of sex hormone binding globulin (SHBG), as well as insulin-like growth factor binding protein 1/2 (IGFBP1/2). 
+BMI-protein estimates from this study were compared with effect estimates from INTERVAL (Chapter \@ref(BMI-protein-MR)). Both cohorts provided evidence for an effect of BMI on a range of proteins. Figure \@ref(fig:DiRECT-INTERVAL) shows the BMI-protein estimates for the proteins which were included in both DiRECT and INTERVAL. There was consistent evidence across both studies for a BMI-increasing effect on proteins including fumarylacetoacetase (FAAA), alcohol dehydrogenase 4 (ADH4), growth hormone receptor (GHR) and carboxypeptidase M (CBPM). Furthermore, higher BMI had a lowering effect on levels of sex hormone binding globulin (SHBG), as well as insulin-like growth factor binding protein 1/2 (IGFBP1/2). 
 
+\blandscape
+(ref:scaption-DiRECT-INTERVAL) Scatter plot
+(ref:caption-DIRECT-INTERVAL) Scatter plot xx
+```{r DiRECT-INTERVAL, echo = FALSE, fig.cap="(ref:caption-DIRECT-INTERVAL)", fig.scap= "(ref:scaption-DiRECT-INTERVAL)"}
+include_graphics(path = "figure/DiRECT/DiRECT_INTERVAL_comparison.pdf", dpi = NA)
+
+```
+\elandscape
 
 ## Discussion
  1. Overall effect

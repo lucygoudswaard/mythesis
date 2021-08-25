@@ -1,0 +1,58 @@
+\contentsline {chapter}{Preface}{1}{chapter*.7}%
+\contentsline {chapter}{Chapter 1: Introduction}{3}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Format}{3}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Background}{3}{section.1.2}%
+\contentsline {subsection}{\numberline {1.2.1}Obesity on the rise}{3}{subsection.1.2.1}%
+\contentsline {subsection}{\numberline {1.2.2}Obesity is a modifiable risk factor for cardiovascular disease}{4}{subsection.1.2.2}%
+\contentsline {subsection}{\numberline {1.2.3}Mendelian randomisation can be used to explore causality}{4}{subsection.1.2.3}%
+\contentsline {subsection}{\numberline {1.2.4}Mechanisms of obesity-related cardiovascular disease}{5}{subsection.1.2.4}%
+\contentsline {subsection}{\numberline {1.2.5}Plasma markers of obesity}{5}{subsection.1.2.5}%
+\contentsline {subsection}{\numberline {1.2.6}Platelets are key cells involved in thrombosis}{6}{subsection.1.2.6}%
+\contentsline {subsection}{\numberline {1.2.7}Importance of an interdisciplinary approach}{6}{subsection.1.2.7}%
+\contentsline {subsection}{\numberline {1.2.8}Thesis aims and objectives}{6}{subsection.1.2.8}%
+\contentsline {subsection}{\numberline {1.2.9}Thesis structure}{6}{subsection.1.2.9}%
+\contentsline {subsection}{\numberline {1.2.10}Publications from the PhD (in preparation or published)}{7}{subsection.1.2.10}%
+\contentsline {subsection}{\numberline {1.2.11}Presentations from the PhD}{7}{subsection.1.2.11}%
+\contentsline {subsection}{\numberline {1.2.12}Inline code}{8}{subsection.1.2.12}%
+\contentsline {subsection}{\numberline {1.2.13}Including plots}{9}{subsection.1.2.13}%
+\contentsline {subsection}{\numberline {1.2.14}Loading and exploring data}{11}{subsection.1.2.14}%
+\contentsline {section}{\numberline {1.3}Additional resources}{15}{section.1.3}%
+\contentsline {chapter}{Chapter 2: Higher body mass index raises immature platelet count: evidence from Mendelian randomization analyses}{17}{chapter.2}%
+\contentsline {chapter}{Chapter 3: Mathematics and Science}{37}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Math}{37}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Chemistry 101: Symbols}{37}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Typesetting reactions}{38}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}Other examples of reactions}{38}{subsection.3.2.2}%
+\contentsline {section}{\numberline {3.3}Physics}{39}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Biology}{39}{section.3.4}%
+\contentsline {chapter}{Chapter 4: Pathways linking BMI and platelet function: do the chemokines MDC and TARC play a role?}{41}{chapter.4}%
+\contentsline {chapter}{Chapter 5: Effects of adiposity on the human plasma proteome: Observational and Mendelian randomization estimates}{43}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Abstract}{44}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Introduction}{45}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Results}{46}{section.5.3}%
+\contentsline {section}{\numberline {5.4}Discussion}{74}{section.5.4}%
+\contentsline {chapter}{Chapter 6: Exploring the effects of caloric restriction-induced weight loss on the plasma proteome}{75}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Abstract}{75}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Introduction}{75}{section.6.2}%
+\contentsline {section}{\numberline {6.3}Methods}{75}{section.6.3}%
+\contentsline {subsection}{\numberline {6.3.1}Study design and participants}{75}{subsection.6.3.1}%
+\contentsline {subsection}{\numberline {6.3.2}Included variables}{76}{subsection.6.3.2}%
+\contentsline {subsection}{\numberline {6.3.3}Proteomics}{77}{subsection.6.3.3}%
+\contentsline {subsection}{\numberline {6.3.4}Statistical analysis}{78}{subsection.6.3.4}%
+\contentsline {section}{\numberline {6.4}Results}{79}{section.6.4}%
+\contentsline {subsection}{\numberline {6.4.1}Participant characteristics}{79}{subsection.6.4.1}%
+\contentsline {subsection}{\numberline {6.4.2}Association between intervention and BMI change}{81}{subsection.6.4.2}%
+\contentsline {subsection}{\numberline {6.4.3}Association between BMI change and protein change}{81}{subsection.6.4.3}%
+\contentsline {subsection}{\numberline {6.4.4}Association between confounders and exposure/outcome}{81}{subsection.6.4.4}%
+\contentsline {subsection}{\numberline {6.4.5}Two-stage least squares analysis}{81}{subsection.6.4.5}%
+\contentsline {subsection}{\numberline {6.4.6}Sensitivity analysis}{82}{subsection.6.4.6}%
+\contentsline {subsection}{\numberline {6.4.7}Comparison of OLS and TSLS results}{82}{subsection.6.4.7}%
+\contentsline {subsection}{\numberline {6.4.8}Enrichment analysis}{82}{subsection.6.4.8}%
+\contentsline {subsection}{\numberline {6.4.9}Comparison of BMI effects across DiRECT and INTERVAL}{82}{subsection.6.4.9}%
+\contentsline {section}{\numberline {6.5}Discussion}{83}{section.6.5}%
+\contentsline {chapter}{Chapter 7: Title of Chapter 6}{85}{chapter.7}%
+\contentsline {chapter}{Chapter 8: Title of Chapter 8}{87}{chapter.8}%
+\contentsline {chapter}{Conclusion}{89}{chapter*.44}%
+\contentsline {chapter}{Appendix A: The First Appendix}{91}{appendix.A}%
+\contentsline {chapter}{Appendix B: The Second Appendix, for Fun}{93}{appendix.B}%
+\contentsline {chapter}{References}{95}{appendix*.45}%
