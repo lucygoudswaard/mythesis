@@ -1,30 +1,47 @@
-# Pathways linking BMI and platelet function: do the chemokines MDC and TARC play a role?
+# Pathways linking BMI and platelet function: do the chemokines MDC and TARC play a role? {#chemokine-platelets}
 
 ## Background
-Why these? Suggested they could be raised in obesity.
+
+	
+Platelets play an important role in haemostasis [@Rivera2009]. In healthy people, prostacyclin (PGI2) and nitric oxide (NO) are released by the endothelium to suppress platelet activity [@Yau2015]. When the endothelium is damaged, platelets adhere to the injured vessel wall through the glycoprotein Ib-IXV receptor and the GPVI collagen receptor. As a result, platelets secrete alpha and dense granules and undergo shape change [@Badimon2012]. Alpha granules release growth factors (e.g. IGF-1), clotting factors and chemokines [@Gear2003], whereas dense granules release molecules such as ADP, which further activate platelets by interacting with the P2Y^1^ and P2Y^12^ platelet receptors. Platelet activation also results in activation of integrins such as α~IIbβ~3~ and subsequent fibrinogen binding results in platelet aggregation, thrombus formation and cessation of bleeding [@Rivera2009]. Despite these processes being essential for haemostasis, when platelets become hyperactive, the balance is tipped in favour of thrombosis. 
+
+Platelets likely contribute to the increased CVD risk related to obesity and type II diabetes as platelets from patients with obesity are reported to be hyperactive and have a lower sensitivity to antiplatelet therapies such as clopidogrel [@Nardin2015]. These therapies are critical in the prevention of ischaemic events. The underlying mechanism that causes platelet hyperactivity is not completely understood. It is likely to involve a combination of factors. One such factor is a decrease in the production of endothelial PGI2 and nitrous oxide [@BelindeChantemele2012a]. Another contributing factor could be an alteration in the circulating levels of soluble ligands, growth factors and cytokines which can enhance platelet function (known as platelet primers). Platelet primers are signaling molecules which enhance agonist-induced platelet function but in isolation are unable to stimulate platelet aggregation or integrin activation. Molecules that have been reported to be able to prime platelets include insulin-like growth factor-1 (IGF-1) [@Nardin2015] and thrombopoietin (TPO) [@Maury2010].
+
+Previous studies have shown that multiple platelet primers increase platelet function through activation of the lipid kinase phosphoinositide-3-kinase (PI3K) [@Blair2015; @Pasquet2000; @Falcinelli2005]. Another pathway that has been implicated in platelet priming effects is the MAPK pathway. TPO can enhance TxA2 synthesis through increasing the activation of extracellular signal regulated kinase (ERK2) [@Ezumi1998; @VanWilligen2000]. The common involvement of both PI3K and MAPK in platelet priming mediated by IGF-1, TPO and matrix metalloproteinase-2 (MMP-2) suggests that platelets may also be activated by other platelet primers. There are other biomarkers which are also suggested to be raised with obesity as a result of low-grade chronic inflammation [@Esser2014], including the chemokines macrophage-derived chemokine (MDC/CCL22) and thymus and activation regulated chemokine (TARC/CCL17) [@Safa2016]. The inflammatory chemokines MDC and TARC act at the receptor CCR4, which is expressed on platelets [@Clemetson2000]. These chemokines have been shown to potentiate platelet aggregation [@Gear2001]. For example, the presence of TARC and MDC have been demonstrated to greatly enhance platelet aggregation in the presence of low levels of ADP or thrombin [@Gear2001]. Furthermore, gene polymorphisms of MDC and CCR4 are associated with myocardial infarction (MI) [@Noori2018]. As blood/plasma levels of MDC have been reported to be elevated in obese people [@Safa2016] and polymorphisms of its receptor are associated with MI, understanding the mechanisms by which MDC can enhance platelet function may give us an important insight in to how platelets are hyperactive in obesity and potentially provide a novel target for new antiplatelet/thrombotic or preventative therapies for those with an increased risk of cardiovascular events.
+
+The aim of this chapter is to determine the effects and mechanisms of MDC and TARC on platelet function and signalling.
+
 
 ## Methods
 ### Materials
+PAR1 activating peptide (SFLLRN) was purchased from Bachem. MDC and TARC were from PeproTech (London, UK). Indomethacin, PGE1, Triton X-100, apyrase, HEPES Tyrode’s (10 mM HEPES, 1 mM magnesium, 0.5 mM monosodium phosphate, 145 mM sodium chloride, 3 mM potassium chloride, pH 7.2), 2-butanol, ethanol, methanol and bovine serum albumin (BSA) were purchased from Sigma-Aldridge (Poole, UK). Phosphate buffered saline (PBS), trisodium citrate, acid citrate dextrose (ACD), D-glucose, ammonium persulfate (APS), Tris buffered saline (TBS), polysorbate 20 (Tween 20), Donkey anti-Rabbit IgG (H+L) Highly Cross Adsorbed Secondary Antibody Alexa Fluor 647 and Fura-2 were purchased from Thermo Fisher Scientific (Loughborough, UK). FITC PAC1 and FITC-CD62P from BD bioscience (Berkshire, UK). 30 % acrylamide mix (37.5:1), 1.0 M Tris pH 6.8 solution and 1.5 M Tris pH 8.8 solution purchased from National Diagnostics (Nottingham, UK). Immobilon-FL PVDF membranes (0.45-micron filter) were purchased from Merck Millipore (Hertfordshire, UK). Sodium dodecyl sulphate (SDS) was purchased from GE Healthcare worldwide (Hatfield, UK). SDS solution (10 %), tetramethylethylenediamine (TEMED), filter paper and Precision Plus protein pre-stained standards were purchased from Bio-Rad laboratories (Bredbury, UK). Blocking buffer was purchased from LI-COR Biosciences (Cambridge, UK). pSer473 PKB, pSer239 VASP, pSer157 VASP, pThr202/Tyr204 ERK and pSer425 Talin were purchased from Cell Signaling Technology (Hertfordshire, UK). Alexa Fluor 680 AffiniPure Donkey Anti-Goat IgG and Alexa Fluor 680 AffiniPure Donkey Anti-Rabbit IgG were obtained from Jackson Immunoresearch (Cambridgeshire, UK). Paraformaldehyde was purchased from Acros Organics (Geel, Belgium). 
 
 ### Isolation of human platelets
 Fresh human venous blood was obtained from healthy volunteers by venipuncture. Blood was taken into the syringe with a 1 in 10 volume of 4 % trisodium citrate, then mixed with a 1 in 7 volume of acid citrate dextrose (ACD). Blood was placed into 5 mL LP4 tubes then centrifuged at 1000 revolutions per minute (RPM) for 17 minutes. Platelet rich plasma (PRP) was extracted. PRP was supplemented with inhibitors such as 0.02 U/mL apyrase, 140 nM PGE1 or 10 µM indomethacin (exact inhibitors for each experiment used will be shown in results). Supplemented PRP was either used for the experiment of centrifuged for a further 10 minutes at 1700 RPM. Platelet poor plasma (PPP) was removed leaving a platelet pellet. This pellet was resuspended in HEPES Tyrode’s (supplemented with 0.1 % glucose and 0.02 U/mL apyrase, and 10 µM indomethacin if already applied to PRP). Platelets were counted using a Z1 coulter particle counter by diluting 1 in 2000 in 10 mL MQ water. Platelets were diluted further using the supplemented HEPES Tyrode’s to a platelet concentration of 4 x 10^8^/mL and left to rest for 30 mins in a 30°C water bath.
 
 ### Platelet aggregation
+Platelets were diluted to a concentration of 2 x 10^8^/mL using supplemented HEPES Tyrode’s buffer. A volume of 250 µL platelets was added to aggregometer cuvettes containing a Teflon stir bar. HEPES Tyrode’s (500 µL) was added to the reference PPP (blank) channel. Platelets were left to rest in the cuvettes for 2 mins. For priming experiments, platelets were either preincubated with vehicle (MQ) or 1 µg/ml MDC or TARC for 5 mins. A Chrono-log model 490 aggregometer was used. For experiments which were not exploring platelet priming, platelets were added to the cuvettes for 2 minutes and agonist was added for 5 minutes.  Aggregation traces were derived from the amount of light transmitted through the sample. Recordings were taken for 5 minutes with a stirring speed of 1200 rpm and at 37 °C. Platelets were used within 3 hours from resting.
+
+### Plate platelet aggregation
+PRP supplemented with apyrase was used. For each donor, the platelet count was recorded. PPP was used as a reference. PRP was added to the wells of a 96 well plate and left to rest for 2 minutes. 200 ng/ml MDC, 200 ng/mL TARC or vehicle were preincubated with platelets for 5 minutes. After 5 minutes, PAR1-AP was added to the wells and the plate was shaken with an Eppendorf ThermoMixer® for 5 minutes at 1200 rpm and at 37 °C. The plate was immediately read using a Labtech LT-4500 automatic microplate absorbance reader. Responses were normalized so that basal PRP = 0 % aggregation and PPP = 100 % aggregation.
 
 ### Flow cytometry: integrin α~IIb~β~3~ activation and P-selectin expression
 Platelets were diluted to a concentration of 2 x 10^7^/mL using supplemented HEPES Tyrode’s buffer. Platelets were incubated with 200 ng/ml MDC, TARC or vehicle for 5 mins, then added to wells in a 96 well plate already containing a mixture of PAC1 and CD62P antibodies (in a 2:1 ratio), as well as increasing concentrations of PAR1-AP. After a further 5 minutes, platelets were fixed with 1 % paraformaldehyde (PFA). Plates were read using a BD Accuri C6 Plus flow cytometer. The relative fluorescence of the antibody in each well was measured over 10,000 platelets and median statistics were used.
 
 ### Flow cytometry: phospho-VASP
+Washed platelets were diluted to a concentration of 1 x 10^8^/mL. Platelets were left to rest in a 96 well plate for 2 minutes. 200 ng/ml MDC, 200 ng/mL TARC, 10 µM ADP or vehicle were preincubated with platelets for 5 mins at 37 °C. PGE1 (concentration-response curve) was added for a further 5 minutes. Platelets were fixed with 1 % PFA for 10 minutes. Platelets were centrifuged at 1000g for 10 minutes. Supernatant was then discarded, and platelets were permeabilized with 0.1% TritonTM X-100 for 10 minutes. The plate was centrifuged again at 1000g for 10 minutes. Supernatant was discarded and platelets were washed and resuspended with 1 x PBS. Platelets were centrifuged at 1000g for 10 minutes. Supernatant was discarded and platelets were resuspended with rabbit pSer157 VASP primary antibody (1 in 1000) for 30 minutes on ice. Platelets were centrifuged at 1000g for 10 minutes. Supernatant was discarded and platelets were washed and resuspended with 1 x PBS. Platelets were centrifuged at 1000g for 10 minutes. Supernatant was discarded and platelets were resuspended with secondary antibody (Alexa Fluor™ 647 anti-rabbit IgG, 1 in 1000) for 45 minutes on ice. Platelets were centrifuged at 1000g for 10 minutes. Supernatant was discarded and platelets were washed with 1 x PBS. Platelets were centrifuged once more at 1000g for 10 minutes and the plate was read using a BD Accuri C6 Plus flow cytometer.
 
 ### Western blotting
+Platelets were used at a concentration of 4 x 10^8^/mL. Platelets were preincubated with 200ng/mL MDC, 200ng/mL TARC or vehicle for 5 minutes followed by 5 minutes application of PAR1-AP (all at 30 °C). For phospho-VASP assay, MDC, TARC or ADP were preincubated with platelets for 5 minutes, with PGE1 added for a further 5 minutes. After 10 minutes, platelets were lysed with 4 X LDS NuPAGE sample buffer supplemented with 50 mM dithiothreitol (DTT). Samples were stored at -20 °C. When required, samples were heated to 70 °C for 10 minutes. A 10 % Resolving gel was cast for Tris-glycine SDS-polyacrylamide gel electrophoresis, and a 5 % Stacking gel was cast for loading. As a standard, 4 µl Precision Plus protein pre-stained standard was loaded, along with 20 µl of the lysate sample. The samples were placed in a tank containing sample buffer and protein electrophoresis was carried out for 90 minutes at 100 V. Following this, proteins were transferred to a PDVF membrane in the presence of transfer buffer for 60 minutes and at 100 V. The membrane was then put in blocking buffer and 0.1 % TBS-Tween (1:1 ratio) for 1 hour. Membranes were incubated with the primary antibody (1 in 1000 dilution) at room temperature for 90 minutes. Talin was used as a loading control. The membrane was washed with 0.1 % TBS-Tween 3 times for 5 minutes. The membrane was incubated with secondary antibody (1 in 5000 dilution) for 1 hour. The membrane was washed 6 times for 5 minutes, then membranes were scanned using the LI-COR Odyssey® CLx Imaging System. Bands were quantified using Image Studio Lite. 
 
 ### Calcium mobilisation
+Fura-2 (4 µM) was added to PRP after the addition of indomethacin and apyrase and left for 1 hour wrapped in foil at 37 °C. PRP was centrifuged and platelets were resuspended in supplemented HEPES Tyrode’s as described above, with the washed platelets (at 4 x 10^8^/mL) protected from the light with foil. Platelets were recalcified with 1 mM calcium chloride. Fluorescence of fura-2 was measured as the ratio at wavelengths 340:380 nm and provided a measurement of free calcium. 10 basal recordings were taken over 1 minute before addition of MDC, TARC or ADP. Upon agonist stimulation, 20 readings were taken over 2 minutes. A final concentration of 1 % Triton X-100 was added to permeabilise platelets and further readings were taken.
 
-### Plate platelet aggregation
+### Statistical analysis
+GraphPad Prism 7 was used to analyse data. A Shapiro-Wilks test was used to test for normality of the data. If normally distributed, a parametric test was used. Where data was not normally distributed a non-parametric test was used. Statistical tests used for each experiment are in figure legends. Error bars plotted on graphs are standard error of the mean (SEM). Concentration-response curves were generated using a four parameter variable slope nonlinear regression. Parameters from curves including the logEC50 and the curve max were used as summaries of the curve fit.
 
-
-
-
+### Two sample MR lookup using EpigrahDB
+Two sample MR uses summary statistics and allows for causal associations to be estimated where the exposure and outcome are measured in different populations. EpigraphDB is a tool which performs two sample MR to determine how the human proteome contributes to complex diseases [@Zheng2020]. Using protein quantitative trait loci (pQTLs) for MDC and TARC [@Sun2018] (N=3301) and GWAS summary statistics for disease outcomes (mainly from Neale lab: https://github.com/Nealelab/UK_Biobank_GWAS), it is possible to explore whether plasma levels of these chemokines contribute to disease. For MDC, a Wald ratio was used to estimate the causal effect and for TARC the inverse variance weighted (IVW) method was used.
 
 
 ## Results
@@ -145,6 +162,46 @@ include_graphics(path = "figure/Chemokines/Layouts/PAR1_MDC_inhibitors_aggregati
 
 ```
 
+## Two sample Mendelian randomiation to assess the role of MDC (CCL22) and TARC (CCL17) in disease
+
+### MDC implicated in DVT
+```{r MDC-disease-MR,  echo=FALSE}
+options(knitr.kable.NA = "")
+V = c("MDC/CCL22", "MDC/CCL22","MDC/CCL22","MDC/CCL22","MDC/CCL22","MDC/CCL22","MDC/CCL22","MDC/CCL22","MDC/CCL22","MDC/CCL22","MDC/CCL22","MDC/CCL22","MDC/CCL22","MDC/CCL22","MDC/CCL22","MDC/CCL22","MDC/CCL22","MDC/CCL22","MDC/CCL22" )
+Trait = c("Non-cancer illness code self-reported: high cholesterol",'Non-cancer illness code self-reported: deep venous thrombosis (dvt)','Non-cancer illness code self-reported: pulmonary embolism (with or without) dvt','Forced expiratory volume in 1-second (FEV1)','Forced vital capacity (FVC)','Eye problems or disorders: Glaucoma','Diagnoses - main ICD10: M16 Coxarthrosis [arthrosis of hip]',
+'Non-cancer illness code self-reported: gout','Non-cancer illness code self-reported: hypothyroidism or myxoedema','Schizophrenia','Systolic blood pressure automated reading','Alcohol intake frequency','Non-cancer illness code self-reported: osteoporosis','Diagnoses - main ICD10: K80 Cholelithiasis','Fracture resulting from simple fall','Cancer code self-reported: small intestine or small bowel cancer','Eye problems or disorders: Cataract','Diagnoses - main ICD10: R04 Haemorrhage from respiratory passages','Diagnoses - main ICD10: I80 Phlebitis and thrombophlebitis')
+SNP <- c("1 (rs77542162)",  "1 (rs77542162)", "1 (rs77542162)","1 (rs77542162)","1 (rs77542162)","1 (rs77542162)","1 (rs77542162)","1 (rs77542162)","1 (rs77542162)","1 (rs77542162)","1 (rs77542162)","1 (rs77542162)","1 (rs77542162)","1 (rs77542162)","1 (rs77542162)","1 (rs77542162)","1 (rs77542162)","1 (rs77542162)","1 (rs77542162)")
+Method <- c("Wald ratio", "Wald ratio","Wald ratio","Wald ratio","Wald ratio","Wald ratio","Wald ratio","Wald ratio","Wald ratio","Wald ratio","Wald ratio","Wald ratio","Wald ratio","Wald ratio","Wald ratio","Wald ratio","Wald ratio","Wald ratio","Wald ratio")
+Effect <- c(0.2224,0.2936,0.3308,0.0312,0.0285,0.2292,0.2217,-0.4045,0.1203,-0.1477,-0.0283,-0.04,0.1593,-0.1965,0.0528,0.5966,0.0991,0.2189,0.2269)
+SE <- c(0.0209,0.0512,0.0775,0.0084,0.0079,0.0654,0.0648,0.1237,0.0381,0.048,0.0099,0.0143,0.0665,0.0826,0.0236,0.2745,0.0487,0.1094,0.1145)
+P2 <- c(2.200e-26,9.810e-09,1.969e-05,1.961e-04,3.201e-04,4.570e-04,6.186e-04,1.075e-03,1.607e-03,2.086e-03,4.246e-03,5.124e-03,1.655e-02,1.731e-02,2.527e-02,2.976e-02,4.163e-02,4.552e-02,4.755e-02)
+mytable = data.frame(cbind(V, Trait, SNP, Method, Effect, SE, P2))
+names(mytable) <- c("Protein", "Outcome trait", "N SNP (rsID)", "Method", "Effect sie", "Standard error", "P value")
+mytable %>% kable(caption = "Estimates for the effect of MDC on disease outcomes using two sample Mendelian randomization", booktabs = TRUE) %>% 
+  kable_classic_2(full_width = F) %>%
+ kable_styling(full_width = TRUE) %>%
+  column_spec(2, width = "5cm") %>%
+  landscape()
+```
+
+### TARC
+```{r TARC-disease-MR,  echo=FALSE}
+options(knitr.kable.NA = "")
+V = c("TARC/CCL17", "TARC/CCL17", "TARC/CCL17", "TARC/CCL17", "TARC/CCL17", "TARC/CCL17")
+Trait = c("Rheumatoid arthritis","Anorexia nervosa","Non-cancer illness code self-reported: gastro-oesophageal reflux (gord) or gastric reflux","Systemic lupus erythematosus","Ischemic stroke","Red blood cell count")
+SNP <- c("2 (rs983545, rs222846)", "2 (rs983545, rs222846)", "2 (rs983545, rs222846)", "2 (rs983545, rs222846)", "2 (rs983545, rs222846)", "2 (rs983545, rs222846)")
+Method <- c("Inverse variance weighted", "Inverse variance weighted", "Inverse variance weighted", "Inverse variance weighted", "Inverse variance weighted", "Inverse variance weighted" )
+Effect <- c(0.1015,0.2182,0.003,0.2716,-0.081,-0.0116)
+SE <- c(0.0386,0.0845,0.0012,0.114,0.0373,0.0058)
+P2 <- c(8.510e-03,9.826e-03,1.172e-02,1.717e-02,2.999e-02,4.445e-02)
+mytable = data.frame(cbind(V, Trait, SNP, Method, Effect, SE, P2))
+names(mytable) <- c("Protein", "Outcome trait", "N SNP (rsID)", "Method", "Effect sie", "Standard error", "P value")
+mytable %>% kable(caption = "Estimates for the effect of TARC on disease outcomes using two sample Mendelian randomization", booktabs = TRUE) %>% 
+  kable_classic_2(full_width = F) %>%
+ kable_styling(full_width = TRUE) %>%
+  column_spec(2, width = "5cm") %>%
+  landscape()
+```
 
 
 ## Discussion

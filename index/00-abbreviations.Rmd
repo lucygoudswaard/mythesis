@@ -3,11 +3,13 @@
 library(readxl)
 library(tidyr)
 library(kableExtra)
+library(knitr)
 abbreviations <- read_xlsx("figure/Abbreviations/Abbreviations.xlsx")
 abbreviations <- abbreviations[order(abbreviations$Abbreviation),]
 
-abbreviations %>% kable(caption = "Full list of abbreviations", booktabs = TRUE) %>% 
-  kable_classic_2(full_width = F) %>%
- kable_styling(full_width = TRUE) %>%
-  column_spec(1, width = "3cm") 
+kinitr::kable(abbreviations, longtable = T, booktabs = T, format = "latex", escape = F,
+caption = "Full list of abbreviations") %>% 
+kable_classic_2(full_width = F) %>%
+kable_styling(full_width = TRUE) %>%
+column_spec(1, width = "3cm") 
 ```

@@ -1,4 +1,4 @@
-# The effect of obesity on platelet function: a clinical pilot study
+# The effect of obesity on platelet function: a clinical pilot study {#BMI-platelets-clinic}
 
 The following results section is a clinical study. Recruitment into this study has been severely affected by COVID-19 as we had approvals to start recruitment in March 2020. All data in this chapter was collected by myself, apart from the platelet-neutrophil assay data, which was performed by Dr Chris Williams due to time constraints when receiving patient samples. The proteomic data was analysed by the Proteomics facility at the University of Bristol. 
 
@@ -56,12 +56,13 @@ mytable %>% kable(caption = "Characteristics of included participants", booktabs
   #kable_paper("hover", full_width = F)
    add_indent(c(8, 9, 10), level_of_indent = 1) %>%
  kable_styling(full_width = TRUE) %>%
-column_spec(1, width = "3cm")
+column_spec(1, width = "5cm")
 ```
 
 ### Platelet parameters
 
-Platelet traits measured by Sysmex were compared across bariatric and control groups (Table \ref(tab:obesity-platelets-parameters)). There was no statistical evidence for an effect of obesity on platelet parameters. However, IPC and IPF did display larger mean values compared to controls, but they also had relatively large SDs in the bariatric patient group. A higher N would be required to detect whether there is any difference between groups. 
+Platelet traits measured by Sysmex were compared across bariatric and control groups (Table \@ref(tab:obesity-platelets-parameters)). There was no statistical evidence for an effect of obesity on platelet parameters. However, IPC and IPF did display larger mean values compared to controls, but they also had relatively large SDs in the bariatric patient group. A higher N would be required to detect whether there is any difference between groups. 
+
 ```{r obesity-platelets-parameters,  echo=FALSE}
 options(knitr.kable.NA = "")
 f = c("Platelet count", "Immature platelet fraction", "Immature platelet count", "Side fluorescence", "Forward scatter", "Side scatter")
@@ -73,7 +74,9 @@ colnames(mytable) <- c('Variable', "Control mean (SD)", "Bariatric patient mean 
 mytable %>% kable(caption = "Platelet traits measured by Sysmex XE-2100", booktabs = TRUE) %>% 
   kable_classic_2(full_width = F) %>%
   #kable_paper("hover", full_width = F)
- kable_styling(full_width = TRUE)
+ kable_styling(full_width = TRUE) %>%
+column_spec(1, width = "4cm")
+
 ```
 
 ### Basal receptors
@@ -82,7 +85,7 @@ Unstimulated platelet receptor levels were compared across bariatric patient and
 (ref:scaption1) Comparison of basal integrin α~IIb~β~3~ activation, P-selectin expression and surface receptors levels across control and bariatric patient groups
 (ref:caption1) Diluted PRP was used for experiments, where platelets were incubated with antibodies for 10 minutes before fixing. Bar graphs comparing A) Basal integrin α~IIb~β~3~ activation B) Basal  P-selectin expression and C) Basal surface receptor expression across bariatric patient and control groups. N=4. P-values indicated for unpaired t-test results.
 
-```{r basal-integrin-pselectin-receptor-bariatric, echo = FALSE, fig.cap="(ref:caption)", fig.scap= "(ref:scaption)"}
+```{r basal-integrin-pselectin-receptor-bariatric, out.width = "90%", echo = FALSE, fig.cap="(ref:caption1)", fig.scap= "(ref:scaption1)"}
 include_graphics(path = "figure/Bariatric_study/Basal_surface_receptors.pdf", dpi = NA)
 
 ```
@@ -92,10 +95,10 @@ include_graphics(path = "figure/Bariatric_study/Basal_surface_receptors.pdf", dp
 
 Markers of platelet activation were compared in response to different platelet agonists. 
 
-(ref:scaption2) Concentration response curves of integrin activation and P-selectin expression
-(ref:caption2) Concentration response curves in diluted PRP of: integrin activation in response to A) PAR1-AP, B) ADP and C) CRP and P-selectin expression in response to D) PAR1-AP, E) ADP, F) CRP. N=4.
+(ref:scaption2) Concentration-response curves of integrin α~IIb~β~3~ activation and P-selectin expression
+(ref:caption2) Concentration-response curves of integrin α~IIb~β~3~ activation in platelet rich plasma diluted in HEPES-Tyrode's in response to A) PAR1-AP, B) ADP and C) CRP. Concentration-response curves of P-selectin expression in response to D) PAR1-AP, E) ADP, F) CRP. N=4.
 
-```{r agonist-integrin-pselectin, echo = FALSE, fig.cap="(ref:caption2)", fig.scap= "(ref:scaption2)"}
+```{r agonist-integrin-pselectin, out.width = "90%",echo = FALSE, fig.cap="(ref:caption2)", fig.scap= "(ref:scaption2)"}
 include_graphics(path = "figure/Bariatric_study/Agonist_Integrin_Pselectin.pdf", dpi = NA)
 
 ```
@@ -104,16 +107,35 @@ include_graphics(path = "figure/Bariatric_study/Agonist_Integrin_Pselectin.pdf",
 (ref:scaption2b) Comparison of platelet-neutrophil aggregates
 (ref:caption2b) Comparison of platelet-neutrohpil aggregates across bariatric patient and control participant groups in unstimulated and stimulated (5 ug/mL CRP) conditions. N=4. P-values provided for the results of a two-way ANOVA with Sidak's multiple comparisons tests.
 
-```{r platelet-neutrophil, echo = FALSE, fig.cap="(ref:caption2b)", fig.scap= "(ref:scaption2b)"}
+```{r platelet-neutrophil, echo = FALSE, out.width = "90%", fig.cap="(ref:caption2b)", fig.scap= "(ref:scaption2b)"}
 include_graphics(path = "figure/Bariatric_study/Plt-neu_aggregates.pdf", dpi = NA)
 
 ```
 
 ### Proteomics
 
-#### PCA
+A PCA was performed....
 
-### Volcano plot
+(ref:scaption-pca) A principal component analysis to determine whether PC1 and PC2 separate out control and bariatric groups
+(ref:caption-pca) A principal component analysis to determine whether PC1 and PC2 separate out control and bariatric groups
+
+```{r pca, echo = FALSE, out.width = "90%", fig.cap="(ref:caption-pca)", fig.scap= "(ref:scaption-pca)"}
+include_graphics(path = "figure/Bariatric_study/Proteomic_PCA.pdf", dpi = NA)
+
+```
+
+A volcano plot was ...
+(ref:scaption-volcano) A principal component analysis to determine whether PC1 and PC2 separate out control and bariatric groups
+(ref:caption-volcano) A principal component analysis to determine whether PC1 and PC2 separate out control and bariatric groups
+
+```{r volcano, echo = FALSE, out.width = "90%", fig.cap="(ref:caption-volcano)", fig.scap= "(ref:scaption-volcano)"}
+include_graphics(path = "figure/Bariatric_study/Proteomic_volcano.pdf", dpi = NA)
+
+```
+
+The full proteomic results are here ... 
+
+
 
 ## Discussion
 

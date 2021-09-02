@@ -62,9 +62,9 @@ To explore whether there was a systematic difference in the association of prote
 ## Results
 
 ### Participant characteristics
-INTERVAL participants included in this study (those with proteomic data), had a mean age of 45.0 years (SD of 14.1 years) and 48.3% were female (Table \@ref(table:Incl-excl-participants)). Mean BMI was 25.9 kg/m^2^ (SD of 4.8 kg/m^2^) and the majority of participants were non-smokers (59.1%). Nearly a quarter (23.5%) reported currently or previously smoking daily and 71.5% reported drinking alcohol at least once a week. Participants with proteomic data were representative of the full INTERVAL cohort (Table \@ref(table:Incl-excl-participants)).
+INTERVAL participants included in this study (those with proteomic data), had a mean age of 45.0 years (SD of 14.1 years) and 48.3% were female (Table \@ref(tab:Incl-excl-part)). Mean BMI was 25.9 kg/m^2^ (SD of 4.8 kg/m^2^) and the majority of participants were non-smokers (59.1%). Nearly a quarter (23.5%) reported currently or previously smoking daily and 71.5% reported drinking alcohol at least once a week. Participants with proteomic data were representative of the full INTERVAL cohort (Table \@ref(tab:Incl-excl-part)).
 
-```{r Inc-excl-participants,  echo=FALSE}
+```{r Inc-excl-part,  echo=FALSE}
 options(knitr.kable.NA = "")
 var = c("Age", "Sex", "Male", "Female", "Weight (kg)", "Height (cm)", "Body mass index (kg/m2)", "Smoking frequency", "Never", "Occasional", "Most days or every day", "Alcohol intake frequency", "Rarely", "Less than once a week", "One or two times a week", "Three to five times a week / most days")
 incmean = c('45.0 (14.1)', NA, '51.70%','48.30%','78.5 (16.1)','172.7 (9.7)','25.9 (4.8)', NA, '59.10%','11.90%','29.00%', NA, '11.70%','16.90%','37.40%','34.10%')

@@ -7,60 +7,60 @@ output:
 # Introduction {-}
 
 ## Format
-This chapter will provide some background information to put the thesis into context. It will provide information on obesity, in particular its prevalence and implications for cardiovascular disease. Possible mechanisms of disease will be introduced, such as the involvement of platelets. At the end of this chapter, the aims of the thesis will be introduced.
+This chapter will provide some background information to put the thesis into context. It will provide information on obesity, in particular its prevalence and implications for cardiovascular disease. Possible mechanisms of disease will be introduced, such as the involvement of changes in circulating proteins and blood platelets. At the end of this chapter, the aims of the thesis and organisation of the results chapters will be introduced.
 
-## Background
-
-### Obesity on the rise
+## Obesity on the rise
 Obesity, defined as a body mass index (BMI) of greater than 30kg/m^2^, has tripled worldwide since 1975. It is currently estimated that 40% of adults in the United States and 26% of adults in the United Kingdom have obesity [@Bluher2019]. As of 2016, the number of individuals globally with obesity surpassed 650 million [@TheLancetPublicHealth2018]. The average BMI of the UK adult population is ~27kg/m^2^ [@Wade2018], which is in the 'overweight' category (between 25 and 30 kg/m^2^). Overweight is also more common than 'normal-weight' in many other higher-income countries [@NCD-RisC2016], and prevalence of overweight is increasing in lower-income countries [@Templin2019].
 
 BMI is generally used as a proxy for adiposity as there are high correlations between BMI and objective measures of fat mass measured by dual-energy X-ray absorptiometry (DXA) [@Bell2018], such as total fat mass index and regional fat mass indices. Due to the specialised equipment needed for fat mass measures, BMI is often much more widely available within cohort studies and trials.
 
-### Obesity is a modifiable risk factor for cardiovascular disease
+## Obesity is a modifiable risk factor for cardiovascular disease
 Adiposity is a risk factor for certain non-communicable diseases. Such diseases include Type 2 Diabetes mellitus (T2D), musculoskeletal diseases, certain types of cancer and cardiovascular disease [@Garg2014; @Khan2018; @Kortt2002; @Bhaskaran2014]. Collectively, treatment for obesity-related diseases is costly for health services [@Dixon2019a; @Dixon2019]. Cardiovascular disease is one of the leading causes of death. Cardiovascular disease is a general term for diseases affecting the heart or circulatory system and can be subcategorised further into diseases such as thrombotic disorders including coronary heart disease (CHD) and stroke. Obesity is associated with an increased risk of such cardiovascular events [@Khan2018].
 
-### Mendelian randomisation can be used to explore causality
+## Mendelian randomisation can be used to explore causality
 Mendelian randomisation is a technique which uses the random assortment of alleles to estimate the causal association between a modifiable risk factor (such as BMI) and disease outcomes. It can be likened to a natural randomised control trial (RCT) [FIG]. Associations between BMI and disease have been shown through use of prospective observational studies [@Khan2018], but more recently, through use of Mendelian randomisation studies [@Nordestgaard2012; @Dale2017; @Carreras-Torres2017a]. These studies have provided evidence for a causal relationship between adiposity and ischaemic heart disease (IHD) [@Nordestgaard2012], coronary heart disease (CHD), T2D [@Dale2017] and types of cancer including pancreatic cancer [@Carreras-Torres2017a]. Studies have also found that weight loss improves cardiovascular risk factors [@Wing2011; other refs]. Despite the evidence for a causal association between adiposity and cardiovascular disease, mechanisms of obesity-related disease remain unclear.
 
-### Mechanisms of obesity-related cardiovascular disease
+## Mechanisms of obesity-related cardiovascular disease
 Obesity is caused by an increase in fat deposition and generally occurs when energy intake exceeds energy expenditure. There are two types of fat: white adipose tissue (WAT) and brown adipose tissue (BAT). WAT secretes proteins and peptides which have pro-inflammatory effects [@Cercato2019; @Kern2001]. Due to these adipose tissue effects, obesity results in a state of chronic low-grade inflammation [@Esser2014], with an increase in adipose tumour necrosis factor-alpha (TNF-alpha) and interleukin-6 (IL-6) [@Kern2001]. Efforts have been made to understand how adiposity causes cardiovascular disease, with suggestion that inflammation, increased production of reactive oxygen species and endothelial dysfunction contribute to increased cardiovascular risk [@Cercato2019, add other refs].
 
-### Plasma markers of obesity
+## Plasma markers of obesity
 Studies which have explored the molecular footprint of adiposity have tended to focus on the lipidome, such as cholesterol and triglycerides in lipoprotein subtypes, inlcuding low-density lipoproteins (LDL), very-low-density lipoproteins (VLDL) and high-density lipoproteins (HDL) [@Bell2018a; @Wurtz2014], where a higher BMI is associated with an increase in LDLs and a decrease in large HDLs. This has been expored in a causal framework. 
 
 As the majority of druggable targets are proteins, it is also valuable to explore the effects of BMI on circulating plasma proteins. It is estimated that 25% of proteins in the human proteome circulate in the blood [@Imming2006], including enzymes, protein kinases and transport proteins. Therefore, focusing on effects of adiposity on the circulating proteome may allow for the development of or repurposing of therapeutic interventions to reduce obesity-related disease. Previous studies that have explored the effect of adiposity on circulating proteins have used hypothesis driven approaches [@Timpson2011]. Attempts to evaluate the effect of BMI on the general proteome have been performed using observational analyses [@Cominetti2018]. Recent technologies have been developed which allow protein detection in unprecedented scope and detail, for example the SOMAscan by SomaLogic [@Gold2012], which can detect over 3,500 unique proteins. Although identifying alterations of individual proteins may provide therapeutic opportunities, assessing the overall protein profile of adiposity may provide more of a mechanistic insight into how adiposity causes disease.
 
 
-### Platelets are key cells involved in thrombosis
+## Platelets are key cells involved in thrombosis
 Platelets are enucleate blood cells that are involved in the cessation of bleeding, but can cause thrombosis when activated pathologically. 
 Antiplatelet drugs used to prevent reocurrence of MI.
 BMI is linked to increased rates of thrombosis, therefore it is likely that platelets become hyperactive. There is conflicting literature surrounding this and cohorts to explore these effects are limited.
 
-### Importance of interdisciplinary methods
+## Importance of interdisciplinary methods
 Each approach has biases and problems, which means we need to be careful ....
 A combination of laboratory experiments, clinical studies and epidemiology (including Mendelian randomization and RCTs) in order to investigate mechanisms of disease.
 
-### Thesis aims and objectives
-The aims of the thesis are indicated below, with a schematic of the multi-step pathway which this thesis aims to explore (Figure \@ref(fig:Thesis-schematic)).
+## Thesis aims and objectives
+The aims of the thesis are indicated below, with a schematic of the multi-step pathway which this thesis aims to explore (Figure \@ref(fig:Thesis-schematic)). The 3 overall aims are:
 
-1) 
-2)
-3)
-4)
+1) Explore the effect of body mass index on platelet traits, platelet function and signalling.
+3) Characterise the effects of the chemokines macrophage-derived chemokine (MDC) and thymus and activation regulated chemokine (TARC) on platelet function.
+4) Determine the effects of adiposity on the plasma proteome.
+
 
 ```{r Thesis-schematic, echo = FALSE, fig.cap="Schematic of the multi-step pathway addressed in the thesis", fig.scap="Schematic of the multi-step pathway addressed in the thesis"}
 include_graphics(path = "figure/Intro_background/Thesis_graphic_overview_without_chapters.png", dpi = NA)
 ```
 
 
-### Thesis structure
-There will be xx results chapters in this thesis.
-1)
-2)
-3)
-4)
+## Thesis structure
+There will be 5 results chapters in this thesis:
 
-### Publications from the PhD (in preparation or published)
+1) Higher body mass index raises immature platelet count: evidence from Mendelian randomization analyses (Chapter \@ref(BMI-platelets-INTERVAL))
+2) The effect of obesity on platelet function: a clinical pilot study (Chapter \@ref(BMI-platelets-clinic))
+3) Pathways linking BMI and platelet function: do the chemokines MDC and TARC play a role? (Chapter \@ref(chemokine-platelets))
+4) Effects of adiposity on the human plasma proteome: Observational and Mendelian randomization estimates (Chapter \@ref(BMI-protein-MR))
+5) Using a randomised control trial to explore the effects of caloric restriction-induced weight loss on the plasma proteome (Chapter \@ref(BMI-protein-RCT))
+
+## Publications from the PhD (in preparation or published)
 
 **Goudswaard L. J.**, Bell J. A., Hughes D. A., Corbin L. J., Walter K., Davey Smith G., Soranzo N., Danesh J., Di Angelantonio E., Ouwehand W. H., Watkins N. A., Roberts D. J., Butterworth A. S., Hers I., Timpson N. J. Effects of adiposity on the human plasma proteome: Observational and Mendelian randomisation estimates (2021) Int J Obes https://doi.org/10.1038/s41366-021-00896-1
 
@@ -72,7 +72,7 @@ Liu, H., Jackson, M. L., **Goudswaard, L. J.**, Moore S. F., Hutchinson J. L, He
 
 Sledz, K. M., Moore, S. F., Vijayaragavan, V., Mallah, S., **Goudswaard, L. J.**, Williams, C. M., Hunter, R. W. & Hers, I. Redundant role of ASK1-mediated p38MAPK activation in human platelet function. (2020) Cellular Signalling. 68, 11 p., 109528. doi:10.1016/j.cellsig.2020.109528 
 
-### Presentations from the PhD
+## Presentations from the PhD
 
 **Platelet Society meeting**, 2018, Cambridge, UK. Title: Do the chemokines MDC and TARC contribute to obesity related platelet hyperactivity and cardiovascular disease? (Oral presentation).
 
