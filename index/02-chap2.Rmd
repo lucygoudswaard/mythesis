@@ -1,7 +1,36 @@
 # Background {-}
 
-## This section
+## Cardiovascular disease
+- Types, invidence, causes.
+- Clinical characterisation?
+- Overview of current risk factors - smoking, alcohol, age, male...
 
-## That section
+## Obesity is a risk factor for cardiovascular disease 
+- Current evidence.
+- Known mechanisms.
+- Gap - how platelets really are involved.
 
-## Another section
+## Platelets
+
+### Platelet biology, 
+
+### Platelet activation
+
+### Sysmex parameters
+
+## Body mass index and platelets
+### Current evidence
+### Limitations and gaps
+
+## Possible mechanisms 
+### inflammation - can it be measured by the plasma proteome
+### Platelet primers
+
+## Interdisciplinary methods - MR, RCTs, lab work
+
+## Cohorts utilised within the thesis
+
+## Summary
+
+
+

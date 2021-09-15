@@ -5,16 +5,18 @@
 	
 Platelets play an important role in haemostasis [@Rivera2009]. In healthy people, prostacyclin (PGI2) and nitric oxide (NO) are released by the endothelium to suppress platelet activity [@Yau2015]. When the endothelium is damaged, platelets adhere to the injured vessel wall through the glycoprotein Ib-IXV receptor and the GPVI collagen receptor. As a result, platelets secrete alpha and dense granules and undergo shape change [@Badimon2012]. Alpha granules release growth factors (e.g. IGF-1), clotting factors and chemokines [@Gear2003], whereas dense granules release molecules such as ADP, which further activate platelets by interacting with the P2Y^1^ and P2Y^12^ platelet receptors. Platelet activation also results in activation of integrins such as α~IIbβ~3~ and subsequent fibrinogen binding results in platelet aggregation, thrombus formation and cessation of bleeding [@Rivera2009]. Despite these processes being essential for haemostasis, when platelets become hyperactive, the balance is tipped in favour of thrombosis. 
 
-Platelets likely contribute to the increased CVD risk related to obesity and type II diabetes as platelets from patients with obesity are reported to be hyperactive and have a lower sensitivity to antiplatelet therapies such as clopidogrel [@Nardin2015]. These therapies are critical in the prevention of ischaemic events. The underlying mechanism that causes platelet hyperactivity is not completely understood. It is likely to involve a combination of factors. One such factor is a decrease in the production of endothelial PGI2 and nitrous oxide [@BelindeChantemele2012a]. Another contributing factor could be an alteration in the circulating levels of soluble ligands, growth factors and cytokines which can enhance platelet function (known as platelet primers). Platelet primers are signaling molecules which enhance agonist-induced platelet function but in isolation are unable to stimulate platelet aggregation or integrin activation. Molecules that have been reported to be able to prime platelets include insulin-like growth factor-1 (IGF-1) [@Nardin2015] and thrombopoietin (TPO) [@Maury2010].
+Platelets likely contribute to the increased CVD risk related to obesity and type II diabetes. Platelets from patients with obesity are reported to be hyperactive and have a lower sensitivity to antiplatelet therapies such as clopidogrel [@Nardin2015]. These therapies are critical in the prevention of ischaemic events. The underlying mechanism that causes platelet hyperactivity is not completely understood. It is likely to involve a combination of factors. One such factor is a decrease in the production of endothelial PGI2 and nitrous oxide [@BelindeChantemele2012a]. Another contributing factor could be an alteration in the circulating levels of soluble ligands, growth factors and cytokines which can enhance platelet function (known as platelet primers). Platelet primers are signaling molecules which enhance agonist-induced platelet function but in isolation are unable to stimulate platelet aggregation or integrin activation. Molecules that have been reported to be able to prime platelets include insulin-like growth factor-1 (IGF-1) [@Nardin2015; @Blair2015] and thrombopoietin (TPO) [@Maury2010].
 
 Previous studies have shown that multiple platelet primers increase platelet function through activation of the lipid kinase phosphoinositide-3-kinase (PI3K) [@Blair2015; @Pasquet2000; @Falcinelli2005]. Another pathway that has been implicated in platelet priming effects is the MAPK pathway. TPO can enhance TxA2 synthesis through increasing the activation of extracellular signal regulated kinase (ERK2) [@Ezumi1998; @VanWilligen2000]. The common involvement of both PI3K and MAPK in platelet priming mediated by IGF-1, TPO and matrix metalloproteinase-2 (MMP-2) suggests that platelets may also be activated by other platelet primers. There are other biomarkers which are also suggested to be raised with obesity as a result of low-grade chronic inflammation [@Esser2014], including the chemokines macrophage-derived chemokine (MDC/CCL22) and thymus and activation regulated chemokine (TARC/CCL17) [@Safa2016]. The inflammatory chemokines MDC and TARC act at the receptor CCR4, which is expressed on platelets [@Clemetson2000]. These chemokines have been shown to potentiate platelet aggregation [@Gear2001]. For example, the presence of TARC and MDC have been demonstrated to greatly enhance platelet aggregation in the presence of low levels of ADP or thrombin [@Gear2001]. Furthermore, gene polymorphisms of MDC and CCR4 are associated with myocardial infarction (MI) [@Noori2018]. As blood/plasma levels of MDC have been reported to be elevated in obese people [@Safa2016] and polymorphisms of its receptor are associated with MI, understanding the mechanisms by which MDC can enhance platelet function may give us an important insight in to how platelets are hyperactive in obesity and potentially provide a novel target for new antiplatelet/thrombotic or preventative therapies for those with an increased risk of cardiovascular events.
 
-The aim of this chapter is to determine the effects and mechanisms of MDC and TARC on platelet function and signalling.
+The aims of this chapter are:
+1) Determine the effects and mechanisms of MDC and TARC on platelet function and signalling.
+2) Explore the effect of increasing levels of MDC and TARC on disease using two sample Mendelian randomization.
 
 
 ## Methods
 ### Materials
-PAR1 activating peptide (SFLLRN) was purchased from Bachem. MDC and TARC were from PeproTech (London, UK). Indomethacin, PGE1, Triton X-100, apyrase, HEPES Tyrode’s (10 mM HEPES, 1 mM magnesium, 0.5 mM monosodium phosphate, 145 mM sodium chloride, 3 mM potassium chloride, pH 7.2), 2-butanol, ethanol, methanol and bovine serum albumin (BSA) were purchased from Sigma-Aldridge (Poole, UK). Phosphate buffered saline (PBS), trisodium citrate, acid citrate dextrose (ACD), D-glucose, ammonium persulfate (APS), Tris buffered saline (TBS), polysorbate 20 (Tween 20), Donkey anti-Rabbit IgG (H+L) Highly Cross Adsorbed Secondary Antibody Alexa Fluor 647 and Fura-2 were purchased from Thermo Fisher Scientific (Loughborough, UK). FITC PAC1 and FITC-CD62P from BD bioscience (Berkshire, UK). 30 % acrylamide mix (37.5:1), 1.0 M Tris pH 6.8 solution and 1.5 M Tris pH 8.8 solution purchased from National Diagnostics (Nottingham, UK). Immobilon-FL PVDF membranes (0.45-micron filter) were purchased from Merck Millipore (Hertfordshire, UK). Sodium dodecyl sulphate (SDS) was purchased from GE Healthcare worldwide (Hatfield, UK). SDS solution (10 %), tetramethylethylenediamine (TEMED), filter paper and Precision Plus protein pre-stained standards were purchased from Bio-Rad laboratories (Bredbury, UK). Blocking buffer was purchased from LI-COR Biosciences (Cambridge, UK). pSer473 PKB, pSer239 VASP, pSer157 VASP, pThr202/Tyr204 ERK and pSer425 Talin were purchased from Cell Signaling Technology (Hertfordshire, UK). Alexa Fluor 680 AffiniPure Donkey Anti-Goat IgG and Alexa Fluor 680 AffiniPure Donkey Anti-Rabbit IgG were obtained from Jackson Immunoresearch (Cambridgeshire, UK). Paraformaldehyde was purchased from Acros Organics (Geel, Belgium). 
+PAR1 activating peptide (PAR1-AP/SFLLRN) was purchased from Bachem. MDC and TARC were from PeproTech (London, UK). Indomethacin, PGE1, Triton X-100, apyrase, HEPES Tyrode’s (10 mM HEPES, 1 mM magnesium, 0.5 mM monosodium phosphate, 145 mM sodium chloride, 3 mM potassium chloride, pH 7.2), 2-butanol, ethanol, methanol and bovine serum albumin (BSA) were purchased from Sigma-Aldridge (Poole, UK). Phosphate buffered saline (PBS), trisodium citrate, acid citrate dextrose (ACD), D-glucose, ammonium persulfate (APS), Tris buffered saline (TBS), polysorbate 20 (Tween 20), Donkey anti-Rabbit IgG (H+L) Highly Cross Adsorbed Secondary Antibody Alexa Fluor 647 and Fura-2 were purchased from Thermo Fisher Scientific (Loughborough, UK). FITC PAC1 and FITC-CD62P from BD bioscience (Berkshire, UK). 30 % acrylamide mix (37.5:1), 1.0 M Tris pH 6.8 solution and 1.5 M Tris pH 8.8 solution purchased from National Diagnostics (Nottingham, UK). Immobilon-FL PVDF membranes (0.45-micron filter) were purchased from Merck Millipore (Hertfordshire, UK). Sodium dodecyl sulphate (SDS) was purchased from GE Healthcare worldwide (Hatfield, UK). SDS solution (10 %), tetramethylethylenediamine (TEMED), filter paper and Precision Plus protein pre-stained standards were purchased from Bio-Rad laboratories (Bredbury, UK). Blocking buffer was purchased from LI-COR Biosciences (Cambridge, UK). pSer473 PKB, pSer239 VASP, pSer157 VASP, pThr202/Tyr204 ERK and pSer425 Talin were purchased from Cell Signaling Technology (Hertfordshire, UK). Alexa Fluor 680 AffiniPure Donkey Anti-Goat IgG and Alexa Fluor 680 AffiniPure Donkey Anti-Rabbit IgG were obtained from Jackson Immunoresearch (Cambridgeshire, UK). Paraformaldehyde was purchased from Acros Organics (Geel, Belgium). 
 
 ### Isolation of human platelets
 Fresh human venous blood was obtained from healthy volunteers by venipuncture. Blood was taken into the syringe with a 1 in 10 volume of 4 % trisodium citrate, then mixed with a 1 in 7 volume of acid citrate dextrose (ACD). Blood was placed into 5 mL LP4 tubes then centrifuged at 1000 revolutions per minute (RPM) for 17 minutes. Platelet rich plasma (PRP) was extracted. PRP was supplemented with inhibitors such as 0.02 U/mL apyrase, 140 nM PGE1 or 10 µM indomethacin (exact inhibitors for each experiment used will be shown in results). Supplemented PRP was either used for the experiment of centrifuged for a further 10 minutes at 1700 RPM. Platelet poor plasma (PPP) was removed leaving a platelet pellet. This pellet was resuspended in HEPES Tyrode’s (supplemented with 0.1 % glucose and 0.02 U/mL apyrase, and 10 µM indomethacin if already applied to PRP). Platelets were counted using a Z1 coulter particle counter by diluting 1 in 2000 in 10 mL MQ water. Platelets were diluted further using the supplemented HEPES Tyrode’s to a platelet concentration of 4 x 10^8^/mL and left to rest for 30 mins in a 30°C water bath.
@@ -27,6 +29,9 @@ PRP supplemented with apyrase was used. For each donor, the platelet count was r
 
 ### Flow cytometry: integrin α~IIb~β~3~ activation and P-selectin expression
 Platelets were diluted to a concentration of 2 x 10^7^/mL using supplemented HEPES Tyrode’s buffer. Platelets were incubated with 200 ng/ml MDC, TARC or vehicle for 5 mins, then added to wells in a 96 well plate already containing a mixture of PAC1 and CD62P antibodies (in a 2:1 ratio), as well as increasing concentrations of PAR1-AP. After a further 5 minutes, platelets were fixed with 1 % paraformaldehyde (PFA). Plates were read using a BD Accuri C6 Plus flow cytometer. The relative fluorescence of the antibody in each well was measured over 10,000 platelets and median statistics were used.
+
+### Phosphatidylserine (PS) exposure
+Wahsed platelets were used at a concentration of 2 x 10^7^. Platelets were preincubated with vehicle, MDC or TARC. Platelets were stimulated 5 ug/mL as well as increasing concentrations of thrombin. PE-conjugated annexin V was used to bind to PS. Plates were read using the flow cytometer, where the % positive (annexin V) were recorded.
 
 ### Flow cytometry: phospho-VASP
 Washed platelets were diluted to a concentration of 1 x 10^8^/mL. Platelets were left to rest in a 96 well plate for 2 minutes. 200 ng/ml MDC, 200 ng/mL TARC, 10 µM ADP or vehicle were preincubated with platelets for 5 mins at 37 °C. PGE1 (concentration-response curve) was added for a further 5 minutes. Platelets were fixed with 1 % PFA for 10 minutes. Platelets were centrifuged at 1000g for 10 minutes. Supernatant was then discarded, and platelets were permeabilized with 0.1% TritonTM X-100 for 10 minutes. The plate was centrifuged again at 1000g for 10 minutes. Supernatant was discarded and platelets were washed and resuspended with 1 x PBS. Platelets were centrifuged at 1000g for 10 minutes. Supernatant was discarded and platelets were resuspended with rabbit pSer157 VASP primary antibody (1 in 1000) for 30 minutes on ice. Platelets were centrifuged at 1000g for 10 minutes. Supernatant was discarded and platelets were washed and resuspended with 1 x PBS. Platelets were centrifuged at 1000g for 10 minutes. Supernatant was discarded and platelets were resuspended with secondary antibody (Alexa Fluor™ 647 anti-rabbit IgG, 1 in 1000) for 45 minutes on ice. Platelets were centrifuged at 1000g for 10 minutes. Supernatant was discarded and platelets were washed with 1 x PBS. Platelets were centrifuged once more at 1000g for 10 minutes and the plate was read using a BD Accuri C6 Plus flow cytometer.
@@ -48,6 +53,9 @@ Two sample MR uses summary statistics and allows for causal associations to be e
 
 ### Priming effects of MDC and TARC on platelet aggregation in washed platelets using light transmittance aggregometry
 
+To investigate the effect of MDC and TARC on agonist-induced platelet aggregation, MDC and TARC were preincubated before addition of PAR1-AP. Figure \@ref(fig:MDC-TARC-agg)A shows an example aggregation trace from one donor where PAR1-AP and vehicle induced only shape change, but the presence of MDC and TARC induced a maximal aggregation response. A submaximal concentration of PAR1-AP (ranging from 0.7 to 1 µM) and vehicle induced a mean aggregation of 7.0 % (SEM 2.9 %) aggregation (Figure \@ref(fig:MDC-TARC-agg)B). In the presence of 1 µg/ml MDC, this aggregation increased to 33 % (SEM 13 %) but this did not reach statistical significance (MDC v vehicle, p = 0.15). In the presence of 1 µg/ml TARC, there was 46 % (SEM 11 %) aggregation (TARC v vehicle, p < 0.05). Similar effects were observed with MDC and TARC on the area under the aggregation curve (Figure \@ref(fig:MDC-TARC-agg)C).
+
+
 (ref:scaption3a) The priming effect of the chemokines MDC and TARC on PAR1-AP induced platelet aggregation in washed platelets
 (ref:caption3a) Washed platelets at 2x10^8^/mL were preincubated with MDC or TARC (5 mins) before application of PAR1-AP-induced aggregation (5 mins). A) Raw aggregation trace comparing the effect of vehicle, 200 ng/mL MDC or 200 ng/mL TARC on PAR1-AP induced aggregation. B) Bar chart comparing the maximum aggregation reached when adding vehicle, MDC or TARC. C) Bar chart comparing the area under the curve of the aggregation trace in response to vehicle, MDC or TARC. Results analysed with a repeated measures one-way ANOVA with Dunnett’s multiple comparisons. N=7. Mean+SEM displayed.
 ```{r MDC-TARC-agg, echo = FALSE, fig.cap="(ref:caption3a)", fig.scap= "(ref:scaption3a)"}
@@ -55,12 +63,25 @@ include_graphics(path = "figure/Chemokines/Layouts/MDC_TARC_aggregation_PAR1.pdf
 
 ```
 
+### Priming effects of MDC and TARC on platelet aggregation in PRP
 
-### Priming effects of MDC and TARC on PAR1-AP induced integrin α~IIb~β~3~ activation and P-selectin expression
+Next, the priming effect of MDC and TARC was explored on platelet aggregation in PRP using plate aggregation. Plate aggregation allows exploration of more conditions than LTA, therefore full concetration-response curves can be constructed. MDC and TARC were not able to potentiate the aggregation induced by increasing concentrations of PAR1-AP (Figure \@ref(fig:MDC-TARC-agg-PRP)A). There was no difference in the logEC50 for comparing vehicle with MDC and TARC (Figure \@ref(fig:MDC-TARC-agg-PRP)B).   
+
+(ref:scaption10) The priming effect of the chemokines MDC and TARC on PAR1-AP induced platelet aggregation in PRP using plate aggregation
+(ref:caption10) PRP was preincubated with MDC or TARC (5 mins) before application of PAR1-AP-and aggregation induced by a plate shaker (5 mins). A) A concentration response curve of the effect of vehicle, 200 ng/mL MDC or 200 ng/mL TARC on PAR1-AP induced aggregation. N=7. B) A bar chart of the logEC50s of the PAR1-AP concentration response curve in the presence of vehicle, MDC or TARC. Results analysed using a repeated measures one-way ANOVA with Dunnett's multiple comparisons. N=7.
+```{r MDC-TARC-agg-PRP, echo = FALSE, fig.cap="(ref:caption10)", fig.scap= "(ref:scaption10)"}
+include_graphics(path = "figure/Chemokines/Layouts/MDC_TARC_PRP_plate_agg.pdf", dpi = NA)
+
+```
+
+### Priming effects of MDC and TARC on PAR1-AP induced integrin α~IIbβ~3~ activation and P-selectin expression
+
+When a platelet becomes activated by an agonist, the integrin α~IIbβ~3~ changes confirmation and is exposed on the membrane of the platelet. This allows fibrinogen to bind and aggregation to occur. P-selectin also is expressed on the membrane as a result of stimulation and is a marker of alpha granule secretion. To assess whether MDC and TARC affect integrin α~IIbβ~3~ activation and P-selectin expression, washed platelets were incubated with vehicle, 200 ng/ml MDC or TARC prior to PAR-AP stimulation. MDC enhanced integrin α~IIbβ~3~ activation, with a leftward shift in the PAR1-AP concentration response curve (pEC50= -5.54 M (SEM 0.10 M) to -5.66 M (SEM 0.08 M), p=0.02). Preincubation with TARC had the same effect as MDC, left shifting the concentration-response curve (pEC50 = -5.54 M (SEM 0.11 M) to -5.64 M (SEM 0.11 M), p=0.01, Figure \@ref(fig:MDC-TARC-integrin-pselectin)A). MDC and TARC did not cause a significant increase in the maximal integrin activation. As the concentration of PAR1-AP applied to the platelets increased, the amount of P-selectin exposed increased and therefore there was an increase in the MFI. The logEC50 for the PAR1-AP effect on P-selectin expression was -5.36 (SEM 0.07) (Figure \@ref(fig:MDC-TARC-integrin-pselectin)B). Preincubation with 200 ng/ml MDC caused a small leftward shift in logEC50 to -5.44 (SEM 0.07) (MDC v vehicle, p=0.006), but preincubation with 200 ng/ml TARC did not alter the sensitivity to PAR1-AP. Together these results show that MDC and TARC are able to potentiate platelet activation mainly through activating the integrin α~IIbβ~3~. In the absence of PAR1-AP, both MDC and TARC had a weak effect on integrin α~IIbβ~3~ activation: increasing basal levels from a mean fluorescence intensity (MFI) of 161 (SEM 20) to 222 (SEM 27) (vehicle v MDC, p=0.006) and to 285 ± 36 (vehicle v TARC, p=0.007) respectively (Figure \@ref(fig:MDC-TARC-integrin-pselectin)C). This effect was specific to the integrin α~IIbβ~3~ as it was not seen with P-selectin.
+
 
 (ref:scaption3) The priming effect of the chemokines MDC and TARC on PAR1-AP induced α~IIb~β~3~ activation and P-selectin expression
-(ref:caption3) Washed platelets at 2x10^7^/mL were preincubated with MDC or TARC (5 mins) before application of PAR1-AP (5 mins). Integrin α~IIb~β~3~ activation and P-selectin expression were measured using flow cytometry. A) The effect of vehicle, 200 ng/mL MDC or 200 ng/mL TARC on PAR1-AP induced α~IIb~β~3~ activation. B) The effect of vehicle, MDC or TARC on PAR1-AP induced P-selectin expression. LogEC50s compared using a one-way ANOVA with Dunnett's multiple comparisons in Table \@ref(tab:chemokines-integrin-pselectin)
-```{r MDC-TARC-integrin-pselectin, echo = FALSE, fig.cap="(ref:caption3)", fig.scap= "(ref:scaption3)"}
+(ref:caption3) Washed platelets at 2x10^7^/mL were preincubated with MDC or TARC (5 mins) before application of PAR1-AP (5 mins). Integrin α~IIb~β~3~ activation and P-selectin expression were measured using flow cytometry. A) The effect of vehicle, 200 ng/mL MDC or 200 ng/mL TARC on PAR1-AP induced α~IIb~β~3~ activation. B) The effect of vehicle, MDC or TARC on PAR1-AP induced P-selectin expression. LogEC50s compared using a one-way ANOVA with Dunnett's multiple comparisons in Table \@ref(tab:chemokines-integrin-pselectin) C) MDC and TARC alone increase integrin αIIbβ3 activation. Mean + SEM displayed. N=4.
+```{r MDC-TARC-integrin-pselectin, echo = FALSE, out.width="85%", fig.cap="(ref:caption3)", fig.scap= "(ref:scaption3)"}
 include_graphics(path = "figure/Chemokines/Layouts/P-selectin_integrin_MDC_TARC.pdf", dpi = NA)
 
 ```
@@ -75,14 +96,16 @@ logEC502 <- c(-5.36, -5.44, -5.46)
 SE2 <- c(0.07, 0.07, 0.11)
 P2 <- c(NA, 0.006, 0.21)
 mytable = data.frame(cbind(V, logEC50, SE, P, logEC502, SE2, P2))
-names(mytable) <- c("Condition", "Integrin activation logEC50 (M)", "Integrin SEM", "Integrin P value", "P-selectin logEC50 (M)", "P-selectin SEM", "P-selectin p value")
+names(mytable) <- c("Condition", "Integrin activation logEC50 (M)", "Integrin logEC50 SEM", "Integrin P value", "P-selectin logEC50 (M)", "P-selectin logEC50 SEM", "P-selectin p value")
 mytable %>% kable(caption = "Comparison of the effect of MDC and TARC on the logEC50 for PAR1-AP induced integrin activation and P-selectin expression compared with a one-way ANOVA (N=4)", booktabs = TRUE) %>% 
   kable_classic_2(full_width = F) %>%
  kable_styling(full_width = TRUE) %>%
   landscape()
 ```
 
-## Effects of MDC and TARC on PAR1-AP induced PS exposure
+### Effects of MDC and TARC on PAR1-AP induced PS exposure
+
+When a platelet is activated by strong agonists, such as dual stimiluation by CRP and thrombin, PS is transcolated from the inner platelet membrane to the outer, thereby facilitating coagulation [@Reddy2020]. MDC and TARC did not affect the overall percentage of annexin V positive platelets induced by CRP and thrombin (Figure \@ref(fig:MDC-TARC-PS-exposure)).
 
 (ref:scaption4) The effect of the chemokines MDC and TARC on PAR1-AP induced PS exposure
 (ref:caption4) A) Washed platelets at 2x10^7^/mL were preincubated with vehicle, 200ng/mL MDC or 200 ng/mL TARC (5 mins) before application of increasing concentrations of PAR1-AP (10 mins). PS exposure was measured using flow cytometry (N=4). B) Bar chart comparing the effect of vehicle, MDC or TARC on the logEC50s of PAR1-AP induced PS exposure. LogEC50s compared by a Friedman's test.
@@ -91,21 +114,36 @@ include_graphics(path = "figure/Chemokines/Layouts/MDC_TARC_PS_exposure_layout.p
 
 ```
 
-### Mechanism of MDC and TARC priming in washed platelets
+### Effects of MDC and TARC alone on aggregation in washed platelets 
 
-### Effects of MDC and TARC on phospho-VASP levels
+MDC and TARC were applied to washed platelets to determine whether they exert effects on platelet aggregation in the absence of an agonist. MDC and TARC did not cause platelet aggregation, however they did cause an upward deflection on the aggregation trace (Figure \@ref(fig:MDC-TARC-wp-alone-aggregation)). This upward deflection is a reduction in light passing through the sample, indicating that the platelets are undergoing shape change.
 
-(ref:scaption5) The effect of the chemokines MDC and TARC on phospho-VASP levels
-(ref:caption5) A) Washed platelets at 1x10^8^/mL were preincubated with vehicle, 200ng/mL MDC, 200 ng/mL TARC or 10 uM ADP (5 mins) before application of increasing concentrations of PGE~1~ (5 mins). PS exposure was measured using flow cytometry (N=3). B) Bar chart of the logEC50s of each concentration response curve from A. LogEC50s were compared using a one-way ANOVA with Dunnett's multiple comparisons.
-```{r MDC-TARC-VASP-FACS, echo = FALSE, fig.cap="(ref:caption5)", fig.scap= "(ref:scaption5)"}
-include_graphics(path = "figure/Chemokines/Layouts/MDC_TARC_VASP_FACS_logec50.pdf", dpi = NA)
+(ref:scaption8) The effect of the chemokines MDC and TARC alone on aggregation in washed platelets
+(ref:caption8) A-C) Washed platelets at 2x10^8^/mL were stimulated with vehicle, 200ng/mL MDC, 200 ng/mL TARC or 1 uM PAR1-AP (5 mins). Aggregation was measured using light transmittance aggregometry. Each graph is a representative trace from a separate donor
+```{r MDC-TARC-wp-alone-aggregation, out.width="90%", echo = FALSE, fig.cap="(ref:caption8)", fig.scap= "(ref:scaption8)"}
+include_graphics(path = "figure/Chemokines/Layouts/MDC_TARC_alone_wp_aggregation.pdf", dpi = NA)
 
 ```
 
-(ref:scaption6) A representative blot of the effect of MDC, TARC and ADP on PGE~1~ stimulated phospho-VASP.
-(ref:caption6) A representative blot of the effect of 200 ng/mL MDC, 200 ng/mL TARC and 10 uM ADP on phospho-VASP at Serine 157 and 239 in the presence of increasing concentrations of PGE~1~
+### Effects of MDC and TARC alone on calcium mobilisation
 
-```{r MDC-TARC-wp-WB-VASP, echo = FALSE, fig.cap="(ref:caption6)", fig.scap= "(ref:scaption6)"}
+Calcium mobilisation was measured by using a fluorescent dye, Fura-2, which binds to intracellular calcium. Increasing concentrations were added to washed platelets as a positive control, where increasing calcium mobilisation was observed (\@ref(fig:MDC-TARC-wp-calcium)A). MDC and TARC alone were also able to increase calcium mobilisation in a concentration-dependent manner (\@ref(fig:MDC-TARC-wp-calcium)B), however caused a much smaller calcium response than ADP. 
+
+(ref:scaption9) The effect of ADP and the chemokines MDC and TARC alone on calcium mobilisation in washed platelets.
+(ref:caption9) Washed platelets at 2x10^8^/mL loaded with Fura-2 were stimulated with increasing concentrations of A) ADP or B) 200ng/mL MDC or 200 ng/mL TARC. Area under curve represents the free calcium and is ratio of fluorescence at wavelengths 340:380 nm.
+```{r MDC-TARC-wp-calcium, echo = FALSE, out.width="90%", fig.cap="(ref:caption9)", fig.scap= "(ref:scaption9)"}
+include_graphics(path = "figure/Chemokines/Layouts/MDC_TARC_calcium_wp.pdf", dpi = NA)
+
+```
+
+### Mechanism of MDC and TARC priming in washed platelets
+MDC and TARC activate the platelet receptor CCR4, which can reportedly couple to G~i/o~. PGE~1~ inhibits platelets by acting at a G~s~ coupled receptor, thereby increasing levels of cAMP. One mechanism by which MDC and TARC may therefore increase platelet function is by activating the G~i~ pathway, which would oppose cAMP inhibition of platelet function. ADP acts at the P2Y12 receptor which is G~i/o~ coupled, therefore it reduces PGE~1~ induced VASP phosphorylation. To explore whether MDC and TARC activate G~i~ signaling, the effect of these MDC and TARC on VASP phosphorylation in the presence and absence of PGE~1~ was explored. PGE~1~ increased the phosphorylation of VASP at both Ser^157^ and Ser^239^. Figure \@ref(fig:MDC-TARC-wp-WB-VASP) shows a representative blot from one donor. There was little evidence for an effect of MDC, TARC and ADP reducing basal VASP levels (Figure \@ref(fig:MDC-TARC-wp-WB-VASP)A, C). As a positive control, ADP (10 µM) reduced the phosphorylation of VASP induced by 100 nM PGE~1~ at both Ser^239^ by 62 % SEM (18 %) (ADP v vehicle, p=0.048, Figure \@ref(fig:MDC-TARC-wp-WB-VASP)B) and at Ser^157^ by 44 % (SEM 21 %) (ADP v vehicle, p=0.048, Figure \@ref(fig:MDC-TARC-wp-WB-VASP)D). In contrast, there was not strong evidence that MDC and TARC reduced the phosphorylation of VASP induced by 100 nM PGE1 at Ser^239^ or at Ser^157^ (Figures \@ref(fig:MDC-TARC-wp-WB-VASP)B, D). This was also true for 10 nM and 30 nM PGE1 (data not shown). Phospho-VASP at Ser^157^ was also measured using flow cytometry (Figure \@ref(fig:MDC-TARC-VASP-FACS). PGE~1~ increased phosphorylation of VASP in a concentration-dependent manner, with a logEC50 of -8.36 M (SEM 0.16 M). Pre-incubation with ADP shifted this response to the right to give a logEC50 of -6.95 M (SEM 0.17 M) (ADP v vehicle, p=0.002). MDC and TARC did not alter the PGE1 phosphorylation of VASP. Together, these results indicate that MDC and TARC do not signal through G~i~-coupled receptors in human platelets, or too weakly to detect using Western blotting or flow cytometry.
+
+
+(ref:scaption6) A representative blot of the effect of MDC, TARC and ADP on PGE~1~ stimulated phospho-VASP.
+(ref:caption6) A representative blot of the effect of 200 ng/mL MDC, 200 ng/mL TARC and 10 uM ADP on phospho-VASP at Serine^157^ and Serine^239^ in the presence of increasing concentrations of PGE~1~.
+
+```{r MDC-TARC-wp-WB-VASP, echo = FALSE, out.width="60%", fig.cap="(ref:caption6)", fig.scap= "(ref:scaption6)"}
 include_graphics(path = "figure/Chemokines/MDC_TARC_VASP_blot.pdf", dpi = NA)
 
 ```
@@ -113,58 +151,51 @@ include_graphics(path = "figure/Chemokines/MDC_TARC_VASP_blot.pdf", dpi = NA)
 (ref:scaption7) Quantification of the effect of MDC, TARC and ADP on PGE~1~ stimulated phospho-VASP.
 (ref:caption7) Bar charts of the effect of 200 ng/mL MDC, 200 ng/mL TARC and 10 uM ADP on phospho-VASP at A) Serine 239 in the absence of PGE~1~, B) Serine 239 in the presence of 100 nM PGE~1~, C) Serine 157 in the absence of PGE~1~, D) Serine 157 in the presence of 100 nM PGE~1~. N=4. Results analysed with a repeated measures one-way ANOVA with Dunnett's Multiple comparisons. 
 
-```{r MDC-TARC-wp-VASP-bar, echo = FALSE, fig.cap="(ref:caption7)", fig.scap= "(ref:scaption7)"}
+```{r MDC-TARC-wp-VASP-bar, echo = FALSE, out.wdith = "70%", fig.cap="(ref:caption7)", fig.scap= "(ref:scaption7)"}
 include_graphics(path = "figure/Chemokines/Layouts/MDC_TARC_WB_VASP.pdf", dpi = NA)
 
 ```
 
-
-### Effects of MDC and TARC alone on aggregation in washed platelets 
-
-(ref:scaption8) The effect of the chemokines MDC and TARC alone on aggregation in washed platelets
-(ref:caption8) A-C) Washed platelets at 2x10^8^/mL were stimulated with vehicle, 200ng/mL MDC, 200 ng/mL TARC or 1 uM PAR1-AP (5 mins). Aggregation was measured using light transmittance aggregometry. Each graph is a representative trace from a separate donor
-```{r MDC-TARC-wp-alone-aggregation, echo = FALSE, fig.cap="(ref:caption8)", fig.scap= "(ref:scaption8)"}
-include_graphics(path = "figure/Chemokines/Layouts/MDC_TARC_alone_wp_aggregation.pdf", dpi = NA)
+(ref:scaption5) The effect of the chemokines MDC and TARC on phospho-VASP levels
+(ref:caption5) A) Washed platelets at 1x10^8^/mL were preincubated with vehicle, 200ng/mL MDC, 200 ng/mL TARC or 10 uM ADP (5 mins) before application of increasing concentrations of PGE~1~ (5 mins). PS exposure was measured using flow cytometry (N=3). B) Bar chart of the logEC50s of each concentration response curve from A. LogEC50s were compared using a one-way ANOVA with Dunnett's multiple comparisons.
+```{r MDC-TARC-VASP-FACS, echo = FALSE, out.width="80%", fig.cap="(ref:caption5)", fig.scap= "(ref:scaption5)"}
+include_graphics(path = "figure/Chemokines/Layouts/MDC_TARC_VASP_FACS_logec50.pdf", dpi = NA)
 
 ```
 
-### Effects of MDC and TARC alone on calcium mobilisation
-
-(ref:scaption9) The effect of ADP and the chemokines MDC and TARC alone on calcium mobilisation in washed platelets.
-(ref:caption9) Washed platelets at 2x10^8^/mL loaded with Fura-2 were stimulated with increasing concentrations of A) ADP or B) 200ng/mL MDC or 200 ng/mL TARC. Area under curve represents the free calcium and is ratio of fluorescence at wavelengths 340:380 nm.
-```{r MDC-TARC-wp-calcium, echo = FALSE, fig.cap="(ref:caption9)", fig.scap= "(ref:scaption9)"}
-include_graphics(path = "figure/Chemokines/Layouts/MDC_TARC_calcium_wp.pdf", dpi = NA)
-
-```
-
-### Priming effects of MDC and TARC on platelet aggregation in PRP
-(ref:scaption10) The priming effect of the chemokines MDC and TARC on PAR1-AP induced platelet aggregation in PRP using plate aggregation
-(ref:caption10) PRP was preincubated with MDC or TARC (5 mins) before application of PAR1-AP-and aggregation induced by a plate shaker (5 mins). A) A concentration response curve of the effect of vehicle, 200 ng/mL MDC or 200 ng/mL TARC on PAR1-AP induced aggregation. N=7. B) A bar chart of the logEC50s of the PAR1-AP concentration response curve in the presence of vehicle, MDC or TARC. Results analysed using a repeated measures one-way ANOVA with Dunnett's multiple comparisons. N=7.
-```{r MDC-TARC-agg-PRP, echo = FALSE, fig.cap="(ref:caption10)", fig.scap= "(ref:scaption10)"}
-include_graphics(path = "figure/Chemokines/Layouts/MDC_TARC_PRP_plate_agg.pdf", dpi = NA)
-
-```
 
 ### Mechanisms of the effect of MDC on platelet aggregation in PRP
-(ref:scaption11) Example aggregation traces of the effect of inhibitors on MDC induced platelet aggregation in PRP.
-(ref:caption11) 
 
-```{r MDC-PRP-agg-trace, echo = FALSE, fig.cap="(ref:caption11)", fig.scap= "(ref:scaption11)"}
-include_graphics(path = "figure/Chemokines/Layouts/MDC_inhibitors_aggregation_traces.pdf", dpi = NA)
+The mechanism of MDC-induced platelet aggregation was explored using various inhibitors. To test that the antagonists used were specific, they were first applied to PAR1-AP. The G~q~ inhibitor YM-254890 inhibited PAR1-AP induced platelet aggregation, but the CCR4 antagonist AZD-2098 and G~i~ antagonist did not affect PAR1-AP platelet aggregation (Figures \@ref(fig:MDC-PRP-agg-bar)A, B). Y27632 inhibited the G~12/13~ mediated shape change induced by low concentrations of PAR1-AP (0.75 uM) due inhibiting rho-associated protein kinase (ROCK) (data not shown). 
 
-```
+The effects of these inhibitors on MDC-induced aggregation was then explored. MDC by itself was able to consistently cause over 60% aggregation in PRP. The CCR4 inhibitor AZD-2098 was able to reduce this aggregation, but only at 50 uM (\@ref(fig:MDC-PRP-agg-bar)C, Figures \@ref(fig:MDC-PRP-agg-trace)A, B). The G~q~ inhibitor YM-254890 was able to reduce the maximum aggregation induced by MDC (Figure \@ref(fig:MDC-PRP-agg-bar)C, Figure \@ref(fig:MDC-PRP-agg-trace)C), suggesting CCR4 couples to G~q~. Y27632 did not affect aggregation induced by MDC, suggesting that this aggregation is not dependent on G~12/13~ and ROCK (Figure \@ref(fig:MDC-PRP-agg-bar)D, \@ref(fig:MDC-PRP-agg-trace)D).
 
 (ref:scaption12) The effect of inhibitors on PAR1-AP and MDC induced aggregation in PRP.
-(ref:caption12) Results analysed with a repeated measures one-way ANOVA with Dunnett's Multiple comparisons. 
+(ref:caption12) Platelet rich plasma (PRP) was incubated for 5 minutes with the antagonist indicated, followed by application of PAR1-AP or MDC. A) Effect of 10 uM AZD-2098 (CCR4 antagonist) on maximal aggregation induced by PAR1-AP B) Effect of 10 uM YM-254890 (G~q~ inhibitor) on maximal aggregation induced by PAR1-AP C) Effect of AZD-2098 and YM-254890 on aggregation induced by 200 ng/mL MDC D) Effect of the ROCK inhibitor Y27632 on aggregation induced by 200 ng/mL MDC Results are analysed with a paired two-tailed t-test or repeated measures one-way ANOVA with Dunnett's Multiple comparisons. N=3-5.
 
-```{r MDC-PRP-agg-bar, echo = FALSE, fig.cap="(ref:caption12)", fig.scap= "(ref:scaption12)"}
+```{r MDC-PRP-agg-bar, echo = FALSE, out.width="110%", fig.cap="(ref:caption12)", fig.scap= "(ref:scaption12)"}
 include_graphics(path = "figure/Chemokines/Layouts/PAR1_MDC_inhibitors_aggregation.pdf", dpi = NA)
 
 ```
 
+
+(ref:scaption11) Aggregation traces of the effect of inhibitors on MDC induced platelet aggregation in PRP.
+(ref:caption11) Representative aggregation traces of platelet rich plasma (PRP) incubated with A) 10 uM CCR4 antagonist AZD-2098 B) 50 uM AZD-2098 C) 10 uM G~q~ inhibitor YM-254890 D) 10 uM ROCK inhibitor Y27632, followed by addition of 200 ng/mL MDC.
+
+```{r MDC-PRP-agg-trace, echo = FALSE, out.width="90%", fig.cap="(ref:caption11)", fig.scap= "(ref:scaption11)"}
+include_graphics(path = "figure/Chemokines/Layouts/MDC_inhibitors_aggregation_traces.pdf", dpi = NA)
+
+```
+
+
 ## Two sample Mendelian randomiation to assess the role of MDC (CCL22) and TARC (CCL17) in disease
 
-### MDC implicated in DVT
+### MDC implicated in diseases such as deep vein thrombosis (DVT)
+To determine whether levels of MDC or TARC contribute to disease, a two sample MR was performed using pQTL data for these chemokines and available disease outcome data. Results of the two sample MR are shown for MDC and TARC in tables \@ref(tab:MDC-disease-MR) and \@ref(tab:TARC-disease-MR). There was evidence from the Wald ratio MR that higher MDC has a causal effect on DVT (0.22, SE 0.021, p=2.2x10^-26^) and pulmomary embolism (0.33, SE 0.08, p=2.0x10^-5^). 
+
+There was weaker evidence for causal effects of TARC on disease, with evidence that higher levels of TARC have an effect on rheumatoid arthritis (0.10, SE 0.04, p=8.51x10^-3^). There was weak evidence for higher TARC decreasing the risk of ischaemic stroke (-0.08, SE 0.04, p=0.03).
+
+
 ```{r MDC-disease-MR,  echo=FALSE}
 options(knitr.kable.NA = "")
 V = c("MDC/CCL22", "MDC/CCL22","MDC/CCL22","MDC/CCL22","MDC/CCL22","MDC/CCL22","MDC/CCL22","MDC/CCL22","MDC/CCL22","MDC/CCL22","MDC/CCL22","MDC/CCL22","MDC/CCL22","MDC/CCL22","MDC/CCL22","MDC/CCL22","MDC/CCL22","MDC/CCL22","MDC/CCL22" )
@@ -199,9 +230,33 @@ names(mytable) <- c("Protein", "Outcome trait", "N SNP (rsID)", "Method", "Effec
 mytable %>% kable(caption = "Estimates for the effect of TARC on disease outcomes using two sample Mendelian randomization", booktabs = TRUE) %>% 
   kable_classic_2(full_width = F) %>%
  kable_styling(full_width = TRUE) %>%
-  column_spec(2, width = "5cm") %>%
+  column_spec(2, width = "4cm") %>%
   landscape()
 ```
 
 
 ## Discussion
+
+This study explored the effects of the chemokines MDC and TARC on platelet function and signalling. Evidence suggested that MDC and TARC were able to potentiate platelet function induced by the agonist PAR1-AP in washed platelets. There was not strong evidence that this potentiation was mediated PKB (unlike other platelet primers) or by a G~i/o~-coupled receptor. Functional experiments indicated that MDC and TARC are able to cause a small calcium response and platelet shape change when applied alone. Experiments in PRP indicated that MDC is able to cause full aggregation, and that this is due to the CCR4 receptor, and that this is G~q~ coupled. Two sample MR was performed to estimate the causal effect of higher levels of MDC and TARC on disease. These results suggested that higher levels of MDC increased the risk of DVT and PE. These effects could be due to the activation of platelets. Further work is required to determine signalling, and further cohort studies would be useful to confirm effects of MDC on DVT and PE.
+
+Previous studies have attempted to explore the effects of MDC and TARC on platelet function. There is evidence that MDC and TARC potentiate ADP-induced aggregation [@Gear2001]. The current study provides evidence that this is also the case with PAR1-AP, therefore this effect is not agonist specific. MDC and TARC alone have been shown to elicit a calcium response, but only in PRP can aggregation occur [@Abi-Younes2001, @Petito2018, @Kowalska2000]. This is likely due to components in PRP such as arachidonic acid. The current chapter confirmed these findings, where only shape change was achieved in washed platelets, but in PRP MDC could induce aggregation. 
+
+As well as confirming previous findings, this chapter provided some novel observations. For example, this chapter explored whether MDC and TARC can potentiate PS exposure. There was no evidence that MDC and TARC could potentiate the procoagulant effects induced by CRP and thrombin. 
+
+Biology?? Why are we seeing these effects??
+
+As well as functional effects, this chapter aimed to assess whether effects are due to the CCR4 receptor and the downstream signalling involved. It has been reported that MDC inhibits calcium currents in HEK293 cells and barium currents dorsal root ganglia neurones and is therefore G~i/o~ coupled [@Oh2001]. MDC and TARC were not able to reduce VASP phosphorylation induced by PGE1, suggesting that the effects are not via G~i/o~ in platelets. Another study suggested that CCR4 is coupled to G~q~ due to the calcium response observed by MDC [Kowalska2000]. Inhibiting G~q~ coupling in the current study inhibited the aggregation induced by MDC. 
+
+MDC and TARC have been implicated in cardiovascular disease such as atherosclerosis [@Weber2004]. As MDC and TARC activate platelets, the effect of MDC and TARC on disease was explored using two sample MR. The SNP that was associated with levels of MDC, rs77542162, was also associated with increased risk of DVT and pulmonary embolism. Despite the evidence for a causal effect, it is possible that this SNP could affect the outcome through routes other than through the exposure (horizontal pleiotropy). As there is only one SNP, sensitivity analyses cannot be performed to test this. In efforts to determine whether levels of MDC or TARC are affected by BMI, a one sample MR was performed in Chapter \@ref(#BMI-protein-MR). Here, the methods and full results can be seen, where there is weak evidence that higher BMI raises levels of MDC.
+
+### Conclusions
+
+Overall, this chapter provided evidence that the chemokines MDC and TARC potentiate platelet aggregation induced by PAR1-AP. On their own in washed platelets, a small calcium response can be observed as well as shape change, but PRP is required to see full aggregation. Signalling experiments suggest MDC and TARC act at the CCR4 receptor on platelets, and that G~q~ coupling is responsible for the functional effects observed. There was evidence that higher MDC may have a causal effect on DVT and PE. MDC may therefore be a biomarker for venous thromboembolism. 
+
+
+
+
+
+
+
+

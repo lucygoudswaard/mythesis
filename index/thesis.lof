@@ -1,46 +1,47 @@
 \contentsline {figure}{\numberline {1}{\ignorespaces Schematic of the multi-step pathway addressed in the thesis}}{7}{figure.caption.9}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {1.1}{\ignorespaces Schematic of linear regression and Mendelian randomization analyses}}{19}{figure.caption.11}%
-\contentsline {figure}{\numberline {1.2}{\ignorespaces A STROBE diagram outlining participants included in the INTERVAL study (N=33388).\relax }}{21}{figure.caption.12}%
-\contentsline {figure}{\numberline {1.3}{\ignorespaces Correlation matrix and dendrogram of the relationship between platelet traits.}}{29}{figure.caption.15}%
-\contentsline {figure}{\numberline {1.4}{\ignorespaces Forest plot of the Mendelian randomization and unadjusted observational estimates for the effect of BMI on platelet traits.}}{44}{figure.caption.25}%
-\contentsline {figure}{\numberline {1.5}{\ignorespaces Association between platelet measures and whole blood platelet aggregation in COPTIC trial participants}}{47}{figure.caption.27}%
-\contentsline {figure}{\numberline {1.6}{\ignorespaces Graphical summary of findings\relax }}{48}{figure.caption.28}%
+\contentsline {figure}{\numberline {1.1}{\ignorespaces Schematic of linear regression and Mendelian randomization analyses}}{18}{figure.caption.11}%
+\contentsline {figure}{\numberline {1.2}{\ignorespaces A STROBE diagram outlining participants included in the INTERVAL study (N=33388).\relax }}{20}{figure.caption.12}%
+\contentsline {figure}{\numberline {1.3}{\ignorespaces Correlation matrix and dendrogram of the relationship between platelet traits}}{28}{figure.caption.15}%
+\contentsline {figure}{\numberline {1.4}{\ignorespaces Forest plot of the Mendelian randomization and unadjusted observational estimates for the effect of BMI on platelet traits.}}{43}{figure.caption.25}%
+\contentsline {figure}{\numberline {1.5}{\ignorespaces Association between platelet measures and whole blood platelet aggregation in COPTIC trial participants}}{46}{figure.caption.27}%
+\contentsline {figure}{\numberline {1.6}{\ignorespaces Graphical summary of findings\relax }}{47}{figure.caption.28}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Comparison of basal integrin α\textsubscript {IIb}β\textsubscript {3} activation, P-selectin expression and surface receptors levels across control and bariatric patient groups}}{60}{figure.caption.31}%
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Concentration-response curves of integrin α\textsubscript {IIb}β\textsubscript {3} activation and P-selectin expression}}{61}{figure.caption.32}%
-\contentsline {figure}{\numberline {2.3}{\ignorespaces Comparison of platelet-neutrophil aggregates}}{62}{figure.caption.33}%
-\contentsline {figure}{\numberline {2.4}{\ignorespaces A principal component analysis to determine whether PC1 and PC2 separate out control and bariatric groups}}{63}{figure.caption.34}%
-\contentsline {figure}{\numberline {2.5}{\ignorespaces A principal component analysis to determine whether PC1 and PC2 separate out control and bariatric groups}}{64}{figure.caption.35}%
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Comparison of basal integrin α\textsubscript {IIb}β\textsubscript {3} activation, P-selectin expression and surface receptors levels across control and bariatric patient groups}}{62}{figure.caption.31}%
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Concentration-response curves of integrin α\textsubscript {IIb}β\textsubscript {3} activation and P-selectin expression}}{63}{figure.caption.32}%
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Comparison of platelet-neutrophil aggregates}}{64}{figure.caption.33}%
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Principal component analysis (PCA): scatter plot of PC1 and PC2}}{65}{figure.caption.34}%
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Principal component analysis (PCA): scatter plot of PC3 and PC4.}}{66}{figure.caption.35}%
+\contentsline {figure}{\numberline {2.6}{\ignorespaces A volcano plot comparing the Log\textsubscript {2} fold change in protein levels in bariatric patients compared to controls}}{68}{figure.caption.36}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces The priming effect of the chemokines MDC and TARC on PAR1-AP induced platelet aggregation in washed platelets}}{74}{figure.caption.36}%
-\contentsline {figure}{\numberline {3.2}{\ignorespaces The priming effect of the chemokines MDC and TARC on PAR1-AP induced α\textsubscript {IIb}β\textsubscript {3} activation and P-selectin expression}}{75}{figure.caption.37}%
-\contentsline {figure}{\numberline {3.3}{\ignorespaces The effect of the chemokines MDC and TARC on PAR1-AP induced PS exposure}}{77}{figure.caption.39}%
-\contentsline {figure}{\numberline {3.4}{\ignorespaces The effect of the chemokines MDC and TARC on phospho-VASP levels}}{78}{figure.caption.40}%
-\contentsline {figure}{\numberline {3.5}{\ignorespaces A representative blot of the effect of MDC, TARC and ADP on PGE\textsubscript {1} stimulated phospho-VASP.}}{79}{figure.caption.41}%
-\contentsline {figure}{\numberline {3.6}{\ignorespaces Quantification of the effect of MDC, TARC and ADP on PGE\textsubscript {1} stimulated phospho-VASP.}}{80}{figure.caption.42}%
-\contentsline {figure}{\numberline {3.7}{\ignorespaces The effect of the chemokines MDC and TARC alone on aggregation in washed platelets}}{81}{figure.caption.43}%
-\contentsline {figure}{\numberline {3.8}{\ignorespaces The effect of ADP and the chemokines MDC and TARC alone on calcium mobilisation in washed platelets.}}{81}{figure.caption.44}%
-\contentsline {figure}{\numberline {3.9}{\ignorespaces The priming effect of the chemokines MDC and TARC on PAR1-AP induced platelet aggregation in PRP using plate aggregation}}{82}{figure.caption.45}%
-\contentsline {figure}{\numberline {3.10}{\ignorespaces Example aggregation traces of the effect of inhibitors on MDC induced platelet aggregation in PRP. (ref:caption11)}}{83}{figure.caption.46}%
-\contentsline {figure}{\numberline {3.11}{\ignorespaces The effect of inhibitors on PAR1-AP and MDC induced aggregation in PRP.}}{84}{figure.caption.47}%
+\contentsline {figure}{\numberline {3.1}{\ignorespaces The priming effect of the chemokines MDC and TARC on PAR1-AP induced platelet aggregation in washed platelets}}{85}{figure.caption.38}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces The priming effect of the chemokines MDC and TARC on PAR1-AP induced platelet aggregation in PRP using plate aggregation}}{86}{figure.caption.39}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces The priming effect of the chemokines MDC and TARC on PAR1-AP induced α\textsubscript {IIb}β\textsubscript {3} activation and P-selectin expression}}{88}{figure.caption.40}%
+\contentsline {figure}{\numberline {3.4}{\ignorespaces The effect of the chemokines MDC and TARC on PAR1-AP induced PS exposure}}{90}{figure.caption.42}%
+\contentsline {figure}{\numberline {3.5}{\ignorespaces The effect of the chemokines MDC and TARC alone on aggregation in washed platelets}}{91}{figure.caption.43}%
+\contentsline {figure}{\numberline {3.6}{\ignorespaces The effect of ADP and the chemokines MDC and TARC alone on calcium mobilisation in washed platelets.}}{92}{figure.caption.44}%
+\contentsline {figure}{\numberline {3.7}{\ignorespaces A representative blot of the effect of MDC, TARC and ADP on PGE\textsubscript {1} stimulated phospho-VASP.}}{93}{figure.caption.45}%
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Quantification of the effect of MDC, TARC and ADP on PGE\textsubscript {1} stimulated phospho-VASP.}}{94}{figure.caption.46}%
+\contentsline {figure}{\numberline {3.9}{\ignorespaces The effect of the chemokines MDC and TARC on phospho-VASP levels}}{95}{figure.caption.47}%
+\contentsline {figure}{\numberline {3.10}{\ignorespaces Example aggregation traces of the effect of inhibitors on MDC induced platelet aggregation in PRP. (ref:caption11)}}{95}{figure.caption.48}%
+\contentsline {figure}{\numberline {3.11}{\ignorespaces The effect of inhibitors on PAR1-AP and MDC induced aggregation in PRP.}}{96}{figure.caption.49}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Correlation matrix of all protein traits analysed by SomaLogic}}{99}{figure.caption.50}%
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Cluster dendrogram showing the hierarchical relationship between protein levels}}{101}{figure.caption.51}%
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Principal component analysis (PCA) and k-means clustering of proteins}}{103}{figure.caption.52}%
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Q-Q plots of the expected against observed -log10(pvalues) for the associations between covariables and protein traits}}{111}{figure.caption.55}%
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Forest plot of the strongest BMI-protein Mendelian randomisation estimates and the corresponding observational estimates\relax }}{115}{figure.caption.57}%
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Q-Q plot of the expected against observed -log10(pvalues) for BMI-protein estimates}}{116}{figure.caption.58}%
-\contentsline {figure}{\numberline {4.7}{\ignorespaces Scatter plot comparing the unadjusted and confounder-adjusted observational BMI-protein estimates}}{117}{figure.caption.59}%
-\contentsline {figure}{\numberline {4.8}{\ignorespaces Scatter plot comparing the observational and MR BMI-protein estimates}}{118}{figure.caption.60}%
-\contentsline {figure}{\numberline {4.9}{\ignorespaces Scatter plot comparing BMI-protein estimates across models with top eight BMI-associated proteins excluded}}{119}{figure.caption.61}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Correlation matrix of all protein traits analysed by SomaLogic}}{110}{figure.caption.52}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Cluster dendrogram showing the hierarchical relationship between protein levels}}{111}{figure.caption.53}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Principal component analysis (PCA) and k-means clustering of proteins}}{113}{figure.caption.54}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Q-Q plots of the expected against observed -log10(pvalues) for the associations between covariables and protein traits}}{119}{figure.caption.57}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Forest plot of the strongest BMI-protein Mendelian randomisation estimates and the corresponding observational estimates\relax }}{123}{figure.caption.59}%
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Q-Q plot of the expected against observed -log10(pvalues) for BMI-protein estimates}}{124}{figure.caption.60}%
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Scatter plot comparing the unadjusted and confounder-adjusted observational BMI-protein estimates}}{125}{figure.caption.61}%
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Scatter plot comparing the observational and MR BMI-protein estimates}}{126}{figure.caption.62}%
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Scatter plot comparing BMI-protein estimates across models with top eight BMI-associated proteins excluded}}{127}{figure.caption.63}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Overview of participants in the DiRECT trial}}{132}{figure.caption.65}%
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Schematic of two stage least squares analysis}}{135}{figure.caption.66}%
-\contentsline {figure}{\numberline {5.3}{\ignorespaces Box plot of the distribution of BMI change (kg/m\textsuperscript {2}) by treatment group}}{139}{figure.caption.68}%
-\contentsline {figure}{\numberline {5.4}{\ignorespaces Circos plot of proteins associated with BMI change}}{141}{figure.caption.69}%
-\contentsline {figure}{\numberline {5.5}{\ignorespaces Scatter plot comparing proteins association with BMI change across models in DiRECT}}{143}{figure.caption.70}%
-\contentsline {figure}{\numberline {5.6}{\ignorespaces Scatter plot comparing the two stage least squares estimate for the effect of BMI change on protein change in DiRECT with the Mendelian randomisation estimate for the effect of BMI on protein levels in INTERVAL}}{146}{figure.caption.71}%
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Overview of participants in the DiRECT trial}}{140}{figure.caption.67}%
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Schematic of two stage least squares analysis}}{143}{figure.caption.68}%
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Box plot of the distribution of BMI change (kg/m\textsuperscript {2}) by treatment group}}{147}{figure.caption.70}%
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Circos plot of proteins associated with BMI change}}{149}{figure.caption.71}%
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Scatter plot comparing proteins association with BMI change across models in DiRECT}}{151}{figure.caption.72}%
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Scatter plot comparing the two stage least squares estimate for the effect of BMI change on protein change in DiRECT with the Mendelian randomisation estimate for the effect of BMI on protein levels in INTERVAL}}{154}{figure.caption.73}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

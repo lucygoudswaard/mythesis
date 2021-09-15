@@ -1,27 +1,33 @@
 # The effect of obesity on platelet function: a clinical pilot study {#BMI-platelets-clinic}
 
-The following results section is a clinical study. Recruitment into this study has been severely affected by COVID-19 as we had approvals to start recruitment in March 2020. All data in this chapter was collected by myself, apart from the platelet-neutrophil assay data, which was performed by Dr Chris Williams due to time constraints when receiving patient samples. The proteomic data was analysed by the Proteomics facility at the University of Bristol. 
+The following results section is a clinical study. Recruitment into this study has been severely affected by COVID-19: approvals were set in place to start recruitment in March 2020. All data in this chapter was collected by myself, apart from the platelet-neutrophil assay data, which was performed by Dr Chris Williams due to time constraints when receiving patient samples. The proteomic data was analysed by the Proteomics facility at the University of Bristol.  
+
+Comment RE some of the methods I wrote for the COVID-19 manuscript are included here. May need to link if the COVID-19 paper is online when submitting.
 
 ## Background
-### Obesity is associated with cardiovascular events e.g. heart attacks and stroke
 
+As detailed in Chapter \@ref(BMI-platelets-INTERVAL), there is evidence that people with a higher BMI have an increased risk of cardiovascular events such as coronary heart disease (CHD) or stroke [@Nordestgaard2012; @Dale2017; @Wolk2003a]. As platelets are one of the key cells involved in haemostasis and thrombosis [@Koupenova2017a], it is likely that a higher BMI has a direct effect on platelet function. The previous chapter provided evidence that higher BMI causes an increase in the production of immature platelets, evidenced by an increase in immature platelet count (IPC). IPC was positively associated with whole blood platelet aggregation in a cardiac surgery cohort. Although this suggests that higher BMI leads to platelet hyperactivity, this association was not directly assessed. 
 
-### Platelets are a key cell involved in thrombosis
+Previous studies have attempted to determine the direct effects of BMI on platelet function [@Barrachina2019; @Nardin2015; @Deharo2014; @Sibbing2007], where there is mixed evidence regarding how BMI affects platelet function. Previous studies have focused on the relationship between BMI and platelet function in patients receiving dual antiplatelet therapy (DAPT). It is less clear what the relationship is between BMI and platelet function in those who are not on any antiplatelet therapy.
 
-The aims of this clinical study were to determine whether an increased BMI is associated with an increase in platelet function and an alteration in platelet signalling compared to healthy controls. In light of the recent pandemic
+Upon activation platelets adhere to the vessel endothelium, where they undergo shape change, release their granules and aggregate. There are numerous laboratory techniques that can be used to measure platelet function [@Paniccia2015]. Experiments include flow cytometry which uses fluorescently tagged antibodies that bind to platelet receptors, some of which are increasingly exposed upon stimulation by known platelet agonists such as protease activated receptor-1 activating protein (PAR1-AP), adenosine diphosphate (ADP) and collagen-related peptide (CRP). Other experiments commonly used include light transmission aggregometry (LTA), which measures the degree of platelet aggregation in response to platelet agonists by how much light passes through the sample. Techniques such as LTA are difficult to implement with patient samples due the requirement of a substantial amount of sample and due to experiments being time consuming. As platelet function declines over a few hours after removal from circulation [@Goss2019], it is preferable to opt for experiments which can be performed quickly. It is also possible to explore the intracellular signalling which occurs within the platelets by using techniques such as Western blotting and tandem mass tag mass spectrometry (TMT-MS), which use targeted and untargeted methods, respectively, to measure protein levels.
+
+Therefore, the aims of this chapter were to:
+1) Optimise laboratory techniques to assess platelet function in a clinical setting.
+2) Determine whether higher BMI is associated with: an increase in immature platelet count, an increase in platelet function and an alteration in platelet signalling by comparing platelets from bariatric patients with BMI >40kg/m^2^ to healthy controls with BMI 18-25kg/m^2^.
 
 ## Methods
 ### Materials
 Protease-activated receptor 1 (PAR-1)-activating peptide (SFLLRN-NH2) was from Bachem (Bubendorf, Switzerland), crosslinked collagen-related peptide (CRP-XL) from Prof. Richard Farndale (Department of Biochemistry, University of Cambridge, UK). Adenosine diphosphate (ADP) was from Sigma-Aldrich (Poole, UK). cOmplete mini protease inhibitor tablets and phosSTOP phosphatase inhibitors were from Roche Life Sciences (Welwyn Garden City, UK). The Pierce bicinchoninic acid (BCA) assay was from ThermoFisher Scientific (Altrincham, UK). Sodium Citrate Vacutainer® tubes, FixLyse, PE-Cy5-conjugated anti-CD42b, FITC-conjugated CD61 antibody, Fc block, PE-conjugated human platelet GPVI antibody, PAC1-FITC and anti-CD62P-PE antibodies were from BD (Wokingham, UK). FITC-conjugated anti-human CD41 and CD42b antibody were from BioLegend (London, UK). 
 
 ### Study population
-This study was approved by the London Riverside Research Ethics Committee. Bariatric patients with a body mass index of >40kg/m^2^ were recruited from the Department of Bariatric and Metabolic Surgery at Southmead Hospital, Bristol. Participants with a BMI between 18 and 25 kg/m^2^ were recruited from the University of Bristol. Inclusion criteria for participants were: aged 18 years and over and able to give written informed consent. Participants were excluded if they were pregnant or lactating, had any known clotting or bleeding disorders (e.g. von Willebrand disease or drug-induced thrombocytopenia), or if they had taken any antiplatelet medication within the previous 14 days such as clopidogrel, ticagrelor or aspirin. Recruitment occurred between May and June 2021. As a pilot study, a total of four bariatric patients with obesity and four control participants were recruited. Bariatric patients donated blood before bariatric surgery.
+This study was approved by the London Riverside Research Ethics Committee. All participants provided written informed consent. Patients, who were due to undergo bariatric surgery, with a body mass index of >40kg/m^2^ were recruited from the Department of Bariatric and Metabolic Surgery at Southmead Hospital, Bristol. Participants with a BMI between 18 and 25 kg/m^2^ were recruited from the University of Bristol. Inclusion criteria for participants were: aged 18 years and over and able to give written informed consent. Participants were excluded if they were pregnant or lactating, had any known clotting or bleeding disorders (e.g. von Willebrand disease or drug-induced thrombocytopenia), or if they had taken any antiplatelet medication within the previous 14 days such as clopidogrel, ticagrelor or aspirin or any other non-steroidal anti-inflammatory drug (NSAID). Recruitment occurred between May and June 2021. As a pilot study, a total of four bariatric patients with obesity and four control participants were recruited. Bariatric patients donated blood before bariatric surgery.
 
 ### Isolation of platelet rich plasma (PRP) and platelet lysates
 Blood was taken by venipuncture into vacutainers containing sodium citrate (3.2%). Blood was centrifuged (1000 RPM, 17 mins). PRP was isolated and diluted 1:40 in HEPES Tyrode's (145 mM NaCl, 3 mM KCl, 0.5 mM Na~2~HPO~4~, 1 mM MgS0~4~.7H~2~O, 10 mM HEPES, pH 7.4, 0.1% [w/v] D‐glucose).  To create platelet lysates, acid citrate dextrose (1:7) and apyrase (0.02 U/mL) were added  to isolated PRP. PRP was centrifuged (1700 RPM, 10 mins). Platelets were double washed in CGS buffer (120 mM NaCl, 25.8 mM sodium citrate dihydrate, 0.1% [w/v] D‐glucose, 0.02 U/mL apyrase, pH 6.5). Platelets were resuspended in radioimmunoprecipitation assay buffer (RIPA: 25 mM HEPES, 200 mM NaCL, 1mM EDTA, 1 % (v/v) NP40, 0.5 % (w/v) sodium deoxychelate, 0.1 % (w/v) SDS) supplemented with a protease and phosphatase inhibitor for 10 minutes on ice. Lysates were centrifuged at 10000 RPM, at 4°C for 5 minutes. Supernatant was removed and a bicinchoninic acid (BCA) assay was performed to calculate sample protein concentrations. Samples were stored in a -80°C freezer until used for proteomics analysis. 
 
 ### Platelet parameters measured by Sysmex
-Citrated whole blood (200 uL) was analysed using the Sysmex XE-2100 haematology analyser. Platelet readouts were platelet count (PLT), immature platelet fraction (IPF), immature platelet count (IPC), side fluorescence (SFL, a measure of mRNA content), forward scatter (FSC, a measure of platelet size), side scatter (SSC, a measure of granularity).
+Citrated whole blood (200 uL) was analysed using the Sysmex XN-20 haematology analyser. Platelet readouts were platelet count (PLT), immature platelet fraction (IPF), immature platelet count (IPC), side fluorescence (SFL, a measure of mRNA content), forward scatter (FSC, a measure of platelet size), side scatter (SSC, a measure of granularity).
 
 ### Integrin α~IIb~β~3~ activation and P-selectin expression measured by flow cytometry
 Isolated PRP was diluted 1:40 in HEPES Tyrode's, with the antibodies FITC-conjugated PAC1 and PE-conjugated CD62P in a 2:1 ratio. Master mix was added to pre-prepared vacuum packed 96 well plates to a final folume of 50 uL. Agonists used were PAR1-AP, ADP and CRP, which were freeze-dried onto the plates [@Chan2018], as well as HEPES Tyrode's which was used for a measurement of unstimulated integrin α~IIb~β~3~ activation and P-selectin expression. Platelets were stimulated with agonists for 10 minutes and were fixed with 2 % paraformaldehyde (PFA) for 20 minutes. Plates were analysed using the BD Accuri C6 Plus flow cytometer (BD Biosciences, Wokingham, UK), where the median fluorescence intensity was derived from 10,000 gated platelets.
@@ -36,7 +42,13 @@ Citrated whole blood was diluted 1 in 10 in HEPES-Tyrode's buffer and incubated 
 Platelet lysate samples (50 ug total protein) were digested with trypsin and labelled with TMT 15 plex reagents (Thermo Fisher Scientific, Loughborough, UK). Labelled samples were pooled. The pooled sample was evaporated to dryness then resuspended in formic acid (5%). The pooled sample was then desalted using a SepPak cartridge (Waters, Milford, Massachussetts, USA). Eluate from the SepPak cartridge was evaporated to dryness and resuspended prior to fractionation by high pH reversed-phase chromatography using an Ultimate 3000 liquid chromatography system (Thermo Fisher Scientific). Further fractionation occurred using high pH RP fractions using the Ulitamte 3000 nano-LC system in line with an Orbitrap Fusion Tribrid Mass Spectrometer (Thermo Fisher Scientific).
 
 ### Statistical analysis
-Data was analysed using GraphPad Prism 8. If data displayed a normal distribution (based on Shapiro-Wilk p-value and W statistic), a parametric test was used (e.g. unpaired t-test or one way ANOVA), otherwise a nonparametric test was used. Concentration-response curve were plotted using a four parameter variable slope. To compare concentration-response curve parameters, logEC50s and curve maxes were compared. A Fisher's exact test was used to compare proportions of categorical variables. Due to limited power, caution should be taken when considering p-values.
+Data was analysed using GraphPad Prism 8. If data displayed a normal distribution (based on Shapiro-Wilk p-value and W statistic), a parametric test was used (e.g. unpaired t-test or one way ANOVA), otherwise a nonparametric test was used. Concentration-response curve were plotted using a four parameter variable slope. To compare concentration-response curve parameters, logEC50s or curve maxes were compared. A Fisher's exact test was used to compare proportions of categorical variables. Due to limited power, caution should be taken when considering p-values. 
+
+### Analysis of proteomic data
+A principal component analysis (PCA) was performed to reduce the data and to identify major axes (principal componenents, PCs). This method helps to determine whether the major axes of the data can likely be explained by the group (bariatric patient with obesity or control participant). Normalised protein abundances were log~2~ transformed, where the logFC was calculated comparing the bariatric samples to control. The normalised protein abundances of bariatric patients were compared to controls using a two-tailed unpaired t-test. P values were not adjusted for multiple testing, however P values of all comparisons provided in full. A positive logFC indicates an increase in protein level in the bariatric samples.
+
+### Ingenuity pathway analysis enrichment
+Enrichment analyses were performed using the Ingenuity Pathway Analysis (IPA) bioinformatics tool (QIAGEN Inc., https://www.qiagenbioinformatics.com/products/ingenuitypathway-analysis) to determine whether proteins altered in bariatric patients with obesity showed enrichment in canonical pathways or diseases compared to the full protein list. IPA utilises the directionality of the change in protein, allowing interpretation of the likely activation or inhibition of the associated pathways. This is expressed as a Z-score. Proteins LogFCs which match the expected pattern of LogFCs contribute to a positive Z-score, and those which disagree contribute to a negative z-score.
 
 ## Results
 
@@ -61,8 +73,7 @@ column_spec(1, width = "5cm")
 
 ### Platelet parameters
 
-Platelet traits measured by Sysmex were compared across bariatric and control groups (Table \@ref(tab:obesity-platelets-parameters)). There was no statistical evidence for an effect of obesity on platelet parameters. However, IPC and IPF did display larger mean values compared to controls, but they also had relatively large SDs in the bariatric patient group. A higher N would be required to detect whether there is any difference between groups. 
-
+Platelet traits measured by Sysmex were compared across bariatric and control groups (Table \@ref(tab:obesity-platelets-parameters)). There was no statistical evidence for an effect of obesity on platelet parameters. However, IPC and IPF did display larger mean values compared to controls, but they also had relatively large SDs in the bariatric patient group (IPC 9.3 (SD 4.9) x 10^9^/L in control vs 16.3 (SD 16.3) x10^9^/L in bariatric group, p=0.45).
 ```{r obesity-platelets-parameters,  echo=FALSE}
 options(knitr.kable.NA = "")
 f = c("Platelet count", "Immature platelet fraction", "Immature platelet count", "Side fluorescence", "Forward scatter", "Side scatter")
@@ -80,7 +91,7 @@ column_spec(1, width = "4cm")
 ```
 
 ### Basal receptors
-Unstimulated platelet receptor levels were compared across bariatric patient and control participant groups. Basal integrin α~IIb~β~3~ activation and P-selectin expression were similar across groups. Similarly, other platelet receptors were not different across groups. 
+Unstimulated platelet receptor levels were compared across bariatric patient and control participant groups. Basal integrin α~IIb~β~3~ activation and P-selectin expression were similar across groups (Figures \@ref(fig:basal-integrin-pselectin-receptor-bariatric)A and B). Similarly, other platelet receptors under basal confitions including GPVI, CD42b (GP1bα), CD41 (integrin α~IIb~), CD61 (Integrin β~3~), CD110 (thrombopoietin/TPO receptor) were not different across groups (Figure \@ref(fig:basal-integrin-pselectin-receptor-bariatric)C). 
 
 (ref:scaption1) Comparison of basal integrin α~IIb~β~3~ activation, P-selectin expression and surface receptors levels across control and bariatric patient groups
 (ref:caption1) Diluted PRP was used for experiments, where platelets were incubated with antibodies for 10 minutes before fixing. Bar graphs comparing A) Basal integrin α~IIb~β~3~ activation B) Basal  P-selectin expression and C) Basal surface receptor expression across bariatric patient and control groups. N=4. P-values indicated for unpaired t-test results.
@@ -93,53 +104,115 @@ include_graphics(path = "figure/Bariatric_study/Basal_surface_receptors.pdf", dp
 
 ### Agonist-induced integrin α~IIb~β~3~ and P-selectin expression
 
-Markers of platelet activation were compared in response to different platelet agonists. 
+Markers of platelet activation were compared in response to different platelet agonists. There was no difference in the levels of the integrin α~IIb~β~3~ or P-selectin across bariatric patients and control groups in response to PAR1-AP, ADP or CRP (Figures \@ref(fig:agonist-integrin-pselectin)A-F), as determined by the logEC50s.
 
 (ref:scaption2) Concentration-response curves of integrin α~IIb~β~3~ activation and P-selectin expression
 (ref:caption2) Concentration-response curves of integrin α~IIb~β~3~ activation in platelet rich plasma diluted in HEPES-Tyrode's in response to A) PAR1-AP, B) ADP and C) CRP. Concentration-response curves of P-selectin expression in response to D) PAR1-AP, E) ADP, F) CRP. N=4.
 
-```{r agonist-integrin-pselectin, out.width = "90%",echo = FALSE, fig.cap="(ref:caption2)", fig.scap= "(ref:scaption2)"}
+```{r agonist-integrin-pselectin, out.width = "95%",echo = FALSE, fig.cap="(ref:caption2)", fig.scap= "(ref:scaption2)"}
 include_graphics(path = "figure/Bariatric_study/Agonist_Integrin_Pselectin.pdf", dpi = NA)
 
 ```
 
 ### Platelet-neutrophil aggregates
+
+Next, platelet-neutrophil interactions were explored by gating neutrophils and determining the degree of platelets bound to neutrophils by using an antibody for the platelet specific anti-CD41 antibody. There was no difference in the percentage of platelets bound to neutrophils under basal conditions (7.0 % (SEM 1.5 %) in control v 11.2 % (SEM 3.2%) in bariatric patient group, p=0.30). Similarly, after stimulation with CRP, there was no difference in the platelet-neutrophil aggregates (38.6 % (SEM 2.6 %) in control group v 35.5 % (SEM 2.7 %), p=0.48).  
+
 (ref:scaption2b) Comparison of platelet-neutrophil aggregates
 (ref:caption2b) Comparison of platelet-neutrohpil aggregates across bariatric patient and control participant groups in unstimulated and stimulated (5 ug/mL CRP) conditions. N=4. P-values provided for the results of a two-way ANOVA with Sidak's multiple comparisons tests.
 
-```{r platelet-neutrophil, echo = FALSE, out.width = "90%", fig.cap="(ref:caption2b)", fig.scap= "(ref:scaption2b)"}
+```{r platelet-neutrophil, echo = FALSE, out.width = "80%", fig.cap="(ref:caption2b)", fig.scap= "(ref:scaption2b)"}
 include_graphics(path = "figure/Bariatric_study/Plt-neu_aggregates.pdf", dpi = NA)
 
 ```
 
-### Proteomics
+### Platelet proteomics
 
-A PCA was performed....
+A PCA was performed on the protein data. PC1 and PC2 explained 27.1 % and 14.4 % of the variance in the data, respectively. A PC plot of PC1 against PC2 is shown in Figure \@ref(fig:pca). PC1 plotted against PC2 did not separate the bariatric patient samples from the control participant samples, despite some grouping of three patients. PC3 and PC4 explained 13.1% and 12.6% of the data respectively. When plotting PC3 against PC4, there is separation among the groups (\@ref(fig:pca2)). This suggests that the group was not the main source of variation between the data. 
 
-(ref:scaption-pca) A principal component analysis to determine whether PC1 and PC2 separate out control and bariatric groups
-(ref:caption-pca) A principal component analysis to determine whether PC1 and PC2 separate out control and bariatric groups
+(ref:scaption-pca) Principal component analysis (PCA): scatter plot of PC1 and PC2
+(ref:caption-pca) Principal component analysis (PCA): scatter plot of PC1 and PC2. Each point represents a participant. Control samples are coloured pink and bariatric samples coloured blue, with the pooled reference sample of both control and bariatric samples coloured in blue.
 
-```{r pca, echo = FALSE, out.width = "90%", fig.cap="(ref:caption-pca)", fig.scap= "(ref:scaption-pca)"}
+```{r pca, echo = FALSE, out.width = "95%", fig.cap="(ref:caption-pca)", fig.scap= "(ref:scaption-pca)"}
 include_graphics(path = "figure/Bariatric_study/Proteomic_PCA.pdf", dpi = NA)
 
 ```
+(ref:scaption-pca2) Principal component analysis (PCA): scatter plot of PC3 and PC4.
+(ref:caption-pca2) Principal component analysis (PCA): scatter plot of PC3 and PC4. Each point represents a participant. Control samples are coloured pink and bariatric samples coloured blue, with the pooled reference sample of both control and bariatric samples coloured in blue.
 
-A volcano plot was ...
-(ref:scaption-volcano) A principal component analysis to determine whether PC1 and PC2 separate out control and bariatric groups
-(ref:caption-volcano) A principal component analysis to determine whether PC1 and PC2 separate out control and bariatric groups
-
-```{r volcano, echo = FALSE, out.width = "90%", fig.cap="(ref:caption-volcano)", fig.scap= "(ref:scaption-volcano)"}
-include_graphics(path = "figure/Bariatric_study/Proteomic_volcano.pdf", dpi = NA)
+```{r pca2, echo = FALSE, out.width = "95%", fig.cap="(ref:caption-pca2)", fig.scap= "(ref:scaption-pca2)"}
+include_graphics(path = "figure/Bariatric_study/PC3vPC4_proteomics.pdf", dpi = NA)
 
 ```
 
-The full proteomic results are here ... 
+There was evidence that 192 out of a total of 5318 detected platelet proteins were altered in bariatric patients with obesity compared to controls \@ref(fig:volcano). The protein which had the strongest evidence for a BMI effect was phosphatidylinositol 4-kinase beta (PI4K-beta) (logFC 0.45, p=6.3x10^-5^). The signalling protein G protein-coupled receptor kinase (GRK6) was lower in bariatric patients (logFC -0.15, p=0.002). The adipocyte plasma membrane-associated protein (APMAP) was increased in bariatric patients (logFC 0.23, p=0.006).  Proteins previously reported to be associated with BMI replicated here, including actin (cytoplasmic 1, logFC 0.51, p=0.03) and septin-2 (logFC 0.14, p=0.03). Previous studies have identified platelet transcripts associated with BMI. The current study provided evidence that these trascripts relate to proteomics, as BMI is associated with myeloperoxidase (LogFC 1.15, p=0.04) and protein S100-A9 (logFC 1.48, p=0.049). Similar to the flow cytometry results, no alteration in protein receptors such as the α~IIb~ integrin and GPVI receptor was detected. The full proteomic results are here https://github.com/lucygoudswaard/mythesis/blob/f17f0250ad50bad74d7e38225d060aa6cd83321b/index/figure/Bariatric_study/Proteomics_results.xlsx
+
+
+(ref:scaption-volcano) A volcano plot comparing the Log~2~ fold change in protein levels in bariatric patients compared to controls
+(ref:caption-volcano) A volcano plot comparing the Log~2~ fold change in protein levels in bariatric patients compared to controls
+
+```{r volcano, echo = FALSE, out.width="80%", fig.cap="(ref:caption-volcano)", fig.scap= "(ref:scaption-volcano)"}
+include_graphics(path = "figure/Bariatric_study/volcano_proteomics_labelled.pdf", dpi = NA)
+
+```
+
+### Ingenuity pathway analysis enrichment
 
 
 
 ## Discussion
 
-This study has explored the effect of obesity on platelet parameters and platelet function. Initial analyses are inconclusive as the experiment lacks power. Despite this, optimisation of experimental techniques used within the study provides a means of exploring effects in the future. 
+This chapter has explored the effect of obesity on platelet parameters and platelet function. Here, I have optimised experimental laboratory techniques for use within a patient study. These experiments have been used to look at platelet function within other patient groups (e.g. COVID-19) and can be implemented in future patient studies. Platelet function experiments did not detect any functional differences in platelets from bariatric patients compared to healthy controls, but proteomics analysis by TMT-MS detected differences in platelet protein abundance. 
+
+This study did not detect differences in platelet characteristics such as IPC. Although there was no statistical evidence, the standard deviation was too large to determine a difference. There was also no evidence for a difference in levels of platelet receptors under basal conditions, nor differences in levels of platelet receptors after stimulation with platelet agonists. This is in contrast to previous studies, which detected an increase in GPVI receptor levels and GPVI mediated platelet aggregation [@Barrachina2019]. Barrachina et al. did not directly measure the integrin α~IIb~β~3~ in response to CRP. A larger sample size would be required to be able to draw conclusions here. Aggregation experiments would have also been useful to compare platelet function across groups, however this technique was not chosen due to the time and large amount of sample required.
+
+The principal component analysis suggested that PC4 was able to separate the bariatric and control groups. Although not the main source of variance, even with a small N number, this was evidence that the group (bariatric/control) could explain variation in proteins. Therefore, some protein signatures may be due to the difference in BMI, however it could also be due to other factors which differed across groups such as previous COVID-19 infection. Comparing the proteins which were altered with previous studies also suggests that the current study is likely capturing platelet protein signatures of obesity. Table \@ref(tab:proteome-lit) shows the results that have replicated in the currenty study when comparing to three previous studies that have looked at the platelet proteome [@Barrachina2019], platelet microvesicle proteome [@Grande2019] and platelet transcriptome in relation to obesity [@Freedman2010]. 
+
+A post hoc sample size calculation was performed to determine how many participants would be required to detect a 10% protein change based on the median protein expression and standard deviation observed in the proteomics analysis, to obtain a power value of 0.8. This analysis suggested that a total of 19 participants (9 and 10 in each group) would be required, based on an alpha of 0.05.
+
+```{r proteome-lit,  echo=FALSE}
+options(knitr.kable.NA = "")
+paper = c("GPVI surface expression and signalling pathway activation are increased in platelets from obese patients: Elucidating potential anti-atherothrombotic targets in obesity", "Platelet-Derived Microparticles From Obese Individuals: Characterization of Number, Size, Proteomics, and Crosstalk With Cancer and Endothelial Cells", "Relation of platelet and leukocyte inflammatory transcripts to body mass index in the Framingham heart study")
+author = c("Barrachina et al., 2019", "Grande et al., 2019", "Freedman et al., 2010")
+findings = c('')
+mytable = cbind(paper, author, findings)
+colnames(mytable) <- c("Paper", "Author, year", "Study summary")
+mytable %>% kable(caption = "Summary of current literature on the effect of body mass index on the plasma proteome", booktabs = TRUE) %>% 
+  kable_classic_2(full_width = F) %>%
+  #kable_paper("hover", full_width = F)
+ kable_styling(full_width = TRUE) %>%
+column_spec(3, width = "7cm") %>%
+  column_spec(2, width = "2cm") %>%
+    column_spec(1, width = "2cm") %>%
+  landscape()
+```
+
+
+Proteomics
+Widely available two sample MR results which look at the effect of plasma proteins on BMI. Although this is not from platelet samples, these results may provide some insight as how higher levels of proteins might affect BMI.
+
+Proteins in agreement with Barrachina:
+- Actin, cytoplasmic 1 (Fragment) (0.51, 0.03). Mutations in ACTB have been shown to coincide with enlarged, immature platelets.
+- Septin-2 (0.14 FC, p=0.03)
+- Gelsolin (-0.14, p=0.02)
+- Glycerol-3-phosphate dehydrogenase (-0.14 FC, p=0.01)
+- Lysozyme C opposite direction (increased in current analysis but Barrachina suggests reduction).
+- Few protein overlaps, however, we did not see an increase in GPVI levels or activation through GPVI using flow cytometry. Barrachina do not directly look at aIIbB3 integrin function.
+
+Comparison with changes in platelet microvesicle proteome: 
+- [@Grande2019]
+- reduction in LIM and senescent cell antigen-likecontaining domain protein 1
+ (FC -0.17, p=0.013).
+ - No other proteins also replicated here (although these are overall platelet not microparticles)
+ 
+ Platelet transcript "Relation of Platelet and Leukocyte Inflammatory Transcripts to Body Mass Index in the Framingham Heart Study". [@Freedman2010] Genes in common
+ - MPO, s100a9, 
+
+
+- Barrachina - proteins differentially regulated in obese v lean. Upregulated in obese = actin, albumin, fibrinogen beta chain,  fibrinogen gamma chain, integrin aiib, protein phosphatase 1 regulatory subunit 7, septin-2, thrombospondin-1, thioredoxin-like protein 1, thymidine phosphorylase, vinculin, negative: aflatoxin b1 aldehyde reductase member 2, dynactin subunit 2, dihydropyrimidinase-related protein 2, gelsolin,  Glycerol-3-phosphate dehydrogenase mitochondrial, Delta-aminolevulinic acid dehydratase, Heat shock protein beta-1, Lysozyme C,
+PDZ and LIM domain protein 1, Protein disulfideisomerase A6, Phosphoglucomutase2, Phosphatidylinositol 5-phosphate 4-kinase type-2 alpha, septin-11, stress-induced phosphoprotein 1, tropomyosin alpha-1 chain, Vacuolar protein sorting-associated protein 37B, zyxin
+
+- EpigrpahDB - two sample MR results for APMAP raising body mass index and weight. Therefore BMI may not be causing it, but association other way round. https://www.epigraphdb.org/pqtl/APMAP
 
 
 

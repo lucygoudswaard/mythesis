@@ -37,13 +37,13 @@ A Shapiro-Wilk test was used to confirm whether the GRS showed a normal distribu
 
 To account for multiple testing, a Bonferroni correction was used to adjust results. This was informed by the correlation between proteins, adjusting only for the estimated number of independent traits (Figure \@ref(fig:Corr-mat-proteins)). Correlation was assessed by a Spearman’s correlation matrix. From a starting number of 4034, the number of independent proteins was  3655 (using a correlation cut-off of r  = 0.8 or tree cut height = 0.2 between proteins, Figure \@ref(fig:Dend-proteins)), dendrogram made using  "iPVs" package https://github.com/hughesevoanth/iPVs). We utilised a Bonferroni adjusted P-value of 0.05/3655 = 1.4x10^-5^ to indicate strong evidence in this sample. Full results are presented in the supplementary material. 
 
-```{r Corr-mat-proteins, echo = FALSE, fig.cap="Correlation matrix of all protein traits analysed by SomaLogic (4,034) where the colour corresponds to the correlation coefficient ranging from 1 (dark blue) to -1 (dark red)", fig.scap="Correlation matrix of protein traits analysec by SomaLogic", fig.scap="Correlation matrix of all protein traits analysed by SomaLogic"}
+```{r Corr-mat-proteins, echo = FALSE, out.width = "90%",fig.cap="Correlation matrix of all protein traits analysed by SomaLogic (4,034) where the colour corresponds to the correlation coefficient ranging from 1 (dark blue) to -1 (dark red)", fig.scap="Correlation matrix of protein traits analysec by SomaLogic", fig.scap="Correlation matrix of all protein traits analysed by SomaLogic"}
 include_graphics(path = "figure/BMI_protein_INTERVAL/Correlation_matrix_proteins.pdf", dpi = NA)
 
 ```
 
 \blandscape
-```{r Dend-proteins, echo = FALSE, out.height="90%", out.width="95%", fig.cap="Cluster dendrogram showing the hierarchical relationship between protein levels. Height is calculated as (1-correlation coefficient). At a height of 0.2 and 0.4 (red dashed lines), the number of independent proteins was 3,655 and 3,016 respectively.", fig.scap = "Cluster dendrogram showing the hierarchical relationship between protein levels.", fig.scap="Cluster dendrogram showing the hierarchical relationship between protein levels"}
+```{r Dend-proteins, echo = FALSE, out.width="95%", fig.cap="Cluster dendrogram showing the hierarchical relationship between protein levels. Height is calculated as (1-correlation coefficient). At a height of 0.2 and 0.4 (red dashed lines), the number of independent proteins was 3,655 and 3,016 respectively.", fig.scap = "Cluster dendrogram showing the hierarchical relationship between protein levels.", fig.scap="Cluster dendrogram showing the hierarchical relationship between protein levels"}
 include_graphics(path = "figure/BMI_protein_INTERVAL/dendrogram.pdf", dpi = NA)
 ```
 \elandscape
@@ -51,7 +51,7 @@ include_graphics(path = "figure/BMI_protein_INTERVAL/dendrogram.pdf", dpi = NA)
 ### Enrichment analysis
 To investigate whether any protein groups showed a particularly strong relationship with BMI and disease (signal detection), protein features were clustered for further analysis. First, a principal component analysis (PCA; prcomp() function from the R "stats" package) on the proteins, not the individuals, was performed on the "pre-adjusted" (see above) dataset (Figure \@ref(fig:PCs)A-D). The top "n" PC eigenvectors, as identified by a scree plot of the PCA eigenvalues (Figure \@ref(fig:PCs)E), were carried forward into an unsupervised k-means analysis (kmeans() function from the R "stats" package). Nineteen k-means analyses were run altering the value of k (number of clusters) from two to 20. To identify an appropriate number of protein clusters (k) we generated a scree like plot (Figure \@ref(fig:PCs)F). Here we plotted the variance explained by clusters, for each k, as estimated as the sum of squares explained by clusters (betweenness) over the total sums of squares, and looked for the smallest k with the maximum variance explained (a plateau). In summary, we used a data reduction method (PCA) to identify major axes (PCs) of the protein data that were then utilised in a machine learning clustering algorithm (k-means) to identify clusters of proteins that share abundance similarities across individuals.
 
-```{r PCs, echo = FALSE, out.width = "90%", out.height = "80%", fig.cap="Principal component analysis (PCA) and k-means clustering of proteins provide evidence for five clusters. A-D) Principal component (PC) 1 vs PC2-PC5 for the study protein data. Each dot represents a protein, and the colors represent the clusters identified by the k-means analysis (1=black, 2=red, 3=green, 4=dark blue, 5=light blue, 6=pink). E) PC scree plot displaying the proportion of variance explained by each of the first 20 PCs. F) K-means scree like plot displaying the variance explained by clusters for each of the 19 k-means analysis, where in each analysis k (the number of clusters) was set from two to 20.", fig.scap = "Principal component analysis (PCA) and k-means clustering of proteins"}
+```{r PCs, echo = FALSE, out.width = "90%", fig.cap="Principal component analysis (PCA) and k-means clustering of proteins provide evidence for five clusters. A-D) Principal component (PC) 1 vs PC2-PC5 for the study protein data. Each dot represents a protein, and the colors represent the clusters identified by the k-means analysis (1=black, 2=red, 3=green, 4=dark blue, 5=light blue, 6=pink). E) PC scree plot displaying the proportion of variance explained by each of the first 20 PCs. F) K-means scree like plot displaying the variance explained by clusters for each of the 19 k-means analysis, where in each analysis k (the number of clusters) was set from two to 20.", fig.scap = "Principal component analysis (PCA) and k-means clustering of proteins"}
  include_graphics(path = "figure/BMI_protein_INTERVAL/PCs2to5v1.pdf", dpi = NA)
  
 ```
@@ -106,12 +106,12 @@ colnames(mytable) <- c('Variable',	'N',	'Beta coefficient per 1-unit increase in
 mytable %>% kable(caption = "Associations between covariables (exposure) and standardised BMI (outcome)", booktabs = TRUE) %>% 
   kable_classic_2(full_width = F) %>%
  kable_styling(full_width = TRUE) %>%
-column_spec(1, width = "5cm")   %>%
-  column_spec(3, width = "3cm")   %>%
+column_spec(1, width = "4cm")   %>%
+  column_spec(3, width = "2cm")   %>%
   landscape()
 ```
 
-```{r QQ-confounder-proteins, echo = FALSE, out.width = "100%", out.height = "100%", fig.cap="Q-Q plots for the expected against observed -log10(pvalues) of the association of age (A), sex (B), smoking (C) and alcohol (D) with protein traits", fig.scap="Q-Q plots of the expected against observed -log10(pvalues) for the associations between covariables and protein traits"}
+```{r QQ-confounder-proteins, echo = FALSE, out.width = "90%", fig.cap="Q-Q plots for the expected against observed -log10(pvalues) of the association of age (A), sex (B), smoking (C) and alcohol (D) with protein traits", fig.scap="Q-Q plots of the expected against observed -log10(pvalues) for the associations between covariables and protein traits"}
 include_graphics(path = "figure/BMI_protein_INTERVAL/QQ_confounder_proteins.pdf", dpi = NA)
 
 ```
@@ -140,7 +140,7 @@ column_spec(1, width = "5cm")   %>%
 ### MR estimates of associations between BMI and protein traits
 In MR analyses, eight unique BMI-protein associations were detected at the level P<1.4x10^-5^ (multiple testing reference point, Figure \@ref(fig:ObsMRforestplot2)). MR estimates provide an estimate of the causal association between protein (in SDs) per SD higher BMI. The strongest association of BMI was again with leptin (0.63 SD, 95% CI = 0.48-0.79; P=1.6x10^-15^); this was followed by the association with FABP4 (0.65 SD, 95% CI = 0.46-0.83; P=6.7x10^-12^). A strong negative association was also seen between BMI (per SD) and SHBG (-0.45 SD, 95% CI -0.65 to -0.25, P=1.4x10^-5^). Other BMI-protein associations (P<1.4x10^-5^) included positive associations with fumarylacetoacetase (FAAA), inhibin beta C chain and complement C5, and negative associations with receptor-type tyrosine-protein phosphatase delta and PILR alpha-associated neural protein. Supplementary Table 7 provides the full MR results.
 
-```{r ObsMRforesplot2, echo = FALSE, out.width = "100%", out.height = "60%", fig.cap="Forest plot of the strongest BMI-protein Mendelian randomisation estimates and the corresponding observational estimates"}
+```{r ObsMRforesplot2, echo = FALSE, out.width = "90%", fig.cap="Forest plot of the strongest BMI-protein Mendelian randomisation estimates and the corresponding observational estimates"}
 include_graphics(path = "figure/BMI_protein_INTERVAL/MR_obs_compar_forestplot.pdf", dpi = NA)
 
 ```
@@ -148,7 +148,7 @@ include_graphics(path = "figure/BMI_protein_INTERVAL/MR_obs_compar_forestplot.pd
 ### Comparison of observational and MR estimates
 The distribution of P-values for associations between BMI and protein traits suggested an overrepresentation of signal for the observational estimates of BMI and protein traits; far more than expected from chance alone (Figure \@ref(fig:QQ-obs-MR)A). In contrast to this, the extent of this overrepresentation was reduced considerably in the MR (Figure \@ref(fig:QQ-obs-MR)B).
 
-```{r QQ-obs-MR, echo = FALSE, out.width = "95%", out.height = "60%", fig.cap="A) Q-Q plot of expected against observed -log10(pvalues) for the unadjusted observational BMI-protein trait estimates B) Q-Q plot of expected against observed -log10(p) values for the Mendelian Randomization BMI-protein trait estimates.", fig.scap = "Q-Q plot of the expected against observed -log10(pvalues) for BMI-protein estimates"}
+```{r QQ-obs-MR, echo = FALSE, out.width = "90%", fig.cap="A) Q-Q plot of expected against observed -log10(pvalues) for the unadjusted observational BMI-protein trait estimates B) Q-Q plot of expected against observed -log10(p) values for the Mendelian Randomization BMI-protein trait estimates.", fig.scap = "Q-Q plot of the expected against observed -log10(pvalues) for BMI-protein estimates"}
 include_graphics(path = "figure/BMI_protein_INTERVAL/QQ_obs_MR.pdf", dpi = NA)
 
 ```
@@ -171,16 +171,16 @@ include_graphics(path = "figure/BMI_protein_INTERVAL/Obs_MR_scatter_without_top8
 ```
 
 ### Enrichment analysis of strongest BMI-protein associations
-In examining the clustering of proteins, visual representation using a scree plot suggested there were five PCs that explained 30.3% of the variance (Figure \@ref(fig:PCs)). After PC5 there was clear drop in variance explained, therefore other PCs were excluded. These five PCs were entered into a k-means analysis, which provided evidence for five clusters (grouping of individual proteins is included in Supplementary Table 7). To identify which cluster was most strongly affected by BMI, the median absolute beta coefficient divided by the SE for each cluster was compared with the overall estimate. Six of the proteins out of the eight strongest BMI-protein MR estimates were in cluster 2 (Supplementary Table 7). There was consistent evidence that cluster 2 showed a stronger association with BMI than the overall average BMI-protein effect both observationally (3.79 (IQR 1.62-7.06) vs 3.35 (IQR 1.57-5.83) respectively, P=3.7x10^-4^) and in MR (0.85 (IQR 0.41-1.46) vs 0.74 (IQR 0.32-1.14), P=5.3x10^-6^, Table \@ref(table:Cluster-estimates)). Cluster 2 showed consistent evidence of a having the largest BMI effect. Compared with the full protein list in SomaLogic, the proteins in cluster 2 were enriched for disease (Table \@ref(table:DAVID-enrichment-cluster2)), including cardiovascular disease (1.14 fold enrichment, P=1.3x10^-4^), renal disease (1.22 fold enrichment, P=1.0x10^-3^) cancer (1.1 fold enrichment, P=9.5x10^-3^) and metabolic disease (1.08 fold enrichment, P=4.2x10^-2^). No other individual cluster showed enrichment for disease. Enrichment for disease was also explored by comparing the proteins which had an association with BMI (P<1.4x10^-5^) in the confounder-adjusted regression model with the total protein list. Compared with the full protein list, the proteins which showed a stronger observational association with BMI were enriched for renal disease (1.21 fold enrichment, P=0.001) and metabolic disease (1.9 fold enrichment, P=0.015, Table \@ref(table:DAVID-enrichment-obs)). 
+In examining the clustering of proteins, visual representation using a scree plot suggested there were five PCs that explained 30.3% of the variance (Figure \@ref(fig:PCs)). After PC5 there was clear drop in variance explained, therefore other PCs were excluded. These five PCs were entered into a k-means analysis, which provided evidence for five clusters (grouping of individual proteins is included in Supplementary Table 7). To identify which cluster was most strongly affected by BMI, the median absolute beta coefficient divided by the SE for each cluster was compared with the overall estimate. Six of the proteins out of the eight strongest BMI-protein MR estimates were in cluster 2 (Supplementary Table 7). There was consistent evidence that cluster 2 showed a stronger association with BMI than the overall average BMI-protein effect both observationally (3.79 (IQR 1.62-7.06) vs 3.35 (IQR 1.57-5.83) respectively, P=3.7x10^-4^) and in MR (0.85 (IQR 0.41-1.46) vs 0.74 (IQR 0.32-1.14), P=5.3x10^-6^, Table \@ref(tab:Cluster-estimates)). Cluster 2 showed consistent evidence of a having the largest BMI effect. Compared with the full protein list in SomaLogic, the proteins in cluster 2 were enriched for disease (Table \@ref(tab:DAVID-enrichment-cluster2)), including cardiovascular disease (1.14 fold enrichment, P=1.3x10^-4^), renal disease (1.22 fold enrichment, P=1.0x10^-3^) cancer (1.1 fold enrichment, P=9.5x10^-3^) and metabolic disease (1.08 fold enrichment, P=4.2x10^-2^). No other individual cluster showed enrichment for disease. Enrichment for disease was also explored by comparing the proteins which had an association with BMI (P<1.4x10^-5^) in the confounder-adjusted regression model with the total protein list. Compared with the full protein list, the proteins which showed a stronger observational association with BMI were enriched for renal disease (1.21 fold enrichment, P=0.001) and metabolic disease (1.9 fold enrichment, P=0.015, Table \@ref(tab:DAVID-enrichment-obs)). 
 
 ```{r Cluster-estimates,  echo=FALSE}
 options(knitr.kable.NA = "")
 Cluster = c(1, 2, 3, 4, 5, "All")
 N <- c(1061, 1406, 581, 502, 484, 4034)
 Medobs <- c('3.28 (1.56-5.26)','3.79 (1.62-7.06)','2.77 (1.39-4.30)','3.01 (1.25-5.6)','4.44 (2.2-7.05)','3.35 (1.57-5.83)')
-Pobs <- c(1, 3.70E-4, 1, 1, 1.80E-5, NA)
+Pobs <- c(1, '3.70E-4', 1, 1, '1.80E-5', NA)
 MedMR <- c('0.69 (0.31-1.22)','0.85 (0.41-1.46)','0.74 (0.37-1.25)','0.68 (0.34-1.19)','0.63 (0.32-1.14)','0.74 (0.35-1.28)')
-PMR <- c(1, 5.3E-6, 1, 1, 1, NA)
+PMR <- c(1, '5.3E-6', 1, 1, 1, NA)
 mytable = data.frame(cbind(Cluster, N, Medobs, Pobs, MedMR, PMR))
 colnames(mytable) <- c( 'Cluster',	'N',	'Median absolute observational beta coefficient divided by SE (IQR)',	'P value* for cluster v all proteins (Observational)',	'Median MR beta coefficient divided by SE (IQR)',	'P value* for cluster v all proteins (MR)')
 mytable %>% kable(caption = "Comparison of cluster median(absolute beta coefficient / SE) with the overall median for observational and MR analyses, *One-tailed pairwise Wilcox test", booktabs = TRUE, caption.short = "Comparison of BMI-protein estimates among protein clusters") %>% 
@@ -200,8 +200,8 @@ List <- c(1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024 )
 Pophits <- c(1023, 472,958,856,1243,216,388,351,886,759,278)
 Poptotal <- c(2723, 2723, 2723, 2723, 2723, 2723 ,2723 ,2723 ,2723 ,2723 ,2723)
 FE <- c(1.14, 1.22, 1.11, 1.11, 1.08, 1.23, 1.15, 1.15, 1.08, 1.09, 1.12)
-Pval <- c(7.3E-06,5.8E-05,5.3E-04,1.9E-03,2.4E-03,5.9E-03,9.8E-03,1.4E-02,1.5E-02,1.6E-02,7.5E-02)
-Bonf_adj_P <- c(1.3E-04,1.0E-03, 9.5E-03,3.4E-02,4.2E-02,1.0E-01,1.6E-01,2.3E-01,2.4E-01,2.5E-01,7.5E-01)
+Pval <- c('7.3E-06','5.8E-05','5.3E-04','1.9E-03','2.4E-03','5.9E-03','9.8E-03','1.4E-02','1.5E-02','1.6E-02','7.5E-02')
+Bonf_adj_P <- c('1.3E-04','1.0E-03', '9.5E-03','3.4E-02','4.2E-02','1.0E-01','1.6E-01','2.3E-01','2.4E-01','2.5E-01','7.5E-01')
 mytable = data.frame(cbind(Term, Count, Percentage, List, Pophits, Poptotal, FE, Pval, Bonf_adj_P))
 colnames(mytable) <- c('Term (Genetic Association Database disease class)',	'Count',	'%',	'List Total','	Population Hits',	'Population Total',	'Fold Enrichment',	'P Value',	'Bonferroni-adjusted P value' )
 mytable %>% kable(caption = "Cluster 2 vs full SomaLogic protein enrichment results for disease class using DAVID bioinformatics 6.8", booktabs = TRUE) %>% 
@@ -220,7 +220,7 @@ List <- c(1039,1039,1039,1039,1039,1039,1039,1039,1039,1039,1039,1039,1039,1039 
 Pophits <- c(472,856,1243,278,1023,541,534,351,185,497,958,388,759,381)
 Poptotal <- c(2723, 2723, 2723, 2723, 2723, 2723 ,2723 ,2723 ,2723 ,2723 ,2723, 2723, 2723, 2723)
 FE <- c(1.21,1.14,1.09,1.22,1.09,1.13,1.12,1.15,1.22,1.11,1.07,1.11,1.07,1.10)
-Pval <- c(7.7E-05,8.8E-05,8.3E-04,2.7E-03,4.1E-03,6.4E-03,1.2E-02,1.4E-02,1.5E-02,2.1E-02,2.2E-02,5.0E-02,5.5E-02,6.6E-02)
+Pval <- c('7.7E-05','8.8E-05','8.3E-04','2.7E-03','4.1E-03','6.4E-03','1.2E-02','1.4E-02','1.5E-02','2.1E-02','2.2E-02','5.0E-02','5.5E-02','6.6E-02')
 Bonf_adj_P <- c(0.001,0.002,0.015,0.047,0.072,0.109,0.189,0.228,0.236,0.313,0.332,0.605,0.638,0.708)
 mytable = data.frame(cbind(Term, Count, Percentage, List, Pophits, Poptotal, FE, Pval, Bonf_adj_P))
 colnames(mytable) <- c('Term (Genetic Association Database disease class)',	'Count',	'%',	'List Total','	Population Hits',	'Population Total',	'Fold Enrichment',	'P Value',	'Bonferroni-adjusted P value' )
