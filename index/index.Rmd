@@ -22,6 +22,8 @@ header-includes:
     \usepackage{booktabs}
     \usepackage{longtable}
     \usepackage{siunitx}
+    \usepackage{float}
+    \floatplacement{figure}{H}
     \pagestyle{plain}
 output: 
   thesisdown::thesis_pdf: default

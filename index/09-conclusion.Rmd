@@ -2,6 +2,10 @@
 
 ## Overall findings - table or figure ???
 
+```{r Thesis-schematic-chaps, echo = FALSE, out.width = "90%", fig.cap="Schematic of the multi-step pathway addressed in the thesis with chapter numbers where associations are explored", fig.scap="Schematic of the multi-step pathway addressed in the thesis with chapter numbers"}
+include_graphics(path = "figure/General_discussion/Thesis_graphic_overview_chapters.png", dpi = NA)
+```
+
 ## Strengths and limitations
 
 ## Future studies

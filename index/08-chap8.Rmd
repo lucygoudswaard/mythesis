@@ -1,1 +1,200 @@
-# Protein DVT MR, enrichment analyses???
+# Using a randomised control trial to explore the effects of caloric restriction-induced weight loss on the plasma proteome {#BMI-protein-RCT}
+
+## Background
+
+Obesity is associated with an increased risk of type II diabetes (T2D), cardiovascular diseases, musculoskeletal diseases, and types of cancer [@Garg2014; @Khan2018; @Kortt2002]. These associations are well established, however mechanisms of disease are less clear. It is likely that a change in the composition of proteins circulating in the blood plays a role in obesity-related disease [@Goudswaard2021]. The previous results chapter (Chapter \@ref(BMI-protein-MR)) examined the effect of BMI on the plasma proteome and provided estimates for the average change in proteins per average difference in BMI in a general population, using Mendelian randomization (MR). There was evidence of a BMI effect on proteins such as leptin, sex hormone binding globulin (SHBG) and fatty acid binding protein 4 (FABP4). A change in circulating levels of these proteins have been implicated in cardiovascular diseases. 
+
+Although MR helps to overcome issues inherent to observational studies such as confounding and reverse causation, MR has its own limitations. For example, it is possible that genetic variants used for the genetic risk score could affect protein levels through routes other than changes in BMI. This is known as horizonal pleiotropy [@Davies2018]. Triangulation can be used in efforts to further determine the BMI effects on the plasma proteome. Triangulation is defined as strengthening causal inference through the combination of study designs which each have separate sources of bias [@Lawlor2016]. Therefore, to complement the Mendelian randomization in the previous chapter, the Diabetes REmission Clinical Trial (DiRECT) can be utilised. The DiRECT trial consisted of a group of patients who had overweight/obesity and T2D who were either given guideline T2D care or an intervention to help with weight loss and T2D remission. This chapter therefore aimed to:
+
+1) Examine the effect of BMI change on the plasma proteome.
+2) Compare BMI-protein effects across MR and RCT study designs (Results from Chapter \@ref(BMI-protein-MR)).
+
+## Methods
+
+### Study design and participants
+Samples analysed within this study were collected from participants enrolled in the Diabetes Remission clinical trial (DiRECT). DiRECT was a cluster-randomised trial which took place at 49 primary care practices in Scotland and Tyneside [@Lean2018]. Ethics approval was granted from West 3 Ethics Committee (January, 2014) and the National Health Service (NHS). Participants were recruited between 25th July 2014 and 5th August 2016. Details of the protocol have previously been published [@Leslie2016]. Participants enrolled were between 20-65 years, diagnosed with T2D within previous 6 years, had a BMI of between 27-45kg/m^2^. Participants were excluded if they were: using insulin, had a HbA1c concentration of ≥12 % (≥108 mmol/mol), weight loss of >5 kg in the preceding 6 months, an estimated glomerular filtration rate of <30 mL/min per 1.732 m^2^. More exclusion criteria are included in the main trial paper [@Lean2018]. Participants in the control group received best-practice care by guidelines. The intervention group were asked to follow the Counterweright-Plus weight management programme [@Lean2013]. This programme consisted of a total diet replacement (TDR) phase using a low energy diet (825-853 kcal/day) for 3-5 months, followed by structured food reintroduction of 2-8 weeks, with ongoing monthly long-term weight loss maintenance visits. Those in the intervention group had their antidiabetic and antihypertensive drugs discontinued. In total, there were 146 patients in the control group and 119 in the intervention group who remained enrolled in the study at 1 year, as detailed in Figure \@ref(fig:direct-participants).
+
+(ref:scaption-direct) Overview of participants in the DiRECT trial
+(ref:caption-direct) Overview of participants in the DiRECT trial
+
+```{r direct-participants, echo = FALSE, fig.cap="(ref:caption-direct)", fig.scap= "(ref:scaption-direct)"}
+include_graphics(path = "figure/DiRECT/DiRECT_study_summary.png", dpi = NA)
+
+```
+
+### Included variables
+Age and sex were self-reported. Height was measured with the Frankfort plane horizonal with a protable stadiometer (Chasmors Ltd, London). Weight was measured using Class 111 approved calibrated scales (Marsden Group UK). Blood was donated at various timepoints including at baseline (week 0) and at 1 year (week 52), where HDL cholesterol, tryglycerides, HbA1c and plasma glucose were measured. Systolic blood pressure was measured with the patient seated, rested and with legs uncrossed for ≥5 mins. BMI was calculated by dividing the weight (kg) by the square of the height (m). BMI change was calculated by subtracting BMI at baseline from BMI at 1 year. This BMI change was rank normal transformed (function rntransform() from "moosefun" R package https://github.com/hughesevoanth/moosefun/). The centre attended and list size of the practice (>5700 or ≤5700) determined whether participants were allocated to control or intervention and therefore were recorded.
+ 
+### Proteomics
+Plasma samples were taken from participants at baseline at and 1-year post-randomisation. Protein detection was performed by the SomaScan assay by SomaLogic. As mentioned before, this technique uses Slow Off-rate Modified Aptamers (SOMAmers) which make direct contact with proteins and quantifies protein levels by using a DNA microarray [@Rohloff2014]. There were 5284 proteins included in the array, of which 4601 proteins passed internal quality control checks. The proteomic data was further cleaned using the "metaboprep" R package [@Hughes2021], with protein levels from both timepoints all QC'd together. This R package identified no extreme missingness, removed outliers based on principal component analyses and calculated the number of independent proteins by using pairwise correlation coefficients between proteins (869 representative proteins). The package also implemented the Shapiro-Wilk test and took the W statistic to identify proteins which have a normal distribution (W≥0.95). Only 399 proteins had W statistics ≥0.95. This data was then log2 transformed to match protein transformation by Sun et al. [@Sun2018] then adjusted for age and sex (data had already undergone technical adjustment). Protein change was calculated for each individual by subtracting the baseline protein levels from protein levels at one-year. These protein change values were rank normal transformed.
+
+### Statistical analysis
+
+Analyses were performed using R version 3.6.1. 
+
+A total of 265 participants were included in the current analysis. Participant baseline characteristics were summarised as the mean and SD. Baseline characteristics were calculated for both control group (N=146) and intervention (N=119) and were compared across groups using either a two-tailed t-test or a Chi^2^ test. 
+
+The associations between BMI change and protein changes were explored using multiple linear regression adjusting for centre, list size, age and sex (function lm() from base R "stats" package). Due to the nature of linear regression, outputs of regression provide the mean individual change in protein (in SDs) per SD increase in BMI. Therefore if more weight loss reduces the levels of protein, the beta coefficient is positive [@Figarska2020]. The association between potential confounders (age and sex) and both exposure (BMI change) and outcome (protein change) were explored using linear regression. The difference in BMI change in intervention group compared to control was performed using linear regression, adjusting for centre, list size, age and sex. Covariables (age, sex, centre and list size) were compared across treatment groups. Treatment group was therefore used as an instrument for BMI change in a two stage least squares analysis \@ref(fig:direct-tsls) to estimate the effects of BMI change on protein change using ivreg() function from the "AER" R package (https://github.com/cran/AER/blob/master/R/ivreg.R). As a sensitivity analysis, for proteins which associate with BMI change, baseline protein levels were compared across control and intervention groups. P values were adjusted for multiple testing based on the number of representative proteins (0.05/869 = 5.8x10^-5^). 
+
+(ref:scaption-direct-tsls) Schematic of two stage least squares analysis
+(ref:caption-direct-tsls) Schematic of two stage least squares analysis
+```{r direct-tsls, echo = FALSE, fig.cap="(ref:caption-direct-tsls)", fig.scap= "(ref:scaption-direct-tsls)"}
+include_graphics(path = "figure/DiRECT/DiRECT_analysis.png", dpi = NA)
+
+```
+
+BMI change-protein change estimates from the multiple linear regression analyses and two stage least squares analyses were compared using linear regression. In efforts to further elucidate which proteins are altered by adiposity, a comparison between the BMI-protein associations in INTERVAL (Chapter \@ref(BMI-protein-MR)) and the BMI change-protein change associations in the current analyses was also performed using a linear regression. There were 2803 unique proteins overlapping across the two cohorts. Estimates across the two cohorts were compared using a Deming regression. 
+
+Enrichment or two sample MR of proteins of interest? epigraph DB....
+
+## Results
+
+### Participant characteristics
+
+Participants displayed similar characteristics across control and intervention groups (Table \@ref(tab:DiRECT-participants)). Baseline BMI was similar across treatment groups (34.2 kg/m^2^ with SD of 4.3 in the control group vs 35.0 kg/m^2^ with SD of 4.6 in the intervention group, p=0.19). Other variables relating to cariometabolic health were also similar across groups, including systolic blood pressure, HbA1c, glucose and insulin levels. The participants in the intervention group were younger and included fewer participants from Scotland but more from Tyneside.
+
+
+```{r DiRECT-participants,  echo=FALSE}
+options(knitr.kable.NA = "")
+var = c("Age", "Sex", "Male", "Female", "Body mass index (kg/m2)", "Systolic Blood Pressue (mmHg)", "HbA1c (mmol/mol", "Glucose (mmol/l)", "Insulin (uu/ml)", "Cholesterol (mmol/l)", "HDL (mmol/l)", "Triglycerides (mmol/l)", "Diabetes duration (years)", "Number of antidiabetic medications", 0, 1, 2, 3, 4, "Centre", "Scotland", "Tyneside", "List size", ">5700", "=<5700")
+incmean = c('56.2 (6.9)',NA,'62 %','38 %','34.2 (4.3)','137 (15)','58 (11)','8.8 (2.5)','22 (14)','4.3(1.1)','1.2 (0.3)','1.9 (0.9)','3.0 (1.7)', NA, '23 %','53 %','18 %','5 %','1 %', NA, '77 %','23 %', NA, '49 %','51 %')
+ninc = c(146, 146, NA, NA, 146, 146, 146,146, 146,146,146,146,146,146, NA, NA, NA, NA, NA, 146, NA, NA, 146, NA, NA)
+excmean = c('53.9 (7.1)', NA, '57 %','43 %','35.0 (4.6)','135 (17)','60 (13)','9.2 (3.2)','24 (15)','4.3 (1.1)','1.1 (0.3)','2.0 (1.4)','3.2 (1.6)', NA, '24 %','44 %','23 %','7 %','3 %', NA, '62 %','38 %', NA, '58 %','42 %')
+excn <- c(119,119,NA,NA,119,119,119,118,119,118,118,118,119,119,NA,NA,NA,NA,NA,119,NA,NA,119,NA,NA)
+ChiP <- c(0.01,0.54,NA,NA,0.19,0.19,0.15,0.24,0.27,0.90,0.04,0.48,0.37,0.50,NA,NA,NA,NA,NA,0.01,NA,NA,0.20,NA,NA)
+mytable = cbind(var, incmean, ninc, excmean, excn, ChiP)
+colnames(mytable) <- c("Variable",  "Control mean (SD) or %", "Control N", "Intervention mean (SD) or %", "Intervention N", "P value for difference (Two tailed t-test or Chi2 test)" )
+mytable %>% kable(caption = "DiRECT participant characteristics", booktabs = TRUE) %>% 
+  kable_classic_2(full_width = F) %>%
+  #kable_paper("hover", full_width = F)
+   add_indent(c(3, 4, 15:19, 21, 22, 24, 25), level_of_indent = 1) %>%
+ kable_styling(full_width = TRUE) %>%
+column_spec(1, width = "6cm") %>%
+  landscape()
+```
+
+### Observational association between BMI change and protein change
+Linear regression was used to estimate the effect of BMI change on protein change. After adjusting for multiple testing (p<5.8x10^-5^), 254 proteins out of 4601 proteins were associated with BMI change (5.5 % of all protein tested). Although overall there was weight loss and a reduction in BMI, beta coefficients can be interpreted as the change in protein level (SDs) per SD increase in BMI. Negative associations were observed with BMI change and scavenger receptor class A member 5 (SCAR5, -0.62 SDs per SD increase in BMI, 95% CI -0.72 to -0.53 p=3.7x10^-29^) and apolipoprotein F (-0.58 SDs per SD increase in BMI, 95% -0.68 to -0.48, p=1.8x10^-24^). BMI change was positively associated with changes in levels of Proto-oncogene tyrosine-protein kinase receptor Ret (RET) (0.59 SDs increase per SD increase in BMI, 95% CI 0.49 to 0.69 p=1.6x10^-25^), growth hormone receptor (GHR) (0.59 SDs increase per SD increase in BMI, 95% CI 0.49 to 0.69 p=5.8x10^-25^).
+
+### Association between confounders and exposure/outcomes
+There was weak evidence for an association between age and BMI change (0.02 SDs increase in BMI change per 1 year, 95 % CIs -0.0003 to 0.034, p=0.054), where an increase in BMI change means that the participant is less likely to reduce their BMI. There was no evidence that sex was associated with BMI change (BMI change 0.073 SDs increase in BMI change in females compared with males, 95 % CI -0.17 to 0.32, p=0.56). Age and sex displayed weak associations with protein changes, but these did not pass multiple testing adjustment.
+
+### Association between treatment group and BMI change
+Mean BMI change in all participants was -1.8kg/m^2^ (SD 2.5 kg/m^2^), with a mean change in the control group of -0.4 kg/m^2^ (SD 1.3) vs -3.6kg/m^2^ (SD 2.5) in the intervention. The difference in BMI change comparing intervention to control was -3.2 kg/m^2^ (SE 0.25, p=1.52x10^-29^). These analyses suggest that treatment group is a valid instrument for BMI change.
+
+(ref:scaption-box-BMI-change) Box plot of the distribution of BMI change (kg/m^2^) by treatment group
+(ref:caption-box-BMI-change) Box plot of the distribution of BMI change (kg/m^2^) by treatment group with the median and interquartile ranges displayed by the box
+```{r box-BMI-change, echo = FALSE, fig.cap="(ref:caption-box-BMI-change)", out.width="85%", fig.scap= "(ref:scaption-box-BMI-change)"}
+include_graphics(path = "figure/DiRECT/Intervention_BMI_change_boxplot.png", dpi = NA)
+
+```
+
+### Two-stage least squares analysis
+Treatment group was used as an instrument for BMI change in a two-stage least squares analysis. After adjustment for multiple testing, BMI change was associated with changes in levels of 171 proteins (3.7 %). The protein which showed the strongest association with BMI change was SCAR5 (-0.91 SDs per SD increase in BMI, 95% CI -1.07 to -0.75, p=1.54x10^-23^). Other proteins displayed a positive association with BMI change, including Fatty acid-binding protein, heart (FABP1, 0.86 SDs increase per SD increase in BMI, 95% CI 0.69-1.04, p=6.3x10^-19^). Aminoacyclase-1 was also positively associated with BMI change (0.80 SDs increase in protein per SD increase in BMI, 95% CI 0.64 to 0.97, p=4.9x10^-18^).
+
+### Comparison of observational linear regression and TSLS results for the effect of BMI change on protein change
+A total of 110 proteins were only associated within the observational linear regression model, whereas 27 proteins were only associated in the TSLS analysis using treatment group as an instrument for BMI change. 144 proteins were associated with BMI in both analyses (\@ref(fig:circos)), with largest effect estimates across methods for SCAR5, Adiponectin, Apolipoprotein F, growth hormone receptor (GHR), receptor-type tyrosine-protein phosphatase U (PTPRU) and sex hormone binding globulin. These can be seen in Figure \@ref(fig:scatter-DiRECT). 
+
+(ref:scaption-circos) Circos plot of proteins associated with BMI change
+(ref:caption-circos) Circos plot displaying the protein change (SDs) per SD increase in BMI in DiRECT, where the blue estimates are the two stage least squares estimates and the yellow estimates are from the multiple linear regression. Proteins presented were associated in both models at p=5.8x10^-5^
+```{r circos, echo = FALSE, out.width="100%", fig.cap="(ref:caption-circos)", fig.scap= "(ref:scaption-circos)"}
+include_graphics(path = "figure/DiRECT/circos_plot_BMI_change_protein_ols_tsls.pdf", dpi = NA)
+```
+
+\blandscape
+(ref:scaption-scatter-DiRECT) Scatter plot comparing proteins association with BMI change across models in DiRECT
+(ref:caption-scatter-DiRECT) Scatter plot displaying the estimate for the change in protein (SDs) per SD increase in BMI in the two stage least squares and linear regression models. Points are coloured by which models the proteins were associated with BMI change (p<5.8x10^-5^).
+```{r scatter-DiRECT, echo = FALSE, out.width="95%", fig.cap="(ref:caption-scatter-DiRECT)", fig.scap= "(ref:scaption-scatter-DiRECT)"}
+include_graphics(path = "figure/DiRECT/DiRECT_scatter_comparison.pdf", dpi = NA)
+```
+\elandscape
+
+### Sensitivity analysis
+Proteins which were associated with BMI change were compared across control and intervention groups at baseline. There was not strong evidence for any differences in baseline levels of proteins (p<5.8x10^-5^). 
+
+
+### Comparison of BMI effects across DiRECT and INTERVAL
+BMI-protein estimates from this study were compared with effect estimates from INTERVAL (Chapter \@ref(BMI-protein-MR)). Both cohorts provided evidence for an effect of BMI on a range of proteins. Figure \@ref(fig:DiRECT-INTERVAL) shows the BMI-protein estimates for the proteins which were included in both DiRECT and INTERVAL. There was consistent evidence across both studies for a BMI-increasing effect on proteins including fumarylacetoacetase (FAAA), alcohol dehydrogenase 4 (ADH4), growth hormone receptor (GHR) and carboxypeptidase M (CBPM). Furthermore, higher BMI had a lowering effect on levels of sex hormone binding globulin (SHBG), as well as insulin-like growth factor binding protein 1/2 (IGFBP1/2). 
+
+\blandscape
+(ref:scaption-DiRECT-INTERVAL) Scatter plot comparing the two stage least squares estimate for the effect of BMI change on protein change in DiRECT with the Mendelian randomisation estimate for the effect of BMI on protein levels in INTERVAL
+(ref:caption-DIRECT-INTERVAL) Scatter plot comparing the two stage least squares estimate for the effect of BMI change on protein change in DiRECT with the Mendelian randomisation estimate for the effect of BMI on protein levels in INTERVAL. Proteins that are similar across analyses with a large effect size in both studies are coloured in green, whereas those which display similar estimates across studies with small effect size are shown in blue. Proteins do not show similar effects across studies are shown in pink. A linear regression line is indicated in blue.
+```{r DiRECT-INTERVAL, echo = FALSE, out.width="90%", fig.cap="(ref:caption-DIRECT-INTERVAL)", fig.scap= "(ref:scaption-DiRECT-INTERVAL)"}
+include_graphics(path = "figure/DiRECT/DiRECT_INTERVAL_comparison.pdf", dpi = NA)
+
+```
+\elandscape
+
+### Two sample MR for protein to disease
+
+## Discussion
+
+Unfinished
+
+In this chapter, a clinical trial implementing caloric restriction-induced weight loss was utilised as a second line of evidence to assess the effect of BMI on the plasma proteome. This analysis provided evidence for a broad effect of weight loss on the plasma proteome, providing results for the most extensive set of proteins to date. Comparisons of protein effects across the different study designs (INTERVAL in Chapter \@ref(BMI-protein-MR)) points towards proteins of interest which may be involved in the development or progression of obesity-associated cardiometabolic disease. Proteins which are only altered in one study design may also provide useful biological information as to how the individual protein may relate to adiposity.
+
+Table \@ref(tab:weight-loss-protein) provides a summary of findings from the literature from previous studies which have explored the effect of caloric restriction on plasma proteins. As detailed in the table, previous studies have mainly used mass spectrometry. One study used SomaLogic [@Carayol2017], however this was the panel that only included 1129 proteins. The current study utilised over fourfold more proteins, therefore providing more in depth readouts of biological processes. Findings are in concordance with previous studies, with various proteins replicating [@Geyer2016; @Figarska2020; @OllerMoreno2018; @Piening2018; @Carayol2017; @Bruderer2019]. These include changes in leptin, apolipoprotein F, SHBG, IGFBP1/2 and GHR. This suggests that these protein changes replicate across studies and across proteomic platforms. This study also provides some novel proteins associated with BMI change including SCAR5, chondroadherin (CHAD), fumarylacetoacetase (FAAA) and aminoacylase-1. 
+
+SCAR5 is involved in mediating commitment of mesenchymal stem cells into adipocytes and is highly expressed in white adipose tissue (WAT) [@Lee2017a]. ** THis is counterintuitive**, chondroadherin downregulated with 12 week exercise training - extracellular matrix protein. Chad-/- mice show cartilage bone abnormalities. Weight loss increases CHAD - this would be beneficial for bones. Iozzo 2015.
+
+Comment about INTERVAL proteins enriched for CVD and they are reversed here... 
+
+
+```{r weight-loss-protein,  echo=FALSE}
+options(knitr.kable.NA = "")
+paper = c('Proteomics reveals the effects of sustained weight loss on the human plasma proteome','Proteomic profiles before and during weight loss: Results from randomized trial of dietary intervention','The differential plasma proteome of obese and overweight individuals undergoing a nutritional weight loss and maintenance intervention','Integrative Personal Omics Profiles during Periods of Weight Gain and Loss','Protein quantitative trait locus study in obesity during weight-loss identifies a leptin regulator','Analysis of 1508 plasma samples by capillary-flow data-independent acquisition profiles proteomics of weight loss and maintenance')
+author = c('Geyer, 2016','Figarska, 2020','Oller-Moreno, 2018','Piening, 2018','Carayol, 2017','Bruderer, 2019')
+platform = c('Mass spectrometry','Olink CVD II, CVD III and inflammation','Mass spectrometry','Luminex and ProSeek by Olink','SomaLogic','Mass spectrometry')
+findings = c('Participants: 43 individuals with obesity before and after 8-week weight loss.
+Total proteins associated: 93/1294,
+Overlapping findings: Weight loss leads to increase in ApoF, ITIH3, SHBG, corticosteroid-binding globulin.',
+'Participants: 609 from the diet intervention examining the factors interacting with treatment success (DIETFITS) study.
+Total proteins associated: 130/26 associated with change in BMI.
+Overlapping findings: Changes in IGFBP1/IGFBP2, E-selectin, CD163.',
+'Participants: 473 in the nutritional programme DiOGenes.
+Total proteins associated: 39/183.
+Overlapping findings: Changes in SHBG, Adiponectin, IGFBP2, galectin-3-binding protein.', 
+'Participants: 23 with overweight or obesity undergoing weight loss.
+Total proteins associated: 27/276.
+Overlapping findings: changes in leptin.',
+'Participants: 494 participants on low DiOGenes on low calorie diet.
+Total proteins associated: 104/1129.
+Overlapping findings: Changes in leptin, GHR, TIG2, IGFBP2, RET proto-oncogene (granulysin).',
+'Participants: 477 in DiOGenes.
+Total proteins associated: 271/465.
+Overlapping findings: Changes in Apolipoprotein F, INHBC, SHBG.')
+mytable = cbind(paper, author, platform, findings)
+colnames(mytable) <- c("Paper", "Author, year", "Proteomic platform", "Study summary")
+mytable %>% kable(caption = "Summary of current literature on the effect of weight loss on the plasma proteome", booktabs = TRUE) %>% 
+  kable_classic_2(full_width = F) %>%
+  #kable_paper("hover", full_width = F)
+ kable_styling(full_width = TRUE) %>%
+column_spec(4, width = "7cm") %>%
+  column_spec(3, width = "2cm") %>%
+    column_spec(2, width = "2cm") %>%
+    column_spec(1, width = "5cm") %>%
+  landscape()
+```
+
+The comparison of results from the previous chapter (Chapter \@ref(BMI-protein-MR)), which used Mendelian randomization and observational epidemiology to assess the effect of average higher BMI across a population on avergae protein levels, with results from a randomised control trial, with the current chapter provides two separate lines of evidence to suggest a causal role of BMI in levels of various proteins. The combination of results therefore points towards proteins which could be targetable in the prevention of obesity-related diseases. These include xx, xx and xx.
+
+Protein involvement in disease.
+
+Limitations and future steps - mention bybandsleeve ??
+
+Conclusions.
+
+
+
+ 1. Overall effect
+ 4. Biology - inflammation?
+ 5. Implications for platelet function / thrombosis. Stringdb. input beta coefficients with uniprot IDs and there is pathway enrichment for platelet function and platelet aggregation (256 genes).
+ 6. limitations - not solely weight loss effect
+
+- Apolipoprotein F (APOF) two smaple MR causal effect on myocardial infarction and coronary heart disease by Wald ratio.
+- SHBG MR - increased shbg leads to reduction in cardioembolic stroke, platelet count.
+- RET - cancers/Alzheimer's.
+- FABP1 - increased levels increases MPV.
+- Prolylcarboxypeptidase CHD and MI.
+- Fumarylacetoacetase (FAAA/FAH) increased protein reduces risk of haemorrhage.
+NB not possible to test for pleiotropy - other diseases associated with these proteins too.

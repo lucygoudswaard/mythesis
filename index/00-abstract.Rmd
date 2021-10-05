@@ -3,6 +3,8 @@ body {
 text-align: justify}
 </style>
 
+This is copied from my TF application and will be edited.
+
 Variation in adiposity is associated with thrombotic outcomes, but mechanisms leading from this exposure to disease are unclear. The overall aims were to assess the effect of adiposity on platelet function (key cells involved in thrombosis) and identify potential mechanisms. 
 
 Data from INTERVAL (a UK study of blood donors), COPTIC (Bristol-based cardiac surgery cohort) and DiRECT (Diabetes REmission Clinical Trial in Glasgow/Newcastle) were used. The effect of body mass index (BMI) on platelet traits measured by Sysmex XN-1000 was assessed in INTERVAL (N=33,388) using Mendelian randomization (MR). The association between platelet traits and platelet function was explored using linear regression in COPTIC (N=655). Bariatric patient (BMI >40kg/m2) platelet function was also compared with controls (BMI 18.5-25kg/m2). MR evidence in INTERVAL suggested that higher BMI raises immature platelet count (IPC - newly produced platelets). Results from COPTIC indicated that greater IPC is associated with greater platelet aggregation. Validation work in a specifically designed study of bariatric patients and healthy weight controls is ongoing.

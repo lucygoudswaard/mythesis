@@ -11,11 +11,8 @@
 - Gap - how platelets really are involved.
 
 ## Platelets
-
-### Platelet biology, 
-
+### Platelet biology 
 ### Platelet activation
-
 ### Sysmex parameters
 
 ## Body mass index and platelets
@@ -30,7 +27,7 @@
 
 ## Cohorts utilised within the thesis
 
-## Summary
+## Aims
 
 
 

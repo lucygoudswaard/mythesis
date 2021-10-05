@@ -1,262 +1,219 @@
-# Pathways linking BMI and platelet function: do the chemokines MDC and TARC play a role? {#chemokine-platelets}
+# The effect of obesity on platelet function: a clinical pilot study {#BMI-platelets-clinic}
+
+The following results section is a clinical study. Recruitment into this study has been severely affected by COVID-19: approvals were set in place to start recruitment in March 2020. All data in this chapter was collected by myself, apart from the platelet-neutrophil assay data, which was performed by Dr Chris Williams due to time constraints when receiving patient samples. The proteomic data was analysed by the Proteomics facility at the University of Bristol.  
+
+Comment RE some of the methods I wrote for the COVID-19 manuscript are included here. May need to link if the COVID-19 paper is online when submitting.
 
 ## Background
 
-	
-Platelets play an important role in haemostasis [@Rivera2009]. In healthy people, prostacyclin (PGI2) and nitric oxide (NO) are released by the endothelium to suppress platelet activity [@Yau2015]. When the endothelium is damaged, platelets adhere to the injured vessel wall through the glycoprotein Ib-IXV receptor and the GPVI collagen receptor. As a result, platelets secrete alpha and dense granules and undergo shape change [@Badimon2012]. Alpha granules release growth factors (e.g. IGF-1), clotting factors and chemokines [@Gear2003], whereas dense granules release molecules such as ADP, which further activate platelets by interacting with the P2Y^1^ and P2Y^12^ platelet receptors. Platelet activation also results in activation of integrins such as α~IIbβ~3~ and subsequent fibrinogen binding results in platelet aggregation, thrombus formation and cessation of bleeding [@Rivera2009]. Despite these processes being essential for haemostasis, when platelets become hyperactive, the balance is tipped in favour of thrombosis. 
+As detailed in Chapter \@ref(BMI-platelets-INTERVAL), there is evidence that people with a higher BMI have an increased risk of cardiovascular events such as coronary heart disease (CHD) or stroke [@Nordestgaard2012; @Dale2017; @Wolk2003a]. As platelets are one of the key cells involved in haemostasis and thrombosis [@Koupenova2017a], it is likely that a higher BMI has a direct effect on platelet function. The previous chapter provided evidence that higher BMI causes an increase in the production of immature platelets, evidenced by an increase in immature platelet count (IPC). IPC was positively associated with whole blood platelet aggregation in a cardiac surgery cohort. Although this suggests that higher BMI leads to platelet hyperactivity, this association was not directly assessed. 
 
-Platelets likely contribute to the increased CVD risk related to obesity and type II diabetes. Platelets from patients with obesity are reported to be hyperactive and have a lower sensitivity to antiplatelet therapies such as clopidogrel [@Nardin2015]. These therapies are critical in the prevention of ischaemic events. The underlying mechanism that causes platelet hyperactivity is not completely understood. It is likely to involve a combination of factors. One such factor is a decrease in the production of endothelial PGI2 and nitrous oxide [@BelindeChantemele2012a]. Another contributing factor could be an alteration in the circulating levels of soluble ligands, growth factors and cytokines which can enhance platelet function (known as platelet primers). Platelet primers are signaling molecules which enhance agonist-induced platelet function but in isolation are unable to stimulate platelet aggregation or integrin activation. Molecules that have been reported to be able to prime platelets include insulin-like growth factor-1 (IGF-1) [@Nardin2015; @Blair2015] and thrombopoietin (TPO) [@Maury2010].
+Upon activation platelets adhere to the vessel endothelium, where they undergo shape change, release their granules and aggregate. There are numerous laboratory techniques that can be used to measure platelet function [@Paniccia2015]. Experiments include flow cytometry which uses fluorescently tagged antibodies that bind to platelet receptors, some of which are increasingly exposed upon stimulation by known platelet agonists such as protease activated receptor-1 activating protein (PAR1-AP), adenosine diphosphate (ADP) and collagen-related peptide (CRP). Other experiments commonly used include light transmission aggregometry (LTA), which measures the degree of platelet aggregation in response to platelet agonists by how much light passes through the sample. Techniques such as LTA are difficult to implement with patient samples due the requirement of a substantial amount of sample and due to experiments being time consuming. As platelet function declines over a few hours after removal from circulation [@Goss2019], it is preferable to opt for experiments which can be performed quickly. It is also possible to explore the intracellular signalling which occurs within the platelets by using techniques such as Western blotting and tandem mass tag mass spectrometry (TMT-MS), which use targeted and untargeted methods, respectively, to measure protein levels. 
 
-Previous studies have shown that multiple platelet primers increase platelet function through activation of the lipid kinase phosphoinositide-3-kinase (PI3K) [@Blair2015; @Pasquet2000; @Falcinelli2005]. Another pathway that has been implicated in platelet priming effects is the MAPK pathway. TPO can enhance TxA2 synthesis through increasing the activation of extracellular signal regulated kinase (ERK2) [@Ezumi1998; @VanWilligen2000]. The common involvement of both PI3K and MAPK in platelet priming mediated by IGF-1, TPO and matrix metalloproteinase-2 (MMP-2) suggests that platelets may also be activated by other platelet primers. There are other biomarkers which are also suggested to be raised with obesity as a result of low-grade chronic inflammation [@Esser2014], including the chemokines macrophage-derived chemokine (MDC/CCL22) and thymus and activation regulated chemokine (TARC/CCL17) [@Safa2016]. The inflammatory chemokines MDC and TARC act at the receptor CCR4, which is expressed on platelets [@Clemetson2000]. These chemokines have been shown to potentiate platelet aggregation [@Gear2001]. For example, the presence of TARC and MDC have been demonstrated to greatly enhance platelet aggregation in the presence of low levels of ADP or thrombin [@Gear2001]. Furthermore, gene polymorphisms of MDC and CCR4 are associated with myocardial infarction (MI) [@Noori2018]. As blood/plasma levels of MDC have been reported to be elevated in obese people [@Safa2016] and polymorphisms of its receptor are associated with MI, understanding the mechanisms by which MDC can enhance platelet function may give us an important insight in to how platelets are hyperactive in obesity and potentially provide a novel target for new antiplatelet/thrombotic or preventative therapies for those with an increased risk of cardiovascular events.
+Previous studies have attempted to determine the direct effects of BMI on platelet function and signalling [@Barrachina2019; @Nardin2015; @Deharo2014; @Sibbing2007], where there is mixed evidence regarding how BMI affects platelet function. Previous studies have focused on the relationship between BMI and platelet function in patients receiving dual antiplatelet therapy (DAPT). It is less clear what the relationship is between BMI and platelet function in those who are not on any antiplatelet therapy.
 
-The aims of this chapter are:
-1) Determine the effects and mechanisms of MDC and TARC on platelet function and signalling.
-2) Explore the effect of increasing levels of MDC and TARC on disease using two sample Mendelian randomization.
+Therefore, the aims of this chapter were to:
 
+1) Optimise laboratory techniques to assess platelet function in a clinical setting.
+2) Determine whether higher BMI is associated with: an increase in immature platelet count, an increase in platelet function and an alteration in platelet signalling by comparing platelets from bariatric patients (BMI >40kg/m^2^) to healthy controls (BMI 18-25kg/m^2^).
 
 ## Methods
 ### Materials
-PAR1 activating peptide (PAR1-AP/SFLLRN) was purchased from Bachem. MDC and TARC were from PeproTech (London, UK). Indomethacin, PGE1, Triton X-100, apyrase, HEPES Tyrode’s (10 mM HEPES, 1 mM magnesium, 0.5 mM monosodium phosphate, 145 mM sodium chloride, 3 mM potassium chloride, pH 7.2), 2-butanol, ethanol, methanol and bovine serum albumin (BSA) were purchased from Sigma-Aldridge (Poole, UK). Phosphate buffered saline (PBS), trisodium citrate, acid citrate dextrose (ACD), D-glucose, ammonium persulfate (APS), Tris buffered saline (TBS), polysorbate 20 (Tween 20), Donkey anti-Rabbit IgG (H+L) Highly Cross Adsorbed Secondary Antibody Alexa Fluor 647 and Fura-2 were purchased from Thermo Fisher Scientific (Loughborough, UK). FITC PAC1 and FITC-CD62P from BD bioscience (Berkshire, UK). 30 % acrylamide mix (37.5:1), 1.0 M Tris pH 6.8 solution and 1.5 M Tris pH 8.8 solution purchased from National Diagnostics (Nottingham, UK). Immobilon-FL PVDF membranes (0.45-micron filter) were purchased from Merck Millipore (Hertfordshire, UK). Sodium dodecyl sulphate (SDS) was purchased from GE Healthcare worldwide (Hatfield, UK). SDS solution (10 %), tetramethylethylenediamine (TEMED), filter paper and Precision Plus protein pre-stained standards were purchased from Bio-Rad laboratories (Bredbury, UK). Blocking buffer was purchased from LI-COR Biosciences (Cambridge, UK). pSer473 PKB, pSer239 VASP, pSer157 VASP, pThr202/Tyr204 ERK and pSer425 Talin were purchased from Cell Signaling Technology (Hertfordshire, UK). Alexa Fluor 680 AffiniPure Donkey Anti-Goat IgG and Alexa Fluor 680 AffiniPure Donkey Anti-Rabbit IgG were obtained from Jackson Immunoresearch (Cambridgeshire, UK). Paraformaldehyde was purchased from Acros Organics (Geel, Belgium). 
+Protease-activated receptor 1 (PAR-1)-activating peptide (SFLLRN-NH2) was from Bachem (Bubendorf, Switzerland), crosslinked collagen-related peptide (CRP-XL) from Prof. Richard Farndale (Department of Biochemistry, University of Cambridge, UK). Adenosine diphosphate (ADP) was from Sigma-Aldrich (Poole, UK). cOmplete mini protease inhibitor tablets and phosSTOP phosphatase inhibitors were from Roche Life Sciences (Welwyn Garden City, UK). The Pierce bicinchoninic acid (BCA) assay was from ThermoFisher Scientific (Altrincham, UK). Sodium Citrate Vacutainer® tubes, FixLyse, PE-Cy5-conjugated anti-CD42b, FITC-conjugated CD61 antibody, Fc block, PE-conjugated human platelet GPVI antibody, PAC1-FITC and anti-CD62P-PE antibodies were from BD (Wokingham, UK). FITC-conjugated anti-human CD41 and CD42b antibody were from BioLegend (London, UK). 
 
-### Isolation of human platelets
-Fresh human venous blood was obtained from healthy volunteers by venipuncture. Blood was taken into the syringe with a 1 in 10 volume of 4 % trisodium citrate, then mixed with a 1 in 7 volume of acid citrate dextrose (ACD). Blood was placed into 5 mL LP4 tubes then centrifuged at 1000 revolutions per minute (RPM) for 17 minutes. Platelet rich plasma (PRP) was extracted. PRP was supplemented with inhibitors such as 0.02 U/mL apyrase, 140 nM PGE1 or 10 µM indomethacin (exact inhibitors for each experiment used will be shown in results). Supplemented PRP was either used for the experiment of centrifuged for a further 10 minutes at 1700 RPM. Platelet poor plasma (PPP) was removed leaving a platelet pellet. This pellet was resuspended in HEPES Tyrode’s (supplemented with 0.1 % glucose and 0.02 U/mL apyrase, and 10 µM indomethacin if already applied to PRP). Platelets were counted using a Z1 coulter particle counter by diluting 1 in 2000 in 10 mL MQ water. Platelets were diluted further using the supplemented HEPES Tyrode’s to a platelet concentration of 4 x 10^8^/mL and left to rest for 30 mins in a 30°C water bath.
+### Study population
+This study was approved by the London Riverside Research Ethics Committee. All participants provided written informed consent. Patients, who were due to undergo bariatric surgery, with a body mass index of >40kg/m^2^, were recruited from the Department of Bariatric and Metabolic Surgery at Southmead Hospital, Bristol. Participants with a BMI between 18 and 25 kg/m^2^ were recruited from the University of Bristol. Inclusion criteria for participants were: aged 18 years and over and able to give written informed consent. Participants were excluded if they were pregnant or lactating, had any known clotting or bleeding disorders (e.g. von Willebrand disease or drug-induced thrombocytopenia), or if they had taken any antiplatelet medication within the previous 14 days such as clopidogrel, ticagrelor or aspirin or any other non-steroidal anti-inflammatory drug (NSAID). Recruitment occurred between May and June 2021. As a pilot study, a total of four bariatric patients with obesity and four control participants were recruited. Bariatric patients donated blood before bariatric surgery.
 
-### Platelet aggregation
-Platelets were diluted to a concentration of 2 x 10^8^/mL using supplemented HEPES Tyrode’s buffer. A volume of 250 µL platelets was added to aggregometer cuvettes containing a Teflon stir bar. HEPES Tyrode’s (500 µL) was added to the reference PPP (blank) channel. Platelets were left to rest in the cuvettes for 2 mins. For priming experiments, platelets were either preincubated with vehicle (MQ) or 1 µg/ml MDC or TARC for 5 mins. A Chrono-log model 490 aggregometer was used. For experiments which were not exploring platelet priming, platelets were added to the cuvettes for 2 minutes and agonist was added for 5 minutes.  Aggregation traces were derived from the amount of light transmitted through the sample. Recordings were taken for 5 minutes with a stirring speed of 1200 rpm and at 37 °C. Platelets were used within 3 hours from resting.
+### Isolation of platelet rich plasma (PRP) and platelet lysates
+Blood was taken by venipuncture into vacutainers containing sodium citrate (3.2%). Blood was centrifuged (1000 RPM, 17 mins). PRP was isolated and diluted 1:40 in HEPES Tyrode's (145 mM NaCl, 3 mM KCl, 0.5 mM Na~2~HPO~4~, 1 mM MgS0~4~.7H~2~O, 10 mM HEPES, pH 7.4, 0.1% [w/v] D‐glucose) for experiments. To create platelet lysates, acid citrate dextrose (1:7) and apyrase (0.02 U/mL) were added  to isolated PRP. PRP was centrifuged (1700 RPM, 10 mins). Platelets were double washed in CGS buffer (120 mM NaCl, 25.8 mM sodium citrate dihydrate, 0.1% [w/v] D‐glucose, 0.02 U/mL apyrase, pH 6.5). Platelets were resuspended in radioimmunoprecipitation assay buffer (RIPA: 25 mM HEPES, 200 mM NaCL, 1mM EDTA, 1 % (v/v) NP40, 0.5 % (w/v) sodium deoxychelate, 0.1 % (w/v) SDS) supplemented with a protease and phosphatase inhibitor for 10 minutes on ice. Lysates were centrifuged at 10000 RPM, at 4°C for 5 minutes. Supernatant was removed and a bicinchoninic acid (BCA) assay was performed to calculate sample protein concentrations. Samples were stored in a -80°C freezer until proteomics analysis. 
 
-### Plate platelet aggregation
-PRP supplemented with apyrase was used. For each donor, the platelet count was recorded. PPP was used as a reference. PRP was added to the wells of a 96 well plate and left to rest for 2 minutes. 200 ng/ml MDC, 200 ng/mL TARC or vehicle were preincubated with platelets for 5 minutes. After 5 minutes, PAR1-AP was added to the wells and the plate was shaken with an Eppendorf ThermoMixer® for 5 minutes at 1200 rpm and at 37 °C. The plate was immediately read using a Labtech LT-4500 automatic microplate absorbance reader. Responses were normalized so that basal PRP = 0 % aggregation and PPP = 100 % aggregation.
+### Platelet parameters measured by Sysmex
+Citrated whole blood (200 uL) was analysed using the Sysmex XN-20 haematology analyser. Platelet readouts were platelet count (PLT), immature platelet fraction (IPF), immature platelet count (IPC), side fluorescence (SFL, a measure of mRNA content), forward scatter (FSC, a measure of platelet size), side scatter (SSC, a measure of granularity).
 
-### Flow cytometry: integrin α~IIb~β~3~ activation and P-selectin expression
-Platelets were diluted to a concentration of 2 x 10^7^/mL using supplemented HEPES Tyrode’s buffer. Platelets were incubated with 200 ng/ml MDC, TARC or vehicle for 5 mins, then added to wells in a 96 well plate already containing a mixture of PAC1 and CD62P antibodies (in a 2:1 ratio), as well as increasing concentrations of PAR1-AP. After a further 5 minutes, platelets were fixed with 1 % paraformaldehyde (PFA). Plates were read using a BD Accuri C6 Plus flow cytometer. The relative fluorescence of the antibody in each well was measured over 10,000 platelets and median statistics were used.
+### Integrin α~IIb~β~3~ activation and P-selectin expression measured by flow cytometry
+Isolated PRP was diluted 1:40 in HEPES Tyrode's, with FITC-conjugated PAC1 and PE-conjugated CD62P antibodies in a 2:1 ratio. Master mix was added to pre-prepared vacuum packed 96 well plates to a final folume of 50 uL. Agonists used were PAR1-AP, ADP and CRP, which were freeze-dried onto the plates [@Chan2018], as well as HEPES Tyrode's which was used for a measurement of unstimulated integrin α~IIb~β~3~ activation and P-selectin expression. Platelets were stimulated with agonists for 10 minutes and were fixed with 2 % paraformaldehyde (PFA) for 20 minutes. Plates were analysed using the BD Accuri C6 Plus flow cytometer (BD Biosciences, Wokingham, UK), where the median fluorescence intensity was derived from 10,000 gated platelets.
 
-### Phosphatidylserine (PS) exposure
-Wahsed platelets were used at a concentration of 2 x 10^7^. Platelets were preincubated with vehicle, MDC or TARC. Platelets were stimulated 5 ug/mL as well as increasing concentrations of thrombin. PE-conjugated annexin V was used to bind to PS. Plates were read using the flow cytometer, where the % positive (annexin V) were recorded.
+### Surface receptor levels measured by flow cytometry
+Diluted PRP (1:40) was used for unstimulated surface receptor detection. Antibody was added (1:10 v/v) to a final volume of 50 uL. Antibodies used include anti-human CD41, CD42b, CD61 (FITC-conjugated) and GPVI and CD110 (PE-conjugated). Platelets were gated and the median fluorescence was reported from a total of 10,000 events. 
 
-### Flow cytometry: phospho-VASP
-Washed platelets were diluted to a concentration of 1 x 10^8^/mL. Platelets were left to rest in a 96 well plate for 2 minutes. 200 ng/ml MDC, 200 ng/mL TARC, 10 µM ADP or vehicle were preincubated with platelets for 5 mins at 37 °C. PGE1 (concentration-response curve) was added for a further 5 minutes. Platelets were fixed with 1 % PFA for 10 minutes. Platelets were centrifuged at 1000g for 10 minutes. Supernatant was then discarded, and platelets were permeabilized with 0.1% TritonTM X-100 for 10 minutes. The plate was centrifuged again at 1000g for 10 minutes. Supernatant was discarded and platelets were washed and resuspended with 1 x PBS. Platelets were centrifuged at 1000g for 10 minutes. Supernatant was discarded and platelets were resuspended with rabbit pSer157 VASP primary antibody (1 in 1000) for 30 minutes on ice. Platelets were centrifuged at 1000g for 10 minutes. Supernatant was discarded and platelets were washed and resuspended with 1 x PBS. Platelets were centrifuged at 1000g for 10 minutes. Supernatant was discarded and platelets were resuspended with secondary antibody (Alexa Fluor™ 647 anti-rabbit IgG, 1 in 1000) for 45 minutes on ice. Platelets were centrifuged at 1000g for 10 minutes. Supernatant was discarded and platelets were washed with 1 x PBS. Platelets were centrifuged once more at 1000g for 10 minutes and the plate was read using a BD Accuri C6 Plus flow cytometer.
+### Platelet-neutrophil assay measured by flow cytometry
+Citrated whole blood was diluted 1 in 10 in HEPES-Tyrode's buffer and incubated with FITC-conjugated anti-CD41 and PE-conjugated anti-C45 antibodies at room temperature for 15 mins. Samples were either stimulated (+ 5 ug/mL CRP) or unstimulated (+ vehicle). Samples were fixed with FixLyse for 10 minutes, followed by 4 % PFA for 10 minutes. Fluorescence was quantified using the flow cytometer, where 1000 neutrophil events were analysed based on a gating of CD45 and SSC parameters. Aggregates of platelets and neutrophils were defined by being both CD41+ and CD45+.
 
-### Western blotting
-Platelets were used at a concentration of 4 x 10^8^/mL. Platelets were preincubated with 200ng/mL MDC, 200ng/mL TARC or vehicle for 5 minutes followed by 5 minutes application of PAR1-AP (all at 30 °C). For phospho-VASP assay, MDC, TARC or ADP were preincubated with platelets for 5 minutes, with PGE1 added for a further 5 minutes. After 10 minutes, platelets were lysed with 4 X LDS NuPAGE sample buffer supplemented with 50 mM dithiothreitol (DTT). Samples were stored at -20 °C. When required, samples were heated to 70 °C for 10 minutes. A 10 % Resolving gel was cast for Tris-glycine SDS-polyacrylamide gel electrophoresis, and a 5 % Stacking gel was cast for loading. As a standard, 4 µl Precision Plus protein pre-stained standard was loaded, along with 20 µl of the lysate sample. The samples were placed in a tank containing sample buffer and protein electrophoresis was carried out for 90 minutes at 100 V. Following this, proteins were transferred to a PDVF membrane in the presence of transfer buffer for 60 minutes and at 100 V. The membrane was then put in blocking buffer and 0.1 % TBS-Tween (1:1 ratio) for 1 hour. Membranes were incubated with the primary antibody (1 in 1000 dilution) at room temperature for 90 minutes. Talin was used as a loading control. The membrane was washed with 0.1 % TBS-Tween 3 times for 5 minutes. The membrane was incubated with secondary antibody (1 in 5000 dilution) for 1 hour. The membrane was washed 6 times for 5 minutes, then membranes were scanned using the LI-COR Odyssey® CLx Imaging System. Bands were quantified using Image Studio Lite. 
-
-### Calcium mobilisation
-Fura-2 (4 µM) was added to PRP after the addition of indomethacin and apyrase and left for 1 hour wrapped in foil at 37 °C. PRP was centrifuged and platelets were resuspended in supplemented HEPES Tyrode’s as described above, with the washed platelets (at 4 x 10^8^/mL) protected from the light with foil. Platelets were recalcified with 1 mM calcium chloride. Fluorescence of fura-2 was measured as the ratio at wavelengths 340:380 nm and provided a measurement of free calcium. 10 basal recordings were taken over 1 minute before addition of MDC, TARC or ADP. Upon agonist stimulation, 20 readings were taken over 2 minutes. A final concentration of 1 % Triton X-100 was added to permeabilise platelets and further readings were taken.
+### Tandem Mass Tag Mass Spectrometry (TMT-MS) quantification of platelet proteins
+Platelet lysate samples (50 ug total protein) were digested with trypsin and labelled with TMT 15 plex reagents (Thermo Fisher Scientific, Loughborough, UK). Labelled samples were pooled. The pooled sample was evaporated to dryness then resuspended in formic acid (5%). The pooled sample was then desalted using a SepPak cartridge (Waters, Milford, Massachussetts, USA). Eluate from the SepPak cartridge was evaporated to dryness and resuspended prior to fractionation by high pH reversed-phase chromatography using an Ultimate 3000 liquid chromatography system (Thermo Fisher Scientific). Further fractionation occurred using high pH RP fractions using the Ulitamte 3000 nano-LC system in line with an Orbitrap Fusion Tribrid Mass Spectrometer (Thermo Fisher Scientific).
 
 ### Statistical analysis
-GraphPad Prism 7 was used to analyse data. A Shapiro-Wilks test was used to test for normality of the data. If normally distributed, a parametric test was used. Where data was not normally distributed a non-parametric test was used. Statistical tests used for each experiment are in figure legends. Error bars plotted on graphs are standard error of the mean (SEM). Concentration-response curves were generated using a four parameter variable slope nonlinear regression. Parameters from curves including the logEC50 and the curve max were used as summaries of the curve fit.
+Data was analysed using GraphPad Prism 8. If data displayed a normal distribution (based on Shapiro-Wilk p-value and W statistic), a parametric test was used (e.g. unpaired t-test or one way ANOVA), otherwise a nonparametric test was used. Concentration-response curves were plotted using a four parameter variable slope. To compare concentration-response curve parameters, logEC50s or curve maxes were compared. A Fisher's exact test was used to compare proportions of categorical variables.  
 
-### Two sample MR lookup using EpigrahDB
-Two sample MR uses summary statistics and allows for causal associations to be estimated where the exposure and outcome are measured in different populations. EpigraphDB is a tool which performs two sample MR to determine how the human proteome contributes to complex diseases [@Zheng2020]. Using protein quantitative trait loci (pQTLs) for MDC and TARC [@Sun2018] (N=3301) and GWAS summary statistics for disease outcomes (mainly from Neale lab: https://github.com/Nealelab/UK_Biobank_GWAS), it is possible to explore whether plasma levels of these chemokines contribute to disease. For MDC, a Wald ratio was used to estimate the causal effect and for TARC the inverse variance weighted (IVW) method was used.
+### Analysis of proteomic data
+A principal component analysis (PCA) was performed to reduce the data and to identify major axes (principal componenents, PCs). This method helps to determine whether the major axes of the data can likely be explained by the group (bariatric patient with obesity or control participant). Normalised protein abundances were log~2~ transformed, where the logFC was calculated comparing the bariatric samples to control. The normalised protein abundances of bariatric patients were compared to controls using a two-tailed unpaired t-test. P values were not adjusted for multiple testing, however P values of all comparisons provided in full. A positive logFC indicates an increase in protein level in the bariatric samples.
 
+### Ingenuity pathway analysis enrichment
+Enrichment analyses were performed using the Ingenuity Pathway Analysis (IPA) bioinformatics tool (QIAGEN Inc., https://www.qiagenbioinformatics.com/products/ingenuitypathway-analysis) to determine whether proteins altered in bariatric patients with obesity showed enrichment in canonical pathways or diseases compared to the full protein list. IPA utilises the directionality of the change in protein, allowing interpretation of the likely activation or inhibition of the associated pathways. This is expressed as a Z-score. Proteins LogFCs which match the expected pattern of LogFCs contribute to a positive Z-score, and those which disagree contribute to a negative z-score.
 
 ## Results
 
-### Priming effects of MDC and TARC on platelet aggregation in washed platelets using light transmittance aggregometry
+### Participant characteristics
+The characteristics of participants included in the study are shown in Table  \@ref(tab:obesity-platelets-participants). The mean BMI in the control group was 21.8 kg/m^2^ (SD 2.1 kg/m^2^) and 49.3 kg/m^2^ (SD 8.8 kg/m^2^). Participants in the control group and bariatric patient group were age and sex matched. Bariatric patients exhibited similar smoking habits to control participants, however they displayed increased rates of T2D and previous symptomatic COVID-19 infection.
 
-To investigate the effect of MDC and TARC on agonist-induced platelet aggregation, MDC and TARC were preincubated before addition of PAR1-AP. Figure \@ref(fig:MDC-TARC-agg)A shows an example aggregation trace from one donor where PAR1-AP and vehicle induced only shape change, but the presence of MDC and TARC induced a maximal aggregation response. A submaximal concentration of PAR1-AP (ranging from 0.7 to 1 µM) and vehicle induced a mean aggregation of 7.0 % (SEM 2.9 %) aggregation (Figure \@ref(fig:MDC-TARC-agg)B). In the presence of 1 µg/ml MDC, this aggregation increased to 33 % (SEM 13 %) but this did not reach statistical significance (MDC v vehicle, p = 0.15). In the presence of 1 µg/ml TARC, there was 46 % (SEM 11 %) aggregation (TARC v vehicle, p < 0.05). Similar effects were observed with MDC and TARC on the area under the aggregation curve (Figure \@ref(fig:MDC-TARC-agg)C).
-
-
-(ref:scaption3a) The priming effect of the chemokines MDC and TARC on PAR1-AP induced platelet aggregation in washed platelets
-(ref:caption3a) Washed platelets at 2x10^8^/mL were preincubated with MDC or TARC (5 mins) before application of PAR1-AP-induced aggregation (5 mins). A) Raw aggregation trace comparing the effect of vehicle, 200 ng/mL MDC or 200 ng/mL TARC on PAR1-AP induced aggregation. B) Bar chart comparing the maximum aggregation reached when adding vehicle, MDC or TARC. C) Bar chart comparing the area under the curve of the aggregation trace in response to vehicle, MDC or TARC. Results analysed with a repeated measures one-way ANOVA with Dunnett’s multiple comparisons. N=7. Mean+SEM displayed.
-```{r MDC-TARC-agg, echo = FALSE, fig.cap="(ref:caption3a)", fig.scap= "(ref:scaption3a)"}
-include_graphics(path = "figure/Chemokines/Layouts/MDC_TARC_aggregation_PAR1.pdf", dpi = NA)
-
-```
-
-### Priming effects of MDC and TARC on platelet aggregation in PRP
-
-Next, the priming effect of MDC and TARC was explored on platelet aggregation in PRP using plate aggregation. Plate aggregation allows exploration of more conditions than LTA, therefore full concetration-response curves can be constructed. MDC and TARC were not able to potentiate the aggregation induced by increasing concentrations of PAR1-AP (Figure \@ref(fig:MDC-TARC-agg-PRP)A). There was no difference in the logEC50 for comparing vehicle with MDC and TARC (Figure \@ref(fig:MDC-TARC-agg-PRP)B).   
-
-(ref:scaption10) The priming effect of the chemokines MDC and TARC on PAR1-AP induced platelet aggregation in PRP using plate aggregation
-(ref:caption10) PRP was preincubated with MDC or TARC (5 mins) before application of PAR1-AP-and aggregation induced by a plate shaker (5 mins). A) A concentration response curve of the effect of vehicle, 200 ng/mL MDC or 200 ng/mL TARC on PAR1-AP induced aggregation. N=7. B) A bar chart of the logEC50s of the PAR1-AP concentration response curve in the presence of vehicle, MDC or TARC. Results analysed using a repeated measures one-way ANOVA with Dunnett's multiple comparisons. N=7.
-```{r MDC-TARC-agg-PRP, echo = FALSE, fig.cap="(ref:caption10)", fig.scap= "(ref:scaption10)"}
-include_graphics(path = "figure/Chemokines/Layouts/MDC_TARC_PRP_plate_agg.pdf", dpi = NA)
-
-```
-
-### Priming effects of MDC and TARC on PAR1-AP induced integrin α~IIbβ~3~ activation and P-selectin expression
-
-When a platelet becomes activated by an agonist, the integrin α~IIbβ~3~ changes confirmation and is exposed on the membrane of the platelet. This allows fibrinogen to bind and aggregation to occur. P-selectin also is expressed on the membrane as a result of stimulation and is a marker of alpha granule secretion. To assess whether MDC and TARC affect integrin α~IIbβ~3~ activation and P-selectin expression, washed platelets were incubated with vehicle, 200 ng/ml MDC or TARC prior to PAR-AP stimulation. MDC enhanced integrin α~IIbβ~3~ activation, with a leftward shift in the PAR1-AP concentration response curve (pEC50= -5.54 M (SEM 0.10 M) to -5.66 M (SEM 0.08 M), p=0.02). Preincubation with TARC had the same effect as MDC, left shifting the concentration-response curve (pEC50 = -5.54 M (SEM 0.11 M) to -5.64 M (SEM 0.11 M), p=0.01, Figure \@ref(fig:MDC-TARC-integrin-pselectin)A). MDC and TARC did not cause a significant increase in the maximal integrin activation. As the concentration of PAR1-AP applied to the platelets increased, the amount of P-selectin exposed increased and therefore there was an increase in the MFI. The logEC50 for the PAR1-AP effect on P-selectin expression was -5.36 (SEM 0.07) (Figure \@ref(fig:MDC-TARC-integrin-pselectin)B). Preincubation with 200 ng/ml MDC caused a small leftward shift in logEC50 to -5.44 (SEM 0.07) (MDC v vehicle, p=0.006), but preincubation with 200 ng/ml TARC did not alter the sensitivity to PAR1-AP. Together these results show that MDC and TARC are able to potentiate platelet activation mainly through activating the integrin α~IIbβ~3~. In the absence of PAR1-AP, both MDC and TARC had a weak effect on integrin α~IIbβ~3~ activation: increasing basal levels from a mean fluorescence intensity (MFI) of 161 (SEM 20) to 222 (SEM 27) (vehicle v MDC, p=0.006) and to 285 ± 36 (vehicle v TARC, p=0.007) respectively (Figure \@ref(fig:MDC-TARC-integrin-pselectin)C). This effect was specific to the integrin α~IIbβ~3~ as it was not seen with P-selectin.
-
-
-(ref:scaption3) The priming effect of the chemokines MDC and TARC on PAR1-AP induced α~IIb~β~3~ activation and P-selectin expression
-(ref:caption3) Washed platelets at 2x10^7^/mL were preincubated with MDC or TARC (5 mins) before application of PAR1-AP (5 mins). Integrin α~IIb~β~3~ activation and P-selectin expression were measured using flow cytometry. A) The effect of vehicle, 200 ng/mL MDC or 200 ng/mL TARC on PAR1-AP induced α~IIb~β~3~ activation. B) The effect of vehicle, MDC or TARC on PAR1-AP induced P-selectin expression. LogEC50s compared using a one-way ANOVA with Dunnett's multiple comparisons in Table \@ref(tab:chemokines-integrin-pselectin) C) MDC and TARC alone increase integrin αIIbβ3 activation. Mean + SEM displayed. N=4.
-```{r MDC-TARC-integrin-pselectin, echo = FALSE, out.width="85%", fig.cap="(ref:caption3)", fig.scap= "(ref:scaption3)"}
-include_graphics(path = "figure/Chemokines/Layouts/P-selectin_integrin_MDC_TARC.pdf", dpi = NA)
-
-```
-
-```{r chemokines-integrin-pselectin,  echo=FALSE}
+```{r obesity-platelets-participants,  echo=FALSE}
 options(knitr.kable.NA = "")
-V = c("Vehicle", "MDC", "TARC")
-logEC50 = c(-5.54, -5.66, -5.64)
-SE <- c(0.10, 0.08, 0.11)
-P <- c(NA, 0.019, 0.014)
-logEC502 <- c(-5.36, -5.44, -5.46)
-SE2 <- c(0.07, 0.07, 0.11)
-P2 <- c(NA, 0.006, 0.21)
-mytable = data.frame(cbind(V, logEC50, SE, P, logEC502, SE2, P2))
-names(mytable) <- c("Condition", "Integrin activation logEC50 (M)", "Integrin logEC50 SEM", "Integrin P value", "P-selectin logEC50 (M)", "P-selectin logEC50 SEM", "P-selectin p value")
-mytable %>% kable(caption = "Comparison of the effect of MDC and TARC on the logEC50 for PAR1-AP induced integrin activation and P-selectin expression compared with a one-way ANOVA (N=4)", booktabs = TRUE) %>% 
+f = c("Age", "Sex", "Body mass index (kg/m2)", "Smoker", "Hypertensive (140/90 mmHg)", "Type 2 Diabetes", "Type 2 Diabetes medication", "Metformin", "Dapagliflozin", "Dulaglutide", "Previous COVID-19 infection")
+co = c("42.2 (14.1)", "75 %", "21.8 (2.1)", "0 %", "0 %", "0 %", "NA", NA, NA,NA, "0 %")
+i = c('46 (18.0)','75 %','49.3 (8.8)','0 %','25 %','50 %', NA, '25 %','25 %','25 %','75 %')
+p <- c(0.77,1.0,0.0009,1.0,1.0,0.43,"NA", NA, NA, NA, 0.14) 
+mytable = data.frame("Variable"  = f, "Control mean (SD) or %" = co, "Bariatric patient mean (SD) or %" = i, "P value for difference" = p)
+colnames(mytable) <- c('Variable', "Control mean (SD) or %", "Bariatric patient mean (SD) or %", "P value for difference" )
+mytable %>% kable(caption = "Characteristics of included participants", booktabs = TRUE) %>% 
   kable_classic_2(full_width = F) %>%
+  #kable_paper("hover", full_width = F)
+   add_indent(c(8, 9, 10), level_of_indent = 1) %>%
  kable_styling(full_width = TRUE) %>%
-  landscape()
+column_spec(1, width = "5cm")
 ```
 
-### Effects of MDC and TARC on PAR1-AP induced PS exposure
+### Platelet parameters
 
-When a platelet is activated by strong agonists, such as dual stimiluation by CRP and thrombin, PS is transcolated from the inner platelet membrane to the outer, thereby facilitating coagulation [@Reddy2020]. MDC and TARC did not affect the overall percentage of annexin V positive platelets induced by CRP and thrombin (Figure \@ref(fig:MDC-TARC-PS-exposure)).
+Platelet traits measured by Sysmex were compared across bariatric and control groups (Table \@ref(tab:obesity-platelets-parameters)). There was no statistical evidence for an effect of obesity on platelet parameters. However, IPC and IPF did display larger mean values compared to controls, but they also had relatively large SDs in the bariatric patient group (IPC 9.3 (SD 4.9) x 10^9^/L in control vs 16.3 (SD 16.3) x10^9^/L in bariatric group, p=0.45).
 
-(ref:scaption4) The effect of the chemokines MDC and TARC on PAR1-AP induced PS exposure
-(ref:caption4) A) Washed platelets at 2x10^7^/mL were preincubated with vehicle, 200ng/mL MDC or 200 ng/mL TARC (5 mins) before application of increasing concentrations of PAR1-AP (10 mins). PS exposure was measured using flow cytometry (N=4). B) Bar chart comparing the effect of vehicle, MDC or TARC on the logEC50s of PAR1-AP induced PS exposure. LogEC50s compared by a Friedman's test.
-```{r MDC-TARC-PS-exposure, echo = FALSE, fig.cap="(ref:caption4)", fig.scap= "(ref:scaption4)"}
-include_graphics(path = "figure/Chemokines/Layouts/MDC_TARC_PS_exposure_layout.pdf", dpi = NA)
-
-```
-
-### Effects of MDC and TARC alone on aggregation in washed platelets 
-
-MDC and TARC were applied to washed platelets to determine whether they exert effects on platelet aggregation in the absence of an agonist. MDC and TARC did not cause platelet aggregation, however they did cause an upward deflection on the aggregation trace (Figure \@ref(fig:MDC-TARC-wp-alone-aggregation)). This upward deflection is a reduction in light passing through the sample, indicating that the platelets are undergoing shape change.
-
-(ref:scaption8) The effect of the chemokines MDC and TARC alone on aggregation in washed platelets
-(ref:caption8) A-C) Washed platelets at 2x10^8^/mL were stimulated with vehicle, 200ng/mL MDC, 200 ng/mL TARC or 1 uM PAR1-AP (5 mins). Aggregation was measured using light transmittance aggregometry. Each graph is a representative trace from a separate donor
-```{r MDC-TARC-wp-alone-aggregation, out.width="90%", echo = FALSE, fig.cap="(ref:caption8)", fig.scap= "(ref:scaption8)"}
-include_graphics(path = "figure/Chemokines/Layouts/MDC_TARC_alone_wp_aggregation.pdf", dpi = NA)
-
-```
-
-### Effects of MDC and TARC alone on calcium mobilisation
-
-Calcium mobilisation was measured by using a fluorescent dye, Fura-2, which binds to intracellular calcium. Increasing concentrations were added to washed platelets as a positive control, where increasing calcium mobilisation was observed (\@ref(fig:MDC-TARC-wp-calcium)A). MDC and TARC alone were also able to increase calcium mobilisation in a concentration-dependent manner (\@ref(fig:MDC-TARC-wp-calcium)B), however caused a much smaller calcium response than ADP. 
-
-(ref:scaption9) The effect of ADP and the chemokines MDC and TARC alone on calcium mobilisation in washed platelets.
-(ref:caption9) Washed platelets at 2x10^8^/mL loaded with Fura-2 were stimulated with increasing concentrations of A) ADP or B) 200ng/mL MDC or 200 ng/mL TARC. Area under curve represents the free calcium and is ratio of fluorescence at wavelengths 340:380 nm.
-```{r MDC-TARC-wp-calcium, echo = FALSE, out.width="90%", fig.cap="(ref:caption9)", fig.scap= "(ref:scaption9)"}
-include_graphics(path = "figure/Chemokines/Layouts/MDC_TARC_calcium_wp.pdf", dpi = NA)
-
-```
-
-### Mechanism of MDC and TARC priming in washed platelets
-MDC and TARC activate the platelet receptor CCR4, which can reportedly couple to G~i/o~. PGE~1~ inhibits platelets by acting at a G~s~ coupled receptor, thereby increasing levels of cAMP. One mechanism by which MDC and TARC may therefore increase platelet function is by activating the G~i~ pathway, which would oppose cAMP inhibition of platelet function. ADP acts at the P2Y12 receptor which is G~i/o~ coupled, therefore it reduces PGE~1~ induced VASP phosphorylation. To explore whether MDC and TARC activate G~i~ signaling, the effect of these MDC and TARC on VASP phosphorylation in the presence and absence of PGE~1~ was explored. PGE~1~ increased the phosphorylation of VASP at both Ser^157^ and Ser^239^. Figure \@ref(fig:MDC-TARC-wp-WB-VASP) shows a representative blot from one donor. There was little evidence for an effect of MDC, TARC and ADP reducing basal VASP levels (Figure \@ref(fig:MDC-TARC-wp-WB-VASP)A, C). As a positive control, ADP (10 µM) reduced the phosphorylation of VASP induced by 100 nM PGE~1~ at both Ser^239^ by 62 % SEM (18 %) (ADP v vehicle, p=0.048, Figure \@ref(fig:MDC-TARC-wp-WB-VASP)B) and at Ser^157^ by 44 % (SEM 21 %) (ADP v vehicle, p=0.048, Figure \@ref(fig:MDC-TARC-wp-WB-VASP)D). In contrast, there was not strong evidence that MDC and TARC reduced the phosphorylation of VASP induced by 100 nM PGE1 at Ser^239^ or at Ser^157^ (Figures \@ref(fig:MDC-TARC-wp-WB-VASP)B, D). This was also true for 10 nM and 30 nM PGE1 (data not shown). Phospho-VASP at Ser^157^ was also measured using flow cytometry (Figure \@ref(fig:MDC-TARC-VASP-FACS). PGE~1~ increased phosphorylation of VASP in a concentration-dependent manner, with a logEC50 of -8.36 M (SEM 0.16 M). Pre-incubation with ADP shifted this response to the right to give a logEC50 of -6.95 M (SEM 0.17 M) (ADP v vehicle, p=0.002). MDC and TARC did not alter the PGE1 phosphorylation of VASP. Together, these results indicate that MDC and TARC do not signal through G~i~-coupled receptors in human platelets, or too weakly to detect using Western blotting or flow cytometry.
-
-
-(ref:scaption6) A representative blot of the effect of MDC, TARC and ADP on PGE~1~ stimulated phospho-VASP.
-(ref:caption6) A representative blot of the effect of 200 ng/mL MDC, 200 ng/mL TARC and 10 uM ADP on phospho-VASP at Serine^157^ and Serine^239^ in the presence of increasing concentrations of PGE~1~.
-
-```{r MDC-TARC-wp-WB-VASP, echo = FALSE, out.width="60%", fig.cap="(ref:caption6)", fig.scap= "(ref:scaption6)"}
-include_graphics(path = "figure/Chemokines/MDC_TARC_VASP_blot.pdf", dpi = NA)
-
-```
-
-(ref:scaption7) Quantification of the effect of MDC, TARC and ADP on PGE~1~ stimulated phospho-VASP.
-(ref:caption7) Bar charts of the effect of 200 ng/mL MDC, 200 ng/mL TARC and 10 uM ADP on phospho-VASP at A) Serine 239 in the absence of PGE~1~, B) Serine 239 in the presence of 100 nM PGE~1~, C) Serine 157 in the absence of PGE~1~, D) Serine 157 in the presence of 100 nM PGE~1~. N=4. Results analysed with a repeated measures one-way ANOVA with Dunnett's Multiple comparisons. 
-
-```{r MDC-TARC-wp-VASP-bar, echo = FALSE, out.wdith = "70%", fig.cap="(ref:caption7)", fig.scap= "(ref:scaption7)"}
-include_graphics(path = "figure/Chemokines/Layouts/MDC_TARC_WB_VASP.pdf", dpi = NA)
-
-```
-
-(ref:scaption5) The effect of the chemokines MDC and TARC on phospho-VASP levels
-(ref:caption5) A) Washed platelets at 1x10^8^/mL were preincubated with vehicle, 200ng/mL MDC, 200 ng/mL TARC or 10 uM ADP (5 mins) before application of increasing concentrations of PGE~1~ (5 mins). PS exposure was measured using flow cytometry (N=3). B) Bar chart of the logEC50s of each concentration response curve from A. LogEC50s were compared using a one-way ANOVA with Dunnett's multiple comparisons.
-```{r MDC-TARC-VASP-FACS, echo = FALSE, out.width="80%", fig.cap="(ref:caption5)", fig.scap= "(ref:scaption5)"}
-include_graphics(path = "figure/Chemokines/Layouts/MDC_TARC_VASP_FACS_logec50.pdf", dpi = NA)
-
-```
-
-
-### Mechanisms of the effect of MDC on platelet aggregation in PRP
-
-The mechanism of MDC-induced platelet aggregation was explored using various inhibitors. To test that the antagonists used were specific, they were first applied to PAR1-AP. The G~q~ inhibitor YM-254890 inhibited PAR1-AP induced platelet aggregation, but the CCR4 antagonist AZD-2098 and G~i~ antagonist did not affect PAR1-AP platelet aggregation (Figures \@ref(fig:MDC-PRP-agg-bar)A, B). Y27632 inhibited the G~12/13~ mediated shape change induced by low concentrations of PAR1-AP (0.75 uM) due inhibiting rho-associated protein kinase (ROCK) (data not shown). 
-
-The effects of these inhibitors on MDC-induced aggregation was then explored. MDC by itself was able to consistently cause over 60% aggregation in PRP. The CCR4 inhibitor AZD-2098 was able to reduce this aggregation, but only at 50 uM (\@ref(fig:MDC-PRP-agg-bar)C, Figures \@ref(fig:MDC-PRP-agg-trace)A, B). The G~q~ inhibitor YM-254890 was able to reduce the maximum aggregation induced by MDC (Figure \@ref(fig:MDC-PRP-agg-bar)C, Figure \@ref(fig:MDC-PRP-agg-trace)C), suggesting CCR4 couples to G~q~. Y27632 did not affect aggregation induced by MDC, suggesting that this aggregation is not dependent on G~12/13~ and ROCK (Figure \@ref(fig:MDC-PRP-agg-bar)D, \@ref(fig:MDC-PRP-agg-trace)D).
-
-(ref:scaption12) The effect of inhibitors on PAR1-AP and MDC induced aggregation in PRP.
-(ref:caption12) Platelet rich plasma (PRP) was incubated for 5 minutes with the antagonist indicated, followed by application of PAR1-AP or MDC. A) Effect of 10 uM AZD-2098 (CCR4 antagonist) on maximal aggregation induced by PAR1-AP B) Effect of 10 uM YM-254890 (G~q~ inhibitor) on maximal aggregation induced by PAR1-AP C) Effect of AZD-2098 and YM-254890 on aggregation induced by 200 ng/mL MDC D) Effect of the ROCK inhibitor Y27632 on aggregation induced by 200 ng/mL MDC Results are analysed with a paired two-tailed t-test or repeated measures one-way ANOVA with Dunnett's Multiple comparisons. N=3-5.
-
-```{r MDC-PRP-agg-bar, echo = FALSE, out.width="110%", fig.cap="(ref:caption12)", fig.scap= "(ref:scaption12)"}
-include_graphics(path = "figure/Chemokines/Layouts/PAR1_MDC_inhibitors_aggregation.pdf", dpi = NA)
-
-```
-
-
-(ref:scaption11) Aggregation traces of the effect of inhibitors on MDC induced platelet aggregation in PRP.
-(ref:caption11) Representative aggregation traces of platelet rich plasma (PRP) incubated with A) 10 uM CCR4 antagonist AZD-2098 B) 50 uM AZD-2098 C) 10 uM G~q~ inhibitor YM-254890 D) 10 uM ROCK inhibitor Y27632, followed by addition of 200 ng/mL MDC.
-
-```{r MDC-PRP-agg-trace, echo = FALSE, out.width="90%", fig.cap="(ref:caption11)", fig.scap= "(ref:scaption11)"}
-include_graphics(path = "figure/Chemokines/Layouts/MDC_inhibitors_aggregation_traces.pdf", dpi = NA)
-
-```
-
-
-## Two sample Mendelian randomiation to assess the role of MDC (CCL22) and TARC (CCL17) in disease
-
-### MDC implicated in diseases such as deep vein thrombosis (DVT)
-To determine whether levels of MDC or TARC contribute to disease, a two sample MR was performed using pQTL data for these chemokines and available disease outcome data. Results of the two sample MR are shown for MDC and TARC in tables \@ref(tab:MDC-disease-MR) and \@ref(tab:TARC-disease-MR). There was evidence from the Wald ratio MR that higher MDC has a causal effect on DVT (0.22, SE 0.021, p=2.2x10^-26^) and pulmomary embolism (0.33, SE 0.08, p=2.0x10^-5^). 
-
-There was weaker evidence for causal effects of TARC on disease, with evidence that higher levels of TARC have an effect on rheumatoid arthritis (0.10, SE 0.04, p=8.51x10^-3^). There was weak evidence for higher TARC decreasing the risk of ischaemic stroke (-0.08, SE 0.04, p=0.03).
-
-
-```{r MDC-disease-MR,  echo=FALSE}
+```{r obesity-platelets-parameters,  echo=FALSE}
 options(knitr.kable.NA = "")
-V = c("MDC/CCL22", "MDC/CCL22","MDC/CCL22","MDC/CCL22","MDC/CCL22","MDC/CCL22","MDC/CCL22","MDC/CCL22","MDC/CCL22","MDC/CCL22","MDC/CCL22","MDC/CCL22","MDC/CCL22","MDC/CCL22","MDC/CCL22","MDC/CCL22","MDC/CCL22","MDC/CCL22","MDC/CCL22" )
-Trait = c("Non-cancer illness code self-reported: high cholesterol",'Non-cancer illness code self-reported: deep venous thrombosis (dvt)','Non-cancer illness code self-reported: pulmonary embolism (with or without) dvt','Forced expiratory volume in 1-second (FEV1)','Forced vital capacity (FVC)','Eye problems or disorders: Glaucoma','Diagnoses - main ICD10: M16 Coxarthrosis [arthrosis of hip]',
-'Non-cancer illness code self-reported: gout','Non-cancer illness code self-reported: hypothyroidism or myxoedema','Schizophrenia','Systolic blood pressure automated reading','Alcohol intake frequency','Non-cancer illness code self-reported: osteoporosis','Diagnoses - main ICD10: K80 Cholelithiasis','Fracture resulting from simple fall','Cancer code self-reported: small intestine or small bowel cancer','Eye problems or disorders: Cataract','Diagnoses - main ICD10: R04 Haemorrhage from respiratory passages','Diagnoses - main ICD10: I80 Phlebitis and thrombophlebitis')
-SNP <- c("1 (rs77542162)",  "1 (rs77542162)", "1 (rs77542162)","1 (rs77542162)","1 (rs77542162)","1 (rs77542162)","1 (rs77542162)","1 (rs77542162)","1 (rs77542162)","1 (rs77542162)","1 (rs77542162)","1 (rs77542162)","1 (rs77542162)","1 (rs77542162)","1 (rs77542162)","1 (rs77542162)","1 (rs77542162)","1 (rs77542162)","1 (rs77542162)")
-Method <- c("Wald ratio", "Wald ratio","Wald ratio","Wald ratio","Wald ratio","Wald ratio","Wald ratio","Wald ratio","Wald ratio","Wald ratio","Wald ratio","Wald ratio","Wald ratio","Wald ratio","Wald ratio","Wald ratio","Wald ratio","Wald ratio","Wald ratio")
-Effect <- c(0.2224,0.2936,0.3308,0.0312,0.0285,0.2292,0.2217,-0.4045,0.1203,-0.1477,-0.0283,-0.04,0.1593,-0.1965,0.0528,0.5966,0.0991,0.2189,0.2269)
-SE <- c(0.0209,0.0512,0.0775,0.0084,0.0079,0.0654,0.0648,0.1237,0.0381,0.048,0.0099,0.0143,0.0665,0.0826,0.0236,0.2745,0.0487,0.1094,0.1145)
-P2 <- c(2.200e-26,9.810e-09,1.969e-05,1.961e-04,3.201e-04,4.570e-04,6.186e-04,1.075e-03,1.607e-03,2.086e-03,4.246e-03,5.124e-03,1.655e-02,1.731e-02,2.527e-02,2.976e-02,4.163e-02,4.552e-02,4.755e-02)
-mytable = data.frame(cbind(V, Trait, SNP, Method, Effect, SE, P2))
-names(mytable) <- c("Protein", "Outcome trait", "N SNP (rsID)", "Method", "Effect sie", "Standard error", "P value")
-mytable %>% kable(caption = "Estimates for the effect of MDC on disease outcomes using two sample Mendelian randomization", booktabs = TRUE) %>% 
+f = c("Platelet count", "Immature platelet fraction", "Immature platelet count", "Side fluorescence", "Forward scatter", "Side scatter")
+co = c("257.8 (29.1)", "3.8 (2.3)", "9.3 (4.9)", "82.0 (5.8)", "53.8 (5.5)", "40.3 (1.1)")
+i = c("235.8 (61.5)", "7.3 (8.3)", "16.3 (16.3)", "85.1 (9.8)", "60.5 (8.8)", "41.8 (3.0)")
+p <- c(0.54,0.44,0.45,0.61,0.24,0.37) 
+mytable = data.frame("Platelet trait"  = f, "Control mean (SD) or %" = co, "Bariatric patient mean (SD) or %" = i, "P value for difference" = p)
+colnames(mytable) <- c('Variable', "Control mean (SD)", "Bariatric patient mean (SD)", "P value for difference" )
+mytable %>% kable(caption = "Platelet traits measured by Sysmex XE-2100", booktabs = TRUE) %>% 
   kable_classic_2(full_width = F) %>%
+  #kable_paper("hover", full_width = F)
  kable_styling(full_width = TRUE) %>%
-  column_spec(2, width = "5cm") %>%
-  landscape()
+column_spec(1, width = "4cm")
+
 ```
 
-### TARC
-```{r TARC-disease-MR,  echo=FALSE}
-options(knitr.kable.NA = "")
-V = c("TARC/CCL17", "TARC/CCL17", "TARC/CCL17", "TARC/CCL17", "TARC/CCL17", "TARC/CCL17")
-Trait = c("Rheumatoid arthritis","Anorexia nervosa","Non-cancer illness code self-reported: gastro-oesophageal reflux (gord) or gastric reflux","Systemic lupus erythematosus","Ischemic stroke","Red blood cell count")
-SNP <- c("2 (rs983545, rs222846)", "2 (rs983545, rs222846)", "2 (rs983545, rs222846)", "2 (rs983545, rs222846)", "2 (rs983545, rs222846)", "2 (rs983545, rs222846)")
-Method <- c("Inverse variance weighted", "Inverse variance weighted", "Inverse variance weighted", "Inverse variance weighted", "Inverse variance weighted", "Inverse variance weighted" )
-Effect <- c(0.1015,0.2182,0.003,0.2716,-0.081,-0.0116)
-SE <- c(0.0386,0.0845,0.0012,0.114,0.0373,0.0058)
-P2 <- c(8.510e-03,9.826e-03,1.172e-02,1.717e-02,2.999e-02,4.445e-02)
-mytable = data.frame(cbind(V, Trait, SNP, Method, Effect, SE, P2))
-names(mytable) <- c("Protein", "Outcome trait", "N SNP (rsID)", "Method", "Effect sie", "Standard error", "P value")
-mytable %>% kable(caption = "Estimates for the effect of TARC on disease outcomes using two sample Mendelian randomization", booktabs = TRUE) %>% 
-  kable_classic_2(full_width = F) %>%
- kable_styling(full_width = TRUE) %>%
-  column_spec(2, width = "4cm") %>%
-  landscape()
+### Basal receptors
+Unstimulated platelet receptor levels were compared across bariatric patient and control participant groups. Basal integrin α~IIb~β~3~ activation and P-selectin expression were similar across groups (Figures \@ref(fig:basal-integrin-pselectin-receptor-bariatric)A and B). Similarly, other platelet receptors under basal confitions including GPVI, CD42b (GP1bα), CD41 (integrin α~IIb~), CD61 (Integrin β~3~), CD110 (thrombopoietin/TPO receptor) were not different across groups (Figure \@ref(fig:basal-integrin-pselectin-receptor-bariatric)C). 
+
+(ref:scaption1) Comparison of basal integrin α~IIb~β~3~ activation, P-selectin expression and surface receptors levels across control and bariatric patient groups
+(ref:caption1) Diluted PRP was used for experiments, where platelets were incubated with antibodies for 10 minutes before fixing. Bar graphs comparing A) Basal integrin α~IIb~β~3~ activation B) Basal  P-selectin expression and C) Basal surface receptor expression across bariatric patient and control groups. N=4. P-values indicated for unpaired t-test results.
+
+```{r basal-integrin-pselectin-receptor-bariatric, out.width = "90%", echo = FALSE, fig.cap="(ref:caption1)", fig.scap= "(ref:scaption1)"}
+include_graphics(path = "figure/Bariatric_study/Basal_surface_receptors.pdf", dpi = NA)
+
 ```
 
+
+### Agonist-induced integrin α~IIb~β~3~ and P-selectin expression
+
+Markers of platelet activation were compared in response to different platelet agonists. There was no difference in the levels of the integrin α~IIb~β~3~ or P-selectin across bariatric patients and control groups in response to PAR1-AP, ADP or CRP (Figures \@ref(fig:agonist-integrin-pselectin)A-F), as determined by the logEC50 or the curve maximum values.
+
+(ref:scaption2) Concentration-response curves of integrin α~IIb~β~3~ activation and P-selectin expression
+(ref:caption2) Concentration-response curves of integrin α~IIb~β~3~ activation in platelet rich plasma diluted in HEPES-Tyrode's in response to A) PAR1-AP, B) ADP and C) CRP. Concentration-response curves of P-selectin expression in response to D) PAR1-AP, E) ADP, F) CRP. N=4.
+
+```{r agonist-integrin-pselectin, out.width = "95%",echo = FALSE, fig.cap="(ref:caption2)", fig.scap= "(ref:scaption2)"}
+include_graphics(path = "figure/Bariatric_study/Agonist_Integrin_Pselectin.pdf", dpi = NA)
+
+```
+
+### Platelet-neutrophil aggregates
+
+Next, platelet-neutrophil interactions were explored by gating neutrophils and determining the degree of platelets bound to neutrophils by using an antibody for the platelet specific anti-CD41 antibody. There was no difference in the percentage of platelets bound to neutrophils under basal conditions (7.0 % (SEM 1.5 %) in control v 11.2 % (SEM 3.2%) in bariatric patient group, p=0.30). Similarly, after stimulation with CRP, there was no difference in the platelet-neutrophil aggregates (38.6 % (SEM 2.6 %) in control group v 35.5 % (SEM 2.7 %), p=0.48).  
+
+(ref:scaption2b) Comparison of platelet-neutrophil aggregates
+(ref:caption2b) Comparison of platelet-neutrohpil aggregates across bariatric patient and control participant groups in unstimulated and stimulated (5 ug/mL CRP) conditions. N=4. P-values provided for the results of a two-way ANOVA with Sidak's multiple comparisons tests.
+
+```{r platelet-neutrophil, echo = FALSE, out.width = "80%", fig.cap="(ref:caption2b)", fig.scap= "(ref:scaption2b)"}
+include_graphics(path = "figure/Bariatric_study/Plt-neu_aggregates.pdf", dpi = NA)
+
+```
+
+### Platelet proteomics
+
+A PCA was performed on the protein data. PC1 and PC2 explained 27.1 % and 14.4 % of the variance in the data, respectively. A PC plot of PC1 against PC2 is shown in Figure \@ref(fig:pca). PC1 plotted against PC2 did not separate the bariatric patient samples from the control participant samples, despite some grouping of three patients. PC3 and PC4 explained 13.1% and 12.6% of the data respectively. When plotting PC3 against PC4, there is separation among the groups (\@ref(fig:pca2)). This suggests that the group was not the main source of variation between the data. 
+
+(ref:scaption-pca) Principal component analysis (PCA): scatter plot of PC1 and PC2
+(ref:caption-pca) Principal component analysis (PCA): scatter plot of PC1 and PC2. Each point represents a participant. Control samples are coloured pink and bariatric samples coloured blue, with the pooled reference sample of both control and bariatric samples coloured in blue.
+
+```{r pca, echo = FALSE, out.width = "95%", fig.cap="(ref:caption-pca)", fig.scap= "(ref:scaption-pca)"}
+include_graphics(path = "figure/Bariatric_study/Proteomic_PCA.pdf", dpi = NA)
+
+```
+(ref:scaption-pca2) Principal component analysis (PCA): scatter plot of PC3 and PC4.
+(ref:caption-pca2) Principal component analysis (PCA): scatter plot of PC3 and PC4. Each point represents a participant. Control samples are coloured pink and bariatric samples coloured blue, with the pooled reference sample of both control and bariatric samples coloured in blue.
+
+```{r pca2, echo = FALSE, out.width = "95%", fig.cap="(ref:caption-pca2)", fig.scap= "(ref:scaption-pca2)"}
+include_graphics(path = "figure/Bariatric_study/PC3vPC4_proteomics.pdf", dpi = NA)
+
+```
+
+There was evidence (p<0.05) that 188 out of a total of 5318 detected platelet proteins were altered in bariatric patients with obesity compared to controls \@ref(fig:volcano). The protein which had the strongest evidence for a BMI effect was phosphatidylinositol 4-kinase beta (PI4K-beta) (logFC 0.45, p=6.3x10^-5^). The signalling protein G protein-coupled receptor kinase (GRK6) was lower in bariatric patients (logFC -0.15, p=0.002). The adipocyte plasma membrane-associated protein (APMAP) was increased in bariatric patients (logFC 0.23, p=0.006).  Proteins previously reported to be associated with BMI replicated here, including actin (cytoplasmic 1, logFC 0.51, p=0.03) and septin-2 (logFC 0.14, p=0.03). Previous studies have also identified platelet transcripts associated with BMI. The current study provided evidence that these trascripts relate to proteomics, as BMI is associated with myeloperoxidase (LogFC 1.15, p=0.04) and protein S100-A9 (logFC 1.48, p=0.049). Similar to the flow cytometry results, no alteration in protein receptors such as the α~IIb~ integrin and GPVI receptor was detected. The full proteomic results can be found here https://github.com/lucygoudswaard/mythesis/blob/f17f0250ad50bad74d7e38225d060aa6cd83321b/index/figure/Bariatric_study/Proteomics_results.xlsx
+
+
+(ref:scaption-volcano) A volcano plot comparing the Log~2~ fold change in protein levels in bariatric patients compared to controls
+(ref:caption-volcano) A volcano plot comparing the Log~2~ fold change in protein levels in bariatric patients compared to controls
+
+```{r volcano, echo = FALSE, out.width="80%", fig.cap="(ref:caption-volcano)", fig.scap= "(ref:scaption-volcano)"}
+include_graphics(path = "figure/Bariatric_study/volcano_proteomics_labelled.pdf", dpi = NA)
+
+```
+
+### Ingenuity pathway analysis enrichment
+
+Add this in?? Although IPA results really difficult to interpret, especially with small N...
 
 ## Discussion
 
-This study explored the effects of the chemokines MDC and TARC on platelet function and signalling. Evidence suggested that MDC and TARC were able to potentiate platelet function induced by the agonist PAR1-AP in washed platelets. There was not strong evidence that this potentiation was mediated PKB (unlike other platelet primers) or by a G~i/o~-coupled receptor. Functional experiments indicated that MDC and TARC are able to cause a small calcium response and platelet shape change when applied alone. Experiments in PRP indicated that MDC is able to cause full aggregation, and that this is due to the CCR4 receptor, and that this is G~q~ coupled. Two sample MR was performed to estimate the causal effect of higher levels of MDC and TARC on disease. These results suggested that higher levels of MDC increased the risk of DVT and PE. These effects could be due to the activation of platelets. Further work is required to determine signalling, and further cohort studies would be useful to confirm effects of MDC on DVT and PE.
+This chapter has explored the effect of obesity on platelet parameters and platelet function. Here, I have optimised common experimental laboratory techniques for use within a patient study. These experiments have been used to look at platelet function within other patient groups (e.g. COVID-19) and can be implemented in future patient studies. The study did not detect any functional differences in platelets from bariatric patients compared to healthy controls, but proteomics analysis by TMT-MS detected differences in platelet protein abundance, which may have implications for platelet signalling. 
 
-Previous studies have attempted to explore the effects of MDC and TARC on platelet function. There is evidence that MDC and TARC potentiate ADP-induced aggregation [@Gear2001]. The current study provides evidence that this is also the case with PAR1-AP, therefore this effect is not agonist specific. MDC and TARC alone have been shown to elicit a calcium response, but only in PRP can aggregation occur [@Abi-Younes2001, @Petito2018, @Kowalska2000]. This is likely due to components in PRP such as arachidonic acid. The current chapter confirmed these findings, where only shape change was achieved in washed platelets, but in PRP MDC could induce aggregation. 
+This study did not detect differences in platelet characteristics such as IPC. Although there was no statistical evidence, the standard deviation was too large to determine a difference. There was also no evidence for a difference in levels of platelet receptors under basal conditions, nor differences in levels of platelet receptors after stimulation with platelet agonists. This is in contrast to previous studies, which detected an increase in GPVI receptor levels and GPVI mediated platelet aggregation [@Barrachina2019]. Barrachina et al. did not directly measure the integrin α~IIb~β~3~ in response to CRP. A larger sample size would be required to be able to draw conclusions here. Aggregation experiments would have also been useful to compare platelet function across groups, however this technique was not chosen due to the time and large amount of sample required.
 
-As well as confirming previous findings, this chapter provided some novel observations. For example, this chapter explored whether MDC and TARC can potentiate PS exposure. There was no evidence that MDC and TARC could potentiate the procoagulant effects induced by CRP and thrombin. 
+The principal component analysis suggested that PC4 was able to separate the bariatric and control groups. Although PC4 was not the main source of variance, even with a small N number, this provided evidence that the group (bariatric/control) could explain variation in proteins. Therefore, some protein signatures may be due to the difference in BMI, however it could also be due to other factors which differed across groups such as previous COVID-19 infection. Comparing the proteins which were altered with previous studies also suggests that the current study is likely capturing platelet protein signatures of obesity. Table \@ref(tab:proteome-lit) shows the results that have replicated in the currenty study when comparing to three previous studies that have looked at the platelet proteome [@Barrachina2019], platelet microvesicle proteome [@Grande2019] and platelet transcriptome in relation to obesity [@Freedman2010]. 
 
-Biology?? Why are we seeing these effects??
+A post hoc sample size calculation was performed to determine how many participants would be required to detect a 10% protein change based on the median protein expression and standard deviation observed in the proteomics analysis, to obtain a power value of 0.8. This analysis suggested that a total of 19 participants (9 and 10 in each group) would be required, based on an alpha of 0.05.
 
-As well as functional effects, this chapter aimed to assess whether effects are due to the CCR4 receptor and the downstream signalling involved. It has been reported that MDC inhibits calcium currents in HEK293 cells and barium currents dorsal root ganglia neurones and is therefore G~i/o~ coupled [@Oh2001]. MDC and TARC were not able to reduce VASP phosphorylation induced by PGE1, suggesting that the effects are not via G~i/o~ in platelets. Another study suggested that CCR4 is coupled to G~q~ due to the calcium response observed by MDC [Kowalska2000]. Inhibiting G~q~ coupling in the current study inhibited the aggregation induced by MDC. 
+```{r proteome-lit,  echo=FALSE}
+ options(knitr.kable.NA = "")
+ paper = c("GPVI surface expression and signalling pathway activation are increased in platelets from obese patients: Elucidating potential anti-atherothrombotic targets in obesity", "Platelet-Derived Microparticles From Obese Individuals: Characterization of Number, Size, Proteomics, and Crosstalk With Cancer and Endothelial Cells", "Relation of platelet and leukocyte inflammatory transcripts to body mass index in the Framingham heart study")
+ author = c("Barrachina et al., 2019", "Grande et al., 2019", "Freedman et al., 2010")
+ findings = c('')
+ mytable = cbind(paper, author, findings)
+  colnames(mytable) <- c("Paper", "Author, year", "Study summary")
+ mytable %>% kable(caption = "Summary of current literature on the effect of body mass index on the plasma proteome", booktabs = TRUE) %>% 
+   kable_classic_2(full_width = F) %>%
+   #kable_paper("hover", full_width = F)
+  kable_styling(full_width = TRUE) %>%
+ column_spec(3, width = "7cm") %>%
+   column_spec(2, width = "2cm") %>%
+     column_spec(1, width = "2cm") %>%
+   landscape()
+```
 
-MDC and TARC have been implicated in cardiovascular disease such as atherosclerosis [@Weber2004]. As MDC and TARC activate platelets, the effect of MDC and TARC on disease was explored using two sample MR. The SNP that was associated with levels of MDC, rs77542162, was also associated with increased risk of DVT and pulmonary embolism. Despite the evidence for a causal effect, it is possible that this SNP could affect the outcome through routes other than through the exposure (horizontal pleiotropy). As there is only one SNP, sensitivity analyses cannot be performed to test this. In efforts to determine whether levels of MDC or TARC are affected by BMI, a one sample MR was performed in Chapter \@ref(#BMI-protein-MR). Here, the methods and full results can be seen, where there is weak evidence that higher BMI raises levels of MDC.
+Proteomics notes
+Widely available two sample MR results which look at the effect of plasma proteins on BMI. Although this is not from platelet samples, these results may provide some insight as how higher levels of proteins might affect BMI.
 
-### Conclusions
+Proteins in agreement with Barrachina:
+- Actin, cytoplasmic 1 (Fragment) (0.51, 0.03). Mutations in ACTB have been shown to coincide with enlarged, immature platelets.
+- Septin-2 (0.14 FC, p=0.03)
+- Gelsolin (-0.14, p=0.02)
+- Glycerol-3-phosphate dehydrogenase (-0.14 FC, p=0.01)
+- Lysozyme C opposite direction (increased in current analysis but Barrachina suggests reduction).
+- Few protein overlaps, however, we did not see an increase in GPVI levels or activation through GPVI using flow cytometry. Barrachina do not directly look at aIIbB3 integrin function.
 
-Overall, this chapter provided evidence that the chemokines MDC and TARC potentiate platelet aggregation induced by PAR1-AP. On their own in washed platelets, a small calcium response can be observed as well as shape change, but PRP is required to see full aggregation. Signalling experiments suggest MDC and TARC act at the CCR4 receptor on platelets, and that G~q~ coupling is responsible for the functional effects observed. There was evidence that higher MDC may have a causal effect on DVT and PE. MDC may therefore be a biomarker for venous thromboembolism. 
+Comparison with changes in platelet microvesicle proteome: 
+- [@Grande2019]
+- reduction in LIM and senescent cell antigen-likecontaining domain protein 1
+ (FC -0.17, p=0.013).
+ - No other proteins also replicated here (although these are overall platelet not microparticles)
+ 
+ Platelet transcript "Relation of Platelet and Leukocyte Inflammatory Transcripts to Body Mass Index in the Framingham Heart Study". [@Freedman2010] Genes in common
+ - MPO, s100a9, 
 
 
+- Barrachina - proteins differentially regulated in obese v lean. Upregulated in obese = actin, albumin, fibrinogen beta chain,  fibrinogen gamma chain, integrin aiib, protein phosphatase 1 regulatory subunit 7, septin-2, thrombospondin-1, thioredoxin-like protein 1, thymidine phosphorylase, vinculin, negative: aflatoxin b1 aldehyde reductase member 2, dynactin subunit 2, dihydropyrimidinase-related protein 2, gelsolin,  Glycerol-3-phosphate dehydrogenase mitochondrial, Delta-aminolevulinic acid dehydratase, Heat shock protein beta-1, Lysozyme C,
+PDZ and LIM domain protein 1, Protein disulfideisomerase A6, Phosphoglucomutase2, Phosphatidylinositol 5-phosphate 4-kinase type-2 alpha, septin-11, stress-induced phosphoprotein 1, tropomyosin alpha-1 chain, Vacuolar protein sorting-associated protein 37B, zyxin
 
-
-
+- EpigrpahDB - two sample MR results for APMAP raising body mass index and weight. Therefore BMI may not be causing it, but association other way round. https://www.epigraphdb.org/pqtl/APMAP
 
 
 

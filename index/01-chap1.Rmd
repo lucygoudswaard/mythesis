@@ -7,7 +7,7 @@ output:
 # Introduction {-}
 
 ## Format
-This chapter will provide some background information to put the thesis into context. It will provide information on obesity, in particular its prevalence and implications for cardiovascular disease. Possible mechanisms of disease will be introduced, such as the involvement of changes in circulating proteins and blood platelets. At the end of this chapter, the aims of the thesis and organisation of the results chapters will be introduced.
+This section will provide some background information to put the thesis into context. It will provide information on obesity, in particular its prevalence and implications for cardiovascular disease. Possible mechanisms of disease will be introduced, such as the involvement of changes in circulating blood platelets and circulating proteins. At the end of this chapter, the aims of the thesis and organisation of the results chapters will be introduced.
 
 ## Obesity on the rise
 Obesity, defined as a body mass index (BMI) of greater than 30kg/m^2^, has tripled worldwide since 1975. It is currently estimated that 40% of adults in the United States and 26% of adults in the United Kingdom have obesity [@Bluher2019]. As of 2016, the number of individuals globally with obesity surpassed 650 million [@TheLancetPublicHealth2018]. The average BMI of the UK adult population is ~27kg/m^2^ [@Wade2018], which is in the 'overweight' category (between 25 and 30 kg/m^2^). Overweight is also more common than 'normal-weight' in many other higher-income countries [@NCD-RisC2016], and prevalence of overweight is increasing in lower-income countries [@Templin2019].
@@ -21,22 +21,21 @@ Adiposity is a risk factor for certain non-communicable diseases. Such diseases 
 Mendelian randomisation is a technique which uses the random assortment of alleles to estimate the causal association between a modifiable risk factor (such as BMI) and disease outcomes. It can be likened to a natural randomised control trial (RCT) [FIG]. Associations between BMI and disease have been shown through use of prospective observational studies [@Khan2018], but more recently, through use of Mendelian randomisation studies [@Nordestgaard2012; @Dale2017; @Carreras-Torres2017a]. These studies have provided evidence for a causal relationship between adiposity and ischaemic heart disease (IHD) [@Nordestgaard2012], coronary heart disease (CHD), T2D [@Dale2017] and types of cancer including pancreatic cancer [@Carreras-Torres2017a]. Studies have also found that weight loss improves cardiovascular risk factors [@Wing2011; other refs]. Despite the evidence for a causal association between adiposity and cardiovascular disease, mechanisms of obesity-related disease remain unclear.
 
 ## Mechanisms of obesity-related cardiovascular disease
-Obesity is caused by an increase in fat deposition and generally occurs when energy intake exceeds energy expenditure. There are two types of fat: white adipose tissue (WAT) and brown adipose tissue (BAT). WAT secretes proteins and peptides which have pro-inflammatory effects [@Cercato2019; @Kern2001]. Due to these adipose tissue effects, obesity results in a state of chronic low-grade inflammation [@Esser2014], with an increase in adipose tumour necrosis factor-alpha (TNF-alpha) and interleukin-6 (IL-6) [@Kern2001]. Efforts have been made to understand how adiposity causes cardiovascular disease, with suggestion that inflammation, increased production of reactive oxygen species and endothelial dysfunction contribute to increased cardiovascular risk [@Cercato2019, add other refs].
+Obesity is caused by an increase in fat deposition and generally occurs when energy intake exceeds energy expenditure. There are two types of fat: white adipose tissue (WAT) and brown adipose tissue (BAT). WAT secretes proteins and peptides which have pro-inflammatory effects [@Cercato2019; @Kern2001]. Due to these adipose tissue effects, obesity results in a state of chronic low-grade inflammation [@Esser2014], with an increase in adipose tumour necrosis factor-alpha (TNF-alpha) and interleukin-6 (IL-6) [@Kern2001]. Efforts have been made to understand how adiposity causes cardiovascular disease, with suggestion that inflammation, increased production of reactive oxygen species and endothelial dysfunction contribute to increased cardiovascular risk [@Cercato2019].
 
-## Plasma markers of obesity - change to unresolved issues???
+## Plasma markers of obesity
 Studies which have explored the molecular footprint of adiposity have tended to focus on the lipidome, such as cholesterol and triglycerides in lipoprotein subtypes, inlcuding low-density lipoproteins (LDL), very-low-density lipoproteins (VLDL) and high-density lipoproteins (HDL) [@Bell2018a; @Wurtz2014], where a higher BMI is associated with an increase in LDLs and a decrease in large HDLs. This has been expored in a causal framework. 
 
 As the majority of druggable targets are proteins, it is also valuable to explore the effects of BMI on circulating plasma proteins. It is estimated that 25% of proteins in the human proteome circulate in the blood [@Imming2006], including enzymes, protein kinases and transport proteins. Therefore, focusing on effects of adiposity on the circulating proteome may allow for the development of or repurposing of therapeutic interventions to reduce obesity-related disease. Previous studies that have explored the effect of adiposity on circulating proteins have used hypothesis driven approaches [@Timpson2011]. Attempts to evaluate the effect of BMI on the general proteome have been performed using observational analyses [@Cominetti2018]. Recent technologies have been developed which allow protein detection in unprecedented scope and detail, for example the SOMAscan by SomaLogic [@Gold2012], which can detect over 3,500 unique proteins. Although identifying alterations of individual proteins may provide therapeutic opportunities, assessing the overall protein profile of adiposity may provide more of a mechanistic insight into how adiposity causes disease.
 
 
 ## Platelets are key cells involved in thrombosis
-Platelets are enucleate blood cells that are involved in the cessation of bleeding, but can cause thrombosis when activated pathologically. 
-Antiplatelet drugs used to prevent reocurrence of MI.
-BMI is linked to increased rates of thrombosis, therefore it is likely that platelets become hyperactive. There is conflicting literature surrounding this and cohorts to explore these effects are limited. .....
+Platelets are enucleate blood cells that are involved in the cessation of bleeding, but can cause thrombosis when activated pathologically. Antiplatelet drugs are used following percutaneous coronary intervention (PCI) to prevent recurrence of ischaemic events such as a myocardial infarction (MI). Patients are usually prescribed dual antiplatelet therapy (DAPT), which usually consists of either clopidogrel/ticagrelor (P2Y12 antagonists) and aspirin (cyclooxygenase inhibitor) [@Nardin2015].
+BMI is linked to increased rates of thrombosis, therefore it is likely that those with higher BMI have platelets which are hyperactive. There is conflicting literature surrounding this and cohorts used to explore these effects are limited, as large cohort studies generally do not have in depth platelet function measures.
 
 ## Importance of interdisciplinary methods
-Each approach has biases and problems, which means we need to be careful ....
-A combination of laboratory experiments, clinical studies and epidemiology (including Mendelian randomization and RCTs) in order to investigate mechanisms of disease.
+Each experimental approach used when trying to answer hypotheses has biases and limitations. For example, using basic science it is possible to determine effects in vitro or ex vivo, however it is difficult to fully understand how findings translate to in vivo physiology. Similarly, observational studies can provide direct clinical information, but these can only be used to identify correlation. To overcome this issue, Mendelian randomization utilised genetic information to be able to provide causal estimates, but can only be used in large datasets. RCTs???
+A combination of laboratory experiments, observational clinical studies, Mendelian randomization and randomised control trials (RCTs) can help to provide separate sources of evidence in investigating mechanisms of disease.
 
 ## Thesis aims and objectives
 The aims of the thesis are indicated below, with a schematic of the multi-step pathway which this thesis aims to explore (Figure \@ref(fig:Thesis-schematic)). The 3 overall aims are:
@@ -49,7 +48,6 @@ The aims of the thesis are indicated below, with a schematic of the multi-step p
 ```{r Thesis-schematic, echo = FALSE, fig.cap="Schematic of the multi-step pathway addressed in the thesis", fig.scap="Schematic of the multi-step pathway addressed in the thesis"}
 include_graphics(path = "figure/Intro_background/Thesis_graphic_overview_without_chapters.png", dpi = NA)
 ```
-
 
 ## Thesis structure
 There will be 5 results chapters in this thesis:
@@ -66,7 +64,7 @@ There will be 5 results chapters in this thesis:
 
 **Goudswaard L. J.**, Harrison S., Van De Klee D., Chaturvedi N., Lawlor D. A., Davey Smith G., Hughes A.D., Howe L. D. Blood pressure variability and night-time dipping assessed by 24-hour ambulatory monitoring: Cross-sectional association with cardiac structure in adolescents. (2021) PLOS ONE 16(6): e0253196. https://doi.org/10.1371/journal.pone.0253196
 
-**Goudswaard L. J.**, Corbin L. J., Burley K. L., Mumford A., Akbari P., Soranzo N., Butterworth A. S., Watkins N. A., Pournaras D. J., Harris J., Timpson N. J., Hers I. Higher body mass index raises immature platelet count: evidence from Mendelian randomization analyses. (2021) medRxiv. doi:10.1101/2021.05.19.2125744325.
+**Goudswaard L. J.**, Corbin L. J., Burley K. L., Mumford A., Akbari P., Soranzo N., Butterworth A. S., Watkins N. A., Pournaras D. J., Harris J., Timpson N. J., Hers I. Higher body mass index raises immature platelet count: evidence from Mendelian randomization analyses. (2021) medRxiv. Under review at Platelets. doi:10.1101/2021.05.19.2125744325. 
 
 Liu, H., Jackson, M. L., **Goudswaard, L. J.**, Moore S. F., Hutchinson J. L, Hers I.  Sphingosine-1-phosphate modulates PAR1-mediated human platelet activation in a concentration-dependent biphasic manner. (2021) Sci Rep 11, 15308. https://doi.org/10.1038/s41598-021-94052-4
 
