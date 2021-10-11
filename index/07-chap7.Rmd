@@ -18,12 +18,7 @@ In this chapter, the aim was to measure associations between adiposity and the h
 
 ### Study population
 
-The present study was conducted on a random subset of participants from INTERVAL who had basic phenotype data and plasma proteins measured by SomaLogic. This included up to 2737 participants mostly of European descent across analyses described below. More details of this study can be found in Chapter \@ref(common-methods)
-
-### Assessment of BMI and covariables
-
-Participants completed online questionnaires wherein they reported their height and weight. BMI was calculated as weight in kilograms divided by the square of their height in metres (kg/m^2^). Available covariables were age, sex, previous or current smoking frequency (in three categories of: never, occasional, most days or every day) and alcohol intake frequency (in four categories of: rarely, less than once a week, 1-2 times a week, 3-5 times a week or most days). These covariables were chosen as they were measured in the INTERVAL collection and are measures which are thought to influence adiposity and cardiometabolic health [@Bell2018a].
-
+The present study was conducted on a random subset of participants from INTERVAL who had basic phenotype data and plasma proteins measured by SomaLogic. This included up to 2737 participants mostly of European descent across analyses described below. More details of this study can be found in Chapter \@ref(common-methods).
 
 ### Measurement of circulating proteins
 
@@ -120,7 +115,7 @@ include_graphics(path = "figure/BMI_protein_INTERVAL/QQ_confounder_proteins.pdf"
 
 ### Associations of the GRS for BMI with measured BMI and covariables
 
-The distribution of the GRS among participants was normal (mean=0.08, SD=0.29, W=0.99, P=0.73, N=2729). The GRS was associated with BMI, explaining 2.8% of its variance (R^2^=0.028, P=1.6x10-18, Table \@ref(table:INT-GRS-confounders)). There was no strong evidence of association between GRS and age (R^2^=0.001, P=0.11), sex (R^2^=6x10-5, P=0.28), smoking frequency (R^2^=< 0.0001, P=0.91), or alcohol intake (R^2^<0.0001, P=0.44).
+The distribution of the GRS among participants was normal (mean=0.08, SD=0.29, W=0.99, P=0.73, N=2729). The GRS was associated with BMI, explaining 2.8% of its variance (R^2^=0.028, P=1.6x10-18, Table \@ref(tab:INT-GRS-confounders)). There was no strong evidence of association between GRS and age (R^2^=0.001, P=0.11), sex (R^2^=6x10-5, P=0.28), smoking frequency (R^2^=< 0.0001, P=0.91), or alcohol intake (R^2^<0.0001, P=0.44).
 
 ```{r INT-GRS-confounders,  echo=FALSE}
 options(knitr.kable.NA = "")

@@ -1,33 +1,37 @@
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {1.1}{\ignorespaces Platelet traits measured by Sysmex XN-1000}}{22}{table.caption.12}%
-\contentsline {table}{\numberline {1.2}{\ignorespaces Characteristics of included INTERVAL participants\relax }}{26}{table.caption.13}%
-\contentsline {table}{\numberline {1.3}{\ignorespaces Observational associations between BMI and platelet measures adjusted for age, sex, smoking status and alcohol consumption}}{30}{table.caption.15}%
-\contentsline {table}{\numberline {1.4}{\ignorespaces Age and sex adjusted estimates for the association between BMI and platelet traits}}{31}{table.caption.16}%
-\contentsline {table}{\numberline {1.5}{\ignorespaces Associations between covariables (exposure) and standardised BMI (outcome)\relax }}{33}{table.caption.17}%
-\contentsline {table}{\numberline {1.6}{\ignorespaces Association between age and platelet traits}}{34}{table.caption.18}%
-\contentsline {table}{\numberline {1.7}{\ignorespaces Association between sex and platelet traits}}{35}{table.caption.19}%
-\contentsline {table}{\numberline {1.8}{\ignorespaces Association between smoking and platelet traits}}{36}{table.caption.20}%
-\contentsline {table}{\numberline {1.9}{\ignorespaces Association between alcohol consumption and platelet traits}}{37}{table.caption.21}%
-\contentsline {table}{\numberline {1.10}{\ignorespaces Association between genetic risk score for BMI with both BMI and covariables}}{39}{table.caption.22}%
-\contentsline {table}{\numberline {1.11}{\ignorespaces Mendelian randomization estimates for the effect of BMI on platelet traits}}{41}{table.caption.23}%
-\contentsline {table}{\numberline {1.12}{\ignorespaces Characteristics of COPTIC study participants\relax }}{44}{table.caption.25}%
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {2.1}{\ignorespaces Characteristics of included participants\relax }}{59}{table.caption.28}%
-\contentsline {table}{\numberline {2.2}{\ignorespaces Platelet traits measured by Sysmex XE-2100\relax }}{60}{table.caption.29}%
-\contentsline {table}{\numberline {2.3}{\ignorespaces Summary of current literature on the effect of body mass index on the plasma proteome\relax }}{69}{table.caption.36}%
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {3.1}{\ignorespaces Comparison of the effect of MDC and TARC on the logEC50 for PAR1-AP induced integrin activation and P-selectin expression compared with a one-way ANOVA (N=4)\relax }}{87}{table.caption.40}%
-\contentsline {table}{\numberline {3.2}{\ignorespaces Estimates for the effect of MDC on disease outcomes using two sample Mendelian randomization\relax }}{98}{table.caption.49}%
-\contentsline {table}{\numberline {3.3}{\ignorespaces Estimates for the effect of TARC on disease outcomes using two sample Mendelian randomization\relax }}{100}{table.caption.50}%
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {4.1}{\ignorespaces Comparison of included vs excluded INTERVAL participants\relax }}{118}{table.caption.54}%
-\contentsline {table}{\numberline {4.2}{\ignorespaces Associations between covariables (exposure) and standardised BMI (outcome)\relax }}{121}{table.caption.55}%
-\contentsline {table}{\numberline {4.3}{\ignorespaces Associations of the genetic risk score for BMI with reported BMI and covariables\relax }}{124}{table.caption.57}%
-\contentsline {table}{\numberline {4.4}{\ignorespaces Comparison of BMI-protein estimates among protein clusters}}{132}{table.caption.63}%
-\contentsline {table}{\numberline {4.5}{\ignorespaces Cluster 2 vs full SomaLogic protein enrichment results for disease class using DAVID bioinformatics 6.8\relax }}{133}{table.caption.64}%
-\contentsline {table}{\numberline {4.6}{\ignorespaces Disease enrichment of proteins associated with BMI in confounder adjusted model compared with all proteins in SomaLogic (DAVID Bioinformatics 6.8)\relax }}{134}{table.caption.65}%
+\contentsline {table}{\numberline {4.1}{\ignorespaces Platelet traits measured by Sysmex XN-1000}}{29}{table.caption.10}%
+\contentsline {table}{\numberline {4.2}{\ignorespaces Characteristics of included INTERVAL participants\relax }}{32}{table.caption.11}%
+\contentsline {table}{\numberline {4.3}{\ignorespaces Observational associations between BMI and platelet measures adjusted for age, sex, smoking status and alcohol consumption}}{35}{table.caption.13}%
+\contentsline {table}{\numberline {4.4}{\ignorespaces Age and sex adjusted estimates for the association between BMI and platelet traits}}{36}{table.caption.14}%
+\contentsline {table}{\numberline {4.5}{\ignorespaces Associations between covariables (exposure) and standardised BMI (outcome)\relax }}{38}{table.caption.15}%
+\contentsline {table}{\numberline {4.6}{\ignorespaces Association between age and platelet traits}}{39}{table.caption.16}%
+\contentsline {table}{\numberline {4.7}{\ignorespaces Association between sex and platelet traits}}{40}{table.caption.17}%
+\contentsline {table}{\numberline {4.8}{\ignorespaces Association between smoking and platelet traits}}{41}{table.caption.18}%
+\contentsline {table}{\numberline {4.9}{\ignorespaces Association between alcohol consumption and platelet traits}}{42}{table.caption.19}%
+\contentsline {table}{\numberline {4.10}{\ignorespaces Association between genetic risk score for BMI with both BMI and covariables}}{44}{table.caption.20}%
+\contentsline {table}{\numberline {4.11}{\ignorespaces Mendelian randomization estimates for the effect of BMI on platelet traits}}{46}{table.caption.21}%
+\contentsline {table}{\numberline {4.12}{\ignorespaces Characteristics of COPTIC study participants\relax }}{49}{table.caption.23}%
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {5.1}{\ignorespaces DiRECT participant characteristics\relax }}{149}{table.caption.68}%
-\contentsline {table}{\numberline {5.2}{\ignorespaces Summary of current literature on the effect of weight loss on the plasma proteome\relax }}{161}{table.caption.73}%
+\contentsline {table}{\numberline {5.1}{\ignorespaces Characteristics of included participants\relax }}{58}{table.caption.26}%
+\contentsline {table}{\numberline {5.2}{\ignorespaces Platelet traits measured by Sysmex XE-2100\relax }}{59}{table.caption.27}%
+\contentsline {table}{\numberline {5.3}{\ignorespaces Summary of current literature on the effect of body mass index on the plasma proteome\relax }}{68}{table.caption.34}%
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {6.1}{\ignorespaces Comparison of the effect of MDC and TARC on the logEC50 for PAR1-AP induced integrin activation and P-selectin expression compared with a one-way ANOVA (N=4)\relax }}{78}{table.caption.38}%
+\contentsline {table}{\numberline {6.2}{\ignorespaces Estimates for the effect of MDC on disease outcomes using two sample Mendelian randomization\relax }}{87}{table.caption.47}%
+\contentsline {table}{\numberline {6.3}{\ignorespaces Estimates for the effect of TARC on disease outcomes using two sample Mendelian randomization\relax }}{89}{table.caption.48}%
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {7.1}{\ignorespaces Comparison of included vs excluded INTERVAL participants\relax }}{103}{table.caption.52}%
+\contentsline {table}{\numberline {7.2}{\ignorespaces Associations between covariables (exposure) and standardised BMI (outcome)\relax }}{105}{table.caption.53}%
+\contentsline {table}{\numberline {7.3}{\ignorespaces Associations of the genetic risk score for BMI with reported BMI and covariables\relax }}{107}{table.caption.55}%
+\contentsline {table}{\numberline {7.4}{\ignorespaces Comparison of BMI-protein estimates among protein clusters}}{114}{table.caption.61}%
+\contentsline {table}{\numberline {7.5}{\ignorespaces Cluster 2 vs full SomaLogic protein enrichment results for disease class using DAVID bioinformatics 6.8\relax }}{115}{table.caption.62}%
+\contentsline {table}{\numberline {7.6}{\ignorespaces Disease enrichment of proteins associated with BMI in confounder adjusted model compared with all proteins in SomaLogic (DAVID Bioinformatics 6.8)\relax }}{116}{table.caption.63}%
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {8.1}{\ignorespaces DiRECT participant characteristics\relax }}{127}{table.caption.66}%
+\contentsline {table}{\numberline {8.2}{\ignorespaces Summary of current literature on the effect of weight loss on the plasma proteome\relax }}{138}{table.caption.71}%
+\addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

@@ -4,7 +4,7 @@ output:
   html_document: default
 ---
 
-# Introduction {-}
+# Introduction
 
 ## Format
 This section will provide some background information to put the thesis into context. It will provide information on obesity, in particular its prevalence and implications for cardiovascular disease. Possible mechanisms of disease will be introduced, such as the involvement of changes in circulating blood platelets and circulating proteins. At the end of this chapter, the aims of the thesis and organisation of the results chapters will be introduced.
