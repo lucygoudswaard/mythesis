@@ -1,11 +1,11 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2022/dev) (preloaded format=pdflatex 2021.9.2)  11 OCT 2021 10:33
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2022/dev) (preloaded format=pdflatex 2021.10.20)  5 NOV 2021 14:21
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **thesis.tex
 (./thesis.tex
 LaTeX2e <2021-06-01> patch level 1
-L3 programming layer <2021-08-27> (./bristolthesis.cls
+L3 programming layer <2021-10-18> (./bristolthesis.cls
 Document Class: bristolthesis 
 (/Users/lg14289/Library/TinyTeX/texmf-dist/tex/latex/base/book.cls
 Document Class: book 2021/02/12 v1.4n Standard LaTeX document class
@@ -37,7 +37,7 @@ rs
 \f@nch@O@olf=\skip56
 \f@nch@O@orf=\skip57
 ) (/Users/lg14289/Library/TinyTeX/texmf-dist/tex/latex/fancyvrb/fancyvrb.sty
-Package: fancyvrb 2021/08/12 v3.8 verbatim text (tvz,hv)
+Package: fancyvrb 2021/10/15 v3.9 verbatim text (tvz,hv)
 (/Users/lg14289/Library/TinyTeX/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks16
@@ -216,7 +216,7 @@ Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
 ) (/Users/lg14289/Library/TinyTeX/texmf-dist/tex/latex/setspace/setspace.sty
 Package: setspace 2011/12/19 v6.7a set line spacing
 ) (/Users/lg14289/Library/TinyTeX/texmf-dist/tex/latex/siunitx/siunitx.sty
-Package: siunitx 2021-08-27 v3.0.28 A comprehensive (SI) units package
+Package: siunitx 2021-10-15 v3.0.33 A comprehensive (SI) units package
 \l__siunitx_angle_tmp_dim=\dimen168
 \l__siunitx_angle_marker_box=\box58
 \l__siunitx_angle_unit_box=\box59
@@ -241,11 +241,11 @@ Package: siunitx 2021-08-27 v3.0.28 A comprehensive (SI) units package
 
 (/Users/lg14289/Library/TinyTeX/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys
 2e.sty (/Users/lg14289/Library/TinyTeX/texmf-dist/tex/latex/l3kernel/expl3.sty
-Package: expl3 2021-08-27 L3 programming layer (loader) 
+Package: expl3 2021-10-18 L3 programming layer (loader) 
 
 (/Users/lg14289/Library/TinyTeX/texmf-dist/tex/latex/l3backend/l3backend-pdftex
 .def
-File: l3backend-pdftex.def 2021-08-04 L3 backend support: PDF output (pdfTeX)
+File: l3backend-pdftex.def 2021-10-18 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count290
 \l__pdf_internal_box=\box65
 ))
@@ -948,7 +948,7 @@ Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: threeparttable package is loaded.
 Package caption Info: wrapfig package is loaded.
 Package caption Info: End \AtBeginDocument code.
-<figure/index/UoBcrest.pdf, id=601, 114.4275pt x 137.51375pt>
+<figure/index/UoBcrest.pdf, id=597, 114.4275pt x 137.51375pt>
 File: figure/index/UoBcrest.pdf Graphic file (type pdf)
 <use figure/index/UoBcrest.pdf>
 Package pdftex.def Info: figure/index/UoBcrest.pdf  used on input line 189.
@@ -1012,7 +1012,7 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <10.95> on input line 1.
 [5] [6]
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 96.
+(Font)              <5> on input line 95.
 [7] [8])
 \tf@toc=\write6
 \openout6 = `thesis.toc'.
@@ -1023,10 +1023,7 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 \tf@lot=\write7
 \openout7 = `thesis.lot'.
 
-[12] (./thesis.lof
-Underfull \vbox (badness 1107) has occurred while \output is active []
-
-[13
+[12] (./thesis.lof [13
 
 ])
 \tf@lof=\write8
@@ -1049,110 +1046,177 @@ l.238 \chapter{Introduction}\label{introduction}}
 
 ]
 Chapter 1.
-[3]
-Underfull \hbox (badness 1048) in paragraph at lines 253--253
+
+Underfull \hbox (badness 1048) in paragraph at lines 251--251
 []\T1/ptm/b/n/14.4 Obesity is a mod-i-fi-able risk fac-tor for car-dio-vas-cu-l
 ar dis-
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 2426) has occurred while \output is active []
 
-[4]
-Underfull \hbox (badness 1983) in paragraph at lines 270--271
+[3] [4]
+Underfull \hbox (badness 1983) in paragraph at lines 268--269
 \T1/ptm/m/n/10.95 lipopro-teins (LDL), very-low-density lipopro-teins (VLDL) an
 d high-density lipopro-teins
  []
 
-[5] [6]
-<figure/Intro_background/Thesis_graphic_overview_without_chapters.png, id=1045,
+<figure/Intro_background/Thesis_graphic_overview_without_chapters.png, id=1039,
  405.4347pt x 156.3441pt>
 File: figure/Intro_background/Thesis_graphic_overview_without_chapters.png Grap
 hic file (type png)
 <use figure/Intro_background/Thesis_graphic_overview_without_chapters.png>
 Package pdftex.def Info: figure/Intro_background/Thesis_graphic_overview_withou
-t_chapters.png  used on input line 301.
+t_chapters.png  used on input line 285.
 (pdftex.def)             Requested size: 405.4337pt x 156.3437pt.
-LaTeX Font Info:    Trying to load font information for T1+pcr on input line 32
-4.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[5] [6 <./figure/Intro_background/Thesis_graphic_overview_without_chapters.png>
+]
+LaTeX Font Info:    Trying to load font information for T1+pcr on input line 31
+5.
 (/Users/lg14289/Library/TinyTeX/texmf-dist/tex/latex/psnfss/t1pcr.fd
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
-) [7 <./figure/Intro_background/Thesis_graphic_overview_without_chapters.png>] 
-[8] [9] [10]
+) [7] [8] [9] [10
+
+]
 Chapter 2.
-LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 3
-67.
+[11]
+<figure/Intro_background/MR_statin_example.jpg, id=1105, 308.352pt x 157.7895pt
+>
+File: figure/Intro_background/MR_statin_example.jpg Graphic file (type jpg)
+<use figure/Intro_background/MR_statin_example.jpg>
+Package pdftex.def Info: figure/Intro_background/MR_statin_example.jpg  used on
+ input line 377.
+(pdftex.def)             Requested size: 308.35124pt x 157.78911pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[12] [13 <./figure/Intro_background/MR_statin_example.jpg>]
+<figure/Intro_background/Platelet_activation.png, id=1118, 443.0151pt x 286.911
+9pt>
+File: figure/Intro_background/Platelet_activation.png Graphic file (type png)
+<use figure/Intro_background/Platelet_activation.png>
+Package pdftex.def Info: figure/Intro_background/Platelet_activation.png  used 
+on input line 400.
+(pdftex.def)             Requested size: 443.01402pt x 286.91118pt.
+
+Overfull \hbox (23.01402pt too wide) in paragraph at lines 400--401
+ [][] 
+ []
+
+[14]
+<figure/Intro_background/Antiplatelet_drugs.png, id=1126, 1014.79124pt x 771.88
+374pt>
+File: figure/Intro_background/Antiplatelet_drugs.png Graphic file (type png)
+<use figure/Intro_background/Antiplatelet_drugs.png>
+Package pdftex.def Info: figure/Intro_background/Antiplatelet_drugs.png  used o
+n input line 410.
+(pdftex.def)             Requested size: 293.99872pt x 223.61676pt.
+
+Underfull \vbox (badness 3281) has occurred while \output is active []
+
+[15 <./figure/Intro_background/Platelet_activation.png>] [16 <./figure/Intro_ba
+ckground/Antiplatelet_drugs.png>] [17]
+<figure/Intro_background/Sysmex_IPF.png, id=1146, 479.7925pt x 453.695pt>
+File: figure/Intro_background/Sysmex_IPF.png Graphic file (type png)
+<use figure/Intro_background/Sysmex_IPF.png>
+Package pdftex.def Info: figure/Intro_background/Sysmex_IPF.png  used on input 
+line 426.
+(pdftex.def)             Requested size: 479.7913pt x 453.6939pt.
+
+Overfull \hbox (59.7913pt too wide) in paragraph at lines 426--426
+[][] 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[18]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[19 <./figure/Intro_background/Sysmex_IPF.png>] [20] [21] [22]
+Chapter 3.
+[23
+
+] [24]
+LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 4
+90.
 (/Users/lg14289/Library/TinyTeX/texmf-dist/tex/latex/psnfss/ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 )
+Underfull \vbox (badness 1117) has occurred while \output is active []
+
+[25] [26]
+Underfull \vbox (badness 1694) has occurred while \output is active []
+
+[27]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[11
+[28] [29] [30]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-] [12]
-Chapter 3.
-[13
-
-] [14] [15] [16] [17] [18] [19] [20] [21] [22]
+[31] [32]
 Chapter 4.
-[23
+[33
 
 ]
-<figure/BMI_platelets/obsvMRexample.png, id=1191, 372.1905pt x 277.7577pt>
+<figure/BMI_platelets/obsvMRexample.png, id=1253, 372.1905pt x 277.7577pt>
 File: figure/BMI_platelets/obsvMRexample.png Graphic file (type png)
 <use figure/BMI_platelets/obsvMRexample.png>
 Package pdftex.def Info: figure/BMI_platelets/obsvMRexample.png  used on input 
-line 553.
+line 590.
 (pdftex.def)             Requested size: 372.18959pt x 277.75702pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[24]
+[34]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[25]
+[35]
 Underfull \vbox (badness 4899) has occurred while \output is active []
 
-[26 <./figure/BMI_platelets/obsvMRexample.png>]
-<figure/BMI_platelets/STROBE_diagram.pdf, id=1208, 249.93375pt x 246.9225pt>
+[36 <./figure/BMI_platelets/obsvMRexample.png>]
+<figure/BMI_platelets/STROBE_diagram.pdf, id=1270, 249.93375pt x 246.9225pt>
 File: figure/BMI_platelets/STROBE_diagram.pdf Graphic file (type pdf)
 <use figure/BMI_platelets/STROBE_diagram.pdf>
 Package pdftex.def Info: figure/BMI_platelets/STROBE_diagram.pdf  used on input
- line 565.
+ line 602.
 (pdftex.def)             Requested size: 336.00128pt x 331.98589pt.
-[27 <./figure/BMI_platelets/STROBE_diagram.pdf>] [28] [29] [30
+[37 <./figure/BMI_platelets/STROBE_diagram.pdf>] [38] [39] [40
 
 
 ]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[31]
-<figure/BMI_platelets/Corrmatrix_dendrogram.pdf, id=1260, 563.10374pt x 293.095
+[41]
+<figure/BMI_platelets/Corrmatrix_dendrogram.pdf, id=1323, 563.10374pt x 293.095
 pt>
 File: figure/BMI_platelets/Corrmatrix_dendrogram.pdf Graphic file (type pdf)
 <use figure/BMI_platelets/Corrmatrix_dendrogram.pdf>
 Package pdftex.def Info: figure/BMI_platelets/Corrmatrix_dendrogram.pdf  used o
-n input line 661.
+n input line 698.
 (pdftex.def)             Requested size: 398.99872pt x 207.6785pt.
-[32]
+[42]
 Underfull \vbox (badness 1147) has occurred while \output is active []
 
-[33 <./figure/BMI_platelets/Corrmatrix_dendrogram.pdf>] [34] [35]
-Overfull \hbox (4.22089pt too wide) in paragraph at lines 716--716
+[43 <./figure/BMI_platelets/Corrmatrix_dendrogram.pdf>] [44] [45]
+Overfull \hbox (4.22089pt too wide) in paragraph at lines 753--753
 []\T1/ptm/m/n/10.95 0.000158|  
  []
 
-[36] [37
+[46] [47
 
 
 
 
 ]
-Overfull \hbox (0.87953pt too wide) in paragraph at lines 737--737
+Overfull \hbox (0.87953pt too wide) in paragraph at lines 774--774
 []\T1/ptm/m/n/10.95 Adjusted 
  []
 
-[38] [39] [40] [41] [42] [43
+[48] [49] [50] [51] [52] [53
 
 
 
@@ -1163,130 +1227,123 @@ Overfull \hbox (0.87953pt too wide) in paragraph at lines 737--737
 
 
 
-] [44] [45
+] [54] [55
 
 
 ]
-Overfull \hbox (11.47089pt too wide) in paragraph at lines 893--893
+Overfull \hbox (11.47089pt too wide) in paragraph at lines 930--930
 \T1/ptm/m/n/10.95 Hausman 
  []
 
 
-Overfull \hbox (3.57545pt too wide) in paragraph at lines 893--893
+Overfull \hbox (3.57545pt too wide) in paragraph at lines 930--930
 \T1/ptm/m/n/10.95 statistic 
  []
 
 
-Overfull \hbox (11.17561pt too wide) in paragraph at lines 893--893
+Overfull \hbox (11.17561pt too wide) in paragraph at lines 930--930
 []\T1/ptm/m/n/10.95 0.000158|  
  []
 
 
-LaTeX Warning: Float too large for page by 56.60593pt on input line 894.
+LaTeX Warning: Float too large for page by 56.60593pt on input line 931.
 
-[46]
-<figure/BMI_platelets/BMI_platelet_forestplot.pdf, id=1388, 469.755pt x 352.316
+[56]
+<figure/BMI_platelets/BMI_platelet_forestplot.pdf, id=1450, 469.755pt x 352.316
 25pt>
 File: figure/BMI_platelets/BMI_platelet_forestplot.pdf Graphic file (type pdf)
 <use figure/BMI_platelets/BMI_platelet_forestplot.pdf>
 Package pdftex.def Info: figure/BMI_platelets/BMI_platelet_forestplot.pdf  used
- on input line 897.
+ on input line 934.
 (pdftex.def)             Requested size: 377.99744pt x 283.4984pt.
-[47
+[57
 
 
  <./figure/BMI_platelets/BMI_platelet_forestplot.pdf>]
-<figure/BMI_platelets/IPC_aggregation.pdf, id=1429, 475.7775pt x 437.635pt>
+<figure/BMI_platelets/IPC_aggregation.pdf, id=1491, 475.7775pt x 437.635pt>
 File: figure/BMI_platelets/IPC_aggregation.pdf Graphic file (type pdf)
 <use figure/BMI_platelets/IPC_aggregation.pdf>
 Package pdftex.def Info: figure/BMI_platelets/IPC_aggregation.pdf  used on inpu
-t line 952.
+t line 989.
 (pdftex.def)             Requested size: 357.00256pt x 328.39906pt.
-<figure/BMI_platelets/Visual_abstract.pdf, id=1430, 507.8975pt x 146.5475pt>
+<figure/BMI_platelets/Visual_abstract.pdf, id=1492, 507.8975pt x 146.5475pt>
 File: figure/BMI_platelets/Visual_abstract.pdf Graphic file (type pdf)
 <use figure/BMI_platelets/Visual_abstract.pdf>
 Package pdftex.def Info: figure/BMI_platelets/Visual_abstract.pdf  used on inpu
-t line 955.
+t line 992.
 (pdftex.def)             Requested size: 377.99744pt x 109.06955pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[48] [49]
+[58] [59]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[50 <./figure/BMI_platelets/IPC_aggregation.pdf>] [51 <./figure/BMI_platelets/V
+[60 <./figure/BMI_platelets/IPC_aggregation.pdf>] [61 <./figure/BMI_platelets/V
 isual_abstract.pdf>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[52]
+[62]
 Underfull \vbox (badness 2608) has occurred while \output is active []
 
-[53] [54]
+[63] [64]
 Chapter 5.
-[55
+[65
 
-]
-Underfull \vbox (badness 4765) has occurred while \output is active []
-
-[56]
+] [66]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[57]
+[67]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[58]
-<figure/Bariatric_study/Basal_surface_receptors.pdf, id=1565, 459.7175pt x 173.
+[68]
+<figure/Bariatric_study/Basal_surface_receptors.pdf, id=1625, 459.7175pt x 173.
 64874pt>
 File: figure/Bariatric_study/Basal_surface_receptors.pdf Graphic file (type pdf
 )
 <use figure/Bariatric_study/Basal_surface_receptors.pdf>
 Package pdftex.def Info: figure/Bariatric_study/Basal_surface_receptors.pdf  us
-ed on input line 1077.
+ed on input line 1109.
 (pdftex.def)             Requested size: 377.99744pt x 142.78769pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[59 <./figure/Bariatric_study/Basal_surface_receptors.pdf>]
-<figure/Bariatric_study/Agonist_Integrin_Pselectin.pdf, id=1595, 428.60126pt x 
+<figure/Bariatric_study/Agonist_Integrin_Pselectin.pdf, id=1627, 428.60126pt x 
 418.56375pt>
 File: figure/Bariatric_study/Agonist_Integrin_Pselectin.pdf Graphic file (type 
 pdf)
 <use figure/Bariatric_study/Agonist_Integrin_Pselectin.pdf>
 Package pdftex.def Info: figure/Bariatric_study/Agonist_Integrin_Pselectin.pdf 
- used on input line 1087.
+ used on input line 1119.
 (pdftex.def)             Requested size: 398.99872pt x 389.65623pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[60 <./figure/Bariatric_study/Agonist_Integrin_Pselectin.pdf>]
-<figure/Bariatric_study/Plt-neu_aggregates.pdf, id=1624, 320.19624pt x 310.1587
+[69 <./figure/Bariatric_study/Basal_surface_receptors.pdf>]
+Underfull \vbox (badness 4060) has occurred while \output is active []
+
+[70 <./figure/Bariatric_study/Agonist_Integrin_Pselectin.pdf>]
+<figure/Bariatric_study/Plt-neu_aggregates.pdf, id=1686, 320.19624pt x 310.1587
 5pt>
 File: figure/Bariatric_study/Plt-neu_aggregates.pdf Graphic file (type pdf)
 <use figure/Bariatric_study/Plt-neu_aggregates.pdf>
 Package pdftex.def Info: figure/Bariatric_study/Plt-neu_aggregates.pdf  used on
- input line 1097.
+ input line 1129.
 (pdftex.def)             Requested size: 336.00128pt x 325.4728pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[61 <./figure/Bariatric_study/Plt-neu_aggregates.pdf>]
-<figure/Bariatric_study/Proteomic_PCA.pdf, id=1645, 433.62pt x 334.24875pt>
+<figure/Bariatric_study/Proteomic_PCA.pdf, id=1689, 433.62pt x 334.24875pt>
 File: figure/Bariatric_study/Proteomic_PCA.pdf Graphic file (type pdf)
 <use figure/Bariatric_study/Proteomic_PCA.pdf>
 Package pdftex.def Info: figure/Bariatric_study/Proteomic_PCA.pdf  used on inpu
-t line 1107.
+t line 1139.
 (pdftex.def)             Requested size: 398.99872pt x 307.57887pt.
-<figure/Bariatric_study/PC3vPC4_proteomics.pdf, id=1646, 433.62pt x 325.215pt>
+[71 <./figure/Bariatric_study/Plt-neu_aggregates.pdf>]
+<figure/Bariatric_study/PC3vPC4_proteomics.pdf, id=1707, 433.62pt x 325.215pt>
 File: figure/Bariatric_study/PC3vPC4_proteomics.pdf Graphic file (type pdf)
 <use figure/Bariatric_study/PC3vPC4_proteomics.pdf>
 Package pdftex.def Info: figure/Bariatric_study/PC3vPC4_proteomics.pdf  used on
- input line 1112.
+ input line 1144.
 (pdftex.def)             Requested size: 398.99872pt x 299.26593pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[62 <./figure/Bariatric_study/Proteomic_PCA.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 1114--1115
+[72 <./figure/Bariatric_study/Proteomic_PCA.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 1146--1147
 \T1/pcr/m/n/10.95 7 f 0 2 5 0 a d 5 0 b a d 7 4 d 7 e 3 8 2 2 5 d 0 6 0 a a 6 c
  d 8 3 3 2 1 b / i n d e x / f i g u r e / B a r i a t r i c[] s
  []
@@ -1294,363 +1351,360 @@ Underfull \hbox (badness 10000) in paragraph at lines 1114--1115
 
 Underfull \vbox (badness 3861) has occurred while \output is active []
 
-[63 <./figure/Bariatric_study/PC3vPC4_proteomics.pdf>]
-<figure/Bariatric_study/volcano_proteomics_labelled.pdf, id=1686, 578.16pt x 86
+[73 <./figure/Bariatric_study/PC3vPC4_proteomics.pdf>]
+<figure/Bariatric_study/volcano_proteomics_labelled.pdf, id=1746, 578.16pt x 86
 7.24pt>
 File: figure/Bariatric_study/volcano_proteomics_labelled.pdf Graphic file (type
  pdf)
 <use figure/Bariatric_study/volcano_proteomics_labelled.pdf>
 Package pdftex.def Info: figure/Bariatric_study/volcano_proteomics_labelled.pdf
-  used on input line 1119.
+  used on input line 1151.
 (pdftex.def)             Requested size: 336.00128pt x 503.99203pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[64]
+[74]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[65 <./figure/Bariatric_study/volcano_proteomics_labelled.pdf>] [66] [67]
-Overfull \hbox (18.51717pt too wide) in paragraph at lines 1148--1148
-\T1/ptm/m/n/10.95 atherothrombotic 
- []
+[75 <./figure/Bariatric_study/volcano_proteomics_labelled.pdf>]
+Underfull \vbox (badness 1881) has occurred while \output is active []
+
+[76] [77] [78]
+Underfull \vbox (badness 2608) has occurred while \output is active []
+
+[79
 
 
-LaTeX Warning: Float too large for page by 247.5952pt on input line 1149.
-
-[68] [69
-
-
-] [70
-
-]
+] [80]
 Chapter 6.
 
 Underfull \vbox (badness 3735) has occurred while \output is active []
 
-[71]
+[81
+
+]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[72]
-Underfull \hbox (badness 3039) in paragraph at lines 1206--1207
-[]$\T1/pcr/m/n/10.95 h t t p s : / / g i t h u b . c o m / N e a l e l a b / U 
-K [] B i o b a n k [] G W A S$[]\T1/ptm/m/n/10.95 ), it is pos-si-ble to ex-plo
-re
- []
-
-
+[82]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[73]
-<figure/Chemokines/Layouts/MDC_TARC_aggregation_PAR1.pdf, id=1758, 540.0175pt x
+[83]
+<figure/Chemokines/Layouts/MDC_TARC_aggregation_PAR1.pdf, id=1819, 540.0175pt x
  209.78375pt>
 File: figure/Chemokines/Layouts/MDC_TARC_aggregation_PAR1.pdf Graphic file (typ
 e pdf)
 <use figure/Chemokines/Layouts/MDC_TARC_aggregation_PAR1.pdf>
 Package pdftex.def Info: figure/Chemokines/Layouts/MDC_TARC_aggregation_PAR1.pd
-f  used on input line 1219.
+f  used on input line 1226.
 (pdftex.def)             Requested size: 336.00128pt x 130.53192pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[74 <./figure/Chemokines/Layouts/MDC_TARC_aggregation_PAR1.pdf>]
-<figure/Chemokines/Layouts/MDC_TARC_PRP_plate_agg.pdf, id=1785, 378.41376pt x 2
+[84 <./figure/Chemokines/Layouts/MDC_TARC_aggregation_PAR1.pdf>]
+<figure/Chemokines/Layouts/MDC_TARC_PRP_plate_agg.pdf, id=1845, 378.41376pt x 2
 02.7575pt>
 File: figure/Chemokines/Layouts/MDC_TARC_PRP_plate_agg.pdf Graphic file (type p
 df)
 <use figure/Chemokines/Layouts/MDC_TARC_PRP_plate_agg.pdf>
 Package pdftex.def Info: figure/Chemokines/Layouts/MDC_TARC_PRP_plate_agg.pdf  
-used on input line 1229.
+used on input line 1236.
 (pdftex.def)             Requested size: 378.41283pt x 202.757pt.
-[75 <./figure/Chemokines/Layouts/MDC_TARC_PRP_plate_agg.pdf>]
-<figure/Chemokines/Layouts/P-selectin_integrin_MDC_TARC.pdf, id=1812, 529.98pt 
+[85 <./figure/Chemokines/Layouts/MDC_TARC_PRP_plate_agg.pdf>]
+<figure/Chemokines/Layouts/P-selectin_integrin_MDC_TARC.pdf, id=1871, 529.98pt 
 x 389.455pt>
 File: figure/Chemokines/Layouts/P-selectin_integrin_MDC_TARC.pdf Graphic file (
 type pdf)
 <use figure/Chemokines/Layouts/P-selectin_integrin_MDC_TARC.pdf>
 Package pdftex.def Info: figure/Chemokines/Layouts/P-selectin_integrin_MDC_TARC
-.pdf  used on input line 1239.
+.pdf  used on input line 1246.
 (pdftex.def)             Requested size: 357.00256pt x 262.34189pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[76] [77 <./figure/Chemokines/Layouts/P-selectin_integrin_MDC_TARC.pdf>] [78]
-<figure/Chemokines/Layouts/MDC_TARC_PS_exposure_layout.pdf, id=1847, 354.32375p
+[86] [87 <./figure/Chemokines/Layouts/P-selectin_integrin_MDC_TARC.pdf>] [88]
+<figure/Chemokines/Layouts/MDC_TARC_PS_exposure_layout.pdf, id=1908, 354.32375p
 t x 163.61125pt>
 File: figure/Chemokines/Layouts/MDC_TARC_PS_exposure_layout.pdf Graphic file (t
 ype pdf)
 <use figure/Chemokines/Layouts/MDC_TARC_PS_exposure_layout.pdf>
 Package pdftex.def Info: figure/Chemokines/Layouts/MDC_TARC_PS_exposure_layout.
-pdf  used on input line 1264.
+pdf  used on input line 1271.
 (pdftex.def)             Requested size: 354.32288pt x 163.61084pt.
-<figure/Chemokines/Layouts/MDC_TARC_alone_wp_aggregation.pdf, id=1849, 560.0925
+<figure/Chemokines/Layouts/MDC_TARC_alone_wp_aggregation.pdf, id=1910, 560.0925
 pt x 140.525pt>
 File: figure/Chemokines/Layouts/MDC_TARC_alone_wp_aggregation.pdf Graphic file 
 (type pdf)
 <use figure/Chemokines/Layouts/MDC_TARC_alone_wp_aggregation.pdf>
 Package pdftex.def Info: figure/Chemokines/Layouts/MDC_TARC_alone_wp_aggregatio
-n.pdf  used on input line 1274.
+n.pdf  used on input line 1281.
 (pdftex.def)             Requested size: 377.99744pt x 94.84169pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[79
+[89
 
 
  <./figure/Chemokines/Layouts/MDC_TARC_PS_exposure_layout.pdf>]
-<figure/Chemokines/Layouts/MDC_TARC_calcium_wp.pdf, id=1871, 483.8075pt x 173.6
+<figure/Chemokines/Layouts/MDC_TARC_calcium_wp.pdf, id=1932, 483.8075pt x 173.6
 4874pt>
 File: figure/Chemokines/Layouts/MDC_TARC_calcium_wp.pdf Graphic file (type pdf)
 
 <use figure/Chemokines/Layouts/MDC_TARC_calcium_wp.pdf>
 Package pdftex.def Info: figure/Chemokines/Layouts/MDC_TARC_calcium_wp.pdf  use
-d on input line 1284.
+d on input line 1291.
 (pdftex.def)             Requested size: 377.99744pt x 135.67598pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[80 <./figure/Chemokines/Layouts/MDC_TARC_alone_wp_aggregation.pdf> <./figure/C
+[90 <./figure/Chemokines/Layouts/MDC_TARC_alone_wp_aggregation.pdf> <./figure/C
 hemokines/Layouts/MDC_TARC_calcium_wp.pdf>]
-<figure/Chemokines/MDC_TARC_VASP_blot.pdf, id=1911, 647.41875pt x 231.86626pt>
+<figure/Chemokines/MDC_TARC_VASP_blot.pdf, id=1971, 647.41875pt x 231.86626pt>
 File: figure/Chemokines/MDC_TARC_VASP_blot.pdf Graphic file (type pdf)
 <use figure/Chemokines/MDC_TARC_VASP_blot.pdf>
 Package pdftex.def Info: figure/Chemokines/MDC_TARC_VASP_blot.pdf  used on inpu
-t line 1294.
+t line 1301.
 (pdftex.def)             Requested size: 252.00256pt x 90.25056pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[81]
-<figure/Chemokines/Layouts/MDC_TARC_WB_VASP.pdf, id=1917, 475.7775pt x 524.9612
+[91]
+<figure/Chemokines/Layouts/MDC_TARC_WB_VASP.pdf, id=1976, 475.7775pt x 524.9612
 4pt>
 File: figure/Chemokines/Layouts/MDC_TARC_WB_VASP.pdf Graphic file (type pdf)
 <use figure/Chemokines/Layouts/MDC_TARC_WB_VASP.pdf>
 Package pdftex.def Info: figure/Chemokines/Layouts/MDC_TARC_WB_VASP.pdf  used o
-n input line 1299.
+n input line 1306.
 (pdftex.def)             Requested size: 475.77632pt x 524.95996pt.
 
-Overfull \hbox (55.77632pt too wide) in paragraph at lines 1299--1299
+Overfull \hbox (55.77632pt too wide) in paragraph at lines 1306--1306
 [][] 
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[82 <./figure/Chemokines/MDC_TARC_VASP_blot.pdf>]
+[92 <./figure/Chemokines/MDC_TARC_VASP_blot.pdf>]
 Overfull \vbox (2.95998pt too high) has occurred while \output is active []
 
-[83 <./figure/Chemokines/Layouts/MDC_TARC_WB_VASP.pdf>]
-<figure/Chemokines/Layouts/MDC_TARC_VASP_FACS_logec50.pdf, id=1949, 513.92pt x 
+[93 <./figure/Chemokines/Layouts/MDC_TARC_WB_VASP.pdf>]
+<figure/Chemokines/Layouts/MDC_TARC_VASP_FACS_logec50.pdf, id=2009, 513.92pt x 
 151.56625pt>
 File: figure/Chemokines/Layouts/MDC_TARC_VASP_FACS_logec50.pdf Graphic file (ty
 pe pdf)
 <use figure/Chemokines/Layouts/MDC_TARC_VASP_FACS_logec50.pdf>
 Package pdftex.def Info: figure/Chemokines/Layouts/MDC_TARC_VASP_FACS_logec50.p
-df  used on input line 1304.
+df  used on input line 1311.
 (pdftex.def)             Requested size: 377.99744pt x 111.48195pt.
-<figure/Chemokines/Layouts/PAR1_MDC_inhibitors_aggregation.pdf, id=1957, 344.28
+
+Underfull \hbox (badness 1024) in paragraph at lines 1311--1311
+[]\T1/ptm/m/n/10.95 Figure 6.9: |A) Washed platelets at 1x10$[]$/mL were sup-pl
+e-mented with in-
+ []
+
+<figure/Chemokines/Layouts/PAR1_MDC_inhibitors_aggregation.pdf, id=2017, 344.28
 625pt x 395.4775pt>
 File: figure/Chemokines/Layouts/PAR1_MDC_inhibitors_aggregation.pdf Graphic fil
 e (type pdf)
 <use figure/Chemokines/Layouts/PAR1_MDC_inhibitors_aggregation.pdf>
 Package pdftex.def Info: figure/Chemokines/Layouts/PAR1_MDC_inhibitors_aggregat
-ion.pdf  used on input line 1316.
+ion.pdf  used on input line 1323.
 (pdftex.def)             Requested size: 398.99872pt x 458.32578pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[84 <./figure/Chemokines/Layouts/MDC_TARC_VASP_FACS_logec50.pdf>]
-<figure/Chemokines/Layouts/MDC_inhibitors_aggregation_traces.pdf, id=1976, 545.
+[94 <./figure/Chemokines/Layouts/MDC_TARC_VASP_FACS_logec50.pdf>]
+<figure/Chemokines/Layouts/MDC_inhibitors_aggregation_traces.pdf, id=2037, 545.
 03625pt x 322.20375pt>
 File: figure/Chemokines/Layouts/MDC_inhibitors_aggregation_traces.pdf Graphic f
 ile (type pdf)
 <use figure/Chemokines/Layouts/MDC_inhibitors_aggregation_traces.pdf>
 Package pdftex.def Info: figure/Chemokines/Layouts/MDC_inhibitors_aggregation_t
-races.pdf  used on input line 1321.
+races.pdf  used on input line 1328.
 (pdftex.def)             Requested size: 398.99872pt x 235.8705pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[85 <./figure/Chemokines/Layouts/PAR1_MDC_inhibitors_aggregation.pdf>] [86 <./f
+[95 <./figure/Chemokines/Layouts/PAR1_MDC_inhibitors_aggregation.pdf>] [96 <./f
 igure/Chemokines/Layouts/MDC_inhibitors_aggregation_traces.pdf>]
 
-LaTeX Warning: Float too large for page by 214.89868pt on input line 1361.
+LaTeX Warning: Float too large for page by 214.89868pt on input line 1368.
 
-[87] [88
-
-
-] [89] [90
+[97] [98
 
 
-] [91] [92
+] [99] [100
+
+
+] [101] [102
 
 ]
 Chapter 7.
 
-Underfull \hbox (badness 10000) in paragraph at lines 1409--1410
+Underfull \hbox (badness 10000) in paragraph at lines 1416--1417
 \T1/pcr/m/n/10.95 d / m y t h e s i s / b l o b / m a s t e r / i n d e x / f i
  g u r e / B M I[] p r o t e i n [] I N T E R V A L / B M I[] p
  []
 
-[93]
+[103]
 Underfull \vbox (badness 2608) has occurred while \output is active []
 
-[94] [95] [96]
-<figure/BMI_protein_INTERVAL/Correlation_matrix_proteins.pdf, id=2085, 469.755p
+[104] [105] [106]
+<figure/BMI_protein_INTERVAL/Correlation_matrix_proteins.pdf, id=2146, 469.755p
 t x 469.755pt>
 File: figure/BMI_protein_INTERVAL/Correlation_matrix_proteins.pdf Graphic file 
 (type pdf)
 <use figure/BMI_protein_INTERVAL/Correlation_matrix_proteins.pdf>
 Package pdftex.def Info: figure/BMI_protein_INTERVAL/Correlation_matrix_protein
-s.pdf  used on input line 1444.
+s.pdf  used on input line 1451.
 (pdftex.def)             Requested size: 377.99744pt x 377.99788pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[97] [98 <./figure/BMI_protein_INTERVAL/Correlation_matrix_proteins.pdf>]
-<figure/BMI_protein_INTERVAL/dendrogram.pdf, id=2100, 867.24pt x 433.62pt>
+[107] [108 <./figure/BMI_protein_INTERVAL/Correlation_matrix_proteins.pdf>]
+<figure/BMI_protein_INTERVAL/dendrogram.pdf, id=2161, 867.24pt x 433.62pt>
 File: figure/BMI_protein_INTERVAL/dendrogram.pdf Graphic file (type pdf)
 <use figure/BMI_protein_INTERVAL/dendrogram.pdf>
 Package pdftex.def Info: figure/BMI_protein_INTERVAL/dendrogram.pdf  used on in
-put line 1448.
+put line 1455.
 (pdftex.def)             Requested size: 569.99817pt x 285.01234pt.
-[99
+[109
 
  <./figure/BMI_protein_INTERVAL/dendrogram.pdf>]
-<figure/BMI_protein_INTERVAL/PCs2to5v1.pdf, id=2116, 873.2625pt x 834.11626pt>
+<figure/BMI_protein_INTERVAL/PCs2to5v1.pdf, id=2175, 873.2625pt x 834.11626pt>
 File: figure/BMI_protein_INTERVAL/PCs2to5v1.pdf Graphic file (type pdf)
 <use figure/BMI_protein_INTERVAL/PCs2to5v1.pdf>
 Package pdftex.def Info: figure/BMI_protein_INTERVAL/PCs2to5v1.pdf  used on inp
-ut line 1457.
+ut line 1464.
 (pdftex.def)             Requested size: 398.99872pt x 381.11444pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[100
+[110
 
-] [101 <./figure/BMI_protein_INTERVAL/PCs2to5v1.pdf>]
+] [111 <./figure/BMI_protein_INTERVAL/PCs2to5v1.pdf>]
 
-LaTeX Warning: Reference `tab:Incl-excl-part' on page 102 undefined on input li
-ne 1467.
+LaTeX Warning: Reference `tab:Incl-excl-part' on page 112 undefined on input li
+ne 1474.
 
 
-LaTeX Warning: Reference `tab:Incl-excl-part' on page 102 undefined on input li
-ne 1467.
+LaTeX Warning: Reference `tab:Incl-excl-part' on page 112 undefined on input li
+ne 1474.
 
-[102] [103] [104
+[112] [113] [114
 
 
 ]
-Overfull \hbox (0.87953pt too wide) in paragraph at lines 1521--1521
+Overfull \hbox (0.87953pt too wide) in paragraph at lines 1528--1528
 []\T1/ptm/m/n/10.95 Adjusted 
  []
 
-[105]
-<figure/BMI_protein_INTERVAL/QQ_confounder_proteins.pdf, id=2157, 525.965pt x 5
+[115]
+<figure/BMI_protein_INTERVAL/QQ_confounder_proteins.pdf, id=2216, 525.965pt x 5
 41.02126pt>
 File: figure/BMI_protein_INTERVAL/QQ_confounder_proteins.pdf Graphic file (type
  pdf)
 <use figure/BMI_protein_INTERVAL/QQ_confounder_proteins.pdf>
 Package pdftex.def Info: figure/BMI_protein_INTERVAL/QQ_confounder_proteins.pdf
-  used on input line 1525.
+  used on input line 1532.
 (pdftex.def)             Requested size: 398.99872pt x 410.43744pt.
-[106
+[116
 
 
- <./figure/BMI_protein_INTERVAL/QQ_confounder_proteins.pdf>] [107]
+ <./figure/BMI_protein_INTERVAL/QQ_confounder_proteins.pdf>] [117]
 
-LaTeX Warning: Reference `fig:ObsMRforestplot2' on page 108 undefined on input 
-line 1553.
+LaTeX Warning: Reference `fig:ObsMRforestplot2' on page 118 undefined on input 
+line 1560.
 
-<figure/BMI_protein_INTERVAL/MR_obs_compar_forestplot.pdf, id=2291, 722.7pt x 5
+<figure/BMI_protein_INTERVAL/MR_obs_compar_forestplot.pdf, id=2351, 722.7pt x 5
 78.16pt>
 File: figure/BMI_protein_INTERVAL/MR_obs_compar_forestplot.pdf Graphic file (ty
 pe pdf)
 <use figure/BMI_protein_INTERVAL/MR_obs_compar_forestplot.pdf>
 Package pdftex.def Info: figure/BMI_protein_INTERVAL/MR_obs_compar_forestplot.p
-df  used on input line 1555.
+df  used on input line 1562.
 (pdftex.def)             Requested size: 398.99872pt x 319.19759pt.
-<figure/BMI_protein_INTERVAL/QQ_obs_MR.pdf, id=2294, 557.08125pt x 287.0725pt>
+<figure/BMI_protein_INTERVAL/QQ_obs_MR.pdf, id=2354, 557.08125pt x 287.0725pt>
 File: figure/BMI_protein_INTERVAL/QQ_obs_MR.pdf Graphic file (type pdf)
 <use figure/BMI_protein_INTERVAL/QQ_obs_MR.pdf>
 Package pdftex.def Info: figure/BMI_protein_INTERVAL/QQ_obs_MR.pdf  used on inp
-ut line 1562.
+ut line 1569.
 (pdftex.def)             Requested size: 398.99872pt x 205.61446pt.
-[108
+[118
 
 
  <./figure/BMI_protein_INTERVAL/MR_obs_compar_forestplot.pdf>]
-<figure/BMI_protein_INTERVAL/obs_v_obs_adj_scatter.pdf, id=2314, 578.16pt x 433
+<figure/BMI_protein_INTERVAL/obs_v_obs_adj_scatter.pdf, id=2374, 578.16pt x 433
 .62pt>
 File: figure/BMI_protein_INTERVAL/obs_v_obs_adj_scatter.pdf Graphic file (type 
 pdf)
 <use figure/BMI_protein_INTERVAL/obs_v_obs_adj_scatter.pdf>
 Package pdftex.def Info: figure/BMI_protein_INTERVAL/obs_v_obs_adj_scatter.pdf 
- used on input line 1566.
+ used on input line 1573.
 (pdftex.def)             Requested size: 377.99744pt x 283.49716pt.
-<figure/BMI_protein_INTERVAL/unadj_obs_MR_scatter_small.pdf, id=2315, 433.62pt 
+<figure/BMI_protein_INTERVAL/unadj_obs_MR_scatter_small.pdf, id=2375, 433.62pt 
 x 361.35pt>
 File: figure/BMI_protein_INTERVAL/unadj_obs_MR_scatter_small.pdf Graphic file (
 type pdf)
 <use figure/BMI_protein_INTERVAL/unadj_obs_MR_scatter_small.pdf>
 Package pdftex.def Info: figure/BMI_protein_INTERVAL/unadj_obs_MR_scatter_small
-.pdf  used on input line 1569.
+.pdf  used on input line 1576.
 (pdftex.def)             Requested size: 377.99744pt x 315.01155pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[109 <./figure/BMI_protein_INTERVAL/QQ_obs_MR.pdf>]
-<figure/BMI_protein_INTERVAL/Obs_MR_scatter_without_top8.pdf, id=2399, 384.4362
+[119 <./figure/BMI_protein_INTERVAL/QQ_obs_MR.pdf>]
+<figure/BMI_protein_INTERVAL/Obs_MR_scatter_without_top8.pdf, id=2459, 384.4362
 5pt x 510.90875pt>
 File: figure/BMI_protein_INTERVAL/Obs_MR_scatter_without_top8.pdf Graphic file 
 (type pdf)
 <use figure/BMI_protein_INTERVAL/Obs_MR_scatter_without_top8.pdf>
 Package pdftex.def Info: figure/BMI_protein_INTERVAL/Obs_MR_scatter_without_top
-8.pdf  used on input line 1572.
+8.pdf  used on input line 1579.
 (pdftex.def)             Requested size: 399.02408pt x 570.03107pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[110 <./figure/BMI_protein_INTERVAL/obs_v_obs_adj_scatter.pdf>]
+[120 <./figure/BMI_protein_INTERVAL/obs_v_obs_adj_scatter.pdf>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[111 <./figure/BMI_protein_INTERVAL/unadj_obs_MR_scatter_small.pdf>]
+[121 <./figure/BMI_protein_INTERVAL/unadj_obs_MR_scatter_small.pdf>]
 Overfull \vbox (61.63109pt too high) has occurred while \output is active []
 
-[112 <./figure/BMI_protein_INTERVAL/Obs_MR_scatter_without_top8.pdf>] [113] [11
+[122 <./figure/BMI_protein_INTERVAL/Obs_MR_scatter_without_top8.pdf>] [123] [12
 4]
-Overfull \hbox (3.73975pt too wide) in paragraph at lines 1619--1619
+Overfull \hbox (3.73975pt too wide) in paragraph at lines 1626--1626
 []\T1/ptm/m/n/10.95 Population 
  []
 
 
-Overfull \hbox (3.73975pt too wide) in paragraph at lines 1619--1619
+Overfull \hbox (3.73975pt too wide) in paragraph at lines 1626--1626
 []\T1/ptm/m/n/10.95 Population 
  []
 
 
-Overfull \hbox (7.97742pt too wide) in paragraph at lines 1619--1619
+Overfull \hbox (7.97742pt too wide) in paragraph at lines 1626--1626
 []\T1/ptm/m/n/10.95 Bonferroni- 
  []
 
-[115]
-Overfull \hbox (3.73975pt too wide) in paragraph at lines 1647--1647
+[125]
+Overfull \hbox (3.73975pt too wide) in paragraph at lines 1654--1654
 []\T1/ptm/m/n/10.95 Population 
  []
 
 
-Overfull \hbox (3.73975pt too wide) in paragraph at lines 1647--1647
+Overfull \hbox (3.73975pt too wide) in paragraph at lines 1654--1654
 []\T1/ptm/m/n/10.95 Population 
  []
 
 
-Overfull \hbox (7.97742pt too wide) in paragraph at lines 1647--1647
+Overfull \hbox (7.97742pt too wide) in paragraph at lines 1654--1654
 []\T1/ptm/m/n/10.95 Bonferroni- 
  []
 
-[116]
+[126]
 Underfull \vbox (badness 1881) has occurred while \output is active []
 
-[117
+[127
 
 
 
@@ -1660,1533 +1714,331 @@ Underfull \vbox (badness 1881) has occurred while \output is active []
 ]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[118]
+[128]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[119] [120]
+[129] [130]
 Chapter 8.
 
 Underfull \vbox (badness 2057) has occurred while \output is active []
 
-[121
+[131
 
-] [122]
-<figure/DiRECT/DiRECT_study_summary.png, id=2548, 370.7451pt x 328.3467pt>
+] [132]
+<figure/DiRECT/DiRECT_study_summary.png, id=2608, 370.7451pt x 328.3467pt>
 File: figure/DiRECT/DiRECT_study_summary.png Graphic file (type png)
 <use figure/DiRECT/DiRECT_study_summary.png>
 Package pdftex.def Info: figure/DiRECT/DiRECT_study_summary.png  used on input 
-line 1697.
+line 1704.
 (pdftex.def)             Requested size: 370.74419pt x 328.34589pt.
-[123 <./figure/DiRECT/DiRECT_study_summary.png>] [124]
-<figure/DiRECT/DiRECT_analysis.png, id=2566, 369.2997pt x 127.677pt>
+[133 <./figure/DiRECT/DiRECT_study_summary.png>] [134]
+<figure/DiRECT/DiRECT_analysis.png, id=2626, 369.2997pt x 127.677pt>
 File: figure/DiRECT/DiRECT_analysis.png Graphic file (type png)
 <use figure/DiRECT/DiRECT_analysis.png>
 Package pdftex.def Info: figure/DiRECT/DiRECT_analysis.png  used on input line 
-1721.
+1728.
 (pdftex.def)             Requested size: 369.29878pt x 127.67668pt.
-[125 <./figure/DiRECT/DiRECT_analysis.png>] [126]
+[135 <./figure/DiRECT/DiRECT_analysis.png>] [136]
 
-LaTeX Warning: Float too large for page by 29.83998pt on input line 1773.
+LaTeX Warning: Float too large for page by 29.83998pt on input line 1780.
 
-[127]
-<figure/DiRECT/Intervention_BMI_change_boxplot.png, id=2584, 453.695pt x 348.30
+[137]
+<figure/DiRECT/Intervention_BMI_change_boxplot.png, id=2645, 453.695pt x 348.30
 125pt>
 File: figure/DiRECT/Intervention_BMI_change_boxplot.png Graphic file (type png)
 
 <use figure/DiRECT/Intervention_BMI_change_boxplot.png>
 Package pdftex.def Info: figure/DiRECT/Intervention_BMI_change_boxplot.png  use
-d on input line 1793.
+d on input line 1800.
 (pdftex.def)             Requested size: 357.00256pt x 274.07079pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[128
+[138
 
 
 ]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[129 <./figure/DiRECT/Intervention_BMI_change_boxplot.png>]
-<figure/DiRECT/circos_plot_BMI_change_protein_ols_tsls.pdf, id=2602, 867.24pt x
+[139 <./figure/DiRECT/Intervention_BMI_change_boxplot.png>]
+<figure/DiRECT/circos_plot_BMI_change_protein_ols_tsls.pdf, id=2662, 867.24pt x
  867.24pt>
 File: figure/DiRECT/circos_plot_BMI_change_protein_ols_tsls.pdf Graphic file (t
 ype pdf)
 <use figure/DiRECT/circos_plot_BMI_change_protein_ols_tsls.pdf>
 Package pdftex.def Info: figure/DiRECT/circos_plot_BMI_change_protein_ols_tsls.
-pdf  used on input line 1808.
+pdf  used on input line 1815.
 (pdftex.def)             Requested size: 420.0pt x 420.00218pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[130] [131 <./figure/DiRECT/circos_plot_BMI_change_protein_ols_tsls.pdf>]
-<figure/DiRECT/DiRECT_scatter_comparison.pdf, id=2617, 650.43pt x 433.62pt>
+[140] [141 <./figure/DiRECT/circos_plot_BMI_change_protein_ols_tsls.pdf>]
+<figure/DiRECT/DiRECT_scatter_comparison.pdf, id=2677, 650.43pt x 433.62pt>
 File: figure/DiRECT/DiRECT_scatter_comparison.pdf Graphic file (type pdf)
 <use figure/DiRECT/DiRECT_scatter_comparison.pdf>
 Package pdftex.def Info: figure/DiRECT/DiRECT_scatter_comparison.pdf  used on i
-nput line 1815.
+nput line 1822.
 (pdftex.def)             Requested size: 569.99817pt x 380.02528pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[132
+[142
 
 ]
 Overfull \vbox (24.4253pt too high) has occurred while \output is active []
 
-[133 <./figure/DiRECT/DiRECT_scatter_comparison.pdf>] [134
+[143 <./figure/DiRECT/DiRECT_scatter_comparison.pdf>] [144
 
 ]
-<figure/DiRECT/DiRECT_INTERVAL_comparison.pdf, id=2643, 650.43pt x 433.62pt>
+<figure/DiRECT/DiRECT_INTERVAL_comparison.pdf, id=2703, 650.43pt x 433.62pt>
 File: figure/DiRECT/DiRECT_INTERVAL_comparison.pdf Graphic file (type pdf)
 <use figure/DiRECT/DiRECT_INTERVAL_comparison.pdf>
 Package pdftex.def Info: figure/DiRECT/DiRECT_INTERVAL_comparison.pdf  used on 
-input line 1834.
+input line 1841.
 (pdftex.def)             Requested size: 539.99634pt x 360.0236pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[135
+[145
 
 ]
 Overfull \vbox (45.22363pt too high) has occurred while \output is active []
 
-[136 <./figure/DiRECT/DiRECT_INTERVAL_comparison.pdf>] [137
+[146 <./figure/DiRECT/DiRECT_INTERVAL_comparison.pdf>] [147
 
 ]
 
-LaTeX Warning: Float too large for page by 92.07886pt on input line 1882.
+LaTeX Warning: Float too large for page by 92.07886pt on input line 1883.
 
-[138] [139
+[148]
+
+LaTeX Warning: Reference `tab:' on page 149 undefined on input line 1889.
+
+[149
 
 
-] [140
+]
+Overfull \hbox (3.73975pt too wide) in paragraph at lines 1910--1910
+[]\T1/ptm/m/n/10.95 Population 
+ []
+
+
+Overfull \hbox (3.73975pt too wide) in paragraph at lines 1910--1910
+[]\T1/ptm/m/n/10.95 Population 
+ []
+
+
+Overfull \hbox (7.97742pt too wide) in paragraph at lines 1910--1910
+[]\T1/ptm/m/n/10.95 Bonferroni- 
+ []
+
+[150] [151
+
+
+] [152
 
 ]
 Chapter 9.
-<figure/General_discussion/Thesis_graphic_overview_chapters.png, id=2688, 528.2
+<figure/General_discussion/Thesis_graphic_overview_chapters.png, id=2757, 528.2
 937pt x 343.5234pt>
 File: figure/General_discussion/Thesis_graphic_overview_chapters.png Graphic fi
 le (type png)
 <use figure/General_discussion/Thesis_graphic_overview_chapters.png>
 Package pdftex.def Info: figure/General_discussion/Thesis_graphic_overview_chap
-ters.png  used on input line 1925.
+ters.png  used on input line 1950.
 (pdftex.def)             Requested size: 377.99744pt x 245.79558pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[141 <./figure/General_discussion/Thesis_graphic_overview_chapters.png>] [142]
+[153 <./figure/General_discussion/Thesis_graphic_overview_chapters.png>] [154]
 Appendix A.
 
-LaTeX Warning: Reference `ref-labels' on page 143 undefined on input line 1948.
+LaTeX Warning: Reference `ref-labels' on page 155 undefined on input line 1973.
 
 
-[143
+[155
 
-] [144
+] [156
 
 ]
 Appendix B.
-[145] [146
+[157] [158
 
 ]
-Overfull \hbox (16.53427pt too wide) in paragraph at lines 1969--1972
+Overfull \hbox (16.53427pt too wide) in paragraph at lines 1994--1997
  [][][] []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1969--1972
+Underfull \hbox (badness 10000) in paragraph at lines 1994--1997
  
  []
 
 
-Overfull \hbox (16.53427pt too wide) in paragraph at lines 1973--1976
+Overfull \hbox (16.53427pt too wide) in paragraph at lines 1998--2001
  [][][] []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1973--1976
+Underfull \hbox (badness 10000) in paragraph at lines 1998--2001
  
  []
 
 
-Overfull \hbox (16.53427pt too wide) in paragraph at lines 1977--1980
+Overfull \hbox (16.53427pt too wide) in paragraph at lines 2002--2005
  [][][] []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1977--1980
+Underfull \hbox (badness 10000) in paragraph at lines 2002--2005
  
  []
 
 
-Overfull \hbox (16.53427pt too wide) in paragraph at lines 1981--1984
+Overfull \hbox (16.53427pt too wide) in paragraph at lines 2006--2009
  [][][] []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1981--1984
+Underfull \hbox (badness 10000) in paragraph at lines 2006--2009
  
  []
 
 
-Overfull \hbox (16.53427pt too wide) in paragraph at lines 1985--1988
+Overfull \hbox (16.53427pt too wide) in paragraph at lines 2010--2013
  [][][] []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1985--1988
+Underfull \hbox (badness 10000) in paragraph at lines 2010--2013
  
  []
 
 
-Overfull \hbox (16.53427pt too wide) in paragraph at lines 1989--1992
+Overfull \hbox (16.53427pt too wide) in paragraph at lines 2014--2017
  [][][] []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1989--1992
+Underfull \hbox (badness 10000) in paragraph at lines 2014--2017
  
  []
 
 
-Overfull \hbox (16.53427pt too wide) in paragraph at lines 1993--1996
+Overfull \hbox (16.53427pt too wide) in paragraph at lines 2018--2021
  [][][] []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1993--1996
+Underfull \hbox (badness 10000) in paragraph at lines 2018--2021
  
  []
 
-[147
+[159
 
 ]
-Overfull \hbox (16.53427pt too wide) in paragraph at lines 1997--2000
+Overfull \hbox (16.53427pt too wide) in paragraph at lines 2022--2025
  [][][] []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1997--2000
+Underfull \hbox (badness 10000) in paragraph at lines 2022--2025
  
  []
 
 
-Overfull \hbox (16.53427pt too wide) in paragraph at lines 2001--2004
+Overfull \hbox (16.53427pt too wide) in paragraph at lines 2026--2029
  [][][] []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2001--2004
+Underfull \hbox (badness 10000) in paragraph at lines 2026--2029
  
  []
 
 
-Overfull \hbox (16.53427pt too wide) in paragraph at lines 2005--2008
+Overfull \hbox (16.53427pt too wide) in paragraph at lines 2030--2033
  [][][] []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2005--2008
+Underfull \hbox (badness 10000) in paragraph at lines 2030--2033
  
  []
 
 
-Overfull \hbox (16.53427pt too wide) in paragraph at lines 2009--2012
+Overfull \hbox (16.53427pt too wide) in paragraph at lines 2034--2037
  [][][] []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2009--2012
+Underfull \hbox (badness 10000) in paragraph at lines 2034--2037
  
  []
 
 
-Overfull \hbox (16.53427pt too wide) in paragraph at lines 2013--2016
+Overfull \hbox (16.53427pt too wide) in paragraph at lines 2038--2041
  [][][] []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2013--2016
+Underfull \hbox (badness 10000) in paragraph at lines 2038--2041
  
  []
 
 
-Overfull \hbox (16.53427pt too wide) in paragraph at lines 2017--2020
+Overfull \hbox (16.53427pt too wide) in paragraph at lines 2042--2045
  [][][] []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2017--2020
+Underfull \hbox (badness 10000) in paragraph at lines 2042--2045
  
  []
 
 
-Overfull \hbox (16.53427pt too wide) in paragraph at lines 2021--2024
- [][][] []
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2021--2024
- 
- []
-
-
-Overfull \hbox (16.53427pt too wide) in paragraph at lines 2025--2028
- [][][] []
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2025--2028
- 
- []
-
-
-Overfull \hbox (16.53427pt too wide) in paragraph at lines 2029--2032
- [][][] []
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2029--2032
- 
- []
-
-
-Underfull \hbox (badness 6641) in paragraph at lines 2035--2035
+Underfull \hbox (badness 6641) in paragraph at lines 2048--2048
 []\T1/ptm/m/n/10.95 Cercato, C. & Fon-seca, F. A. Car-dio-vas-cu-lar risk and o
 be-sity. (2019).
  []
 
 
-Overfull \hbox (16.53427pt too wide) in paragraph at lines 2033--2036
+Overfull \hbox (16.53427pt too wide) in paragraph at lines 2046--2049
  [][][] []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2033--2036
+Underfull \hbox (badness 10000) in paragraph at lines 2046--2049
  
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[148]
-Overfull \hbox (16.53427pt too wide) in paragraph at lines 2037--2040
- [][][] []
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2037--2040
- 
- []
-
-
-Overfull \hbox (16.53427pt too wide) in paragraph at lines 2041--2044
- [][][] []
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2041--2044
- 
- []
-
-
-Overfull \hbox (16.53427pt too wide) in paragraph at lines 2045--2048
- [][][] []
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2045--2048
- 
- []
-
-
-Overfull \hbox (16.53427pt too wide) in paragraph at lines 2049--2052
- [][][] []
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2049--2052
- 
- []
-
-
-Overfull \hbox (16.53427pt too wide) in paragraph at lines 2053--2056
- [][][] []
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2053--2056
- 
- []
-
-
-Overfull \hbox (16.53427pt too wide) in paragraph at lines 2057--2060
- [][][] []
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2057--2060
- 
- []
-
-
-Overfull \hbox (16.53427pt too wide) in paragraph at lines 2061--2064
- [][][] []
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2061--2064
- 
- []
-
-
-Overfull \hbox (16.53427pt too wide) in paragraph at lines 2065--2068
- [][][] []
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2065--2068
- 
- []
-
-
-Overfull \hbox (16.53427pt too wide) in paragraph at lines 2069--2072
- [][][] []
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2069--2072
- 
- []
-
-
-Overfull \hbox (16.53427pt too wide) in paragraph at lines 2073--2076
- [][][] []
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2073--2076
- 
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[149]
-Overfull \hbox (16.53427pt too wide) in paragraph at lines 2077--2080
- [][][] []
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2077--2080
- 
- []
-
-
-Overfull \hbox (16.53427pt too wide) in paragraph at lines 2081--2084
- [][][] []
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2081--2084
- 
- []
-
-
-Overfull \hbox (16.53427pt too wide) in paragraph at lines 2085--2088
- [][][] []
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2085--2088
- 
- []
-
-
-Overfull \hbox (16.53427pt too wide) in paragraph at lines 2089--2092
- [][][] []
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2089--2092
- 
- []
-
-
-Overfull \hbox (16.53427pt too wide) in paragraph at lines 2093--2096
- [][][] []
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2093--2096
- 
- []
-
-
-Underfull \hbox (badness 2717) in paragraph at lines 2099--2099
-[]\T1/ptm/m/n/10.95 Goudswaard, L. J. \T1/ptm/m/it/10.95 et al. \T1/ptm/m/n/10.
-95 Higher body mass in-dex raises im-ma-ture platelet
- []
-
-
-Underfull \hbox (badness 4859) in paragraph at lines 2099--2099
-\T1/ptm/m/n/10.95 count: ev-i-dence from Mendelian ran-dom-iza-tion anal-y-ses.
- \T1/ptm/m/it/10.95 medRxiv \T1/ptm/m/n/10.95 (2021).
- []
-
-
-Overfull \hbox (16.53427pt too wide) in paragraph at lines 2097--2100
- [][][] []
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2097--2100
- 
- []
-
-
-Overfull \hbox (16.53427pt too wide) in paragraph at lines 2101--2104
- [][][] []
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2101--2104
- 
- []
-
-
-Overfull \hbox (16.53427pt too wide) in paragraph at lines 2105--2108
- [][][] []
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2105--2108
- 
- []
-
-
-Overfull \hbox (16.53427pt too wide) in paragraph at lines 2109--2112
- [][][] []
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2109--2112
- 
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[150]
-Overfull \hbox (16.53427pt too wide) in paragraph at lines 2113--2116
- [][][] []
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2113--2116
- 
- []
-
-
-Overfull \hbox (16.53427pt too wide) in paragraph at lines 2117--2120
- [][][] []
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2117--2120
- 
- []
-
-
-Overfull \hbox (16.53427pt too wide) in paragraph at lines 2121--2124
- [][][] []
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2121--2124
- 
- []
-
-
-Overfull \hbox (16.53427pt too wide) in paragraph at lines 2125--2128
- [][][] []
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2125--2128
- 
- []
-
-
-Overfull \hbox (16.53427pt too wide) in paragraph at lines 2129--2132
- [][][] []
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2129--2132
- 
- []
-
-
-Overfull \hbox (16.53427pt too wide) in paragraph at lines 2133--2136
- [][][] []
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2133--2136
- 
- []
-
-
-Overfull \hbox (16.53427pt too wide) in paragraph at lines 2137--2140
- [][][] []
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2137--2140
- 
- []
-
-
-Overfull \hbox (16.53427pt too wide) in paragraph at lines 2141--2144
- [][][] []
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2141--2144
- 
- []
-
-
-Overfull \hbox (16.53427pt too wide) in paragraph at lines 2145--2148
- [][][] []
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2145--2148
- 
- []
-
-
-Overfull \hbox (16.53427pt too wide) in paragraph at lines 2149--2152
- [][][] []
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2149--2152
- 
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[151]
-Overfull \hbox (16.53427pt too wide) in paragraph at lines 2153--2156
- [][][] []
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2153--2156
- 
- []
-
-
-Underfull \hbox (badness 4266) in paragraph at lines 2159--2159
-[]\T1/ptm/m/n/10.95 Furuncuo§lu, Y. \T1/ptm/m/it/10.95 et al. \T1/ptm/m/n/10.95
- How obe-sity af-fects the neu-trophil/lymphocyte and
- []
-
-
-Overfull \hbox (16.53427pt too wide) in paragraph at lines 2157--2160
- [][][] []
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2157--2160
- 
- []
-
-
-Overfull \hbox (16.53427pt too wide) in paragraph at lines 2161--2164
- [][][] []
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2161--2164
- 
- []
-
-
-Overfull \hbox (16.53427pt too wide) in paragraph at lines 2165--2168
- [][][] []
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2165--2168
- 
- []
-
-
-Overfull \hbox (16.53427pt too wide) in paragraph at lines 2169--2172
- [][][] []
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2169--2172
- 
- []
-
-
-Overfull \hbox (16.53427pt too wide) in paragraph at lines 2173--2176
- [][][] []
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2173--2176
- 
- []
-
-
-Overfull \hbox (16.53427pt too wide) in paragraph at lines 2177--2180
- [][][] []
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2177--2180
- 
- []
-
-
-Overfull \hbox (16.53427pt too wide) in paragraph at lines 2181--2184
- [][][] []
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2181--2184
- 
- []
-
-
-Overfull \hbox (16.53427pt too wide) in paragraph at lines 2185--2188
- [][][] []
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2185--2188
- 
- []
-
-
-Overfull \hbox (16.53427pt too wide) in paragraph at lines 2189--2192
- [][][] []
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2189--2192
- 
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[152]
-Overfull \hbox (16.53427pt too wide) in paragraph at lines 2193--2196
- [][][] []
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2193--2196
- 
- []
-
-
-Overfull \hbox (16.53427pt too wide) in paragraph at lines 2197--2200
- [][][] []
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2197--2200
- 
- []
-
-
-Overfull \hbox (16.53427pt too wide) in paragraph at lines 2201--2204
- [][][] []
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2201--2204
- 
- []
-
-
-Overfull \hbox (16.53427pt too wide) in paragraph at lines 2205--2208
- [][][] []
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2205--2208
- 
- []
-
-
-Overfull \hbox (16.53427pt too wide) in paragraph at lines 2209--2212
- [][][] []
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2209--2212
- 
- []
-
-
-Overfull \hbox (16.53427pt too wide) in paragraph at lines 2213--2216
- [][][] []
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2213--2216
- 
- []
-
-
-Overfull \hbox (16.53427pt too wide) in paragraph at lines 2217--2220
- [][][] []
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2217--2220
- 
- []
-
-
-Overfull \hbox (16.53427pt too wide) in paragraph at lines 2221--2224
- [][][] []
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2221--2224
- 
- []
-
-
-Overfull \hbox (16.53427pt too wide) in paragraph at lines 2225--2228
- [][][] []
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2225--2228
- 
- []
-
-
-Overfull \hbox (16.53427pt too wide) in paragraph at lines 2229--2232
- [][][] []
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2229--2232
- 
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[153]
-Overfull \hbox (16.53427pt too wide) in paragraph at lines 2233--2236
- [][][] []
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2233--2236
- 
- []
-
-
-Overfull \hbox (16.53427pt too wide) in paragraph at lines 2237--2240
- [][][] []
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2237--2240
- 
- []
-
-
-Overfull \hbox (16.53427pt too wide) in paragraph at lines 2241--2244
- [][][] []
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2241--2244
- 
- []
-
-
-Overfull \hbox (16.53427pt too wide) in paragraph at lines 2245--2248
- [][][] []
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2245--2248
- 
- []
-
-
-Overfull \hbox (16.53427pt too wide) in paragraph at lines 2249--2252
- [][][] []
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2249--2252
- 
- []
-
-
-Underfull \hbox (badness 1910) in paragraph at lines 2255--2255
-[]\T1/ptm/m/n/10.95 Freedman, J. E. \T1/ptm/m/it/10.95 et al. \T1/ptm/m/n/10.95
- Re-la-tion of platelet and leuko-cyte in-flam-ma-tory tran-
- []
-
-
-Overfull \hbox (16.53427pt too wide) in paragraph at lines 2253--2256
- [][][] []
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2253--2256
- 
- []
-
-
-Overfull \hbox (16.53427pt too wide) in paragraph at lines 2257--2260
- [][][] []
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2257--2260
- 
- []
-
-
-Overfull \hbox (16.53427pt too wide) in paragraph at lines 2261--2264
- [][][] []
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2261--2264
- 
- []
-
-
-Overfull \hbox (16.53427pt too wide) in paragraph at lines 2265--2268
- [][][] []
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2265--2268
- 
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[154]
-Overfull \hbox (16.53427pt too wide) in paragraph at lines 2269--2272
- [][][] []
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2269--2272
- 
- []
-
-
-Overfull \hbox (16.53427pt too wide) in paragraph at lines 2273--2276
- [][][] []
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2273--2276
- 
- []
-
-
-Overfull \hbox (16.53427pt too wide) in paragraph at lines 2277--2280
- [][][] []
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2277--2280
- 
- []
-
-
-Overfull \hbox (16.53427pt too wide) in paragraph at lines 2281--2284
- [][][] []
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2281--2284
- 
- []
-
-
-Overfull \hbox (16.53427pt too wide) in paragraph at lines 2285--2288
- [][][] []
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2285--2288
- 
- []
-
-
-Overfull \hbox (16.53427pt too wide) in paragraph at lines 2289--2292
- [][][] []
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2289--2292
- 
- []
-
-
-Overfull \hbox (16.53427pt too wide) in paragraph at lines 2293--2296
- [][][] []
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2293--2296
- 
- []
-
-
-Overfull \hbox (16.53427pt too wide) in paragraph at lines 2297--2300
- [][][] []
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2297--2300
- 
- []
-
-
-Overfull \hbox (16.53427pt too wide) in paragraph at lines 2301--2304
- [][][] []
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2301--2304
- 
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[155]
-Overfull \hbox (16.53427pt too wide) in paragraph at lines 2305--2308
- [][][] []
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2305--2308
- 
- []
-
-
-Overfull \hbox (16.53427pt too wide) in paragraph at lines 2309--2312
- [][][] []
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2309--2312
- 
- []
-
-
-Overfull \hbox (16.53427pt too wide) in paragraph at lines 2313--2316
- [][][] []
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2313--2316
- 
- []
-
-
-Overfull \hbox (16.53427pt too wide) in paragraph at lines 2317--2320
- [][][] []
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2317--2320
- 
- []
-
-
-Overfull \hbox (16.53427pt too wide) in paragraph at lines 2321--2324
- [][][] []
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2321--2324
- 
- []
-
-
-Overfull \hbox (16.53427pt too wide) in paragraph at lines 2325--2328
- [][][] []
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2325--2328
- 
- []
-
-
-Overfull \hbox (16.53427pt too wide) in paragraph at lines 2329--2332
- [][][] []
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2329--2332
- 
- []
-
-
-Overfull \hbox (16.53427pt too wide) in paragraph at lines 2333--2336
- [][][] []
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2333--2336
- 
- []
-
-
-Overfull \hbox (16.53427pt too wide) in paragraph at lines 2337--2340
- [][][] []
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2337--2340
- 
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[156]
-Underfull \hbox (badness 8151) in paragraph at lines 2343--2343
-[]\T1/ptm/m/n/10.95 Kowalska, M. A. \T1/ptm/m/it/10.95 et al. \T1/ptm/m/n/10.95
- Stro-mal cell-derived factor-1 and macrophage-
- []
-
-
-Underfull \hbox (badness 7221) in paragraph at lines 2343--2343
-\T1/ptm/m/n/10.95 derived chemokine: 2 chemokines that ac-ti-vate platelets. \T
-1/ptm/m/it/10.95 Blood \T1/ptm/m/n/10.95 (2000).
- []
-
-
-Overfull \hbox (16.53427pt too wide) in paragraph at lines 2341--2344
- [][][] []
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2341--2344
- 
- []
-
-
-Overfull \hbox (16.53427pt too wide) in paragraph at lines 2345--2348
- [][][] []
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2345--2348
- 
- []
-
-
-Overfull \hbox (16.53427pt too wide) in paragraph at lines 2349--2352
- [][][] []
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2349--2352
- 
- []
-
-
-Overfull \hbox (16.53427pt too wide) in paragraph at lines 2353--2356
- [][][] []
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2353--2356
- 
- []
-
-
-Overfull \hbox (16.53427pt too wide) in paragraph at lines 2357--2360
- [][][] []
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2357--2360
- 
- []
-
-
-Overfull \hbox (16.53427pt too wide) in paragraph at lines 2361--2364
- [][][] []
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2361--2364
- 
- []
-
-
-Overfull \hbox (16.53427pt too wide) in paragraph at lines 2365--2368
- [][][] []
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2365--2368
- 
- []
-
-
-Overfull \hbox (16.53427pt too wide) in paragraph at lines 2369--2372
- [][][] []
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2369--2372
- 
- []
-
-
-Overfull \hbox (16.53427pt too wide) in paragraph at lines 2373--2376
- [][][] []
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2373--2376
- 
- []
-
-
-Overfull \hbox (16.53427pt too wide) in paragraph at lines 2377--2380
- [][][] []
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2377--2380
- 
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[157]
-Overfull \hbox (16.53427pt too wide) in paragraph at lines 2381--2384
- [][][] []
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2381--2384
- 
- []
-
-
-Overfull \hbox (16.53427pt too wide) in paragraph at lines 2385--2388
- [][][] []
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2385--2388
- 
- []
-
-
-Overfull \hbox (16.53427pt too wide) in paragraph at lines 2389--2392
- [][][] []
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2389--2392
- 
- []
-
-
-Overfull \hbox (16.53427pt too wide) in paragraph at lines 2393--2396
- [][][] []
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2393--2396
- 
- []
-
-
-Overfull \hbox (16.53427pt too wide) in paragraph at lines 2397--2400
- [][][] []
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2397--2400
- 
- []
-
-
-Overfull \hbox (16.53427pt too wide) in paragraph at lines 2401--2404
- [][][] []
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2401--2404
- 
- []
-
-
-Overfull \hbox (16.53427pt too wide) in paragraph at lines 2405--2408
- [][][] []
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2405--2408
- 
- []
-
-
-Overfull \hbox (16.53427pt too wide) in paragraph at lines 2409--2412
- [][][] []
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2409--2412
- 
- []
-
-
-Overfull \hbox (16.53427pt too wide) in paragraph at lines 2413--2416
- [][][] []
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2413--2416
- 
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[158]
-Overfull \hbox (16.53427pt too wide) in paragraph at lines 2417--2420
- [][][] []
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2417--2420
- 
- []
-
-
-Overfull \hbox (16.53427pt too wide) in paragraph at lines 2421--2424
- [][][] []
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2421--2424
- 
- []
-
-
-Overfull \hbox (16.53427pt too wide) in paragraph at lines 2425--2428
- [][][] []
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2425--2428
- 
- []
-
-
-Overfull \hbox (16.53427pt too wide) in paragraph at lines 2429--2432
- [][][] []
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2429--2432
- 
- []
-
-
-Overfull \hbox (16.53427pt too wide) in paragraph at lines 2433--2436
- [][][] []
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2433--2436
- 
- []
-
-
-Overfull \hbox (16.53427pt too wide) in paragraph at lines 2437--2440
- [][][] []
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2437--2440
- 
- []
-
-
-Underfull \hbox (badness 1406) in paragraph at lines 2443--2443
-[]\T1/ptm/m/n/10.95 Burgess, S., Davies, N. M. & Thomp-son, S. G. Bias due to p
-ar-tic-i-pant over-
- []
-
-
-Underfull \hbox (badness 5175) in paragraph at lines 2443--2443
-\T1/ptm/m/n/10.95 lap in two-sample Mendelian ran-dom-iza-tion. \T1/ptm/m/it/10
-.95 Ge-netic Epi-demi-ol-ogy \T1/ptm/m/n/10.95 (2016).
- []
-
-
-Overfull \hbox (16.53427pt too wide) in paragraph at lines 2441--2444
- [][][] []
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2441--2444
- 
- []
-
-
-Overfull \hbox (16.53427pt too wide) in paragraph at lines 2445--2448
- [][][] []
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2445--2448
- 
- []
-
-
-Overfull \hbox (16.53427pt too wide) in paragraph at lines 2449--2452
- [][][] []
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2449--2452
- 
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[159]
-Overfull \hbox (16.53427pt too wide) in paragraph at lines 2453--2456
- [][][] []
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2453--2456
- 
- []
-
-
-Overfull \hbox (16.53427pt too wide) in paragraph at lines 2457--2460
- [][][] []
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2457--2460
- 
- []
-
-
-Overfull \hbox (16.53427pt too wide) in paragraph at lines 2461--2464
- [][][] []
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2461--2464
- 
- []
-
-
-Overfull \hbox (16.53427pt too wide) in paragraph at lines 2465--2468
- [][][] []
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2465--2468
- 
- []
-
-
-Overfull \hbox (16.53427pt too wide) in paragraph at lines 2469--2472
- [][][] []
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2469--2472
- 
- []
-
-
-Overfull \hbox (16.53427pt too wide) in paragraph at lines 2473--2476
- [][][] []
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2473--2476
- 
- []
-
-
-Overfull \hbox (16.53427pt too wide) in paragraph at lines 2477--2480
- [][][] []
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2477--2480
- 
- []
-
-
-Overfull \hbox (16.53427pt too wide) in paragraph at lines 2481--2484
+Overfull \hbox (16.53427pt too wide) in paragraph at lines 2050--2053
  [][][] []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2481--2484
+Underfull \hbox (badness 10000) in paragraph at lines 2050--2053
  
  []
 
 
-Overfull \hbox (16.53427pt too wide) in paragraph at lines 2485--2488
+Overfull \hbox (16.53427pt too wide) in paragraph at lines 2054--2057
  [][][] []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2485--2488
+Underfull \hbox (badness 10000) in paragraph at lines 2054--2057
  
  []
 
 
-Overfull \hbox (16.53427pt too wide) in paragraph at lines 2489--2492
+Overfull \hbox (16.53427pt too wide) in paragraph at lines 2058--2061
  [][][] []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2489--2492
+Underfull \hbox (badness 10000) in paragraph at lines 2058--2061
  
  []
 
@@ -3194,43 +2046,1542 @@ Underfull \hbox (badness 10000) in paragraph at lines 2489--2492
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [160]
-Overfull \hbox (16.53427pt too wide) in paragraph at lines 2493--2496
+Overfull \hbox (16.53427pt too wide) in paragraph at lines 2062--2065
  [][][] []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2493--2496
+Underfull \hbox (badness 10000) in paragraph at lines 2062--2065
  
  []
 
 
-Overfull \hbox (16.53427pt too wide) in paragraph at lines 2497--2500
+Overfull \hbox (16.53427pt too wide) in paragraph at lines 2066--2069
  [][][] []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2497--2500
+Underfull \hbox (badness 10000) in paragraph at lines 2066--2069
  
  []
 
 
-Overfull \hbox (16.53427pt too wide) in paragraph at lines 2501--2504
+Overfull \hbox (16.53427pt too wide) in paragraph at lines 2070--2073
  [][][] []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2501--2504
+Underfull \hbox (badness 10000) in paragraph at lines 2070--2073
  
  []
 
-[161] [162
 
-] [163] (./thesis.aux)
+Overfull \hbox (16.53427pt too wide) in paragraph at lines 2074--2077
+ [][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2074--2077
+ 
+ []
+
+
+Overfull \hbox (16.53427pt too wide) in paragraph at lines 2078--2081
+ [][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2078--2081
+ 
+ []
+
+
+Overfull \hbox (16.53427pt too wide) in paragraph at lines 2082--2085
+ [][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2082--2085
+ 
+ []
+
+
+Overfull \hbox (16.53427pt too wide) in paragraph at lines 2086--2089
+ [][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2086--2089
+ 
+ []
+
+
+Overfull \hbox (16.53427pt too wide) in paragraph at lines 2090--2093
+ [][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2090--2093
+ 
+ []
+
+
+Overfull \hbox (16.53427pt too wide) in paragraph at lines 2094--2097
+ [][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2094--2097
+ 
+ []
+
+
+Overfull \hbox (16.53427pt too wide) in paragraph at lines 2098--2101
+ [][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2098--2101
+ 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[161]
+Overfull \hbox (16.53427pt too wide) in paragraph at lines 2102--2105
+ [][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2102--2105
+ 
+ []
+
+
+Overfull \hbox (16.53427pt too wide) in paragraph at lines 2106--2109
+ [][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2106--2109
+ 
+ []
+
+
+Overfull \hbox (16.53427pt too wide) in paragraph at lines 2110--2113
+ [][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2110--2113
+ 
+ []
+
+
+Overfull \hbox (16.53427pt too wide) in paragraph at lines 2114--2117
+ [][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2114--2117
+ 
+ []
+
+
+Overfull \hbox (16.53427pt too wide) in paragraph at lines 2118--2121
+ [][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2118--2121
+ 
+ []
+
+
+Overfull \hbox (16.53427pt too wide) in paragraph at lines 2122--2125
+ [][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2122--2125
+ 
+ []
+
+
+Overfull \hbox (16.53427pt too wide) in paragraph at lines 2126--2129
+ [][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2126--2129
+ 
+ []
+
+
+Overfull \hbox (16.53427pt too wide) in paragraph at lines 2130--2133
+ [][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2130--2133
+ 
+ []
+
+
+Overfull \hbox (16.53427pt too wide) in paragraph at lines 2134--2137
+ [][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2134--2137
+ 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[162]
+Overfull \hbox (16.53427pt too wide) in paragraph at lines 2138--2141
+ [][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2138--2141
+ 
+ []
+
+
+Overfull \hbox (16.53427pt too wide) in paragraph at lines 2142--2145
+ [][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2142--2145
+ 
+ []
+
+
+Overfull \hbox (16.53427pt too wide) in paragraph at lines 2146--2149
+ [][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2146--2149
+ 
+ []
+
+
+Overfull \hbox (16.53427pt too wide) in paragraph at lines 2150--2153
+ [][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2150--2153
+ 
+ []
+
+
+Overfull \hbox (16.53427pt too wide) in paragraph at lines 2154--2157
+ [][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2154--2157
+ 
+ []
+
+
+Overfull \hbox (16.53427pt too wide) in paragraph at lines 2158--2161
+ [][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2158--2161
+ 
+ []
+
+
+Underfull \hbox (badness 4266) in paragraph at lines 2164--2164
+[]\T1/ptm/m/n/10.95 Furuncuo§lu, Y. \T1/ptm/m/it/10.95 et al. \T1/ptm/m/n/10.95
+ How obe-sity af-fects the neu-trophil/lymphocyte and
+ []
+
+
+Overfull \hbox (16.53427pt too wide) in paragraph at lines 2162--2165
+ [][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2162--2165
+ 
+ []
+
+
+Overfull \hbox (16.53427pt too wide) in paragraph at lines 2166--2169
+ [][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2166--2169
+ 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[163]
+Overfull \hbox (16.53427pt too wide) in paragraph at lines 2170--2173
+ [][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2170--2173
+ 
+ []
+
+
+Overfull \hbox (16.53427pt too wide) in paragraph at lines 2174--2177
+ [][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2174--2177
+ 
+ []
+
+
+Overfull \hbox (16.53427pt too wide) in paragraph at lines 2178--2181
+ [][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2178--2181
+ 
+ []
+
+
+Overfull \hbox (16.53427pt too wide) in paragraph at lines 2182--2185
+ [][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2182--2185
+ 
+ []
+
+
+Overfull \hbox (16.53427pt too wide) in paragraph at lines 2186--2189
+ [][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2186--2189
+ 
+ []
+
+
+Overfull \hbox (16.53427pt too wide) in paragraph at lines 2190--2193
+ [][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2190--2193
+ 
+ []
+
+
+Overfull \hbox (16.53427pt too wide) in paragraph at lines 2194--2197
+ [][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2194--2197
+ 
+ []
+
+
+Overfull \hbox (16.53427pt too wide) in paragraph at lines 2198--2201
+ [][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2198--2201
+ 
+ []
+
+
+Overfull \hbox (16.53427pt too wide) in paragraph at lines 2202--2205
+ [][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2202--2205
+ 
+ []
+
+
+Overfull \hbox (16.53427pt too wide) in paragraph at lines 2206--2209
+ [][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2206--2209
+ 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[164]
+Underfull \hbox (badness 8151) in paragraph at lines 2212--2212
+[]\T1/ptm/m/n/10.95 Kowalska, M. A. \T1/ptm/m/it/10.95 et al. \T1/ptm/m/n/10.95
+ Stro-mal cell-derived factor-1 and macrophage-
+ []
+
+
+Underfull \hbox (badness 7221) in paragraph at lines 2212--2212
+\T1/ptm/m/n/10.95 derived chemokine: 2 chemokines that ac-ti-vate platelets. \T
+1/ptm/m/it/10.95 Blood \T1/ptm/m/n/10.95 (2000).
+ []
+
+
+Overfull \hbox (16.53427pt too wide) in paragraph at lines 2210--2213
+ [][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2210--2213
+ 
+ []
+
+
+Overfull \hbox (16.53427pt too wide) in paragraph at lines 2214--2217
+ [][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2214--2217
+ 
+ []
+
+
+Overfull \hbox (16.53427pt too wide) in paragraph at lines 2218--2221
+ [][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2218--2221
+ 
+ []
+
+
+Overfull \hbox (16.53427pt too wide) in paragraph at lines 2222--2225
+ [][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2222--2225
+ 
+ []
+
+
+Overfull \hbox (16.53427pt too wide) in paragraph at lines 2226--2229
+ [][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2226--2229
+ 
+ []
+
+
+Overfull \hbox (16.53427pt too wide) in paragraph at lines 2230--2233
+ [][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2230--2233
+ 
+ []
+
+
+Overfull \hbox (16.53427pt too wide) in paragraph at lines 2234--2237
+ [][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2234--2237
+ 
+ []
+
+
+Overfull \hbox (16.53427pt too wide) in paragraph at lines 2238--2241
+ [][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2238--2241
+ 
+ []
+
+
+Overfull \hbox (16.53427pt too wide) in paragraph at lines 2242--2245
+ [][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2242--2245
+ 
+ []
+
+
+Overfull \hbox (16.53427pt too wide) in paragraph at lines 2246--2249
+ [][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2246--2249
+ 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[165]
+Overfull \hbox (16.53427pt too wide) in paragraph at lines 2250--2253
+ [][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2250--2253
+ 
+ []
+
+
+Overfull \hbox (16.53427pt too wide) in paragraph at lines 2254--2257
+ [][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2254--2257
+ 
+ []
+
+
+Overfull \hbox (16.53427pt too wide) in paragraph at lines 2258--2261
+ [][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2258--2261
+ 
+ []
+
+
+Overfull \hbox (16.53427pt too wide) in paragraph at lines 2262--2265
+ [][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2262--2265
+ 
+ []
+
+
+Overfull \hbox (16.53427pt too wide) in paragraph at lines 2266--2269
+ [][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2266--2269
+ 
+ []
+
+
+Overfull \hbox (16.53427pt too wide) in paragraph at lines 2270--2273
+ [][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2270--2273
+ 
+ []
+
+
+Overfull \hbox (16.53427pt too wide) in paragraph at lines 2274--2277
+ [][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2274--2277
+ 
+ []
+
+
+Overfull \hbox (16.53427pt too wide) in paragraph at lines 2278--2281
+ [][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2278--2281
+ 
+ []
+
+
+Overfull \hbox (16.53427pt too wide) in paragraph at lines 2282--2285
+ [][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2282--2285
+ 
+ []
+
+
+Overfull \hbox (16.53427pt too wide) in paragraph at lines 2286--2289
+ [][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2286--2289
+ 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[166]
+Overfull \hbox (16.53427pt too wide) in paragraph at lines 2290--2293
+ [][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2290--2293
+ 
+ []
+
+
+Overfull \hbox (16.53427pt too wide) in paragraph at lines 2294--2297
+ [][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2294--2297
+ 
+ []
+
+
+Overfull \hbox (16.53427pt too wide) in paragraph at lines 2298--2301
+ [][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2298--2301
+ 
+ []
+
+
+Overfull \hbox (16.53427pt too wide) in paragraph at lines 2302--2305
+ [][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2302--2305
+ 
+ []
+
+
+Overfull \hbox (16.53427pt too wide) in paragraph at lines 2306--2309
+ [][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2306--2309
+ 
+ []
+
+
+Overfull \hbox (16.53427pt too wide) in paragraph at lines 2310--2313
+ [][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2310--2313
+ 
+ []
+
+
+Overfull \hbox (16.53427pt too wide) in paragraph at lines 2314--2317
+ [][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2314--2317
+ 
+ []
+
+
+Overfull \hbox (16.53427pt too wide) in paragraph at lines 2318--2321
+ [][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2318--2321
+ 
+ []
+
+
+Overfull \hbox (16.53427pt too wide) in paragraph at lines 2322--2325
+ [][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2322--2325
+ 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[167]
+Overfull \hbox (16.53427pt too wide) in paragraph at lines 2326--2329
+ [][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2326--2329
+ 
+ []
+
+
+Overfull \hbox (16.53427pt too wide) in paragraph at lines 2330--2333
+ [][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2330--2333
+ 
+ []
+
+
+Overfull \hbox (16.53427pt too wide) in paragraph at lines 2334--2337
+ [][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2334--2337
+ 
+ []
+
+
+Overfull \hbox (16.53427pt too wide) in paragraph at lines 2338--2341
+ [][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2338--2341
+ 
+ []
+
+
+Overfull \hbox (16.53427pt too wide) in paragraph at lines 2342--2345
+ [][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2342--2345
+ 
+ []
+
+
+Overfull \hbox (16.53427pt too wide) in paragraph at lines 2346--2349
+ [][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2346--2349
+ 
+ []
+
+
+Overfull \hbox (16.53427pt too wide) in paragraph at lines 2350--2353
+ [][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2350--2353
+ 
+ []
+
+
+Overfull \hbox (16.53427pt too wide) in paragraph at lines 2354--2357
+ [][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2354--2357
+ 
+ []
+
+
+Overfull \hbox (16.53427pt too wide) in paragraph at lines 2358--2361
+ [][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2358--2361
+ 
+ []
+
+
+Overfull \hbox (16.53427pt too wide) in paragraph at lines 2362--2365
+ [][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2362--2365
+ 
+ []
+
+
+Overfull \hbox (16.53427pt too wide) in paragraph at lines 2366--2369
+ [][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2366--2369
+ 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[168]
+Overfull \hbox (16.53427pt too wide) in paragraph at lines 2370--2373
+ [][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2370--2373
+ 
+ []
+
+
+Overfull \hbox (16.53427pt too wide) in paragraph at lines 2374--2377
+ [][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2374--2377
+ 
+ []
+
+
+Underfull \hbox (badness 1910) in paragraph at lines 2380--2380
+[]\T1/ptm/m/n/10.95 Freedman, J. E. \T1/ptm/m/it/10.95 et al. \T1/ptm/m/n/10.95
+ Re-la-tion of platelet and leuko-cyte in-flam-ma-tory tran-
+ []
+
+
+Overfull \hbox (16.53427pt too wide) in paragraph at lines 2378--2381
+ [][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2378--2381
+ 
+ []
+
+
+Underfull \hbox (badness 1490) in paragraph at lines 2384--2384
+[]\T1/ptm/m/n/10.95 Bearer, E. L., Prakash, J. M. & Li, Z. Actin dy-nam-ics in 
+platelets. (2002).
+ []
+
+
+Overfull \hbox (16.53427pt too wide) in paragraph at lines 2382--2385
+ [][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2382--2385
+ 
+ []
+
+
+Overfull \hbox (16.53427pt too wide) in paragraph at lines 2386--2389
+ [][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2386--2389
+ 
+ []
+
+
+Overfull \hbox (16.53427pt too wide) in paragraph at lines 2390--2393
+ [][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2390--2393
+ 
+ []
+
+
+Underfull \hbox (badness 1546) in paragraph at lines 2396--2396
+[]\T1/ptm/m/n/10.95 Gupta, A. K. \T1/ptm/m/it/10.95 et al. \T1/ptm/m/n/10.95 Pr
+o-tec-tive ef-fects of gel-solin in acute pul-monary throm-
+ []
+
+
+Underfull \hbox (badness 1215) in paragraph at lines 2396--2396
+\T1/ptm/m/n/10.95 boem-bolism and throm-bo-sis in the carotid artery of mice. \
+T1/ptm/m/it/10.95 PLoS ONE \T1/ptm/m/n/10.95 (2019).
+ []
+
+
+Overfull \hbox (16.53427pt too wide) in paragraph at lines 2394--2397
+ [][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2394--2397
+ 
+ []
+
+
+Overfull \hbox (16.53427pt too wide) in paragraph at lines 2398--2401
+ [][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2398--2401
+ 
+ []
+
+
+Overfull \hbox (16.53427pt too wide) in paragraph at lines 2402--2405
+ [][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2402--2405
+ 
+ []
+
+
+Overfull \hbox (16.53427pt too wide) in paragraph at lines 2406--2409
+ [][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2406--2409
+ 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[169]
+Overfull \hbox (16.53427pt too wide) in paragraph at lines 2410--2413
+ [][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2410--2413
+ 
+ []
+
+
+Overfull \hbox (16.53427pt too wide) in paragraph at lines 2414--2417
+ [][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2414--2417
+ 
+ []
+
+
+Overfull \hbox (16.53427pt too wide) in paragraph at lines 2418--2421
+ [][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2418--2421
+ 
+ []
+
+
+Overfull \hbox (16.53427pt too wide) in paragraph at lines 2422--2425
+ [][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2422--2425
+ 
+ []
+
+
+Overfull \hbox (16.53427pt too wide) in paragraph at lines 2426--2429
+ [][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2426--2429
+ 
+ []
+
+
+Overfull \hbox (16.53427pt too wide) in paragraph at lines 2430--2433
+ [][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2430--2433
+ 
+ []
+
+
+Overfull \hbox (16.53427pt too wide) in paragraph at lines 2434--2437
+ [][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2434--2437
+ 
+ []
+
+
+Overfull \hbox (16.53427pt too wide) in paragraph at lines 2438--2441
+ [][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2438--2441
+ 
+ []
+
+
+Overfull \hbox (16.53427pt too wide) in paragraph at lines 2442--2445
+ [][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2442--2445
+ 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[170]
+Overfull \hbox (16.53427pt too wide) in paragraph at lines 2446--2449
+ [][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2446--2449
+ 
+ []
+
+
+Overfull \hbox (16.53427pt too wide) in paragraph at lines 2450--2453
+ [][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2450--2453
+ 
+ []
+
+
+Overfull \hbox (16.53427pt too wide) in paragraph at lines 2454--2457
+ [][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2454--2457
+ 
+ []
+
+
+Overfull \hbox (16.53427pt too wide) in paragraph at lines 2458--2461
+ [][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2458--2461
+ 
+ []
+
+
+Overfull \hbox (16.53427pt too wide) in paragraph at lines 2462--2465
+ [][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2462--2465
+ 
+ []
+
+
+Overfull \hbox (16.53427pt too wide) in paragraph at lines 2466--2469
+ [][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2466--2469
+ 
+ []
+
+
+Overfull \hbox (16.53427pt too wide) in paragraph at lines 2470--2473
+ [][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2470--2473
+ 
+ []
+
+
+Overfull \hbox (16.53427pt too wide) in paragraph at lines 2474--2477
+ [][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2474--2477
+ 
+ []
+
+
+Overfull \hbox (16.53427pt too wide) in paragraph at lines 2478--2481
+ [][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2478--2481
+ 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[171]
+Overfull \hbox (16.53427pt too wide) in paragraph at lines 2482--2485
+ [][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2482--2485
+ 
+ []
+
+
+Overfull \hbox (16.53427pt too wide) in paragraph at lines 2486--2489
+ [][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2486--2489
+ 
+ []
+
+
+Overfull \hbox (16.53427pt too wide) in paragraph at lines 2490--2493
+ [][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2490--2493
+ 
+ []
+
+
+Overfull \hbox (16.53427pt too wide) in paragraph at lines 2494--2497
+ [][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2494--2497
+ 
+ []
+
+
+Overfull \hbox (16.53427pt too wide) in paragraph at lines 2498--2501
+ [][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2498--2501
+ 
+ []
+
+
+Overfull \hbox (16.53427pt too wide) in paragraph at lines 2502--2505
+ [][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2502--2505
+ 
+ []
+
+
+Overfull \hbox (16.53427pt too wide) in paragraph at lines 2506--2509
+ [][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2506--2509
+ 
+ []
+
+
+Overfull \hbox (16.53427pt too wide) in paragraph at lines 2510--2513
+ [][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2510--2513
+ 
+ []
+
+
+Overfull \hbox (16.53427pt too wide) in paragraph at lines 2514--2517
+ [][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2514--2517
+ 
+ []
+
+
+Overfull \hbox (16.53427pt too wide) in paragraph at lines 2518--2521
+ [][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2518--2521
+ 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[172]
+Overfull \hbox (16.53427pt too wide) in paragraph at lines 2522--2525
+ [][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2522--2525
+ 
+ []
+
+
+Overfull \hbox (16.53427pt too wide) in paragraph at lines 2526--2529
+ [][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2526--2529
+ 
+ []
+
+
+Overfull \hbox (16.53427pt too wide) in paragraph at lines 2530--2533
+ [][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2530--2533
+ 
+ []
+
+
+Overfull \hbox (16.53427pt too wide) in paragraph at lines 2534--2537
+ [][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2534--2537
+ 
+ []
+
+
+Overfull \hbox (16.53427pt too wide) in paragraph at lines 2538--2541
+ [][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2538--2541
+ 
+ []
+
+
+Overfull \hbox (16.53427pt too wide) in paragraph at lines 2542--2545
+ [][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2542--2545
+ 
+ []
+
+
+Overfull \hbox (16.53427pt too wide) in paragraph at lines 2546--2549
+ [][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2546--2549
+ 
+ []
+
+
+Overfull \hbox (16.53427pt too wide) in paragraph at lines 2550--2553
+ [][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2550--2553
+ 
+ []
+
+
+Overfull \hbox (16.53427pt too wide) in paragraph at lines 2554--2557
+ [][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2554--2557
+ 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[173]
+Overfull \hbox (16.53427pt too wide) in paragraph at lines 2558--2561
+ [][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2558--2561
+ 
+ []
+
+
+Underfull \hbox (badness 1406) in paragraph at lines 2564--2564
+[]\T1/ptm/m/n/10.95 Burgess, S., Davies, N. M. & Thomp-son, S. G. Bias due to p
+ar-tic-i-pant over-
+ []
+
+
+Underfull \hbox (badness 5175) in paragraph at lines 2564--2564
+\T1/ptm/m/n/10.95 lap in two-sample Mendelian ran-dom-iza-tion. \T1/ptm/m/it/10
+.95 Ge-netic Epi-demi-ol-ogy \T1/ptm/m/n/10.95 (2016).
+ []
+
+
+Overfull \hbox (16.53427pt too wide) in paragraph at lines 2562--2565
+ [][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2562--2565
+ 
+ []
+
+
+Overfull \hbox (16.53427pt too wide) in paragraph at lines 2566--2569
+ [][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2566--2569
+ 
+ []
+
+
+Overfull \hbox (16.53427pt too wide) in paragraph at lines 2570--2573
+ [][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2570--2573
+ 
+ []
+
+
+Overfull \hbox (16.53427pt too wide) in paragraph at lines 2574--2577
+ [][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2574--2577
+ 
+ []
+
+
+Overfull \hbox (16.53427pt too wide) in paragraph at lines 2578--2581
+ [][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2578--2581
+ 
+ []
+
+
+Overfull \hbox (16.53427pt too wide) in paragraph at lines 2582--2585
+ [][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2582--2585
+ 
+ []
+
+
+Overfull \hbox (16.53427pt too wide) in paragraph at lines 2586--2589
+ [][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2586--2589
+ 
+ []
+
+
+Overfull \hbox (16.53427pt too wide) in paragraph at lines 2590--2593
+ [][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2590--2593
+ 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[174]
+Overfull \hbox (16.53427pt too wide) in paragraph at lines 2594--2597
+ [][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2594--2597
+ 
+ []
+
+
+Overfull \hbox (16.53427pt too wide) in paragraph at lines 2598--2601
+ [][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2598--2601
+ 
+ []
+
+
+Overfull \hbox (16.53427pt too wide) in paragraph at lines 2602--2605
+ [][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2602--2605
+ 
+ []
+
+
+Overfull \hbox (16.53427pt too wide) in paragraph at lines 2606--2609
+ [][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2606--2609
+ 
+ []
+
+
+Overfull \hbox (16.53427pt too wide) in paragraph at lines 2610--2613
+ [][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2610--2613
+ 
+ []
+
+
+Overfull \hbox (16.53427pt too wide) in paragraph at lines 2614--2617
+ [][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2614--2617
+ 
+ []
+
+
+Overfull \hbox (16.53427pt too wide) in paragraph at lines 2618--2621
+ [][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2618--2621
+ 
+ []
+
+
+Overfull \hbox (16.53427pt too wide) in paragraph at lines 2622--2625
+ [][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2622--2625
+ 
+ []
+
+
+Overfull \hbox (16.53427pt too wide) in paragraph at lines 2626--2629
+ [][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2626--2629
+ 
+ []
+
+
+Overfull \hbox (16.53427pt too wide) in paragraph at lines 2630--2633
+ [][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2630--2633
+ 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[175] [176] [177
+
+] (./thesis.aux)
 
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 6C61CEC479A0E589058B3FAF749BEE64;36915.
+(rerunfilecheck)             Checksum: B12919F493F3D7B58E6B55C0972EE5B1;38631.
  )
 (\end occurred inside a group at level 2)
 
@@ -3238,16 +3589,16 @@ Package rerunfilecheck Info: File `thesis.out' has not changed.
 ### semi simple group (level 1) entered at line 186 (\begingroup)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 27493 strings out of 480559
- 537704 string characters out of 5902452
- 815084 words of memory out of 5000000
- 43842 multiletter control sequences out of 15000+600000
+ 27592 strings out of 480539
+ 541142 string characters out of 5901807
+ 818330 words of memory out of 5000000
+ 43913 multiletter control sequences out of 15000+600000
  462366 words of font info for 90 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 84i,16n,89p,2620b,2117s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/Users/lg14289/Library/TinyTeX/texmf-dist/fonts/enc/dvips/base
-/8r.enc}{/Users/lg14289/Library/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-mathsy
-.enc}{/Users/lg14289/Library/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-mathit.en
+ 84i,16n,89p,2676b,2113s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/Users/lg14289/Library/TinyTeX/texmf-dist/fonts/enc/dvips/lm/l
+m-mathsy.enc}{/Users/lg14289/Library/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-m
+athit.enc}{/Users/lg14289/Library/TinyTeX/texmf-dist/fonts/enc/dvips/base/8r.en
 c}</Users/lg14289/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi10.pfb><
 /Users/lg14289/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi12.pfb></Us
 ers/lg14289/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></Users/
@@ -3256,10 +3607,10 @@ lg14289/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></Users/lg1
 289/Library/TinyTeX/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></Users/lg14289
 /Library/TinyTeX/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></Users/lg14289/Li
 brary/TinyTeX/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on thesis.pdf (179 pages, 4236177 bytes).
+Output written on thesis.pdf (193 pages, 5471306 bytes).
 PDF statistics:
- 3169 PDF objects out of 3580 (max. 8388607)
- 2701 compressed objects within 28 object streams
- 699 named destinations out of 1000 (max. 500000)
- 1402 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 3305 PDF objects out of 3580 (max. 8388607)
+ 2815 compressed objects within 29 object streams
+ 742 named destinations out of 1000 (max. 500000)
+ 1414 words of extra memory for PDF output out of 10000 (max. 10000000)
 

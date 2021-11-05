@@ -1,6 +1,6 @@
 # Higher body mass index raises immature platelet count: evidence from Mendelian randomization analyses {#BMI-platelets-INTERVAL}
 
-This work is under review at Platelets journal and is on the preprint server MedRXiV [@Goudswaard2021.05.19.21257443]. I performed all analyses, created all figures and tables and wrote the manuscript. 
+This work is published in Platelets journal. I performed all analyses, created all figures and tables and wrote the manuscript. 
 
 ## Background
 

@@ -15,7 +15,7 @@ The aims of this chapter are:
 2) Explore the effect of increasing levels of MDC and TARC on disease using two sample Mendelian randomization.
 
 ## Methods
-The methods specific to this chapter are provided below. Materials, additional methods and statistical analysis are provided in Chapter \@ref(common-methods).
+The platelet function methods and details of statistical analyses used within this chapter are provided in the Methods chapter (Chapter \@ref(common-methods)).
 
 ### Two sample MR lookup using EpigrahDB
 Two sample MR uses summary statistics and allows for causal effects to be estimated where the exposure and outcome are measured in different populations. EpigraphDB is a tool which performs two sample MR to determine how the human proteome contributes to complex diseases [@Zheng2020]. Using protein quantitative trait loci (pQTLs) for MDC and TARC [@Sun2018] (N=3301) and GWAS summary statistics for disease outcomes (mainly from Neale lab: https://github.com/Nealelab/UK_Biobank_GWAS), it is possible to explore whether plasma levels of these chemokines contribute to disease. For MDC, a Wald ratio was used to estimate the causal effect and for TARC the inverse variance weighted (IVW) method was used.
@@ -28,7 +28,7 @@ To investigate the effect of MDC and TARC on agonist-induced platelet aggregatio
 
 
 (ref:scaption3a) The priming effect of the chemokines MDC and TARC on PAR1-AP induced platelet aggregation in washed platelets
-(ref:caption3a) Washed platelets at 2x10^8^/mL were preincubated with MDC or TARC (5 mins) before application of PAR1-AP-induced aggregation (5 mins). A) Raw aggregation trace comparing the effect of vehicle, 200 ng/mL MDC or 200 ng/mL TARC on PAR1-AP induced aggregation. B) Bar chart comparing the maximum aggregation reached when adding vehicle, MDC or TARC. C) Bar chart comparing the area under the curve of the aggregation trace in response to vehicle, MDC or TARC. Results analysed with a repeated measures one-way ANOVA with Dunnett’s multiple comparisons. N=7. Mean+SEM displayed.
+(ref:caption3a) Washed platelets at 2x10^8^/mL supplemented with PGE1 and apyrase were preincubated with MDC or TARC (5 mins) before application of PAR1-AP-induced aggregation (5 mins). A) Raw aggregation trace comparing the effect of vehicle, 200 ng/mL MDC or 200 ng/mL TARC on PAR1-AP induced aggregation. B) Bar chart comparing the maximum aggregation reached when adding vehicle, MDC or TARC. C) Bar chart comparing the area under the curve of the aggregation trace in response to vehicle, MDC or TARC. Results analysed with a repeated measures one-way ANOVA with Dunnett’s multiple comparisons. N=7. Mean+SEM displayed.
 ```{r MDC-TARC-agg, echo = FALSE, out.width="80%", fig.cap="(ref:caption3a)", fig.scap= "(ref:scaption3a)"}
 include_graphics(path = "figure/Chemokines/Layouts/MDC_TARC_aggregation_PAR1.pdf", dpi = NA)
 
@@ -39,7 +39,7 @@ include_graphics(path = "figure/Chemokines/Layouts/MDC_TARC_aggregation_PAR1.pdf
 Next, the priming effect of MDC and TARC was explored on platelet aggregation in PRP using plate aggregation. Plate aggregation allows exploration of more conditions than LTA, therefore full concetration-response curves can be constructed. MDC and TARC were not able to potentiate the aggregation induced by increasing concentrations of PAR1-AP (Figure \@ref(fig:MDC-TARC-agg-PRP)A). There was no difference in the logEC50 for comparing vehicle with MDC and TARC (Figure \@ref(fig:MDC-TARC-agg-PRP)B).   
 
 (ref:scaption10) The priming effect of the chemokines MDC and TARC on PAR1-AP induced platelet aggregation in PRP using plate aggregation
-(ref:caption10) PRP was preincubated with MDC or TARC (5 mins) before application of PAR1-AP-and aggregation induced by a plate shaker (5 mins). A) A concentration response curve of the effect of vehicle, 200 ng/mL MDC or 200 ng/mL TARC on PAR1-AP induced aggregation. N=7. B) A bar chart of the logEC50s of the PAR1-AP concentration response curve in the presence of vehicle, MDC or TARC. Results analysed using a repeated measures one-way ANOVA with Dunnett's multiple comparisons. N=7.
+(ref:caption10) PRP supplemented with apyrase was preincubated with MDC or TARC (5 mins) before application of PAR1-AP-and aggregation induced by a plate shaker (5 mins). A) A concentration response curve of the effect of vehicle, 200 ng/mL MDC or 200 ng/mL TARC on PAR1-AP induced aggregation. N=7. B) A bar chart of the logEC50s of the PAR1-AP concentration response curve in the presence of vehicle, MDC or TARC. Results analysed using a repeated measures one-way ANOVA with Dunnett's multiple comparisons. N=7.
 ```{r MDC-TARC-agg-PRP, echo = FALSE, fig.cap="(ref:caption10)", fig.scap= "(ref:scaption10)"}
 include_graphics(path = "figure/Chemokines/Layouts/MDC_TARC_PRP_plate_agg.pdf", dpi = NA)
 
@@ -51,7 +51,7 @@ When a platelet becomes activated by an agonist, the integrin α~IIbβ~3~ change
 
 
 (ref:scaption3) The priming effect of the chemokines MDC and TARC on PAR1-AP induced α~IIb~β~3~ activation and P-selectin expression
-(ref:caption3) Washed platelets at 2x10^7^/mL were preincubated with MDC or TARC (5 mins) before application of PAR1-AP (5 mins). Integrin α~IIb~β~3~ activation and P-selectin expression were measured using flow cytometry. A) The effect of vehicle, 200 ng/mL MDC or 200 ng/mL TARC on PAR1-AP induced α~IIb~β~3~ activation. B) The effect of vehicle, MDC or TARC on PAR1-AP induced P-selectin expression. LogEC50s compared using a one-way ANOVA with Dunnett's multiple comparisons in Table \@ref(tab:chemokines-integrin-pselectin) C) MDC and TARC alone increase integrin αIIbβ3 activation. Mean + SEM displayed. N=4.
+(ref:caption3) Washed platelets at 2x10^7^/mL supplemented with PGE1 and apyrase were preincubated with MDC or TARC (5 mins) before application of PAR1-AP (5 mins). Integrin α~IIb~β~3~ activation and P-selectin expression were measured using flow cytometry. A) The effect of vehicle, 200 ng/mL MDC or 200 ng/mL TARC on PAR1-AP induced α~IIb~β~3~ activation. B) The effect of vehicle, MDC or TARC on PAR1-AP induced P-selectin expression. LogEC50s compared using a one-way ANOVA with Dunnett's multiple comparisons in Table \@ref(tab:chemokines-integrin-pselectin) C) MDC and TARC alone increase integrin αIIbβ3 activation. Mean + SEM displayed. N=4.
 ```{r MDC-TARC-integrin-pselectin, echo = FALSE, out.width="85%", fig.cap="(ref:caption3)", fig.scap= "(ref:scaption3)"}
 include_graphics(path = "figure/Chemokines/Layouts/P-selectin_integrin_MDC_TARC.pdf", dpi = NA)
 
@@ -79,7 +79,7 @@ mytable %>% kable(caption = "Comparison of the effect of MDC and TARC on the log
 When a platelet is activated by strong agonists, such as dual stimiluation by CRP and thrombin, PS is transcolated from the inner platelet membrane to the outer, thereby facilitating coagulation [@Reddy2020]. MDC and TARC did not affect the overall percentage of annexin V positive platelets induced by CRP and thrombin (Figure \@ref(fig:MDC-TARC-PS-exposure)).
 
 (ref:scaption4) The effect of the chemokines MDC and TARC on PAR1-AP induced PS exposure
-(ref:caption4) A) Washed platelets at 2x10^7^/mL were preincubated with vehicle, 200ng/mL MDC or 200 ng/mL TARC (5 mins) before application of increasing concentrations of PAR1-AP (10 mins). PS exposure was measured using flow cytometry (N=4). B) Bar chart comparing the effect of vehicle, MDC or TARC on the logEC50s of PAR1-AP induced PS exposure. LogEC50s compared by a Friedman's test.
+(ref:caption4) A) Washed platelets at 2x10^7^/mL supplemented with indomethacin and apyrase were preincubated with vehicle, 200ng/mL MDC or 200 ng/mL TARC (5 mins) before application of increasing concentrations of PAR1-AP (10 mins). PS exposure was measured using flow cytometry (N=4). B) Bar chart comparing the effect of vehicle, MDC or TARC on the logEC50s of PAR1-AP induced PS exposure. LogEC50s compared by a Friedman's test.
 ```{r MDC-TARC-PS-exposure, echo = FALSE, fig.cap="(ref:caption4)", fig.scap= "(ref:scaption4)"}
 include_graphics(path = "figure/Chemokines/Layouts/MDC_TARC_PS_exposure_layout.pdf", dpi = NA)
 
@@ -90,7 +90,7 @@ include_graphics(path = "figure/Chemokines/Layouts/MDC_TARC_PS_exposure_layout.p
 MDC and TARC were applied to washed platelets to determine whether they exert effects on platelet aggregation in the absence of an agonist. MDC and TARC did not cause platelet aggregation, however they did cause an upward deflection on the aggregation trace (Figure \@ref(fig:MDC-TARC-wp-alone-aggregation)). This upward deflection is a reduction in light passing through the sample, indicating that the platelets are undergoing shape change.
 
 (ref:scaption8) The effect of the chemokines MDC and TARC alone on aggregation in washed platelets
-(ref:caption8) A-C) Washed platelets at 2x10^8^/mL were stimulated with vehicle, 200ng/mL MDC, 200 ng/mL TARC or 1 uM PAR1-AP (5 mins). Aggregation was measured using light transmittance aggregometry. Each graph is a representative trace from a separate donor
+(ref:caption8) A-C) Washed platelets at 2x10^8^/mL supplemented with PGE1 and apyrase were stimulated with vehicle, 200ng/mL MDC, 200 ng/mL TARC or 1 uM PAR1-AP (5 mins). Aggregation was measured using light transmittance aggregometry. Each graph is a representative trace from a separate donor
 ```{r MDC-TARC-wp-alone-aggregation, out.width="90%", echo = FALSE, fig.cap="(ref:caption8)", fig.scap= "(ref:scaption8)"}
 include_graphics(path = "figure/Chemokines/Layouts/MDC_TARC_alone_wp_aggregation.pdf", dpi = NA)
 
@@ -101,7 +101,7 @@ include_graphics(path = "figure/Chemokines/Layouts/MDC_TARC_alone_wp_aggregation
 Calcium mobilisation was measured by using a fluorescent dye, Fura-2, which binds to intracellular calcium. Increasing concentrations were added to washed platelets as a positive control, where increasing calcium mobilisation was observed (\@ref(fig:MDC-TARC-wp-calcium)A). MDC and TARC alone were also able to increase calcium mobilisation in a concentration-dependent manner (\@ref(fig:MDC-TARC-wp-calcium)B), however caused a much smaller calcium response than ADP. 
 
 (ref:scaption9) The effect of ADP and the chemokines MDC and TARC alone on calcium mobilisation in washed platelets.
-(ref:caption9) Washed platelets at 2x10^8^/mL loaded with Fura-2 were stimulated with increasing concentrations of A) ADP or B) 200ng/mL MDC or 200 ng/mL TARC. Area under curve represents the free calcium and is ratio of fluorescence at wavelengths 340:380 nm.
+(ref:caption9) Washed platelets at 2x10^8^/mL supplemented with indomethacin and apyrase were loaded with Fura-2. Platelets were stimulated with increasing concentrations of A) ADP or B) 200ng/mL MDC or 200 ng/mL TARC. Area under curve represents the free calcium and is ratio of fluorescence at wavelengths 340:380 nm.
 ```{r MDC-TARC-wp-calcium, echo = FALSE, out.width="90%", fig.cap="(ref:caption9)", fig.scap= "(ref:scaption9)"}
 include_graphics(path = "figure/Chemokines/Layouts/MDC_TARC_calcium_wp.pdf", dpi = NA)
 
@@ -128,7 +128,7 @@ include_graphics(path = "figure/Chemokines/Layouts/MDC_TARC_WB_VASP.pdf", dpi = 
 ```
 
 (ref:scaption5) The effect of the chemokines MDC and TARC on phospho-VASP levels
-(ref:caption5) A) Washed platelets at 1x10^8^/mL were preincubated with vehicle, 200ng/mL MDC, 200 ng/mL TARC or 10 uM ADP (5 mins) before application of increasing concentrations of PGE~1~ (5 mins). PS exposure was measured using flow cytometry (N=3). B) Bar chart of the logEC50s of each concentration response curve from A. LogEC50s were compared using a one-way ANOVA with Dunnett's multiple comparisons.
+(ref:caption5) A) Washed platelets at 1x10^8^/mL were supplemented with indomethacin and apyrase. Platelets were preincubated with vehicle, 200ng/mL MDC, 200 ng/mL TARC or 10 uM ADP (5 mins) before application of increasing concentrations of PGE~1~ (5 mins). PS exposure was measured using flow cytometry (N=3). B) Bar chart of the logEC50s of each concentration response curve from A. LogEC50s were compared using a one-way ANOVA with Dunnett's multiple comparisons.
 ```{r MDC-TARC-VASP-FACS, echo = FALSE, out.width="90%", fig.cap="(ref:caption5)", fig.scap= "(ref:scaption5)"}
 include_graphics(path = "figure/Chemokines/Layouts/MDC_TARC_VASP_FACS_logec50.pdf", dpi = NA)
 
@@ -142,7 +142,7 @@ The mechanism of MDC-induced platelet aggregation was explored using various inh
 The effects of these inhibitors on MDC-induced aggregation was then explored. MDC by itself was able to consistently cause over 60% aggregation in PRP. The CCR4 inhibitor AZD-2098 was able to reduce this aggregation, but only at 50 uM (\@ref(fig:MDC-PRP-agg-bar)C, Figures \@ref(fig:MDC-PRP-agg-trace)A, B). The G~q~ inhibitor YM-254890 was able to reduce the maximum aggregation induced by MDC (Figure \@ref(fig:MDC-PRP-agg-bar)C, Figure \@ref(fig:MDC-PRP-agg-trace)C), suggesting CCR4 couples to G~q~. Y27632 did not affect aggregation induced by MDC, suggesting that this aggregation is not dependent on G~12/13~ and ROCK (Figure \@ref(fig:MDC-PRP-agg-bar)D, \@ref(fig:MDC-PRP-agg-trace)D).
 
 (ref:scaption12) The effect of inhibitors on PAR1-AP and MDC induced aggregation in PRP.
-(ref:caption12) Platelet rich plasma (PRP) was incubated for 5 minutes with the antagonist indicated, followed by application of PAR1-AP or MDC. A) Effect of 10 uM AZD-2098 (CCR4 antagonist) on maximal aggregation induced by PAR1-AP B) Effect of 10 uM YM-254890 (G~q~ inhibitor) on maximal aggregation induced by PAR1-AP C) Effect of AZD-2098 and YM-254890 on aggregation induced by 200 ng/mL MDC D) Effect of the ROCK inhibitor Y27632 on aggregation induced by 200 ng/mL MDC Results are analysed with a paired two-tailed t-test or repeated measures one-way ANOVA with Dunnett's Multiple comparisons. N=3-5.
+(ref:caption12) Platelet rich plasma (PRP) supplemented with apyrase was incubated for 5 minutes with the antagonist indicated, followed by stimulation by PAR1-AP or MDC. A) Effect of 10 uM AZD-2098 (CCR4 antagonist) on maximal aggregation induced by PAR1-AP B) Effect of 10 uM YM-254890 (G~q~ inhibitor) on maximal aggregation induced by PAR1-AP C) Effect of AZD-2098 and YM-254890 on aggregation induced by 200 ng/mL MDC D) Effect of the ROCK inhibitor Y27632 on aggregation induced by 200 ng/mL MDC Results are analysed with a paired two-tailed t-test or repeated measures one-way ANOVA with Dunnett's Multiple comparisons. N=3-5.
 
 ```{r MDC-PRP-agg-bar, echo = FALSE, out.width="95%", fig.cap="(ref:caption12)", fig.scap= "(ref:scaption12)"}
 include_graphics(path = "figure/Chemokines/Layouts/PAR1_MDC_inhibitors_aggregation.pdf", dpi = NA)
@@ -151,7 +151,7 @@ include_graphics(path = "figure/Chemokines/Layouts/PAR1_MDC_inhibitors_aggregati
 
 
 (ref:scaption11) Aggregation traces of the effect of inhibitors on MDC induced platelet aggregation in PRP.
-(ref:caption11) Representative aggregation traces of platelet rich plasma (PRP) incubated with A) 10 uM CCR4 antagonist AZD-2098 B) 50 uM AZD-2098 C) 10 uM G~q~ inhibitor YM-254890 D) 10 uM ROCK inhibitor Y27632, followed by addition of 200 ng/mL MDC.
+(ref:caption11) Representative aggregation traces of platelet rich plasma (PRP) supplemented with apyprase, incubated with A) 10 uM CCR4 antagonist AZD-2098 B) 50 uM AZD-2098 C) 10 uM G~q~ inhibitor YM-254890 D) 10 uM ROCK inhibitor Y27632, followed by addition of 200 ng/mL MDC.
 
 ```{r MDC-PRP-agg-trace, echo = FALSE, out.width="95%", fig.cap="(ref:caption11)", fig.scap= "(ref:scaption11)"}
 include_graphics(path = "figure/Chemokines/Layouts/MDC_inhibitors_aggregation_traces.pdf", dpi = NA)
