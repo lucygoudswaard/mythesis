@@ -7,7 +7,12 @@ Obesity is associated with an increased risk of type II diabetes (T2D), cardiova
 Although MR helps to overcome issues inherent to observational studies such as confounding and reverse causation, MR has its own limitations. For example, it is possible that genetic variants used for the genetic risk score could affect protein levels through routes other than changes in BMI. This is known as horizonal pleiotropy [@Davies2018]. Triangulation can be used in efforts to further determine the BMI effects on the plasma proteome. Triangulation is defined as strengthening causal inference through the combination of study designs which each have separate sources of bias [@Lawlor2016]. Therefore, to complement the Mendelian randomization in the previous chapter, the Diabetes REmission Clinical Trial (DiRECT) can be utilised. The DiRECT trial consisted of a group of patients who had overweight/obesity and T2D who were either given guideline T2D care or an intervention to help with weight loss and T2D remission. This chapter therefore aimed to:
 
 1) Examine the effect of BMI change on the plasma proteome.
-2) Compare BMI-protein effects across MR and RCT study designs (Results from Chapter \@ref(BMI-protein-MR)).
+2) Compare BMI-protein effects across MR and RCT study designs (Results from Chapter \@ref(BMI-protein-MR) (Figure \@ref(fig:BMI-protein-graphic2))).
+
+```{r BMI-protein-graphic2, echo = FALSE , fig.scap="Schematic of the associations explored in chapter", fig.cap="Schematic of the associations explored: this chapter explores the effect of caloric restriction-induced weight loss on the plasma proteome", out.width="90%"}
+include_graphics(path = "figure/DiRECT/Thesis_graphic_overview_BMI_protein.png", dpi = NA)
+```
+
 
 ## Methods
 
@@ -45,7 +50,8 @@ include_graphics(path = "figure/DiRECT/DiRECT_analysis.png", dpi = NA)
 
 BMI change-protein change point estimates from the multiple linear regression analyses and two stage least squares analyses were compared using linear regression. In efforts to further elucidate which proteins are altered by adiposity, a comparison between the BMI-protein associations in INTERVAL (Chapter \@ref(BMI-protein-MR)) and the BMI change-protein change associations in the current analyses was also performed using a linear regression. There were 2803 unique proteins overlapping across the two cohorts. Estimates across the two cohorts were compared using linear regression. 
 
-Enrichment or two sample MR of proteins of interest? epigraph DB....
+### Disease class enrichment 
+Similarly to the previous chapters, proteins which had a BMI effect were taken forward into an enrichment analysis using DAVID Bioinformatics 6.8 [@Huang2009]. In total, 144 proteins were compared with all proteins detected (4601). Enrichment was explored by using the genetic association database (GAD). Enrichment was assessed by fold enrichment and by Bonferroni-corrected p-values. 
 
 ## Results
 
@@ -113,7 +119,7 @@ include_graphics(path = "figure/DiRECT/DiRECT_scatter_comparison.pdf", dpi = NA)
 Proteins which were associated with BMI change were compared across control and intervention groups at baseline. There was not strong evidence for any differences in baseline levels of proteins (p<5.8x10^-5^). 
 
 ### Comparison of BMI effects across DiRECT and INTERVAL
-BMI-protein estimates from this study were compared with effect estimates from INTERVAL (Chapter \@ref(BMI-protein-MR)). Both cohorts provided evidence for an effect of BMI on the plasma proteome. Figure \@ref(fig:DiRECT-INTERVAL) shows the BMI-protein estimates for the proteins which were included in both DiRECT and INTERVAL. There was consistent evidence across both studies that higher BMI leads to higher levels of various proteins including fumarylacetoacetase (FAAA), alcohol dehydrogenase 4 (ADH4), growth hormone receptor (GHR) and carboxypeptidase M (CBPM). Furthermore, higher BMI had a lowering effect on levels of sex hormone binding globulin (SHBG), as well as insulin-like growth factor binding protein 1/2 (IGFBP1/2). Although some of these estimates did not pass multiple testing in INTERVAL, the concordance in estimates in terms of effect size and direction of effect suggests that this is an issue of power.
+BMI-protein estimates from this study were compared with effect estimates from INTERVAL (Chapter \@ref(BMI-protein-MR)), where 2803 proteins were detected across both studies. Both cohorts, through use of different study designs, provided evidence for an effect of BMI on the plasma proteome. Figure \@ref(fig:DiRECT-INTERVAL) shows the BMI-protein estimates for the proteins which were included in both DiRECT and INTERVAL (R^2^=0.11, P=1.0x10^77^).  There was consistent evidence across both studies that higher BMI leads to higher levels of various proteins including fumarylacetoacetase (FAAA), alcohol dehydrogenase 4 (ADH4), growth hormone receptor (GHR) and carboxypeptidase M (CBPM). Furthermore, higher BMI had a lowering effect on levels of sex hormone binding globulin (SHBG), as well as insulin-like growth factor binding protein 1/2 (IGFBP1/2). Although some of these estimates did not pass multiple testing in INTERVAL, the concordance in estimates in terms of effect size and direction of effect suggests that this is an issue of power.
 
 \blandscape
 (ref:scaption-DiRECT-INTERVAL) Scatter plot comparing the two stage least squares estimate for the effect of BMI change on protein change in DiRECT with the Mendelian randomisation estimate for the effect of BMI on protein levels in INTERVAL
@@ -124,13 +130,35 @@ include_graphics(path = "figure/DiRECT/DiRECT_INTERVAL_comparison.pdf", dpi = NA
 ```
 \elandscape
 
-### Two sample MR for protein to disease
+### Disease enrichment analysis
+
+To explore disease class enrichment, DAVID Bionformatics 6.8 was used [@Huang2009]. As there was consistent evidence for a BMI effect on 144 proteins across both models in DiRECT, these were compared to the full 4601 protein panel. There was strongest evidence for enrichment in proteins involved in metabolic disease (1.4 fold enrichment, p=4.21x10^-3^), with evidence for enrichment of renal disease (1.8 fold enrichment, p=1.02x10^-2^). Cardiovascular disease had weak evidence for enrichment, but this association did not pass multiple testing correction.
+
+```{r DAVID-enrichment-DiRECT,  echo=FALSE}
+options(knitr.kable.NA = "")
+Term = c('Metabolic', 'Renal', 'Neurological', 'Psych', 'Pharmacogenomic', 'Cancer', 'Reproduction', 'Normal variation', 'Aging', 'Cardiovascular')
+Count = c(73,34,49,36,51,56,25,16,21,56)
+Percentage = c(53,24,35,26,37,40,18,12,15,40)
+List <- c(118,118,118,118,118,118,118,118,118,118 )
+Pophits <- c(1451,518,884,589,964,1093,381,209,324,1214)
+Poptotal <- c(3204, 3204,3204,3204,3204,3204,3204,3204,3204,3204)
+FE <- c(1.4,1.8,1.5,1.7,1.4,1.4,1.8,2.1,1.8,1.2)
+Pval <- c('2.34E-04','5.72E-04','9.61E-04','1.38E-03','2.11E-03','2.23E-03','4.49E-03','8.09E-03','1.21E-02','2.51E-02')
+Bonf_adj_P <- c('4.21E-03','1.02E-02','1.72E-02','2.45E-02','3.74E-02','3.94E-02','7.79E-02','1.36E-01','1.96E-01','3.68E-01')
+mytable = data.frame(cbind(Term, Count, Percentage, List, Pophits, Poptotal, FE, Pval, Bonf_adj_P))
+colnames(mytable) <- c('Term (Genetic Association Database disease class)',	'Count',	'%',	'List Total','	Population Hits',	'Population Total',	'Fold Enrichment',	'P Value',	'Bonferroni-adjusted P value' )
+mytable %>% kable(caption = "DiRECT protein enrichment results for disease class using DAVID bioinformatics 6.8", booktabs = TRUE) %>% 
+  kable_classic_2(full_width = F) %>%
+ kable_styling(full_width = TRUE) %>%
+  column_spec(1, width = "5cm")   %>%
+  landscape()
+```
 
 ## Discussion
 
-In this chapter, a clinical trial implementing caloric restriction-induced weight loss was utilised as a second line of evidence to assess the effect of BMI on the plasma proteome. This analysis provided evidence for a broad effect of weight loss on the plasma proteome, providing results the effect of calroic restriction on the most extensive set of proteins to date. Comparisons of protein effects across the different study designs (INTERVAL in Chapter \@ref(BMI-protein-MR)) points towards proteins of interest which may be involved in the development or progression of obesity-associated cardiometabolic disease. Proteins which are only altered in one study design could also provide useful biological information as to how the individual protein may relate to adiposity.
+In this chapter, a clinical trial implementing caloric restriction-induced weight loss was utilised as a second line of evidence to assess the effect of BMI on the plasma proteome. This analysis provided evidence for a broad effect of weight loss on the plasma proteome, providing results the effect of caloric restriction on the most extensive set of proteins to date. Comparisons of protein effects across the different study designs (INTERVAL in Chapter \@ref(BMI-protein-MR)) points towards proteins of interest which may be involved in the development or progression of obesity-associated cardiometabolic disease. Proteins which are only altered in one study design could also provide useful biological information as to how the individual protein may relate to adiposity.
 
-The current study identified 144 BMI-related protein changes that were consistent across both models. This includes a reduction in BMI reducing levels of apolipoprotein F and GHR, while increasing levels of SHBG and IGFBP1/2. Table \@ref(tab:weight-loss-protein) provides a summary of findings from the literature from previous studies which have explored the effect of caloric restriction on plasma proteins. As detailed in the table, previous studies have mainly used mass spectrometry. One study used SomaLogic [@Carayol2017], however this was the panel that only included 1129 proteins. The current study utilised over fourfold more proteins, therefore providing more in depth readouts of biological processes. Findings are in concordance with previous studies, with various proteins replicating [@Geyer2016; @Figarska2020; @OllerMoreno2018; @Piening2018; @Carayol2017; @Bruderer2019]. This suggests that these protein changes replicate across studies and across proteomic platforms and therefore robust associations. This study also provides some novel proteins associated with BMI change including SCAR5, chondroadherin (CHAD), fumarylacetoacetase (FAAA) and aminoacylase-1.
+The current study identified 144 BMI-related protein changes that were consistent across both models. This includes a reduction in BMI reducing levels of apolipoprotein F (ApoF) and GHR, while increasing levels of SHBG and IGFBP1/2. Table \@ref(tab:weight-loss-protein) provides a summary of findings from the literature from previous studies which have explored the effect of caloric restriction on plasma proteins. As detailed in the table, previous studies have mainly used mass spectrometry. One study used SomaLogic [@Carayol2017], however this panel only included 1129 proteins. The current study utilised over fourfold more proteins, therefore providing more in depth readouts of biological processes. Findings are in concordance with previous studies [@Geyer2016; @Figarska2020; @OllerMoreno2018; @Piening2018; @Carayol2017; @Bruderer2019]. These protein changes replicate across cohorts and proteomic platforms and are more likely to be robust associations. Proteins altered with caloric restriction have been implicated in disease: a SNP which increases levels of ApoF also increases the risk of myocardial infarction and coronary heart disease [Liu2021], therefore this apolipoprotein could mediate the increased risk of thrombotic events seen with a higher BMI.
 
 ```{r weight-loss-protein,  echo=FALSE}
 options(knitr.kable.NA = "")
@@ -168,44 +196,12 @@ column_spec(4, width = "7cm") %>%
   landscape()
 ```
 
-This study also detected some novel associations. A reduction in BMI led to an increase in plasma levels of SCAR5. This protein is involved in mediating commitment of mesenchymal stem cells into adipocytes and is highly expressed in white adipose tissue (WAT) [@Lee2017a]. A reduction in BMI also increased levels of chondroadherin (CHAD). Chondroadherin is a protein which is important in regulating exctracellular matrix organisation in cartilage and bones [@Hessle2013; @Iozzo2015]. CHAD knockout mouse shows decreased bone strength compared with wildtype [@Hessle2013]. This suggests that weight reduction may be beneficial for bone strength. The function of these proteins and relationship with adiposity needs to be further characterised.
+This study also provides some novel proteins associated with a reduction in BMI including SCAR5, chondroadherin (CHAD), fumarylacetoacetase (FAAA) and  aminoacylase-1. A reduction in BMI led to an increase in plasma levels of SCAR5. This protein is involved in mediating commitment of mesenchymal stem cells into adipocytes and is highly expressed in white adipose tissue (WAT) [@Lee2017a]. A reduction in BMI also increased levels of chondroadherin (CHAD). Chondroadherin is a protein which is important in regulating exctracellular matrix organisation in cartilage and bones [@Hessle2013; @Iozzo2015]. CHAD knockout mice show decreased bone strength compared with wildtype [@Hessle2013]. This suggests that weight reduction may be beneficial for bone strength. The function of these proteins and relationship with adiposity needs to be further characterised.
 
-The comparison of results from the previous chapter (Chapter \@ref(BMI-protein-MR)), which used Mendelian randomization and observational associations to assess the effect of average higher BMI across a population on avergae protein levels, with results from a randomised control trial in the current chapter provides two separate lines of evidence to suggest a causal role of BMI in levels of various proteins. The analysis in INTERVAL suggested that proteins most altered by BMI were enriched for diseases such as cardiovascular disease and metabolic disease. As the estimates for the effect of BMI on proteins were consistent across both DiRECT and INTERVAL, this suggests that weight loss is able to reverse the protein changes observed with higher BMI, thereby potentially reducing disease risk. The enrichment results comparing the 144 proteins, which were altered with BMI change, to the full 4601 proteins tested confirmed this \@ref(tab:DAVID-enrichment-DiRECT). There was strongest evidence for enrichment of proteins involved in metabolic disease (1.4 fold enrichment, Bonferroni-adjusted P value 4.21x10^-3^). 
+The comparison of results from the previous chapter (Chapter \@ref(BMI-protein-MR)), which used Mendelian randomization and observational associations to assess the effect of average higher BMI across a population on average protein levels, with results from a randomised control trial in the current chapter provides two separate lines of evidence to suggest a causal role of BMI in levels of various proteins. The analysis in INTERVAL suggested that proteins most altered by BMI were enriched for diseases such as cardiovascular disease and metabolic disease. As the estimates for the effect of BMI on proteins were consistent across both DiRECT and INTERVAL, this suggests that weight loss is able to reverse the protein changes observed with higher BMI, thereby potentially reducing disease risk. The enrichment results comparing the 144 proteins which were altered with BMI change to the full 4601 proteins tested confirmed this \@ref(tab:DAVID-enrichment-DiRECT) as there was strongest evidence for enrichment of proteins involved in metabolic disease and renal disease.
 
-Stringdb - platelet function enrichment?
+Divergence in estimates across study designs may also provide some insight into the biology due to the nature of each study design. In general, the MR study design provides information on the effect on the proteome that a sustained high BMI has over the life course. In contrast, the estimates in DiRECT are the effect that a relatively short-term weight loss intervention (1 year) has on the proteome. A protein may be altered in the MR study, but not after a weight loss intervention because weight loss may not have been sustained long enough to induce changes at the proteome level. A protein may also not have evidence for a causal relationship in the MR but be altered in DiRECT. This could be because the protein is a signal of starvation or other changes that happen with caloric restriction. 
 
-```{r DAVID-enrichment-DiRECT,  echo=FALSE}
-options(knitr.kable.NA = "")
-Term = c('Metabolic', 'Renal', 'Neurological', 'Psych', 'Pharmacogenomic', 'Cancer', 'Reproduction', 'Normal variation', 'Aging', 'Cardiovascular')
-Count = c(73,34,49,36,51,56,25,16,21,56)
-Percentage = c(53,24,35,26,37,40,18,12,15,40)
-List <- c(118,118,118,118,118,118,118,118,118,118 )
-Pophits <- c(1451,518,884,589,964,1093,381,209,324,1214)
-Poptotal <- c(3204, 3204,3204,3204,3204,3204,3204,3204,3204,3204)
-FE <- c(1.4,1.8,1.5,1.7,1.4,1.4,1.8,2.1,1.8,1.2)
-Pval <- c('2.34E-04','5.72E-04','9.61E-04','1.38E-03','2.11E-03','2.23E-03','4.49E-03','8.09E-03','1.21E-02','2.51E-02')
-Bonf_adj_P <- c('4.21E-03','1.02E-02','1.72E-02','2.45E-02','3.74E-02','3.94E-02','7.79E-02','1.36E-01','1.96E-01','3.68E-01')
-mytable = data.frame(cbind(Term, Count, Percentage, List, Pophits, Poptotal, FE, Pval, Bonf_adj_P))
-colnames(mytable) <- c('Term (Genetic Association Database disease class)',	'Count',	'%',	'List Total','	Population Hits',	'Population Total',	'Fold Enrichment',	'P Value',	'Bonferroni-adjusted P value' )
-mytable %>% kable(caption = "DiRECT protein enrichment results for disease class using DAVID bioinformatics 6.8", booktabs = TRUE) %>% 
-  kable_classic_2(full_width = F) %>%
- kable_styling(full_width = TRUE) %>%
-  column_spec(1, width = "5cm")   %>%
-  landscape()
-```
+Limitations from the current analysis therefore include possible protein effects that are not caused by a change in BMI. Despite the use of the treatment group as an instrument in a two stage least squares analysis, the treatment group was also associated with an alteration in other factors: those who were allocated TDR also were taken off any T2D medication and were more likely to remiss their diabetes. It is possible that the analysis is therefore picking up protein effects that are caused by a change in medication or diabetes remission, rather than as a result in loss of fat. Participants would have also lost muscle mass throughout the intervention [@Santanasto2011], therefore we cannot be certain that effects are attributable to loss of fat. Despite this, there is evidence that the majority of weight lost is fat mass [@Backx2016]. Thirdly, BMI decreased by an average of 0.4kg/m^2^ in the control group and by 3.6 kg/m^2^. As participants started at a mean BMI of 34-35 kg/m^2^, most participants will still have obesity even after the intervention. This may limit protein effects observed, as a certain BMI may need to be reached to see an alteration in protein levels (i.e. the relationship may not be linear).
 
-Divergence in estimates across study designs also provides some insight into the biology due to the nature of each study design. In general, the MR study design provides information on the effect that high BMI has over the lifecourse. In contrast, the estimates in DiRECT are the effect of a relatively short-term weight loss (1 year) has on the proteome. A protein may be altered in the MR study, but not after a weight loss intervention becase xx. A protein may also not have evidence for a causal relationship in the MR but be altered in DiRECT. This could be because the protein is a signal of starvation or other changes that happen with caloric restriction.
-
-Limitations from the current analysis include possible protein effects that are not caused by a change in BMI. Despite the use of the treatment group as an instrument in a two stage least squares analysis, the treatment group was also associated with an alteration in other factors as those who were allocated TDR also were taken off any T2D medication and were more likely to remiss their diabetes. It is possible that the analysis is therefore picking up protein effects that are caused by a change in medication or diabetes remission.
-
-Overall, this study provided evidence that weight loss leads to an alteration in various proteins. There was consistency in the direction of effects between the Mendelian randomization for the effect of higher BMI on protein levels and the estimates for the effect of BMI change on protein change in this randomized control trial. 
-
-
-
-- Apolipoprotein F (APOF) two smaple MR causal effect on myocardial infarction and coronary heart disease by Wald ratio.
-- SHBG MR - increased shbg leads to reduction in cardioembolic stroke, platelet count.
-- RET - cancers/Alzheimer's.
-- FABP1 - increased levels increases MPV.
-- Prolylcarboxypeptidase CHD and MI.
-- Fumarylacetoacetase (FAAA/FAH) increased protein reduces risk of haemorrhage.
-NB not possible to test for pleiotropy - other diseases associated with these proteins too.
+Overall, this study provided evidence that weight loss leads to an alteration in various proteins. Such proteins were enriched for renal disease and metabolic disease. There was consistency in the direction of effects between the Mendelian randomization for the effect of higher BMI on protein levels and the estimates for the effect of BMI change on protein change in this randomized control trial. 

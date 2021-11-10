@@ -31,7 +31,17 @@
 \newcommand{\elandscape}{\end{landscape}}
 
 %% Paramaters for global document
-\hypersetup{colorlinks = false}
+
+\hypersetup{%
+  colorlinks=true,% hyperlinks will be coloured
+  linkcolor=red,
+  anchorcolor=black,
+  citecolor=green,
+  filecolor=cyan,
+  menucolor=red,
+  runcolor=cyan,
+  urlcolor=magenta
+}
 \renewcommand{\UrlBreaks}{\do\/\do\a\do\b\do\c\do\d\do\e\do\f\do\g\do\h\do\i\do\j\do\k\do\l\do\m\do\n\do\o\do\p\do\q\do\r\do\s\do\t\do\u\do\v\do\w\do\x\do\y\do\z\do\A\do\B\do\C\do\D\do\E\do\F\do\G\do\H\do\I\do\J\do\K\do\L\do\M\do\N\do\O\do\P\do\Q\do\R\do\S\do\T\do\U\do\V\do\W\do\X\do\Y\do\Z\do\0\do\1\do\2\do\3\do\4\do\5\do\6\do\7\do\8\do\9\do\%\do\.\do\-}
 \renewcommand{\chapterautorefname}{Chapter}
 \usepackage{times} % other fonts are available like times, bookman, charter, palatino
@@ -589,8 +599,10 @@ As these platelet characteristics provide potential information about platelet h
 \begin{figure}
 \includegraphics{figure/BMI_platelets/obsvMRexample} \caption[Schematic of linear regression and Mendelian randomization analyses]{Schematic of linear regression and Mendelian randomization analyses. Linear regression assesses the association between BMI (exposure) and platelet traits (outcome), with adjustment for potential confounders. Under the assumptions of Mendelian randomization (MR), the genetic risk score (GRS) for body mass index (BMI) does not associate with confounding variables, and if there is a causal association, the GRS should only associate with platelet outcomes through its association with body mass index.}\label{fig:Linear-reg-MR}
 \end{figure}
-In this study, we used data from the INTERVAL prospective cohort (N=33388) to explore the association between BMI and platelet traits. We combined observational and Mendelian randomization (MR) approaches to test the hypothesis that higher BMI leads to changes in platelet characteristics. Although observational studies can demonstrate associations between BMI and platelet characteristics, they cannot determine direct causality. To address the latter, we therefore employed MR, using a genetic risk score derived from single nucleotide polymorphisms (SNPs) associated with higher BMI (Figure \ref{fig:Linear-reg-MR}). This allowed estimation of the causal effect of BMI on platelet traits, reducing the effect of confounding factors that are inherent to observational studies. To assess functional implications of BMI-platelet associations, a follow-up analysis was designed to explore the associations between platelet characteristics and whole blood aggregation in a cohort of cardiac surgery patients.
-
+In this study, we used data from the INTERVAL prospective cohort (N=33388) to explore the association between BMI and platelet traits. Figure \ref{fig:BMI-platelet-overview} shows the associations of the overall thesis hypotheses that are addressed in the chapter. We combined observational and Mendelian randomization (MR) approaches to test the hypothesis that higher BMI leads to changes in platelet characteristics. Although observational studies can demonstrate associations between BMI and platelet characteristics, they cannot determine direct causality. To address the latter, we therefore employed MR, using a genetic risk score derived from single nucleotide polymorphisms (SNPs) associated with higher BMI (Figure \ref{fig:Linear-reg-MR}). This allowed estimation of the causal effect of BMI on platelet traits, reducing the effect of confounding factors that are inherent to observational studies. To assess functional implications of BMI-platelet associations, a follow-up analysis was designed to explore the associations between platelet characteristics and whole blood aggregation in a cohort of cardiac surgery patients.
+\begin{figure}
+\includegraphics[width=0.9\linewidth]{figure/BMI_platelets/Thesis_graphic_overview_BMI_platelets} \caption[Schematic of the associations addressed in the current chapter]{Schematic of the associations explored in the current chapter: the relationship between body mass index and platelet traits}\label{fig:BMI-platelet-overview}
+\end{figure}
 \hypertarget{methods}{%
 \section{Methods}\label{methods}}
 
@@ -638,6 +650,8 @@ Analyses were performed using R version 3.4.2.\textsuperscript{83} To visualize 
 
 To understand properties of the GRS for BMI, the association between the GRS with both BMI and covariables were explored. The MR analysis was performed by using a two-stage least squares (2SLS) regression model (using systemfit() function from ``systemfit'' package).\textsuperscript{84} The MR causal estimates reflect the change in platelet traits (in SD units) per SD increase in BMI. A Wu-Hausman test was performed to test for endogeneity between observational and MR estimates. Exact beta coefficients, confidence intervals and P values are provided throughout and guide strength of association.
 
+Where there was consistent observational and MR evidence for a BMI effect on platelet traits with potential clinical relevance, additional sensitivity analyses were carried out. We explored whether there were different magnitudes of associations across NHS BMI categories indicative of a non-linear relationship. Specifically, participants were stratified by BMI and the association between BMI and IPC estimated within BMI categories.
+
 \hypertarget{follow-up-analysis-to-explore-the-association-between-immature-platelets-and-aggregation}{%
 \subsection{Follow-up analysis to explore the association between immature platelets and aggregation}\label{follow-up-analysis-to-explore-the-association-between-immature-platelets-and-aggregation}}
 
@@ -651,7 +665,7 @@ Age and sex were reported at baseline. Height and weight were obtained from medi
 \hypertarget{coptic-statistical-analysis}{%
 \subsection{COPTIC statistical analysis}\label{coptic-statistical-analysis}}
 
-The COPTIC dataset in the current analysis included 2,518 participants (23 out of 2,541 participants did not consent for future research). For the current study, only those who were not on antiplatelet therapies (prasugrel, clopidogrel or aspirin) were included (N=655). Extreme outliers that were ± 5 SDs from the mean were removed, and exposures and outcomes were rank normal transformed. Linear regression was used to explore the association between immature platelet count and aggregation, adjusting for age, sex and smoking status.
+The COPTIC dataset in the current analysis included 2,518 participants (23 out of 2,541 participants did not consent for future research). For the current study, only those who were not on antiplatelet therapies (prasugrel, clopidogrel or aspirin) were included (N=655). Extreme outliers that were ± 5 SDs from the mean were removed, and exposures and outcomes were rank normal transformed. . Linear regression was used to generate estimates of the association between BMI and platelet parameters within this cohort. Linear regression was used to explore the association between immature platelet count and aggregation, adjusting for age, sex and smoking status.
 
 \hypertarget{results}{%
 \section{Results}\label{results}}
@@ -933,6 +947,31 @@ High fluorescence immature platelet fraction & H-IPF & 29708 & 0.015 & 0.028 & 6
 \begin{figure}
 \includegraphics[width=0.9\linewidth]{figure/BMI_platelets/BMI_platelet_forestplot} \caption[Forest plot of the Mendelian randomization and unadjusted observational estimates for the effect of BMI on platelet traits.]{Forest plot of the Mendelian randomization (MR) and unadjusted observational estimates for the effect of BMI on platelet traits. Estimate points are filled where P < 0.05. SFL = side fluorescence, IPC = immature platelet count, H-IPF = high fluorescence immature platelet function, FSC = forward scatter, P-LCR = platelet large cell ratio, PDW = platelet distribution width, MPV = mean platelet volume, PCT = plateletcrit, PLT (I) = platelet count (impedance channel), PLT (F) = platelet count (PLT-F channel), SSC = side scatter.}\label{fig:BMI-platelet-forest}
 \end{figure}
+\hypertarget{stratifying-bmi-and-ipc-associations-by-bmi-group}{%
+\subsection{Stratifying BMI and IPC associations by BMI group}\label{stratifying-bmi-and-ipc-associations-by-bmi-group}}
+
+We explored whether associations between BMI and IPC varied across NHS BMI groups (underweight \textless18.5 kg/m\textsuperscript{2}, healthy weight 18.5-24.9kg/m\textsuperscript{2}, overweight 25-29.9 kg/m\textsuperscript{2}, obesity 30+ kg/m\textsuperscript{2}). IPC had consistent BMI effects across observational and MR analyses. Stratifying by BMI category suggested that the strongest association between BMI and IPC was the overweight category (Table \ref{tab:BMI-platelets-stratified}).
+\begin{landscape}\begin{table}
+
+\caption[Associations between BMI and immature platelet count (IPC) stratified by NHS BMI category]{\label{tab:BMI-platelets-stratified}Associations between BMI and immature platelet count (IPC) stratified by NHS BMI category. Βeta coefficient is the change in IPC (SDs) per SD increase in BMI}
+\centering
+\begin{tabu} to \linewidth {>{\raggedright\arraybackslash}p{2.5cm}>{\raggedright\arraybackslash}p{2.5cm}>{\raggedright}X>{\raggedright}X>{\raggedright}X>{\raggedright}X>{\raggedright}X>{\raggedright}X>{\raggedright}X>{\raggedright}X>{\raggedright}X}
+\toprule
+Adjustment & Group & BMI range & N & Βeta coefficient & SE & P value & R2 & 95\% CI & Lower 95\% CI & Upper 95\% CI\\
+\midrule
+Age and sex & Underweight & <18.5 & 169 & 0.202 & 0.834 & 0.461 & -0.009 & 1.635 & -1.434 & 1.837\\
+Age and sex & Healthy & 18.5-24.9 & 11889 & 0.039 & 0.018 & 0.026 & 0.003 & 0.035 & 0.005 & 0.074\\
+Age and sex & Overweight & 25-29.9 & 10189 & 0.092 & 0.034 & 0.006 & 0.006 & 0.066 & 0.027 & 0.158\\
+Age and sex & Obese & 30+ & 5008 & 0.032 & 0.032 & 0.315 & 0.004 & 0.063 & -0.031 & 0.096\\
+Fully adjusted & Underweight & <18.5 & 149 & 0.269 & 0.296 & 0.366 & 0.033 & 0.58 & -0.311 & 0.849\\
+\addlinespace
+Fully adjusted & Healthy & 18.5-24.9 & 10500 & 0.033 & 0.019 & 0.079 & 0.004 & 0.037 & -0.004 & 0.069\\
+Fully adjusted & Overweight & 25-29.9 & 8918 & 0.07 & 0.036 & 0.052 & 0.006 & 0.07 & 0 & 0.14\\
+Fully adjusted & Obese & 30+ & 4342 & 0.018 & 0.035 & 0.614 & 0.005 & 0.069 & -0.051 & 0.086\\
+\bottomrule
+\end{tabu}
+\end{table}
+\end{landscape}
 \hypertarget{follow-up-associations-between-ipc-and-whole-blood-aggregation-in-coptic}{%
 \subsection{Follow-up associations between IPC and whole blood aggregation in COPTIC}\label{follow-up-associations-between-ipc-and-whole-blood-aggregation-in-coptic}}
 
@@ -941,7 +980,7 @@ Given evidence for a causal effect of BMI on IPC in the MR analysis, we sought t
 \hypertarget{coptic-participant-characteristics}{%
 \subsection{COPTIC participant characteristics}\label{coptic-participant-characteristics}}
 
-The total number of COPTIC participants was 2,541. Of these, 2,518 participants gave consent for future research (Table \ref{tab:COPTIC-participants-platelets}). Participants included in the analysis were those not on antiplatelet therapy (N=655). The majority of participants were male (61.8\%), with a mean age of 63.9 years (SD of 16.1). Similar to the INTERVAL cohort, the mean BMI was in the overweight category (27.2 kg/m\textsuperscript{2} with a SD of 4.9 kg/m\textsuperscript{2}). The majority of participants were either never smokers or ex-smokers for more than 5 years (89.2 \%).
+The total number of COPTIC participants was 2,541. Of these, 2,518 participants gave consent for future research (Table \ref{tab:COPTIC-participants-platelets}). Participants included in the analysis were those not on antiplatelet therapy (N=655). The majority of participants were male (61.8\%), with a mean age of 63.9 years (SD of 16.1). Similar to the INTERVAL cohort, the mean BMI was in the overweight category (27.2 kg/m\textsuperscript{2} with a SD of 4.9 kg/m\textsuperscript{2}). The majority of participants were either never smokers or ex-smokers for more than 5 years (89.2 \%). The effect estimate for the effect of BMI on IPC was 0.06 (95\% CI -0.01 to 0.14, P=0.09) and therefore consistent with that estimated in the INTERVAL cohort (Table \ref{tab:BMI-platelets-COPTIC}).
 \begin{table}
 
 \caption{\label{tab:COPTIC-participants-platelets}Characteristics of COPTIC study participants}
@@ -981,6 +1020,22 @@ Immature platelet count (x 109/L) & 6.3 (3.4) & 2383 & 6.2 (3.3) & 629\\
 \bottomrule
 \end{tabu}
 \end{table}
+\begin{landscape}\begin{table}
+
+\caption[Association between BMI and platelet parameters in COPTIC (adjusted for age, sex, smoking)]{\label{tab:BMI-platelets-COPTIC}Association between BMI and platelet parameters in COPTIC (adjusted for age, sex, smoking). Βeta coefficient is the change in platelet measure ins SDs per SD higher BMI.}
+\centering
+\begin{tabu} to \linewidth {>{\raggedright}X>{\raggedright}X>{\raggedright}X>{\raggedright}X>{\raggedright}X>{\raggedright}X>{\raggedright}X>{\raggedright}X>{\raggedright}X}
+\toprule
+Outcome & N & Βeta coefficient & SE & P value & R2 & 95\% CI & Lower 95\% CI & Upper 95\% CI\\
+\midrule
+MPV & 627 & 0.08 & 0.04 & 0.04 & 0.003 & 0.07 & 0.00 & 0.15\\
+IPC & 622 & 0.06 & 0.04 & 0.09 & 0.013 & 0.07 & -0.01 & 0.14\\
+PLT & 630 & 0.04 & 0.04 & 0.32 & 0.071 & 0.07 & -0.03 & 0.1\\
+IPF & 621 & 0.03 & 0.04 & 0.36 & 0.014 & 0.07 & -0.04 & 0.11\\
+\bottomrule
+\end{tabu}
+\end{table}
+\end{landscape}
 \hypertarget{association-between-ipc-and-aggregation-in-coptic-cohort}{%
 \subsection{Association between IPC and aggregation in COPTIC cohort}\label{association-between-ipc-and-aggregation-in-coptic-cohort}}
 
@@ -996,7 +1051,7 @@ To determine the potential functional effects of variation in IPC, the COPTIC co
 
 In this study we used data from 33,388 healthy blood donors to study the effect of BMI on platelet phenotypes including measures of count, size and maturity. The combination of observational and MR estimates suggested a positive causal effect of BMI on SFL and IPC. The observational analysis revealed a strong association between BMI and both PLT and PCT, however the MR estimates did not provide evidence to support this association as causal. Observational analysis using data from a cardiac surgery cohort provided evidence for a positive association between IPC and aggregation induced by adrenaline, TRAP6 and ADP.
 
-The observational and MR analyses in the current study provide evidence for a positive association between BMI and both IPC and SFL. As IPC is derived using SFL, the measure of mRNA content, these measures are highly correlated. Whilst few studies have explored the direct association between BMI and immature platelet measures, there is some evidence for increased immature platelets in subjects with metabolic syndrome (MS) and subjects with type II diabetes compared with control subjects.\textsuperscript{80,81} In these studies, participants with MS or type II diabetes also had a higher BMI, which could be a possible cause of this increase in immature platelets. Indeed, evidence from our analysis suggests that BMI, independent of metabolic syndrome or type II diabetes, may causally influence IPC and SFL.
+The observational and MR analyses in the current study provide evidence for a positive association between BMI and both IPC and SFL. Stratifying by NHS BMI category suggested that this estimate is strongest in the overweight category. As IPC is derived using SFL, the measure of mRNA content, these measures are highly correlated. Whilst few studies have explored the direct association between BMI and immature platelet measures, there is some evidence for increased immature platelets in subjects with metabolic syndrome (MS) and subjects with type II diabetes compared with control subjects.\textsuperscript{80,81} In these studies, participants with MS or type II diabetes also had a higher BMI, which could be a possible cause of this increase in immature platelets. Indeed, evidence from our analysis suggests that BMI, independent of metabolic syndrome or type II diabetes, may causally influence IPC and SFL.
 
 As IPC is an indirect measure of platelet production,\textsuperscript{77} these results suggest that an increased BMI may lead to an increased production of platelets. It has been reported that immature platelets have increased thrombotic potential\textsuperscript{77,86} and may be predictive of cardiovascular events,\textsuperscript{35,49} suggesting that an increase in the number of immature platelets may be of functional and clinical relevance. A follow-up analysis confirmed that higher IPC was associated with greater platelet aggregation independent of absolute platelet count within a cardiac surgery cohort. Positive associations were found between IPC and aggregation induced by adrenaline, TRAP-6 and ADP, suggesting general platelet hyperactivity with more immature platelets. A previous study in a coronary artery disease cohort also found a positive correlation between IPC and aggregation induced by arachidonic acid, collagen and ADP.\textsuperscript{86} These findings suggest that IPC can be used as a proxy for platelet hyperactivity within a cohort with a history of cardiovascular disease. Measures of immature platelets are currently not considered in the clinic when prescribing antiplatelet therapy, however if a higher immature platelet count is demonstrative of newly produced, hyperactive platelets then this could be important in guiding dosage regimes to ensure sufficient platelet inhibition.\textsuperscript{78} Observational studies have also found that patients with COVID-19 have elevated immature platelet counts and fraction, which could partly explain high rates COVID-19 induced thrombosis.\textsuperscript{88} Despite the association between BMI and IPC, there was less evidence for an effect of BMI on IPF. This lack of association may be because IPF is the proportion of immature platelets, therefore if someone had a higher number of immature platelets, but also a higher number of platelets overall (for example due to increased platelet lifespan), there would be no increase in the immature platelet fraction.
 
@@ -1006,7 +1061,7 @@ Both observational and MR estimates suggested that BMI is not associated with me
 
 Although this study suggests potential effects of BMI on platelet traits such as SFL and IPC, it does not provide mechanistic insight into how BMI exerts these effects. Previous studies have suggested that inflammation driven by adiposity can stimulate megakaryocyte proliferation, thereby increasing platelet numbers.\textsuperscript{44} There is evidence that inflammatory mediators such as interleukin-6 (IL-6) could be one such factor.\textsuperscript{89} Further study would be warranted to explore these mechanisms, as well as replicate the current findings, such as through independent population or clinical studies.
 
-There are a few limitations to the study that should be recognised. Firstly, BMI was derived from self-reported height and weight. Although there is potential for this to bias observations, previous studies have found that self-reported BMI and BMI measured in the clinic are strongly associated.\textsuperscript{90} The GRS also associates with BMI to the extent expected. Secondly, there may be other confounders which were not recorded within INTERVAL and therefore could not be accounted for in our models, such as, socio-economic position, which may affect both BMI and risk of thrombosis. Therefore, residual confounding of observational estimates cannot be ruled out. With respect to the observational analysis conducted in COPTIC, the sample size is modest, which may limit power to detect associations. Furthermore, this cohort required cardiac surgery and therefore it is possible that associations found may not be generalizable to the wider population, as participants also displayed greater aggregatory responses than the reference ranges.\textsuperscript{91} However, these findings do indicate that immature platelets may be a biomarker of platelet hyperactivity in patients with a history of cardiovascular disease. It is important to note that the anticoagulant used (EDTA) has been reported to affect platelet parameters, such as increasing MPV and decreasing PLT.\textsuperscript{92} Despite this, EDTA is the standard anticoagulant used for full blood counts in the NHS. The Sysmex analyzers used in INTERVAL and COPTIC were different models, however, it has been shown that there is strong association between platelet measures between the XE and newer XN analyzers.\textsuperscript{93}
+There are a few limitations to the study that should be recognised. Firstly, BMI was derived from self-reported height and weight. Although there is potential for this to bias observations, previous studies have found that self-reported BMI and BMI measured in the clinic are strongly associated.\textsuperscript{90} The GRS also associates with BMI to the extent expected. Secondly, there may be other confounders which were not recorded within INTERVAL and therefore could not be accounted for in our models, such as, socio-economic position, which may affect both BMI and risk of thrombosis. Therefore, residual confounding of observational estimates cannot be ruled out. Whilst the INTERVAL study provided relatively precise estimates of effect overall, larger sample sizes within each BMI category would be required to further investigate potential nonlinearity in the relationship between BMI and IPC. With respect to the observational analysis conducted in COPTIC, the sample size is modest, which may limit power to detect associations. Furthermore, this cohort required cardiac surgery and therefore it is possible that associations found may not be generalizable to the wider population, as participants also displayed greater aggregatory responses than the reference ranges.\textsuperscript{91} However, these findings do indicate that immature platelets may be a biomarker of platelet hyperactivity in patients with a history of cardiovascular disease. It is important to note that the anticoagulant used (EDTA) has been reported to affect platelet parameters, such as increasing MPV and decreasing PLT.\textsuperscript{92} Despite this, EDTA is the standard anticoagulant used for full blood counts in the NHS. The Sysmex analyzers used in INTERVAL and COPTIC were different models, however, it has been shown that there is strong association between platelet measures between the XE and newer XN analyzers.\textsuperscript{93}
 
 Altogether, we show observational and MR evidence that an increased BMI is associated with an increase in number of immature platelets. Observational evidence indicates that higher immature platelet count is associated with enhanced aggregation in a cardiac surgery cohort. Together, these results indicate that higher BMI may enhance platelet function and thrombosis by increasing platelet production and immature platelet count.
 
@@ -1033,8 +1088,11 @@ Therefore, the aims of this chapter were to:
 \item
   Optimise laboratory techniques to assess platelet function in a clinical setting.
 \item
-  Determine whether higher BMI is associated with: an increase in immature platelet count, an increase in platelet function and an alteration in platelet signalling by comparing platelets from bariatric patients (BMI \textgreater40kg/m\textsuperscript{2}) to healthy controls (BMI 18-25kg/m\textsuperscript{2}).
+  Determine whether higher BMI is associated with: an increase in immature platelet count, an increase in platelet function and an alteration in platelet signalling by comparing platelets from bariatric patients (BMI \textgreater40kg/m\textsuperscript{2}) to healthy controls (BMI 18-25kg/m\textsuperscript{2}) (Figure \ref{fig:BMI-platelet-overview2}).
 \end{enumerate}
+\begin{figure}
+\includegraphics[width=0.9\linewidth]{figure/Bariatric_study/Thesis_graphic_overview_BMI_platelets} \caption[Schematic of the associations explored in the current chapter]{Schematic of the associations explored: this chapter explores the relationship between body mass index and platelet function}\label{fig:BMI-platelet-overview2}
+\end{figure}
 \hypertarget{methods-1}{%
 \section{Methods}\label{methods-1}}
 
@@ -1160,7 +1218,7 @@ This study did not detect differences in platelet characteristics such as IPC wh
 The principal component analysis suggested that PC4 was able to separate the bariatric and control groups. Although PC4 was not the main source of variance, even with a small N number, this provided evidence that the group (bariatric/control) could explain variation in proteins. Therefore, some protein signatures may be due to the difference in BMI, however it could also be due to other factors which differed across groups such as previous COVID-19 infection or T2D diagnosis. Comparing the proteins which were altered with previous studies also suggests that the current study is likely capturing platelet protein signatures of obesity. Table \ref{tab:proteome-lit} shows the results that have replicated in the current study when comparing to three previous studies that have looked at the platelet proteome,\textsuperscript{73} platelet microvesicle proteome\textsuperscript{96} and platelet transcriptome in relation to obesity.\textsuperscript{97} This points towards platelet proteins which may be altered with obesity such as actin and septin-2. Actin is important in platelet shape change and activation.\textsuperscript{73,98} Higher actin levels in platelets from patients with obesity could contribute to platelet hyperactivity. Mutations in the gene which encodes actin (ACTB) can cause Baraitser-Winter Cerebrofrontofacial syndrome (BWCFF). Patients with this syndrome have been reported to have a low platelet count (thrombocytopenia) with enlarged platelets and a greater immature platelet fraction.\textsuperscript{99} This actinopathy is known as ACTB-associated syndromic thrombocytopenia. It is therefore possible that increased levels of actin may be indicative of more newly produced platelets. Septins are cytosolic proteins which are also reported to be important in integrin α\textsubscript{IIb}β\textsubscript{3}activation, platelet spreading and clot contraction.\textsuperscript{100} Recombinant human gelsolin has been shown to be protective against thromboembolism in mice, thereby suggesting that reduced levels seen in the current study could increase thrombosis risk.\textsuperscript{101} It would be informative to replicate associations in independent cohorts and to characterise the function of these proteins.
 \begin{landscape}\begin{table}
 
-\caption{\label{tab:proteome-lit}Summary of current literature on the effect of body mass index on the plasma proteome}
+\caption{\label{tab:proteome-lit}Summary of current literature on the effect of body mass index on the platelet proteome}
 \centering
 \begin{tabu} to \linewidth {>{\raggedright\arraybackslash}p{5cm}>{\raggedright\arraybackslash}p{3cm}>{\raggedright\arraybackslash}p{7cm}}
 \toprule
@@ -1202,6 +1260,10 @@ The aims of this chapter are:
 \item
   Explore the effect of increasing levels of MDC and TARC on disease using two sample Mendelian randomization.
 \end{enumerate}
+Figure \ref{fig:chemokine-platelet-graphic} indicates the parts of the overal thesis hypthoses which are addressed in the current chapter.
+\begin{figure}
+\includegraphics[width=0.9\linewidth]{figure/Chemokines/Thesis_graphic_overview_chemokines} \caption[Schematic of the associations explored]{Schematic of the associations explored: this chapter explores the effect of the chemokines MDC and TARC with platelet function and aims to explore their involvement in disease}\label{fig:chemokine-platelet-graphic}
+\end{figure}
 \hypertarget{methods-2}{%
 \section{Methods}\label{methods-2}}
 
@@ -1424,8 +1486,10 @@ Despite MR studies supporting a causal role of adiposity for cardiometabolic dis
 
 A benefit of studying the systematic effects of BMI on the circulating proteome is that proteins are often more suitable pharmacological targets than metabolites. Efforts to study the effect of BMI on the proteome have generally been in an observational framework.\textsuperscript{62} It is estimated that 25\% of proteins in the human proteome circulate in blood,\textsuperscript{61} which is important as the majority of druggable targets are such proteins.\textsuperscript{63} Studying the effect of BMI on a large set of proteins has only recently become possible with newly developed proteomic technologies such as the SomaLogic platform, with the ability to quantify enzymes, protein kinases and transport proteins with unprecedented sensitivity.\textsuperscript{122} Utilisation of SomaLogic within a trial or cohort setting has recently become more widespread, such as within the INTERVAL study, a UK cohort of blood donors.\textsuperscript{115} There is evidence that proteins which change as a result of a higher BMI may contribute to cardiometabolic disease: identification of such proteins is important in understanding how higher BMI causes disease and to identify targets which may benefit from pharmacological intervention. It is possible that proteins that are altered by BMI may contribute to cardiometabolic disease by activating platelets (Chapter \ref{chemokine-platelets}).
 
-In this chapter, the aim was to measure associations between adiposity and the human proteome and to also estimate the underlying effects in a causal framework. Using data on 2737 participants from INTERVAL, the effects of BMI on 4034 (3622 unique) plasma protein traits were estimated, in both observational and MR frameworks. The agreement between effect estimates from different methods were examined and enrichment analyses of the most strongly altered proteins were performed to map their potential relevance to cardiovascular disease.
-
+In this chapter, the aim was to measure associations between adiposity and the human proteome and to also estimate the underlying effects in a causal framework \ref{fig:BMI-protein-graphic}. Using data on 2737 participants from INTERVAL, the effects of BMI on 4034 (3622 unique) plasma protein traits were estimated, in both observational and MR frameworks. The agreement between effect estimates from different methods were examined and enrichment analyses of the most strongly altered proteins were performed to map their potential relevance to cardiovascular disease.
+\begin{figure}
+\includegraphics[width=0.9\linewidth]{figure/BMI_protein_INTERVAL/Thesis_graphic_overview_BMI_protein_CVD} \caption[Schematic of the associations explored in chapter]{Schematic of the associations explored: this chapter explores the causal effect of BMI on the plasma proteome and explores whether these changes might contribute to cardiovascular diseases}\label{fig:BMI-protein-graphic}
+\end{figure}
 \hypertarget{methods-3}{%
 \section{Methods}\label{methods-3}}
 
@@ -1688,8 +1752,11 @@ Although MR helps to overcome issues inherent to observational studies such as c
 \item
   Examine the effect of BMI change on the plasma proteome.
 \item
-  Compare BMI-protein effects across MR and RCT study designs (Results from Chapter \ref{BMI-protein-MR}).
+  Compare BMI-protein effects across MR and RCT study designs (Results from Chapter \ref{BMI-protein-MR} (Figure \ref{fig:BMI-protein-graphic2})).
 \end{enumerate}
+\begin{figure}
+\includegraphics[width=0.9\linewidth]{figure/DiRECT/Thesis_graphic_overview_BMI_protein} \caption[Schematic of the associations explored in chapter]{Schematic of the associations explored: this chapter explores the effect of caloric restriction-induced weight loss on the plasma proteome}\label{fig:BMI-protein-graphic2}
+\end{figure}
 \hypertarget{methods-4}{%
 \section{Methods}\label{methods-4}}
 
@@ -1729,7 +1796,10 @@ The associations between BMI change and protein changes were explored using mult
 \end{figure}
 BMI change-protein change point estimates from the multiple linear regression analyses and two stage least squares analyses were compared using linear regression. In efforts to further elucidate which proteins are altered by adiposity, a comparison between the BMI-protein associations in INTERVAL (Chapter \ref{BMI-protein-MR}) and the BMI change-protein change associations in the current analyses was also performed using a linear regression. There were 2803 unique proteins overlapping across the two cohorts. Estimates across the two cohorts were compared using linear regression.
 
-Enrichment or two sample MR of proteins of interest? epigraph DB\ldots.
+\hypertarget{disease-class-enrichment}{%
+\subsection{Disease class enrichment}\label{disease-class-enrichment}}
+
+Similarly to the previous chapters, proteins which had a BMI effect were taken forward into an enrichment analysis using DAVID Bioinformatics 6.8.\textsuperscript{124} In total, 144 proteins were compared with all proteins detected (4601). Enrichment was explored by using the genetic association database (GAD). Enrichment was assessed by fold enrichment and by Bonferroni-corrected p-values.
 
 \hypertarget{results-4}{%
 \section{Results}\label{results-4}}
@@ -1831,7 +1901,7 @@ Proteins which were associated with BMI change were compared across control and 
 \hypertarget{comparison-of-bmi-effects-across-direct-and-interval}{%
 \subsection{Comparison of BMI effects across DiRECT and INTERVAL}\label{comparison-of-bmi-effects-across-direct-and-interval}}
 
-BMI-protein estimates from this study were compared with effect estimates from INTERVAL (Chapter \ref{BMI-protein-MR}). Both cohorts provided evidence for an effect of BMI on the plasma proteome. Figure \ref{fig:DiRECT-INTERVAL} shows the BMI-protein estimates for the proteins which were included in both DiRECT and INTERVAL. There was consistent evidence across both studies that higher BMI leads to higher levels of various proteins including fumarylacetoacetase (FAAA), alcohol dehydrogenase 4 (ADH4), growth hormone receptor (GHR) and carboxypeptidase M (CBPM). Furthermore, higher BMI had a lowering effect on levels of sex hormone binding globulin (SHBG), as well as insulin-like growth factor binding protein 1/2 (IGFBP1/2). Although some of these estimates did not pass multiple testing in INTERVAL, the concordance in estimates in terms of effect size and direction of effect suggests that this is an issue of power.
+BMI-protein estimates from this study were compared with effect estimates from INTERVAL (Chapter \ref{BMI-protein-MR}), where 2803 proteins were detected across both studies. Both cohorts, through use of different study designs, provided evidence for an effect of BMI on the plasma proteome. Figure \ref{fig:DiRECT-INTERVAL} shows the BMI-protein estimates for the proteins which were included in both DiRECT and INTERVAL (R\textsuperscript{2}=0.11, P=1.0x10\textsuperscript{77}). There was consistent evidence across both studies that higher BMI leads to higher levels of various proteins including fumarylacetoacetase (FAAA), alcohol dehydrogenase 4 (ADH4), growth hormone receptor (GHR) and carboxypeptidase M (CBPM). Furthermore, higher BMI had a lowering effect on levels of sex hormone binding globulin (SHBG), as well as insulin-like growth factor binding protein 1/2 (IGFBP1/2). Although some of these estimates did not pass multiple testing in INTERVAL, the concordance in estimates in terms of effect size and direction of effect suggests that this is an issue of power.
 
 \blandscape
 
@@ -1842,15 +1912,39 @@ BMI-protein estimates from this study were compared with effect estimates from I
 \end{figure}
 \elandscape
 
-\hypertarget{two-sample-mr-for-protein-to-disease}{%
-\subsection{Two sample MR for protein to disease}\label{two-sample-mr-for-protein-to-disease}}
+\hypertarget{disease-enrichment-analysis}{%
+\subsection{Disease enrichment analysis}\label{disease-enrichment-analysis}}
 
+To explore disease class enrichment, DAVID Bionformatics 6.8 was used.\textsuperscript{124} As there was consistent evidence for a BMI effect on 144 proteins across both models in DiRECT, these were compared to the full 4601 protein panel. There was strongest evidence for enrichment in proteins involved in metabolic disease (1.4 fold enrichment, p=4.21x10\textsuperscript{-3}), with evidence for enrichment of renal disease (1.8 fold enrichment, p=1.02x10\textsuperscript{-2}). Cardiovascular disease had weak evidence for enrichment, but this association did not pass multiple testing correction.
+\begin{landscape}\begin{table}
+
+\caption{\label{tab:DAVID-enrichment-DiRECT}DiRECT protein enrichment results for disease class using DAVID bioinformatics 6.8}
+\centering
+\begin{tabu} to \linewidth {>{\raggedright\arraybackslash}p{5cm}>{\raggedright}X>{\raggedright}X>{\raggedright}X>{\raggedright}X>{\raggedright}X>{\raggedright}X>{\raggedright}X>{\raggedright}X}
+\toprule
+Term (Genetic Association Database disease class) & Count & \% & List Total &   Population Hits & Population Total & Fold Enrichment & P Value & Bonferroni-adjusted P value\\
+\midrule
+Metabolic & 73 & 53 & 118 & 1451 & 3204 & 1.4 & 2.34E-04 & 4.21E-03\\
+Renal & 34 & 24 & 118 & 518 & 3204 & 1.8 & 5.72E-04 & 1.02E-02\\
+Neurological & 49 & 35 & 118 & 884 & 3204 & 1.5 & 9.61E-04 & 1.72E-02\\
+Psych & 36 & 26 & 118 & 589 & 3204 & 1.7 & 1.38E-03 & 2.45E-02\\
+Pharmacogenomic & 51 & 37 & 118 & 964 & 3204 & 1.4 & 2.11E-03 & 3.74E-02\\
+\addlinespace
+Cancer & 56 & 40 & 118 & 1093 & 3204 & 1.4 & 2.23E-03 & 3.94E-02\\
+Reproduction & 25 & 18 & 118 & 381 & 3204 & 1.8 & 4.49E-03 & 7.79E-02\\
+Normal variation & 16 & 12 & 118 & 209 & 3204 & 2.1 & 8.09E-03 & 1.36E-01\\
+Aging & 21 & 15 & 118 & 324 & 3204 & 1.8 & 1.21E-02 & 1.96E-01\\
+Cardiovascular & 56 & 40 & 118 & 1214 & 3204 & 1.2 & 2.51E-02 & 3.68E-01\\
+\bottomrule
+\end{tabu}
+\end{table}
+\end{landscape}
 \hypertarget{discussion-4}{%
 \section{Discussion}\label{discussion-4}}
 
-In this chapter, a clinical trial implementing caloric restriction-induced weight loss was utilised as a second line of evidence to assess the effect of BMI on the plasma proteome. This analysis provided evidence for a broad effect of weight loss on the plasma proteome, providing results the effect of calroic restriction on the most extensive set of proteins to date. Comparisons of protein effects across the different study designs (INTERVAL in Chapter \ref{BMI-protein-MR}) points towards proteins of interest which may be involved in the development or progression of obesity-associated cardiometabolic disease. Proteins which are only altered in one study design could also provide useful biological information as to how the individual protein may relate to adiposity.
+In this chapter, a clinical trial implementing caloric restriction-induced weight loss was utilised as a second line of evidence to assess the effect of BMI on the plasma proteome. This analysis provided evidence for a broad effect of weight loss on the plasma proteome, providing results the effect of caloric restriction on the most extensive set of proteins to date. Comparisons of protein effects across the different study designs (INTERVAL in Chapter \ref{BMI-protein-MR}) points towards proteins of interest which may be involved in the development or progression of obesity-associated cardiometabolic disease. Proteins which are only altered in one study design could also provide useful biological information as to how the individual protein may relate to adiposity.
 
-The current study identified 144 BMI-related protein changes that were consistent across both models. This includes a reduction in BMI reducing levels of apolipoprotein F and GHR, while increasing levels of SHBG and IGFBP1/2. Table \ref{tab:weight-loss-protein} provides a summary of findings from the literature from previous studies which have explored the effect of caloric restriction on plasma proteins. As detailed in the table, previous studies have mainly used mass spectrometry. One study used SomaLogic,\textsuperscript{153} however this was the panel that only included 1129 proteins. The current study utilised over fourfold more proteins, therefore providing more in depth readouts of biological processes. Findings are in concordance with previous studies, with various proteins replicating.\textsuperscript{152--157} This suggests that these protein changes replicate across studies and across proteomic platforms and therefore robust associations. This study also provides some novel proteins associated with BMI change including SCAR5, chondroadherin (CHAD), fumarylacetoacetase (FAAA) and aminoacylase-1.
+The current study identified 144 BMI-related protein changes that were consistent across both models. This includes a reduction in BMI reducing levels of apolipoprotein F (ApoF) and GHR, while increasing levels of SHBG and IGFBP1/2. Table \ref{tab:weight-loss-protein} provides a summary of findings from the literature from previous studies which have explored the effect of caloric restriction on plasma proteins. As detailed in the table, previous studies have mainly used mass spectrometry. One study used SomaLogic,\textsuperscript{153} however this panel only included 1129 proteins. The current study utilised over fourfold more proteins, therefore providing more in depth readouts of biological processes. Findings are in concordance with previous studies.\textsuperscript{152--157} These protein changes replicate across cohorts and proteomic platforms and are more likely to be robust associations. Proteins altered with caloric restriction have been implicated in disease: a SNP which increases levels of ApoF also increases the risk of myocardial infarction and coronary heart disease {[}Liu2021{]}, therefore this apolipoprotein could mediate the increased risk of thrombotic events seen with a higher BMI.
 \begin{landscape}\begin{table}
 
 \caption{\label{tab:weight-loss-protein}Summary of current literature on the effect of weight loss on the plasma proteome}
@@ -1882,65 +1976,16 @@ Overlapping findings: Changes in Apolipoprotein F, INHBC, SHBG.\\
 \end{tabu}
 \end{table}
 \end{landscape}
-Many proteins which are reduced after weight loss appear to be involved in xx. A reduction in BMI led to an increase in plasma levels of SCAR5. This protein is involved in mediating commitment of mesenchymal stem cells into adipocytes and is highly expressed in white adipose tissue (WAT).\textsuperscript{158} A reduction in BMI also increased levels of chondroadherin (CHAD). Chondroadherin is a protein which is important in regulating exctracellular matrix organisation in cartilage and bones.\textsuperscript{159,160} CHAD knockout mouse shows decreased bone strength compared with wildtype.\textsuperscript{159} This suggests that weight reduction may be beneficial for bone strength.
+This study also provides some novel proteins associated with a reduction in BMI including SCAR5, chondroadherin (CHAD), fumarylacetoacetase (FAAA) and aminoacylase-1. A reduction in BMI led to an increase in plasma levels of SCAR5. This protein is involved in mediating commitment of mesenchymal stem cells into adipocytes and is highly expressed in white adipose tissue (WAT).\textsuperscript{158} A reduction in BMI also increased levels of chondroadherin (CHAD). Chondroadherin is a protein which is important in regulating exctracellular matrix organisation in cartilage and bones.\textsuperscript{159,160} CHAD knockout mice show decreased bone strength compared with wildtype.\textsuperscript{159} This suggests that weight reduction may be beneficial for bone strength. The function of these proteins and relationship with adiposity needs to be further characterised.
 
-downregulated with 12 week exercise training - extracellular matrix protein. Chad-/- mice show cartilage bone abnormalities. Weight loss increases CHAD - this would be beneficial for bones. Iozzo 2015.
+The comparison of results from the previous chapter (Chapter \ref{BMI-protein-MR}), which used Mendelian randomization and observational associations to assess the effect of average higher BMI across a population on average protein levels, with results from a randomised control trial in the current chapter provides two separate lines of evidence to suggest a causal role of BMI in levels of various proteins. The analysis in INTERVAL suggested that proteins most altered by BMI were enriched for diseases such as cardiovascular disease and metabolic disease. As the estimates for the effect of BMI on proteins were consistent across both DiRECT and INTERVAL, this suggests that weight loss is able to reverse the protein changes observed with higher BMI, thereby potentially reducing disease risk. The enrichment results comparing the 144 proteins which were altered with BMI change to the full 4601 proteins tested confirmed this \ref{tab:DAVID-enrichment-DiRECT} as there was strongest evidence for enrichment of proteins involved in metabolic disease and renal disease.
 
-The comparison of results from the previous chapter (Chapter \ref{BMI-protein-MR}), which used Mendelian randomization and observational associations to assess the effect of average higher BMI across a population on avergae protein levels, with results from a randomised control trial, with the current chapter provides two separate lines of evidence to suggest a causal role of BMI in levels of various proteins. The analysis in INTERVAL suggested that proteins most altered by BMI were enriched for diseases such as cardiovascular disease and metabolic disease. As the estimates for the effect of BMI on proteins were consistent across both DiRECT and INTERVAL, this suggests that weight loss is able to reverse the protein changes observed with higher BMI, thereby potentially reducing disease risk. The enrichment results comparing the 144 proteins which were altered with BMI changes to the full 4601 proteins tested confirmed this \ref{tab:}.
-\begin{landscape}\begin{table}
+Divergence in estimates across study designs may also provide some insight into the biology due to the nature of each study design. In general, the MR study design provides information on the effect on the proteome that a sustained high BMI has over the life course. In contrast, the estimates in DiRECT are the effect that a relatively short-term weight loss intervention (1 year) has on the proteome. A protein may be altered in the MR study, but not after a weight loss intervention because weight loss may not have been sustained long enough to induce changes at the proteome level. A protein may also not have evidence for a causal relationship in the MR but be altered in DiRECT. This could be because the protein is a signal of starvation or other changes that happen with caloric restriction.
 
-\caption{\label{tab:DAVID-enrichment-DiRECT}DiRECT protein enrichment results for disease class using DAVID bioinformatics 6.8}
-\centering
-\begin{tabu} to \linewidth {>{\raggedright\arraybackslash}p{5cm}>{\raggedright}X>{\raggedright}X>{\raggedright}X>{\raggedright}X>{\raggedright}X>{\raggedright}X>{\raggedright}X>{\raggedright}X}
-\toprule
-Term (Genetic Association Database disease class) & Count & \% & List Total &   Population Hits & Population Total & Fold Enrichment & P Value & Bonferroni-adjusted P value\\
-\midrule
-Metabolic & 73 & 53 & 118 & 1451 & 3204 & 1.4 & 2.34E-04 & 4.21E-03\\
-Renal & 34 & 24 & 118 & 518 & 3204 & 1.8 & 5.72E-04 & 1.02E-02\\
-Neurological & 49 & 35 & 118 & 884 & 3204 & 1.5 & 9.61E-04 & 1.72E-02\\
-Psych & 36 & 26 & 118 & 589 & 3204 & 1.7 & 1.38E-03 & 2.45E-02\\
-Pharmacogenomic & 51 & 37 & 118 & 964 & 3204 & 1.4 & 2.11E-03 & 3.74E-02\\
-\addlinespace
-Cancer & 56 & 40 & 118 & 1093 & 3204 & 1.4 & 2.23E-03 & 3.94E-02\\
-Reproduction & 25 & 18 & 118 & 381 & 3204 & 1.8 & 4.49E-03 & 7.79E-02\\
-Normal variation & 16 & 12 & 118 & 209 & 3204 & 2.1 & 8.09E-03 & 1.36E-01\\
-Aging & 21 & 15 & 118 & 324 & 3204 & 1.8 & 1.21E-02 & 1.96E-01\\
-Cardiovascular & 56 & 40 & 118 & 1214 & 3204 & 1.2 & 2.51E-02 & 3.68E-01\\
-\bottomrule
-\end{tabu}
-\end{table}
-\end{landscape}
-Limitations from the current analysis include possible protein effects that are not caused by a change in BMI. Despite the use of the treatment group as an instrument in a two stage least squares analysis, the treatment group is also associated with an alteration in other factors as those who were allocated TDR also were taken off any T2D medication and were more likely to remiss their diabetes. It is possible that the analysis is therefore picking up protein effects that are caused by a change in medication or diabetes remission.
+Limitations from the current analysis therefore include possible protein effects that are not caused by a change in BMI. Despite the use of the treatment group as an instrument in a two stage least squares analysis, the treatment group was also associated with an alteration in other factors: those who were allocated TDR also were taken off any T2D medication and were more likely to remiss their diabetes. It is possible that the analysis is therefore picking up protein effects that are caused by a change in medication or diabetes remission, rather than as a result in loss of fat. Participants would have also lost muscle mass throughout the intervention,\textsuperscript{161} therefore we cannot be certain that effects are attributable to loss of fat. Despite this, there is evidence that the majority of weight lost is fat mass.\textsuperscript{162} Thirdly, BMI decreased by an average of 0.4kg/m\textsuperscript{2} in the control group and by 3.6 kg/m\textsuperscript{2}. As participants started at a mean BMI of 34-35 kg/m\textsuperscript{2}, most participants will still have obesity even after the intervention. This may limit protein effects observed, as a certain BMI may need to be reached to see an alteration in protein levels (i.e.~the relationship may not be linear).
 
-Conclusions.
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\tightlist
-\item
-  Overall effect
-\item
-  Biology - inflammation?
-\item
-  Implications for platelet function / thrombosis. Stringdb. input beta coefficients with uniprot IDs and there is pathway enrichment for platelet function and platelet aggregation (256 genes).
-\item
-  limitations - not solely weight loss effect
-\end{enumerate}
-\begin{itemize}
-\tightlist
-\item
-  Apolipoprotein F (APOF) two smaple MR causal effect on myocardial infarction and coronary heart disease by Wald ratio.
-\item
-  SHBG MR - increased shbg leads to reduction in cardioembolic stroke, platelet count.
-\item
-  RET - cancers/Alzheimer's.
-\item
-  FABP1 - increased levels increases MPV.
-\item
-  Prolylcarboxypeptidase CHD and MI.
-\item
-  Fumarylacetoacetase (FAAA/FAH) increased protein reduces risk of haemorrhage.
-  NB not possible to test for pleiotropy - other diseases associated with these proteins too.
-\end{itemize}
+Overall, this study provided evidence that weight loss leads to an alteration in various proteins. Such proteins were enriched for renal disease and metabolic disease. There was consistency in the direction of effects between the Mendelian randomization for the effect of higher BMI on protein levels and the estimates for the effect of BMI change on protein change in this randomized control trial.
+
 \hypertarget{discussion-5}{%
 \chapter{Discussion}\label{discussion-5}}
 
@@ -2630,6 +2675,14 @@ This first appendix includes all of the R chunks of code that were hidden throug
 \leavevmode\hypertarget{ref-Iozzo2015}{}%
 \CSLLeftMargin{160. }
 \CSLRightInline{Iozzo, R. V. \& Schaefer, L. {Proteoglycan form and function: A comprehensive nomenclature of proteoglycans}. (2015). doi:\href{https://doi.org/10.1016/j.matbio.2015.02.003}{10.1016/j.matbio.2015.02.003}}
+
+\leavevmode\hypertarget{ref-Santanasto2011}{}%
+\CSLLeftMargin{161. }
+\CSLRightInline{Santanasto, A. J. \emph{et al.} {Impact of weight loss on physical function with changes in strength, muscle mass, and muscle fat infiltration in overweight to moderately obese older adults: A randomized clinical trial}. \emph{Journal of Obesity} (2011). doi:\href{https://doi.org/10.1155/2011/516576}{10.1155/2011/516576}}
+
+\leavevmode\hypertarget{ref-Backx2016}{}%
+\CSLLeftMargin{162. }
+\CSLRightInline{Backx, E. M. P. \emph{et al.} {Protein intake and lean body mass preservation during energy intake restriction in overweight older adults}. \emph{International Journal of Obesity} (2016). doi:\href{https://doi.org/10.1038/ijo.2015.182}{10.1038/ijo.2015.182}}
 
 \end{CSLReferences}
   \begin{abbreviations}

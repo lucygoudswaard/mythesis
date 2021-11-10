@@ -15,7 +15,11 @@ Previous studies have attempted to determine the direct effects of BMI on platel
 Therefore, the aims of this chapter were to:
 
 1) Optimise laboratory techniques to assess platelet function in a clinical setting.
-2) Determine whether higher BMI is associated with: an increase in immature platelet count, an increase in platelet function and an alteration in platelet signalling by comparing platelets from bariatric patients (BMI >40kg/m^2^) to healthy controls (BMI 18-25kg/m^2^).
+2) Determine whether higher BMI is associated with: an increase in immature platelet count, an increase in platelet function and an alteration in platelet signalling by comparing platelets from bariatric patients (BMI >40kg/m^2^) to healthy controls (BMI 18-25kg/m^2^) (Figure \@ref(fig:BMI-platelet-overview2)).
+
+```{r BMI-platelet-overview2, echo = FALSE , fig.scap="Schematic of the associations explored in the current chapter", fig.cap="Schematic of the associations explored: this chapter explores the relationship between body mass index and platelet function", out.width="90%"}
+include_graphics(path = "figure/Bariatric_study/Thesis_graphic_overview_BMI_platelets.png", dpi = NA)
+```
 
 ## Methods
 The platelet function methods and statistical analyses utlised within this study are provided in the Methods chapter (Chapter \@ref(common-methods)).
@@ -145,7 +149,7 @@ The principal component analysis suggested that PC4 was able to separate the bar
  findings = c('Proteins altered: Actin, cytoplasmic 1 (Fragment), Septin-2, Gelsolin, Glycerol-3-phosphate dehydrogenase', 'Platelet microvesicle proteins altered: LIM and senescent cell antigen-like containing domain protein 1', 'Platelet transcripts altered: myeloperoxidase (MPO), S100-A9')
  mytable = cbind(paper, author, findings)
   colnames(mytable) <- c("Paper", "Author, year", "Study summary")
- mytable %>% kable(caption = "Summary of current literature on the effect of body mass index on the plasma proteome", booktabs = TRUE) %>% 
+ mytable %>% kable(caption = "Summary of current literature on the effect of body mass index on the platelet proteome", booktabs = TRUE) %>% 
    kable_classic_2(full_width = F) %>%
    #kable_paper("hover", full_width = F)
   kable_styling(full_width = TRUE) %>%

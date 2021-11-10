@@ -19,7 +19,11 @@ include_graphics(path = "figure/BMI_platelets/obsvMRexample.png", dpi = NA)
 
 ```
 
-In this study, we used data from the INTERVAL prospective cohort (N=33388) to explore the association between BMI and platelet traits. We combined observational and Mendelian randomization (MR) approaches to test the hypothesis that higher BMI leads to changes in platelet characteristics. Although observational studies can demonstrate associations between BMI and platelet characteristics, they cannot determine direct causality. To address the latter, we therefore employed MR, using a genetic risk score derived from single nucleotide polymorphisms (SNPs) associated with higher BMI (Figure \@ref(fig:Linear-reg-MR)). This allowed estimation of the causal effect of BMI on platelet traits, reducing the effect of confounding factors that are inherent to observational studies. To assess functional implications of BMI-platelet associations, a follow-up analysis was designed to explore the associations between platelet characteristics and whole blood aggregation in a cohort of cardiac surgery patients. 
+In this study, we used data from the INTERVAL prospective cohort (N=33388) to explore the association between BMI and platelet traits. Figure \@ref(fig:BMI-platelet-overview) shows the associations of the overall thesis hypotheses that are addressed in the chapter. We combined observational and Mendelian randomization (MR) approaches to test the hypothesis that higher BMI leads to changes in platelet characteristics. Although observational studies can demonstrate associations between BMI and platelet characteristics, they cannot determine direct causality. To address the latter, we therefore employed MR, using a genetic risk score derived from single nucleotide polymorphisms (SNPs) associated with higher BMI (Figure \@ref(fig:Linear-reg-MR)). This allowed estimation of the causal effect of BMI on platelet traits, reducing the effect of confounding factors that are inherent to observational studies. To assess functional implications of BMI-platelet associations, a follow-up analysis was designed to explore the associations between platelet characteristics and whole blood aggregation in a cohort of cardiac surgery patients. 
+
+```{r BMI-platelet-overview, echo = FALSE , fig.scap="Schematic of the associations addressed in the current chapter", fig.cap="Schematic of the associations explored in the current chapter: the relationship between body mass index and platelet traits", out.width="90%"}
+include_graphics(path = "figure/BMI_platelets/Thesis_graphic_overview_BMI_platelets.png", dpi = NA)
+```
 
 ## Methods
 
@@ -58,6 +62,8 @@ Analyses were performed using R version 3.4.2 [@Team2019a]. To visualize correla
 
 To understand properties of the GRS for BMI, the association between the GRS with both BMI and covariables were explored. The MR analysis was performed by using a two-stage least squares (2SLS) regression model (using systemfit() function from “systemfit” package [@Henningsen2007]). The MR causal estimates reflect the change in platelet traits (in SD units) per SD increase in BMI. A Wu-Hausman test was performed to test for endogeneity between observational and MR estimates. Exact beta coefficients, confidence intervals and P values are provided throughout and guide strength of association.
 
+Where there was consistent observational and MR evidence for a BMI effect on platelet traits with potential clinical relevance, additional sensitivity analyses were carried out. We explored whether there were different magnitudes of associations across NHS BMI categories indicative of a non-linear relationship. Specifically, participants were stratified by BMI and the association between BMI and IPC estimated within BMI categories.
+
 ### Follow-up analysis to explore the association between immature platelets and aggregation
 Motivated by findings from the primary analyses described above, additional observational analyses were conducted using data from the COagulation and Platelet laboratory Testing in Cardiac Surgery (COPTIC) study. The COPTIC study was an observational, single centre cohort study of adults undergoing cardiac surgery at the Bristol Heart Institute with primary objective of examining the relationship between coagulation laboratory parameters and bleeding outcomes after surgery in 2,541 participants [@Mumford2017]. This study was approved by the UK NHS Research Ethics Committee (09/H0104/53).
 
@@ -65,7 +71,7 @@ Motivated by findings from the primary analyses described above, additional obse
 Age and sex were reported at baseline. Height and weight were obtained from medical notes. BMI was derived from weight and height (kg/m^2^). Smoking was reported as a categorical variable (0=never smoker, 1=ex-smoker for > 5 years, 2=ex-smoker for 1-5 years, 3=ex-smoker for 30 days-1 year, 4=current smoker). Platelet variables (PLT, MPV, IPF, IPC) were measured using the Sysmex XE-2100 Automated Haematology System (Oxford, UK). Blood samples were taken pre-operatively into 3.2% sodium citrate vacutainers (BD Biosciences, Milton Keynes, UK). Platelet aggregation was measured using Multiplate multiple electrode aggregometry (MEA) (Roche, Rotkreuz, Switzerland), which detects change in electrical impedance when platelets aggregate on metal electrodes. Aggregation was determined by the area under the curve (AUC) in response to platelet agonists including adrenaline (100 mg/mL), thrombin receptor activator peptide 6 test (TRAP-test), ADP-test and arachidonic acid (ASPI-test). Use of a combination of agonists therefore reflects activation of platelets via different pathways: adrenaline acts at the α2 adrenergic receptor, TRAP-6 acts at the protease-activated receptor-1 (PAR-1), ADP acts at the P2Y12 receptor and arachidonic acid at the Thromboxane A2 (TxA2) receptor.
 
 ### COPTIC statistical analysis
-The COPTIC dataset in the current analysis included 2,518 participants (23 out of 2,541 participants did not consent for future research). For the current study, only those who were not on antiplatelet therapies (prasugrel, clopidogrel or aspirin) were included (N=655). Extreme outliers that were ± 5 SDs from the mean were removed, and exposures and outcomes were rank normal transformed. Linear regression was used to explore the association between immature platelet count and aggregation, adjusting for age, sex and smoking status.
+The COPTIC dataset in the current analysis included 2,518 participants (23 out of 2,541 participants did not consent for future research). For the current study, only those who were not on antiplatelet therapies (prasugrel, clopidogrel or aspirin) were included (N=655). Extreme outliers that were ± 5 SDs from the mean were removed, and exposures and outcomes were rank normal transformed. . Linear regression was used to generate estimates of the association between BMI and platelet parameters within this cohort. Linear regression was used to explore the association between immature platelet count and aggregation, adjusting for age, sex and smoking status.
 
 ## Results
 
@@ -306,12 +312,37 @@ mytable %>% kable(caption = "Mendelian randomization estimates for the effect of
 include_graphics(path = "figure/BMI_platelets/BMI_platelet_forestplot.pdf", dpi = NA)
 
 ```
+### Stratifying BMI and IPC associations by BMI group
+We explored whether associations between BMI and IPC varied across NHS BMI groups (underweight <18.5 kg/m^2^, healthy weight 18.5-24.9kg/m^2^, overweight 25-29.9 kg/m^2^, obesity 30+ kg/m^2^). IPC had consistent BMI effects across observational and MR analyses. Stratifying by BMI category suggested that the strongest association between BMI and IPC was the overweight category (Table \@ref(tab:BMI-platelets-stratified)).
+
+```{r BMI-platelets-stratified,  echo=FALSE}
+options(knitr.kable.NA = "")
+Adjustment <- c('Age and sex','Age and sex','Age and sex','Age and sex','Fully adjusted','Fully adjusted','Fully adjusted','Fully adjusted' )
+Group = c('Underweight','Healthy','Overweight','Obese','Underweight','Healthy','Overweight','Obese')
+BMIrange <- c('<18.5','18.5-24.9','25-29.9','30+','<18.5','18.5-24.9','25-29.9','30+')
+N = c(169,11889,10189,5008,149,10500,8918,4342)
+Beta = c(0.202,0.039,0.092,0.032,0.269,0.033,0.070,0.018)
+SE <- c(0.834,0.018,0.034,0.032,0.296,0.019,0.036,0.035)
+P <- c(0.461,0.026,0.006,0.315,0.366,0.079,0.052,0.614)
+R <- c(-0.009,0.003,0.006,0.004,0.033,0.004,0.006,0.005)
+CI <- c(1.635,0.035,0.066,0.063,0.580,0.037,0.070,0.069)
+Lower <- c(-1.434,0.005,0.027,-0.031,-0.311,-0.004,0.000,-0.051)
+Upper <- c(1.837,0.074,0.158,0.096,0.849,0.069,0.140,0.086)
+mytable = data.frame(cbind(Adjustment, Group, BMIrange, N, Beta, SE, P, R, CI, Lower, Upper))
+colnames(mytable) <- c('Adjustment', 'Group', 'BMI range',	'N',	'Βeta coefficient',	'SE',	'P value',	'R2',	'95% CI',	'Lower 95% CI',	'Upper 95% CI')
+mytable %>% kable(caption.short = "Associations between BMI and immature platelet count (IPC) stratified by NHS BMI category", caption = "Associations between BMI and immature platelet count (IPC) stratified by NHS BMI category. Βeta coefficient is the change in IPC (SDs) per SD increase in BMI", booktabs = TRUE  ) %>% 
+  kable_classic_2(full_width = F) %>%
+ kable_styling(full_width = TRUE) %>%
+   column_spec(1, width = "2.5cm")   %>%
+     column_spec(2, width = "2.5cm")   %>%
+ landscape()
+```
 
 ### Follow-up associations between IPC and whole blood aggregation in COPTIC
 Given evidence for a causal effect of BMI on IPC in the MR analysis, we sought to evaluate the relationship between IPC and platelet activity as a biological parameter of clinical relevance. Whilst this analysis could not be conducted in INTERVAL due to a lack of suitable data, we were able to utilize data from the COPTIC study to address this question. The COPTIC study is a cohort of cardiac surgery patients, with samples taken pre-surgery. These participants have whole blood aggregation measured, therefore making it possible to determine associations between IPC and aggregation in a clinical setting.
 
 ### COPTIC participant characteristics
-The total number of COPTIC participants was 2,541. Of these, 2,518 participants gave consent for future research (Table \@ref(tab:COPTIC-participants-platelets)). Participants included in the analysis were those not on antiplatelet therapy (N=655). The majority of participants were male (61.8%), with a mean age of 63.9 years (SD of 16.1). Similar to the INTERVAL cohort, the mean BMI was in the overweight category (27.2 kg/m^2^ with a SD of 4.9 kg/m^2^). The majority of participants were either never smokers or ex-smokers for more than 5 years (89.2 %).
+The total number of COPTIC participants was 2,541. Of these, 2,518 participants gave consent for future research (Table \@ref(tab:COPTIC-participants-platelets)). Participants included in the analysis were those not on antiplatelet therapy (N=655). The majority of participants were male (61.8%), with a mean age of 63.9 years (SD of 16.1). Similar to the INTERVAL cohort, the mean BMI was in the overweight category (27.2 kg/m^2^ with a SD of 4.9 kg/m^2^). The majority of participants were either never smokers or ex-smokers for more than 5 years (89.2 %). The effect estimate for the effect of BMI on IPC was 0.06 (95% CI -0.01 to 0.14, P=0.09) and therefore consistent with that estimated in the INTERVAL cohort (Table \@ref(tab:BMI-platelets-COPTIC)).
 
 ```{r COPTIC-participants-platelets,  echo=FALSE}
 options(knitr.kable.NA = "")
@@ -328,6 +359,25 @@ mytable %>% kable(caption = "Characteristics of COPTIC study participants", book
    add_indent(c(3, 4, 7:11, 13:16), level_of_indent = 1) %>%
  kable_styling(full_width = TRUE) %>%
 column_spec(1, width = "4cm")
+```
+
+```{r BMI-platelets-COPTIC,  echo=FALSE}
+options(knitr.kable.NA = "")
+Outcome <- c('MPV', 'IPC', 'PLT', 'IPF')
+N = c(627, 622, 630, 621)
+Beta = c(0.08,0.06,0.04,0.03)
+SE <- c(0.04, 0.04, 0.04, 0.04)
+P <- c(0.04, 0.09, 0.32, 0.36)
+R <- c(0.003,0.013,0.071,0.014)
+CI <- c(0.07, 0.07, 0.07, 0.07)
+Lower <- c("0.00", -0.01, -0.03, -0.04)
+Upper <- c(0.15, 0.14, 0.10, 0.11)
+mytable = data.frame(cbind(Outcome, N, Beta, SE, P, R, CI, Lower, Upper))
+colnames(mytable) <- c('Outcome',	'N',	'Βeta coefficient',	'SE',	'P value',	'R2',	'95% CI',	'Lower 95% CI',	'Upper 95% CI')
+mytable %>% kable(caption = "Association between BMI and platelet parameters in COPTIC (adjusted for age, sex, smoking). Βeta coefficient is the change in platelet measure ins SDs per SD higher BMI.", caption.short="Association between BMI and platelet parameters in COPTIC (adjusted for age, sex, smoking)", booktabs = TRUE) %>% 
+  kable_classic_2(full_width = F) %>%
+ kable_styling(full_width = TRUE) %>%
+  landscape()
 ```
 
 ### Association between IPC and aggregation in COPTIC cohort
@@ -349,7 +399,7 @@ include_graphics(path = "figure/BMI_platelets/Visual_abstract.pdf", dpi = NA)
 
 In this study we used data from 33,388 healthy blood donors to study the effect of BMI on platelet phenotypes including measures of count, size and maturity. The combination of observational and MR estimates suggested a positive causal effect of BMI on SFL and IPC. The observational analysis revealed a strong association between BMI and both PLT and PCT, however the MR estimates did not provide evidence to support this association as causal. Observational analysis using data from a cardiac surgery cohort provided evidence for a positive association between IPC and aggregation induced by adrenaline, TRAP6 and ADP.
 
-The observational and MR analyses in the current study provide evidence for a positive association between BMI and both IPC and SFL. As IPC is derived using SFL, the measure of mRNA content, these measures are highly correlated. Whilst few studies have explored the direct association between BMI and immature platelet measures, there is some evidence for increased immature platelets in subjects with metabolic syndrome (MS) and subjects with type II diabetes compared with control subjects [@Vaduganathan2008a; @Mijovic2015a]. In these studies, participants with MS or type II diabetes also had a higher BMI, which could be a possible cause of this increase in immature platelets. Indeed, evidence from our analysis suggests that BMI, independent of metabolic syndrome or type II diabetes, may causally influence IPC and SFL.
+The observational and MR analyses in the current study provide evidence for a positive association between BMI and both IPC and SFL. Stratifying by NHS BMI category suggested that this estimate is strongest in the overweight category. As IPC is derived using SFL, the measure of mRNA content, these measures are highly correlated. Whilst few studies have explored the direct association between BMI and immature platelet measures, there is some evidence for increased immature platelets in subjects with metabolic syndrome (MS) and subjects with type II diabetes compared with control subjects [@Vaduganathan2008a; @Mijovic2015a]. In these studies, participants with MS or type II diabetes also had a higher BMI, which could be a possible cause of this increase in immature platelets. Indeed, evidence from our analysis suggests that BMI, independent of metabolic syndrome or type II diabetes, may causally influence IPC and SFL.
 
 As IPC is an indirect measure of platelet production [@Lev2016a], these results suggest that an increased BMI may lead to an increased production of platelets. It has been reported that immature platelets have increased thrombotic potential [@Lev2016a; @Grove2011a] and may be predictive of cardiovascular events [@Ibrahim2014; @Freynhofer2017a], suggesting that an increase in the number of immature platelets may be of functional and clinical relevance. A follow-up analysis confirmed that higher IPC was associated with greater platelet aggregation independent of absolute platelet count within a cardiac surgery cohort. Positive associations were found between IPC and aggregation induced by adrenaline, TRAP-6 and ADP, suggesting general platelet hyperactivity with more immature platelets. A previous study in a coronary artery disease cohort also found a positive correlation between IPC and aggregation induced by arachidonic acid, collagen and ADP [@Grove2011a]. These findings suggest that IPC can be used as a proxy for platelet hyperactivity within a cohort with a history of cardiovascular disease. Measures of immature platelets are currently not considered in the clinic when prescribing antiplatelet therapy, however if a higher immature platelet count is demonstrative of newly produced, hyperactive platelets then this could be important in guiding dosage regimes to ensure sufficient platelet inhibition [@Bernlochner2015a]. Observational studies have also found that patients with COVID-19 have elevated immature platelet counts and fraction, which could partly explain high rates COVID-19 induced thrombosis [@Cohen2020, @Klok2020]. Despite the association between BMI and IPC, there was less evidence for an effect of BMI on IPF. This lack of association may be because IPF is the proportion of immature platelets, therefore if someone had a higher number of immature platelets, but also a higher number of platelets overall (for example due to increased platelet lifespan), there would be no increase in the immature platelet fraction.
 
@@ -359,6 +409,6 @@ Both observational and MR estimates suggested that BMI is not associated with me
 
 Although this study suggests potential effects of BMI on platelet traits such as SFL and IPC, it does not provide mechanistic insight into how BMI exerts these effects. Previous studies have suggested that inflammation driven by adiposity can stimulate megakaryocyte proliferation, thereby increasing platelet numbers [@Han2018a]. There is evidence that inflammatory mediators such as interleukin-6 (IL-6) could be one such factor [@Kaser2001]. Further study would be warranted to explore these mechanisms, as well as replicate the current findings, such as through independent population or clinical studies. 
 
-There are a few limitations to the study that should be recognised. Firstly, BMI was derived from self-reported height and weight. Although there is potential for this to bias observations, previous studies have found that self-reported BMI and BMI measured in the clinic are strongly associated [@Nikolaou2017]. The GRS also associates with BMI to the extent expected. Secondly, there may be other confounders which were not recorded within INTERVAL and therefore could not be accounted for in our models, such as, socio-economic position, which may affect both BMI and risk of thrombosis. Therefore, residual confounding of observational estimates cannot be ruled out. With respect to the observational analysis conducted in COPTIC, the sample size is modest, which may limit power to detect associations. Furthermore, this cohort required cardiac surgery and therefore it is possible that associations found may not be generalizable to the wider population,  as participants also displayed greater aggregatory responses than the reference ranges [@Marcucci2015].  However, these findings do indicate that immature platelets may be a biomarker of platelet hyperactivity in patients with a history of cardiovascular disease. It is important to note that the anticoagulant used (EDTA) has been reported to affect platelet parameters, such as increasing MPV and decreasing PLT [@Mannuß2020]. Despite this, EDTA is the standard anticoagulant used for full blood counts in the NHS. The Sysmex analyzers used in INTERVAL and COPTIC were different models, however, it has been shown that there is strong association between platelet measures between the XE and newer XN analyzers [@Briggs2012].
+There are a few limitations to the study that should be recognised. Firstly, BMI was derived from self-reported height and weight. Although there is potential for this to bias observations, previous studies have found that self-reported BMI and BMI measured in the clinic are strongly associated [@Nikolaou2017]. The GRS also associates with BMI to the extent expected. Secondly, there may be other confounders which were not recorded within INTERVAL and therefore could not be accounted for in our models, such as, socio-economic position, which may affect both BMI and risk of thrombosis. Therefore, residual confounding of observational estimates cannot be ruled out. Whilst the INTERVAL study provided relatively precise estimates of effect overall, larger sample sizes within each BMI category would be required to further investigate potential nonlinearity in the relationship between BMI and IPC. With respect to the observational analysis conducted in COPTIC, the sample size is modest, which may limit power to detect associations. Furthermore, this cohort required cardiac surgery and therefore it is possible that associations found may not be generalizable to the wider population,  as participants also displayed greater aggregatory responses than the reference ranges [@Marcucci2015].  However, these findings do indicate that immature platelets may be a biomarker of platelet hyperactivity in patients with a history of cardiovascular disease. It is important to note that the anticoagulant used (EDTA) has been reported to affect platelet parameters, such as increasing MPV and decreasing PLT [@Mannuß2020]. Despite this, EDTA is the standard anticoagulant used for full blood counts in the NHS. The Sysmex analyzers used in INTERVAL and COPTIC were different models, however, it has been shown that there is strong association between platelet measures between the XE and newer XN analyzers [@Briggs2012].
 
 Altogether, we show observational and MR evidence that an increased BMI is associated with an increase in number of immature platelets. Observational evidence indicates that higher immature platelet count is associated with enhanced aggregation in a cardiac surgery cohort. Together, these results indicate that higher BMI may enhance platelet function and thrombosis by increasing platelet production and immature platelet count. 

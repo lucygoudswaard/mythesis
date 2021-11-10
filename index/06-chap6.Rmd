@@ -14,6 +14,12 @@ The aims of this chapter are:
 1) Determine the effects and mechanisms of MDC and TARC on platelet function and signalling.
 2) Explore the effect of increasing levels of MDC and TARC on disease using two sample Mendelian randomization.
 
+Figure \@ref(fig:chemokine-platelet-graphic) indicates the parts of the overal thesis hypthoses which are addressed in the current chapter.
+
+```{r chemokine-platelet-graphic, echo = FALSE , fig.scap="Schematic of the associations explored", fig.cap="Schematic of the associations explored: this chapter explores the effect of the chemokines MDC and TARC with platelet function and aims to explore their involvement in disease", out.width="90%"}
+include_graphics(path = "figure/Chemokines/Thesis_graphic_overview_chemokines.png", dpi = NA)
+```
+
 ## Methods
 The platelet function methods and details of statistical analyses used within this chapter are provided in the Methods chapter (Chapter \@ref(common-methods)).
 
