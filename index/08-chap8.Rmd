@@ -2,7 +2,7 @@
 
 ## Background
 
-Obesity is associated with an increased risk of type II diabetes (T2D), cardiovascular diseases, musculoskeletal diseases, and types of cancer [@Garg2014; @Khan2018; @Kortt2002]. These associations are well established, however mechanisms of disease are less clear. It is likely that a change in the composition of proteins circulating in the blood plays a role in obesity-related disease [@Goudswaard2021]. The previous results chapter (Chapter \@ref(BMI-protein-MR)) examined the effect of BMI on the plasma proteome and provided estimates for the average change in proteins per average difference in BMI in a general population, using Mendelian randomization (MR). There was evidence of a BMI effect on proteins such as leptin, sex hormone binding globulin (SHBG) and fatty acid binding protein 4 (FABP4). A change in circulating levels of these proteins have been implicated in cardiovascular diseases. 
+Obesity is associated with an increased risk of type II diabetes (T2D), cardiovascular diseases, musculoskeletal diseases, and types of cancer [@Garg2014; @Khan2018; @Kortt2002]. These associations are well established, however mechanisms of disease are less clear. It is likely that a change in the composition of proteins circulating in the blood plays a role in obesity-related cardiovascular risk [@Goudswaard2021]. The previous results chapter (Chapter \@ref(BMI-protein-MR)) examined the effect of BMI on the plasma proteome and provided estimates for the average change in proteins per average difference in BMI in a general population, using Mendelian randomization (MR). There was evidence of a BMI effect on proteins such as leptin, sex hormone binding globulin (SHBG) and fatty acid binding protein 4 (FABP4). A change in circulating levels of these proteins have been implicated in cardiovascular diseases. 
 
 Although MR helps to overcome issues inherent to observational studies such as confounding and reverse causation, MR has its own limitations. For example, it is possible that genetic variants used for the genetic risk score could affect protein levels through routes other than changes in BMI. This is known as horizonal pleiotropy [@Davies2018]. Triangulation can be used in efforts to further determine the BMI effects on the plasma proteome. Triangulation is defined as strengthening causal inference through the combination of study designs which each have separate sources of bias [@Lawlor2016]. Therefore, to complement the Mendelian randomization in the previous chapter, the Diabetes REmission Clinical Trial (DiRECT) can be utilised. The DiRECT trial consisted of a group of patients who had overweight/obesity and T2D who were either given guideline T2D care or an intervention to help with weight loss and T2D remission. This chapter therefore aimed to:
 
@@ -12,7 +12,6 @@ Although MR helps to overcome issues inherent to observational studies such as c
 ```{r BMI-protein-graphic2, echo = FALSE , fig.scap="Schematic of the associations explored in chapter", fig.cap="Schematic of the associations explored: this chapter explores the effect of caloric restriction-induced weight loss on the plasma proteome", out.width="90%"}
 include_graphics(path = "figure/DiRECT/Thesis_graphic_overview_BMI_protein.png", dpi = NA)
 ```
-
 
 ## Methods
 
@@ -116,7 +115,11 @@ include_graphics(path = "figure/DiRECT/DiRECT_scatter_comparison.pdf", dpi = NA)
 \elandscape
 
 ### Sensitivity analysis
-Proteins which were associated with BMI change were compared across control and intervention groups at baseline. There was not strong evidence for any differences in baseline levels of proteins (p<5.8x10^-5^). 
+Proteins which were associated with BMI change were compared across control and intervention groups at baseline. There was not strong evidence for any differences in baseline levels of proteins (p<5.8x10^-5^). However, there was weak evidence that levels of certain proteins, for example apolipoprotein F (beta=-0.20, SE=0.07, p=0.005) and carbohydrate suflotransferase (beta=0.11, SE=0.04, p=0.006) were different in treatment group compared to control. Figure \@ref(fig:ApoF-carb-boxplot) displays the boxplots for the distribution of levels of these proteins at both baseline and endpoint for the intervention and control group.
+
+```{r ApoF-carb-boxplot, echo = FALSE, out.width="90%", fig.cap= "Sensitivity analysis: boxplot of the levels of Apolipoprotein F and Carbohydrate Sulfotransferase at baseline and endpoint, grouped by treatment group. Units are not rank normal transformed.", fig.scap= "Sensitivity analysis: boxplot of the levels of Apolipoprotein F and Carbohydrate Sulfotransferase at baseline and endpoint, grouped by treatment group."}
+include_graphics(path = "figure/DiRECT/ApoF_carb_boxplots.jpeg", dpi = NA)
+```
 
 ### Comparison of BMI effects across DiRECT and INTERVAL
 BMI-protein estimates from this study were compared with effect estimates from INTERVAL (Chapter \@ref(BMI-protein-MR)), where 2803 proteins were detected across both studies. Both cohorts, through use of different study designs, provided evidence for an effect of BMI on the plasma proteome. Figure \@ref(fig:DiRECT-INTERVAL) shows the BMI-protein estimates for the proteins which were included in both DiRECT and INTERVAL (R^2^=0.11, P=1.0x10^77^).  There was consistent evidence across both studies that higher BMI leads to higher levels of various proteins including fumarylacetoacetase (FAAA), alcohol dehydrogenase 4 (ADH4), growth hormone receptor (GHR) and carboxypeptidase M (CBPM). Furthermore, higher BMI had a lowering effect on levels of sex hormone binding globulin (SHBG), as well as insulin-like growth factor binding protein 1/2 (IGFBP1/2). Although some of these estimates did not pass multiple testing in INTERVAL, the concordance in estimates in terms of effect size and direction of effect suggests that this is an issue of power.

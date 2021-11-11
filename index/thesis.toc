@@ -77,10 +77,10 @@
 \contentsline {chapter}{Chapter 5: The effect of obesity on platelet function: a clinical pilot study}{69}{chapter.5}%
 \contentsline {section}{\numberline {5.1}Background}{69}{section.5.1}%
 \contentsline {section}{\numberline {5.2}Methods}{71}{section.5.2}%
-\contentsline {subsection}{\numberline {5.2.1}Study population}{71}{subsection.5.2.1}%
+\contentsline {subsection}{\numberline {5.2.1}Study population}{72}{subsection.5.2.1}%
 \contentsline {section}{\numberline {5.3}Results}{72}{section.5.3}%
 \contentsline {subsection}{\numberline {5.3.1}Participant characteristics}{72}{subsection.5.3.1}%
-\contentsline {subsection}{\numberline {5.3.2}Platelet parameters}{73}{subsection.5.3.2}%
+\contentsline {subsection}{\numberline {5.3.2}Platelet parameters}{72}{subsection.5.3.2}%
 \contentsline {subsection}{\numberline {5.3.3}Basal receptors}{73}{subsection.5.3.3}%
 \contentsline {subsection}{\numberline {5.3.4}Agonist-induced integrin α\textsubscript {IIb}β\textsubscript {3} and P-selectin expression}{74}{subsection.5.3.4}%
 \contentsline {subsection}{\numberline {5.3.5}Platelet-neutrophil aggregates}{75}{subsection.5.3.5}%
@@ -136,8 +136,8 @@
 \contentsline {subsection}{\numberline {8.3.6}Comparison of observational linear regression and TSLS results for the effect of BMI change on protein change}{147}{subsection.8.3.6}%
 \contentsline {subsection}{\numberline {8.3.7}Sensitivity analysis}{151}{subsection.8.3.7}%
 \contentsline {subsection}{\numberline {8.3.8}Comparison of BMI effects across DiRECT and INTERVAL}{151}{subsection.8.3.8}%
-\contentsline {subsection}{\numberline {8.3.9}Disease enrichment analysis}{154}{subsection.8.3.9}%
-\contentsline {section}{\numberline {8.4}Discussion}{156}{section.8.4}%
+\contentsline {subsection}{\numberline {8.3.9}Disease enrichment analysis}{155}{subsection.8.3.9}%
+\contentsline {section}{\numberline {8.4}Discussion}{157}{section.8.4}%
 \contentsline {chapter}{Chapter 9: Discussion}{161}{chapter.9}%
 \contentsline {section}{\numberline {9.1}Overall findings - table or figure ???}{161}{section.9.1}%
 \contentsline {section}{\numberline {9.2}Strengths and limitations}{162}{section.9.2}%
@@ -146,4 +146,4 @@
 \contentsline {section}{\numberline {9.5}Overal conclusion}{162}{section.9.5}%
 \contentsline {chapter}{Appendix A: The First Appendix}{163}{appendix.A}%
 \contentsline {chapter}{Appendix B: The Second Appendix, for Fun}{165}{appendix.B}%
-\contentsline {chapter}{References}{167}{appendix*.85}%
+\contentsline {chapter}{References}{167}{appendix*.86}%

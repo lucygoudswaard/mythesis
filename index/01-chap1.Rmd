@@ -28,8 +28,8 @@ Studies which have explored the molecular footprint of adiposity have tended to 
 The aims of the thesis are indicated below, with a schematic of the multi-step pathway which this thesis aims to explore (Figure \@ref(fig:Thesis-schematic)). The 3 overall aims are:
 
 1) Explore the effect of body mass index on platelet traits, platelet function and signalling.
-3) Characterise the effects of the chemokines macrophage-derived chemokine (MDC) and thymus and activation regulated chemokine (TARC) on platelet function.
-4) Determine the effects of adiposity on the plasma proteome.
+2) Characterise the effects of the chemokines macrophage-derived chemokine (MDC) and thymus and activation regulated chemokine (TARC) on platelet function.
+3) Determine the effects of adiposity on the plasma proteome.
 
 
 ```{r Thesis-schematic, echo = FALSE, fig.cap="Schematic of the multi-step pathway addressed in the thesis", fig.scap="Schematic of the multi-step pathway addressed in the thesis"}
@@ -46,7 +46,7 @@ There will be 5 results chapters in this thesis:
 5) Using a randomised control trial to explore the effects of caloric restriction-induced weight loss on the plasma proteome (Chapter \@ref(BMI-protein-RCT))
 
 ## Collaborations from the PhD
-This PhD project is part of the British Heart Foundation Integrative Cardiovascular Science Programme. My PhD project has made full use of interdisciplinary techniques to answer the research questions. In 2019 I spent seven weeks at the Wellcome Sanger Institute near Cambridge, where I joined the human genetics team led by Professor Nicole Soranzo and worked closely with other academics including Professor Adam Butterworth from the University of Cambridge. I have created and implemented a clinical study where I wrote the approved ethics application. This study was in collaboration with Dr Dimitri Pournaras, a bariatric surgeon at Southmead Hopsital. In light of the COVID-19 pandemic, I utilised the laboratory techniques to determine the effects of severe COVID-19 on platelet function by working with doctors on the COVID-19 including Dr David Arnold and Dr Fergus Hamilton. Other collaborations include Assistant Professor Michael Holmes from the University of Oxford and Professor Naveed Sattar from the University of Glasgow.
+This PhD project is part of the British Heart Foundation Integrative Cardiovascular Science Programme. My PhD project has made full use of interdisciplinary techniques to answer the research questions. In 2019 I spent seven weeks at the Wellcome Sanger Institute near Cambridge, where I joined the human genetics team led by Professor Nicole Soranzo and worked closely with other academics including Professor Adam Butterworth from the University of Cambridge. I have created and implemented a clinical study where I wrote the approved ethics application. This study was in collaboration with Dr Dimitri Pournaras, a bariatric surgeon at Southmead Hopsital. In light of the COVID-19 pandemic, I utilised the laboratory techniques developed to determine the effects of severe COVID-19 on platelet function by working with doctors on the COVID-19 including Dr David Arnold and Dr Fergus Hamilton. Other collaborations include Assistant Professor Michael Holmes from the University of Oxford and Professor Naveed Sattar from the University of Glasgow.
 
 ## Publications from the PhD
 
