@@ -143,7 +143,7 @@ column_spec(1, width = "5cm")   %>%
 
 In MR analyses, eight unique BMI-protein associations were detected at the level P<1.4x10^-5^ (multiple testing reference point, Figure \@ref(fig:ObsMRforestplot2)). MR estimates provide an estimate of the causal association between protein (in SDs) per SD higher BMI. The strongest association of BMI was again with leptin (0.63 SD, 95% CI = 0.48-0.79; P=1.6x10^-15^); this was followed by the association with FABP4 (0.65 SD, 95% CI = 0.46-0.83; P=6.7x10^-12^). A strong negative association was also seen between BMI (per SD) and SHBG (-0.45 SD, 95% CI -0.65 to -0.25, P=1.4x10^-5^). Other BMI-protein associations (P<1.4x10^-5^) included positive associations with fumarylacetoacetase (FAAA), inhibin beta C chain and complement C5, and negative associations with receptor-type tyrosine-protein phosphatase delta and PILR alpha-associated neural protein. Supplementary Table 7 provides the full MR results.
 
-```{r ObsMRforesplot2, echo = FALSE, out.width = "95%", fig.cap="Forest plot of the strongest BMI-protein Mendelian randomisation estimates and the corresponding observational estimates"}
+```{r ObsMRforestplot2, echo = FALSE, out.width = "95%", fig.cap="Forest plot of the strongest BMI-protein Mendelian randomisation estimates and the corresponding observational estimates"}
 include_graphics(path = "figure/BMI_protein_INTERVAL/MR_obs_compar_forestplot.pdf", dpi = NA)
 
 ```
@@ -169,7 +169,7 @@ include_graphics(path = "figure/BMI_protein_INTERVAL/unadj_obs_MR_scatter_small.
 
 ```
 
-```{r Obs-MR-without-top8, echo = FALSE, out.width = "95%", out.height = "95%", fig.cap="A) Scatter plot of the unadjusted (age and sex adjusted) observational estimates and the confounder-adjusted observational estimates for BMI and protein traits with a regression line (blue), with the top eight MR BMI-associated proteins excluded. 6B) Scatter plot of the unadjusted (age and sex adjusted) observational estimates and the MR estimates for BMI and protein traits with a regression line (blue), with the top eight MR BMI-associated proteins excluded.", fig.scap="Scatter plot comparing BMI-protein estimates across models with top eight BMI-associated proteins excluded"}
+```{r Obs-MR-without-top8, echo = FALSE, out.width = "80%", fig.cap="A) Scatter plot of the unadjusted (age and sex adjusted) observational estimates and the confounder-adjusted observational estimates for BMI and protein traits with a regression line (blue), with the top eight MR BMI-associated proteins excluded. 6B) Scatter plot of the unadjusted (age and sex adjusted) observational estimates and the MR estimates for BMI and protein traits with a regression line (blue), with the top eight MR BMI-associated proteins excluded.", fig.scap="Scatter plot comparing BMI-protein estimates across models with top eight BMI-associated proteins excluded"}
 include_graphics(path = "figure/BMI_protein_INTERVAL/Obs_MR_scatter_without_top8.pdf", dpi = NA)
 
 ```

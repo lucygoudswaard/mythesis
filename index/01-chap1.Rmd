@@ -41,9 +41,9 @@ There will be 5 results chapters in this thesis:
 
 1) Higher body mass index raises immature platelet count: evidence from Mendelian randomization analyses (Chapter \@ref(BMI-platelets-INTERVAL))
 2) The effect of obesity on platelet function: a clinical pilot study (Chapter \@ref(BMI-platelets-clinic))
-3) Pathways linking BMI and platelet function: do the chemokines MDC and TARC play a role? (Chapter \@ref(chemokine-platelets))
+3) Pathways linking plasma proteins and platelet function: do the chemokines MDC and TARC play a role? (Chapter \@ref(chemokine-platelets))
 4) Effects of adiposity on the human plasma proteome: Observational and Mendelian randomization estimates (Chapter \@ref(BMI-protein-MR))
-5) Using a randomised control trial to explore the effects of caloric restriction-induced weight loss on the plasma proteome (Chapter \@ref(BMI-protein-RCT))
+5) Exploring the effects of caloric restriction-induced weight loss on the plasma proteome (Chapter \@ref(BMI-protein-RCT))
 
 ## Collaborations from the PhD
 This PhD project is part of the British Heart Foundation Integrative Cardiovascular Science Programme. My PhD project has made full use of interdisciplinary techniques to answer the research questions. In 2019 I spent seven weeks at the Wellcome Sanger Institute near Cambridge, where I joined the human genetics team led by Professor Nicole Soranzo and worked closely with other academics including Professor Adam Butterworth from the University of Cambridge. I have created and implemented a clinical study where I wrote the approved ethics application. This study was in collaboration with Dr Dimitri Pournaras, a bariatric surgeon at Southmead Hopsital. In light of the COVID-19 pandemic, I utilised the laboratory techniques developed to determine the effects of severe COVID-19 on platelet function by working with doctors on the COVID-19 including Dr David Arnold and Dr Fergus Hamilton. Other collaborations include Assistant Professor Michael Holmes from the University of Oxford and Professor Naveed Sattar from the University of Glasgow.

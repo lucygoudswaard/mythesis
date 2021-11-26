@@ -1,4 +1,4 @@
-# Using a randomised control trial to explore the effects of caloric restriction-induced weight loss on the plasma proteome {#BMI-protein-RCT}
+# Exploring the effects of caloric restriction-induced weight loss on the plasma proteome {#BMI-protein-RCT}
 
 ## Background
 
@@ -53,7 +53,7 @@ Similarly to the previous chapters, proteins which had a BMI effect were taken f
 
 ### Participant characteristics
 
-Participants displayed similar characteristics across control and intervention groups (Table \@ref(tab:DiRECT-participants)). Baseline BMI was similar across treatment groups (34.2 kg/m^2^ with SD of 4.3 kg/m^26 in the control group vs 35.0 kg/m^2^ with SD of 4.6 kg/m^2^ in the intervention group, p=0.19). Other variables relating to cardiometabolic health were also similar across groups, including systolic blood pressure, HbA1c, glucose and insulin levels. The participants in the intervention group were younger and included fewer participants from Scotland but more from Tyneside.
+Participants displayed similar characteristics across control and intervention groups (Table \@ref(tab:DiRECT-participants)). Baseline BMI was similar across treatment groups (34.2 kg/m^2^ with SD of 4.3 kg/m^2^ in the control group vs 35.0 kg/m^2^ with SD of 4.6 kg/m^2^ in the intervention group, p=0.19). Other variables relating to cardiometabolic health were also similar across groups, including systolic blood pressure, HbA1c, glucose and insulin levels. The participants in the intervention group were younger and included fewer participants from Scotland but more from Tyneside.
 
 ```{r DiRECT-participants,  echo=FALSE}
 options(knitr.kable.NA = "")
