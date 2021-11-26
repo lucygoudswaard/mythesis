@@ -35,6 +35,37 @@ Citrated whole blood (200 uL) was analysed using the Sysmex XN-20 haematology an
 ### Integrin α~IIb~β~3~ activation and P-selectin expression measured by flow cytometry
 Isolated PRP was diluted 1:40 in HEPES Tyrode's. FITC-conjugated PAC1 and PE-conjugated CD62P antibodies were added in a 2:1 ratio. This master mix was added to pre-prepared vacuum packed 96 well plates to a final folume of 50 uL. Agonists used were protease-activated receptor 1 activating protein (PAR1-AP), adenosine diphosphate (ADP) and collagen related peptide (CRP), which were freeze-dried onto the plates [@Chan2018], as well as HEPES Tyrode's which was used for a measurement of unstimulated integrin α~IIb~β~3~ activation and P-selectin expression. Platelets were stimulated with agonists for 10 minutes.
 
+---
+output: 
+    thesisdown::thesis_pdf: default
+bibliography: bib/library.bib
+csl: csl/nature.csl
+space_betwee_paragraphs: true
+fig_caption: true
+always_allow_html: yes
+link-citations: true
+toc-depth: 2
+lot: true
+lof: true
+indent: true
+header-includes: # include other LaTeX packages here
+    \usepackage{booktabs}
+    \usepackage{longtable}
+    \usepackage{siunitx}
+    \usepackage[left]{lineno}
+    \usepackage{float}
+    \floatplacement{figure}{H}
+    \linenumbers
+    \pagestyle{plain}
+    \raggedbottom 
+    \usepackage{indentfirst}
+editor_options: 
+  chunk_output_type: console
+---
+
+```{r, echo=FALSE, message=FALSE}
+source("~/OneDrive - University of Bristol/PhD/Main project/Thesis/index/packages.R")
+```
 ### Surface receptor levels measured by flow cytometry
 Diluted PRP (1:40) was used for unstimulated surface receptor detection. Antibody was added (1:10 v/v) to a final volume of 50 uL. Antibodies used include anti-human CD41, CD42b, CD61 (FITC-conjugated) and GPVI and CD110 (PE-conjugated). Platelets were gated and the median fluorescence was reported from a total of 10,000 events. 
 

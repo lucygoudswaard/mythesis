@@ -1,10 +1,41 @@
+---
+output: 
+    thesisdown::thesis_pdf: default
+bibliography: bib/library.bib
+csl: csl/nature.csl
+space_betwee_paragraphs: true
+fig_caption: true
+always_allow_html: yes
+link-citations: true
+toc-depth: 2
+lot: true
+lof: true
+indent: true
+header-includes: # include other LaTeX packages here
+    \usepackage{booktabs}
+    \usepackage{longtable}
+    \usepackage{siunitx}
+    \usepackage[left]{lineno}
+    \usepackage{float}
+    \floatplacement{figure}{H}
+    \linenumbers
+    \pagestyle{plain}
+    \raggedbottom 
+    \usepackage{indentfirst}
+editor_options: 
+  chunk_output_type: console
+---
+
+```{r, echo=FALSE, message=FALSE}
+source("~/OneDrive - University of Bristol/PhD/Main project/Thesis/index/packages.R")
+```
 # Exploring the effects of caloric restriction-induced weight loss on the plasma proteome {#BMI-protein-RCT}
 
 ## Background
 
 Obesity is associated with an increased risk of type II diabetes (T2D), cardiovascular diseases, musculoskeletal diseases, and types of cancer [@Garg2014; @Khan2018; @Kortt2002]. These associations are well established, however mechanisms of disease are less clear. It is likely that a change in the composition of proteins circulating in the blood plays a role in obesity-related cardiovascular risk [@Goudswaard2021]. The previous results chapter (Chapter \@ref(BMI-protein-MR)) examined the effect of BMI on the plasma proteome and provided estimates for the average change in proteins per average difference in BMI in a general population, using observational estimates and one sample Mendelian randomization (MR). There was evidence of a BMI effect on proteins such as leptin, sex hormone binding globulin (SHBG), fatty acid binding protein 4 (FABP4) and fumarylacetoacetase. Within an enrichment analysis, this change in circulating levels of these proteins was implicated in cardiovascular diseases. 
 
-Although MR helps to overcome issues inherent to observational studies such as confounding and reverse causation, MR has its own limitations. For example, it is possible that genetic variants used for the genetic risk score could affect protein levels through routes other than changes in BMI. This is known as horizonal pleiotropy [@Davies2018]. As well as this, although there were over 2700 particpants within the MR, this is a relatively small sample size for the study design. Additionally, it is important to not only look at which proteins are altered within the population with higher BMI; identifying which proteins can be modulated with weight loss is important as this may help reveal mechanistic insight into mechanisms of obesity-related cardiovascular disease. Triangulation can therefore be used in efforts to further determine the BMI effects on the plasma proteome. Triangulation is defined as strengthening causal inference through the combination of study designs which each have separate sources of bias [@Lawlor2016]. Therefore, to complement the MR in the previous chapter, the Diabetes REmission Clinical Trial (DiRECT) can be utilised. The DiRECT trial consisted of a group of patients with overweight/obesity and T2D who were either given guideline T2D care or an intervention, consisting of a low calorie diet, to help with weight loss and T2D remission [@Lean201]. This chapter therefore aimed to:
+Although MR helps to overcome issues inherent to observational studies such as confounding and reverse causation, MR has its own limitations. For example, it is possible that genetic variants used for the genetic risk score could affect protein levels through routes other than changes in BMI. This is known as horizonal pleiotropy [@Davies2018]. As well as this, although there were over 2700 particpants within the MR, this is a relatively small sample size for the study design. Additionally, it is important to not only look at which proteins are altered within the population with higher BMI; identifying which proteins can be modulated with weight loss is important as this may help reveal mechanistic insight into mechanisms of obesity-related cardiovascular disease. Triangulation can therefore be used in efforts to further determine the BMI effects on the plasma proteome. Triangulation is defined as strengthening causal inference through the combination of study designs which each have separate sources of bias [@Lawlor2016]. Therefore, to complement the MR in the previous chapter, the Diabetes REmission Clinical Trial (DiRECT) can be utilised. The DiRECT trial consisted of a group of patients with overweight/obesity and T2D who were either given guideline T2D care or an intervention, consisting of a low calorie diet, to help with weight loss and T2D remission [@Lean2018]. This chapter therefore aimed to:
 
 1) Examine the effect of reducing BMI on the plasma proteome.
 2) Compare BMI-protein effects across MR and RCT study designs (Results from Chapter \@ref(BMI-protein-MR) (Figure \@ref(fig:BMI-protein-graphic2))).
@@ -201,7 +232,7 @@ column_spec(4, width = "8cm") %>%
 
 This study also provides some novel proteins associated with a reduction in BMI including SCAR5, chondroadherin (CHAD), fumarylacetoacetase (FAAA) and  aminoacylase-1. A reduction in BMI led to an increase in plasma levels of SCAR5. This protein is involved in mediating commitment of mesenchymal stem cells into adipocytes and is highly expressed in white adipose tissue (WAT) [@Lee2017a]. A reduction in BMI also increased levels of chondroadherin (CHAD). Chondroadherin is a protein which is important in regulating exctracellular matrix organisation in cartilage and bones [@Hessle2013; @Iozzo2015]. CHAD knockout mice show decreased bone strength compared with wildtype [@Hessle2013]. This suggests that weight reduction may be beneficial for bone strength. The function of these proteins and relationship with adiposity needs to be further characterised.
 
-The comparison of results from the previous chapter (Chapter \@ref(BMI-protein-MR)), which used Mendelian randomization and observational associations to assess the effect of average higher BMI across a population on average protein levels, with results from a randomised control trial in the current chapter provides two separate lines of evidence to suggest a causal role of BMI in levels of various proteins. The analysis in INTERVAL suggested that proteins most altered by BMI were enriched for diseases such as cardiovascular disease and metabolic disease. As the estimates for the effect of BMI on proteins were consistent across both DiRECT and INTERVAL, this suggests that weight loss is able to reverse the protein changes observed with higher BMI, thereby potentially reducing disease risk. The enrichment results comparing the 144 proteins which were altered with BMI change to the full 4601 proteins tested confirmed this \@ref(tab:DAVID-enrichment-DiRECT) as there was strongest evidence for enrichment of proteins involved in metabolic disease and renal disease, however the effect on cardiovascular disease did not pass multiple testing adjustment. Pathway enrichment using StringDB also suggested that proteins most altered with BMI change were involved in cytokine-cytokine receptor interactions and complement and coagulation cascades, rather that platelet activation. It could be that the effect on inflammation and coagulation may be more immediate effects, and that changes in platelet activation may either require a more sustained weight loss, or a further reduction in BMI to see effects.
+The comparison of results from the previous chapter (Chapter \@ref(BMI-protein-MR)), which used Mendelian randomization and observational associations to assess the effect of average higher BMI across a population on average protein levels, with results from a randomised control trial in the current chapter provides two separate lines of evidence to suggest a causal role of BMI in levels of various proteins. The analysis in INTERVAL suggested that proteins most altered by BMI were enriched for diseases such as cardiovascular disease and metabolic disease. As the estimates for the effect of BMI on proteins were consistent across both DiRECT and INTERVAL, this suggests that weight loss is able to reverse the protein changes observed with higher BMI, thereby potentially reducing disease risk. The enrichment results comparing the 144 proteins which were altered with BMI change to the full 4601 proteins tested confirmed this as there was strongest evidence for enrichment of proteins involved in metabolic disease and renal disease, however the effect on cardiovascular disease did not pass multiple testing adjustment. Pathway enrichment using StringDB also suggested that proteins most altered with BMI change were involved in cytokine-cytokine receptor interactions and complement and coagulation cascades, rather that platelet activation. It could be that the effect on inflammation and coagulation may be more immediate effects, and that changes in platelet activation may either require a more sustained weight loss, or a further reduction in BMI to see effects.
 
 Divergence in estimates across study designs may also provide some insight into the biology due to the nature of each study design. In general, the MR study design provides information on the effect on the proteome that a sustained high BMI has over the life course. In contrast, the estimates in DiRECT are the effect that a relatively short-term weight loss intervention (1 year) has on the proteome. A protein may be altered in the MR study, but not after a weight loss intervention because weight loss may not have been sustained long enough to induce changes at the proteome level. A protein may also not have evidence for a causal relationship in the MR but be altered in DiRECT. This could be because the protein is a signal of starvation or other changes that happen with caloric restriction. 
 

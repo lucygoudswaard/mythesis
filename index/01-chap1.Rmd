@@ -1,8 +1,35 @@
 ---
-output:
-  pdf_document: default
-  html_document: default
+output: 
+    thesisdown::thesis_pdf: default
+bibliography: bib/library.bib
+csl: csl/nature.csl
+space_betwee_paragraphs: true
+fig_caption: true
+always_allow_html: yes
+link-citations: true
+toc-depth: 2
+lot: true
+lof: true
+indent: true
+header-includes: # include other LaTeX packages here
+    \usepackage{booktabs}
+    \usepackage{longtable}
+    \usepackage{siunitx}
+    \usepackage[left]{lineno}
+    \usepackage{float}
+    \floatplacement{figure}{H}
+    \linenumbers
+    \pagestyle{plain}
+    \raggedbottom 
+    \usepackage{indentfirst}
+editor_options: 
+  chunk_output_type: console
 ---
+
+```{r, echo=FALSE, message=FALSE}
+source("~/OneDrive - University of Bristol/PhD/Main project/Thesis/index/packages.R")
+```
+
 
 # Introduction
 

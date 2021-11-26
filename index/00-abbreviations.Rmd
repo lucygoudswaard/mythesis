@@ -3,6 +3,7 @@
 library(readxl)
 library(tidyr)
 library(kableExtra)
+install.packages("knitr")
 library(knitr)
 abbreviations <- read_xlsx("figure/Abbreviations/Abbreviations.xlsx")
 abbreviations <- abbreviations[order(abbreviations$Abbreviation),]

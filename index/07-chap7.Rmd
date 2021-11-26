@@ -1,3 +1,34 @@
+---
+output: 
+    thesisdown::thesis_pdf: default
+bibliography: bib/library.bib
+csl: csl/nature.csl
+space_betwee_paragraphs: true
+fig_caption: true
+always_allow_html: yes
+link-citations: true
+toc-depth: 2
+lot: true
+lof: true
+indent: true
+header-includes: # include other LaTeX packages here
+    \usepackage{booktabs}
+    \usepackage{longtable}
+    \usepackage{siunitx}
+    \usepackage[left]{lineno}
+    \usepackage{float}
+    \floatplacement{figure}{H}
+    \linenumbers
+    \pagestyle{plain}
+    \raggedbottom 
+    \usepackage{indentfirst}
+editor_options: 
+  chunk_output_type: console
+---
+
+```{r, echo=FALSE, message=FALSE}
+source("~/OneDrive - University of Bristol/PhD/Main project/Thesis/index/packages.R")
+```
 # Effects of adiposity on the human plasma proteome: Observational and Mendelian randomization estimates {#BMI-protein-MR}
 
 The work within this chapter has been published in the International Journal of Obesity [@Goudswaard2021]. I am the first author of the publication; I performed all analyses, created all figures and tables and wrote the manuscript. 

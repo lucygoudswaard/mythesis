@@ -1,3 +1,34 @@
+---
+output: 
+    thesisdown::thesis_pdf: default
+bibliography: bib/library.bib
+csl: csl/nature.csl
+space_betwee_paragraphs: true
+fig_caption: true
+always_allow_html: yes
+link-citations: true
+toc-depth: 2
+lot: true
+lof: true
+indent: true
+header-includes: # include other LaTeX packages here
+    \usepackage{booktabs}
+    \usepackage{longtable}
+    \usepackage{siunitx}
+    \usepackage[left]{lineno}
+    \usepackage{float}
+    \floatplacement{figure}{H}
+    \linenumbers
+    \pagestyle{plain}
+    \raggedbottom 
+    \usepackage{indentfirst}
+editor_options: 
+  chunk_output_type: console
+---
+
+```{r, echo=FALSE, message=FALSE}
+source("~/OneDrive - University of Bristol/PhD/Main project/Thesis/index/packages.R")
+```
 # The effect of obesity on platelet function: a clinical pilot study {#BMI-platelets-clinic}
 
 The following chapter is a specifically designed patient study. Recruitment into this study has been severely affected by COVID-19 as approvals were set in place to start recruitment in March 2020. All data in this chapter was collected by myself, apart from the platelet-neutrophil assay data, which was performed by Dr Chris Williams and the Sysmex haematology analyzer data, which was collected by Dr Kate Burley. Help was required here due to time constraints when receiving patient samples. The proteomic data was analysed by the Proteomics facility at the University of Bristol. Methods have been used within a study to explore the effect of COVID-19 on platelet function given the increased risk of thrombosis. This has been written up as a manuscript but will not be included in the thesis due to not aligning with the current aims.
