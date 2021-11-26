@@ -122,7 +122,7 @@
 \contentsline {subsection}{\numberline {7.3.6}Comparison of observational and MR estimates}{129}{subsection.7.3.6}%
 \contentsline {subsection}{\numberline {7.3.7}Enrichment analysis of strongest BMI-protein associations}{133}{subsection.7.3.7}%
 \contentsline {section}{\numberline {7.4}Discussion}{137}{section.7.4}%
-\contentsline {chapter}{Chapter 8: Using a randomised control trial to explore the effects of caloric restriction-induced weight loss on the plasma proteome}{141}{chapter.8}%
+\contentsline {chapter}{Chapter 8: Exploring the effects of caloric restriction-induced weight loss on the plasma proteome}{141}{chapter.8}%
 \contentsline {section}{\numberline {8.1}Background}{141}{section.8.1}%
 \contentsline {section}{\numberline {8.2}Methods}{143}{section.8.2}%
 \contentsline {subsection}{\numberline {8.2.1}Study design and participants}{143}{subsection.8.2.1}%
