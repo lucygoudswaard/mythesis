@@ -31,17 +31,43 @@ source("~/OneDrive - University of Bristol/PhD/Main project/Thesis/index/package
 ```
 # Discussion
 
-The work presented in this thesis brought together an interdiscplinary approach to expand on previous literature to further explore the contribution of the plasma protoeme and platelet function to obesity-related thrombosis. A summary of pathways explored in each results chapters is displayed in summary Figure \@ref(fig:Thesis-schematic-chaps).
-
-## Overall findings - table or figure ???
+## Overall findings
+The work presented in this thesis brought together an interdiscplinary approach to expand on previous literature to further explore the contribution of the plasma protoeme and platelet function to obesity-related thrombosis. A summary of pathways explored in each results chapters is displayed in summary Figure \@ref(fig:Thesis-schematic-chaps), with a more detailed summary of findings in Table \@ref(tab:main-thesis-findings).
 
 ```{r Thesis-schematic-chaps, echo = FALSE, out.width = "90%", fig.cap="Schematic of the multi-step pathway addressed in the thesis with chapter numbers where associations are explored", fig.scap="Schematic of the multi-step pathway addressed in the thesis with chapter numbers"}
 include_graphics(path = "figure/General_discussion/Thesis_graphic_overview_chapters.png", dpi = NA)
 ```
 
+```{r main-thesis-findings,  echo=FALSE}
+options(knitr.kable.NA = "")
+Chapter = c('Chapter 4', 'Chapter 5', 'Chapter 6', 'Chapter 7', 'Chapter 8')
+findings = c("Higher body mass index (BMI) leads to higher immature platelet count (IPC) in a Mendelian randomization framework (INTERVAL). Within a cardiac surgery cohort (COPTIC), immature platelet count was positively associated with whole blood platelet aggregation.","Laboratory experiments were optimised to assess platelet function from patients. In the clinical pilot study, there was little evidence for an effect of high BMI on platelet function, but there was evidence for a difference in levels of platelet proteins across groups. This study needs to be replicated with a larger N, controlling for confounders.", "This study provided evidence that the chemokines MDC and TARC can potentiate PAR1-AP induced platelet function. The chemokines were also found to be able to activate platelets when applied alone. It is likely that these effects are through the CCR4 receptor which is likely to be Gq coupled. A two sample Mendelian randomization analysis implicated higher levels of MDC in deep vein thrombosis and pulmonary embolism", "Higher BMI has a causal effect on levels of proteins which circulate in the plasma. Proteins most altered by BMI were enriched for cardiovascular disease, metabolic disease and renal disease", "Weight loss as a result of caloric restriction has a substantial effect on the plasma proteome and protein levels altered as a result of higher BMI (Chapter 7) can be reversed with weight loss.")
+mytable = cbind(Chapter, findings)
+colnames(mytable) <- c("Chapter", "Main findings")
+mytable %>% kable(caption = "Summary of main findings from the thesis", booktabs = TRUE) %>% 
+  kable_classic_2(full_width = F) %>%
+  #kable_paper("hover", full_width = F)
+ kable_styling(full_width = TRUE) %>%
+column_spec(2, width = "12cm") %>%
+  column_spec(1, width = "4cm") %>%
+  landscape()
+```
+
 ## Strengths and limitations
 
 ## Future studies
+Chapter 1
+- Replicate BMI and IPC association in another large cohort. 
+- Need to be summary stats for larger cohorts with platelet function to do two sample MR for BMI to platelet function.
+
+Chapter 2
+
+Chapter 3
+
+Chapter 4
+
+Chapter 5
+- Utilise bariatric surgery data as a third line of evidence to explore effect of BMI/weight loss on the plasma proteome.
 
 ## Wider implications of findings (e.g. clinical)
 
