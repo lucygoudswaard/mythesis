@@ -30,7 +30,6 @@ editor_options:
 source("~/OneDrive - University of Bristol/PhD/Main project/Thesis/index/packages.R")
 ```
 # Background
-
 This chapter will give a more extensive introduction to the themes covered within the results chapters. It will set out where the current gaps are in the literature and provide an overview of the hypotheses of the thesis.
 
 ## The history of body mass index
