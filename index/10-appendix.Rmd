@@ -1,24 +1,66 @@
+---
+output: 
+    thesisdown::thesis_pdf: default
+bibliography: bib/library.bib
+csl: csl/nature.csl
+space_betwee_paragraphs: true
+fig_caption: true
+always_allow_html: yes
+link-citations: true
+toc-depth: 2
+lot: true
+lof: true
+indent: true
+header-includes: # include other LaTeX packages here
+    \usepackage{booktabs}
+    \usepackage{longtable}
+    \usepackage{siunitx}
+    \usepackage[left]{lineno}
+    \usepackage{float}
+    \floatplacement{figure}{H}
+    \linenumbers
+    \pagestyle{plain}
+    \raggedbottom 
+    \usepackage{indentfirst}
+editor_options: 
+  chunk_output_type: console
+---
 `r if(knitr:::is_latex_output()) '\\appendix'`
-
 `r if(!knitr:::is_latex_output()) '# (APPENDIX) Appendix {-}'` 
-
 <!--
 If you feel it necessary to include an appendix, it goes here.
 -->
+```{r, echo=FALSE, message=FALSE}
+source("~/OneDrive - University of Bristol/PhD/Main project/Thesis/index/packages.R")
+```
+# Exploring nonlinear associations between body mass index and plasma proteins
+This appendix contains an example of nonlinearity for the association between body mass index (BMI) and levels of certain plasma proteins within the INTERVAL dataset. This analysis was performed as a result of an observation within the group and from published data [@Li2021] that the effect of BMI on certain circulating metabolites such as LDL-C may be nonlinear. Therefore it is likely that this is also the case with proteins: biologically, proteins might reach a threshold and therefore increasing BMI may lead to a plateau in the levels of the protein. Alternatively, certain technologies may reach a maximum in detection. The SomaLogic platform has a wide range of detection from femtomolar to micromolar, therefore this should be less of an issue. This possible nonlinear relationship has not been accounted for in the linear models and Mendelian ramdomisation analyses performed in Chapter \@ref(BMI-protein-MR). Nonlinearity may also explain why some proteins may be altered asa result of high BMI in the MR, but caloric restriction may not alter the levels of the same protein: there may be a certain BMI that needs to be reached before protein levels are altered. Exploring nonlinearity is ongoing, but this appendix provides an example of the possible nonlinear relationship between BMI (in kg/m^2^ so that it is biologically meaningful and effects can be related back to the NHS BMI categories) and levels of leptin. 
 
+## Observational association between BMI and leptin 
+The association between BMI and leptin was explored observationally using both a linear model and a generalized additive model (GAM) (Figure \@ref(fig:leptin-lm-GAM)). Here, using just BMI as the exposure and leptin as the outcome (without covariable added in the model), it is clear that a linear model indicates a positive association between the two variables. However, the GAM indicates that after a BMI of around 40 kg/m^2^ the levels of leptin do not increase anymore. These two models can compared using an ANOVA (F test) with the hypothesis that the GAM is a better fit than the linear model, where a small P value indicates that the GAM is a better fit. For leptin, R^2^ for the linear model was 0.51 and it was 0.56 for the GAM, with a p value of (2.17x10^-59^). This was the smallest p value comparing the two models in all proteins.
 
-# The First Appendix
-
-This first appendix includes all of the R chunks of code that were hidden throughout the document (using the `include = FALSE` chunk tag) to help with readibility and/or setup.
-
-**In the main Rmd file**
-
-```{r ref.label='include_packages', results='hide', echo = TRUE}
+(ref:leptin-lm-GAM-cap) Linear model and generalized additive model of the association between BMI and leptin. Linear model (blue) and generalized additive model (red) of the association between BMI and leptin with 95% confidence intervals. The vertical lines indicate the mean BMI for each BMI category (underweight, healthy, all, overweight, obese)
+(ref:leptin-lm-GAM-scap) Linear model and generalized additive model of the association between BMI and leptin
+```{r leptin-lm-GAM, echo = FALSE, warning=FALSE, message=FALSE, out.width="90%", fig.cap='(ref:leptin-lm-GAM-cap)', fig.scap='(ref:leptin-lm-GAM-scap)'}
+include_graphics(path = "figure/Appendix/leptin_nonlinear_obs.pdf", dpi = NA)
 ```
 
-**In Chapter \@ref(ref-labels):**
+## Determining nonlinear effects using MR
+Nonlinear associations can be easily implemented using observational associations. However due to the nature of MR, regression BMI on the genetic risk score provides estimates genetically predicted BMI. The protein is then regressed on this genetically predicted BMI, however, this covers a limited range of BMI as seen in figure \@ref(fig:leptin-lm-GAM-MR). Therefore it is more difficult to interpret the causal effect over the full range of BMIs observed in the population.
 
-```{r ref.label='include_packages_2', results='hide', echo = TRUE}
+(ref:leptin-lm-GAM-MR-cap) Linear model and generalized additive model of the association between BMI and leptin using Mendelian randomization. Linear model (blue) and generalized additive model (red) of the association between BMI and leptin with 95% confidence intervals. The vertical lines indicate the mean BMI for each BMI category (underweight, healthy, all, overweight, obese)
+(ref:leptin-lm-GAM-MR-scap) Linear model and generalized additive model of the association between BMI and leptin using Mendelian randomization
+```{r leptin-lm-GAM-MR, echo = FALSE, warning=FALSE, message=FALSE, out.width="90%", fig.cap='(ref:leptin-lm-GAM-MR-cap)', fig.scap='(ref:leptin-lm-GAM-MR-scap)'}
+include_graphics(path = "figure/Appendix/leptin_nonlinear_MR.pdf", dpi = NA)
 ```
 
-# The Second Appendix, for Fun
+## Using nonlinear MR package
+The nonlinear MR package ("nlmr") can also be utilised which uses two methods: fractional polynomial and piecewise MR [@Staley2017]. The nonlinear MR The issue with this is that it is still difficult to estimate the effect of a certain range of BMIs on protein levels. Therefore the package
+
+(ref:leptin-nlmr-cap) Effects of BMI on levels of leptin using nonlinear MR from the nlmr R package [@Staley2017]. Upper panel fractional polynomial MR. Lower panel piecewise MR.
+(ref:leptin-nlmr-scap) Effects of BMI on levels of leptin using nonlinear MR
+```{r leptin-nlmr, echo = FALSE, warning=FALSE, message=FALSE, out.width="90%", fig.cap='(ref:leptin-nlmr-cap)', fig.scap='(ref:leptin-nlmr-scap)'}
+include_graphics(path = "figure/Appendix/leptin_nlmr_fracpoly_piecewise.pdf", dpi = NA)
+```
+
+
