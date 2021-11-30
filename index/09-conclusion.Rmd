@@ -56,18 +56,26 @@ column_spec(2, width = "12cm") %>%
 ## Strengths and limitations
 
 ## Future studies
-Chapter 1
+Chapter 4
 - Replicate BMI and IPC association in another large cohort. 
 - Need to be summary stats for larger cohorts with platelet function to do two sample MR for BMI to platelet function.
 
-Chapter 2
-
-Chapter 3
-
-Chapter 4
-
 Chapter 5
-- Utilise bariatric surgery data as a third line of evidence to explore effect of BMI/weight loss on the plasma proteome.
+- Follow up immature platelets from patients with obesity as not much is understood about their function
+- Look up proteins which came up in proteomics in two sample MR? E.g. APMAP implemented in MI.
+- Complete the longitudinal study - repeated measures before and after surgery could be informative.
+
+Chapter 6
+- Further signaling and functional work required.
+- These chemokines were measured within Chapter 7 - there was evidence for an association between BMI and MDC, and weak evidence for a causal effect (p=0.07). This did not pass multiple testing correction. It would be beneficial to look at these chemokines in other cohorts. In the DiRECT analysis, there was weak evidence that a reduction in weight reduces levels of MDC (p=0.06). Again, this did not pass multiple testing. The agreement in direction across the two studies (raised with higher BMI and reduced with weight loss), suggests that this effect could be real, however it may be a relatively small effect which may require more targeted proteomics. The effects were smaller for TARC, suggesting that if these effects are real, body mass index has a larger effect on MDC levels.
+
+Chapter 7
+- Recent data suggested nonlinearity with metabolites, preliminary analyses have suggested that effects may be nonlinear (Add a Figure as an appendix - use example of BMI and CRP).
+
+Chapter 8
+- Utilise bariatric surgery data as a third line of evidence to explore effect of BMI/weight loss on the plasma proteome. Bring in that this will be performed as part of the transition fellowship.
+- Work on proteomic networks to really determine key proteins in disease - this leads onto the transition fellowship.
+- Instrument groups of proteins
 
 ## Wider implications of findings (e.g. clinical)
 
