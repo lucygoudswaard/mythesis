@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2022/dev) (preloaded format=pdflatex 2021.11.25)  29 NOV 2021 16:18
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2022/dev) (preloaded format=pdflatex 2021.11.25)  6 DEC 2021 12:45
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -949,7 +949,7 @@ Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: threeparttable package is loaded.
 Package caption Info: wrapfig package is loaded.
 Package caption Info: End \AtBeginDocument code.
-<figure/index/UoBcrest.pdf, id=618, 114.4275pt x 137.51375pt>
+<figure/index/UoBcrest.pdf, id=634, 114.4275pt x 137.51375pt>
 File: figure/index/UoBcrest.pdf Graphic file (type pdf)
 <use figure/index/UoBcrest.pdf>
 Package pdftex.def Info: figure/index/UoBcrest.pdf  used on input line 200.
@@ -1011,9 +1011,12 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ] (./thesis.toc
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <10.95> on input line 1.
-[5] [6]
+[5]
+Underfull \vbox (badness 1803) has occurred while \output is active []
+
+[6]
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 100.
+(Font)              <5> on input line 101.
 [7] [8])
 \tf@toc=\write6
 \openout6 = `thesis.toc'.
@@ -1066,7 +1069,7 @@ Underfull \hbox (badness 1983) in paragraph at lines 279--280
 d high-density lipopro-teins
  []
 
-<figure/Intro_background/Thesis_graphic_overview_without_chapters.png, id=1132,
+<figure/Intro_background/Thesis_graphic_overview_without_chapters.png, id=1165,
  405.4347pt x 156.3441pt>
 File: figure/Intro_background/Thesis_graphic_overview_without_chapters.png Grap
 hic file (type png)
@@ -1091,7 +1094,7 @@ Chapter 2.
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [11]
-<figure/Intro_background/MR_statin_example.jpg, id=1211, 308.352pt x 157.7895pt
+<figure/Intro_background/MR_statin_example.jpg, id=1243, 308.352pt x 157.7895pt
 >
 File: figure/Intro_background/MR_statin_example.jpg Graphic file (type jpg)
 <use figure/Intro_background/MR_statin_example.jpg>
@@ -1105,7 +1108,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [13 <./figure/Intro_background/MR_statin_example.jpg>] [14]
-<figure/Intro_background/Platelet_activation.png, id=1271, 443.0151pt x 286.911
+<figure/Intro_background/Platelet_activation.png, id=1303, 443.0151pt x 286.911
 9pt>
 File: figure/Intro_background/Platelet_activation.png Graphic file (type png)
 <use figure/Intro_background/Platelet_activation.png>
@@ -1121,7 +1124,7 @@ Overfull \hbox (23.01402pt too wide) in paragraph at lines 415--416
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [15]
-<figure/Intro_background/Antiplatelet_drugs.png, id=1289, 1014.79124pt x 771.88
+<figure/Intro_background/Antiplatelet_drugs.png, id=1321, 1014.79124pt x 771.88
 374pt>
 File: figure/Intro_background/Antiplatelet_drugs.png Graphic file (type png)
 <use figure/Intro_background/Antiplatelet_drugs.png>
@@ -1133,7 +1136,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [16 <./figure/Intro_background/Platelet_activation.png>] [17 <./figure/Intro_ba
 ckground/Antiplatelet_drugs.png>] [18]
-<figure/Intro_background/Sysmex_IPF.png, id=1327, 479.7925pt x 453.695pt>
+<figure/Intro_background/Sysmex_IPF.png, id=1359, 479.7925pt x 453.695pt>
 File: figure/Intro_background/Sysmex_IPF.png Graphic file (type png)
 <use figure/Intro_background/Sysmex_IPF.png>
 Package pdftex.def Info: figure/Intro_background/Sysmex_IPF.png  used on input 
@@ -1150,17 +1153,17 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 [19]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[20 <./figure/Intro_background/Sysmex_IPF.png>] [21] [22] [23] [24
+[20 <./figure/Intro_background/Sysmex_IPF.png>] [21] [22] [23] [24]
+Chapter 3.
+[25
 
 ]
-Chapter 3.
-[25]
 LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 5
-05.
+31.
 (/Users/lg14289/Library/TinyTeX/texmf-dist/tex/latex/psnfss/ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 )
-Underfull \hbox (badness 1917) in paragraph at lines 505--506
+Underfull \hbox (badness 1917) in paragraph at lines 531--532
 \T1/ptm/m/n/10.95 Bachem (Buben-dorf, Switzer-land), crosslinked collagen-relat
 ed pep-tide (CRP-XL) from
  []
@@ -1179,11 +1182,11 @@ Chapter 4.
 [35
 
 ]
-<figure/BMI_platelets/obsvMRexample.png, id=1530, 372.1905pt x 277.7577pt>
+<figure/BMI_platelets/obsvMRexample.png, id=1579, 372.1905pt x 277.7577pt>
 File: figure/BMI_platelets/obsvMRexample.png Graphic file (type png)
 <use figure/BMI_platelets/obsvMRexample.png>
 Package pdftex.def Info: figure/BMI_platelets/obsvMRexample.png  used on input 
-line 621.
+line 647.
 (pdftex.def)             Requested size: 372.18959pt x 277.75702pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1192,23 +1195,23 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [37]
-<figure/BMI_platelets/Thesis_graphic_overview_BMI_platelets.png, id=1554, 528.2
+<figure/BMI_platelets/Thesis_graphic_overview_BMI_platelets.png, id=1603, 528.2
 937pt x 343.5234pt>
 File: figure/BMI_platelets/Thesis_graphic_overview_BMI_platelets.png Graphic fi
 le (type png)
 <use figure/BMI_platelets/Thesis_graphic_overview_BMI_platelets.png>
 Package pdftex.def Info: figure/BMI_platelets/Thesis_graphic_overview_BMI_plate
-lets.png  used on input line 625.
+lets.png  used on input line 651.
 (pdftex.def)             Requested size: 377.99744pt x 245.79558pt.
 
 Underfull \vbox (badness 4899) has occurred while \output is active []
 
 [38 <./figure/BMI_platelets/obsvMRexample.png>]
-<figure/BMI_platelets/STROBE_diagram.pdf, id=1562, 249.93375pt x 246.9225pt>
+<figure/BMI_platelets/STROBE_diagram.pdf, id=1611, 249.93375pt x 246.9225pt>
 File: figure/BMI_platelets/STROBE_diagram.pdf Graphic file (type pdf)
 <use figure/BMI_platelets/STROBE_diagram.pdf>
 Package pdftex.def Info: figure/BMI_platelets/STROBE_diagram.pdf  used on input
- line 635.
+ line 661.
 (pdftex.def)             Requested size: 336.00128pt x 331.98589pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1221,12 +1224,12 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 ] [44]
-<figure/BMI_platelets/Corrmatrix_dendrogram.pdf, id=1629, 563.10374pt x 293.095
+<figure/BMI_platelets/Corrmatrix_dendrogram.pdf, id=1678, 563.10374pt x 293.095
 pt>
 File: figure/BMI_platelets/Corrmatrix_dendrogram.pdf Graphic file (type pdf)
 <use figure/BMI_platelets/Corrmatrix_dendrogram.pdf>
 Package pdftex.def Info: figure/BMI_platelets/Corrmatrix_dendrogram.pdf  used o
-n input line 733.
+n input line 759.
 (pdftex.def)             Requested size: 398.99872pt x 207.6785pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1235,7 +1238,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Overfull \vbox (66.59473pt too high) has occurred while \output is active []
 
 [46 <./figure/BMI_platelets/Corrmatrix_dendrogram.pdf>] [47] [48]
-Overfull \hbox (4.22089pt too wide) in paragraph at lines 788--788
+Overfull \hbox (4.22089pt too wide) in paragraph at lines 814--814
 []\T1/ptm/m/n/10.95 0.000158|  
  []
 
@@ -1245,7 +1248,7 @@ Overfull \hbox (4.22089pt too wide) in paragraph at lines 788--788
 
 
 ]
-Overfull \hbox (0.87953pt too wide) in paragraph at lines 809--809
+Overfull \hbox (0.87953pt too wide) in paragraph at lines 835--835
 []\T1/ptm/m/n/10.95 Adjusted 
  []
 
@@ -1264,30 +1267,30 @@ Overfull \hbox (0.87953pt too wide) in paragraph at lines 809--809
 
 
 ]
-Overfull \hbox (11.47089pt too wide) in paragraph at lines 965--965
+Overfull \hbox (11.47089pt too wide) in paragraph at lines 991--991
 \T1/ptm/m/n/10.95 Hausman 
  []
 
 
-Overfull \hbox (3.57545pt too wide) in paragraph at lines 965--965
+Overfull \hbox (3.57545pt too wide) in paragraph at lines 991--991
 \T1/ptm/m/n/10.95 statistic 
  []
 
 
-Overfull \hbox (11.17561pt too wide) in paragraph at lines 965--965
+Overfull \hbox (11.17561pt too wide) in paragraph at lines 991--991
 []\T1/ptm/m/n/10.95 0.000158|  
  []
 
 
-LaTeX Warning: Float too large for page by 56.60593pt on input line 966.
+LaTeX Warning: Float too large for page by 56.60593pt on input line 992.
 
 [59]
-<figure/BMI_platelets/BMI_platelet_forestplot.pdf, id=1757, 469.755pt x 352.316
+<figure/BMI_platelets/BMI_platelet_forestplot.pdf, id=1806, 469.755pt x 352.316
 25pt>
 File: figure/BMI_platelets/BMI_platelet_forestplot.pdf Graphic file (type pdf)
 <use figure/BMI_platelets/BMI_platelet_forestplot.pdf>
 Package pdftex.def Info: figure/BMI_platelets/BMI_platelet_forestplot.pdf  used
- on input line 969.
+ on input line 995.
 (pdftex.def)             Requested size: 377.99744pt x 283.4984pt.
 [60
 
@@ -1296,17 +1299,17 @@ Package pdftex.def Info: figure/BMI_platelets/BMI_platelet_forestplot.pdf  used
 
 
 ] [63] [64]
-<figure/BMI_platelets/IPC_aggregation.pdf, id=1817, 475.7775pt x 437.635pt>
+<figure/BMI_platelets/IPC_aggregation.pdf, id=1867, 475.7775pt x 437.635pt>
 File: figure/BMI_platelets/IPC_aggregation.pdf Graphic file (type pdf)
 <use figure/BMI_platelets/IPC_aggregation.pdf>
 Package pdftex.def Info: figure/BMI_platelets/IPC_aggregation.pdf  used on inpu
-t line 1065.
+t line 1091.
 (pdftex.def)             Requested size: 357.00256pt x 328.39906pt.
-<figure/BMI_platelets/Visual_abstract.pdf, id=1818, 507.8975pt x 146.5475pt>
+<figure/BMI_platelets/Visual_abstract.pdf, id=1868, 507.8975pt x 146.5475pt>
 File: figure/BMI_platelets/Visual_abstract.pdf Graphic file (type pdf)
 <use figure/BMI_platelets/Visual_abstract.pdf>
 Package pdftex.def Info: figure/BMI_platelets/Visual_abstract.pdf  used on inpu
-t line 1068.
+t line 1094.
 (pdftex.def)             Requested size: 377.99744pt x 109.06955pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1329,92 +1332,98 @@ Chapter 5.
 [71
 
 ]
-<figure/Bariatric_study/Platelet_activiation_integrin_p-selectin.png, id=1960, 
+<figure/Bariatric_study/Platelet_activiation_integrin_p-selectin.png, id=2010, 
 380.622pt x 237.7683pt>
 File: figure/Bariatric_study/Platelet_activiation_integrin_p-selectin.png Graph
 ic file (type png)
 <use figure/Bariatric_study/Platelet_activiation_integrin_p-selectin.png>
 Package pdftex.def Info: figure/Bariatric_study/Platelet_activiation_integrin_p
--selectin.png  used on input line 1104.
+-selectin.png  used on input line 1130.
 (pdftex.def)             Requested size: 380.62105pt x 237.7677pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [72] [73 <./figure/Bariatric_study/Platelet_activiation_integrin_p-selectin.png
 >]
-<figure/Bariatric_study/Thesis_graphic_overview_BMI_platelets.png, id=1983, 528
+<figure/Bariatric_study/Thesis_graphic_overview_BMI_platelets.png, id=2032, 528
 .2937pt x 343.5234pt>
 File: figure/Bariatric_study/Thesis_graphic_overview_BMI_platelets.png Graphic 
 file (type png)
 <use figure/Bariatric_study/Thesis_graphic_overview_BMI_platelets.png>
 Package pdftex.def Info: figure/Bariatric_study/Thesis_graphic_overview_BMI_pla
-telets.png  used on input line 1118.
+telets.png  used on input line 1144.
 (pdftex.def)             Requested size: 377.99744pt x 245.79558pt.
 [74 <./figure/Bariatric_study/Thesis_graphic_overview_BMI_platelets.png>]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Overfull \hbox (3.83789pt too wide) in alignment at lines 1195--1200
+ [] [] [] [] 
+ []
+
+
+Overfull \hbox (3.83789pt too wide) in alignment at lines 1200--1204
+ [] [] [] [] 
+ []
+
+
+Overfull \hbox (3.83789pt too wide) in alignment at lines 1204--1212
+ [] [] [] [] 
+ []
 
 [75] [76]
-<figure/Bariatric_study/Basal_surface_receptors.pdf, id=2008, 459.7175pt x 173.
+<figure/Bariatric_study/Basal_surface_receptors.pdf, id=2057, 459.7175pt x 173.
 64874pt>
 File: figure/Bariatric_study/Basal_surface_receptors.pdf Graphic file (type pdf
 )
 <use figure/Bariatric_study/Basal_surface_receptors.pdf>
 Package pdftex.def Info: figure/Bariatric_study/Basal_surface_receptors.pdf  us
-ed on input line 1191.
+ed on input line 1221.
 (pdftex.def)             Requested size: 377.99744pt x 142.78769pt.
-[77 <./figure/Bariatric_study/Basal_surface_receptors.pdf>]
-<figure/Bariatric_study/Agonist_Integrin_Pselectin.pdf, id=2039, 450.68375pt x 
+<figure/Bariatric_study/Agonist_Integrin_Pselectin.pdf, id=2060, 450.68375pt x 
 418.56375pt>
 File: figure/Bariatric_study/Agonist_Integrin_Pselectin.pdf Graphic file (type 
 pdf)
 <use figure/Bariatric_study/Agonist_Integrin_Pselectin.pdf>
 Package pdftex.def Info: figure/Bariatric_study/Agonist_Integrin_Pselectin.pdf 
- used on input line 1201.
+ used on input line 1231.
 (pdftex.def)             Requested size: 398.99872pt x 370.57898pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[78 <./figure/Bariatric_study/Agonist_Integrin_Pselectin.pdf>]
-<figure/Bariatric_study/Plt-neu_aggregates.pdf, id=2062, 320.19624pt x 310.1587
+[77 <./figure/Bariatric_study/Basal_surface_receptors.pdf>] [78 <./figure/Baria
+tric_study/Agonist_Integrin_Pselectin.pdf>]
+<figure/Bariatric_study/Plt-neu_aggregates.pdf, id=2112, 320.19624pt x 310.1587
 5pt>
 File: figure/Bariatric_study/Plt-neu_aggregates.pdf Graphic file (type pdf)
 <use figure/Bariatric_study/Plt-neu_aggregates.pdf>
 Package pdftex.def Info: figure/Bariatric_study/Plt-neu_aggregates.pdf  used on
- input line 1211.
+ input line 1241.
 (pdftex.def)             Requested size: 293.99872pt x 284.78633pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
 [79 <./figure/Bariatric_study/Plt-neu_aggregates.pdf>]
-<figure/Bariatric_study/Proteomic_PCA.pdf, id=2083, 433.62pt x 334.24875pt>
+<figure/Bariatric_study/Proteomic_PCA.pdf, id=2133, 433.62pt x 334.24875pt>
 File: figure/Bariatric_study/Proteomic_PCA.pdf Graphic file (type pdf)
 <use figure/Bariatric_study/Proteomic_PCA.pdf>
 Package pdftex.def Info: figure/Bariatric_study/Proteomic_PCA.pdf  used on inpu
-t line 1221.
+t line 1251.
 (pdftex.def)             Requested size: 336.00128pt x 259.01459pt.
-<figure/Bariatric_study/PC3vPC4_proteomics.pdf, id=2084, 433.62pt x 325.215pt>
+<figure/Bariatric_study/PC3vPC4_proteomics.pdf, id=2134, 433.62pt x 325.215pt>
 File: figure/Bariatric_study/PC3vPC4_proteomics.pdf Graphic file (type pdf)
 <use figure/Bariatric_study/PC3vPC4_proteomics.pdf>
 Package pdftex.def Info: figure/Bariatric_study/PC3vPC4_proteomics.pdf  used on
- input line 1226.
+ input line 1256.
 (pdftex.def)             Requested size: 336.00128pt x 252.0142pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [80 <./figure/Bariatric_study/Proteomic_PCA.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 1228--1229
+Underfull \hbox (badness 10000) in paragraph at lines 1258--1259
 \T1/pcr/m/n/10.95 b / f 1 7 f 0 2 5 0 a d 5 0 b a d 7 4 d 7 e 3 8 2 2 5 d 0 6 0
  a a 6 c d 8 3 3 2 1 b / i n d e x / f i g u r e / B a r i a t
  []
 
 [81 <./figure/Bariatric_study/PC3vPC4_proteomics.pdf>]
-<figure/Bariatric_study/volcano_proteomics_labelled.pdf, id=2124, 578.16pt x 86
+<figure/Bariatric_study/volcano_proteomics_labelled.pdf, id=2173, 578.16pt x 86
 7.24pt>
 File: figure/Bariatric_study/volcano_proteomics_labelled.pdf Graphic file (type
  pdf)
 <use figure/Bariatric_study/volcano_proteomics_labelled.pdf>
 Package pdftex.def Info: figure/Bariatric_study/volcano_proteomics_labelled.pdf
-  used on input line 1233.
+  used on input line 1263.
 (pdftex.def)             Requested size: 336.00128pt x 503.99203pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1439,67 +1448,67 @@ Underfull \vbox (badness 3735) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [90]
-<figure/Chemokines/Thesis_graphic_overview_chemokines.png, id=2244, 528.2937pt 
+<figure/Chemokines/Thesis_graphic_overview_chemokines.png, id=2292, 528.2937pt 
 x 343.5234pt>
 File: figure/Chemokines/Thesis_graphic_overview_chemokines.png Graphic file (ty
 pe png)
 <use figure/Chemokines/Thesis_graphic_overview_chemokines.png>
 Package pdftex.def Info: figure/Chemokines/Thesis_graphic_overview_chemokines.p
-ng  used on input line 1293.
+ng  used on input line 1323.
 (pdftex.def)             Requested size: 377.99744pt x 245.79558pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [91 <./figure/Chemokines/Thesis_graphic_overview_chemokines.png>]
-<figure/Chemokines/Layouts/MDC_TARC_aggregation_PAR1.pdf, id=2261, 540.0175pt x
+<figure/Chemokines/Layouts/MDC_TARC_aggregation_PAR1.pdf, id=2309, 540.0175pt x
  209.78375pt>
 File: figure/Chemokines/Layouts/MDC_TARC_aggregation_PAR1.pdf Graphic file (typ
 e pdf)
 <use figure/Chemokines/Layouts/MDC_TARC_aggregation_PAR1.pdf>
 Package pdftex.def Info: figure/Chemokines/Layouts/MDC_TARC_aggregation_PAR1.pd
-f  used on input line 1316.
+f  used on input line 1346.
 (pdftex.def)             Requested size: 357.00256pt x 138.68816pt.
 [92]
-<figure/Chemokines/Layouts/MDC_TARC_PRP_plate_agg.pdf, id=2274, 378.41376pt x 2
+<figure/Chemokines/Layouts/MDC_TARC_PRP_plate_agg.pdf, id=2321, 378.41376pt x 2
 02.7575pt>
 File: figure/Chemokines/Layouts/MDC_TARC_PRP_plate_agg.pdf Graphic file (type p
 df)
 <use figure/Chemokines/Layouts/MDC_TARC_PRP_plate_agg.pdf>
 Package pdftex.def Info: figure/Chemokines/Layouts/MDC_TARC_PRP_plate_agg.pdf  
-used on input line 1326.
+used on input line 1356.
 (pdftex.def)             Requested size: 378.41283pt x 202.757pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [93 <./figure/Chemokines/Layouts/MDC_TARC_aggregation_PAR1.pdf>] [94 <./figure/
 Chemokines/Layouts/MDC_TARC_PRP_plate_agg.pdf>]
-<figure/Chemokines/Layouts/P-selectin_integrin_MDC_TARC.pdf, id=2318, 529.98pt 
+<figure/Chemokines/Layouts/P-selectin_integrin_MDC_TARC.pdf, id=2366, 529.98pt 
 x 389.455pt>
 File: figure/Chemokines/Layouts/P-selectin_integrin_MDC_TARC.pdf Graphic file (
 type pdf)
 <use figure/Chemokines/Layouts/P-selectin_integrin_MDC_TARC.pdf>
 Package pdftex.def Info: figure/Chemokines/Layouts/P-selectin_integrin_MDC_TARC
-.pdf  used on input line 1336.
+.pdf  used on input line 1366.
 (pdftex.def)             Requested size: 357.00256pt x 262.34189pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [95] [96 <./figure/Chemokines/Layouts/P-selectin_integrin_MDC_TARC.pdf>] [97]
-<figure/Chemokines/Layouts/MDC_TARC_PS_exposure_layout.pdf, id=2356, 355.3275pt
+<figure/Chemokines/Layouts/MDC_TARC_PS_exposure_layout.pdf, id=2403, 355.3275pt
  x 163.61125pt>
 File: figure/Chemokines/Layouts/MDC_TARC_PS_exposure_layout.pdf Graphic file (t
 ype pdf)
 <use figure/Chemokines/Layouts/MDC_TARC_PS_exposure_layout.pdf>
 Package pdftex.def Info: figure/Chemokines/Layouts/MDC_TARC_PS_exposure_layout.
-pdf  used on input line 1361.
+pdf  used on input line 1391.
 (pdftex.def)             Requested size: 355.32661pt x 163.61084pt.
-<figure/Chemokines/Layouts/MDC_TARC_alone_wp_aggregation.pdf, id=2358, 560.0925
+<figure/Chemokines/Layouts/MDC_TARC_alone_wp_aggregation.pdf, id=2405, 560.0925
 pt x 140.525pt>
 File: figure/Chemokines/Layouts/MDC_TARC_alone_wp_aggregation.pdf Graphic file 
 (type pdf)
 <use figure/Chemokines/Layouts/MDC_TARC_alone_wp_aggregation.pdf>
 Package pdftex.def Info: figure/Chemokines/Layouts/MDC_TARC_alone_wp_aggregatio
-n.pdf  used on input line 1371.
+n.pdf  used on input line 1401.
 (pdftex.def)             Requested size: 377.99744pt x 94.84169pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1508,38 +1517,38 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
  <./figure/Chemokines/Layouts/MDC_TARC_PS_exposure_layout.pdf>]
-<figure/Chemokines/Layouts/MDC_TARC_calcium_wp.pdf, id=2378, 483.8075pt x 173.6
+<figure/Chemokines/Layouts/MDC_TARC_calcium_wp.pdf, id=2425, 483.8075pt x 173.6
 4874pt>
 File: figure/Chemokines/Layouts/MDC_TARC_calcium_wp.pdf Graphic file (type pdf)
 
 <use figure/Chemokines/Layouts/MDC_TARC_calcium_wp.pdf>
 Package pdftex.def Info: figure/Chemokines/Layouts/MDC_TARC_calcium_wp.pdf  use
-d on input line 1381.
+d on input line 1411.
 (pdftex.def)             Requested size: 377.99744pt x 135.67598pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [99 <./figure/Chemokines/Layouts/MDC_TARC_alone_wp_aggregation.pdf> <./figure/C
 hemokines/Layouts/MDC_TARC_calcium_wp.pdf>]
-<figure/Chemokines/MDC_TARC_VASP_blot.pdf, id=2417, 647.41875pt x 231.86626pt>
+<figure/Chemokines/MDC_TARC_VASP_blot.pdf, id=2464, 647.41875pt x 231.86626pt>
 File: figure/Chemokines/MDC_TARC_VASP_blot.pdf Graphic file (type pdf)
 <use figure/Chemokines/MDC_TARC_VASP_blot.pdf>
 Package pdftex.def Info: figure/Chemokines/MDC_TARC_VASP_blot.pdf  used on inpu
-t line 1391.
+t line 1421.
 (pdftex.def)             Requested size: 252.00256pt x 90.25056pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [100]
-<figure/Chemokines/Layouts/MDC_TARC_WB_VASP.pdf, id=2422, 475.7775pt x 524.9612
+<figure/Chemokines/Layouts/MDC_TARC_WB_VASP.pdf, id=2469, 475.7775pt x 524.9612
 4pt>
 File: figure/Chemokines/Layouts/MDC_TARC_WB_VASP.pdf Graphic file (type pdf)
 <use figure/Chemokines/Layouts/MDC_TARC_WB_VASP.pdf>
 Package pdftex.def Info: figure/Chemokines/Layouts/MDC_TARC_WB_VASP.pdf  used o
-n input line 1396.
+n input line 1426.
 (pdftex.def)             Requested size: 475.77632pt x 524.95996pt.
 
-Overfull \hbox (55.77632pt too wide) in paragraph at lines 1396--1396
+Overfull \hbox (55.77632pt too wide) in paragraph at lines 1426--1426
 [][] 
  []
 
@@ -1550,33 +1559,33 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Overfull \vbox (2.95998pt too high) has occurred while \output is active []
 
 [102 <./figure/Chemokines/Layouts/MDC_TARC_WB_VASP.pdf>]
-<figure/Chemokines/Layouts/MDC_TARC_VASP_FACS_logec50.pdf, id=2454, 484.81125pt
+<figure/Chemokines/Layouts/MDC_TARC_VASP_FACS_logec50.pdf, id=2502, 484.81125pt
  x 157.58875pt>
 File: figure/Chemokines/Layouts/MDC_TARC_VASP_FACS_logec50.pdf Graphic file (ty
 pe pdf)
 <use figure/Chemokines/Layouts/MDC_TARC_VASP_FACS_logec50.pdf>
 Package pdftex.def Info: figure/Chemokines/Layouts/MDC_TARC_VASP_FACS_logec50.p
-df  used on input line 1401.
+df  used on input line 1431.
 (pdftex.def)             Requested size: 377.99744pt x 122.87543pt.
-<figure/Chemokines/Layouts/PAR1_MDC_inhibitors_aggregation.pdf, id=2462, 344.28
+<figure/Chemokines/Layouts/PAR1_MDC_inhibitors_aggregation.pdf, id=2510, 344.28
 625pt x 395.4775pt>
 File: figure/Chemokines/Layouts/PAR1_MDC_inhibitors_aggregation.pdf Graphic fil
 e (type pdf)
 <use figure/Chemokines/Layouts/PAR1_MDC_inhibitors_aggregation.pdf>
 Package pdftex.def Info: figure/Chemokines/Layouts/PAR1_MDC_inhibitors_aggregat
-ion.pdf  used on input line 1413.
+ion.pdf  used on input line 1443.
 (pdftex.def)             Requested size: 398.99872pt x 458.32578pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [103 <./figure/Chemokines/Layouts/MDC_TARC_VASP_FACS_logec50.pdf>]
-<figure/Chemokines/Layouts/MDC_inhibitors_aggregation_traces.pdf, id=2480, 545.
+<figure/Chemokines/Layouts/MDC_inhibitors_aggregation_traces.pdf, id=2527, 545.
 03625pt x 322.20375pt>
 File: figure/Chemokines/Layouts/MDC_inhibitors_aggregation_traces.pdf Graphic f
 ile (type pdf)
 <use figure/Chemokines/Layouts/MDC_inhibitors_aggregation_traces.pdf>
 Package pdftex.def Info: figure/Chemokines/Layouts/MDC_inhibitors_aggregation_t
-races.pdf  used on input line 1418.
+races.pdf  used on input line 1448.
 (pdftex.def)             Requested size: 398.99872pt x 235.8705pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1584,18 +1593,18 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 [104 <./figure/Chemokines/Layouts/PAR1_MDC_inhibitors_aggregation.pdf>] [105 <.
 /figure/Chemokines/Layouts/MDC_inhibitors_aggregation_traces.pdf>]
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <9> on input line 1431.
+(Font)              <9> on input line 1461.
 
-LaTeX Warning: Float too large for page by 7.2324pt on input line 1459.
+LaTeX Warning: Float too large for page by 7.2324pt on input line 1489.
 
 [106] [107
 
 
 ]
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 1469.
+(Font)              <10> on input line 1499.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 1469.
+(Font)              <7> on input line 1499.
 [108]
 Underfull \vbox (badness 5681) has occurred while \output is active []
 
@@ -1610,19 +1619,19 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 ]
 Chapter 7.
 
-Underfull \hbox (badness 10000) in paragraph at lines 1511--1512
+Underfull \hbox (badness 10000) in paragraph at lines 1541--1542
 \T1/pcr/m/n/10.95 d / m y t h e s i s / b l o b / m a s t e r / i n d e x / f i
  g u r e / B M I[] p r o t e i n [] I N T E R V A L / B M I[] p
  []
 
 [113]
 <figure/BMI_protein_INTERVAL/Thesis_graphic_overview_BMI_protein_CVD.png, id=26
-01, 528.2937pt x 343.5234pt>
+49, 528.2937pt x 343.5234pt>
 File: figure/BMI_protein_INTERVAL/Thesis_graphic_overview_BMI_protein_CVD.png G
 raphic file (type png)
 <use figure/BMI_protein_INTERVAL/Thesis_graphic_overview_BMI_protein_CVD.png>
 Package pdftex.def Info: figure/BMI_protein_INTERVAL/Thesis_graphic_overview_BM
-I_protein_CVD.png  used on input line 1524.
+I_protein_CVD.png  used on input line 1554.
 (pdftex.def)             Requested size: 377.99744pt x 245.79558pt.
 
 Underfull \vbox (badness 2608) has occurred while \output is active []
@@ -1632,29 +1641,29 @@ Underfull \vbox (badness 4467) has occurred while \output is active []
 
 [115 <./figure/BMI_protein_INTERVAL/Thesis_graphic_overview_BMI_protein_CVD.png
 >] [116]
-<figure/BMI_protein_INTERVAL/Correlation_matrix_proteins.pdf, id=2635, 469.755p
+<figure/BMI_protein_INTERVAL/Correlation_matrix_proteins.pdf, id=2682, 469.755p
 t x 469.755pt>
 File: figure/BMI_protein_INTERVAL/Correlation_matrix_proteins.pdf Graphic file 
 (type pdf)
 <use figure/BMI_protein_INTERVAL/Correlation_matrix_proteins.pdf>
 Package pdftex.def Info: figure/BMI_protein_INTERVAL/Correlation_matrix_protein
-s.pdf  used on input line 1548.
+s.pdf  used on input line 1578.
 (pdftex.def)             Requested size: 377.99744pt x 377.99788pt.
 [117] [118 <./figure/BMI_protein_INTERVAL/Correlation_matrix_proteins.pdf>]
-<figure/BMI_protein_INTERVAL/dendrogram.pdf, id=2651, 867.24pt x 433.62pt>
+<figure/BMI_protein_INTERVAL/dendrogram.pdf, id=2698, 867.24pt x 433.62pt>
 File: figure/BMI_protein_INTERVAL/dendrogram.pdf Graphic file (type pdf)
 <use figure/BMI_protein_INTERVAL/dendrogram.pdf>
 Package pdftex.def Info: figure/BMI_protein_INTERVAL/dendrogram.pdf  used on in
-put line 1552.
+put line 1582.
 (pdftex.def)             Requested size: 569.99817pt x 285.01234pt.
 [119
 
  <./figure/BMI_protein_INTERVAL/dendrogram.pdf>]
-<figure/BMI_protein_INTERVAL/PCs2to5v1.pdf, id=2665, 873.2625pt x 834.11626pt>
+<figure/BMI_protein_INTERVAL/PCs2to5v1.pdf, id=2712, 873.2625pt x 834.11626pt>
 File: figure/BMI_protein_INTERVAL/PCs2to5v1.pdf Graphic file (type pdf)
 <use figure/BMI_protein_INTERVAL/PCs2to5v1.pdf>
 Package pdftex.def Info: figure/BMI_protein_INTERVAL/PCs2to5v1.pdf  used on inp
-ut line 1561.
+ut line 1591.
 (pdftex.def)             Requested size: 398.99872pt x 381.11444pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1664,78 +1673,78 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 ] [121 <./figure/BMI_protein_INTERVAL/PCs2to5v1.pdf>]
 
 LaTeX Warning: Reference `tab:Incl-excl-part' on page 122 undefined on input li
-ne 1571.
+ne 1601.
 
 
 LaTeX Warning: Reference `tab:Incl-excl-part' on page 122 undefined on input li
-ne 1571.
+ne 1601.
 
 [122] [123] [124
 
 
 ]
-Overfull \hbox (0.87953pt too wide) in paragraph at lines 1625--1625
+Overfull \hbox (0.87953pt too wide) in paragraph at lines 1655--1655
 []\T1/ptm/m/n/10.95 Adjusted 
  []
 
 [125]
-<figure/BMI_protein_INTERVAL/QQ_confounder_proteins.pdf, id=2712, 525.965pt x 5
+<figure/BMI_protein_INTERVAL/QQ_confounder_proteins.pdf, id=2759, 525.965pt x 5
 41.02126pt>
 File: figure/BMI_protein_INTERVAL/QQ_confounder_proteins.pdf Graphic file (type
  pdf)
 <use figure/BMI_protein_INTERVAL/QQ_confounder_proteins.pdf>
 Package pdftex.def Info: figure/BMI_protein_INTERVAL/QQ_confounder_proteins.pdf
-  used on input line 1629.
+  used on input line 1659.
 (pdftex.def)             Requested size: 398.99872pt x 410.43744pt.
 [126
 
 
  <./figure/BMI_protein_INTERVAL/QQ_confounder_proteins.pdf>] [127]
-<figure/BMI_protein_INTERVAL/MR_obs_compar_forestplot.pdf, id=2848, 722.7pt x 5
+<figure/BMI_protein_INTERVAL/MR_obs_compar_forestplot.pdf, id=2895, 722.7pt x 5
 78.16pt>
 File: figure/BMI_protein_INTERVAL/MR_obs_compar_forestplot.pdf Graphic file (ty
 pe pdf)
 <use figure/BMI_protein_INTERVAL/MR_obs_compar_forestplot.pdf>
 Package pdftex.def Info: figure/BMI_protein_INTERVAL/MR_obs_compar_forestplot.p
-df  used on input line 1659.
+df  used on input line 1689.
 (pdftex.def)             Requested size: 398.99872pt x 319.19759pt.
-<figure/BMI_protein_INTERVAL/QQ_obs_MR.pdf, id=2851, 557.08125pt x 287.0725pt>
+<figure/BMI_protein_INTERVAL/QQ_obs_MR.pdf, id=2898, 557.08125pt x 287.0725pt>
 File: figure/BMI_protein_INTERVAL/QQ_obs_MR.pdf Graphic file (type pdf)
 <use figure/BMI_protein_INTERVAL/QQ_obs_MR.pdf>
 Package pdftex.def Info: figure/BMI_protein_INTERVAL/QQ_obs_MR.pdf  used on inp
-ut line 1666.
+ut line 1696.
 (pdftex.def)             Requested size: 398.99872pt x 205.61446pt.
 [128
 
 
  <./figure/BMI_protein_INTERVAL/MR_obs_compar_forestplot.pdf>]
-<figure/BMI_protein_INTERVAL/obs_v_obs_adj_scatter.pdf, id=2871, 578.16pt x 433
+<figure/BMI_protein_INTERVAL/obs_v_obs_adj_scatter.pdf, id=2918, 578.16pt x 433
 .62pt>
 File: figure/BMI_protein_INTERVAL/obs_v_obs_adj_scatter.pdf Graphic file (type 
 pdf)
 <use figure/BMI_protein_INTERVAL/obs_v_obs_adj_scatter.pdf>
 Package pdftex.def Info: figure/BMI_protein_INTERVAL/obs_v_obs_adj_scatter.pdf 
- used on input line 1670.
+ used on input line 1700.
 (pdftex.def)             Requested size: 377.99744pt x 283.49716pt.
-<figure/BMI_protein_INTERVAL/unadj_obs_MR_scatter_small.pdf, id=2872, 433.62pt 
+<figure/BMI_protein_INTERVAL/unadj_obs_MR_scatter_small.pdf, id=2919, 433.62pt 
 x 361.35pt>
 File: figure/BMI_protein_INTERVAL/unadj_obs_MR_scatter_small.pdf Graphic file (
 type pdf)
 <use figure/BMI_protein_INTERVAL/unadj_obs_MR_scatter_small.pdf>
 Package pdftex.def Info: figure/BMI_protein_INTERVAL/unadj_obs_MR_scatter_small
-.pdf  used on input line 1673.
+.pdf  used on input line 1703.
 (pdftex.def)             Requested size: 377.99744pt x 315.01155pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [129 <./figure/BMI_protein_INTERVAL/QQ_obs_MR.pdf>]
-<figure/BMI_protein_INTERVAL/Obs_MR_scatter_without_top8.pdf, id=2955, 384.4362
+<figure/BMI_protein_INTERVAL/Obs_MR_scatter_without_top8.pdf, id=3003, 384.4362
 5pt x 510.90875pt>
 File: figure/BMI_protein_INTERVAL/Obs_MR_scatter_without_top8.pdf Graphic file 
 (type pdf)
 <use figure/BMI_protein_INTERVAL/Obs_MR_scatter_without_top8.pdf>
 Package pdftex.def Info: figure/BMI_protein_INTERVAL/Obs_MR_scatter_without_top
-8.pdf  used on input line 1676.
+8.pdf  used on input line 1706.
 (pdftex.def)             Requested size: 336.00128pt x 446.56851pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1748,32 +1757,32 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [132 <./figure/BMI_protein_INTERVAL/Obs_MR_scatter_without_top8.pdf>] [133] [13
 4]
-Overfull \hbox (3.73975pt too wide) in paragraph at lines 1723--1723
+Overfull \hbox (3.73975pt too wide) in paragraph at lines 1753--1753
 []\T1/ptm/m/n/10.95 Population 
  []
 
 
-Overfull \hbox (3.73975pt too wide) in paragraph at lines 1723--1723
+Overfull \hbox (3.73975pt too wide) in paragraph at lines 1753--1753
 []\T1/ptm/m/n/10.95 Population 
  []
 
 
-Overfull \hbox (7.97742pt too wide) in paragraph at lines 1723--1723
+Overfull \hbox (7.97742pt too wide) in paragraph at lines 1753--1753
 []\T1/ptm/m/n/10.95 Bonferroni- 
  []
 
 [135]
-Overfull \hbox (3.73975pt too wide) in paragraph at lines 1751--1751
+Overfull \hbox (3.73975pt too wide) in paragraph at lines 1781--1781
 []\T1/ptm/m/n/10.95 Population 
  []
 
 
-Overfull \hbox (3.73975pt too wide) in paragraph at lines 1751--1751
+Overfull \hbox (3.73975pt too wide) in paragraph at lines 1781--1781
 []\T1/ptm/m/n/10.95 Population 
  []
 
 
-Overfull \hbox (7.97742pt too wide) in paragraph at lines 1751--1751
+Overfull \hbox (7.97742pt too wide) in paragraph at lines 1781--1781
 []\T1/ptm/m/n/10.95 Bonferroni- 
  []
 
@@ -1798,49 +1807,49 @@ Chapter 8.
 [141
 
 ]
-<figure/DiRECT/Thesis_graphic_overview_BMI_protein.png, id=3147, 528.2937pt x 3
+<figure/DiRECT/Thesis_graphic_overview_BMI_protein.png, id=3194, 528.2937pt x 3
 43.5234pt>
 File: figure/DiRECT/Thesis_graphic_overview_BMI_protein.png Graphic file (type 
 png)
 <use figure/DiRECT/Thesis_graphic_overview_BMI_protein.png>
 Package pdftex.def Info: figure/DiRECT/Thesis_graphic_overview_BMI_protein.png 
- used on input line 1791.
+ used on input line 1821.
 (pdftex.def)             Requested size: 377.99744pt x 245.79558pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [142] [143 <./figure/DiRECT/Thesis_graphic_overview_BMI_protein.png>]
-<figure/DiRECT/DiRECT_study_summary.png, id=3170, 370.7451pt x 328.3467pt>
+<figure/DiRECT/DiRECT_study_summary.png, id=3217, 370.7451pt x 328.3467pt>
 File: figure/DiRECT/DiRECT_study_summary.png Graphic file (type png)
 <use figure/DiRECT/DiRECT_study_summary.png>
 Package pdftex.def Info: figure/DiRECT/DiRECT_study_summary.png  used on input 
-line 1804.
+line 1834.
 (pdftex.def)             Requested size: 370.74419pt x 328.34589pt.
 [144 <./figure/DiRECT/DiRECT_study_summary.png>]
 Underfull \vbox (badness 1377) has occurred while \output is active []
 
 [145]
-<figure/DiRECT/DiRECT_analysis.png, id=3195, 369.2997pt x 127.677pt>
+<figure/DiRECT/DiRECT_analysis.png, id=3243, 369.2997pt x 127.677pt>
 File: figure/DiRECT/DiRECT_analysis.png Graphic file (type png)
 <use figure/DiRECT/DiRECT_analysis.png>
 Package pdftex.def Info: figure/DiRECT/DiRECT_analysis.png  used on input line 
-1826.
+1856.
 (pdftex.def)             Requested size: 369.29878pt x 127.67668pt.
 
 Underfull \vbox (badness 6995) has occurred while \output is active []
 
 [146 <./figure/DiRECT/DiRECT_analysis.png>] [147]
 
-LaTeX Warning: Float too large for page by 29.83998pt on input line 1881.
+LaTeX Warning: Float too large for page by 29.83998pt on input line 1911.
 
 [148]
-<figure/DiRECT/Intervention_BMI_change_boxplot.png, id=3220, 453.695pt x 348.30
+<figure/DiRECT/Intervention_BMI_change_boxplot.png, id=3268, 453.695pt x 348.30
 125pt>
 File: figure/DiRECT/Intervention_BMI_change_boxplot.png Graphic file (type png)
 
 <use figure/DiRECT/Intervention_BMI_change_boxplot.png>
 Package pdftex.def Info: figure/DiRECT/Intervention_BMI_change_boxplot.png  use
-d on input line 1901.
+d on input line 1931.
 (pdftex.def)             Requested size: 357.00256pt x 274.07079pt.
 
 Underfull \vbox (badness 4036) has occurred while \output is active []
@@ -1849,34 +1858,34 @@ Underfull \vbox (badness 4036) has occurred while \output is active []
 
 
 ]
-<figure/DiRECT/QQ_plots_obs_IV.pdf, id=3230, 578.16pt x 361.35pt>
+<figure/DiRECT/QQ_plots_obs_IV.pdf, id=3277, 578.16pt x 361.35pt>
 File: figure/DiRECT/QQ_plots_obs_IV.pdf Graphic file (type pdf)
 <use figure/DiRECT/QQ_plots_obs_IV.pdf>
 Package pdftex.def Info: figure/DiRECT/QQ_plots_obs_IV.pdf  used on input line 
-1911.
+1941.
 (pdftex.def)             Requested size: 420.0pt x 262.4986pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [150 <./figure/DiRECT/Intervention_BMI_change_boxplot.png>]
-<figure/DiRECT/circos_plot_BMI_change_protein_ols_tsls.pdf, id=3239, 867.24pt x
+<figure/DiRECT/circos_plot_BMI_change_protein_ols_tsls.pdf, id=3286, 867.24pt x
  867.24pt>
 File: figure/DiRECT/circos_plot_BMI_change_protein_ols_tsls.pdf Graphic file (t
 ype pdf)
 <use figure/DiRECT/circos_plot_BMI_change_protein_ols_tsls.pdf>
 Package pdftex.def Info: figure/DiRECT/circos_plot_BMI_change_protein_ols_tsls.
-pdf  used on input line 1921.
+pdf  used on input line 1951.
 (pdftex.def)             Requested size: 420.0pt x 420.00218pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [151 <./figure/DiRECT/QQ_plots_obs_IV.pdf>] [152 <./figure/DiRECT/circos_plot_B
 MI_change_protein_ols_tsls.pdf>]
-<figure/DiRECT/DiRECT_scatter_comparison.pdf, id=3262, 650.43pt x 433.62pt>
+<figure/DiRECT/DiRECT_scatter_comparison.pdf, id=3309, 650.43pt x 433.62pt>
 File: figure/DiRECT/DiRECT_scatter_comparison.pdf Graphic file (type pdf)
 <use figure/DiRECT/DiRECT_scatter_comparison.pdf>
 Package pdftex.def Info: figure/DiRECT/DiRECT_scatter_comparison.pdf  used on i
-nput line 1928.
+nput line 1958.
 (pdftex.def)             Requested size: 569.99817pt x 380.02528pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1887,20 +1896,20 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Overfull \vbox (24.4253pt too high) has occurred while \output is active []
 
 [154 <./figure/DiRECT/DiRECT_scatter_comparison.pdf>]
-<figure/DiRECT/ApoF_carb_boxplots.jpeg, id=3281, 980.66376pt x 607.26875pt>
+<figure/DiRECT/ApoF_carb_boxplots.jpeg, id=3328, 980.66376pt x 607.26875pt>
 File: figure/DiRECT/ApoF_carb_boxplots.jpeg Graphic file (type jpg)
 <use figure/DiRECT/ApoF_carb_boxplots.jpeg>
 Package pdftex.def Info: figure/DiRECT/ApoF_carb_boxplots.jpeg  used on input l
-ine 1937.
+ine 1967.
 (pdftex.def)             Requested size: 377.99744pt x 234.07254pt.
 [155
 
  <./figure/DiRECT/ApoF_carb_boxplots.jpeg>] [156]
-<figure/DiRECT/DiRECT_INTERVAL_comparison.pdf, id=3294, 650.43pt x 433.62pt>
+<figure/DiRECT/DiRECT_INTERVAL_comparison.pdf, id=3341, 650.43pt x 433.62pt>
 File: figure/DiRECT/DiRECT_INTERVAL_comparison.pdf Graphic file (type pdf)
 <use figure/DiRECT/DiRECT_INTERVAL_comparison.pdf>
 Package pdftex.def Info: figure/DiRECT/DiRECT_INTERVAL_comparison.pdf  used on 
-input line 1949.
+input line 1979.
 (pdftex.def)             Requested size: 539.99634pt x 360.0236pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1913,17 +1922,17 @@ Overfull \vbox (45.22363pt too high) has occurred while \output is active []
 [158 <./figure/DiRECT/DiRECT_INTERVAL_comparison.pdf>] [159
 
 ]
-Overfull \hbox (3.73975pt too wide) in paragraph at lines 1977--1977
+Overfull \hbox (3.73975pt too wide) in paragraph at lines 2007--2007
 []\T1/ptm/m/n/10.95 Population 
  []
 
 
-Overfull \hbox (3.73975pt too wide) in paragraph at lines 1977--1977
+Overfull \hbox (3.73975pt too wide) in paragraph at lines 2007--2007
 []\T1/ptm/m/n/10.95 Population 
  []
 
 
-Overfull \hbox (7.97742pt too wide) in paragraph at lines 1977--1977
+Overfull \hbox (7.97742pt too wide) in paragraph at lines 2007--2007
 []\T1/ptm/m/n/10.95 Bonferroni- 
  []
 
@@ -1932,20 +1941,20 @@ Overfull \hbox (7.97742pt too wide) in paragraph at lines 1977--1977
 
 ]
 
-LaTeX Warning: Float too large for page by 14.2128pt on input line 2015.
+LaTeX Warning: Float too large for page by 14.2128pt on input line 2045.
 
 [162] [163
 
 
 ] [164]
 Chapter 9.
-<figure/General_discussion/Thesis_graphic_overview_chapters.png, id=3367, 528.2
+<figure/General_discussion/Thesis_graphic_overview_chapters.png, id=3414, 528.2
 937pt x 343.5234pt>
 File: figure/General_discussion/Thesis_graphic_overview_chapters.png Graphic fi
 le (type png)
 <use figure/General_discussion/Thesis_graphic_overview_chapters.png>
 Package pdftex.def Info: figure/General_discussion/Thesis_graphic_overview_chap
-ters.png  used on input line 2035.
+ters.png  used on input line 2065.
 (pdftex.def)             Requested size: 377.99744pt x 245.79558pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1956,228 +1965,51 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 ] [168
 
 
+] [169] [170
+
 ]
 Appendix A.
-
-LaTeX Warning: Reference `ref-labels' on page 169 undefined on input line 2088.
-
-
-[169
-
-] [170
-
-]
-Appendix B.
-[171] [172
-
-]
-Overfull \hbox (16.53427pt too wide) in paragraph at lines 2109--2112
- [][][] []
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2109--2112
- 
- []
-
-
-Overfull \hbox (16.53427pt too wide) in paragraph at lines 2113--2116
- [][][] []
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2113--2116
- 
- []
-
-
-Overfull \hbox (16.53427pt too wide) in paragraph at lines 2117--2120
- [][][] []
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2117--2120
- 
- []
-
-
-Overfull \hbox (16.53427pt too wide) in paragraph at lines 2121--2124
- [][][] []
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2121--2124
- 
- []
-
-
-Overfull \hbox (16.53427pt too wide) in paragraph at lines 2125--2128
- [][][] []
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2125--2128
- 
- []
-
-
-Overfull \hbox (16.53427pt too wide) in paragraph at lines 2129--2132
- [][][] []
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2129--2132
- 
- []
-
-
-Overfull \hbox (16.53427pt too wide) in paragraph at lines 2133--2136
- [][][] []
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2133--2136
- 
- []
-
-[173
-
-]
-Overfull \hbox (16.53427pt too wide) in paragraph at lines 2137--2140
- [][][] []
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2137--2140
- 
- []
-
-
-Overfull \hbox (16.53427pt too wide) in paragraph at lines 2141--2144
- [][][] []
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2141--2144
- 
- []
-
-
-Overfull \hbox (16.53427pt too wide) in paragraph at lines 2145--2148
- [][][] []
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2145--2148
- 
- []
-
-
-Overfull \hbox (16.53427pt too wide) in paragraph at lines 2149--2152
- [][][] []
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2149--2152
- 
- []
-
-
-Overfull \hbox (16.53427pt too wide) in paragraph at lines 2153--2156
- [][][] []
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2153--2156
- 
- []
-
-
-Overfull \hbox (16.53427pt too wide) in paragraph at lines 2157--2160
- [][][] []
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2157--2160
- 
- []
-
-
-Underfull \hbox (badness 6641) in paragraph at lines 2163--2163
-[]\T1/ptm/m/n/10.95 Cercato, C. & Fon-seca, F. A. Car-dio-vas-cu-lar risk and o
-be-sity. (2019).
- []
-
-
-Overfull \hbox (16.53427pt too wide) in paragraph at lines 2161--2164
- [][][] []
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2161--2164
- 
- []
-
-
-Overfull \hbox (16.53427pt too wide) in paragraph at lines 2165--2168
- [][][] []
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2165--2168
- 
- []
-
-
-Overfull \hbox (16.53427pt too wide) in paragraph at lines 2169--2172
- [][][] []
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2169--2172
- 
- []
-
-
-Overfull \hbox (16.53427pt too wide) in paragraph at lines 2173--2176
- [][][] []
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2173--2176
- 
- []
-
+[171]
+<figure/Appendix/leptin_nonlinear_obs.pdf, id=3459, 505.89pt x 505.89pt>
+File: figure/Appendix/leptin_nonlinear_obs.pdf Graphic file (type pdf)
+<use figure/Appendix/leptin_nonlinear_obs.pdf>
+Package pdftex.def Info: figure/Appendix/leptin_nonlinear_obs.pdf  used on inpu
+t line 2137.
+(pdftex.def)             Requested size: 377.99744pt x 378.00394pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[174]
-Overfull \hbox (16.53427pt too wide) in paragraph at lines 2177--2180
- [][][] []
- []
+[172]
+<figure/Appendix/leptin_nonlinear_MR.pdf, id=3467, 505.89pt x 505.89pt>
+File: figure/Appendix/leptin_nonlinear_MR.pdf Graphic file (type pdf)
+<use figure/Appendix/leptin_nonlinear_MR.pdf>
+Package pdftex.def Info: figure/Appendix/leptin_nonlinear_MR.pdf  used on input
+ line 2147.
+(pdftex.def)             Requested size: 377.99744pt x 378.00394pt.
+[173 <./figure/Appendix/leptin_nonlinear_obs.pdf>] [174 <./figure/Appendix/lept
+in_nonlinear_MR.pdf>]
+<figure/Appendix/leptin_nlmr_fracpoly_piecewise.pdf, id=3500, 520.34396pt x 580
+.38487pt>
+File: figure/Appendix/leptin_nlmr_fracpoly_piecewise.pdf Graphic file (type pdf
+)
+<use figure/Appendix/leptin_nlmr_fracpoly_piecewise.pdf>
+Package pdftex.def Info: figure/Appendix/leptin_nlmr_fracpoly_piecewise.pdf  us
+ed on input line 2157.
+(pdftex.def)             Requested size: 377.99744pt x 421.63171pt.
 
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-Underfull \hbox (badness 10000) in paragraph at lines 2177--2180
- 
- []
+[175] [176 <./figure/Appendix/leptin_nlmr_fracpoly_piecewise.pdf>]
+<figure/Appendix/glsmr_plot_leptin.pdf, id=3565, 572.54704pt x 464.92853pt>
+File: figure/Appendix/glsmr_plot_leptin.pdf Graphic file (type pdf)
+<use figure/Appendix/glsmr_plot_leptin.pdf>
+Package pdftex.def Info: figure/Appendix/glsmr_plot_leptin.pdf  used on input l
+ine 2167.
+(pdftex.def)             Requested size: 420.0pt x 341.06213pt.
 
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-Underfull \hbox (badness 10000) in paragraph at lines 2183--2183
-[]\T1/ptm/m/n/10.95 Physical sta-tus: The use and in-ter-pre-ta-tion of an-thro
--pom-e-try. (1995).
- []
-
-
-Overfull \hbox (16.53427pt too wide) in paragraph at lines 2181--2184
- [][][] []
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2181--2184
- 
- []
-
-
+[177] [178 <./figure/Appendix/glsmr_plot_leptin.pdf>]
 Overfull \hbox (16.53427pt too wide) in paragraph at lines 2185--2188
  [][][] []
  []
@@ -2247,19 +2079,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 2209--2212
  
  []
 
-
-Underfull \hbox (badness 3209) in paragraph at lines 2215--2215
-[]\T1/ptm/m/n/10.95 Scuteri, A. \T1/ptm/m/it/10.95 et al. \T1/ptm/m/n/10.95 Gen
-ome-wide as-so-ci-a-tion scan shows ge-netic vari-ants in
- []
+[179
 
 
-Underfull \hbox (badness 1052) in paragraph at lines 2215--2215
-\T1/ptm/m/n/10.95 the FTO gene are as-so-ci-ated with obesity-related traits. \
-T1/ptm/m/it/10.95 PLoS Ge-net-ics \T1/ptm/m/n/10.95 (2007).
- []
-
-
+]
 Overfull \hbox (16.53427pt too wide) in paragraph at lines 2213--2216
  [][][] []
  []
@@ -2280,9 +2103,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 2217--2220
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[175]
 Overfull \hbox (16.53427pt too wide) in paragraph at lines 2221--2224
  [][][] []
  []
@@ -2320,6 +2140,12 @@ Overfull \hbox (16.53427pt too wide) in paragraph at lines 2233--2236
 
 Underfull \hbox (badness 10000) in paragraph at lines 2233--2236
  
+ []
+
+
+Underfull \hbox (badness 6641) in paragraph at lines 2239--2239
+[]\T1/ptm/m/n/10.95 Cercato, C. & Fon-seca, F. A. Car-dio-vas-cu-lar risk and o
+be-sity. (2019).
  []
 
 
@@ -2365,7 +2191,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 2249--2252
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[176]
+[180]
 Overfull \hbox (16.53427pt too wide) in paragraph at lines 2253--2256
  [][][] []
  []
@@ -2373,6 +2199,12 @@ Overfull \hbox (16.53427pt too wide) in paragraph at lines 2253--2256
 
 Underfull \hbox (badness 10000) in paragraph at lines 2253--2256
  
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2259--2259
+[]\T1/ptm/m/n/10.95 Physical sta-tus: The use and in-ter-pre-ta-tion of an-thro
+-pom-e-try. (1995).
  []
 
 
@@ -2403,19 +2235,6 @@ Overfull \hbox (16.53427pt too wide) in paragraph at lines 2265--2268
 
 Underfull \hbox (badness 10000) in paragraph at lines 2265--2268
  
- []
-
-
-Underfull \hbox (badness 3907) in paragraph at lines 2271--2271
-[]\T1/ptm/m/n/10.95 Mehrbod, M., Trisno, S. & Mofrad, M. R. K. On the ac-ti-va-
-tion of in-te-
- []
-
-
-Underfull \hbox (badness 1515) in paragraph at lines 2271--2271
-\T1/ptm/m/n/10.95 grin $\OML/lmm/m/it/10.95 $\T1/ptm/m/n/10.95 iIb$\OML/lmm/m/
-it/10.95 ^^L$\T1/ptm/m/n/10.95 3: Outside-in and inside-out path-ways. \T1/ptm/
-m/it/10.95 Bio-phys-i-cal Jour-nal \T1/ptm/m/n/10.95 (2013).
  []
 
 
@@ -2469,6 +2288,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 2285--2288
  []
 
 
+Underfull \hbox (badness 3209) in paragraph at lines 2291--2291
+[]\T1/ptm/m/n/10.95 Scuteri, A. \T1/ptm/m/it/10.95 et al. \T1/ptm/m/n/10.95 Gen
+ome-wide as-so-ci-a-tion scan shows ge-netic vari-ants in
+ []
+
+
+Underfull \hbox (badness 1052) in paragraph at lines 2291--2291
+\T1/ptm/m/n/10.95 the FTO gene are as-so-ci-ated with obesity-related traits. \
+T1/ptm/m/it/10.95 PLoS Ge-net-ics \T1/ptm/m/n/10.95 (2007).
+ []
+
+
 Overfull \hbox (16.53427pt too wide) in paragraph at lines 2289--2292
  [][][] []
  []
@@ -2479,9 +2310,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 2289--2292
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[177]
 Overfull \hbox (16.53427pt too wide) in paragraph at lines 2293--2296
  [][][] []
  []
@@ -2492,6 +2320,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 2293--2296
  []
 
 
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[181]
 Overfull \hbox (16.53427pt too wide) in paragraph at lines 2297--2300
  [][][] []
  []
@@ -2519,12 +2350,6 @@ Overfull \hbox (16.53427pt too wide) in paragraph at lines 2305--2308
 
 Underfull \hbox (badness 10000) in paragraph at lines 2305--2308
  
- []
-
-
-Underfull \hbox (badness 4266) in paragraph at lines 2311--2311
-[]\T1/ptm/m/n/10.95 Furuncuo§lu, Y. \T1/ptm/m/it/10.95 et al. \T1/ptm/m/n/10.95
- How obe-sity af-fects the neu-trophil/lymphocyte and
  []
 
 
@@ -2580,7 +2405,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 2325--2328
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[178]
+[182]
 Overfull \hbox (16.53427pt too wide) in paragraph at lines 2329--2332
  [][][] []
  []
@@ -2621,6 +2446,19 @@ Underfull \hbox (badness 10000) in paragraph at lines 2341--2344
  []
 
 
+Underfull \hbox (badness 3907) in paragraph at lines 2347--2347
+[]\T1/ptm/m/n/10.95 Mehrbod, M., Trisno, S. & Mofrad, M. R. K. On the ac-ti-va-
+tion of in-te-
+ []
+
+
+Underfull \hbox (badness 1515) in paragraph at lines 2347--2347
+\T1/ptm/m/n/10.95 grin $\OML/lmm/m/it/10.95 $\T1/ptm/m/n/10.95 iIb$\OML/lmm/m/
+it/10.95 ^^L$\T1/ptm/m/n/10.95 3: Outside-in and inside-out path-ways. \T1/ptm/
+m/it/10.95 Bio-phys-i-cal Jour-nal \T1/ptm/m/n/10.95 (2013).
+ []
+
+
 Overfull \hbox (16.53427pt too wide) in paragraph at lines 2345--2348
  [][][] []
  []
@@ -2648,18 +2486,6 @@ Overfull \hbox (16.53427pt too wide) in paragraph at lines 2353--2356
 
 Underfull \hbox (badness 10000) in paragraph at lines 2353--2356
  
- []
-
-
-Underfull \hbox (badness 8151) in paragraph at lines 2359--2359
-[]\T1/ptm/m/n/10.95 Kowalska, M. A. \T1/ptm/m/it/10.95 et al. \T1/ptm/m/n/10.95
- Stro-mal cell-derived factor-1 and macrophage-
- []
-
-
-Underfull \hbox (badness 7221) in paragraph at lines 2359--2359
-\T1/ptm/m/n/10.95 derived chemokine: 2 chemokines that ac-ti-vate platelets. \T
-1/ptm/m/it/10.95 Blood \T1/ptm/m/n/10.95 (2000).
  []
 
 
@@ -2695,7 +2521,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 2365--2368
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[179]
+[183]
 Overfull \hbox (16.53427pt too wide) in paragraph at lines 2369--2372
  [][][] []
  []
@@ -2733,6 +2559,12 @@ Overfull \hbox (16.53427pt too wide) in paragraph at lines 2381--2384
 
 Underfull \hbox (badness 10000) in paragraph at lines 2381--2384
  
+ []
+
+
+Underfull \hbox (badness 4266) in paragraph at lines 2387--2387
+[]\T1/ptm/m/n/10.95 Furuncuo§lu, Y. \T1/ptm/m/it/10.95 et al. \T1/ptm/m/n/10.95
+ How obe-sity af-fects the neu-trophil/lymphocyte and
  []
 
 
@@ -2786,6 +2618,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 2401--2404
  []
 
 
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[184]
 Overfull \hbox (16.53427pt too wide) in paragraph at lines 2405--2408
  [][][] []
  []
@@ -2796,9 +2631,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 2405--2408
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[180]
 Overfull \hbox (16.53427pt too wide) in paragraph at lines 2409--2412
  [][][] []
  []
@@ -2859,6 +2691,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 2429--2432
  []
 
 
+Underfull \hbox (badness 8151) in paragraph at lines 2435--2435
+[]\T1/ptm/m/n/10.95 Kowalska, M. A. \T1/ptm/m/it/10.95 et al. \T1/ptm/m/n/10.95
+ Stro-mal cell-derived factor-1 and macrophage-
+ []
+
+
+Underfull \hbox (badness 7221) in paragraph at lines 2435--2435
+\T1/ptm/m/n/10.95 derived chemokine: 2 chemokines that ac-ti-vate platelets. \T
+1/ptm/m/it/10.95 Blood \T1/ptm/m/n/10.95 (2000).
+ []
+
+
 Overfull \hbox (16.53427pt too wide) in paragraph at lines 2433--2436
  [][][] []
  []
@@ -2891,7 +2735,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 2441--2444
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[181]
+[185]
 Overfull \hbox (16.53427pt too wide) in paragraph at lines 2445--2448
  [][][] []
  []
@@ -2982,6 +2826,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 2477--2480
  []
 
 
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[186]
 Overfull \hbox (16.53427pt too wide) in paragraph at lines 2481--2484
  [][][] []
  []
@@ -2992,9 +2839,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 2481--2484
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[182]
 Overfull \hbox (16.53427pt too wide) in paragraph at lines 2485--2488
  [][][] []
  []
@@ -3075,18 +2919,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 2513--2516
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2519--2519
-[]\T1/ptm/m/n/10.95 Taus, F. \T1/ptm/m/it/10.95 et al. \T1/ptm/m/n/10.95 Platel
-ets Pro-mote Throm-boin-flam-ma-tion in SARS-CoV-
- []
-
-
-Underfull \hbox (badness 6641) in paragraph at lines 2519--2519
-\T1/ptm/m/n/10.95 2 Pneu-mo-nia. \T1/ptm/m/it/10.95 Ar-te-rioscle-ro-sis, Throm
--bo-sis, and Vas-cu-lar Bi-ol-ogy \T1/ptm/m/n/10.95 (2020).
- []
-
-
 Overfull \hbox (16.53427pt too wide) in paragraph at lines 2517--2520
  [][][] []
  []
@@ -3097,6 +2929,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 2517--2520
  []
 
 
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[187]
 Overfull \hbox (16.53427pt too wide) in paragraph at lines 2521--2524
  [][][] []
  []
@@ -3107,15 +2942,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 2521--2524
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[183]
-Underfull \hbox (badness 1910) in paragraph at lines 2527--2527
-[]\T1/ptm/m/n/10.95 Freedman, J. E. \T1/ptm/m/it/10.95 et al. \T1/ptm/m/n/10.95
- Re-la-tion of platelet and leuko-cyte in-flam-ma-tory tran-
- []
-
-
 Overfull \hbox (16.53427pt too wide) in paragraph at lines 2525--2528
  [][][] []
  []
@@ -3123,12 +2949,6 @@ Overfull \hbox (16.53427pt too wide) in paragraph at lines 2525--2528
 
 Underfull \hbox (badness 10000) in paragraph at lines 2525--2528
  
- []
-
-
-Underfull \hbox (badness 1490) in paragraph at lines 2531--2531
-[]\T1/ptm/m/n/10.95 Bearer, E. L., Prakash, J. M. & Li, Z. Actin dy-nam-ics in 
-platelets. (2002).
  []
 
 
@@ -3159,18 +2979,6 @@ Overfull \hbox (16.53427pt too wide) in paragraph at lines 2537--2540
 
 Underfull \hbox (badness 10000) in paragraph at lines 2537--2540
  
- []
-
-
-Underfull \hbox (badness 1546) in paragraph at lines 2543--2543
-[]\T1/ptm/m/n/10.95 Gupta, A. K. \T1/ptm/m/it/10.95 et al. \T1/ptm/m/n/10.95 Pr
-o-tec-tive ef-fects of gel-solin in acute pul-monary throm-
- []
-
-
-Underfull \hbox (badness 1215) in paragraph at lines 2543--2543
-\T1/ptm/m/n/10.95 boem-bolism and throm-bo-sis in the carotid artery of mice. \
-T1/ptm/m/it/10.95 PLoS ONE \T1/ptm/m/n/10.95 (2019).
  []
 
 
@@ -3214,6 +3022,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 2553--2556
  []
 
 
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[188]
 Overfull \hbox (16.53427pt too wide) in paragraph at lines 2557--2560
  [][][] []
  []
@@ -3234,9 +3045,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 2561--2564
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[184]
 Overfull \hbox (16.53427pt too wide) in paragraph at lines 2565--2568
  [][][] []
  []
@@ -3329,7 +3137,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 2597--2600
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[185]
+[189]
 Overfull \hbox (16.53427pt too wide) in paragraph at lines 2601--2604
  [][][] []
  []
@@ -3337,6 +3145,18 @@ Overfull \hbox (16.53427pt too wide) in paragraph at lines 2601--2604
 
 Underfull \hbox (badness 10000) in paragraph at lines 2601--2604
  
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2607--2607
+[]\T1/ptm/m/n/10.95 Taus, F. \T1/ptm/m/it/10.95 et al. \T1/ptm/m/n/10.95 Platel
+ets Pro-mote Throm-boin-flam-ma-tion in SARS-CoV-
+ []
+
+
+Underfull \hbox (badness 6641) in paragraph at lines 2607--2607
+\T1/ptm/m/n/10.95 2 Pneu-mo-nia. \T1/ptm/m/it/10.95 Ar-te-rioscle-ro-sis, Throm
+-bo-sis, and Vas-cu-lar Bi-ol-ogy \T1/ptm/m/n/10.95 (2020).
  []
 
 
@@ -3360,6 +3180,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 2609--2612
  []
 
 
+Underfull \hbox (badness 1910) in paragraph at lines 2615--2615
+[]\T1/ptm/m/n/10.95 Freedman, J. E. \T1/ptm/m/it/10.95 et al. \T1/ptm/m/n/10.95
+ Re-la-tion of platelet and leuko-cyte in-flam-ma-tory tran-
+ []
+
+
 Overfull \hbox (16.53427pt too wide) in paragraph at lines 2613--2616
  [][][] []
  []
@@ -3370,6 +3196,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 2613--2616
  []
 
 
+Underfull \hbox (badness 1490) in paragraph at lines 2619--2619
+[]\T1/ptm/m/n/10.95 Bearer, E. L., Prakash, J. M. & Li, Z. Actin dy-nam-ics in 
+platelets. (2002).
+ []
+
+
 Overfull \hbox (16.53427pt too wide) in paragraph at lines 2617--2620
  [][][] []
  []
@@ -3377,18 +3209,6 @@ Overfull \hbox (16.53427pt too wide) in paragraph at lines 2617--2620
 
 Underfull \hbox (badness 10000) in paragraph at lines 2617--2620
  
- []
-
-
-Underfull \hbox (badness 1924) in paragraph at lines 2623--2623
-[]\T1/ptm/m/n/10.95 Giambartolomei, C. \T1/ptm/m/it/10.95 et al. \T1/ptm/m/n/10
-.95 Bayesian Test for Colo-cal-i-sa-tion be-tween Pairs of
- []
-
-
-Underfull \hbox (badness 1642) in paragraph at lines 2623--2623
-\T1/ptm/m/n/10.95 Ge-netic As-so-ci-a-tion Stud-ies Us-ing Sum-mary Statis-tics
-. \T1/ptm/m/it/10.95 PLoS Ge-net-ics \T1/ptm/m/n/10.95 (2014).
  []
 
 
@@ -3409,6 +3229,18 @@ Overfull \hbox (16.53427pt too wide) in paragraph at lines 2625--2628
 
 Underfull \hbox (badness 10000) in paragraph at lines 2625--2628
  
+ []
+
+
+Underfull \hbox (badness 1546) in paragraph at lines 2631--2631
+[]\T1/ptm/m/n/10.95 Gupta, A. K. \T1/ptm/m/it/10.95 et al. \T1/ptm/m/n/10.95 Pr
+o-tec-tive ef-fects of gel-solin in acute pul-monary throm-
+ []
+
+
+Underfull \hbox (badness 1215) in paragraph at lines 2631--2631
+\T1/ptm/m/n/10.95 boem-bolism and throm-bo-sis in the carotid artery of mice. \
+T1/ptm/m/it/10.95 PLoS ONE \T1/ptm/m/n/10.95 (2019).
  []
 
 
@@ -3434,7 +3266,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 2633--2636
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[186]
+[190]
 Overfull \hbox (16.53427pt too wide) in paragraph at lines 2637--2640
  [][][] []
  []
@@ -3525,6 +3357,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 2669--2672
  []
 
 
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[191]
 Overfull \hbox (16.53427pt too wide) in paragraph at lines 2673--2676
  [][][] []
  []
@@ -3535,9 +3370,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 2673--2676
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[187]
 Overfull \hbox (16.53427pt too wide) in paragraph at lines 2677--2680
  [][][] []
  []
@@ -3598,6 +3430,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 2697--2700
  []
 
 
+Underfull \hbox (badness 1924) in paragraph at lines 2703--2703
+[]\T1/ptm/m/n/10.95 Giambartolomei, C. \T1/ptm/m/it/10.95 et al. \T1/ptm/m/n/10
+.95 Bayesian Test for Colo-cal-i-sa-tion be-tween Pairs of
+ []
+
+
+Underfull \hbox (badness 1642) in paragraph at lines 2703--2703
+\T1/ptm/m/n/10.95 Ge-netic As-so-ci-a-tion Stud-ies Us-ing Sum-mary Statis-tics
+. \T1/ptm/m/it/10.95 PLoS Ge-net-ics \T1/ptm/m/n/10.95 (2014).
+ []
+
+
 Overfull \hbox (16.53427pt too wide) in paragraph at lines 2701--2704
  [][][] []
  []
@@ -3630,7 +3474,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 2709--2712
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[188]
+[192]
 Overfull \hbox (16.53427pt too wide) in paragraph at lines 2713--2716
  [][][] []
  []
@@ -3638,18 +3482,6 @@ Overfull \hbox (16.53427pt too wide) in paragraph at lines 2713--2716
 
 Underfull \hbox (badness 10000) in paragraph at lines 2713--2716
  
- []
-
-
-Underfull \hbox (badness 1406) in paragraph at lines 2719--2719
-[]\T1/ptm/m/n/10.95 Burgess, S., Davies, N. M. & Thomp-son, S. G. Bias due to p
-ar-tic-i-pant over-
- []
-
-
-Underfull \hbox (badness 5175) in paragraph at lines 2719--2719
-\T1/ptm/m/n/10.95 lap in two-sample Mendelian ran-dom-iza-tion. \T1/ptm/m/it/10
-.95 Ge-netic Epi-demi-ol-ogy \T1/ptm/m/n/10.95 (2016).
  []
 
 
@@ -3735,7 +3567,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 2745--2748
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[189]
+[193]
 Overfull \hbox (16.53427pt too wide) in paragraph at lines 2749--2752
  [][][] []
  []
@@ -3828,7 +3660,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 2781--2784
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[190]
+[194]
 Overfull \hbox (16.53427pt too wide) in paragraph at lines 2785--2788
  [][][] []
  []
@@ -3859,6 +3691,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 2793--2796
  []
 
 
+Underfull \hbox (badness 1406) in paragraph at lines 2799--2799
+[]\T1/ptm/m/n/10.95 Burgess, S., Davies, N. M. & Thomp-son, S. G. Bias due to p
+ar-tic-i-pant over-
+ []
+
+
+Underfull \hbox (badness 5175) in paragraph at lines 2799--2799
+\T1/ptm/m/n/10.95 lap in two-sample Mendelian ran-dom-iza-tion. \T1/ptm/m/it/10
+.95 Ge-netic Epi-demi-ol-ogy \T1/ptm/m/n/10.95 (2016).
+ []
+
+
 Overfull \hbox (16.53427pt too wide) in paragraph at lines 2797--2800
  [][][] []
  []
@@ -3878,20 +3722,256 @@ Underfull \hbox (badness 10000) in paragraph at lines 2801--2804
  
  []
 
-[191] [192
+
+Overfull \hbox (16.53427pt too wide) in paragraph at lines 2805--2808
+ [][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2805--2808
+ 
+ []
+
+
+Overfull \hbox (16.53427pt too wide) in paragraph at lines 2809--2812
+ [][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2809--2812
+ 
+ []
+
+
+Overfull \hbox (16.53427pt too wide) in paragraph at lines 2813--2816
+ [][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2813--2816
+ 
+ []
+
+
+Overfull \hbox (16.53427pt too wide) in paragraph at lines 2817--2820
+ [][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2817--2820
+ 
+ []
+
+
+Overfull \hbox (16.53427pt too wide) in paragraph at lines 2821--2824
+ [][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2821--2824
+ 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[195]
+Overfull \hbox (16.53427pt too wide) in paragraph at lines 2825--2828
+ [][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2825--2828
+ 
+ []
+
+
+Overfull \hbox (16.53427pt too wide) in paragraph at lines 2829--2832
+ [][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2829--2832
+ 
+ []
+
+
+Overfull \hbox (16.53427pt too wide) in paragraph at lines 2833--2836
+ [][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2833--2836
+ 
+ []
+
+
+Overfull \hbox (16.53427pt too wide) in paragraph at lines 2837--2840
+ [][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2837--2840
+ 
+ []
+
+
+Overfull \hbox (16.53427pt too wide) in paragraph at lines 2841--2844
+ [][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2841--2844
+ 
+ []
+
+
+Overfull \hbox (16.53427pt too wide) in paragraph at lines 2845--2848
+ [][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2845--2848
+ 
+ []
+
+
+Overfull \hbox (16.53427pt too wide) in paragraph at lines 2849--2852
+ [][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2849--2852
+ 
+ []
+
+
+Overfull \hbox (16.53427pt too wide) in paragraph at lines 2853--2856
+ [][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2853--2856
+ 
+ []
+
+
+Overfull \hbox (16.53427pt too wide) in paragraph at lines 2857--2860
+ [][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2857--2860
+ 
+ []
+
+
+Overfull \hbox (16.53427pt too wide) in paragraph at lines 2861--2864
+ [][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2861--2864
+ 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[196]
+Overfull \hbox (16.53427pt too wide) in paragraph at lines 2865--2868
+ [][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2865--2868
+ 
+ []
+
+
+Overfull \hbox (16.53427pt too wide) in paragraph at lines 2869--2872
+ [][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2869--2872
+ 
+ []
+
+
+Overfull \hbox (16.53427pt too wide) in paragraph at lines 2873--2876
+ [][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2873--2876
+ 
+ []
+
+
+Overfull \hbox (16.53427pt too wide) in paragraph at lines 2877--2880
+ [][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2877--2880
+ 
+ []
+
+
+Overfull \hbox (16.53427pt too wide) in paragraph at lines 2881--2884
+ [][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2881--2884
+ 
+ []
+
+
+Overfull \hbox (16.53427pt too wide) in paragraph at lines 2885--2888
+ [][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2885--2888
+ 
+ []
+
+
+Overfull \hbox (16.53427pt too wide) in paragraph at lines 2889--2892
+ [][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2889--2892
+ 
+ []
+
+
+Overfull \hbox (16.53427pt too wide) in paragraph at lines 2893--2896
+ [][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2893--2896
+ 
+ []
+
+[197] [198
 
 ]
-Overfull \hbox (117.33571pt too wide) in paragraph at lines 2807--2815
+Overfull \hbox (117.33571pt too wide) in paragraph at lines 2899--2907
  \T1/ptm/m/n/12 in-stall.packages(``knitr'') li-brary(knitr) ab-bre-vi-a-tions 
 <- read_xlsx(``figure/Abbreviations/Abbreviations.xlsx'')
  []
 
-[193] (./thesis.aux)
+[199] (./thesis.aux)
 
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 5779E80A536EDDB99EAFD0B05F7EE999;39592.
+(rerunfilecheck)             Checksum: 1C1EAD0593D6C53B9AFD8AED6122BCB6;40832.
  )
 (\end occurred inside a group at level 2)
 
@@ -3899,13 +3979,13 @@ Package rerunfilecheck Info: File `thesis.out' has not changed.
 ### semi simple group (level 1) entered at line 197 (\begingroup)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 28706 strings out of 480313
- 581969 string characters out of 5896450
- 820685 words of memory out of 5000000
- 45185 multiletter control sequences out of 15000+600000
+ 28788 strings out of 480313
+ 584354 string characters out of 5896450
+ 823400 words of memory out of 5000000
+ 45231 multiletter control sequences out of 15000+600000
  480174 words of font info for 112 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 84i,16n,89p,2716b,2192s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 84i,16n,89p,2715b,2215s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/Users/lg14289/Library/TinyTeX/texmf-dist/fonts/enc/dvips/lm/l
 m-mathsy.enc}{/Users/lg14289/Library/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-m
 athit.enc}{/Users/lg14289/Library/TinyTeX/texmf-dist/fonts/enc/dvips/base/8r.en
@@ -3917,10 +3997,10 @@ lg14289/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></Users/lg1
 289/Library/TinyTeX/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></Users/lg14289
 /Library/TinyTeX/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></Users/lg14289/Li
 brary/TinyTeX/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on thesis.pdf (211 pages, 7051677 bytes).
+Output written on thesis.pdf (217 pages, 7273477 bytes).
 PDF statistics:
- 3800 PDF objects out of 4296 (max. 8388607)
- 3273 compressed objects within 33 object streams
- 791 named destinations out of 1000 (max. 500000)
- 1494 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 4030 PDF objects out of 4296 (max. 8388607)
+ 3458 compressed objects within 35 object streams
+ 822 named destinations out of 1000 (max. 500000)
+ 1546 words of extra memory for PDF output out of 10000 (max. 10000000)
 

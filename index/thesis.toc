@@ -25,11 +25,12 @@
 \contentsline {section}{\numberline {2.10}Platelet traits as proxies for platelet function}{18}{section.2.10}%
 \contentsline {section}{\numberline {2.11}Mechanisms of obesity-related disease}{21}{section.2.11}%
 \contentsline {section}{\numberline {2.12}Platelet primers}{21}{section.2.12}%
-\contentsline {section}{\numberline {2.13}Evaluating the plasma proteome may reveal mechanistic insight into obesity-related diseases}{22}{section.2.13}%
-\contentsline {section}{\numberline {2.14}Importance of interdisciplinary methods}{22}{section.2.14}%
-\contentsline {section}{\numberline {2.15}Interdisciplinary methods - MR, RCTs, lab work}{23}{section.2.15}%
+\contentsline {section}{\numberline {2.13}The role of circulating platelet primers and disease}{22}{section.2.13}%
+\contentsline {section}{\numberline {2.14}Evaluating the plasma proteome may reveal mechanistic insight into obesity-related diseases}{22}{section.2.14}%
+\contentsline {section}{\numberline {2.15}Importance of interdisciplinary methods}{23}{section.2.15}%
 \contentsline {section}{\numberline {2.16}Cohorts utilised within the thesis}{23}{section.2.16}%
 \contentsline {section}{\numberline {2.17}Aims}{23}{section.2.17}%
+\contentsline {section}{\numberline {2.18}Results chapter}{24}{section.2.18}%
 \contentsline {chapter}{Chapter 3: Common Methods}{25}{chapter.3}%
 \contentsline {section}{\numberline {3.1}The INTERVAL study}{25}{section.3.1}%
 \contentsline {subsection}{\numberline {3.1.1}Study overview}{25}{subsection.3.1.1}%
@@ -85,10 +86,10 @@
 \contentsline {section}{\numberline {5.3}Results}{75}{section.5.3}%
 \contentsline {subsection}{\numberline {5.3.1}Participant characteristics}{75}{subsection.5.3.1}%
 \contentsline {subsection}{\numberline {5.3.2}Platelet parameters}{75}{subsection.5.3.2}%
-\contentsline {subsection}{\numberline {5.3.3}Basal receptors}{77}{subsection.5.3.3}%
+\contentsline {subsection}{\numberline {5.3.3}Basal receptors}{76}{subsection.5.3.3}%
 \contentsline {subsection}{\numberline {5.3.4}Agonist-induced integrin α\textsubscript {IIb}β\textsubscript {3} and P-selectin expression}{77}{subsection.5.3.4}%
-\contentsline {subsection}{\numberline {5.3.5}Platelet-neutrophil aggregates}{79}{subsection.5.3.5}%
-\contentsline {subsection}{\numberline {5.3.6}Platelet proteomics}{80}{subsection.5.3.6}%
+\contentsline {subsection}{\numberline {5.3.5}Platelet-neutrophil aggregates}{78}{subsection.5.3.5}%
+\contentsline {subsection}{\numberline {5.3.6}Platelet proteomics}{79}{subsection.5.3.6}%
 \contentsline {section}{\numberline {5.4}Discussion}{84}{section.5.4}%
 \contentsline {chapter}{Chapter 6: Pathways linking plasma proteins and platelet function: do the chemokines MDC and TARC play a role?}{89}{chapter.6}%
 \contentsline {section}{\numberline {6.1}Background}{89}{section.6.1}%
@@ -145,8 +146,11 @@
 \contentsline {section}{\numberline {9.1}Overall findings}{165}{section.9.1}%
 \contentsline {section}{\numberline {9.2}Strengths and limitations}{168}{section.9.2}%
 \contentsline {section}{\numberline {9.3}Future studies}{168}{section.9.3}%
-\contentsline {section}{\numberline {9.4}Wider implications of findings (e.g.\nobreakspace {}clinical)}{168}{section.9.4}%
-\contentsline {section}{\numberline {9.5}Overal conclusion}{168}{section.9.5}%
-\contentsline {chapter}{Appendix A: The First Appendix}{169}{appendix.A}%
-\contentsline {chapter}{Appendix B: The Second Appendix, for Fun}{171}{appendix.B}%
-\contentsline {chapter}{References}{173}{appendix*.89}%
+\contentsline {section}{\numberline {9.4}Wider implications of findings (e.g.\nobreakspace {}clinical)}{169}{section.9.4}%
+\contentsline {section}{\numberline {9.5}Overal conclusion}{169}{section.9.5}%
+\contentsline {chapter}{Appendix A: Exploring nonlinear associations between body mass index and plasma proteins}{171}{appendix.A}%
+\contentsline {section}{\numberline {A.1}Observational association between BMI and leptin}{172}{section.A.1}%
+\contentsline {section}{\numberline {A.2}Determining nonlinear effects using MR}{173}{section.A.2}%
+\contentsline {section}{\numberline {A.3}Using nonlinear MR package}{174}{section.A.3}%
+\contentsline {section}{\numberline {A.4}GAM and linear stratified MR (GLSMR)}{176}{section.A.4}%
+\contentsline {chapter}{References}{179}{appendix*.92}%

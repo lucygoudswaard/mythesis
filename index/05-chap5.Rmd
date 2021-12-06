@@ -87,16 +87,15 @@ column_spec(1, width = "5cm")
 
 Platelet traits measured by Sysmex were compared across bariatric and control groups (Table \@ref(tab:obesity-platelets-parameters)). There was no statistical evidence for an effect of obesity on platelet parameters. However, IPC and IPF did display larger mean values compared to controls, but they also had relatively large SDs in the bariatric patient group (IPC 9.3 (SD 4.9) x 10^9^/L in control vs 16.3 (SD 16.3) x10^9^/L in bariatric group, p=0.45).
 
-```{r obesity-platelets-parameters,  echo=FALSE}
+```{r obesity-platelets-parameters,  echo=FALSE, warning=FALSE}
 options(knitr.kable.NA = "")
-f = c("Platelet count (PLT)", "Immature platelet fraction (IPF)", "Immature platelet count (IPC)", "Side fluorescence (SFL)", "Forward scatter (FSC)", "Side scatter (SSC)")
+f = c("Platelet count (PLT) (10^9^/L)", "Immature platelet fraction (IPF) (%)", "Immature platelet count (IPC) (10^9^/L)", "Side fluorescence (SFL)", "Forward scatter (FSC)", "Side scatter (SSC)")
 co = c("257.8 (29.1)", "3.8 (2.3)", "9.3 (4.9)", "82.0 (5.8)", "53.8 (5.5)", "40.3 (1.1)")
 i = c("235.8 (61.5)", "7.3 (8.3)", "16.3 (16.3)", "85.1 (9.8)", "60.5 (8.8)", "41.8 (3.0)")
 p <- c(0.54,0.44,0.45,0.61,0.24,0.37) 
 mytable = data.frame("Platelet trait"  = f, "Control mean (SD) or %" = co, "Bariatric patient mean (SD) or %" = i, "P value for difference" = p)
 colnames(mytable) <- c('Variable', "Control mean (SD)", "Bariatric patient mean (SD)", "P value for difference" )
-mytable %>% kable(caption = "Comparison of platelet traits measured by Sysmex XE-2100 across bariatric and control groups", booktabs = TRUE) %>% 
-  kable_classic_2(full_width = F) %>%
+mytable %>% kable(caption = "Comparison of platelet traits measured by Sysmex XE-2100 across bariatric and control groups", booktabs = TRUE, format = "markdown") %>%  kable_classic_2(full_width = F) %>%
   #kable_paper("hover", full_width = F)
  kable_styling(full_width = TRUE) %>%
 column_spec(1, width = "5cm")
