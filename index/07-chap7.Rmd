@@ -45,7 +45,7 @@ A benefit of studying the systematic effects of BMI on the circulating proteome 
 
 In this chapter, the aim was to measure associations between adiposity and the human proteome and to also estimate the underlying effects in a causal framework (Figure \@ref(fig:BMI-protein-graphic)). Using data on 2737 participants from INTERVAL, the effects of BMI on 4034 (3622 unique) plasma protein traits were estimated, in both observational and MR frameworks. The agreement between effect estimates from different methods were examined and enrichment analyses of the most strongly altered proteins were performed to map their potential relevance to cardiovascular disease.
 
-```{r BMI-protein-graphic, echo = FALSE , fig.scap="Schematic of the associations explored in chapter", fig.cap="Schematic of the associations explored: this chapter explores the causal effect of BMI on the plasma proteome and explores whether these changes might contribute to cardiovascular diseases", out.width="90%"}
+```{r BMI-protein-graphic, echo = FALSE , fig.scap="Schematic of the associations explored in chapter", fig.cap="Schematic of the associations explored: this chapter explores the causal effect of BMI on the plasma proteome and explores whether these changes might contribute to cardiovascular diseases. Figure made using BioRender.com.", out.width="90%"}
 include_graphics(path = "figure/BMI_protein_INTERVAL/Thesis_graphic_overview_BMI_protein_CVD.png", dpi = NA)
 ```
 
@@ -92,7 +92,7 @@ To explore whether there was a systematic difference in the association of prote
 ## Results
 
 ### Participant characteristics
-INTERVAL participants included in this study (those with proteomic data), had a mean age of 45.0 years (SD of 14.1 years) and 48.3% were female (Table \@ref(tab:Incl-excl-part)). Mean BMI was 25.9 kg/m^2^ (SD of 4.8 kg/m^2^) and the majority of participants were non-smokers (59.1%). Nearly a quarter (23.5%) reported currently or previously smoking daily and 71.5% reported drinking alcohol at least once a week. Participants with proteomic data were representative of the full INTERVAL cohort (Table \@ref(tab:Incl-excl-part)).
+INTERVAL participants included in this study (those with proteomic data), had a mean age of 45.0 years (SD of 14.1 years) and 48.3% were female (Table \@ref(tab:Inc-excl-part)). Mean BMI was 25.9 kg/m^2^ (SD of 4.8 kg/m^2^) and the majority of participants were non-smokers (59.1%). Nearly a quarter (23.5%) reported currently or previously smoking daily and 71.5% reported drinking alcohol at least once a week. Participants with proteomic data were representative of the full INTERVAL cohort (Table \@ref(tab:Inc-excl-part)).
 
 ```{r Inc-excl-part,  echo=FALSE}
 options(knitr.kable.NA = "")

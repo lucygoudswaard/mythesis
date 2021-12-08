@@ -34,7 +34,7 @@ source("~/OneDrive - University of Bristol/PhD/Main project/Thesis/index/package
 ## Overall findings
 The work presented in this thesis brought together an interdiscplinary approach to expand on previous literature to further explore the contribution of the plasma proteome and platelet function to obesity-related thrombosis. A summary of pathways explored in each results chapters is displayed in summary Figure \@ref(fig:Thesis-schematic-chaps), with a more detailed summary of findings in Table \@ref(tab:main-thesis-findings).
 
-```{r Thesis-schematic-chaps, echo = FALSE, out.width = "90%", fig.cap="Schematic of the multi-step pathway addressed in the thesis with chapter numbers where associations are explored", fig.scap="Schematic of the multi-step pathway addressed in the thesis with chapter numbers"}
+```{r Thesis-schematic-chaps, echo = FALSE, out.width = "90%", fig.cap="Schematic of the multi-step pathway addressed in the thesis with chapter numbers where associations are explored. Figure made using BioRender.com.", fig.scap="Schematic of the multi-step pathway addressed in the thesis with chapter numbers"}
 include_graphics(path = "figure/General_discussion/Thesis_graphic_overview_chapters.png", dpi = NA)
 ```
 

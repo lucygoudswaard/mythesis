@@ -40,7 +40,7 @@ Although MR helps to overcome issues inherent to observational studies such as c
 1) Examine the effect of reducing BMI on the plasma proteome.
 2) Compare BMI-protein effects across MR and RCT study designs (Results from Chapter \@ref(BMI-protein-MR) (Figure \@ref(fig:BMI-protein-graphic2))).
 
-```{r BMI-protein-graphic2, echo = FALSE , fig.scap="Schematic of the associations explored in chapter", fig.cap="Schematic of the associations explored: this chapter explores the effect of caloric restriction-induced weight loss on the plasma proteome", out.width="90%"}
+```{r BMI-protein-graphic2, echo = FALSE , fig.scap="Schematic of the associations explored in chapter", fig.cap="Schematic of the associations explored: this chapter explores the effect of caloric restriction-induced weight loss on the plasma proteome. Figure made using BioRender.com.", out.width="90%"}
 include_graphics(path = "figure/DiRECT/Thesis_graphic_overview_BMI_protein.png", dpi = NA)
 ```
 
@@ -50,7 +50,7 @@ include_graphics(path = "figure/DiRECT/Thesis_graphic_overview_BMI_protein.png",
 Samples analysed within this study were collected from participants enrolled in the Diabetes Remission clinical trial (DiRECT). DiRECT was a cluster-randomised trial which took place at 49 primary care practices in Scotland and Tyneside [@Lean2018]. Ethical approval was granted from West 3 Ethics Committee (January, 2014) and the National Health Service (NHS). Participants were recruited between 25th July 2014 and 5th August 2016. Details of the protocol have previously been published [@Leslie2016]. Participants enrolled were between 20-65 years, diagnosed with T2D within previous 6 years, had a BMI of between 27-45kg/m^2^. Participants were excluded if they were: using insulin, had a HbA1c concentration of ≥12 % (≥108 mmol/mol), weight loss of >5 kg in the preceding 6 months, an estimated glomerular filtration rate of <30 mL/min per 1.732 m^2^. More exclusion criteria are included in the main trial paper [@Lean2018]. Participants in the control group received best-practice care by guidelines. The intervention group were asked to follow the Counterweright-Plus weight management programme [@Lean2013]. This programme consisted of a total diet replacement (TDR) phase using a low energy diet (825-853 kcal/day) for 3-5 months, followed by structured food reintroduction of 2-8 weeks, with ongoing monthly long-term weight loss maintenance visits. Those in the intervention group had their antidiabetic and antihypertensive drugs discontinued. In total, there were 146 patients in the control group and 119 in the intervention group who remained enrolled in the study at 1 year, as detailed in Figure \@ref(fig:direct-participants).
 
 (ref:scaption-direct) Overview of participants in the DiRECT trial
-(ref:caption-direct) Overview of participants in the DiRECT trial
+(ref:caption-direct) Overview of participants in the DiRECT trial. Figure made using BioRender.com.
 
 ```{r direct-participants, echo = FALSE, fig.cap="(ref:caption-direct)", fig.scap= "(ref:scaption-direct)"}
 include_graphics(path = "figure/DiRECT/DiRECT_study_summary.png", dpi = NA)
@@ -69,7 +69,7 @@ Analyses were performed using R version 3.6.1. A total of 265 participants were 
 The associations between BMI change and protein changes were explored using multiple linear regression adjusting for centre, list size, age and sex (function lm() from base R "stats" package). Due to the nature of linear regression, outputs of regression provide the mean individual change in protein (in SDs) per SD increase in BMI. Therefore if more weight loss reduces the levels of protein, the beta coefficient is positive [@Figarska2020]. The association between potential confounders (age and sex) and both exposure (BMI change) and outcome (protein change) were explored using linear regression. The difference in BMI change in intervention group compared to control was performed using linear regression, adjusting for centre, list size, age and sex. Covariables (age, sex, centre and list size) were compared across treatment groups. Treatment group was therefore used as an instrument for BMI change in a two stage least squares analysis \@ref(fig:direct-tsls) to estimate the effects of BMI change on protein change using the ivreg() function from the "AER" R package (https://github.com/cran/AER/blob/master/R/ivreg.R). As a sensitivity analysis, for proteins which associate with BMI change, baseline protein levels were compared across control and intervention groups. P values were adjusted for multiple testing based on the number of representative proteins (0.05/869 = 5.8x10^-5^). 
 
 (ref:scaption-direct-tsls) Schematic of two stage least squares analysis
-(ref:caption-direct-tsls) Schematic of two stage least squares analysis
+(ref:caption-direct-tsls) Schematic of two stage least squares analysis. Figure made using BioRender.com.
 ```{r direct-tsls, echo = FALSE, fig.cap="(ref:caption-direct-tsls)", fig.scap= "(ref:scaption-direct-tsls)"}
 include_graphics(path = "figure/DiRECT/DiRECT_analysis.png", dpi = NA)
 
@@ -134,7 +134,7 @@ include_graphics(path = "figure/DiRECT/QQ_plots_obs_IV.pdf", dpi = NA)
 A total of 110 proteins were only associated within the observational linear regression model, whereas 27 proteins were only associated in the TSLS analysis using treatment group as an instrument for BMI change. 144 proteins were associated with BMI in both analyses (\@ref(fig:circos)), with largest effect estimates across methods for SCAR5, Adiponectin, Apolipoprotein F, growth hormone receptor (GHR), receptor-type tyrosine-protein phosphatase U (PTPRU) and sex hormone binding globulin. These can be seen in Figure \@ref(fig:scatter-DiRECT). Of these 144 BMI change-protein change associations that were consistent across both models, 121 were positive, where weight loss led to a reduction in levels of the protein.
 
 (ref:scaption-circos) Circos plot of proteins associated with BMI change
-(ref:caption-circos) Circos plot displaying the protein change (SDs) per SD increase in BMI in DiRECT, where the blue estimates are the two stage least squares estimates and the yellow estimates are from the multiple linear regression. Proteins presented were associated in both models at p=5.8x10^-5^
+(ref:caption-circos) Circos plot displaying the protein change (SDs) per SD increase in BMI in DiRECT, where the blue estimates are the two stage least squares estimates and the yellow estimates are from the multiple linear regression. Proteins presented were associated in both models at p=5.8x10^-5^. Figure made using the EpiViz R package https://github.com/mattlee821/EpiViz. 
 ```{r circos, echo = FALSE, out.width="100%", fig.cap="(ref:caption-circos)", fig.scap= "(ref:scaption-circos)"}
 include_graphics(path = "figure/DiRECT/circos_plot_BMI_change_protein_ols_tsls.pdf", dpi = NA)
 ```
