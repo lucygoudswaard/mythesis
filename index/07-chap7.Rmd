@@ -29,7 +29,7 @@ editor_options:
 ```{r, echo=FALSE, message=FALSE}
 source("~/OneDrive - University of Bristol/PhD/Main project/Thesis/index/packages.R")
 ```
-# Effects of adiposity on the human plasma proteome: Observational and Mendelian randomization estimates {#BMI-protein-MR}
+# Exploring the plasma proteome as a link between adiposity and platelet function: Observational and Mendelian randomization estimates {#BMI-protein-MR}
 
 The work within this chapter has been published in the International Journal of Obesity [@Goudswaard2021]. I am the first author of the publication; I performed all analyses, created all figures and tables and wrote the manuscript. 
 

@@ -29,53 +29,15 @@ editor_options:
 ```{r, echo=FALSE, message=FALSE}
 source("~/OneDrive - University of Bristol/PhD/Main project/Thesis/index/packages.R")
 ```
-
-
 # Introduction
 
 ## Format of the introduction
-This section will provide some brief background information to put the thesis into context. It will provide information on obesity, in particular its prevalence and implications for cardiovascular disease. Possible mechanisms of disease will be introduced, such as the involvement of changes in circulating blood platelets and circulating proteins. At the end of this section the aims of the thesis and organisation of the results chapters will be introduced.
-
-## Rates of obesity are increasing
-Obesity, defined as a body mass index (BMI) of greater than 30kg/m^2^, has tripled worldwide since 1975. It is currently estimated that 40% of adults in the United States and 26% of adults in the United Kingdom have obesity [@Bluher2019]. As of 2016, the number of individuals globally with obesity surpassed 650 million [@TheLancetPublicHealth2018]. The average BMI of the UK adult population is ~27kg/m^2^ [@Wade2018], which is in the 'overweight' category (between 25 and 30 kg/m^2^). Overweight is also more common than 'normal-weight' in many other higher-income countries [@NCD-RisC2016], and prevalence of overweight is increasing in lower-income countries [@Templin2019].
-
-## Obesity is a modifiable risk factor for cardiovascular disease
-Adiposity (having too much fat in the body) is a risk factor for certain non-communicable diseases. Such diseases include Type 2 Diabetes mellitus (T2D), musculoskeletal diseases, certain types of cancer and cardiovascular disease [@Garg2014; @Khan2018; @Kortt2002; @Bhaskaran2014]. Collectively, treatment for obesity-related diseases is costly for health services [@Dixon2019a; @Dixon2019]. Cardiovascular disease is one of the leading causes of death. Cardiovascular disease is a general term for diseases affecting the heart or circulatory system and can be subcategorised further into diseases such as thrombotic disorders including coronary heart disease (CHD) and stroke. Obesity is associated with an increased risk of such cardiovascular events [@Khan2018]. Surgical and pharmacological interventions can help in reducing weight and therefore reducing risk of cardiovascular disease, however there is still a need to understand how obesity causes disease.
-
-## Mechanisms of obesity-related cardiovascular disease are unclear
-Obesity is caused by an increase in fat deposition and generally occurs when energy intake exceeds energy expenditure. Obesity results in a state of chronic low-grade inflammation [@Esser2014], with an increase in adipose tumour necrosis factor-alpha (TNF-alpha) and interleukin-6 (IL-6) reported [@Kern2001]. Efforts have been made to understand how adiposity causes cardiovascular disease, with suggestion that inflammation may contribute to increased cardiovascular risk [@Cercato2019].
-
-## Platelets could mediate obesity-related thrombosis
-Platelets are anucleate blood cells that are involved in the cessation of bleeding, but can cause thrombosis when activated pathologically. Antiplatelet drugs are used to prevent recurrence of ischaemic events such as a myocardial infarction (MI) such as aspirin [@Nardin2015]. BMI is linked to increased rates of thrombosis, therefore it is likely that those with higher BMI have platelets which are hyperactive. There is conflicting literature surrounding this and cohorts used to explore these effects are limited, as large cohort studies generally do not have in depth platelet function measures.
-
-## The plasma proteome could help reveal mechanisms
-Studies which have explored the molecular footprint of adiposity have tended to focus on the lipidome, such as cholesterol and triglycerides in lipoprotein subtypes, including low-density lipoproteins (LDL), very-low-density lipoproteins (VLDL) and high-density lipoproteins (HDL) [@Bell2018a; @Wurtz2014], where a higher BMI is associated with an increase in LDLs and a decrease in large HDLs. This has been explored in a causal framework. As the majority of druggable targets are proteins, it is also valuable to explore the effects of BMI on circulating plasma proteins. Identifying alterations of individual proteins may provide therapeutic opportunities and assessing the overall protein profile of adiposity may provide more of a mechanistic insight into how adiposity causes disease.
-
-## Thesis aims and objectives
-The aims of the thesis are indicated below, with a schematic of the multi-step pathway which this thesis aims to explore (Figure \@ref(fig:Thesis-schematic)). The 3 overall aims are:
-
-1) Explore the effect of body mass index on platelet traits, platelet function and signalling.
-2) Characterise the effects of the chemokines macrophage-derived chemokine (MDC) and thymus and activation regulated chemokine (TARC) on platelet function.
-3) Determine the effects of adiposity on the plasma proteome.
-
-
-```{r Thesis-schematic, echo = FALSE, fig.cap="Schematic of the multi-step pathway addressed in the thesis", fig.scap="Schematic of the multi-step pathway addressed in the thesis"}
-include_graphics(path = "figure/Intro_background/Thesis_graphic_overview_without_chapters.png", dpi = NA)
-```
-
-## Thesis structure
-There will be 5 results chapters in this thesis:
-
-1) Higher body mass index raises immature platelet count: evidence from Mendelian randomization analyses (Chapter \@ref(BMI-platelets-INTERVAL))
-2) The effect of obesity on platelet function: a clinical pilot study (Chapter \@ref(BMI-platelets-clinic))
-3) Pathways linking plasma proteins and platelet function: do the chemokines MDC and TARC play a role? (Chapter \@ref(chemokine-platelets))
-4) Effects of adiposity on the human plasma proteome: Observational and Mendelian randomization estimates (Chapter \@ref(BMI-protein-MR))
-5) Exploring the effects of caloric restriction-induced weight loss on the plasma proteome (Chapter \@ref(BMI-protein-RCT))
+This section will provide some information about the PhD, providing information on the types of methods that have been integrated throughout the thesis. Details of publications from the PhD will be provided, along with details of presentations and various meetings and conferences as well as details of awards and prizes. The following chapter (Chapter \@ref(background)) will discuss the current literature surrounding the work in the thesis and introduce the hypotheses and aims of the thesis.
 
 ## Collaborations from the PhD
-This PhD project is part of the British Heart Foundation Integrative Cardiovascular Science Programme. My PhD project has made full use of interdisciplinary techniques to answer the research questions. In 2019 I spent seven weeks at the Wellcome Sanger Institute near Cambridge, where I joined the human genetics team led by Professor Nicole Soranzo and worked closely with other academics including Professor Adam Butterworth from the University of Cambridge. I have created and implemented a clinical study where I wrote the approved ethics application. This study was in collaboration with Dr Dimitri Pournaras, a bariatric surgeon at Southmead Hopsital. In light of the COVID-19 pandemic, I utilised the laboratory techniques developed to determine the effects of severe COVID-19 on platelet function by working with doctors on the COVID-19 including Dr David Arnold and Dr Fergus Hamilton. Other collaborations include Assistant Professor Michael Holmes from the University of Oxford and Professor Naveed Sattar from the University of Glasgow.
+This PhD project is part of the British Heart Foundation Integrative Cardiovascular Science Programme. My PhD project has made full use of interdisciplinary techniques to answer the research questions. In 2019 I spent seven weeks at the Wellcome Sanger Institute near Cambridge, where I joined the human genetics team led by Professor Nicole Soranzo and worked closely with other academics including Professor Adam Butterworth from the University of Cambridge. I have created and implemented a clinical study where I wrote the approved ethics application. This study was in collaboration with Dr Dimitri Pournaras, a bariatric surgeon at Southmead Hopsital. In light of the COVID-19 pandemic, I utilised the laboratory techniques developed to determine the effects of severe COVID-19 on platelet function by working with doctors on the COVID-19 including Dr David Arnold and Dr Fergus Hamilton. Other collaborations include Assistant Professor Michael Holmes from the University of Oxford and Professor Naveed Sattar from the University of Glasgow. This work will continue on as part of the British Heart Foundation Accelerator Award Transition Fellowship, where I have started a collaboration with Professor Karsten Suhre from Weill-Cornell Medicine, Qatar.
 
-## Publications from the PhD
+## All publications from the duration of the PhD
 
 **Goudswaard L. J.**, Corbin L. J., Burley K. L., Mumford A., Akbari P., Soranzo N., Butterworth A. S., Watkins N. A., Pournaras D. J., Harris J., Timpson N. J., Hers I. Higher body mass index raises immature platelet count: potential contribution to obesity-related thrombosis. (2021) Platelets. doi:. 
 
@@ -86,6 +48,12 @@ This PhD project is part of the British Heart Foundation Integrative Cardiovascu
 Liu, H., Jackson, M. L., **Goudswaard, L. J.**, Moore S. F., Hutchinson J. L, Hers I.  Sphingosine-1-phosphate modulates PAR1-mediated human platelet activation in a concentration-dependent biphasic manner. (2021) Sci Rep 11, 15308. https://doi.org/10.1038/s41598-021-94052-4
 
 Sledz, K. M., Moore, S. F., Vijayaragavan, V., Mallah, S., **Goudswaard, L. J.**, Williams, C. M., Hunter, R. W. & Hers, I. Redundant role of ASK1-mediated p38MAPK activation in human platelet function. (2020) Cellular Signalling. 68, 11 p., 109528. doi:10.1016/j.cellsig.2020.109528 
+
+## Publications in preparation
+
+**Goudswaard L. J.**, Williams C. M., Khalil J., Hamilton F., Arnold D., Milne A., Lewis P. A., Heesom K. K., Mundell S. J., Davidson A., Poole A. W., Hers I. Altered platelet proteome and impaired platelet integrin α~IIb~β~3~ activation in hospitalised patients with COVID-19. 
+
+Constantinescu A. E., Bull C. J., **Goudswaard L. J.**, Zheng J., Elsworth B., Timpson N. J., Moore S. F., Hers I.,* Vincent E. E. Phenome-wide analysis to investigate deep vein thrombosis aetiology.
 
 ## Presentations from the PhD
 

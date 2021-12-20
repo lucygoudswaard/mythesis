@@ -9,9 +9,10 @@
 \contentsline {section}{\numberline {1.7}Thesis aims and objectives}{5}{section.1.7}%
 \contentsline {section}{\numberline {1.8}Thesis structure}{6}{section.1.8}%
 \contentsline {section}{\numberline {1.9}Collaborations from the PhD}{6}{section.1.9}%
-\contentsline {section}{\numberline {1.10}Publications from the PhD}{7}{section.1.10}%
-\contentsline {section}{\numberline {1.11}Presentations from the PhD}{8}{section.1.11}%
-\contentsline {section}{\numberline {1.12}Awards and prizes}{9}{section.1.12}%
+\contentsline {section}{\numberline {1.10}All publications from the duration of the PhD}{7}{section.1.10}%
+\contentsline {section}{\numberline {1.11}Publications in preparation}{8}{section.1.11}%
+\contentsline {section}{\numberline {1.12}Presentations from the PhD}{8}{section.1.12}%
+\contentsline {section}{\numberline {1.13}Awards and prizes}{10}{section.1.13}%
 \contentsline {chapter}{Chapter 2: Background}{11}{chapter.2}%
 \contentsline {section}{\numberline {2.1}The history of body mass index}{11}{section.2.1}%
 \contentsline {section}{\numberline {2.2}Cardiovascular diseases are the leading cause of deaths worldwide}{12}{section.2.2}%
@@ -145,12 +146,13 @@
 \contentsline {chapter}{Chapter 9: Discussion}{171}{chapter.9}%
 \contentsline {section}{\numberline {9.1}Overall findings}{171}{section.9.1}%
 \contentsline {section}{\numberline {9.2}Strengths and limitations}{174}{section.9.2}%
-\contentsline {section}{\numberline {9.3}Future studies}{174}{section.9.3}%
-\contentsline {section}{\numberline {9.4}Wider implications of findings (e.g.\nobreakspace {}clinical)}{175}{section.9.4}%
-\contentsline {section}{\numberline {9.5}Overal conclusion}{175}{section.9.5}%
+\contentsline {section}{\numberline {9.3}Limitations}{174}{section.9.3}%
+\contentsline {section}{\numberline {9.4}Wider implications of findings (e.g.\nobreakspace {}clinical)}{174}{section.9.4}%
+\contentsline {section}{\numberline {9.5}Future studies}{175}{section.9.5}%
+\contentsline {section}{\numberline {9.6}Overall conclusion}{176}{section.9.6}%
 \contentsline {chapter}{Appendix A: Exploring nonlinear associations between body mass index and plasma proteins}{177}{appendix.A}%
 \contentsline {section}{\numberline {A.1}Observational association between BMI and leptin}{178}{section.A.1}%
 \contentsline {section}{\numberline {A.2}Determining nonlinear effects using MR}{179}{section.A.2}%
 \contentsline {section}{\numberline {A.3}Using nonlinear MR package}{180}{section.A.3}%
 \contentsline {section}{\numberline {A.4}GAM and linear stratified MR (GLSMR)}{182}{section.A.4}%
-\contentsline {chapter}{References}{185}{appendix*.109}%
+\contentsline {chapter}{References}{185}{appendix*.108}%

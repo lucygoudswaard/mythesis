@@ -29,7 +29,7 @@ editor_options:
 ```{r, echo=FALSE, message=FALSE}
 source("~/OneDrive - University of Bristol/PhD/Main project/Thesis/index/packages.R")
 ```
-# Exploring the effects of caloric restriction-induced weight loss on the plasma proteome {#BMI-protein-RCT}
+# Further elucidating the effect of adiposity on the plasma proteome using a weight loss intervention {#BMI-protein-RCT}
 
 ## Background
 

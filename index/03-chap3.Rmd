@@ -29,7 +29,7 @@ editor_options:
 ```{r, echo=FALSE, message=FALSE}
 source("~/OneDrive - University of Bristol/PhD/Main project/Thesis/index/packages.R")
 ```
-# Common Methods {#common-methods}
+# Common Resources and Methods {#common-methods}
 
 This chapter will provide an overview of datasets and methods which are utilised in more than one results chapter. Each chapter will refer back to these methods where relevant and include further methodological details specific to the chapter.
 

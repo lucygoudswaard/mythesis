@@ -29,9 +29,9 @@ editor_options:
 ```{r, echo=FALSE, message=FALSE}
 source("~/OneDrive - University of Bristol/PhD/Main project/Thesis/index/packages.R")
 ```
-# Higher body mass index raises immature platelet count: evidence from Mendelian randomization analyses {#BMI-platelets-INTERVAL}
+# Using observational and MR frameworks to determine the effect of body mass index on platelet characteristics {#BMI-platelets-INTERVAL}
 
-This work is published in Platelets journal. I performed all analyses, created all figures and tables and wrote the manuscript. 
+This work is published in the journal Platelets (add reference). I performed all analyses, created all figures and tables and wrote the manuscript. 
 
 ## Background
 
@@ -45,17 +45,15 @@ Sysmex haematology analyzers are able to provide additional platelet characteris
 
 As these platelet characteristics provide potential information about platelet hyperactivity and given the increased thrombotic risk seen with adiposity, it is important to assess how adiposity affects platelet properties. Previous studies with modest samples sizes have implemented observational epidemiological methods to explore the effect of BMI on PLT, plateletcrit (PCT) and MPV. There is conflicting observational evidence regarding an association between BMI and PLT [@Furuncuoglu2016; @Han2018a], with some studies suggesting a positive association between BMI and MPV [@Coban2005] and other studies reporting no such association [@Heffron2018]. Furthermore, as there is evidence that immature platelet production is increased in patients with metabolic syndrome and type II diabetes [@Vaduganathan2008a; @Mijovic2015a], it is therefore important to explore whether BMI may be an independent predictor of this trait. It is currently unknown whether the influence of BMI on platelet properties and function are causal and independent of confounding effects.
 
-```{r Linear-reg-MR, echo = FALSE , fig.cap="Schematic of linear regression and Mendelian randomization analyses. Linear regression assesses the association between BMI (exposure) and platelet traits (outcome), with adjustment for potential confounders. Under the assumptions of Mendelian randomization (MR), the genetic risk score (GRS) for body mass index (BMI) does not associate with confounding variables, and if there is a causal association, the GRS should only associate with platelet outcomes through its association with body mass index.", fig.scap = "Schematic of linear regression and Mendelian randomization analyses"}
-include_graphics(path = "figure/BMI_platelets/obsvMRexample.png", dpi = NA)
-
-```
-
 In this study, we used data from the INTERVAL prospective cohort (N=33388) to explore the association between BMI and platelet traits. Figure \@ref(fig:BMI-platelet-overview) shows the associations of the overall thesis hypotheses that are addressed in the chapter. We combined observational and Mendelian randomization (MR) approaches to test the hypothesis that higher BMI leads to changes in platelet characteristics. Although observational studies can demonstrate associations between BMI and platelet characteristics, they cannot determine direct causality. To address the latter, we therefore employed MR, using a genetic risk score derived from single nucleotide polymorphisms (SNPs) associated with higher BMI (Figure \@ref(fig:Linear-reg-MR)). This allowed estimation of the causal effect of BMI on platelet traits, reducing the effect of confounding factors that are inherent to observational studies. To assess functional implications of BMI-platelet associations, a follow-up analysis was designed to explore the associations between platelet characteristics and whole blood aggregation in a cohort of cardiac surgery patients. 
 
 ```{r BMI-platelet-overview, echo = FALSE , fig.scap="Schematic of the associations addressed in the current chapter", fig.cap="Schematic of the associations explored in the current chapter: the relationship between body mass index and platelet traits. Figure made using BioRender.com.", out.width="90%"}
 include_graphics(path = "figure/BMI_platelets/Thesis_graphic_overview_BMI_platelets.png", dpi = NA)
 ```
 
+```{r Linear-reg-MR, echo = FALSE , fig.cap="Schematic of linear regression and Mendelian randomization analyses. Linear regression assesses the association between BMI (exposure) and platelet traits (outcome), with adjustment for potential confounders. Under the assumptions of Mendelian randomization (MR), the genetic risk score (GRS) for body mass index (BMI) does not associate with confounding variables, and if there is a causal association, the GRS should only associate with platelet outcomes through its association with body mass index.", fig.scap = "Schematic of linear regression and Mendelian randomization analyses"}
+include_graphics(path = "figure/BMI_platelets/obsvMRexample.png", dpi = NA)
+```
 ## Methods
 
 ### Study population
@@ -178,8 +176,7 @@ mytable %>% kable(caption = "Age and sex adjusted estimates for the association 
 ```
 
 ### Associations of covariables with BMI and platelet traits in INTERVAL
-The association of covariables (age, sex, smoking and alcohol) with BMI were evaluated. Included covariables in the analysis showed associations with BMI (Table \@ref(tab:INT-confounders-BMI-platelets)). Males had a higher BMI than females (0.18 SD, 95% CI 0.16 to 0.21, P = 9.64x10^-64^). Age was positively associated with BMI (0.011 SD higher per year older, 95% CI 0.010 to 0.012, P = 1.11x10^-182^). Alcohol showed an inverse association with BMI and smoking showed a weak positive association with BMI. 
-Higher age was generally inversely associated with platelet measures (Table \@ref(tab:age-platelets)). Males had a lower platelet count and plateletcrit compared to females (PLT-F was 0.57 lower 95% CI -0.60 to -0.55, P = 9.9x10^-324^, Table \@ref(tab:sex-platelets)). Weak associations were detected between smoking and platelet traits such as a positive association between smoking status and immature platelets (Table \@ref(tab:smoking-platelets)). Higher alcohol consumption also showed inverse associations with measures of plateletcrit and platelet count (Table \@ref(tab:alcohol-platelets)).
+The association of covariables (age, sex, smoking and alcohol) with BMI were evaluated (Table \@ref(tab:INT-confounders-BMI-platelets)). Included covariables in the analysis showed associations with BMI. Males had a higher BMI than females (0.18 SD, 95% CI 0.16 to 0.21, P = 9.64x10^-64^). Age was positively associated with BMI (0.011 SD higher per year older, 95% CI 0.010 to 0.012, P = 1.11x10^-182^). Alcohol showed an inverse association with BMI and smoking showed a weak positive association with BMI. Associations between covariables (age, sex, smoking, alcohol) and platelet traits were also explored (Figure \@ref(fig(confounder-platelets)). Higher age was generally inversely associated with platelet measures. Males had a lower platelet count and PCT compared to females (PLT-F was 0.57 lower 95% CI -0.60 to -0.55, P = 9.9x10^-324^). Weak associations were detected between smoking and platelet traits such as a positive association between smoking status and immature platelets. Higher alcohol consumption also showed inverse associations with measures of plateletcrit and platelet count.
 
 ```{r INT-confounders-BMI-platelets,  echo=FALSE}
 options(knitr.kable.NA = "")
@@ -203,90 +200,8 @@ column_spec(1, width = "4cm")   %>%
   landscape()
 ```
 
-
-```{r age-platelets,  echo=FALSE}
-options(knitr.kable.NA = "")
-FullName <- c('Side scatter','Forward scatter','Side fluorescence','Plateletcrit','Platelet count (impedence channel)','Mean platelet volume','Platelet count (PLT-F channel)','Platelet large cell ratio','Immature platelet count' ,'Platelet distribution width','High fluorescence immature platelet fraction','Immature platelet fraction')
-Name <- c('SSC','FSC','SFL','PCT','PLT (I)','MPV','PLT (F)','P-LCR','IPC','PDW','H-IPF','IPF')
-N = c(29721,29721,29721,27997,29682,27994,27268,30788,27255,27998,29708,27255)
-Beta = c(-0.014,-0.011,-0.009,-0.009,-0.006,-0.005,-0.005,-0.003,-0.003,-0.002,0.001,-0.001)
-SE <- c('4.00E-04','4.03E-04','4.05E-04','4.18E-04','4.07E-04','4.20E-04','4.28E-04','4.01E-04','4.28E-04','4.21E-04','4.08E-04','4.29E-04')
-P <- c(4.59E-274,3.72E-160,1.20E-111,2.20E-92,3.15E-51,8.11E-39,1.09E-27,4.22E-17,1.50E-13,1.32E-06,2.17E-02,3.79E-0)
-R <- c('4.12E-02','2.41E-02','1.68E-02','1.47E-02','7.58E-03','6.01E-03','4.32E-03','2.26E-03','1.96E-03','7.99E-04','1.44E-04','1.21E-04')
-CI <- c('7.84E-04','7.91E-04','7.94E-04','8.19E-04','7.98E-04','8.22E-04','8.38E-04','7.86E-04','8.39E-04','8.24E-04','8.01E-04','8.40E-04')
-Lower <- c(-0.015,-0.012,-0.010,-0.009,-0.007,-0.006,-0.006,-0.004,-0.004,-0.003,0.000,-0.002)
-Upper <- c(-0.014,-0.010,-0.008,-0.008,-0.005,-0.005,-0.004,-0.003,-0.002,-0.001,0.002,0.000)
-mytable = data.frame(cbind(FullName, Name, N, Beta, SE, P, R, CI, Lower, Upper))
-colnames(mytable) <- c('Full name', 'Short Name',	'N',	'Βeta coefficient',	'SE',	'P value',	'R2',	'95% CI',	'Lower 95% CI',	'Upper 95% CI')
-mytable %>% kable(caption = "Association between age and platelet traits. Βeta coefficient is the difference in platelet characteristics per 1 year increase in age.", booktabs = TRUE, caption.short = "Association between age and platelet traits") %>% 
-  kable_classic_2(full_width = T) %>%
- kable_styling(full_width = TRUE) %>%
-  column_spec(1, width = "3cm")   %>%
-  landscape()
-```
-
-```{r sex-platelets,  echo=FALSE}
-options(knitr.kable.NA = "")
-FullName <- c("Platelet count (PLT-F channel)",'Platelet count (impedance channel)','Plateletcrit','Immature platelet fraction','High fluorescence immature platelet fraction','Platelet distribution width','Side scatter','Immature platelet count','Forward scatter','Platelet large cell ratio','Side fluorescence','Mean platelet volume')
-Name <- c('PLT (F)','PLT (I)','PCT','IPF','H-IPF','PDW','SSC','IPC','FSC','P-LCR','SFL','MPV')
-N = c(27268,29682,27997,27255,29708,27998,29721,27255,29721,30788,29721,27994)
-Beta = c(-0.574,-0.575,-0.663,0.164,0.142,0.118,-0.076,-0.075,0.039,-0.024,-0.022,-0.014)
-SE <- c(0.012,0.011,0.011,0.012,0.012,0.012,0.012,0.012, 0.12,0.011,0.012,0.012)
-P <- c('9.88E-324','9.88E-324','9.88E-324','4.41E-42','2.24E-34','3.76E-23','5.76E-11','4.75E-10','8.06E-04','3.29E-02','5.92E-02','2.38E-01')
-R <- c('8.23E-02','8.27E-02','1.10E-01','6.72E-03','4.99E-03','3.47E-03','1.41E-03','1.39E-03','3.44E-04','1.15E-04','8.61E-05','1.39E-05')
-CI <- c(0.023,0.022,0.022,0.024,0.023,0.023,0.023,0.024,0.023,0.022,0.023,0.023)
-Lower <- c(-0.597,-0.597,-0.685,0.141,0.119,0.095,-0.099,-0.099,0.016,-0.047,-0.045,-0.038)
-Upper <- c(-0.551,-0.554,-0.641,0.188,0.164,0.142,-0.053,-0.052,0.062,-0.002,0.001,0.009)
-mytable = data.frame(cbind(FullName, Name, N, Beta, SE, P, R, CI, Lower, Upper))
-colnames(mytable) <- c('Full name', 'Short Name',	'N',	'Βeta coefficient',	'SE',	'P value',	'R2',	'95% CI',	'Lower 95% CI',	'Upper 95% CI')
-mytable %>% kable(caption = "Association between sex and platelet traits. Beta coefficient is the difference in platelet measure in SDs in men compared with women (for sex, 1=female and 2=male).", booktabs = TRUE,caption.short = "Association between sex and platelet traits") %>% 
-  kable_classic_2(full_width = F) %>%
- kable_styling(full_width = TRUE) %>%
-  column_spec(1, width = "3cm")   %>%
-  landscape()
-```
-
-```{r smoking-platelets,  echo=FALSE}
-options(knitr.kable.NA = "")
-FullName <- c('High fluorescence immature platelet fraction','Immature platelet count' ,'Immature platelet fraction','Side fluorescence','Forward scatter','Mean platelet volume','Platelet large cell ratio','Platelet count (PLT-F channel)','Plateletcrit','Platelet distribution width ','Side scatter','Platelet count (impedance channel)')
-Name <- c('H-IPF','IPC','IPF','SFL','FSC','MPV','P-LCR','PLT (F)','PCT','PDW','SSC','PLT (I)')
-N = c(29241,26826,26826,29254,29254,30302,29216,26839,27553,27554,29254,29215)
-Beta = c(0.047,0.047,0.038,0.018,-0.014,0.008,0.008,0.008,0.005,0.003,0.003,0.001)
-SE <- c(0.009,0.010,0.010,0.009,0.009,0.009,0.009,'0.010',0.009,0.009,0.009,0.009)
-P <- c('2.81E-07','9.60E-07','6.74E-05','5.11E-02','1.34E-01','3.63E-01','4.01E-01','4.07E-01','6.01E-01','7.31E-01','7.72E-01','9.48E-01')
-R <- c('8.67E-04','8.57E-04','5.55E-04','9.59E-05','4.26E-05','-5.66E-06','-1.01E-05','-1.17E-05','-2.64E-05','-3.20E-05','-3.13E-05','-3.41E-05')
-CI <- c(0.018,0.019,0.019,0.018,0.018,0.018,0.018,0.019,0.019,0.019,0.018,0.018)
-Lower <- c(0.029,0.028,0.019,0.000,-0.032,-0.009,-0.010,-0.011,-0.014,-0.015,-0.015,-0.017)
-Upper <- c(0.065,0.066,0.057,0.036,0.004,0.026,0.026,0.027,0.024,0.022,0.021,0.019)
-mytable = data.frame(cbind(FullName, Name, N, Beta, SE, P, R, CI, Lower, Upper))
-colnames(mytable) <- c('Full name', 'Short Name',	'N',	'Βeta coefficient',	'SE',	'P value',	'R2',	'95% CI',	'Lower 95% CI',	'Upper 95% CI')
-mytable %>% kable(caption = "Association between smoking and platelet traits. Beta coefficient is the change in platelet traits (SDs) per unit change in smoking category (1 = never, 2 = previous, 3 = current)", booktabs = TRUE, caption.short = "Association between smoking and platelet traits") %>% 
-  kable_classic_2(full_width = F) %>%
- kable_styling(full_width = TRUE) %>%
-  column_spec(1, width = "3cm")   %>%
-  landscape()
-```
-
-
-```{r alcohol-platelets,  echo=FALSE}
-options(knitr.kable.NA = "")
-FullName <- c('Plateletcrit','Platelet count (impedence channel)','Platelet count (PLT-F channel)','Side scatter','Forward scatter','Mean platelet volume','Side fluorescence','Platelet large cell ratio','Immature platelet count' ,'Platelet distribution width' ,'High fluorescence immature platelet fraction','Immature platelet fraction')
-Name <- c('PCT','PLT (I)','PLT (F)','SSC','FSC','MPV','SFL','P-LCR','IPC','PDW','H-IPF','IPF')
-N = c(24757,26251,24110,26289,26289,24754,26289,27231,24098,24758,26275,24098)
-Beta = c(-0.115,-0.087,-0.074,-0.063,-0.060,-0.053,-0.042,-0.036,-0.033,-0.027,0.012,0.002)
-SE <- c(0.006,0.006,0.006,0.006,0.006,0.006,0.006,0.006,0.006,0.006,0.006,0.006)
-P <- c('6.36E-73','7.94E-45','1.94E-30','1.17E-24','3.81E-22','1.64E-16','8.90E-12','4.39E-09','2.55E-07','2.84E-05','4.52E-02','8.10E-01')
-R <- c('1.31E-02','7.45E-03','5.40E-03','3.95E-03','3.52E-03','2.70E-03','1.73E-03','1.23E-03','1.06E-03','6.67E-04','1.15E-04','-3.91E-05')
-CI <- c(0.012,0.012,0.013,0.012,0.012,0.012,0.012,0.012,0.013,0.013,0.012,0.013)
-Lower <- c(-0.128,-0.099,-0.087,-0.076,-0.072,-0.065,-0.054,-0.048,-0.046,-0.039,0.000,-0.011)
-Upper <- c(-0.103,-0.075,-0.062,-0.051,-0.048,-0.040,-0.030,-0.024,-0.021,-0.014,0.025,0.014)
-mytable = data.frame(cbind(FullName, Name, N, Beta, SE, P, R, CI, Lower, Upper))
-colnames(mytable) <- c('Full name', 'Short Name',	'N',	'Βeta coefficient',	'SE',	'P value',	'R2',	'95% CI',	'Lower 95% CI',	'Upper 95% CI')
-mytable %>% kable(caption = "Association between alcohol consumption and platelet traits. Beta coefficient is the change in platelet traits in SDs per unit increase in alcohol consumption (1=Rarely , 2= Less than weekly, 3=One or two weekly, 4= 3-5 weekly or every day) ", booktabs = TRUE, caption.short = "Association between alcohol consumption and platelet traits") %>% 
-  kable_classic_2(full_width = F) %>%
- kable_styling(full_width = TRUE) %>%
-  column_spec(1, width = "3cm")   %>%
-  landscape()
+```{r confounder-platelets, echo = FALSE, fig.scap="Linear regression results for the association between age, sex, smoking and alcohol with platelet traits", fig.cap="Linear regression results for the association between age, sex, smoking and alcohol with platelet traits. PCT = plateletcrit, PLT (F) = platelet count (PLT-F channel), PLT (I) = platelet count (impedance channel), SSC = side scatter, SFL = side fluorescence, FSC = side scatter, IPC = immature platelet count, H-IPF = high fluorescence immature platelet fraction, IPF = immature platelet fraction, MPV = mean platelet volume, P-LCR = platelet large cell ratio, PDW = platelet distribution width. For age: beta coefficient is the difference in platelet characteristics per 1 year increase in age. For sex: Beta coefficient is the difference in platelet measure in SDs in men compared with women (for sex, 1=female and 2=male). For smoking: beta coefficient is the change in platelet traits (SDs) per unit change in smoking category (1 = never, 2 = previous, 3 = current). For alcohol: beta coefficient is the change in platelet traits in SDs per unit increase in alcohol consumption (1=Rarely , 2= Less than weekly, 3=One or two weekly, 4= 3-5 weekly or every day) ", out.width="90%"}
+include_graphics(path = "figure/BMI_platelets/Confounders_platelet_forest_plot.pdf", dpi = NA)
 ```
 
 ### GRS for BMI associations with BMI and covariables
