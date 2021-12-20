@@ -45,7 +45,9 @@ A benefit of studying the systematic effects of BMI on the circulating proteome 
 
 In this chapter, the aim was to measure associations between adiposity and the human proteome and to also estimate the underlying effects in a causal framework (Figure \@ref(fig:BMI-protein-graphic)). Using data on 2737 participants from INTERVAL, the effects of BMI on 4034 (3622 unique) plasma protein traits were estimated, in both observational and MR frameworks. The agreement between effect estimates from different methods were examined and enrichment analyses of the most strongly altered proteins were performed to map their potential relevance to cardiovascular disease.
 
-```{r BMI-protein-graphic, echo = FALSE , fig.scap="Schematic of the associations explored in chapter", fig.cap="Schematic of the associations explored: this chapter explores the causal effect of BMI on the plasma proteome and explores whether these changes might contribute to cardiovascular diseases. Figure made using BioRender.com.", out.width="90%"}
+(ref:caption-BMI-protein-graphic) **Schematic of the associations explored in Chapter \@ref(BMI-protein-MR).** This chapter explores the causal effect of BMI on the plasma proteome and explores whether these changes might contribute to cardiovascular diseases. Figure made using BioRender.com.
+(ref:scaption-BMI-protein-graphic) Schematic of the associations explored in /@ref(BMI-protein-MR).
+```{r BMI-protein-graphic, echo = FALSE , fig.scap="", fig.cap="", out.width="90%"}
 include_graphics(path = "figure/BMI_protein_INTERVAL/Thesis_graphic_overview_BMI_protein_CVD.png", dpi = NA)
 ```
 
@@ -67,13 +69,16 @@ A Shapiro-Wilk test was used to confirm whether the GRS showed a normal distribu
 
 To account for multiple testing, a Bonferroni correction was used to adjust results. This was informed by the correlation between proteins, adjusting only for the estimated number of independent traits (Figure \@ref(fig:Corr-mat-proteins)). Correlation was assessed by a Spearman’s correlation matrix. From a starting number of 4034, the number of independent proteins was  3655 (using a correlation cut-off of r  = 0.8 or tree cut height = 0.2 between proteins, Figure \@ref(fig:Dend-proteins)), dendrogram made using  "iPVs" package https://github.com/hughesevoanth/iPVs). We utilised a Bonferroni adjusted P-value of 0.05/3655 = 1.4x10^-5^ to indicate strong evidence in this sample. Full results are presented in the supplementary material. 
 
-```{r Corr-mat-proteins, echo = FALSE, out.width = "90%",fig.cap="Correlation matrix of all protein traits analysed by SomaLogic (4,034) where the colour corresponds to the correlation coefficient ranging from 1 (dark blue) to -1 (dark red)", fig.scap="Correlation matrix of protein traits analysec by SomaLogic", fig.scap="Correlation matrix of all protein traits analysed by SomaLogic"}
+(ref:caption-Corr-mat-proteins) **Correlation matrix of all protein traits analysed by SomaLogic (4,034)**. The colour corresponds to the correlation coefficient ranging from 1 (dark blue) to -1 (dark red).
+(ref:scaption-Corr-mat-proteins) Correlation matrix of all protein traits analysed by SomaLogic
+```{r Corr-mat-proteins, echo = FALSE, out.width = "90%",fig.cap="ref:caption-Corr-mat-proteins", fig.scap="ref:scaption-Corr-mat-proteins"}
 include_graphics(path = "figure/BMI_protein_INTERVAL/Correlation_matrix_proteins.pdf", dpi = NA)
-
 ```
 
 \blandscape
-```{r Dend-proteins, echo = FALSE, out.width="95%", fig.cap="Cluster dendrogram showing the hierarchical relationship between protein levels. Height is calculated as (1-correlation coefficient). At a height of 0.2 and 0.4 (red dashed lines), the number of independent proteins was 3,655 and 3,016 respectively.", fig.scap = "Cluster dendrogram showing the hierarchical relationship between protein levels.", fig.scap="Cluster dendrogram showing the hierarchical relationship between protein levels"}
+(ref:caption-Dend-proteins) **Cluster dendrogram showing the hierarchical relationship between protein levels.** Height is calculated as (1-correlation coefficient). At a height of 0.2 and 0.4 (red dashed lines), the number of independent proteins was 3,655 and 3,016 respectively
+(ref:scaption-Dend-proteins) Cluster dendrogram showing the hierarchical relationship between protein levels
+```{r Dend-proteins, echo = FALSE, out.width="95%", fig.cap="(ref:caption-Dend-proteins)", fig.scap = "(ref:scaption-Dend-proteins)"}
 include_graphics(path = "figure/BMI_protein_INTERVAL/dendrogram.pdf", dpi = NA)
 ```
 \elandscape
@@ -81,7 +86,9 @@ include_graphics(path = "figure/BMI_protein_INTERVAL/dendrogram.pdf", dpi = NA)
 ### Enrichment analysis
 To investigate whether any protein groups showed a particularly strong relationship with BMI and disease (signal detection), protein features were clustered for further analysis. First, a principal component analysis (PCA; prcomp() function from the R "stats" package) on the proteins, not the individuals, was performed on the "pre-adjusted" (see above) dataset (Figure \@ref(fig:PCs)A-D). The top "n" PC eigenvectors, as identified by a scree plot of the PCA eigenvalues (Figure \@ref(fig:PCs)E), were carried forward into an unsupervised k-means analysis (kmeans() function from the R "stats" package). Nineteen k-means analyses were run altering the value of k (number of clusters) from two to 20. To identify an appropriate number of protein clusters (k) we generated a scree like plot (Figure \@ref(fig:PCs)F). Here we plotted the variance explained by clusters, for each k, as estimated as the sum of squares explained by clusters (betweenness) over the total sums of squares, and looked for the smallest k with the maximum variance explained (a plateau). In summary, we used a data reduction method (PCA) to identify major axes (PCs) of the protein data that were then utilised in a machine learning clustering algorithm (k-means) to identify clusters of proteins that share abundance similarities across individuals.
 
-```{r PCs, echo = FALSE, out.width = "95%", fig.cap="Principal component analysis (PCA) and k-means clustering of proteins provide evidence for five clusters. A-D) Principal component (PC) 1 vs PC2-PC5 for the study protein data. Each dot represents a protein, and the colors represent the clusters identified by the k-means analysis (1=black, 2=red, 3=green, 4=dark blue, 5=light blue, 6=pink). E) PC scree plot displaying the proportion of variance explained by each of the first 20 PCs. F) K-means scree like plot displaying the variance explained by clusters for each of the 19 k-means analysis, where in each analysis k (the number of clusters) was set from two to 20.", fig.scap = "Principal component analysis (PCA) and k-means clustering of proteins"}
+(ref:caption-PCs) **Principal component analysis (PCA) and k-means clustering of proteins.** Principal component analysis (PCA) and k-means clustering of proteins provide evidence for five clusters. A-D) Principal component (PC) 1 vs PC2-PC5 for the study protein data. Each dot represents a protein, and the colors represent the clusters identified by the k-means analysis (1=black, 2=red, 3=green, 4=dark blue, 5=light blue, 6=pink). E) PC scree plot displaying the proportion of variance explained by each of the first 20 PCs. F) K-means scree like plot displaying the variance explained by clusters for each of the 19 k-means analysis, where in each analysis k (the number of clusters) was set from two to 20.
+(ref:scaption-PCs) Principal component analysis (PCA) and k-means clustering of proteins
+```{r PCs, echo = FALSE, out.width = "95%", fig.cap="(ref:caption-PCs)", fig.scap = "(ref:scaption-PCs)"}
  include_graphics(path = "figure/BMI_protein_INTERVAL/PCs2to5v1.pdf", dpi = NA)
  
 ```
@@ -94,6 +101,8 @@ To explore whether there was a systematic difference in the association of prote
 ### Participant characteristics
 INTERVAL participants included in this study (those with proteomic data), had a mean age of 45.0 years (SD of 14.1 years) and 48.3% were female (Table \@ref(tab:Inc-excl-part)). Mean BMI was 25.9 kg/m^2^ (SD of 4.8 kg/m^2^) and the majority of participants were non-smokers (59.1%). Nearly a quarter (23.5%) reported currently or previously smoking daily and 71.5% reported drinking alcohol at least once a week. Participants with proteomic data were representative of the full INTERVAL cohort (Table \@ref(tab:Inc-excl-part)).
 
+(ref:caption-Inc-excl-part) **Comparison of included vs excluded INTERVAL participants for the BMI-proteome analysis**
+(ref:scaption-Inc-excl-part) Comparison of included vs excluded INTERVAL participants for the BMI-proteome analysis
 ```{r Inc-excl-part,  echo=FALSE}
 options(knitr.kable.NA = "")
 var = c("Age", "Sex", "Male", "Female", "Weight (kg)", "Height (cm)", "Body mass index (kg/m2)", "Smoking frequency", "Never", "Occasional", "Most days or every day", "Alcohol intake frequency", "Rarely", "Less than once a week", "One or two times a week", "Three to five times a week / most days")
@@ -104,7 +113,7 @@ excn <- c(30721, 30721, NA, NA, 30719, 30661, 30659, 29958, NA, NA, NA, 27124, N
 ChiP <- c(0.76, 0.04, NA, NA, 0.26, 0.005, 0.66, 0.88, NA, NA, NA, 0.34, NA, NA, NA, NA)
 mytable = cbind(var, incmean, ninc, excmean, excn, ChiP)
 colnames(mytable) <- c("Variable",  "Included Mean (SD) or %", "Included N", "Excluded Mean (SD) or %", "Excluded N", "P value for difference (Two tailed t-test or Chi2 test)" )
-mytable %>% kable(caption = "Comparison of included vs excluded INTERVAL participants", booktabs = TRUE) %>% 
+mytable %>% kable(caption = "(ref:caption-Inc-excl-part)", booktabs = TRUE, caption.short = "(ref:scaption-Inc-excl-part)") %>% 
   kable_classic_2(full_width = F) %>%
   #kable_paper("hover", full_width = F)
    add_indent(c(3, 4, 9, 10, 11, 13, 14, 15, 16), level_of_indent = 1) %>%
@@ -121,6 +130,8 @@ In a linear regression model adjusted for age and sex among 2729 adults, BMI (pe
 
 Age, sex, and frequencies of smoking and alcohol intake were each associated with BMI (Table \@ref(tab:INT-confounders-BMI)). Males had a higher BMI than females (0.17 SD, 95% CI 0.10-0.25, P=5.8x10^-6^). Age was positively associated with BMI (0.01 SD higher per year older, 95% CI 0.009-0.015, P=1.2x10^-18^). Smoking frequency was positively associated with BMI, but alcohol intake frequency was negatively associated with BMI. Covariables (age, sex, smoking and alcohol) showed associations with protein traits (Supplementary Tables 3-6 and Figures \@ref(fig:QQ-confounder-proteins) A-D). There was evidence for 18 associations between age and proteins, 26 associations between sex and proteins, 38 proteins associated with smoking and 137 proteins associated with alcohol at the Bonferroni-adjusted level of p<1.4x10^-5^.
 
+(ref:caption-INT-confounders-BMI) **Associations between covariables (exposure) and standardised BMI (outcome)**
+(ref:scaption-INT-confounders-BMI) Associations between covariables (exposure) and standardised BMI (outcome)
 ```{r INT-confounders-BMI,  echo=FALSE}
 options(knitr.kable.NA = "")
 V = c( "Age (years)", "Sex (1=female, 2=male)", "Smoking frequency (1=never, 2=occasinal, 3=most days/ every day)", "Alcohol intake frequency (1=rarely, 2=<1 a week, 3=1-2 times a week, 4=most days/every day)")
@@ -135,7 +146,7 @@ LowerCI <- c(0.009, 0.10, 0.05, -0.12)
 UpperCI <- c(0.015, 0.25, 0.13, -0.04)
 mytable = data.frame(cbind(V, N, B, SE, P, AdjR, Fstat, CI, LowerCI, UpperCI))
 colnames(mytable) <- c('Variable',	'N',	'Beta coefficient per 1-unit increase in confounder (SDs)',	'Standard error',	'P value',	'Adjusted R2',	'F statistic' , "95% CI", "Lower 95% CI", "Upper 95% CI")
-mytable %>% kable(caption = "Associations between covariables (exposure) and standardised BMI (outcome)", booktabs = TRUE) %>% 
+mytable %>% kable(caption = "(ref:caption-INT-confounders-BMI)", booktabs = TRUE, caption.short = "(ref:scaption-INT-confounders-BMI)") %>% 
   kable_classic_2(full_width = F) %>%
  kable_styling(full_width = TRUE) %>%
 column_spec(1, width = "4cm")   %>%
@@ -143,7 +154,9 @@ column_spec(1, width = "4cm")   %>%
   landscape()
 ```
 
-```{r QQ-confounder-proteins, echo = FALSE, out.width = "95%", fig.cap="Q-Q plots for the expected against observed -log10(pvalues) of the association of age (A), sex (B), smoking (C) and alcohol (D) with protein traits", fig.scap="Q-Q plots of the expected against observed -log10(pvalues) for the associations between covariables and protein traits"}
+(ref:caption-QQ-confounder-proteins) **Q-Q plots for the expected against observed -log10(pvalues) for associations of age (A), sex (B), smoking (C) and alcohol (D) with protein traits**
+(ref:scaption-QQ-confounder-proteins) Q-Q plots of the expected against observed -log10(pvalues) for the associations between covariables and protein traits
+```{r QQ-confounder-proteins, echo = FALSE, out.width = "95%", fig.cap="(ref:caption-QQ-confounder-proteins)", fig.scap="(ref:scaption-QQ-confounder-proteins)"}
 include_graphics(path = "figure/BMI_protein_INTERVAL/QQ_confounder_proteins.pdf", dpi = NA)
 
 ```
@@ -152,6 +165,8 @@ include_graphics(path = "figure/BMI_protein_INTERVAL/QQ_confounder_proteins.pdf"
 
 The distribution of the GRS among participants was normal (mean=0.08, SD=0.29, W=0.99, P=0.73, N=2729). The GRS was associated with BMI, explaining 2.8% of its variance (R^2^=0.028, P=1.6x10-18, Table \@ref(tab:INT-GRS-confounders)). There was no strong evidence of association between GRS and age (R^2^=0.001, P=0.11), sex (R^2^=6x10-5, P=0.28), smoking frequency (R^2^=< 0.0001, P=0.91), or alcohol intake (R^2^<0.0001, P=0.44).
 
+(ref:caption-INT-GRS-confounders) **Associations of the genetic risk score for BMI with reported BMI and covariables**
+(ref:scaption-INT-GRS-confounders) Associations of the genetic risk score for BMI with reported BMI and covariables
 ```{r INT-GRS-confounders,  echo=FALSE}
 options(knitr.kable.NA = "")
 V = c("BMI (SDs)", "BMI (kg/m2)", "Age", "Sex (1=female, 2=male)", "Smoking frequency (1=never, 2=occasinal, 3=most days/ every day)", "Alcohol intake frequency (1=rarely, 2=<1 a week, 3=1-2 times a week, 4=most days/every day)")
@@ -163,7 +178,7 @@ AdjR <- c(0.028, 0.024, 0.001, 5.96E-05, -0.0004, -0.0002)
 Fstat <- c(78.20, 66.68, 2.55, 1.16, 0.01, 0.60)
 mytable = data.frame(cbind(V, N, B, SE, P, AdjR, Fstat))
 colnames(mytable) <- c('Variable',	'N',	'Beta coefficient (per 1-unit increase in GRS)',	'Standard error',	'P value',	'Adjusted R2',	'F statistic' )
-mytable %>% kable(caption = "Associations of the genetic risk score for BMI with reported BMI and covariables", booktabs = TRUE) %>% 
+mytable %>% kable(caption = "(ref:caption-INT-GRS-confounders)", booktabs = TRUE, caption.short = "(ref:scaption-INT-GRS-confounders)") %>% 
   kable_classic_2(full_width = F) %>%
  kable_styling(full_width = TRUE) %>%
 column_spec(1, width = "5cm")   %>%
@@ -174,33 +189,42 @@ column_spec(1, width = "5cm")   %>%
 
 In MR analyses, eight unique BMI-protein associations were detected at the level P<1.4x10^-5^ (multiple testing reference point, Figure \@ref(fig:ObsMRforestplot2)). MR estimates provide an estimate of the causal association between protein (in SDs) per SD higher BMI. The strongest association of BMI was again with leptin (0.63 SD, 95% CI = 0.48-0.79; P=1.6x10^-15^); this was followed by the association with FABP4 (0.65 SD, 95% CI = 0.46-0.83; P=6.7x10^-12^). A strong negative association was also seen between BMI (per SD) and SHBG (-0.45 SD, 95% CI -0.65 to -0.25, P=1.4x10^-5^). Other BMI-protein associations (P<1.4x10^-5^) included positive associations with fumarylacetoacetase (FAAA), inhibin beta C chain and complement C5, and negative associations with receptor-type tyrosine-protein phosphatase delta and PILR alpha-associated neural protein. Supplementary Table 7 provides the full MR results.
 
-```{r ObsMRforestplot2, echo = FALSE, out.width = "95%", fig.cap="Forest plot of the strongest BMI-protein Mendelian randomisation estimates and the corresponding observational estimates"}
+(ref:caption-ObsMRforestplot2) **Forest plot of the strongest BMI-protein Mendelian randomisation estimates and the corresponding observational estimates**
+(ref:scaption-ObsMRforestplot2) Forest plot of the strongest BMI-protein Mendelian randomisation estimates and the corresponding observational estimates
+```{r ObsMRforestplot2, echo = FALSE, out.width = "95%", fig.cap="(ref:caption-ObsMRforestplot2)", fig.scap = "(ref:scaption-ObsMRforestplot2)"}
 include_graphics(path = "figure/BMI_protein_INTERVAL/MR_obs_compar_forestplot.pdf", dpi = NA)
-
 ```
 
 ### Comparison of observational and MR estimates
 
 The distribution of P-values for associations between BMI and protein traits suggested an overrepresentation of signal for the observational estimates of BMI and protein traits; far more than expected from chance alone (Figure \@ref(fig:QQ-obs-MR)A). In contrast to this, the extent of this overrepresentation was reduced considerably in the MR (Figure \@ref(fig:QQ-obs-MR)B).
 
-```{r QQ-obs-MR, echo = FALSE, out.width = "95%", fig.cap="A) Q-Q plot of expected against observed -log10(pvalues) for the unadjusted observational BMI-protein trait estimates B) Q-Q plot of expected against observed -log10(p) values for the Mendelian Randomization BMI-protein trait estimates.", fig.scap = "Q-Q plot of the expected against observed -log10(pvalues) for BMI-protein estimates"}
+(ref:caption-QQ-obs-MR) **Q-Q plot of the expected against observed -log~10~(pvalues) for BMI-protein estimates.** A) Q-Q plot of expected against observed -log10(pvalues) for the unadjusted observational BMI-protein trait estimates B) Q-Q plot of expected against observed -log10(p) values for the Mendelian Randomization BMI-protein trait estimates.
+(ref:scaption-QQ-obs-MR) Q-Q plot of the expected against observed -log~10~(pvalues) for BMI-protein estimates
+```{r QQ-obs-MR, echo = FALSE, out.width = "95%", fig.cap="(ref:caption-QQ-obs-MR)", fig.scap = "(ref:scaption-QQ-obs-MR)"}
 include_graphics(path = "figure/BMI_protein_INTERVAL/QQ_obs_MR.pdf", dpi = NA)
 
 ```
 
 The unadjusted and confounder-adjusted regression coefficients for BMI and protein traits were strongly associated (Beta=0.99 SDs, R^2^=0.99, P=9.9x10^-324^, Figure \@ref(fig:Estimate-comparison-obs)). Compared with the observational estimates, the MR estimates were less precise, but there was a strong positive association between the beta coefficients from observational and MR estimates (Beta=0.68 SDs, R^2^=0.33, P=9.9x10^-324^) (Figure \@ref(fig:Estimate-comparison-obs-mr)). After removing the proteins where P<1.4x10^-5^, the strength of association between unadjusted and adjusted observational estimates remained, but the association between observational and MR estimates attenuated slightly (Figures \@ref(fig:Obs-MR-without-top8) A/B). These results suggest causal effects of BMI across the general proteome.
 
-```{r Estimate-comparison-obs, echo = FALSE, out.width = "90%", fig.cap="Scatter plot of the unadjusted (age and sex adjusted) observational estimates and the confounder-adjusted observational estimates for BMI and protein traits with a regression line.", fig.scap="Scatter plot comparing the unadjusted and confounder-adjusted observational BMI-protein estimates"}
+(ref:caption-Estimate-comparison-obs) **Scatter plot of the unadjusted (age and sex adjusted) observational estimates and the confounder-adjusted observational estimates for BMI and protein traits**. Regression line shown in blue.
+(ref:scaption-Estimate-comparison-obs) Scatter plot comparing the unadjusted and confounder-adjusted observational BMI-protein estimates
+```{r Estimate-comparison-obs, echo = FALSE, out.width = "90%", fig.cap="(ref:caption-Estimate-comparison-obs)", fig.scap="(ref:scaption-Estimate-comparison-obs)"}
 include_graphics(path = "figure/BMI_protein_INTERVAL/obs_v_obs_adj_scatter.pdf", dpi = NA)
 
 ```
 
-```{r Estimate-comparison-obs-mr, echo = FALSE, out.width = "90%", fig.cap="Scatter plot of the unadjusted (age and sex adjusted) observational estimates and the MR estimates for BMI and protein traits with a regression line", fig.scap = "Scatter plot comparing the observational and MR BMI-protein estimates"}
+(ref:caption-Estimate-comparison-obs-mr) **Scatter plot of the unadjusted (age and sex adjusted) observational estimates and the MR estimates for BMI and protein traits.** Regression line shown in blue.
+(ref:scaption-Estimate-comparison-obs-mr) Scatter plot comparing the observational and MR BMI-protein estimates
+```{r Estimate-comparison-obs-mr, echo = FALSE, out.width = "90%", fig.cap="(ref:caption-Estimate-comparison-obs-mr)", fig.scap = "(ref:scaption-Estimate-comparison-obs-mr)"}
 include_graphics(path = "figure/BMI_protein_INTERVAL/unadj_obs_MR_scatter_small.pdf", dpi = NA)
 
 ```
 
-```{r Obs-MR-without-top8, echo = FALSE, out.width = "80%", fig.cap="A) Scatter plot of the unadjusted (age and sex adjusted) observational estimates and the confounder-adjusted observational estimates for BMI and protein traits with a regression line (blue), with the top eight MR BMI-associated proteins excluded. 6B) Scatter plot of the unadjusted (age and sex adjusted) observational estimates and the MR estimates for BMI and protein traits with a regression line (blue), with the top eight MR BMI-associated proteins excluded.", fig.scap="Scatter plot comparing BMI-protein estimates across models with top eight BMI-associated proteins excluded"}
+(ref:caption-Obs-MR-without-top8) **Scatter plot comparing BMI-protein estimates across models with top eight BMI-associated proteins excluded.** A) Scatter plot of the unadjusted (age and sex adjusted) observational estimates and the confounder-adjusted observational estimates for BMI and protein traits with a regression line (blue) 6B) Scatter plot of the unadjusted (age and sex adjusted) observational estimates and the MR estimates for BMI and protein traits with a regression line (blue).
+(ref:scaption-Obs-MR-without-top8) Scatter plot comparing BMI-protein estimates across models with top eight BMI-associated proteins excluded
+```{r Obs-MR-without-top8, echo = FALSE, out.width = "80%", fig.cap="(ref:caption-Obs-MR-without-top8)", fig.scap="(ref:scaption-Obs-MR-without-top8)"}
 include_graphics(path = "figure/BMI_protein_INTERVAL/Obs_MR_scatter_without_top8.pdf", dpi = NA)
 
 ```
@@ -209,6 +233,8 @@ include_graphics(path = "figure/BMI_protein_INTERVAL/Obs_MR_scatter_without_top8
 
 In examining the clustering of proteins, visual representation using a scree plot suggested there were five PCs that explained 30.3% of the variance (Figure \@ref(fig:PCs)). After PC5 there was clear drop in variance explained, therefore other PCs were excluded. These five PCs were entered into a k-means analysis, which provided evidence for five clusters (grouping of individual proteins is included in Supplementary Table 7). To identify which cluster was most strongly affected by BMI, the median absolute beta coefficient divided by the SE for each cluster was compared with the overall estimate. Six of the proteins out of the eight strongest BMI-protein MR estimates were in cluster 2 (Supplementary Table 7). There was consistent evidence that cluster 2 showed a stronger association with BMI than the overall average BMI-protein effect both observationally (3.79 (IQR 1.62-7.06) vs 3.35 (IQR 1.57-5.83) respectively, P=3.7x10^-4^) and in MR (0.85 (IQR 0.41-1.46) vs 0.74 (IQR 0.32-1.14), P=5.3x10^-6^, Table \@ref(tab:Cluster-estimates)). Cluster 2 showed consistent evidence of a having the largest BMI effect. Compared with the full protein list in SomaLogic, the proteins in cluster 2 were enriched for disease (Table \@ref(tab:DAVID-enrichment-cluster2)), including cardiovascular disease (1.14 fold enrichment, P=1.3x10^-4^), renal disease (1.22 fold enrichment, P=1.0x10^-3^) cancer (1.1 fold enrichment, P=9.5x10^-3^) and metabolic disease (1.08 fold enrichment, P=4.2x10^-2^). No other individual cluster showed enrichment for disease. Enrichment for disease was also explored by comparing the proteins which had an association with BMI (P<1.4x10^-5^) in the confounder-adjusted regression model with the total protein list. Compared with the full protein list, the proteins which showed a stronger observational association with BMI were enriched for renal disease (1.21 fold enrichment, P=0.001) and metabolic disease (1.9 fold enrichment, P=0.015, Table \@ref(tab:DAVID-enrichment-obs)). 
 
+(ref:caption-Cluster-estimates) **Comparison of cluster median(absolute beta coefficient / SE) with the overall median for observational and MR analyses**. *One-tailed pairwise Wilcox test
+(ref:scaption-Cluster-estimates) Comparison of BMI-protein estimates among protein clusters
 ```{r Cluster-estimates,  echo=FALSE}
 options(knitr.kable.NA = "")
 Cluster = c(1, 2, 3, 4, 5, "All")
@@ -219,7 +245,7 @@ MedMR <- c('0.69 (0.31-1.22)','0.85 (0.41-1.46)','0.74 (0.37-1.25)','0.68 (0.34-
 PMR <- c(1, '5.3E-6', 1, 1, 1, NA)
 mytable = data.frame(cbind(Cluster, N, Medobs, Pobs, MedMR, PMR))
 colnames(mytable) <- c( 'Cluster',	'N',	'Median absolute observational beta coefficient divided by SE (IQR)',	'P value* for cluster v all proteins (Observational)',	'Median MR beta coefficient divided by SE (IQR)',	'P value* for cluster v all proteins (MR)')
-mytable %>% kable(caption = "Comparison of cluster median(absolute beta coefficient / SE) with the overall median for observational and MR analyses, *One-tailed pairwise Wilcox test", booktabs = TRUE, caption.short = "Comparison of BMI-protein estimates among protein clusters") %>% 
+mytable %>% kable(caption = "(ref:caption-Cluster-estimates)", booktabs = TRUE, caption.short = "(ref:scaption-Cluster-estimates)") %>% 
   kable_classic_2(full_width = F) %>%
  kable_styling(full_width = TRUE) %>%
 column_spec(3, width = "3cm")   %>%
@@ -227,6 +253,8 @@ column_spec(3, width = "3cm")   %>%
   landscape()
 ```
 
+(ref:caption-DAVID-enrichment-cluster2) **Cluster 2 vs full SomaLogic protein enrichment results for disease class using DAVID bioinformatics 6.8 [@Huang2009]**
+(ref:scaption-DAVID-enrichment-cluster2) Cluster 2 vs full SomaLogic protein enrichment results for disease class using DAVID bioinformatics 6.8
 ```{r DAVID-enrichment-cluster2,  echo=FALSE}
 options(knitr.kable.NA = "")
 Term = c('Cardiovascular', 'Renal', 'Cancer', 'Pharmacogenomic', 'Metabolic', 'Vision', 'Haematological', 'Reproduction', 'Immune', 'Neurological', 'Aging')
@@ -240,13 +268,15 @@ Pval <- c('7.3E-06','5.8E-05','5.3E-04','1.9E-03','2.4E-03','5.9E-03','9.8E-03',
 Bonf_adj_P <- c('1.3E-04','1.0E-03', '9.5E-03','3.4E-02','4.2E-02','1.0E-01','1.6E-01','2.3E-01','2.4E-01','2.5E-01','7.5E-01')
 mytable = data.frame(cbind(Term, Count, Percentage, List, Pophits, Poptotal, FE, Pval, Bonf_adj_P))
 colnames(mytable) <- c('Term (Genetic Association Database disease class)',	'Count',	'%',	'List Total','	Population Hits',	'Population Total',	'Fold Enrichment',	'P Value',	'Bonferroni-adjusted P value' )
-mytable %>% kable(caption = "Cluster 2 vs full SomaLogic protein enrichment results for disease class using DAVID bioinformatics 6.8", booktabs = TRUE) %>% 
+mytable %>% kable(caption = "(ref:caption-DAVID-enrichment-cluster2)", booktabs = TRUE, caption.short = "(ref:scaption-DAVID-enrichment-cluster2)") %>% 
   kable_classic_2(full_width = F) %>%
  kable_styling(full_width = TRUE) %>%
   column_spec(1, width = "5cm")   %>%
   landscape()
 ```
 
+(ref:caption-DAVID-enrichment-obs) **Disease enrichment of proteins associated with BMI in confounder adjusted model compared with all proteins in SomaLogic (DAVID Bioinformatics 6.8) [@Huang2009]** 
+(ref:scaption-DAVID-enrichment-obs) Disease enrichment of proteins associated with BMI in confounder adjusted model compared with all proteins in SomaLogic (DAVID Bioinformatics 6.8)
 ```{r DAVID-enrichment-obs,  echo=FALSE}
 options(knitr.kable.NA = "")
 Term = c('Renal', 'Pharmacogenomic', 'Metabolic', 'Aging', 'Cardiovascular', 'Unknown', "Psych", 'Reproduction', "Normal variation", "Other", 'Cancer', 'Haematological', 'Neurological', "Developmental" )
@@ -260,7 +290,7 @@ Pval <- c('7.7E-05','8.8E-05','8.3E-04','2.7E-03','4.1E-03','6.4E-03','1.2E-02',
 Bonf_adj_P <- c(0.001,0.002,0.015,0.047,0.072,0.109,0.189,0.228,0.236,0.313,0.332,0.605,0.638,0.708)
 mytable = data.frame(cbind(Term, Count, Percentage, List, Pophits, Poptotal, FE, Pval, Bonf_adj_P))
 colnames(mytable) <- c('Term (Genetic Association Database disease class)',	'Count',	'%',	'List Total','	Population Hits',	'Population Total',	'Fold Enrichment',	'P Value',	'Bonferroni-adjusted P value' )
-mytable %>% kable(caption = "Disease enrichment of proteins associated with BMI in confounder adjusted model compared with all proteins in SomaLogic (DAVID Bioinformatics 6.8)", booktabs = TRUE) %>% 
+mytable %>% kable(caption = "(ref:caption-DAVID-enrichment-obs)", booktabs = TRUE, caption.short = "(ref:scaption-DAVID-enrichment-obs)") %>% 
   kable_classic_2(full_width = F) %>%
  kable_styling(full_width = TRUE) %>%
   column_spec(1, width = "5cm")   %>%
