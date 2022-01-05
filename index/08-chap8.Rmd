@@ -29,15 +29,17 @@ editor_options:
 ```{r, echo=FALSE, message=FALSE}
 source("~/OneDrive - University of Bristol/PhD/Main project/Thesis/index/packages.R")
 ```
-# Exploring the similarities and differences of adiposity on plasma proteome using MR and and RCT {#Comparison-proteome}
+# Combining MR and an RCT to determine effects of adiposity on the plasma proteome. {#Comparison-proteome}
 
 ## Background
+
+The two previous results chapters (Chapter \@ref(BMI-protein-MR) and Chapter \@ref(BMI-protein-RCT)) aimed to determine the effect of adiposity on circulating proteins by using two different study designs: MR and a RCT which induced weight loss through caloric restriction. Both studies provided evidence that the change in circulating proteins may be contributing to the increased risk of disease such as metabolic disease and cardiovascular disease. This overall shift in proteins provides important information. One of the benefits of having the same proteomics platform in both studies is that there is a large overlap in the number of proteins measured. Therefore, for each protein, it is possible to compare the effect that higher BMI in the general population has, with the effect of short term weight loss.
 
 Aim:
 1) Compare BMI-protein effects across MR and RCT study designs (Results from Chapter \@ref(BMI-protein-MR) (Figure \@ref(fig:BMI-protein-graphic2))).
 
 ## Methods
-BMI change-protein change point estimates for 4601 proteins from the multiple linear regression analyses and two stage least squares analyses were compared using linear regression. In efforts to further elucidate which proteins are altered by adiposity, a comparison between the BMI-protein associations in INTERVAL (Chapter \@ref(BMI-protein-MR)) and the BMI change-protein change associations in the current analyses was also performed using a linear regression. There were 2803 unique proteins overlapping across the two cohorts. Estimates across the two cohorts were compared using linear regression. 
+In efforts to further elucidate which proteins are altered by adiposity, a comparison between the BMI-protein associations in INTERVAL (Chapter \@ref(BMI-protein-MR)) and the BMI change-protein change associations in the current analyses was also performed using a linear regression. There were 2803 unique proteins (by UniProt ID) which were detected in both INTERVAL and DiRECT. Estimates across the two cohorts were compared using linear regression. 
 
 ## Results
 ### Comparison of BMI effects across DiRECT and INTERVAL

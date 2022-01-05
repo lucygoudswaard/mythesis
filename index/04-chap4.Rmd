@@ -104,13 +104,13 @@ The characteristics of participants included in the study are shown in Table  \@
 (ref:scaption-obesity-platelets-participants) Characteristics of included participants in the body mass index and platelet function study
 ```{r obesity-platelets-participants,  echo=FALSE}
 options(knitr.kable.NA = "")
-f = c("Age", "Sex", "Body mass index (kg/m2)", "Smoker", "Hypertensive (140/90 mmHg)", "Type 2 Diabetes", "Type 2 Diabetes medication", "Metformin", "Dapagliflozin", "Dulaglutide", "Previous COVID-19 infection")
+f = c("Age", "Sex", "Body mass index (kg/m^2^)", "Smoker", "Hypertensive (140/90 mmHg)", "Type 2 Diabetes", "Type 2 Diabetes medication", "Metformin", "Dapagliflozin", "Dulaglutide", "Previous COVID-19 infection")
 co = c("42.2 (14.1)", "75 %", "21.8 (2.1)", "0 %", "0 %", "0 %", "NA", NA, NA,NA, "0 %")
 i = c('46 (18.0)','75 %','49.3 (8.8)','0 %','25 %','50 %', NA, '25 %','25 %','25 %','75 %')
 p <- c(0.77,1.0,0.0009,1.0,1.0,0.43,"NA", NA, NA, NA, 0.14) 
 mytable = data.frame("Variable"  = f, "Control mean (SD) or %" = co, "Bariatric patient mean (SD) or %" = i, "P value for difference" = p)
 colnames(mytable) <- c('Variable', "Control mean (SD) or %", "Bariatric patient mean (SD) or %", "P value for difference" )
-mytable %>% kable(caption = "(ref:caption-obesity-platelets-participants)", booktabs = TRUE, caption.short = "(ref:scaption-obesity-platelets-participants)") %>% 
+mytable %>% kable(caption = "(ref:caption-obesity-platelets-participants)", format = "markdown", booktabs = TRUE, caption.short = "(ref:scaption-obesity-platelets-participants)") %>% 
   kable_classic_2(full_width = F) %>%
   #kable_paper("hover", full_width = F)
    add_indent(c(8, 9, 10), level_of_indent = 1) %>%
@@ -120,7 +120,7 @@ column_spec(1, width = "5cm")
 
 ### Platelet parameters
 
-Platelet traits measured by Sysmex were compared across bariatric and control groups (Table \@ref(tab:obesity-platelets-parameters)). There was no statistical evidence for an effect of obesity on platelet parameters. However, IPC and IPF did display larger mean values compared to controls, but they also had relatively large SDs in the bariatric patient group (IPC 9.3 (SD 4.9) x 10^9^/L in control vs 16.3 (SD 16.3) x10^9^/L in bariatric group, p=0.45).
+Platelet traits measured by Sysmex were compared across bariatric and control groups (Table \@ref(tab:obesity-platelets-parameters)). There was no statistical evidence for an effect of obesity on platelet parameters. However, IPC and IPF did display larger mean values compared to controls, but they also had relatively large SDs in the bariatric patient group (IPC 9.3 (SD 4.9) x 10^9^/L in control vs 16.3 (SD 16.3) x 10^9^/L in bariatric group, p=0.45).
 
 (ref:caption-obesity-platelets-parameters) **Comparison of platelet traits measured by Sysmex XE-2100 across bariatric and control groups**
 (ref:scaption-obesity-platelets-parameters) Comparison of platelet traits measured by Sysmex XE-2100 across bariatric and control groups

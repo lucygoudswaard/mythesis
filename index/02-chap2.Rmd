@@ -115,8 +115,8 @@ The aims of the thesis are indicated below, with a schematic of the multi-step p
 
 ## Thesis hypotheses
 1) Higher BMI leads to platelet hyperactivity
-2) Proteins such as the chemokines in MDC and TARC which circulate in the blood contribute to platelet hyperactivity
-3)
+2) Proteins such as the chemokines MDC and TARC which circulate in the blood contribute to platelet hyperactivity.
+3) 
 
 
 (ref:caption-Thesis-schematic) **Schematic of the multi-step pathway addressed in the thesis**
@@ -133,4 +133,4 @@ There will be 6 results chapters in this thesis:
 3) Pathways linking plasma proteins and platelet function: do the chemokines MDC and TARC play a role? (Chapter \@ref(chemokine-platelets))
 4) Exploring the plasma proteome as a link between adiposity and platelet function: Observational and Mendelian randomization estimates (Chapter \@ref(BMI-protein-MR))
 5) Further elucidating the effect of adiposity on the plasma proteome using a weight loss intervention (Chapter \@ref(BMI-protein-RCT))
-6) Exploring the similarities and differences of adiposity on plasma proteome using MR and and RCT.
+6) Combining MR and an RCT to determine effects of adiposity on the plasma proteome. (Chapter \@ref(Comparison-proteome))

@@ -105,7 +105,7 @@ INTERVAL participants included in this study (those with proteomic data), had a 
 (ref:scaption-Inc-excl-part) Comparison of included vs excluded INTERVAL participants for the BMI-proteome analysis
 ```{r Inc-excl-part,  echo=FALSE}
 options(knitr.kable.NA = "")
-var = c("Age", "Sex", "Male", "Female", "Weight (kg)", "Height (cm)", "Body mass index (kg/m2)", "Smoking frequency", "Never", "Occasional", "Most days or every day", "Alcohol intake frequency", "Rarely", "Less than once a week", "One or two times a week", "Three to five times a week / most days")
+var = c("Age", "Sex", "Male", "Female", "Weight (kg)", "Height (cm)", "Body mass index (kg/m^2^)", "Smoking frequency", "Never", "Occasional", "Most days or every day", "Alcohol intake frequency", "Rarely", "Less than once a week", "One or two times a week", "Three to five times a week / most days")
 incmean = c('45.0 (14.1)', NA, '51.70%','48.30%','78.5 (16.1)','172.7 (9.7)','25.9 (4.8)', NA, '59.10%','11.90%','29.00%', NA, '11.70%','16.90%','37.40%','34.10%')
 ninc = c(2737, 2737, NA, NA, 2736, 2730, 2729, 2675, NA, NA, NA, 2422, NA, NA, NA, NA)
 excmean = c('44.9 (14.2)', NA, '49.70%','50.30%','78.6 (16.0)','172.2 (9.6)','26.4 (4.7)', NA, '59.40%','12.00%','28.50%', NA,'12.60%','17.10%','37.70%','32.50%')
@@ -113,7 +113,7 @@ excn <- c(30721, 30721, NA, NA, 30719, 30661, 30659, 29958, NA, NA, NA, 27124, N
 ChiP <- c(0.76, 0.04, NA, NA, 0.26, 0.005, 0.66, 0.88, NA, NA, NA, 0.34, NA, NA, NA, NA)
 mytable = cbind(var, incmean, ninc, excmean, excn, ChiP)
 colnames(mytable) <- c("Variable",  "Included Mean (SD) or %", "Included N", "Excluded Mean (SD) or %", "Excluded N", "P value for difference (Two tailed t-test or Chi2 test)" )
-mytable %>% kable(caption = "(ref:caption-Inc-excl-part)", booktabs = TRUE, caption.short = "(ref:scaption-Inc-excl-part)") %>% 
+mytable %>% kable(caption = "(ref:caption-Inc-excl-part)", booktabs = TRUE, format = "markdown", caption.short = "(ref:scaption-Inc-excl-part)") %>% 
   kable_classic_2(full_width = F) %>%
   #kable_paper("hover", full_width = F)
    add_indent(c(3, 4, 9, 10, 11, 13, 14, 15, 16), level_of_indent = 1) %>%
@@ -145,8 +145,8 @@ CI <- c(0.003, 0.075, 0.043, 0.041)
 LowerCI <- c(0.009, 0.10, 0.05, -0.12)
 UpperCI <- c(0.015, 0.25, 0.13, -0.04)
 mytable = data.frame(cbind(V, N, B, SE, P, AdjR, Fstat, CI, LowerCI, UpperCI))
-colnames(mytable) <- c('Variable',	'N',	'Beta coefficient per 1-unit increase in confounder (SDs)',	'Standard error',	'P value',	'Adjusted R2',	'F statistic' , "95% CI", "Lower 95% CI", "Upper 95% CI")
-mytable %>% kable(caption = "(ref:caption-INT-confounders-BMI)", booktabs = TRUE, caption.short = "(ref:scaption-INT-confounders-BMI)") %>% 
+colnames(mytable) <- c('Variable',	'N',	'Beta coefficient per 1-unit increase in confounder (SDs)',	'Standard error',	'P value',	'Adjusted R^2^',	'F statistic' , "95% CI", "Lower 95% CI", "Upper 95% CI")
+mytable %>% kable(caption = "(ref:caption-INT-confounders-BMI)", booktabs = TRUE, format = "markdown", caption.short = "(ref:scaption-INT-confounders-BMI)") %>% 
   kable_classic_2(full_width = F) %>%
  kable_styling(full_width = TRUE) %>%
 column_spec(1, width = "4cm")   %>%
@@ -154,8 +154,8 @@ column_spec(1, width = "4cm")   %>%
   landscape()
 ```
 
-(ref:caption-QQ-confounder-proteins) **Q-Q plots for the expected against observed -log10(pvalues) for associations of age (A), sex (B), smoking (C) and alcohol (D) with protein traits**
-(ref:scaption-QQ-confounder-proteins) Q-Q plots of the expected against observed -log10(pvalues) for the associations between covariables and protein traits
+(ref:caption-QQ-confounder-proteins) **Q-Q plots for the expected against observed -log~10~(pvalues) for associations of age (A), sex (B), smoking (C) and alcohol (D) with protein traits**
+(ref:scaption-QQ-confounder-proteins) Q-Q plots of the expected against observed -log~10~(pvalues) for the associations between covariables and protein traits
 ```{r QQ-confounder-proteins, echo = FALSE, out.width = "95%", fig.cap="(ref:caption-QQ-confounder-proteins)", fig.scap="(ref:scaption-QQ-confounder-proteins)"}
 include_graphics(path = "figure/BMI_protein_INTERVAL/QQ_confounder_proteins.pdf", dpi = NA)
 
@@ -169,7 +169,7 @@ The distribution of the GRS among participants was normal (mean=0.08, SD=0.29, W
 (ref:scaption-INT-GRS-confounders) Associations of the genetic risk score for BMI with reported BMI and covariables
 ```{r INT-GRS-confounders,  echo=FALSE}
 options(knitr.kable.NA = "")
-V = c("BMI (SDs)", "BMI (kg/m2)", "Age", "Sex (1=female, 2=male)", "Smoking frequency (1=never, 2=occasinal, 3=most days/ every day)", "Alcohol intake frequency (1=rarely, 2=<1 a week, 3=1-2 times a week, 4=most days/every day)")
+V = c("BMI (SDs)", "BMI (kg/m^2^)", "Age", "Sex (1=female, 2=male)", "Smoking frequency (1=never, 2=occasinal, 3=most days/ every day)", "Alcohol intake frequency (1=rarely, 2=<1 a week, 3=1-2 times a week, 4=most days/every day)")
 N = c(2729, 2729, 2737, 2737, 2675, 2422)
 B = c(0.57, 2.54, -1.47, -0.04, -0.02, -0.06)
 SE <- c(0.06, 0.31, 0.92, 0.03, 0.14, 0.07)
@@ -177,8 +177,8 @@ P <- c(1.64E-18, 4.82E-16, 0.11, 0.28, 0.91, 0.44)
 AdjR <- c(0.028, 0.024, 0.001, 5.96E-05, -0.0004, -0.0002)
 Fstat <- c(78.20, 66.68, 2.55, 1.16, 0.01, 0.60)
 mytable = data.frame(cbind(V, N, B, SE, P, AdjR, Fstat))
-colnames(mytable) <- c('Variable',	'N',	'Beta coefficient (per 1-unit increase in GRS)',	'Standard error',	'P value',	'Adjusted R2',	'F statistic' )
-mytable %>% kable(caption = "(ref:caption-INT-GRS-confounders)", booktabs = TRUE, caption.short = "(ref:scaption-INT-GRS-confounders)") %>% 
+colnames(mytable) <- c('Variable',	'N',	'Beta coefficient (per 1-unit increase in GRS)',	'Standard error',	'P value',	'Adjusted R^2^',	'F statistic' )
+mytable %>% kable(caption = "(ref:caption-INT-GRS-confounders)", booktabs = TRUE, format = "markdown", caption.short = "(ref:scaption-INT-GRS-confounders)") %>% 
   kable_classic_2(full_width = F) %>%
  kable_styling(full_width = TRUE) %>%
 column_spec(1, width = "5cm")   %>%
