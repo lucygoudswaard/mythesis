@@ -29,367 +29,216 @@ editor_options:
 ```{r, echo=FALSE, message=FALSE}
 source("~/OneDrive - University of Bristol/PhD/Main project/Thesis/index/packages.R")
 ```
-# Using observational and MR frameworks to determine the effect of body mass index on platelet characteristics {#BMI-platelets-INTERVAL}
+# The effect of obesity on platelet function: a clinical pilot study {#BMI-platelets-clinic}
 
-This work is published in the journal Platelets (add reference). I performed all analyses, created all figures and tables and wrote the manuscript. 
+The following chapter reports a specifically designed patient study. Recruitment into this study has been severely affected by the pandemic as approvals were set in place to start recruitment in March 2020. All data in this chapter was collected by myself, apart from the platelet-neutrophil assay data, which was performed by Dr Chris Williams and the Sysmex haematology analyzer data, which was collected by Dr Kate Burley. Help was required here due to time constraints when receiving patient samples. Proteomic data were analysed by Dr Marieangela Wilson and Dr Kate Heesom at the Proteomics facility at the University of Bristol. Optimised methods have been used within a study to explore the effect of COVID-19 on platelet function given the increased risk of thrombosis. The COVID-19 research has been written up as a manuscript but it has not been included in the thesis due to not aligning with the current aims.
 
 ## Background
 
-Obesity (body mass index ≥ 30 kg/m^2^) has nearly tripled worldwide in the last 45 years [@Bluher2019]. This is a major health concern as a higher body mass index (BMI) is an important risk factor for various noncommunicable disorders, including cardiovascular disease [@Bhaskaran2018a]. Clinical studies and genetic association studies have identified BMI as an independent risk factor for thrombotic disorders, including coronary heart disease and stroke [@Nordestgaard2012; @Dale2017; @Wolk2003a]. 
+As detailed in Chapter \@ref(BMI-platelets-INTERVAL), there is evidence that people with a higher BMI have an increased risk of cardiovascular events such as coronary heart disease (CHD) or stroke[@Nordestgaard2012; @Dale2017; @Wolk2003a]. As platelets are one of the key cells involved in haemostasis and thrombosis[@Koupenova2017a], it is likely that a higher BMI has a direct effect on platelet function. The previous chapter provided evidence that higher BMI causes an increase in the production of immature platelets, evidenced by an increase in immature platelet count (IPC). IPC was also positively associated with whole blood platelet aggregation in response to various platelet agonists (adrenaline, protease activating receptor 1 peptide (PAR1-AP/TRAP-6) and adenosine diphosphate (ADP)) in a cardiac surgery cohort. Although these analyses suggest that higher BMI leads to platelet hyperactivity, this association was not directly assessed due to the limited platelet function data available. In COPTIC, the only platelet function data was whole blood platelet aggregation; there are other platelet function assays which may provide important information about the platelets activation. COPTIC was also a cohort which had a history of cardiovascular disease, therefore associations could be confounded by the presence of cardiovascular disease.
 
-Platelets are blood cells which are essential for the cessation of bleeding upon injury to a blood vessel and are involved in thrombosis and progression of cardiovascular disease [@Koupenova2017a]. When pathologically activated, platelets can aggregate to form thrombi thereby occluding arteries and triggering a myocardial infarction or stroke [@Koupenova2017a]. Platelet hyperactivity can be an indicator of those who may be at an increased risk of thrombosis [@Puurunen2018]. There is evidence that people with a higher BMI have hyperactive platelets [@Barrachina2019; @Nardin2015], which could explain why a higher BMI is linked to an increase in thrombosis. Mechanisms of platelet hyperactivity are unclear, but it is possible that changes in platelet numbers, size and immaturity may play a role. Furthermore, an alteration in circulating metabolites or proteins induced by obesity could modulate the activation of platelets [@Goudswaard2021].
+Upon activation, platelets adhere to the vessel endothelium, where they undergo shape change, release their granules and aggregate. There are numerous laboratory techniques that can be used to measure platelet function[@Paniccia2015]. Experiments include flow cytometry which use fluorescently tagged antibodies that bind to platelet receptors. Some receptors increasingly expose their ligand binding sites upon stimulation such as the integrin α~IIb~β~3~, which is important for aggregation of platelets (Figure \@ref(fig:platelet-activation-2)). The adhesion receptor P-selectin is expressed on α-granules and is therefore only expressed when platelet secrete their α-granules. Platelet agonists which are able to further expose the integrin α~IIb~β~3~ include PAR1-AP and collagen-related peptide (CRP). Other experiments commonly used to test platelet function include light transmission aggregometry (LTA), which measures the degree of platelet aggregation in response to platelet agonists by how much light passes through the sample. Techniques such as LTA are difficult to implement with patient samples due the requirement of a substantial amount of sample and due to experiments being time consuming. As platelet function declines over a few hours after removal from circulation[@Goss2019], it is preferable to opt for experiments which can be performed quickly. It is also possible to explore the intracellular signalling which occurs within the platelets by using techniques such as Western blotting and tandem mass tag mass spectrometry (TMT-MS), which use targeted and untargeted methods, respectively, to measure protein or phosphoprotein levels. 
 
-Platelet function can be directly assessed by various methods; these methods commonly include platelet aggregation experiments and/or using antibodies to detect platelet receptors that are expressed upon activation. One of the limitations of measuring platelet function directly is that these techniques are not widely available or readily standardized. Haematology analyzers are more commonly used to provide full blood counts, providing detailed readouts of platelet characteristics. Some of these characteristics have been reported to be indirect measures of platelet function [@Wurtz2012]. For example, an increase in mean platelet volume (MPV) has been reported to be predictive of vascular mortality and ischaemic heart disease [@Slavka2011]. Another commonly measured platelet characteristic is the number of platelets in circulation (platelet count, PLT). An increase in platelet count has been reported to be associated with platelet hyperactivity [@Wurtz2012] and there is evidence that higher platelet count is associated with ischaemic stroke [@Gill2018]. 
-
-Sysmex haematology analyzers are able to provide additional platelet characteristics, such as immature platelet fraction (IPF)  and immature platelet count (IPC) [@UnayDemirel2018a]. Immature platelets (also known as reticulated platelets) are the youngest platelets in circulation and are detected based on having a greater forward scatter (FSC, an indicator of their size) and a greater side fluorescence (SFL, an indicator of their mRNA content) [@Ibrahim2014]. Higher levels of immature platelets are indicative of enhanced platelet production [@Lev2016a] and these platelets are believed to be more prothrombotic than older circulating platelets, with more dense granule release and increased P-selectin expression [@Ibrahim2014; @Lev2016a; @Bernlochner2015a]. Higher immature platelet count is associated with adverse cardiovascular outcomes in patients with coronary artery disease [@Ibrahim2014] and reduced effectiveness of antiplatelet therapies [@Bernlochner2015a; @Ibrahim2012], suggesting that hyperactive immature platelets may contribute to adverse vascular events. Immature platelets have also been suggested to be less responsive to antiplatelet therapies such as prasugrel in acute coronary syndrome patients [@Bernlochner2015a]. 
-
-As these platelet characteristics provide potential information about platelet hyperactivity and given the increased thrombotic risk seen with adiposity, it is important to assess how adiposity affects platelet properties. Previous studies with modest samples sizes have implemented observational epidemiological methods to explore the effect of BMI on PLT, plateletcrit (PCT) and MPV. There is conflicting observational evidence regarding an association between BMI and PLT [@Furuncuoglu2016; @Han2018a], with some studies suggesting a positive association between BMI and MPV [@Coban2005] and other studies reporting no such association [@Heffron2018]. Furthermore, as there is evidence that immature platelet production is increased in patients with metabolic syndrome and type II diabetes [@Vaduganathan2008a; @Mijovic2015a], it is therefore important to explore whether BMI may be an independent predictor of this trait. It is currently unknown whether the influence of BMI on platelet properties and function are causal and independent of confounding effects.
-
-In this study, we used data from the INTERVAL prospective cohort (N=33388) to explore the association between BMI and platelet traits. Figure \@ref(fig:BMI-platelet-overview) shows the associations of the overall thesis hypotheses that are addressed in the chapter. We combined observational and Mendelian randomization (MR) approaches to test the hypothesis that higher BMI leads to changes in platelet characteristics. Although observational studies can demonstrate associations between BMI and platelet characteristics, they cannot determine direct causality. To address the latter, we therefore employed MR, using a genetic risk score derived from single nucleotide polymorphisms (SNPs) associated with higher BMI (Figure \@ref(fig:Linear-reg-MR)). This allowed estimation of the causal effect of BMI on platelet traits, reducing the effect of confounding factors that are inherent to observational studies. To assess functional implications of BMI-platelet associations, a follow-up analysis was designed to explore the associations between platelet characteristics and whole blood aggregation in a cohort of cardiac surgery patients. 
-
-(ref:caption-BMI-platelet-overview) **Schematic of the associations explored in the current chapter: the relationship between body mass index and platelet traits.** Figure made using BioRender.com.
-(ref:scaption-BMI-platelet-overview) Schematic of the associations explored in the current chapter: the relationship between body mass index and platelet traits.
-```{r BMI-platelet-overview, echo = FALSE , fig.scap="(ref:scaption-BMI-platelet-overview)", fig.cap="(ref:caption-BMI-platelet-overview)", out.width="90%"}
-include_graphics(path = "figure/BMI_platelets/Thesis_graphic_overview_BMI_platelets.png", dpi = NA)
+(ref:scaption-platelet-diagram) Cartoon of integrin α~IIb~β~3~ and P-selectin on platelets.
+(ref:caption-platelet-diagram) **Cartoon of integrin α~IIb~β~3~ activation and P-selectin expression on platelets.** Upon platelet activation by a strong agonist such as CRP, the integrin α~IIb~β~3~ exposes its binding site for fibrinogen and cross-links platelets. P-selectin is expressed in the membrane of alpha granules within platelets. Upon platelet activation, platelets secrete these granules and P-selectin is then expressed on the outer membrane. P-selectin on platelets can bind to PSGL-1 leukocytes. Figure made using BioRender.com.
+```{r platelet-activation-2, echo = FALSE, fig.cap="(ref:caption-platelet-diagram)", fig.scap="(ref:scaption-platelet-diagram)"}
+include_graphics(path = "figure/Bariatric_study/Platelet_activiation_integrin_p-selectin.png", dpi = NA)
 ```
 
-(ref:caption-Linear-reg-MR) **Schematic of linear regression and Mendelian randomization analyses. Linear regression assesses the association between BMI (exposure) and platelet traits (outcome), with adjustment for potential confounders.** Under the assumptions of Mendelian randomization (MR), the genetic risk score (GRS) for body mass index (BMI) does not associate with confounding variables, and if there is a causal association, the GRS should only associate with platelet outcomes through its association with body mass index.
-(ref:scaption-Linear-reg-MR) Schematic of linear regression and Mendelian randomization frameworks for BMI and platelet trait analyses
-```{r Linear-reg-MR, echo = FALSE , fig.cap="(ref:caption-Linear-reg-MR)", fig.scap = "(ref:scaption-Linear-reg-MR)"}
-include_graphics(path = "figure/BMI_platelets/obsvMRexample.png", dpi = NA)
+Previous studies have attempted to determine the direct effects of BMI on platelet function and signalling, where there is conflicting evidence regarding how BMI affects platelet function[@Barrachina2019; @Nardin2015; @Deharo2014; @Sibbing2007]. Such studies have focused on the relationship between BMI and platelet function in patients receiving dual antiplatelet therapy (DAPT). In these studies there is evidence that in people with higher BMI, antiplatelet drugs such as prasugrel, which acts at the P2Y~12~ receptor, may not be as effective at suppressing platelet activity[@Deharo2014]. These findings have come from measuring phospho-VASP as an indicator of platelet function at the P2Y~12~ receptor. PGE1 suppresses platelet function by acting at a G~s~ coupled receptor, causing a rise in cAMP and phospho-VASP. Activation of the P2Y~12~ receptor, which is G~i/o~ coupled, by the platelet agonist ADP reduces this VASP phosphorylation. Lower phospho-VASP levels are therefore indicative of less inhibition by the antiplatelet drug and more activation of the platelet by ADP. It is less clear what the relationship is between BMI and platelet function in those who are not on any antiplatelet therapy and across other platelet function assays.
+
+The aims of this chapter were to:
+
+1) Optimise laboratory techniques to assess platelet function in bariatric patients pre-surgery (BMI >40kg/m^2^) and healthy controls (BMI 18-25kg/m^2^) .
+2) Determine whether high BMI is associated with: an increase in immature platelet count, an increase in platelet function and an alteration in platelet protein expression by comparing platelets (Figure \@ref(fig:BMI-platelet-overview2)).
+
+(ref:caption-BMI-platelet-overview2) **Schematic of the associations explored: this chapter explores the relationship between body mass index and platelet function.** Figure made using BioRender.com.
+(ref:scaption-BMI-platelet-overview2) Schematic of the associations explored in the current chapter
+```{r BMI-platelet-overview2, echo = FALSE , fig.scap="(ref:scaption-BMI-platelet-overview2)", fig.cap="(ref:caption-BMI-platelet-overview2)", out.width="90%"}
+include_graphics(path = "figure/Bariatric_study/Thesis_graphic_overview_BMI_platelets.png", dpi = NA)
 ```
-## Methods
+
+## Materials and Methods
+### Materials {#materials}
+Protease-activated receptor 1 (PAR-1)-activating peptide (TRAP-6/SFLLRN-NH2) was from Bachem (Bubendorf, Switzerland), crosslinked collagen-related peptide (CRP-XL) from Prof. Richard Farndale (Department of Biochemistry, University of Cambridge, UK). Adenosine diphosphate (ADP) was from Sigma-Aldrich (Poole, UK). cOmplete mini protease inhibitor tablets and phosSTOP phosphatase inhibitors were from Roche Life Sciences (Welwyn Garden City, UK). The Pierce bicinchoninic acid (BCA) assay was from ThermoFisher Scientific (Altrincham, UK). Sodium Citrate Vacutainer® tubes, FixLyse, PE-Cy5-conjugated mouse anti-human CD42b antibody, FITC mouse anti-human CD61 antibody, Fc block, PE mouse anti-human platelet GPVI antibody, FITC mouse anti-human PAC-1 and PE mouse anti-human CD62P antibodies were from BD (Wokingham, UK). FITC mouse anti-human CD41 and CD42b antibodies were from BioLegend (London, UK). Human MDC (69 amino acids) and TARC were from PeproTech (London, UK). Indomethacin, PGE1, Triton X-100, apyrase, HEPES Tyrode’s (10 mM HEPES, 1 mM magnesium, 0.5 mM monosodium phosphate, 145 mM sodium chloride, 3 mM potassium chloride, pH 7.2), 2-butanol, ethanol, methanol and bovine serum albumin (BSA) were purchased from Sigma-Aldridge (Poole, UK). Phosphate buffered saline (PBS), trisodium citrate, acid citrate dextrose (ACD), D-glucose, ammonium persulfate (APS), Tris buffered saline (TBS), polysorbate 20 (Tween 20), Donkey anti-Rabbit IgG (H+L) Highly Cross Adsorbed Secondary Antibody Alexa Fluor 647 and Fura-2 were purchased from Thermo Fisher Scientific (Loughborough, UK). 30 % acrylamide mix (37.5:1), 1.0 M Tris pH 6.8 solution and 1.5 M Tris pH 8.8 solution purchased from National Diagnostics (Nottingham, UK). Immobilon-FL PVDF membranes (0.45-micron filter) were purchased from Merck Millipore (Hertfordshire, UK). Sodium dodecyl sulphate (SDS) was purchased from GE Healthcare worldwide (Hatfield, UK). SDS solution (10 %), tetramethylethylenediamine (TEMED), filter paper and Precision Plus protein pre-stained standards were purchased from Bio-Rad laboratories (Bredbury, UK). Blocking buffer was purchased from LI-COR Biosciences (Cambridge, UK). Rabbit pSer239 VASP and pSer157 VASP antibodies and pSer425 Talin were purchased from Cell Signaling Technology (Hertfordshire, UK). Alexa Fluor 680 AffiniPure Donkey Anti-Goat IgG and Alexa Fluor 680 AffiniPure Donkey Anti-Rabbit IgG were obtained from Jackson Immunoresearch (Cambridgeshire, UK). Paraformaldehyde was purchased from Acros Organics (Geel, Belgium). Annexin V Alexa Fluor 568 conjugate was from ThermoFisher. The inhibitor AZD-2908 was from Bio-Techne, YM-284890 was from Tebu-Bio Ltd and Y27632 was from Generon Ltd.
+
+### Ethical approval process
+This study was designed in July 2019. To be able to carry out a patient study, there were various documents that needed to be prepared. These were submitted using the Integrated Research Application System (IRAS). Documents included were a research protocol, statistical review, IRAS form, consent forms, participant information sheets, GP letters, and a copy of the email invite sent out to control participants. Upon ethical approval from the London Riverside Research Ethics Committee (REC reference 19/LO/1781) and approval from Southmead Hospital, this study was first approved to start in March 2020. Recruitment was put on hold until May 2021 due to the pandemic. During this time, two amendments were made to be able to account for 1) whether the participant had previously had a COVID-19 infection and 2) whether the participant had been vaccinated for COVID-19. The second amendment was not approved by Southmead Hospital in time and therefore the vaccination status could not be recorded for bariatric patients.
 
 ### Study population
+All participants provided written informed consent. Patients, who were due to undergo bariatric surgery, with a body mass index of >40kg/m^2^, were recruited from the Department of Bariatric and Metabolic Surgery at Southmead Hospital, Bristol. Control participants with a BMI between 18.5 and 25 kg/m^2^ were recruited from the University of Bristol. Inclusion criteria for participants were: aged 18 years and over, able to give written informed consent and sufficient level of English to understand the study and ask any questions. Participants were excluded if they were pregnant or lactating, had any known clotting or bleeding disorders (e.g. von Willebrand disease or drug-induced thrombocytopenia), or if they had taken any antiplatelet medication within the previous 14 days such as clopidogrel, ticagrelor or aspirin or any other non-steroidal anti-inflammatory drug (NSAID). Recruitment occurred between May 2021 and June 2021. As a pilot study, a total of four bariatric patients with obesity and four age and sex-matched control participants were recruited. Bariatric patients donated blood before bariatric surgery.
 
-The present study was conducted on up to 33388 European ancestry INTERVAL participants living in the United Kingdom. These were the participants who had genetic data, had basic phenotype data and full blood count measures (Figure \@ref(fig:INTERVAL-STROBE)). Participants were mostly of European descent. More details of this study can be found in Chapter \@ref(common-methods).
+### Isolation of platelet rich plasma (PRP)
+Blood was taken by venipuncture into vacutainers containing sodium citrate (3.2%). Blood was centrifuged (1000 RPM, 17 mins). PRP was diluted 1:40 in HEPES Tyrode's (145 mM NaCl, 3 mM KCl, 0.5 mM Na~2~HPO~4~, 1 mM MgS0~4~.7H~2~O, 10 mM HEPES, pH 7.4, 0.1% [w/v] D‐glucose) for experiments where indicated. 
 
-(ref:caption-INTERVAL-STROBE) **A STROBE diagram outlining participants included in the INTERVAL study for BMI and platelet trait analyses**.
-(ref:scaption-INTERVAL-STROBE) A STROBE diagram outlining participants included in the INTERVAL study for BMI and platelet trait analyses.
-```{r INTERVAL-STROBE, echo = FALSE, out.width="80%", fig.cap="(ref:caption-INTERVAL-STROBE)", fig.scap="(ref:scaption-INTERVAL-STROBE)"}
-include_graphics(path = "figure/BMI_platelets/STROBE_diagram.pdf", dpi = NA)
-```
+### Platelet lysates 
+Acid citrate dextrose (1:7) and apyrase (0.02 U/mL) were added  to PRP. PRP was centrifuged (1700 RPM, 10 mins) to pellet platelets. Platelets were resuspended in CGS buffer (120 mM NaCl, 25.8 mM sodium citrate dihydrate, 0.1% [w/v] D‐glucose, 0.02 U/mL apyrase, pH 6.5) Platelets were centrifuged again (1700 RPM, 10 mins) to pellet platelets and were resuspended in CGS buffer. Platelets were pelleted and resuspended in radioimmunoprecipitation assay buffer (RIPA: 25 mM HEPES, 200 mM NaCL, 1mM EDTA, 1 % (v/v) NP40, 0.5 % (w/v) sodium deoxychelate, 0.1 % (w/v) SDS) supplemented with a protease and phosphatase inhibitor for 10 minutes on ice. Lysates were centrifuged (10000 RPM, 4°C for 5 minutes). Supernatant was removed and a bicinchoninic acid (BCA) assay was performed to calculate sample protein concentrations. Samples were stored in a -80°C freezer until proteomics analysis. 
 
-### Measurement of platelet traits
-Blood was taken by venipuncture into 3mL EDTA tubes. Platelet parameters were measured using the Sysmex XN-1000 instrument [@Astle2016]. This analyzer provides information on cell counts by using a combination of fluorescence (PLT-F) and impedance (I) flow cytometry. The PLT-F channel used a Fluorocell fluorescent dye (oxazine), whereas the impedance method uses electrical resistance to detect platelets. Platelet indices included in the current study, along with the raw units, are provided in Table \@ref(tab:Platelet-traits). These measurements were pre-adjusted for technical covariates such as time between venipuncture and blood count, as well as instrument drift, seasonal and weekly variation [@Astle2016]. Adjustment was performed with cyclic, thin-plate and P-splines in a generalized additive model (GAM) [@Akbari2020]. Resulting platelet trait values along with their units of measurement are reported in Table \@ref(tab:Platelet-traits). These data were rank normal transformed to normalize the distribution of each trait. Therefore, each platelet index is measured in normalized standard deviation (SD) units.
+### Platelet parameters measured by Sysmex
+Citrated whole blood (200 uL) was analysed using the Sysmex XN-20 haematology analyser. Platelet readouts were platelet count (PLT) (x 10^9^/L), immature platelet fraction (IPF) (%), immature platelet count (IPC) (x 10^9^/L), side fluorescence (SFL, a measure of mRNA content in relative fluorescent units/RFUs), forward scatter (FSC, a measure of platelet size measured in RFUs) and side scatter (SSC, a measure of granularity in RFUs).
 
-(ref:caption-Platelet-traits) **Platelet traits measured by Sysmex XN-1000**.
-(ref:scaption-Platelet-traits) Platelet traits measured by Sysmex XN-1000
-```{r Platelet-traits,  echo=FALSE}
-options(knitr.kable.NA = "")
-Name = c('P-LCR','H-IPF','PLT (F)','PLT (I)','PCT','PDW','IPC','IPF','MPV','SFL','FSC','SSC')
-FullName = c('Platelet large cell ratio','High fluorescence immature platelet fraction','Platelet count (PLT-F channel)','Platelet count (impedance channel)','Plateletcrit','Platelet distribution width' ,'Immature platelet count' ,'Immature platelet fraction','Mean platelet volume','Side fluorescence', 'Forward scatter','Side scatter')
-Deriv = c('(platelet number with volume>12 fL)/(platelet number of ordinary volume)  x 100', '(high fluorescence immature platelet number)/(platelet count)  x 100','Total number of platelets per litre','Total number of platelets per litre','Volume percentage of blood occupied by platelets','Standard deviation of platelet volume distribution, estimated as width at 20% modal height of platelet volume histogram','Immature platelet count','(Immature platelet number)/(platelet count)   x 100', 'Mean platelet volume','Side fluorescence measures the nucleic acid (mRNA) content of the platelet','Forward scatter is a measure of the size of the platelet' ,'Side scatter is a measure of the granularity of the platelet')
+### Integrin α~IIb~β~3~ activation and P-selectin expression measured by flow cytometry
+Isolated PRP was diluted 1:40 in HEPES Tyrode's. FITC-conjugated PAC1 and PE-conjugated CD62P antibodies were added in a 2:1 ratio (5uL PAC1 and 2.5uL CD62P per well). This master mix was added to pre-prepared vacuum packed 96 well plates to a final folume of 50 uL. Agonists used were protease-activated receptor 1 activating protein (PAR1-AP), adenosine diphosphate (ADP) and collagen related peptide (CRP), which were freeze-dried onto the plates[@Chan2018]. HEPES Tyrode's was also freeze-dried onto plates, which was used for a measurement of unstimulated integrin α~IIb~β~3~ activation and P-selectin expression. Platelets were stimulated with agonists for 10 minutes. Platelets were fixed with 1% paraformaldehyde (PFA) for 10 minutes. Platelets were gated and the median fluorescence intensity (MFI) in arbitrary units (AUs) was reported from a total of 10,000 events.
 
-Units <- c('%','%','109/L','109/L','%','fL','109/L','%','fL','RFUs','RFUs','RFUs')
-MeanSD <- c('36.9 (7.7)','1.3 (1.0)','255 (57)','250 (55)','0.28 (0.06)','14.0 (1.8)','10.1 (5.0)','4.2 (2.5)','11.1 (1.0)','80.3 (5.0)','53.0 (6.4)','37.9 (2.9)')
-mytable = data.frame(cbind(Name, FullName, Deriv, Units, MeanSD))
-colnames(mytable) <- c('Short name',	'Full name',	'Derivation of platelet trait',	'Units',	'Mean (SD)')
-mytable %>% kable(caption = "(ref:caption-Platelet-traits)", booktabs = TRUE, caption.short = "(ref:scaption-Platelet-traits)") %>% 
-  kable_classic_2(full_width = F) %>%
- kable_styling(full_width = TRUE) %>%
-column_spec(2, width = "4cm")   %>%
-  column_spec(3, width = "6cm")   %>%
-  landscape()
-```
+### Surface receptor levels measured by flow cytometry
+Diluted PRP (1:40) was used for unstimulated surface receptor detection. Antibodies were added (1:10 v/v) to a final volume of 50 uL. Antibodies used include anti-human CD41 (α~IIb~), CD42b (GP1bα), CD61 (β~3~) (FITC-conjugated) and GPVI and CD110 (thrombopoietin/TPO receptor) (PE-conjugated). Platelets were fixed with 1% PFA for 10 minutes. Platelets were gated and the MFI was reported in AUs from a total of 10,000 events. 
 
-### Statistical analysis
-Analyses were performed using R version 3.4.2 [@Team2019a]. To visualize correlation between outcome platelet variables, a correlation matrix was made using the pairwise Pearson correlation coefficients of the rank normal transformed data. A dendrogram was also created to show the hierarchical relationship between platelet traits (https://github.com/hughesevoanth/iPVs), where the height at which variables are joined is set at (1 – Pearson correlation coefficient (r)). To explore observational associations between BMI and platelet traits, linear regression models were used (lm() function from “stats” package). Two regression models were used: firstly, adjusting for age and sex and secondly, additionally adjusting for smoking and alcohol consumption as ordinal variables. The results of the regression reflect the change in platelet traits (in normalized SD units) per normalized SD higher BMI (4.7 kg/m^2^). Only participants with all covariables were included in the linear regression models. The associations between potential covariables with both BMI and platelet traits were also explored using linear regression.
+### Platelet-neutrophil assay measured by flow cytometry
+Citrated whole blood was diluted 1:10 in HEPES-Tyrode's buffer and incubated with FITC-conjugated anti-CD41 and PE-conjugated anti-C45 antibodies at room temperature for 15 mins (antibodies used 1:10 v/v). Samples were either stimulated (+ 5 ug/mL CRP) or unstimulated (+ vehicle) for the same 15 minute duration. Samples were fixed with FixLyse for 10 minutes, followed by a final concentration of 4 % PFA for 10 minutes. Fluorescence was quantified using the flow cytometer, where 1000 neutrophil events were analysed based on a gating of CD45 and SSC parameters. Aggregates of platelets and neutrophils were defined by being both CD41+ and CD45+.
 
-To understand properties of the GRS for BMI, the association between the GRS with both BMI and covariables were explored. The MR analysis was performed by using a two-stage least squares (2SLS) regression model (using systemfit() function from “systemfit” package [@Henningsen2007]). The MR causal estimates reflect the change in platelet traits (in SD units) per SD increase in BMI. A Wu-Hausman test was performed to test for endogeneity between observational and MR estimates. Exact beta coefficients, confidence intervals and P values are provided throughout and guide strength of association.
+### Tandem Mass Tag Mass Spectrometry (TMT-MS) quantification of platelet proteins
+Platelet lysate samples (50 ug total protein) were digested with trypsin and labelled with TMT 15 plex reagents (ThermoFisher Scientific, Loughborough, UK). Labelled samples were pooled. The pooled sample was evaporated to dryness then resuspended in formic acid (5%). The pooled sample was then desalted using a SepPak cartridge (Waters, Milford, Massachussetts, USA). Eluate from the SepPak cartridge was evaporated to dryness and resuspended prior to fractionation by high pH reversed-phase chromatography using an Ultimate 3000 liquid chromatography system (Thermo Fisher Scientific). Further fractionation occurred using high pH RP fractions using the Ulitamte 3000 nano-LC system in line with an Orbitrap Fusion Tribrid Mass Spectrometer (ThermoFisher Scientific).
 
-Where there was consistent observational and MR evidence for a BMI effect on platelet traits with potential clinical relevance, additional sensitivity analyses were carried out. We explored whether there were different magnitudes of associations across NHS BMI categories indicative of a non-linear relationship. Specifically, participants were stratified by BMI and the association between BMI and IPC estimated within BMI categories.
+### Statistical analysis for platelet function assays
+Data was analysed using GraphPad Prism 8. If data displayed a normal distribution (based on Shapiro-Wilk p-value and W statistic), a parametric test was used (e.g. unpaired t-test or one way ANOVA), otherwise a nonparametric test was used. Concentration-response curves were plotted using a four parameter variable slope. To compare concentration-response curve parameters, pEC50s or curve maxes were compared. A Fisher's exact test was used to compare proportions of categorical variables. Statistical tests used for each experiment are in figure legends. Strength of evidence is determined by p-values, however results will not be dichotomised as either 'significant' or 'not significant'[@Sterne2001]. 
 
-### Follow-up analysis to explore the association between immature platelets and aggregation
-Motivated by findings from the primary analyses described above, additional observational analyses were conducted using data from the COagulation and Platelet laboratory Testing in Cardiac Surgery (COPTIC) study. The COPTIC study was an observational, single centre cohort study of adults undergoing cardiac surgery at the Bristol Heart Institute with primary objective of examining the relationship between coagulation laboratory parameters and bleeding outcomes after surgery in 2,541 participants [@Mumford2017]. This study was approved by the UK NHS Research Ethics Committee (09/H0104/53).
-
-### COPTIC study variables
-Age and sex were reported at baseline. Height and weight were obtained from medical notes. BMI was derived from weight and height (kg/m^2^). Smoking was reported as a categorical variable (0=never smoker, 1=ex-smoker for > 5 years, 2=ex-smoker for 1-5 years, 3=ex-smoker for 30 days-1 year, 4=current smoker). Platelet variables (PLT, MPV, IPF, IPC) were measured using the Sysmex XE-2100 Automated Haematology System (Oxford, UK). Blood samples were taken pre-operatively into 3.2% sodium citrate vacutainers (BD Biosciences, Milton Keynes, UK). Platelet aggregation was measured using Multiplate multiple electrode aggregometry (MEA) (Roche, Rotkreuz, Switzerland), which detects change in electrical impedance when platelets aggregate on metal electrodes. Aggregation was determined by the area under the curve (AUC) in response to platelet agonists including adrenaline (100 mg/mL), thrombin receptor activator peptide 6 test (TRAP-test), ADP-test and arachidonic acid (ASPI-test). Use of a combination of agonists therefore reflects activation of platelets via different pathways: adrenaline acts at the α2 adrenergic receptor, TRAP-6 acts at the protease-activated receptor-1 (PAR-1), ADP acts at the P2Y12 receptor and arachidonic acid at the Thromboxane A2 (TxA2) receptor.
-
-### COPTIC statistical analysis
-The COPTIC dataset in the current analysis included 2,518 participants (23 out of 2,541 participants did not consent for future research). For the current study, only those who were not on antiplatelet therapies (prasugrel, clopidogrel or aspirin) were included (N=655). Extreme outliers that were ± 5 SDs from the mean were removed, and exposures and outcomes were rank normal transformed. . Linear regression was used to generate estimates of the association between BMI and platelet parameters within this cohort. Linear regression was used to explore the association between immature platelet count and aggregation, adjusting for age, sex and smoking status.
+### Analysis of proteomic data
+A principal component analysis (PCA) was performed to reduce the data and to identify major axes (principal components, PCs). This method helps to determine whether the major axes of the data can likely be explained by the group (bariatric patient with obesity or control participant). Normalised protein abundances were log~2~ transformed, where the logFC was calculated by subtracting the log2 normalised protein abundance of the control subjects from the bariatric surgery group. The log~2~ normalised protein abundances of bariatric patients were compared to controls using a two-tailed unpaired t-test. P values were not adjusted for multiple testing, however P values of all comparisons are provided in the supplementary results in Chapter \@ref(BMI-platelets-clinic). False discovery rate (FDR) adjusted p-values are also provided in the full results . A positive logFC indicates an increase in protein level in the bariatric samples.
 
 ## Results
 
-### INTERVAL participant characteristics 
-Of INTERVAL participants included in the current study (N=33,388), 50.2 % were female. The mean age was 45.3 years (SD of 14.2 years, Table \@ref(tab:INT-participants-platelets)). The mean BMI was 26.4 kg/m2 (SD of 4.7 kg/m2). The majority of participants were never smokers (58.9 %), with 33.3% and 7.8 % reported as previous and current smokers, respectively. Nearly a third (32.7 %) of participants reported drinking alcohol at least three times a week. 
+### Participant characteristics
+The characteristics of participants included in the study are shown in Table  \@ref(tab:obesity-platelets-participants). The mean BMI in the control group was 21.8 kg/m^2^ (SD 2.1 kg/m^2^) and 49.3 kg/m^2^ (SD 8.8 kg/m^2^). Participants in the control group and bariatric patient group were age and sex matched. All bariatric patients and control participants were non-smokers. Half of the bariatric patients presented with type 2 diabetes (T2D) and were receiving T2D medication, whereas none of the control participants had T2D. Similarly, 75% of the bariatric patients had previously had a positive test for COVID-19 but none of the control participants had ever tested positive for COVID-19.  
 
-(ref:caption-INT-participants-platelets) **Characteristics of included INTERVAL participants for BMI-platelet analyses**
-(ref:scaption-INT-participants-platelets) Characteristics of included INTERVAL participants for BMI-platelet analyses
-```{r INT-participants-platelets,  echo=FALSE}
+(ref:caption-obesity-platelets-participants) **Characteristics of included participants in the body mass index and platelet function study**
+(ref:scaption-obesity-platelets-participants) Characteristics of included participants in the body mass index and platelet function study
+```{r obesity-platelets-participants,  echo=FALSE}
 options(knitr.kable.NA = "")
-f = c("Age", "Sex", "Male", "Female", "Weight (kg)", "Height (cm)", "Body mass index (kg/m2)", "Smoking frequency", "Never", "Previous", "Current", "Alcohol intake frequency", "Rarely", "Less than once a week", "One or two times a week", "Three to five times a week / most days")
-co = c( '45.3 (14.2)', NA, '49.8%','50.2%','78.2 (16.0)','171.8 (9.6)','26.4 (4.7)', NA,'58.9%','33.3%','7.8%',NA, '12.5%','17.1%','37.7%','32.7%')
-i = c(33388, 33388, NA, NA, 33455, 33388, 33388, 32867, NA, NA, NA, 29538, NA, NA, NA, NA)
-mytable = data.frame("Variable"  = f, "Mean (SD) or %" = co, "N" = i)
-colnames(mytable) <- c("Variable",  "Mean (SD) or %", "N" )
-mytable %>% kable(caption = "(ref:caption-INT-participants-platelets)", caption.short = "(ref:scaption-INT-participants-platelets)", booktabs = TRUE) %>% 
+f = c("Age", "Sex", "Body mass index (kg/m2)", "Smoker", "Hypertensive (140/90 mmHg)", "Type 2 Diabetes", "Type 2 Diabetes medication", "Metformin", "Dapagliflozin", "Dulaglutide", "Previous COVID-19 infection")
+co = c("42.2 (14.1)", "75 %", "21.8 (2.1)", "0 %", "0 %", "0 %", "NA", NA, NA,NA, "0 %")
+i = c('46 (18.0)','75 %','49.3 (8.8)','0 %','25 %','50 %', NA, '25 %','25 %','25 %','75 %')
+p <- c(0.77,1.0,0.0009,1.0,1.0,0.43,"NA", NA, NA, NA, 0.14) 
+mytable = data.frame("Variable"  = f, "Control mean (SD) or %" = co, "Bariatric patient mean (SD) or %" = i, "P value for difference" = p)
+colnames(mytable) <- c('Variable', "Control mean (SD) or %", "Bariatric patient mean (SD) or %", "P value for difference" )
+mytable %>% kable(caption = "(ref:caption-obesity-platelets-participants)", booktabs = TRUE, caption.short = "(ref:scaption-obesity-platelets-participants)") %>% 
   kable_classic_2(full_width = F) %>%
   #kable_paper("hover", full_width = F)
-   add_indent(c(3, 4, 9, 10, 11, 13, 14, 15, 16), level_of_indent = 1) %>%
+   add_indent(c(8, 9, 10), level_of_indent = 1) %>%
  kable_styling(full_width = TRUE) %>%
-column_spec(1, width = "8cm")
+column_spec(1, width = "5cm")
 ```
 
-### Correlation between platelet traits in INTERVAL
-The Sysmex XN-1000 haematology analyzer measures multiple platelet traits, however many of these traits are closely related measurements and therefore may not be completely independent. Indeed, platelet traits showed a high degree of correlation with each other (Figure \@ref(fig:Corr-mat-dend)), in particular among similar measures. For example, measures of PLT (PLT I/F) and PCT, the latter a measurement of platelet mass, were highly positively correlated with each other but were weakly inversely correlated with other platelet measures. Measures of platelet maturity (IPF, IPC, H-IPF) were highly correlated with each other. In addition, platelet size variables (MPV, P-LCR and PDW) showed strong positive correlations with each other as well as with measures of immature platelets. 
+### Platelet parameters
 
-(ref:caption-Corr-mat-dend) **Correlation matrix and dendrogram of the relationship between platelet traits.** A) Correlation coefficients are provided within the matrix. Dark blue indicates a correlation coefficient (r) of 1, with dark red indicating a correlation coefficient of -1. B) A dendrogram showing the hierarchical relationship between platelet traits, where the height at which two platelet traits join is (1 – Pearson correlation coefficient (r)). PCT = plateletcrit, PLT (F) = platelet count (PLT-F channel), PLT (I) = platelet count (impedance channel), SSC = side scatter, SFL = side fluorescence, FSC = side scatter, IPC = immature platelet count, H-IPF = high fluorescence immature platelet fraction, IPF = immature platelet fraction, MPV = mean platelet volume, P-LCR = platelet large cell ratio, PDW = platelet distribution width. Dashed red lines indicate a height of 0.2, 0.3 and 0.4.
-(ref:scaption-Corr-mat-dend) Correlation matrix and dendrogram of the relationship between platelet traits
-```{r Corr-mat-dend, echo = FALSE, out.width="95%", fig.cap="(ref:caption-Corr-mat-dend)", fig.scap= "(ref:scaption-Corr-mat-dend)"}
-include_graphics(path = "figure/BMI_platelets/Corrmatrix_dendrogram.pdf", dpi = NA)
-```
+Platelet traits measured by Sysmex were compared across bariatric and control groups (Table \@ref(tab:obesity-platelets-parameters)). There was no statistical evidence for an effect of obesity on platelet parameters. However, IPC and IPF did display larger mean values compared to controls, but they also had relatively large SDs in the bariatric patient group (IPC 9.3 (SD 4.9) x 10^9^/L in control vs 16.3 (SD 16.3) x10^9^/L in bariatric group, p=0.45).
 
-### Observational associations between BMI and platelet traits in INTERVAL
-Linear regression was performed to determine whether a higher BMI was associated with a change in platelet characteristics. In the confounder adjusted linear regression (Table \@ref(tab:BMI-platelets-adjust)), BMI was positively associated with PCT (0.12 SD higher per SD higher BMI, 95% CI 0.11 to 0.13, P = 9.2 x 10^-88^) and platelet count (PLT (I) 0.11 SD higher per SD higher BMI, 95% CI 0.09 to 0.12, P = 1.0 x 10^-67^). The next strongest association with BMI was the association with SFL (0.06 SD higher per SD increase in BMI, 95% CI 0.05 to 0.07, P = 4.7x10^-23^). BMI also showed a positive association with IPC (0.06 SD higher per SD increase in BMI, 95% CI 0.05 to 0.08, P = 4.8x10^-22^). These results demonstrate that BMI is positively associated with PCT, PLT (I), SFL and IPC in this population. These estimates were very similar to the age and sex only adjusted estimates (Table \@ref(tab:BMI-platelets-unadjust)).
-
-(ref:caption-BMI-platelets-adjust) **Observational associations between BMI and platelet measures adjusted for age, sex, smoking status and alcohol consumption.** Βeta coefficient is the change in platelet measure in SDs per normalized SD increase in BMI. PCT = plateletcrit, PLT (I) = platelet count (impedance channel), PLT (F) = platelet count (PLT-F channel), SFL = side fluorescence, IPC = immature platelet count, PDW = platelet distribution width, FSC = forward scatter, H-IPF = high fluorescence immature platelet fraction, IPF = immature platelet fraction, P-LCR = platelet large cell ration, SSC = side scatter, MPV = mean platelet volume. Eta squared is the proportion of variance explained by the platelet trait in an ANOVA, whereas adjusted R squared is the variance explained by all the predictor variables in the regression model.
-(ref:scaption-BMI-platelets-adjust) Observational associations between BMI and platelet measures adjusted for age, sex, smoking status and alcohol consumption
-
-```{r BMI-platelets-adjust,  echo=FALSE}
+(ref:caption-obesity-platelets-parameters) **Comparison of platelet traits measured by Sysmex XE-2100 across bariatric and control groups**
+(ref:scaption-obesity-platelets-parameters) Comparison of platelet traits measured by Sysmex XE-2100 across bariatric and control groups
+```{r obesity-platelets-parameters,  echo=FALSE, warning=FALSE}
 options(knitr.kable.NA = "")
-Name = c('PCT','PLT (I)','PLT (F)','SFL','IPC','PDW','FSC','H-IPF','IPF','P-LCR','SSC','MPV')
-N = c(24562,26044,23921,26082,23909,24563,26082,26068,23909,27015,26082,24559)
-Beta = c(0.12,0.11,0.10,0.06,0.06,0.03,0.02,-0.02,0.01,0.01,0.01,0.01)
-SE <- c(0.006,0.006,0.006,0.006,0.007,0.007,0.006,0.006,0.007,0.006,0.006,0.007)
-P <- c(9.17E-88,1.03E-67,5.62E-57,4.73E-23,4.84E-22,5.21E-05,0.01,0.01,0.04,0.19,0.28,0.37)
-R <- c(0.133,0.096,0.094,0.020,0.008,0.006,0.026,0.006,0.008,0.003,0.040,0.007)
-Eta <- c(0.107,0.081,0.082,'0.000',0.001,0.004,0.001,0.005,0.007,'0.000','0.000','0.000')
-CI <- c(0.012,0.012,0.012,0.012,0.013,0.013,0.012,0.012,0.013,0.012,0.012,0.013)
-Lower <- c(0.11,0.09,0.09,0.05,0.05,0.01,0.01,-0.03,'0.00','0.00',-0.01,-0.01)
-Upper <- c(0.13,0.12,0.11,0.07,0.08,0.04,0.03,-0.01,0.03,0.02,0.02,0.02)
-mytable = data.frame(cbind(Name, N, Beta, SE, P, R, Eta, CI, Lower, Upper))
-colnames(mytable) <- c('Platelet trait',	'N',	'Βeta coefficient',	'SE',	'P value',	'R2',	'Eta squared',	'95% CI',	'Lower 95% CI',	'Upper 95% CI')
-mytable %>% kable(caption = "(ref:caption-BMI-platelets-adjust)", booktabs = TRUE, caption.short = "(ref:scaption-BMI-platelets-adjust)") %>% 
-  kable_classic_2(full_width = F) %>%
- kable_styling(full_width = TRUE) %>%
-  landscape()
-```
-
-(ref:caption-BMI-platelets-unadjust) **Age and sex adjusted estimates for the association between BMI and platelet traits.** Βeta coefficient is the change in platelet measure in SDs per SD higher BMI. Eta squared is the proportion of variance explained by the platelet trait in an ANOVA, whereas adjusted R squared is the variance explained by all the predictor variables in the regression model.
-(ref:scaption-BMI-platelets-unadjust) Age and sex adjusted estimates for the association between BMI and platelet traits
-```{r BMI-platelets-unadjust,  echo=FALSE}
-options(knitr.kable.NA = "")
-FullName <- c('Plateletcrit','Platelet count (impedence channel)','Platelet count (PLT-F channel)','Side fluorescence','Immature platelet count' ,'Platelet distribution width' ,'Forward scatter','High fluorescence immature platelet fraction','Immature platelet fraction','Side scatter','Platelet large cell ratio','Mean platelet volume')
-Name = c('PCT','PLT (I)','PLT (F)','SFL','IPC','PDW','FSC','H-IPF','IPF','P-LCR','SSC','MPV')
-N = c(27997,29682,27268,29721,27255,27998,29721,29708,27255,29721,30788,27994)
-Beta = c(0.126,0.110,0.104,0.064,0.067,0.029,0.022,'-0.017',0.015,0.010,0.010,0.009)
-SE <- c(0.006,0.006,0.006,0.006,0.006,0.006,0.006,0.006,0.006,0.006,0.006,0.006)
-P <- c(1.46E-108,4.50E-84,6.50E-70,4.08E-28,1.27E-27,2.09E-06,1.40E-04,4.43E-03,1.29E-02,7.81E-02,9.09E-02,1.55E-01)
-R <- c(0.132,0.097,0.094,0.021,0.007,0.006,0.026,0.005,0.007,0.041,0.002,0.006)
-Eta <- c(0.107,0.082,0.083,'0.000',0.001,0.004,0.001,0.005,0.007,1.58E-04,4.37E-05,4.57E-06)
-CI <- c(0.011,0.011,0.012,0.011,0.012,0.012,0.011,0.012,0.012,0.011,0.011,0.012)
-Lower <- c(0.115,0.099,0.093,0.053,0.055,0.017,0.011,'-0.028',0.003,'-0.001','-0.002','-0.003')
-Upper <- c(0.137,0.121,0.116,0.076,0.079,0.041,0.034,'-0.005',0.027,0.022,0.021, 0.021)
-mytable = data.frame(cbind(FullName, Name, N, Beta, SE, P, R, Eta, CI, Lower, Upper))
-colnames(mytable) <- c('Full name', 'Short Name',	'N',	'Βeta coefficient',	'SE',	'P value',	'R2',	'Eta2',	'95% CI',	'Lower 95% CI',	'Upper 95% CI')
-mytable %>% kable(caption = "(ref:caption-BMI-platelets-unadjust)", booktabs = TRUE, caption.short = "(ref:scaption-BMI-platelets-unadjust)") %>% 
-  kable_classic_2(full_width = F) %>%
- kable_styling(full_width = TRUE) %>%
-  column_spec(1, width = "3.5cm")   %>%
-  landscape()
-```
-
-### Associations of covariables with BMI and platelet traits in INTERVAL
-The association of covariables (age, sex, smoking and alcohol) with BMI were evaluated (Table \@ref(tab:INT-confounders-BMI-platelets)). Included covariables in the analysis showed associations with BMI. Males had a higher BMI than females (0.18 SD, 95% CI 0.16 to 0.21, P = 9.64x10^-64^). Age was positively associated with BMI (0.011 SD higher per year older, 95% CI 0.010 to 0.012, P = 1.11x10^-182^). Alcohol showed an inverse association with BMI and smoking showed a weak positive association with BMI. Associations between covariables (age, sex, smoking, alcohol) and platelet traits were also explored (Figure \@ref(fig(confounder-platelets)). Higher age was generally inversely associated with platelet measures. Males had a lower platelet count and PCT compared to females (PLT-F was 0.57 lower 95% CI -0.60 to -0.55, P = 9.9x10^-324^). Weak associations were detected between smoking and platelet traits such as a positive association between smoking status and immature platelets. Higher alcohol consumption also showed inverse associations with measures of plateletcrit and platelet count.
-
-(ref:caption-INT-confounders-BMI-platelets) **Associations between age, sex, smoking and alcohol consumption (exposures) with standardised BMI (outcome).** Beta coefficient is the change in BMI (normalized SDs) per unit increase in exposure.
-(ref:scaption-INT-confounders-BMI-platelets)  Associations between age, sex, smoking and alcohol consumption (exposures) with standardised BMI (outcome). 
-```{r INT-confounders-BMI-platelets,  echo=FALSE}
-options(knitr.kable.NA = "")
-V = c( "Sex (1=female, 2=male)", "Age (years)", "Alcohol intake frequency (1=rarely, 2=<1 a week, 3=1-2 times a week, 4=most days/every day)", "Smoking frequency (1=never, 2=occasinal, 3=most days/ every day)" )
-N = c(33388, 33388, 29538, 32867)
-B = c(0.184, 0.011, -0.096, 0.073)
-SE <- c(0.011,'3.81E-04',0.006,0.009)
-P <- c(9.64E-64,1.11E-182,1.57E-61,1.53E-17)
-AdjR <- c(0.008,0.025,0.009,0.002)
-Fstat <- c(285,841,275,72)
-CI <- c(0.021,0.001,0.011,0.017)
-LowerCI <- c(0.162,0.010,'-0.108',0.057)
-UpperCI <- c(0.205,0.012,'-0.085',0.090)
-mytable = data.frame(cbind(V, N, B, SE, P, AdjR, Fstat, CI, LowerCI, UpperCI))
-colnames(mytable) <- c('Variable',	'N',	'Beta coefficient per 1-unit increase in confounder (SDs)',	'Standard error',	'P value',	'Adjusted R2',	'F statistic' , "95% CI", "Lower 95% CI", "Upper 95% CI")
-mytable %>% kable(caption = "(ref:caption-INT-confounders-BMI-platelets)", booktabs = TRUE, caption.short = "(ref:scaption-INT-confounders-BMI-platelets)") %>% 
-  kable_classic_2(full_width = F) %>%
- kable_styling(full_width = TRUE) %>%
-column_spec(1, width = "4cm")   %>%
-  column_spec(3, width = "2cm")   %>%
-  landscape()
-```
-
-\blandscape
-(ref:caption-confounder-platelets) **Linear regression results for the association between age, sex, smoking and alcohol with platelet traits.** PCT = plateletcrit, PLT (F) = platelet count (PLT-F channel), PLT (I) = platelet count (impedance channel), SSC = side scatter, SFL = side fluorescence, FSC = side scatter, IPC = immature platelet count, H-IPF = high fluorescence immature platelet fraction, IPF = immature platelet fraction, MPV = mean platelet volume, P-LCR = platelet large cell ratio, PDW = platelet distribution width. For age: beta coefficient is the difference in platelet characteristics per 1 year increase in age. For sex: Beta coefficient is the difference in platelet measure in SDs in men compared with women (for sex, 1=female and 2=male). For smoking: beta coefficient is the change in platelet traits (SDs) per unit change in smoking category (1 = never, 2 = previous, 3 = current). For alcohol: beta coefficient is the change in platelet traits in SDs per unit increase in alcohol consumption (1=Rarely , 2= Less than weekly, 3=One or two weekly, 4= 3-5 weekly or every day)
-(ref:scaption-confounder-platelets) Linear regression results for the association between age, sex, smoking and alcohol with platelet traits
-```{r confounder-platelets, echo = FALSE, fig.scap="(ref:scaption-confounder-platelets)", fig.cap="(ref:caption-confounder-platelets)", out.width="90%"}
-include_graphics(path = "figure/BMI_platelets/Confounders_platelet_forest_plot.pdf", dpi = NA)
-```
-\elandscape
-
-### GRS for BMI associations with BMI and covariables
-To estimate the causal effect of BMI on platelet characteristics, MR was performed. The GRS for BMI (the average per SNP effect on BMI) showed a normal distribution (mean 0.08, SD 0.30, range -1.15 to 1.34) and was positively associated with BMI to the degree expected (R^2^ = 0.042, P = 2.3x10^-312^, F=1458, Table \@ref(tab:INT-GRS-confounders-platelets)). The GRS did not associate with sex, however weak associations were detected with alcohol consumption, age, and smoking status. The amount of variance explained by the GRS for BMI on any covariable included did not exceed R^2^ = 0.002 (Table \@ref(tab:INT-GRS-confounders-platelets)). As the GRS associates with BMI but does not strongly associate with the measured covariables, it is thus likely a valid instrument to perform MR.
-
-(ref:caption-INT-GRS-confounders-platelets) **Association between genetic risk score for BMI with both BMI and covariables.** Beta coefficient is the change in outcome variable per unit increase in the genetic risk score for BMI.
-(ref:scaption-INT-GRS-confounders-platelets) Association between genetic risk score for BMI with both BMI and covariables
-```{r INT-GRS-confounders-platelets,  echo=FALSE}
-options(knitr.kable.NA = "")
-V = c("BMI (SDs)", "Age (years)", "Sex (1=female, 2=male)", "Smoking frequency (1=never, 2=previous, 3=current", "Alcohol intake frequency (1=rarely, 2=<1 a week, 3=1-2 times a week, 4=most days/every day)")
-N = c(33388, 33388, 33388, 32867, 29538)
-B = c(0.69,-1.46,-0.01,0.05,-0.15)
-SE <- c(0.018,0.26,0.009,0.012,0.02)
-P <- c('2.3E-312','2.2E-08','4.7E-01','9.2E-05','2.9E-15')
-AdjR <- c(0.042,0.001,'-1.4E-05',4.0E-4,0.002)
-Fstat <- c(1458.4,31.3,0.5,15.3,62.4)
-mytable = data.frame(cbind(V, N, B, SE, P, AdjR, Fstat))
-colnames(mytable) <- c('Variable',	'N',	'Beta coefficient (per 1-unit increase in GRS)',	'Standard error',	'P value',	'Adjusted R2',	'F statistic' )
-mytable %>% kable(caption = "(ref:caption-INT-GRS-confounders-platelets)", booktabs = TRUE, caption.short = "(ref:scaption-INT-GRS-confounders-platelets)") %>% 
-  kable_classic_2(full_width = F) %>%
- kable_styling(full_width = TRUE) %>%
-column_spec(1, width = "6cm")   %>%
-  landscape()
-```
-
-### Mendelian randomization estimates for the association between BMI and platelet traits
-In the MR analyses, BMI was associated with fewer traits than in the observational analysis (Table \@ref(tab:BMI-platelets-MR), \@ref(fig:BMI-platelet-forest)). The causal estimate for the effect of BMI on SFL was 0.08 SDs per SD increase in BMI (95% CI 0.03 to 0.14, P = 0.003). This estimate was of larger magnitude than the observational estimate. The causal estimate for BMI and IPC was 0.06 SDs per SD increase in BMI (95% CI 0.006 to 0.12, P = 0.03), a similar magnitude of effect to the observational estimate. In the MR analysis, unlike in the observational analysis, the causal estimate did not suggest an effect of BMI on either PCT or PLT. MR estimates did not provide evidence for associations between BMI and other platelet variables. The point estimates were consistently positive, aligning with the positive observational associations seen across the platelet traits. Across all but one (H-IPF) of the platelet phenotypes we did not observe differences in directionality of effect comparing observational effects and causal effects predicted by Mendelian randomization (Figure \@ref(fig:BMI-platelet-forest)).
-The Wu-Hausman test suggested that observational and MR estimates were similar for the majority of platelet traits (P > 0.05), except for measures of platelet count and plateletcrit (P < 0.001) (Table \@ref(tab:BMI-platelets-MR)). 
-
-(ref:caption-BMI-platelets-MR) **Mendelian randomization estimates for the effect of BMI on platelet traits.** Beta coefficient is the change in platelet measure in SDs per SD higher BMI.
-(ref:scaption-BMI-platelets-MR) Mendelian randomization estimates for the effect of BMI on platelet traits
-```{r BMI-platelets-MR,  echo=FALSE}
-options(knitr.kable.NA = "")
-FullName <- c('Side fluorescence','Immature platelet count' ,'Forward scatter','Plateletcrit','Immature platelet fraction','Platelet count (impedence channel)','Platelet large cell ratio','Platelet distribution width' ,'Mean platelet volume','Platelet count (PLT-F channel)','Side scatter','High fluorescence immature platelet fraction')
-Name = c('SFL','IPC','FSC','PCT','IPF','PLT (I)','P-LCR','PDW','MPV','PLT (F)','SSC','H-IPF')
-N = c(29721,27255,29721,27997,27255,29682,30788,27998,27994,27268,29721,29708)
-Beta = c(0.083,0.064,0.052,0.052,0.044,0.035,0.034,0.035,0.029,0.026,0.018,0.015)
-SE <- c(0.028,0.030,0.028,0.029,0.030,0.028,0.028,0.029,0.029,0.030,0.028,0.028)
-P <- c('3.44E-03','3.15E-02','6.62E-02','7.22E-02','1.34E-01','2.19E-01','2.25E-01','2.29E-01','3.23E-01','3.81E-01','5.37E-01','6.10E-01')
-R <- c(0.132,0.097,0.094,0.021,0.007,0.006,0.026,0.005,0.007,0.041,0.002,0.006)
-Eta <- c(0.107,0.082,0.083,0.000,0.001,0.004,0.001,0.005,0.007,1.58E-04,4.37E-05,4.57E-06)
-CI <- c(0.056,0.058,0.056,0.057,0.058,0.056,0.055,0.057,0.057,0.058,0.056,0.056)
-Lower <- c(0.027,0.006,-0.003,-0.005,-0.014,-0.021,-0.021,-0.022,-0.028,-0.032,-0.038,-0.041)
-Upper <- c(0.139,0.122,0.108,0.110,0.103,0.091,0.088,0.093,0.086,0.084,0.073,0.070)
-Wu <- c(0.973,0.672,0.774,0.0003,0.334,0.001,0.527,0.936,0.746,0.001,0.433,0.223)
-Fstat <- c(676,641,652,706,603,729,678,625,614,671,661,650)
-mytable = data.frame(cbind(FullName, Name, N, Beta, SE, P, R, Eta, CI, Lower, Upper, Wu, Fstat))
-colnames(mytable) <- c('Full name', 'Short Name',	'N',	'Βeta coefficient',	'SE',	'P value',	'R2',	'Eta2',	'95% CI',	'Lower 95% CI',	'Upper 95% CI', "Wu-Hausman P value", 'F-statistic (GRS and BMI association)')
-mytable %>% kable(caption = "(ref:caption-BMI-platelets-MR)", booktabs = TRUE, caption.short = "(ref:scaption-BMI-platelets-MR)") %>% 
-  kable_classic_2(full_width = F) %>%
- kable_styling(full_width = TRUE) %>%
-  column_spec(1, width = "3cm")   %>%
-  landscape()
-```
-
-(ref:caption-BMI-platelet-forest) **Forest plot of the Mendelian randomization (MR) and unadjusted observational estimates for the effect of BMI on platelet traits.** Estimate points are filled where P < 0.05. SFL = side fluorescence, IPC = immature platelet count, H-IPF = high fluorescence immature platelet function, FSC = forward scatter, P-LCR = platelet large cell ratio, PDW = platelet distribution width, MPV = mean platelet volume, PCT = plateletcrit, PLT (I) = platelet count (impedance channel), PLT (F) = platelet count (PLT-F channel), SSC = side scatter.
-(ref:scaption-BMI-platelet-forest) Forest plot of the Mendelian randomization and unadjusted observational estimates for the effect of BMI on platelet traits
-```{r BMI-platelet-forest, out.width="90%", echo = FALSE, fig.cap="(ref:caption-BMI-platelet-forest)", fig.scap = "(ref:scaption-BMI-platelet-forest)"}
-include_graphics(path = "figure/BMI_platelets/BMI_platelet_forestplot.pdf", dpi = NA)
-
-```
-
-### Stratifying BMI and IPC associations by BMI group
-We explored whether associations between BMI and IPC varied across NHS BMI groups (underweight <18.5 kg/m^2^, healthy weight 18.5-24.9kg/m^2^, overweight 25-29.9 kg/m^2^, obesity 30+ kg/m^2^). IPC had consistent BMI effects across observational and MR analyses. Stratifying by BMI category suggested that the strongest association between BMI and IPC was the overweight category (Table \@ref(tab:BMI-platelets-stratified)).
-
-(ref:caption-BMI-platelets-stratified) **Associations between BMI and immature platelet count (IPC) stratified by NHS BMI category.** Beta coefficient is the change in IPC (SDs) per SD increase in BMI
-(ref:scaption-BMI-platelets-stratified) Associations between BMI and immature platelet count (IPC) stratified by NHS BMI category
-```{r BMI-platelets-stratified,  echo=FALSE}
-options(knitr.kable.NA = "")
-Adjustment <- c('Age and sex','Age and sex','Age and sex','Age and sex','Fully adjusted','Fully adjusted','Fully adjusted','Fully adjusted' )
-Group = c('Underweight','Healthy','Overweight','Obese','Underweight','Healthy','Overweight','Obese')
-BMIrange <- c('<18.5','18.5-24.9','25-29.9','30+','<18.5','18.5-24.9','25-29.9','30+')
-N = c(169,11889,10189,5008,149,10500,8918,4342)
-Beta = c(0.202,0.039,0.092,0.032,0.269,0.033,0.070,0.018)
-SE <- c(0.834,0.018,0.034,0.032,0.296,0.019,0.036,0.035)
-P <- c(0.461,0.026,0.006,0.315,0.366,0.079,0.052,0.614)
-R <- c(-0.009,0.003,0.006,0.004,0.033,0.004,0.006,0.005)
-CI <- c(1.635,0.035,0.066,0.063,0.580,0.037,0.070,0.069)
-Lower <- c(-1.434,0.005,0.027,-0.031,-0.311,-0.004,0.000,-0.051)
-Upper <- c(1.837,0.074,0.158,0.096,0.849,0.069,0.140,0.086)
-mytable = data.frame(cbind(Adjustment, Group, BMIrange, N, Beta, SE, P, R, CI, Lower, Upper))
-colnames(mytable) <- c('Adjustment', 'Group', 'BMI range',	'N',	'Beta coefficient',	'SE',	'P value',	'R2',	'95% CI',	'Lower 95% CI',	'Upper 95% CI')
-mytable %>% kable(caption.short = "(ref:scaption-BMI-platelets-stratified)", caption = "(ref:caption-BMI-platelets-stratified)", booktabs = TRUE  ) %>% 
-  kable_classic_2(full_width = F) %>%
- kable_styling(full_width = TRUE) %>%
-   column_spec(1, width = "2.5cm")   %>%
-     column_spec(2, width = "2.5cm")   %>%
- landscape()
-```
-
-### Follow-up associations between IPC and whole blood aggregation in COPTIC
-Given evidence for a causal effect of BMI on IPC in the MR analysis, we sought to evaluate the relationship between IPC and platelet activity as a biological parameter of clinical relevance. Whilst this analysis could not be conducted in INTERVAL due to a lack of suitable data, we were able to utilize data from the COPTIC study to address this question. The COPTIC study is a cohort of cardiac surgery patients, with samples taken pre-surgery. These participants have whole blood aggregation measured, therefore making it possible to determine associations between IPC and aggregation in a clinical setting.
-
-### COPTIC participant characteristics
-The total number of COPTIC participants was 2,541. Of these, 2,518 participants gave consent for future research (Table \@ref(tab:COPTIC-participants-platelets)). Participants included in the analysis were those not on antiplatelet therapy (N=655). The majority of participants were male (61.8%), with a mean age of 63.9 years (SD of 16.1). Similar to the INTERVAL cohort, the mean BMI was in the overweight category (27.2 kg/m^2^ with a SD of 4.9 kg/m^2^). The majority of participants were either never smokers or ex-smokers for more than 5 years (89.2 %). The effect estimate for the effect of BMI on IPC was 0.06 (95% CI -0.01 to 0.14, P=0.09) and therefore consistent with that estimated in the INTERVAL cohort (Table \@ref(tab:BMI-platelets-COPTIC)).
-
-(ref:caption-COPTIC-participants-platelets) **Characteristics of COPTIC study participants**
-(ref:scaption-COPTIC-participants-platelets) Characteristics of COPTIC study participants
-```{r COPTIC-participants-platelets,  echo=FALSE}
-options(knitr.kable.NA = "")
-f = c("Age", "Sex", "Female", "Male", "Body mass index (kg/m2)", "Smoking", "Never", "Ex-smoker (>5 years)", "Ex-smoker (1-5 years)", "Ex-smoker (30 days to 1 year)", "Current smoker", "Antiplatelet medications", "0", "1", "2", "3", 'ADP aggregation (AU)','Adrenaline aggregation (AU)','Arachidonic acid aggregation (AU)','TRAP-6 aggregation (AU)','Platelet count (x 109/L)','Mean platelet volume (fL)','Immature platelet fraction (%)','Immature platelet count (x 109/L)')
-co = c('66.7 (11.9)', NA, '24.9 %','75.1 %','27.9 (4.6)', NA,' 38.5 %','47.4 %','8.3 %','1.9 %','3.9 %', NA, '26.6 %','50.7 %','22.5 %','0.2 %','138.2 (50.1)','53.0 (28.2)','86.9 (62.1)','200.0 (50.1)','209.8 (60.5)','10.6 (1.0)','3.2 (1.9)' ,'6.3 (3.4)')
-i = c(2502,2518,NA,NA,2422,2469,NA,NA,NA,NA,NA,2467,NA,NA,NA,NA,2377,2363,2375,2373,2409,2400,2379,2383)
-mean <- c('63.9 (16.1)',NA, '38.2 %' ,'61.8 %','27.2 (4.9)', NA, '50.8 %','38.4 %','6.3 %','2.1 %','2.4 %', NA, '100 %', NA, NA, NA,'141 (46.5)','56.8 (32.3)','148.9 (52.4)','198.7 (50.0)','200.9 (57.6)','10.6 (0.98)','3.3 (2.0)','6.2 (3.3)')
-n <- c(655,655,NA,NA,649,654,NA,NA,NA,NA,NA,655,NA,NA,NA,NA,625,621,623,623,637,634,628,629)
-mytable = data.frame("Variable"  = f, "Mean (SD) or % (all)" = co, "N (all)" = i, "Mean (SD) or % (included)" = mean, "N (included)" = n)
-colnames(mytable) <- c("Variable",  "Mean (SD) or % (all)", "N (all)", "Mean (SD) or % (included)", "N (included)" )
-mytable %>% kable(caption = "(ref:caption-COPTIC-participants-platelets)", booktabs = TRUE, caption.short = "(ref:scaption-COPTIC-participants-platelets)") %>% 
-  kable_classic_2(full_width = F) %>%
+f = c("Platelet count (PLT) (10^9^/L)", "Immature platelet fraction (IPF) (%)", "Immature platelet count (IPC) (10^9^/L)", "Side fluorescence (SFL)", "Forward scatter (FSC)", "Side scatter (SSC)")
+co = c("257.8 (29.1)", "3.8 (2.3)", "9.3 (4.9)", "82.0 (5.8)", "53.8 (5.5)", "40.3 (1.1)")
+i = c("235.8 (61.5)", "7.3 (8.3)", "16.3 (16.3)", "85.1 (9.8)", "60.5 (8.8)", "41.8 (3.0)")
+p <- c(0.54,0.44,0.45,0.61,0.24,0.37) 
+mytable = data.frame("Platelet trait"  = f, "Control mean (SD) or %" = co, "Bariatric patient mean (SD) or %" = i, "P value for difference" = p)
+colnames(mytable) <- c('Variable', "Control mean (SD)", "Bariatric patient mean (SD)", "P value for difference" )
+mytable %>% kable(caption = "(ref:caption-obesity-platelets-parameters)", booktabs = TRUE, format = "markdown", caption.short = "(ref:scaption-obesity-platelets-parameters)") %>%  kable_classic_2(full_width = F) %>%
   #kable_paper("hover", full_width = F)
-   add_indent(c(3, 4, 7:11, 13:16), level_of_indent = 1) %>%
  kable_styling(full_width = TRUE) %>%
-column_spec(1, width = "4cm")
-```
-
-(ref:caption-BMI-platelets-COPTIC) **Association between BMI and platelet parameters in COPTIC (adjusted for age, sex, smoking).** Beta coefficient is the change in platelet measure ins SDs per SD higher BMI.
-(ref:scaption-BMI-platelets-COPTIC) Association between BMI and platelet parameters in COPTIC (adjusted for age, sex, smoking)
-
-```{r BMI-platelets-COPTIC,  echo=FALSE}
-options(knitr.kable.NA = "")
-Outcome <- c('MPV', 'IPC', 'PLT', 'IPF')
-N = c(627, 622, 630, 621)
-Beta = c(0.08,0.06,0.04,0.03)
-SE <- c(0.04, 0.04, 0.04, 0.04)
-P <- c(0.04, 0.09, 0.32, 0.36)
-R <- c(0.003,0.013,0.071,0.014)
-CI <- c(0.07, 0.07, 0.07, 0.07)
-Lower <- c("0.00", -0.01, -0.03, -0.04)
-Upper <- c(0.15, 0.14, 0.10, 0.11)
-mytable = data.frame(cbind(Outcome, N, Beta, SE, P, R, CI, Lower, Upper))
-colnames(mytable) <- c('Outcome',	'N',	'Βeta coefficient',	'SE',	'P value',	'R2',	'95% CI',	'Lower 95% CI',	'Upper 95% CI')
-mytable %>% kable(caption = "(ref:caption-BMI-platelets-COPTIC)", caption.short="(ref:scaption-BMI-platelets-COPTIC)", booktabs = TRUE) %>% 
-  kable_classic_2(full_width = F) %>%
- kable_styling(full_width = TRUE) %>%
-  landscape()
-```
-
-### Association between IPC and aggregation in COPTIC cohort
-
-To determine the potential functional effects of variation in IPC, the COPTIC cohort was used to assess the observational association between IPC and whole blood platelet aggregation in response to a range of platelet agonists (Figure \@ref(fig:IPC-aggregation)A). In participants who were not on antiplatelet therapy (up to N=655), there was evidence for a positive association between IPC and aggregation induced by adrenaline (0.13 SD increase per SD increase in IPC, 95% CI 0.04 to 0.21, p=3.7x10-3), TRAP-6 (0.11 SD increase per SD increase in IPC, 95% 0.03 to 0.18, p=7.8x10-3) and ADP (0.08 SD per SD increase in IPC, 95% 0.01 to 0.0.15, p=0.04). As there was a high correlation among platelet traits (Figure \@ref(fig:IPC-aggregation)A, Figure \@ref(fig:IPC-aggregation)B), the effect of MPV, PLT and IPF were also assessed. PLT was associated with all four measures of aggregation, with a larger effect estimate than IPC (Figure \@ref(fig:IPC-aggregation)A). The finding that IPC does not correlate with PLT however suggests that the effect of IPC on platelet aggregation is independent of the effect of PLT on platelet aggregation (Figure \@ref(fig:IPC-aggregation)B). Fitting PLT alongside IPC as an additional predictor of aggregation had little effect on the IPC effect estimate providing further evidence of independent contributions from the two traits (Figure \@ref(fig:IPC-aggregation)C). Adjustment for PLT in the regression model for the association between IPF and aggregation provided estimates of a similar magnitude to that of IPC and aggregation.
-
-(ref:caption-IPC-aggregation) **Association between platelet measures and whole blood platelet aggregation in COPTIC trial participants.** A) Forest plot displaying the association between platelet measures (exposure) and aggregation (outcomes). B) Correlation matrix displaying the Pearson’s correlation coefficient (r) between platelet traits. C) Forest plot displaying the effect estimate for the association between immature platelet count (IPC) or immature platelet fraction (IPF) and measures of aggregation, with or without adjustment for platelet count (PLT). ADP = adenosine diphosphate, AA = arachidonic acid, MPV = mean platelet volume.
-(ref:scaption-IPC-aggregation) Association between platelet measures and whole blood platelet aggregation in COPTIC trial participants
-```{r IPC-aggregation, echo = FALSE, out.width="85%", fig.cap="(ref:caption-IPC-aggregation)", fig.scap = "(ref:scaption-IPC-aggregation)"}
-include_graphics(path = "figure/BMI_platelets/IPC_aggregation.pdf", dpi = NA)
+column_spec(1, width = "5cm")
 
 ```
 
-(ref:caption-BMI-platelet-cartoon) Graphical summary of findings
-```{r BMI-platelet-cartoon, echo = FALSE, out.width="90%", fig.cap="(ref:caption-BMI-platelet-cartoon)"}
-include_graphics(path = "figure/BMI_platelets/Visual_abstract.pdf", dpi = NA)
+### Basal receptors
+Activation of the integrin α~IIb~β~3~ and expression of P-selectin were compared across bariatric and control groups to see whether there was a difference in basal platelet activation. Basal integrin α~IIb~β~3~ activation and P-selectin expression were similar across groups (Figures \@ref(fig:basal-integrin-pselectin-receptor-bariatric)A and B). Expression of other platelet surface receptors in unstimulated platelets were also compared using specific antibodies. Levels of GPVI, CD42b (GP1bα), CD41 (integrin α~IIb~), CD61 (Integrin β~3~) and CD110 (thrombopoietin/TPO receptor) were not different across groups (Figure \@ref(fig:basal-integrin-pselectin-receptor-bariatric)C). 
+
+(ref:scaption1) Comparison of basal integrin α~IIb~β~3~ activation, P-selectin expression and surface receptors levels across control and bariatric patient groups
+(ref:caption1) **Comparison of basal integrin α~IIb~β~3~ activation, P-selectin expression and surface receptors levels across control and bariatric patient groups.** Diluted PRP was used for experiments, where platelets were incubated with antibodies for 10 minutes before fixing. Bar graphs comparing A) Basal integrin α~IIb~β~3~ activation B) Basal  P-selectin expression and C) Basal surface receptor expression across bariatric patient and control groups. Antibodies were used to detect surface expression of GPVI, CD42b (GP1bα), CD41 (integrin α~IIb~), CD61 (Integrin β~3~) and CD110 (thrombopoietin/TPO receptor). N=4. P-values indicated for unpaired t-test results. Mean + SEM displayed.
+
+```{r basal-integrin-pselectin-receptor-bariatric, out.width = "90%", echo = FALSE, fig.cap="(ref:caption1)", fig.scap= "(ref:scaption1)"}
+include_graphics(path = "figure/Bariatric_study/Basal_surface_receptors.pdf", dpi = NA)
+
+```
+
+
+### Agonist-induced integrin α~IIb~β~3~ activation and P-selectin expression
+
+Markers of platelet activation were compared in response to different platelet agonists. There was weak evidence that the integrin α~IIb~β~3~ maximum response was reduced in the bariatric patient group in response to PAR1-AP (2479 AU (SEM 126) in control vs 2105 AU (SEM 101) in bariatric group, p=0.06) and ADP (2526 AU (SEM 121) in control group vs 2274 AU (SEM 478), p=0.05), but there was no change in the pEC50s across groups. There was insufficient data to compare the pEC50s and max of the curves for CRP, however comparing the highest concentration of CRP, there was no difference in response across the bariatric and control group for activation of the integrin α~IIb~β~3~ (Figures \@ref(fig:agonist-integrin-pselectin)A-C). There was no difference in the levels of P-selectin across bariatric patients and control groups in response to PAR1-AP or ADP (Figures \@ref(fig:agonist-integrin-pselectin)D and E) as determined by the pEC50 or the curve maximum values. There was no evidence for a difference in expression of P-selectin across bariatric and control groups in response to the highest concentration of CRP ((Figure \@ref(fig:agonist-integrin-pselectin)F).
+
+(ref:scaption2) Concentration-response curves of integrin α~IIb~β~3~ activation and P-selectin expression for bariatric patient and control groups
+(ref:caption2) **Concentration-response curves of integrin α~IIb~β~3~ activation and P-selectin expression for bariatric patient and control groups** in platelet rich plasma diluted in HEPES-Tyrode's. Integrin α~IIb~β~3~ activation in response to A) PAR1-AP, B) ADP and C) CRP. P-selectin expression in response to D) PAR1-AP, E) ADP, F) CRP. N=4. Mean ± SEM displayed. P values are the comparison of either the pEC50 or the maximum of the curve for the individual concentration-response curves across the bariatric patient and control groups. For CRP, the p value for an unpaired two-tailed t-test comparing the response to 1x10^-5^ g/mL CRP across the bariatric patient and control groups is displayed.
+
+```{r agonist-integrin-pselectin, out.width = "90%",echo = FALSE, fig.cap="(ref:caption2)", fig.scap= "(ref:scaption2)"}
+include_graphics(path = "figure/Bariatric_study/Agonist_Integrin_Pselectin.pdf", dpi = NA)
+
+```
+
+### Platelet-neutrophil aggregates
+
+Next, platelet-neutrophil interactions were explored to determine whether there was a difference in the proportion of neutrophils that are bound to platelets, therefore demonstrative of a difference in inflammation and hyperactive platelets. This was explored by gating neutrophils using an antibody for the specific neutrophil marker, CD45, and their side scatter (granularity). Within this gate, the percentage of neutrophils interacting with platelets was determined by using an antibody for the platelet specific marker CD41 (integrin α~IIb~ subunit) and determining the percentage of events that were both CD45+ and CD41+. There was no difference in the percentage of neutrophils bound to platelets under basal conditions (7.0 % (SEM 1.5 %) in control v 11.2 % (SEM 3.2%) in bariatric patient group, p=0.30). Similarly, after stimulation with CRP, there was no difference in the percentage of neutrophil-platelet aggregates (38.6 % (SEM 2.6 %) in control group v 35.5 % (SEM 2.7 %), p=0.48).  
+
+(ref:scaption2b) Comparison of neutrophil-platelet aggregates across bariatric and control groups.
+(ref:caption2b) **Comparison of neutrophil-platelet aggregates across bariatric and control groups.** Neutrophil-platelet aggregates were determined using CD45 and CD41 antibodies. Aggregates were compared across bariatric patient and control participant groups in unstimulated and stimulated (5 ug/mL CRP) conditions. N=4. P-values provided for the results of a two-way ANOVA with Sidak's multiple comparisons tests. Mean + SEM displayed.
+
+```{r platelet-neutrophil, echo = FALSE, out.width = "70%", fig.cap="(ref:caption2b)", fig.scap= "(ref:scaption2b)"}
+include_graphics(path = "figure/Bariatric_study/Plt-neu_aggregates.pdf", dpi = NA)
+
+```
+
+### Platelet proteomics
+
+A total of 5318 proteins were detected from platelets of both groups of participants by tandem mass tag mass spectrometry (TMT-MS). A principal component analysis (PCA) was performed on the protein data. PC1 and PC2 explained 27.1 % and 14.4 % of the variance in the data, respectively. A PC plot of PC1 against PC2 is shown in Figure \@ref(fig:pca). PC1 plotted against PC2 did not separate the bariatric patient samples from the control participant samples, despite grouping of three patients (Figure \@ref(fig:pca)). PC3 and PC4 explained 13.1% and 12.6% of the data respectively. When plotting PC3 against PC4, there is separation among the groups (Figure \@ref(fig:pca2)). This suggests that the group was not the main source of variation between the data. 
+
+(ref:scaption-pca) Principal component analysis (PCA): scatter plot of PC1 and PC2
+(ref:caption-pca) **Principal component analysis (PCA): scatter plot of PC1 and PC2.** Each point represents a participant. Control samples are coloured red and bariatric samples coloured blue, with the pooled reference sample of both control and bariatric samples coloured in blue.
+
+```{r pca, echo = FALSE, out.width = "80%", fig.cap="(ref:caption-pca)", fig.scap= "(ref:scaption-pca)"}
+include_graphics(path = "figure/Bariatric_study/Proteomic_PCA.pdf", dpi = NA)
+
+```
+(ref:scaption-pca2) Principal component analysis (PCA): scatter plot of PC3 and PC4.
+(ref:caption-pca2) **Principal component analysis (PCA): scatter plot of PC3 and PC4.** Each point represents a participant. Control samples are coloured pink and bariatric samples coloured blue, with the pooled reference sample of both control and bariatric samples coloured in blue.
+
+```{r pca2, echo = FALSE, out.width = "80%", fig.cap="(ref:caption-pca2)", fig.scap= "(ref:scaption-pca2)"}
+include_graphics(path = "figure/Bariatric_study/PC3vPC4_proteomics.pdf", dpi = NA)
+
+```
+
+There was evidence (p<0.05) that 188 out of a total of 5318 detected platelet proteins (3.5%) were altered in bariatric patients with obesity compared to controls (Figure \@ref(fig:volcano)). Positive logFC values indicate the protein having higher levels in the bariatric group. The protein which had the strongest evidence for a BMI effect was phosphatidylinositol 4-kinase beta (PI4K-beta) (logFC 0.45, p=6.3x10^-5^). The signalling protein G protein-coupled receptor kinase (GRK6) was lower in bariatric patients (logFC -0.15, p=0.002), whereas the adipocyte plasma membrane-associated protein (APMAP) was increased in bariatric patients (logFC 0.23, p=0.006). Platelet proteins previously reported[@Barrachina2019] to be associated with BMI replicated here, including gelsolin (logFC -0.14, p=0.018), actin (cytoplasmic 1, logFC 0.51, p=0.03) and septin-2 (logFC 0.14, p=0.03). Platelet transcripts have been reported to be associated with BMI, including transcripts for myeloperoxidase and protein S100-A9[@Freedman2010]. The current study provides evidence that these alterations in transcripts directly relate to protein levels measured in the proteomics analysis as BMI group was associated with both myeloperoxidase (LogFC 1.15, p=0.04) and protein S100-A9 (logFC 1.48, p=0.049). Similar to the flow cytometry results, no alteration in protein receptors such as the α~IIb~ integrin and GPVI receptor was detected. The full platelet proteomic results can be found here https://github.com/lucygoudswaard/mythesis/blob/f17f0250ad50bad74d7e38225d060aa6cd83321b/index/figure/Bariatric_study/Proteomics_results.xlsx
+
+(ref:scaption-volcano) A volcano plot comparing the Log~2~ fold change in protein levels in bariatric patients compared to controls
+(ref:caption-volcano) **A volcano plot comparing the Log~2~ fold change in protein levels in bariatric patients compared to controls.** Dashed lines indicate a log~2~ fold change of 0.3 and a pvalue cut off of 0.05 (-Log~10~ pvalue of 1.3)
+
+```{r volcano, echo = FALSE, out.width="80%", fig.cap="(ref:caption-volcano)", fig.scap= "(ref:scaption-volcano)"}
+include_graphics(path = "figure/Bariatric_study/volcano_proteomics_labelled.pdf", dpi = NA)
+
 ```
 
 ## Discussion
 
-In this study we used data from 33,388 healthy blood donors to study the effect of BMI on platelet phenotypes including measures of count, size and maturity. The combination of observational and MR estimates suggested a positive causal effect of BMI on SFL and IPC. The observational analysis revealed a strong association between BMI and both PLT and PCT, however the MR estimates did not provide evidence to support this association as causal. Observational analysis using data from a cardiac surgery cohort provided evidence for a positive association between IPC and aggregation induced by adrenaline, TRAP6 and ADP.
+This chapter explored the effect of obesity on platelet parameters and platelet function by collecting pre-surgery samples from bariatric patients and age and sex-matched controls. Here, I have optimised common experimental laboratory techniques for use within a patient study. In addition, these techniques have also been used to study platelet function within another patient group (COVID-19) and can be implemented in future patient studies. The present study did not detect functional differences in platelet parameters and between bariatric patients compared to healthy controls, but proteomics analysis by TMT-MS detected differences in platelet protein abundance, which may have implications for platelet signalling. 
 
-The observational and MR analyses in the current study provide evidence for a positive association between BMI and both IPC and SFL. Stratifying by NHS BMI category suggested that this estimate is strongest in the overweight category. As IPC is derived using SFL, the measure of mRNA content, these measures are highly correlated. Whilst few studies have explored the direct association between BMI and immature platelet measures, there is some evidence for increased immature platelets in subjects with metabolic syndrome (MS) and subjects with type II diabetes compared with control subjects [@Vaduganathan2008a; @Mijovic2015a]. In these studies, participants with MS or type II diabetes also had a higher BMI, which could be a possible cause of this increase in immature platelets. Indeed, evidence from our analysis suggests that BMI, independent of metabolic syndrome or type II diabetes, may causally influence IPC and SFL.
+This study did not detect differences in platelet characteristics such as IPC when comparing the high BMI bariatric surgery group with the control group. The small sample size and large standard deviation in the high BMI group would explain why the BMI and IPC association detected in Chapter \@ref(BMI-platelets-INTERVAL) was not detected in the current study. There was also no evidence for a difference in levels of platelet receptors under basal conditions. A difference in P-selectin expression in response to agonists across the bariatric patient and control group was not detected, however, there was weak evidence that activation of the integrin α~IIb~β~3~ was impaired in the bariatric patient group. This reduction is modest so it is unclear whether this would impact the ability of platelets to aggregate. A previous study (unpublished) from the Hers group and published data from other groups[@Taus2020] indicated that in severe COVID-19 there is a large reduction (~60% reduction) in platelet integrin α~IIb~β~3~ activation, but an increase in the percentage of platelets bound to neutrophils therefore suggesting there is hyperactivity. It is therefore possible that impaired integrin activation may be a marker of platelet hyperactivity. A similar reduction in integrin α~IIb~β~3~ activation was reported in platelets from patients with myeloproliferative disorders who also have a prothrombotic phenotype[@Moore2013]. Despite this, in the current study there was no difference in the percentage of neutrophils bound to platelets in the bariatric surgery group. This may be because the reduction in integrin α~IIb~β~3~ activation was not large enough (it was only ~10% reduction in the bariatric surgery group in response to ADP).
 
-As IPC is an indirect measure of platelet production [@Lev2016a], these results suggest that an increased BMI may lead to an increased production of platelets. It has been reported that immature platelets have increased thrombotic potential [@Lev2016a; @Grove2011a] and may be predictive of cardiovascular events [@Ibrahim2014; @Freynhofer2017a], suggesting that an increase in the number of immature platelets may be of functional and clinical relevance. A follow-up analysis confirmed that higher IPC was associated with greater platelet aggregation independent of absolute platelet count within a cardiac surgery cohort. Positive associations were found between IPC and aggregation induced by adrenaline, TRAP-6 and ADP, suggesting general platelet hyperactivity with more immature platelets. A previous study in a coronary artery disease cohort also found a positive correlation between IPC and aggregation induced by arachidonic acid, collagen and ADP [@Grove2011a]. These findings suggest that IPC can be used as a proxy for platelet hyperactivity within a cohort with a history of cardiovascular disease. Measures of immature platelets are currently not considered in the clinic when prescribing antiplatelet therapy, however if a higher immature platelet count is demonstrative of newly produced, hyperactive platelets then this could be important in guiding dosage regimes to ensure sufficient platelet inhibition [@Bernlochner2015a]. Observational studies have also found that patients with COVID-19 have elevated immature platelet counts and fraction, which could partly explain high rates COVID-19 induced thrombosis [@Cohen2020, @Klok2020]. Despite the association between BMI and IPC, there was less evidence for an effect of BMI on IPF. This lack of association may be because IPF is the proportion of immature platelets, therefore if someone had a higher number of immature platelets, but also a higher number of platelets overall (for example due to increased platelet lifespan), there would be no increase in the immature platelet fraction.
+One previous study detected an increase in GPVI receptor levels and GPVI mediated platelet aggregation[@Barrachina2019]. Despite this previous finding, Barrachina et al. did not directly measure activation of the integrin α~IIb~β~3~, so it is unclear how this increase in expression would translate to the activation of this integrin. A larger sample size would be required to be able to draw conclusions here. As well as this, aggregation experiments would have also been useful to compare platelet function across groups, however this technique was not chosen due to time restraints and large amount of sample required.
 
-In general, previous studies have reported positive observational associations between BMI and both PLT and PCT [@Furuncuoglu2016]. More direct measures of body fat such as total fat mass, waist-hip ratio and waist circumference have also been reported to be positively associated with both PLT and PCT [@Han2018a]; the observational evidence from the current study is in agreement with this. The MR analysis did not detect causal effects of BMI on measures of PLT/PCT, however the estimates were consistently positive. It is possible that IPC could be raised in absence of raised PLT as platelets may being produced at an increased rate, but could also be being destroyed at an increased rate. The small P values in the Wu-Hausman test for endogeneity for plateletcrit and platelet count variables support that the observational and MR estimates are different. Estimates could be biased due to confounding factors, reverse causation or other sources of bias. Possible routes of confounding could include stress, inflammation and nutrition, which could exert independent effects on both BMI and platelet count. 
+The principal component analysis of the proteomic data suggested that PC4 was able to separate the bariatric and control groups. Although PC4 was not the main source of variance, even with a small N number, this provided evidence that the group (bariatric/control) could explain variation in proteins. Therefore, some protein signatures may be due to the difference in BMI. However, it could also be due to other factors which differed across groups such as previous COVID-19 infection or T2D diagnosis. Concordance with previous studies in terms of proteins reportedly altered with BMI also suggests that the current study is likely capturing platelet protein signatures of obesity. Table \@ref(tab:proteome-lit) shows the results that have replicated in the current study when comparing to three previous studies that have studied the platelet proteome[@Barrachina2019], platelet microvesicle proteome[@Grande2019] and platelet transcriptome in relation to obesity[@Freedman2010]. 
 
-Both observational and MR estimates suggested that BMI is not associated with measures of platelet size, such as MPV and P-LCR. There are conflicting findings in the literature, with some studies suggesting that there is a positive association between BMI and MPV [@Coban2005] and others showing no association [@Furuncuoglu2016; @Han2018a; @Heffron2018]. The results of the current study suggest that associations seen previously between BMI and MPV are likely due to confounding of observational estimates. The lack of association between BMI and MPV may be surprising given a correlation coefficient of 0.62 between IPC and MPV.  As BMI was positively associated with immature platelet count, and immature platelets tend to be larger, it may be surprising that BMI was not associated with measures of platelet size. However, immature platelets make up a small percentage of overall platelets (~3-6 %) [@Ibrahim2014; @Bernlochner2015a], therefore the increase in immature platelets may not affect the overall median size of the whole platelet population.
+(ref:caption-proteome-lit) **Summary of current literature on the effect of body mass index on the platelet proteome**
+(ref:scaption-proteome-lit) Summary of current literature on the effect of body mass index on the platelet proteome
+```{r proteome-lit,  echo=FALSE}
+ options(knitr.kable.NA = "")
+ paper = c("GPVI surface expression and signalling pathway activation are increased in platelets from obese patients: Elucidating potential anti-atherothrombotic targets in obesity", "Platelet-Derived Microparticles From Obese Individuals: Characterization of Number, Size, Proteomics, and Crosstalk With Cancer and Endothelial Cells", "Relation of platelet and leukocyte inflammatory transcripts to body mass index in the Framingham heart study")
+ author = c("Barrachina et al., 2019", "Grande et al., 2019", "Freedman et al., 2010")
+ findings = c('Proteins altered: Actin, cytoplasmic 1 (Fragment), Septin-2, Gelsolin, Glycerol-3-phosphate dehydrogenase', 'Platelet microvesicle proteins altered: LIM and senescent cell antigen-like containing domain protein 1', 'Platelet transcripts altered: myeloperoxidase (MPO), S100-A9')
+ mytable = cbind(paper, author, findings)
+  colnames(mytable) <- c("Paper", "Author, year", "Overlapping findings")
+ mytable %>% kable(caption = "(ref:caption-proteome-lit)", booktabs = TRUE, caption.short = "(ref:scaption-proteome-lit)") %>% 
+   kable_classic_2(full_width = F) %>%
+   #kable_paper("hover", full_width = F)
+  kable_styling(full_width = TRUE) %>%
+ column_spec(3, width = "9cm") %>%
+   column_spec(2, width = "3cm") %>%
+     column_spec(1, width = "5cm") %>%
+   landscape()
+```
 
-Although this study suggests potential effects of BMI on platelet traits such as SFL and IPC, it does not provide mechanistic insight into how BMI exerts these effects. Previous studies have suggested that inflammation driven by adiposity can stimulate megakaryocyte proliferation, thereby increasing platelet numbers [@Han2018a]. There is evidence that inflammatory mediators such as interleukin-6 (IL-6) could be one such factor [@Kaser2001]. Further study would be warranted to explore these mechanisms, as well as replicate the current findings, such as through independent population or clinical studies. 
+Evidence from the current study and results from Barrachina et al[@Barrachina2019]. point towards platelet proteins which may be altered with obesity such as actin, gelsolin and septin-2. Actin is important in platelet shape change and activation[@Bearer2002; @Barrachina2019]. Higher actin levels in platelets from patients with obesity could contribute to platelet hyperactivity. Mutations in the gene which encodes actin (ACTB) can cause Baraitser-Winter cerebrofrontofacial syndrome (BWCFF). Patients with this syndrome have been reported to have a low platelet count (thrombocytopenia) with enlarged platelets and a higher immature platelet fraction[@Latham2018]. This actinopathy is known as ACTB-associated syndromic thrombocytopenia. It is therefore possible that increased levels of actin may be indicative of more newly produced platelets. Gelsolin is another platelet cytoskeletal protein, which was lower in the bariatric patient group. Gelsolin levels were shown to be lower in PRP from patients with stable angina pectoralis compared with controls, however they were higher in patients with unstable angina pectoralis and acute myocardial infarction patients[@Yue2011]. Recombinant human gelsolin has been shown to be protective against thromboembolism in mice, thereby suggesting that reduced levels seen in the current study could increase thrombosis risk[@Gupta2019]. Septins are cytosolic proteins which are also reported to be important in integrin α~IIb~β~3~ activation, platelet spreading and clot contraction[@Kim2020]. Septin-2 levels were higher in platelets from bariatric patients, suggesting this may lead to increased platelet activation. Although no difference was found in α~IIb~β~3~ activation, it would be useful to explore whether there are differences in platelet aggregation and platelet spreading.
 
-There are a few limitations to the study that should be recognised. Firstly, BMI was derived from self-reported height and weight. Although there is potential for this to bias observations, previous studies have found that self-reported BMI and BMI measured in the clinic are strongly associated [@Nikolaou2017]. The GRS also associates with BMI to the extent expected. Secondly, there may be other confounders which were not recorded within INTERVAL and therefore could not be accounted for in our models, such as, socio-economic position, which may affect both BMI and risk of thrombosis. Therefore, residual confounding of observational estimates cannot be ruled out. Whilst the INTERVAL study provided relatively precise estimates of effect overall, larger sample sizes within each BMI category would be required to further investigate potential nonlinearity in the relationship between BMI and IPC. With respect to the observational analysis conducted in COPTIC, the sample size is modest, which may limit power to detect associations. Furthermore, this cohort required cardiac surgery and therefore it is possible that associations found may not be generalizable to the wider population,  as participants also displayed greater aggregatory responses than the reference ranges [@Marcucci2015].  However, these findings do indicate that immature platelets may be a biomarker of platelet hyperactivity in patients with a history of cardiovascular disease. It is important to note that the anticoagulant used (EDTA) has been reported to affect platelet parameters, such as increasing MPV and decreasing PLT [@Mannuß2020]. Despite this, EDTA is the standard anticoagulant used for full blood counts in the NHS. The Sysmex analyzers used in INTERVAL and COPTIC were different models, however, it has been shown that there is strong association between platelet measures between the XE and newer XN analyzers [@Briggs2012].
+There is also overlap between platelet proteins altered with BMI in the current study and platelet transcripts that are reported to be altered with higher BMI[@Freedman2010]. For example, S100A9 (Myeloid-related protein-14 or MRP-14) transcripts were altered with BMI and the levels of the protein were increased in the bariatric group in the current study. Studies in mice have found evidence that S100A9 is involved in thrombus formation[@Wang2014a], and there is evidence for its involvement in myocardial infarction[@Cai2020]. Likewise, myeloperoxidase (MPO) transcripts were associated with BMI and there were higher protein levels in bariatric patients with obesity. A previous study has shown evidence that MPO can potentiate ADP-induced platelet aggregation in PRP[@Gorudko2013].
 
-Altogether, we show observational and MR evidence that an increased BMI is associated with an increase in number of immature platelets. Observational evidence indicates that higher immature platelet count is associated with enhanced aggregation in a cardiac surgery cohort. Together, these results indicate that higher BMI may enhance platelet function and thrombosis by increasing platelet production and immature platelet count. 
+These platelet proteins have previously been reported to be associated with BMI and are therefore more likely to be robust associations. This study has also provided some novel platelet proteins which have different levels in bariatric patients with obesity compared with healthy weight controls. For example, there was an increase in levels of APMAP in platelets from the high BMI group. A SNP which is associated with higher plasma levels of APMAP (rs8125909) is associated with higher BMI and greater weight[@Liu2021], therefore it is possible that the protein is involved in weight regulation, rather than higher BMI altering levels of the protein. Following up this protein after bariatric surgery could help determine the directionality of the effect. There was also a decrease in levels of G protein-coupled receptor kinase (GRK6) in the high BMI group. GRKs phosphorylate G protein coupled receptors (GPCRs) that have been activated by agonists, thereby leading to receptor desensitisation[@Chaudhary2020]. GRK6 knockout mice have been shown to have larger aggregatory responses to agonists and more dense and α-granule secretion, along with increased thrombus formation[@Chaudhary2020] as a result of less receptor desensitisation occurring. Together, these results therefore reflect a platelet proteomic footprint of higher BMI that implicates a hyperactive platelet environment. Investigating the role of these proteins would be informative. It would also be important to explore additional measures of platelet activation such as platelet aggregation, calcium mobilisation and in vitro thrombus formation, as well as replicating experiments in a larger cohort.
+
+In the proteomics analysis, a post hoc power calculation was performed to determine the range of power for the effect sizes where p<0.05. This study had at least 67% power to detect effect sizes, but for some proteins which had smaller p values, there was 100% power. A larger sample size would be required to be able to detect smaller effect sizes.
+
+Overall, this study optimised experimental techniques to test platelet function from patients. Sample sizes were limited and only small differences were detected in platelet function experiments and Sysmex platelet parameters. Platelet proteomic analysis replicated previous findings in relation to proteins which may be altered by BMI and implicated some novel proteins which are altered by BMI and may lead to changes in platelet function. Larger sample sizes of participants which display more similar characteristics would be required to confirm findings. 

@@ -5,18 +5,18 @@
 \contentsline {figure}{\numberline {2.3}{\ignorespaces Schematic of the multi-step pathway addressed in the thesis}}{21}{figure.caption.9}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Schematic of the associations explored in the current chapter: the relationship between body mass index and platelet traits.}}{38}{figure.caption.27}%
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Schematic of linear regression and Mendelian randomization frameworks for BMI and platelet trait analyses}}{39}{figure.caption.28}%
-\contentsline {figure}{\numberline {4.3}{\ignorespaces A STROBE diagram outlining participants included in the INTERVAL study for BMI and platelet trait analyses.}}{40}{figure.caption.29}%
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Correlation matrix and dendrogram of the relationship between platelet traits}}{46}{figure.caption.32}%
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Linear regression results for the association between age, sex, smoking and alcohol with platelet traits}}{53}{figure.caption.36}%
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Forest plot of the Mendelian randomization and unadjusted observational estimates for the effect of BMI on platelet traits}}{58}{figure.caption.39}%
-\contentsline {figure}{\numberline {4.7}{\ignorespaces Association between platelet measures and whole blood platelet aggregation in COPTIC trial participants}}{64}{figure.caption.43}%
-\contentsline {figure}{\numberline {4.8}{\ignorespaces Graphical summary of findings\relax }}{65}{figure.caption.44}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Schematic of the associations explored in the current chapter: the relationship between body mass index and platelet traits.}}{36}{figure.caption.27}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Schematic of linear regression and Mendelian randomization frameworks for BMI and platelet trait analyses}}{37}{figure.caption.28}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces A STROBE diagram outlining participants included in the INTERVAL study for BMI and platelet trait analyses.}}{39}{figure.caption.29}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Correlation matrix and dendrogram of the relationship between platelet traits}}{45}{figure.caption.32}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Linear regression results for the association between age, sex, smoking and alcohol with platelet traits}}{52}{figure.caption.36}%
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Forest plot of the Mendelian randomization and unadjusted observational estimates for the effect of BMI on platelet traits}}{57}{figure.caption.39}%
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Association between platelet measures and whole blood platelet aggregation in COPTIC trial participants}}{63}{figure.caption.43}%
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Graphical summary of findings\relax }}{64}{figure.caption.44}%
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {5.1}{\ignorespaces Cartoon of integrin α\textsubscript {IIb}β\textsubscript {3} and P-selectin on platelets.}}{71}{figure.caption.45}%
 \contentsline {figure}{\numberline {5.2}{\ignorespaces Schematic of the associations explored in the current chapter}}{72}{figure.caption.46}%
-\contentsline {figure}{\numberline {5.3}{\ignorespaces Comparison of basal integrin α\textsubscript {IIb}β\textsubscript {3} activation, P-selectin expression and surface receptors levels across control and bariatric patient groups}}{75}{figure.caption.48}%
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Comparison of basal integrin α\textsubscript {IIb}β\textsubscript {3} activation, P-selectin expression and surface receptors levels across control and bariatric patient groups}}{76}{figure.caption.48}%
 \contentsline {figure}{\numberline {5.4}{\ignorespaces Concentration-response curves of integrin α\textsubscript {IIb}β\textsubscript {3} activation and P-selectin expression for bariatric patient and control groups}}{77}{figure.caption.49}%
 \contentsline {figure}{\numberline {5.5}{\ignorespaces Comparison of neutrophil-platelet aggregates across bariatric and control groups.}}{79}{figure.caption.50}%
 \contentsline {figure}{\numberline {5.6}{\ignorespaces Principal component analysis (PCA): scatter plot of PC1 and PC2}}{80}{figure.caption.51}%
@@ -36,7 +36,7 @@
 \contentsline {figure}{\numberline {6.11}{\ignorespaces The effect of inhibitors on PAR1-AP and MDC induced aggregation in PRP.}}{104}{figure.caption.66}%
 \contentsline {figure}{\numberline {6.12}{\ignorespaces Aggregation traces of the effect of inhibitors on MDC induced platelet aggregation in PRP.}}{105}{figure.caption.67}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {7.1}{\ignorespaces ref:scaption-Corr-mat-proteins}}{118}{figure.caption.71}%
+\contentsline {figure}{\numberline {7.1}{\ignorespaces Correlation matrix of all protein traits analysed by SomaLogic}}{118}{figure.caption.71}%
 \contentsline {figure}{\numberline {7.2}{\ignorespaces Cluster dendrogram showing the hierarchical relationship between protein levels}}{119}{figure.caption.72}%
 \contentsline {figure}{\numberline {7.3}{\ignorespaces Principal component analysis (PCA) and k-means clustering of proteins}}{121}{figure.caption.73}%
 \contentsline {figure}{\numberline {7.4}{\ignorespaces Q-Q plots of the expected against observed -log10(pvalues) for the associations between covariables and protein traits}}{126}{figure.caption.76}%

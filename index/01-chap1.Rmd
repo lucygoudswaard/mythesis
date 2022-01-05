@@ -90,3 +90,6 @@ Constantinescu A. E., Bull C. J., **Goudswaard L. J.**, Zheng J., Elsworth B., T
 **Poster prize - 2nd place**, 2021, International Genetic Epidemiology Society.
 
 **Travel Award**, 2021, International Society of Thrombosis and Haemostasis.
+
+## Supplementary material
+This paper reports all results where possible. Results which are too long to provide in full are located on GitHub, a platform which has been used for version control when writing this thesis in RMarkdown. GitHub has also been used to store supplementary results. The link to the thesis respository is https://github.com/lucygoudswaard/mythesis. Specific links to supplementary material will be provided where presented in the relevant results chapter.

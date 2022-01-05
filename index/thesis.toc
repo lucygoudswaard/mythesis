@@ -11,83 +11,85 @@
 \contentsline {section}{\numberline {2.2}Cardiovascular diseases are the leading cause of deaths worldwide}{10}{section.2.2}%
 \contentsline {section}{\numberline {2.3}Mendelian randomisation can be used to explore causality}{10}{section.2.3}%
 \contentsline {section}{\numberline {2.4}The genetics of obesity}{11}{section.2.4}%
-\contentsline {section}{\numberline {2.5}Higher BMI has a causal effect on ischaemic heart disease}{12}{section.2.5}%
-\contentsline {section}{\numberline {2.6}Section clarifying CHD/CVD/IHD/thrombosis - which are more relevant to platelets\ldots {}}{12}{section.2.6}%
-\contentsline {section}{\numberline {2.7}How does higher BMI cause increased risk of thrombosis?}{12}{section.2.7}%
+\contentsline {section}{\numberline {2.5}Types of cardiovascular disease}{12}{section.2.5}%
+\contentsline {section}{\numberline {2.6}Higher BMI has a causal effect on ischaemic heart disease}{12}{section.2.6}%
+\contentsline {section}{\numberline {2.7}How does higher BMI cause increased risk of thrombosis?}{13}{section.2.7}%
 \contentsline {section}{\numberline {2.8}Platelets are key cells in thrombosis}{13}{section.2.8}%
 \contentsline {section}{\numberline {2.9}Platelets are therapeutic targets for thrombosis}{14}{section.2.9}%
-\contentsline {section}{\numberline {2.10}Section about needing detailed exploration of platelet function, BMI and intermediates}{14}{section.2.10}%
-\contentsline {section}{\numberline {2.11}Experimental techniques to measure platelet function}{14}{section.2.11}%
-\contentsline {section}{\numberline {2.12}Platelet traits as proxies for platelet function}{15}{section.2.12}%
-\contentsline {section}{\numberline {2.13}Platelet primers}{18}{section.2.13}%
-\contentsline {section}{\numberline {2.14}Mechanisms of obesity-related disease}{18}{section.2.14}%
-\contentsline {section}{\numberline {2.15}The role of circulating platelet primers and disease}{19}{section.2.15}%
-\contentsline {section}{\numberline {2.16}Evaluating the circulating proteome may reveal mechanistic insight into obesity-related diseases}{19}{section.2.16}%
-\contentsline {section}{\numberline {2.17}Paragraph on blood being the corrrect tissue to examine intermediates}{20}{section.2.17}%
-\contentsline {section}{\numberline {2.18}Importance of interdisciplinary methods}{20}{section.2.18}%
-\contentsline {section}{\numberline {2.19}Cohorts utilised within the thesis}{21}{section.2.19}%
-\contentsline {section}{\numberline {2.20}Thesis aims and objectives}{21}{section.2.20}%
-\contentsline {section}{\numberline {2.21}Thesis structure}{21}{section.2.21}%
+\contentsline {section}{\numberline {2.10}Experimental techniques to measure platelet function}{15}{section.2.10}%
+\contentsline {section}{\numberline {2.11}Platelet traits as proxies for platelet function}{15}{section.2.11}%
+\contentsline {section}{\numberline {2.12}Platelet primers}{18}{section.2.12}%
+\contentsline {section}{\numberline {2.13}Mechanisms of obesity-related disease}{18}{section.2.13}%
+\contentsline {section}{\numberline {2.14}The role of circulating platelet primers and disease}{19}{section.2.14}%
+\contentsline {section}{\numberline {2.15}Evaluating the circulating proteome may reveal mechanistic insight into obesity-related diseases}{19}{section.2.15}%
+\contentsline {section}{\numberline {2.16}Associations can be explored using blood}{20}{section.2.16}%
+\contentsline {section}{\numberline {2.17}Importance of interdisciplinary methods}{20}{section.2.17}%
+\contentsline {section}{\numberline {2.18}Cohorts utilised within the thesis}{21}{section.2.18}%
+\contentsline {section}{\numberline {2.19}Thesis aims}{21}{section.2.19}%
+\contentsline {section}{\numberline {2.20}Thesis hypotheses}{21}{section.2.20}%
+\contentsline {section}{\numberline {2.21}Thesis structure}{22}{section.2.21}%
 \contentsline {chapter}{Chapter 3: Common Resources and Methods}{23}{chapter.3}%
-\contentsline {section}{\numberline {3.1}The INTERVAL study}{23}{section.3.1}%
-\contentsline {subsection}{\numberline {3.1.1}Study overview}{23}{subsection.3.1.1}%
-\contentsline {subsection}{\numberline {3.1.2}Assessment of BMI and covariables}{24}{subsection.3.1.2}%
-\contentsline {subsection}{\numberline {3.1.3}Genetic data and instrument for BMI}{24}{subsection.3.1.3}%
-\contentsline {section}{\numberline {3.2}Platelet function experiments}{25}{section.3.2}%
-\contentsline {subsection}{\numberline {3.2.1}Materials}{25}{subsection.3.2.1}%
-\contentsline {subsection}{\numberline {3.2.2}Patient study experiments}{26}{subsection.3.2.2}%
-\contentsline {subsubsection}{Isolation of platelet rich plasma (PRP)}{26}{section*.10}%
-\contentsline {subsubsection}{Platelet lysates}{26}{section*.11}%
-\contentsline {subsubsection}{Platelet parameters measured by Sysmex}{27}{section*.12}%
-\contentsline {subsubsection}{Integrin α\textsubscript {IIb}β\textsubscript {3} activation and P-selectin expression measured by flow cytometry}{27}{section*.13}%
-\contentsline {subsubsection}{Surface receptor levels measured by flow cytometry}{27}{section*.14}%
-\contentsline {subsubsection}{Platelet-neutrophil assay measured by flow cytometry}{27}{section*.15}%
-\contentsline {subsubsection}{Tandem Mass Tag Mass Spectrometry (TMT-MS) quantification of platelet proteins}{28}{section*.16}%
-\contentsline {subsubsection}{Analysis of proteomic data}{28}{section*.17}%
-\contentsline {subsubsection}{Ingenuity pathway analysis enrichment}{29}{section*.18}%
-\contentsline {subsection}{\numberline {3.2.3}Platelet priming experiments}{29}{subsection.3.2.3}%
-\contentsline {subsubsection}{Isolation of human platelets}{29}{section*.19}%
-\contentsline {subsubsection}{Integrin α\textsubscript {IIb}β\textsubscript {3} activation and P-selectin expression measured by flow cytometry}{29}{section*.20}%
-\contentsline {subsubsection}{Platelet aggregation}{30}{section*.21}%
-\contentsline {subsubsection}{Plate platelet aggregation}{30}{section*.22}%
-\contentsline {subsubsection}{Phosphatidylserine (PS) exposure}{31}{section*.23}%
-\contentsline {subsubsection}{Flow cytometry: phospho-VASP}{31}{section*.24}%
-\contentsline {subsubsection}{Western blotting}{31}{section*.25}%
-\contentsline {subsubsection}{Calcium mobilisation}{32}{section*.26}%
-\contentsline {subsection}{\numberline {3.2.4}Statistical analysis for platelet function assays}{33}{subsection.3.2.4}%
-\contentsline {chapter}{Chapter 4: Using observational and MR frameworks to determine the effect of body mass index on platelet characteristics}{35}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Background}{35}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Methods}{39}{section.4.2}%
-\contentsline {subsection}{\numberline {4.2.1}Study population}{39}{subsection.4.2.1}%
-\contentsline {subsection}{\numberline {4.2.2}Measurement of platelet traits}{40}{subsection.4.2.2}%
-\contentsline {subsection}{\numberline {4.2.3}Statistical analysis}{43}{subsection.4.2.3}%
-\contentsline {subsection}{\numberline {4.2.4}Follow-up analysis to explore the association between immature platelets and aggregation}{44}{subsection.4.2.4}%
-\contentsline {subsection}{\numberline {4.2.5}COPTIC study variables}{44}{subsection.4.2.5}%
-\contentsline {subsection}{\numberline {4.2.6}COPTIC statistical analysis}{44}{subsection.4.2.6}%
-\contentsline {section}{\numberline {4.3}Results}{45}{section.4.3}%
-\contentsline {subsection}{\numberline {4.3.1}INTERVAL participant characteristics}{45}{subsection.4.3.1}%
-\contentsline {subsection}{\numberline {4.3.2}Correlation between platelet traits in INTERVAL}{45}{subsection.4.3.2}%
-\contentsline {subsection}{\numberline {4.3.3}Observational associations between BMI and platelet traits in INTERVAL}{47}{subsection.4.3.3}%
-\contentsline {subsection}{\numberline {4.3.4}Associations of covariables with BMI and platelet traits in INTERVAL}{50}{subsection.4.3.4}%
-\contentsline {subsection}{\numberline {4.3.5}GRS for BMI associations with BMI and covariables}{54}{subsection.4.3.5}%
-\contentsline {subsection}{\numberline {4.3.6}Mendelian randomization estimates for the association between BMI and platelet traits}{56}{subsection.4.3.6}%
-\contentsline {subsection}{\numberline {4.3.7}Stratifying BMI and IPC associations by BMI group}{58}{subsection.4.3.7}%
-\contentsline {subsection}{\numberline {4.3.8}Follow-up associations between IPC and whole blood aggregation in COPTIC}{60}{subsection.4.3.8}%
-\contentsline {subsection}{\numberline {4.3.9}COPTIC participant characteristics}{60}{subsection.4.3.9}%
-\contentsline {subsection}{\numberline {4.3.10}Association between IPC and aggregation in COPTIC cohort}{63}{subsection.4.3.10}%
-\contentsline {section}{\numberline {4.4}Discussion}{65}{section.4.4}%
+\contentsline {section}{\numberline {3.1}Supplementary material}{23}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Platelet function experiments}{23}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Materials}{23}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}Patient study experiments}{25}{subsection.3.2.2}%
+\contentsline {subsubsection}{Isolation of platelet rich plasma (PRP)}{25}{section*.10}%
+\contentsline {subsubsection}{Platelet lysates}{25}{section*.11}%
+\contentsline {subsubsection}{Platelet parameters measured by Sysmex}{25}{section*.12}%
+\contentsline {subsubsection}{Integrin α\textsubscript {IIb}β\textsubscript {3} activation and P-selectin expression measured by flow cytometry}{26}{section*.13}%
+\contentsline {subsubsection}{Surface receptor levels measured by flow cytometry}{26}{section*.14}%
+\contentsline {subsubsection}{Platelet-neutrophil assay measured by flow cytometry}{26}{section*.15}%
+\contentsline {subsubsection}{Tandem Mass Tag Mass Spectrometry (TMT-MS) quantification of platelet proteins}{27}{section*.16}%
+\contentsline {subsubsection}{Analysis of proteomic data}{27}{section*.17}%
+\contentsline {subsubsection}{Ingenuity pathway analysis enrichment}{27}{section*.18}%
+\contentsline {subsection}{\numberline {3.2.3}Platelet priming experiments}{28}{subsection.3.2.3}%
+\contentsline {subsubsection}{Isolation of human platelets}{28}{section*.19}%
+\contentsline {subsubsection}{Integrin α\textsubscript {IIb}β\textsubscript {3} activation and P-selectin expression measured by flow cytometry}{28}{section*.20}%
+\contentsline {subsubsection}{Platelet aggregation}{29}{section*.21}%
+\contentsline {subsubsection}{Plate platelet aggregation}{29}{section*.22}%
+\contentsline {subsubsection}{Phosphatidylserine (PS) exposure}{29}{section*.23}%
+\contentsline {subsubsection}{Flow cytometry: phospho-VASP}{30}{section*.24}%
+\contentsline {subsubsection}{Western blotting}{30}{section*.25}%
+\contentsline {subsubsection}{Calcium mobilisation}{31}{section*.26}%
+\contentsline {subsection}{\numberline {3.2.4}Statistical analysis for platelet function assays}{31}{subsection.3.2.4}%
+\contentsline {chapter}{Chapter 4: Using observational and MR frameworks to determine the effect of body mass index on platelet characteristics}{33}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Background}{33}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Methods}{37}{section.4.2}%
+\contentsline {section}{\numberline {4.3}The INTERVAL study}{37}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Study overview}{37}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.2}Assessment of BMI and covariables}{38}{subsection.4.3.2}%
+\contentsline {subsection}{\numberline {4.3.3}Genetic data and instrument for BMI}{38}{subsection.4.3.3}%
+\contentsline {subsection}{\numberline {4.3.4}Study population}{39}{subsection.4.3.4}%
+\contentsline {subsection}{\numberline {4.3.5}Measurement of platelet traits}{40}{subsection.4.3.5}%
+\contentsline {subsection}{\numberline {4.3.6}Statistical analysis}{42}{subsection.4.3.6}%
+\contentsline {subsection}{\numberline {4.3.7}Follow-up analysis to explore the association between immature platelets and aggregation}{43}{subsection.4.3.7}%
+\contentsline {subsection}{\numberline {4.3.8}COPTIC study variables}{43}{subsection.4.3.8}%
+\contentsline {subsection}{\numberline {4.3.9}COPTIC statistical analysis}{43}{subsection.4.3.9}%
+\contentsline {section}{\numberline {4.4}Results}{44}{section.4.4}%
+\contentsline {subsection}{\numberline {4.4.1}INTERVAL participant characteristics}{44}{subsection.4.4.1}%
+\contentsline {subsection}{\numberline {4.4.2}Correlation between platelet traits in INTERVAL}{44}{subsection.4.4.2}%
+\contentsline {subsection}{\numberline {4.4.3}Observational associations between BMI and platelet traits in INTERVAL}{46}{subsection.4.4.3}%
+\contentsline {subsection}{\numberline {4.4.4}Associations of covariables with BMI and platelet traits in INTERVAL}{49}{subsection.4.4.4}%
+\contentsline {subsection}{\numberline {4.4.5}GRS for BMI associations with BMI and covariables}{53}{subsection.4.4.5}%
+\contentsline {subsection}{\numberline {4.4.6}Mendelian randomization estimates for the association between BMI and platelet traits}{55}{subsection.4.4.6}%
+\contentsline {subsection}{\numberline {4.4.7}Stratifying BMI and IPC associations by BMI group}{57}{subsection.4.4.7}%
+\contentsline {subsection}{\numberline {4.4.8}Follow-up associations between IPC and whole blood aggregation in COPTIC}{59}{subsection.4.4.8}%
+\contentsline {subsection}{\numberline {4.4.9}COPTIC participant characteristics}{59}{subsection.4.4.9}%
+\contentsline {subsection}{\numberline {4.4.10}Association between IPC and aggregation in COPTIC cohort}{62}{subsection.4.4.10}%
+\contentsline {section}{\numberline {4.5}Discussion}{64}{section.4.5}%
 \contentsline {chapter}{Chapter 5: The effect of obesity on platelet function: a clinical pilot study}{69}{chapter.5}%
 \contentsline {section}{\numberline {5.1}Background}{69}{section.5.1}%
 \contentsline {section}{\numberline {5.2}Methods}{72}{section.5.2}%
-\contentsline {subsection}{\numberline {5.2.1}Study population}{73}{subsection.5.2.1}%
-\contentsline {section}{\numberline {5.3}Results}{73}{section.5.3}%
-\contentsline {subsection}{\numberline {5.3.1}Participant characteristics}{73}{subsection.5.3.1}%
-\contentsline {subsection}{\numberline {5.3.2}Platelet parameters}{73}{subsection.5.3.2}%
-\contentsline {subsection}{\numberline {5.3.3}Basal receptors}{75}{subsection.5.3.3}%
-\contentsline {subsection}{\numberline {5.3.4}Agonist-induced integrin α\textsubscript {IIb}β\textsubscript {3} activation and P-selectin expression}{75}{subsection.5.3.4}%
-\contentsline {subsection}{\numberline {5.3.5}Platelet-neutrophil aggregates}{78}{subsection.5.3.5}%
-\contentsline {subsection}{\numberline {5.3.6}Platelet proteomics}{79}{subsection.5.3.6}%
-\contentsline {section}{\numberline {5.4}Discussion}{84}{section.5.4}%
+\contentsline {section}{\numberline {5.3}Ethical approval process}{73}{section.5.3}%
+\contentsline {subsection}{\numberline {5.3.1}Study population}{73}{subsection.5.3.1}%
+\contentsline {section}{\numberline {5.4}Results}{74}{section.5.4}%
+\contentsline {subsection}{\numberline {5.4.1}Participant characteristics}{74}{subsection.5.4.1}%
+\contentsline {subsection}{\numberline {5.4.2}Platelet parameters}{74}{subsection.5.4.2}%
+\contentsline {subsection}{\numberline {5.4.3}Basal receptors}{75}{subsection.5.4.3}%
+\contentsline {subsection}{\numberline {5.4.4}Agonist-induced integrin α\textsubscript {IIb}β\textsubscript {3} activation and P-selectin expression}{76}{subsection.5.4.4}%
+\contentsline {subsection}{\numberline {5.4.5}Platelet-neutrophil aggregates}{78}{subsection.5.4.5}%
+\contentsline {subsection}{\numberline {5.4.6}Platelet proteomics}{79}{subsection.5.4.6}%
+\contentsline {section}{\numberline {5.5}Discussion}{84}{section.5.5}%
 \contentsline {chapter}{Chapter 6: Pathways linking plasma proteins and platelet function: do the chemokines MDC and TARC play a role?}{89}{chapter.6}%
 \contentsline {section}{\numberline {6.1}Background}{89}{section.6.1}%
 \contentsline {section}{\numberline {6.2}Methods}{92}{section.6.2}%
