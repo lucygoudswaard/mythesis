@@ -110,7 +110,7 @@ i = c('46 (18.0)','75 %','49.3 (8.8)','0 %','25 %','50 %', NA, '25 %','25 %','25
 p <- c(0.77,1.0,0.0009,1.0,1.0,0.43,"NA", NA, NA, NA, 0.14) 
 mytable = data.frame("Variable"  = f, "Control mean (SD) or %" = co, "Bariatric patient mean (SD) or %" = i, "P value for difference" = p)
 colnames(mytable) <- c('Variable', "Control mean (SD) or %", "Bariatric patient mean (SD) or %", "P value for difference" )
-mytable %>% kable(caption = "(ref:caption-obesity-platelets-participants)", format = "markdown", booktabs = TRUE, caption.short = "(ref:scaption-obesity-platelets-participants)") %>% 
+mytable %>% kable(caption = "(ref:caption-obesity-platelets-participants)", format = "latex", booktabs = TRUE, caption.short = "(ref:scaption-obesity-platelets-participants)") %>% 
   kable_classic_2(full_width = F) %>%
   #kable_paper("hover", full_width = F)
    add_indent(c(8, 9, 10), level_of_indent = 1) %>%
@@ -132,7 +132,7 @@ i = c("235.8 (61.5)", "7.3 (8.3)", "16.3 (16.3)", "85.1 (9.8)", "60.5 (8.8)", "4
 p <- c(0.54,0.44,0.45,0.61,0.24,0.37) 
 mytable = data.frame("Platelet trait"  = f, "Control mean (SD) or %" = co, "Bariatric patient mean (SD) or %" = i, "P value for difference" = p)
 colnames(mytable) <- c('Variable', "Control mean (SD)", "Bariatric patient mean (SD)", "P value for difference" )
-mytable %>% kable(caption = "(ref:caption-obesity-platelets-parameters)", booktabs = TRUE, format = "markdown", caption.short = "(ref:scaption-obesity-platelets-parameters)") %>%  kable_classic_2(full_width = F) %>%
+mytable %>% kable(caption = "(ref:caption-obesity-platelets-parameters)", booktabs = TRUE, format = "latex", caption.short = "(ref:scaption-obesity-platelets-parameters)") %>%  kable_classic_2(full_width = F) %>%
   #kable_paper("hover", full_width = F)
  kable_styling(full_width = TRUE) %>%
 column_spec(1, width = "5cm")

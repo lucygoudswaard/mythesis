@@ -45,6 +45,12 @@ In efforts to further elucidate which proteins are altered by adiposity, a compa
 ### Comparison of BMI effects across DiRECT and INTERVAL
 BMI-protein estimates from this study were compared with effect estimates from INTERVAL (Chapter \@ref(BMI-protein-MR)), where 2803 proteins were detected across both studies. Both cohorts, through use of different study designs, provided evidence for an effect of BMI on the plasma proteome. Figure \@ref(fig:DiRECT-INTERVAL) shows the BMI-protein estimates for the proteins which were included in both DiRECT and INTERVAL (R^2^=0.11, P=1.0x10^77^).  There was consistent evidence across both studies that higher BMI leads to higher levels of various proteins including fumarylacetoacetase (FAAA), alcohol dehydrogenase 4 (ADH4), growth hormone receptor (GHR) and carboxypeptidase M (CBPM). Furthermore, higher BMI had a lowering effect on levels of sex hormone binding globulin (SHBG), as well as insulin-like growth factor binding protein 1/2 (IGFBP1/2). Although some of these estimates did not pass multiple testing in INTERVAL, the concordance in estimates in terms of effect size and direction of effect suggests that this is an issue of power.
 
+Nic's comments regarding the figure:
+1) overlap and persistent signal
+2) heterogeneity and study specific effects
+3) strengths of this approach
+4) limitations - differenet measures e.g. acute/chronic.
+
 \blandscape
 (ref:scaption-DiRECT-INTERVAL) Scatter plot comparing the two stage least squares estimate for the effect of BMI change on protein change in DiRECT with the Mendelian randomisation estimate for the effect of BMI on protein levels in INTERVAL
 (ref:caption-DIRECT-INTERVAL) **Scatter plot comparing the two stage least squares estimate for the effect of BMI change on protein change in DiRECT with the Mendelian randomisation estimate for the effect of BMI on protein levels in INTERVAL.** Proteins that are similar across analyses with a large effect size in both studies are coloured in green, whereas those which display similar estimates across studies with small effect size are shown in blue. Proteins do not show similar effects across studies are shown in pink. A linear regression line is indicated in blue.

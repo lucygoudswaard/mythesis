@@ -87,7 +87,7 @@ Participants displayed similar characteristics across control and intervention g
 
 (ref:caption-DiRECT-participants) **DiRECT participant characteristics**
 (ref:scaption-DiRECT-participants) DiRECT participant characteristics
-```{r DiRECT-participants,  echo=FALSE, warning = FALSE}
+```{r DiRECT-participants,  echo=FALSE}
 options(knitr.kable.NA = "")
 var = c("Age", "Sex", "Male", "Female", "Body mass index (kg/m^2^)", "Systolic Blood Pressue (mmHg)", "HbA1c (mmol/mol", "Glucose (mmol/l)", "Insulin (uu/ml)", "Cholesterol (mmol/l)", "HDL (mmol/l)", "Triglycerides (mmol/l)", "Diabetes duration (years)", "Number of antidiabetic medications", 0, 1, 2, 3, 4, "Centre", "Scotland", "Tyneside", "List size", ">5700", "=<5700")
 incmean = c('56.2 (6.9)',NA,'62 %','38 %','34.2 (4.3)','137 (15)','58 (11)','8.8 (2.5)','22 (14)','4.3 (1.1)','1.2 (0.3)','1.9 (0.9)','3.0 (1.7)', NA, '23 %','53 %','18 %','5 %','1 %', NA, '77 %','23 %', NA, '49 %','51 %')
@@ -97,7 +97,7 @@ excn <- c(119,119,NA,NA,119,119,119,118,119,118,118,118,119,119,NA,NA,NA,NA,NA,1
 ChiP <- c(0.01,0.54,NA,NA,0.19,0.19,0.15,0.24,0.27,0.90,0.04,0.48,0.37,0.50,NA,NA,NA,NA,NA,0.01,NA,NA,0.20,NA,NA)
 mytable = cbind(var, incmean, ninc, excmean, excn, ChiP)
 colnames(mytable) <- c("Variable",  "Control mean (SD) or %", "Control N", "Intervention mean (SD) or %", "Intervention N", "P value for difference (Two tailed t-test or Chi^2^ test)" )
-mytable %>% kable(caption = "(ref:caption-DiRECT-participants)", format = "markdown", booktabs = TRUE, caption.short = "(ref:scaption-DiRECT-participants)") %>% 
+mytable %>% kable(caption = "(ref:caption-DiRECT-participants)", format = "latex", booktabs = TRUE, caption.short = "(ref:scaption-DiRECT-participants)") %>% 
   kable_classic_2(full_width = F) %>%
   #kable_paper("hover", full_width = F)
    add_indent(c(3, 4, 15:19, 21, 22, 24, 25), level_of_indent = 1) %>%
@@ -150,9 +150,9 @@ include_graphics(path = "figure/DiRECT/DiRECT_scatter_comparison.pdf", dpi = NA)
 
 ### Sensitivity analysis
 #### Comparison of protein levels at baseline by teatment group
-Proteins which were associated with BMI change were compared across control and intervention groups at baseline. There was not strong evidence for any differences in baseline levels of proteins (p<5.8x10^-5^). However, there was weak evidence that levels of certain proteins, for example apolipoprotein F (beta=-0.20, SE=0.07, p=0.005) and carbohydrate sulfotransferase (beta=0.11, SE=0.04, p=0.006) were different in treatment group compared to control. Figure \@ref(fig:ApoF-carb-boxplot) displays the boxplots for the distribution of levels of these proteins at both baseline and endpoint for the intervention and control group.
+Proteins which were associated with BMI change were compared across control and intervention groups at baseline. This was done as the delta protein variable used in the regression model does not account for absolute levels of protein at baseline, therefore it is possible that the change in levels of protein may appear to be associating with BMI change due to differing basal protein levels across groups. There was not strong evidence for any differences in baseline levels of proteins (p<5.8x10^-5^). However, there was weak evidence that levels of certain proteins, for example apolipoprotein F (beta=-0.20, SE=0.07, p=0.005) and carbohydrate sulfotransferase (beta=0.11, SE=0.04, p=0.006) were different in treatment group compared to control. Figure \@ref(fig:ApoF-carb-boxplot) displays the boxplots for the distribution of levels of these proteins at both baseline and endpoint for the intervention and control group. 
 
-(ref:caption-ApoF-carb-boxplot) **Sensitivity analysis: boxplot of the levels of Apolipoprotein F and Carbohydrate Sulfotransferase at baseline and endpoint, grouped by treatment group.** Units are not rank normal transformed.
+(ref:caption-ApoF-carb-boxplot) **Sensitivity analysis: boxplot of the levels of Apolipoprotein F and Carbohydrate Sulfotransferase at baseline and endpoint, grouped by treatment group.** Median and IQR is indicated by the box. Units are not rank normal transformed.
 (ref:scaption-ApoF-carb-boxplot) Sensitivity analysis: boxplot of the levels of Apolipoprotein F and Carbohydrate Sulfotransferase at baseline and endpoint, grouped by treatment group.
 ```{r ApoF-carb-boxplot, echo = FALSE, out.width="90%", fig.cap= "(ref:caption-ApoF-carb-boxplot)", fig.scap= "(ref:scaption-ApoF-carb-boxplot)"}
 include_graphics(path = "figure/DiRECT/ApoF_carb_boxplots.jpeg", dpi = NA)
@@ -169,7 +169,7 @@ include_graphics(path = "figure/DiRECT/Comparison_TSLS_lmer.pdf", dpi = NA)
 
 
 ### Enrichment analysis
-To explore disease class enrichment, DAVID Bionformatics 6.8 was used[@Huang2009]. As there was consistent evidence for a BMI effect on 144 proteins across both models in DiRECT, these were compared to the full 4601 protein panel. There was strongest evidence for enrichment in proteins involved in metabolic disease (1.4 fold enrichment, p=4.21x10^-3^), with evidence for enrichment of renal disease (1.8 fold enrichment, p=1.02x10^-2^). Cardiovascular disease had weak evidence for enrichment, but this association did not pass multiple testing correction. Using StringDB and inputting p values for the association between BMI change and each protein change, there was evidence that proteins altered by protein change in the linear regression model were involved in cytokine-cytokine receptor interaction and complement and coagulation cascades. This enrichment were associated with the "top of the input", therefore indicating proteins with the smallest p values. There was enrichment for platelet activation, however the analysis indicated that this enrichment was at the bottom of the protein list, therefore more proteins involved in platelet activation were not associated with BMI change (data not shown). KEGG enrichment results were not available by inputting the ranked p values for the proteins from the instrumental variable analysis.
+To explore disease class enrichment, DAVID Bionformatics 6.8 was used[@Huang2009]. As there was consistent evidence for a BMI effect on 144 proteins across both models in DiRECT, these were compared to the full 4601 protein panel. There was strongest evidence for enrichment in proteins involved in metabolic disease (1.4 fold enrichment, p=4.21x10^-3^), with evidence for enrichment of renal disease (1.8 fold enrichment, p=1.02x10^-2^). Cardiovascular disease had weak evidence for enrichment, but this association did not pass multiple testing correction. 
 
 (ref:caption-DAVID-enrichment-DiRECT) **DiRECT protein enrichment results for disease class using DAVID bioinformatics 6.8 [@Huang2009]**
 ```{r DAVID-enrichment-DiRECT,  echo=FALSE}
@@ -185,12 +185,22 @@ Pval <- c('2.34E-04','5.72E-04','9.61E-04','1.38E-03','2.11E-03','2.23E-03','4.4
 Bonf_adj_P <- c('4.21E-03','1.02E-02','1.72E-02','2.45E-02','3.74E-02','3.94E-02','7.79E-02','1.36E-01','1.96E-01','3.68E-01')
 mytable = data.frame(cbind(Term, Count, Percentage, List, Pophits, Poptotal, FE, Pval, Bonf_adj_P))
 colnames(mytable) <- c('Term (Genetic Association Database disease class)',	'Count',	'%',	'List Total','	Population Hits',	'Population Total',	'Fold Enrichment',	'P Value',	'Bonferroni-adjusted P value' )
-mytable %>% kable(caption = "", booktabs = TRUE) %>% 
+mytable %>% kable(caption = "(ref:caption-DAVID-enrichment-DiRECT)", booktabs = TRUE) %>% 
   kable_classic_2(full_width = F) %>%
  kable_styling(full_width = TRUE) %>%
   column_spec(1, width = "5cm")   %>%
   landscape()
 ```
+
+Using StringDB and inputting p values for the association between BMI change and each protein change, there was evidence for enrichment of KEGG pathways. Using the UniProt IDs and p-values from the linear regression analysis for BMI change and protein change, there was evidence that proteins altered by protein change in the linear regression model were involved in cytokine-cytokine receptor interaction (enrichment score = 0.14, pathway size = 282, p = 2.4x10^-4^) and complement and coagulation cascades (enrichment score = 0.36, pathway size = 82, p = 9.8x10^-4^). These were the only pathways associated with the "top of the input", therefore indicating enrichment of proteins most strongly associated with BMI change. There was also enrichment for platelet activation, however the analysis suggested that this enrichment was at the bottom of the protein list (enrichment score 4.9, pathway size 122, p=6.5x10^-5^), therefore more proteins involved in platelet activation were not associated with BMI change. The network of proteins involved in platelet activation is shown in \@ref(fig:platelet-enrichment). KEGG enrichment results were not available by inputting the ranked p values for the proteins from the instrumental variable analysis.
+
+\blandscape
+(ref:caption-platelet-enrichment) **Network of proteins in DiRECT which are involved in platelet activation**. Nodes represent individual proteins. The halo colour represents the rank of the protein where blue indicates the top of the list (most strongly associated with BMI change) and red indicates the bottom of the list. The edges indicate known interactions between proteins. Figure from made using string-db.org
+(ref:scaption-platelet-enrichment) Network of proteins in DiRECT which are involved in platelet activation. 
+```{r platelet-enrichment, echo = FALSE, out.width="90%", fig.cap= "(ref:caption-platelet-enrichment)", fig.scap= "(ref:scaption-platelet-enrichment)"}
+include_graphics(path = "figure/DiRECT/string_platelet_activation_network.png", dpi = NA)
+```
+\elandscape
 
 ## Discussion
 
@@ -234,8 +244,8 @@ column_spec(4, width = "8cm") %>%
   landscape()
 ```
 
-This study also provides some novel proteins associated with a reduction in BMI including SCAR5, chondroadherin (CHAD), fumarylacetoacetase (FAAA) and  aminoacylase-1. A reduction in BMI led to an increase in plasma levels of SCAR5. This protein is involved in mediating commitment of mesenchymal stem cells into adipocytes and is highly expressed in white adipose tissue (WAT)[@Lee2017a]. A reduction in BMI also increased levels of chondroadherin (CHAD). Chondroadherin is a protein which is important in regulating exctracellular matrix organisation in cartilage and bones[@Hessle2013; @Iozzo2015]. CHAD knockout mice show decreased bone strength compared with wildtype[@Hessle2013]. This suggests that weight reduction may be beneficial for bone strength. The function of these proteins and relationship with adiposity needs to be further characterised.
+This study also provides some novel proteins associated with a reduction in BMI including SCAR5, chondroadherin (CHAD), fumarylacetoacetase (FAAA) and  aminoacylase-1. A reduction in BMI led to an increase in plasma levels of SCAR5. This protein is involved in mediating commitment of mesenchymal stem cells into adipocytes and is highly expressed in white adipose tissue (WAT[@Lee2017a]. A reduction in BMI also increased levels of chondroadherin (CHAD). Chondroadherin is a protein which is important in regulating exctracellular matrix organisation in cartilage and bones[@Hessle2013; @Iozzo2015]. CHAD knockout mice show decreased bone strength compared with wildtype[@Hessle2013]. This suggests that weight reduction may be beneficial for bone strength. The function of these proteins and relationship with adiposity needs to be further characterised.
 
-Limitations from the current analysis therefore include possible protein effects that are not caused by a change in BMI. Despite the use of the treatment group as an instrument in a two stage least squares analysis, the treatment group was also associated with an alteration in other factors: those who were allocated TDR also were taken off any T2D medication and were more likely to remiss their diabetes. It is possible that the analysis is therefore picking up protein effects that are caused by a change in medication or diabetes remission, rather than as a result in loss of fat. Participants would have also lost muscle mass throughout the intervention[@Santanasto2011], therefore it is not certain that effects are attributable to loss of fat. Despite this, there is evidence that in a group of participants with obesity, the majority of weight lost is fat mass[@Backx2016]. Thirdly, BMI decreased by an average of 0.4kg/m^2^ in the control group and by 3.6 kg/m^2^. As participants started at a mean BMI of 34-35 kg/m^2^, the majority of participants will still have obesity even after the intervention. This may limit protein effects observed, as a certain BMI may need to be reached to see an alteration in protein levels (i.e. the relationship may not be linear).
+Limitations from the current analysis therefore include possible protein effects that are not caused by a change in BMI. Despite the use of the treatment group as an instrument in a two stage least squares analysis, the treatment group was also associated with an alteration in other factors: those who were allocated TDR also were taken off any T2D medication and were more likely to achieve remission of T2D. It is possible that the analysis is therefore picking up protein effects that are caused by a change in medication or T2D remission, rather than as a result in loss of fat. Participants would have also lost muscle mass throughout the intervention[@Santanasto2011], therefore it is not certain that effects are attributable to loss of fat. Despite this, there is evidence that in a group of participants with obesity, the majority of weight lost is fat mass[@Backx2016]. Thirdly, BMI decreased by an average of 0.4kg/m^2^ in the control group and by 3.6 kg/m^2^. As participants started at a mean BMI of 34-35 kg/m^2^, the majority of participants will still have obesity even after the intervention. This may limit protein effects observed, as a certain BMI may need to be reached to see an alteration in protein levels (i.e. the relationship may not be linear).
 
 Overall, this study provided evidence that weight loss leads to a substantial change in the composition of plasma proteins, replicating effects seen previously and providing some novel associations. Proteins altered with higher BMI in a Mendelian randomisation framework can be reversed with weight loss. Proteins altered with weight loss were enriched for renal disease and metabolic disease. 
