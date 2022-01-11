@@ -7,6 +7,7 @@ faculty: "Life Sciences"
 school: "Physiology, Pharmacology and Neuroscience / Population Health Sciences"
 group: "Bristol Platelet Group / Team Timpson"
 degree: "PhD"
+logo: figure/index/UoBcrest.pdf # logo will only show on PDF
 bibliography: bib/library.bib # location of your bibliography 
 csl: csl/nature.csl # location of your referencing style 
 knit: "bookdown::render_book" # doesnt need changing 
