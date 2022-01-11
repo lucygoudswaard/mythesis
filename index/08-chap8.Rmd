@@ -58,7 +58,6 @@ The divergence in magnitude of estimates across study designs also suggests that
 (ref:caption-DIRECT-INTERVAL-group) **Scatter plot comparing the two stage least squares estimate for the effect of BMI change on protein change in DiRECT with the Mendelian randomisation estimate for the effect of BMI on protein levels in INTERVAL, with proteins that differ across models highlighted.** Proteins that are similar across analyses with a large effect size in both studies are coloured in green, whereas those which display similar estimates across studies with small effect size are shown in blue. Proteins do not show similar effects across studies are shown in pink. A linear regression line is indicated in blue. Complement factors which group together are circled in red at the top. SCAR5 and CHAD are also indicated.
 ```{r DiRECT-INTERVAL-group, echo = FALSE, out.width="90%", fig.cap="(ref:caption-DIRECT-INTERVAL-group)", fig.scap= "(ref:scaption-DiRECT-INTERVAL-group)"}
 include_graphics(path = "figure/DiRECT/DiRECT_INTERVAL_comparison_groups.png", dpi = NA)
-
 ```
 \elandscape
 
