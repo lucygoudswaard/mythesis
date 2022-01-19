@@ -256,7 +256,7 @@ mytable %>% kable(caption = "(ref:caption-MDC-disease-MR)", booktabs = TRUE) %>%
 \newpage
 \thispagestyle{empty}
 \vspace*{-3cm}
-ref(caption-TARC-disease-MR) Estimates for the effect of TARC on disease outcomes using two sample Mendelian randomization
+(ref:caption-TARC-disease-MR) Estimates for the effect of TARC on disease outcomes using two sample Mendelian randomization
 ```{r TARC-disease-MR,  echo=FALSE}
 options(knitr.kable.NA = "")
 V = c("TARC/CCL17", "TARC/CCL17", "TARC/CCL17", "TARC/CCL17", "TARC/CCL17", "TARC/CCL17")
@@ -268,7 +268,7 @@ SE <- c(0.0386,0.0845,0.0012,0.114,0.0373,0.0058)
 P2 <- c(8.510e-03,9.826e-03,1.172e-02,1.717e-02,2.999e-02,4.445e-02)
 mytable = data.frame(cbind(V, Trait, SNP, Method, Effect, SE, P2))
 names(mytable) <- c("Protein", "Outcome trait", "N SNP (rsID)", "Method", "Effect sie", "Standard error", "P value")
-mytable %>% kable(caption = "ref(caption-TARC-disease-MR)", booktabs = TRUE) %>% 
+mytable %>% kable(caption = "(ref:caption-TARC-disease-MR)", booktabs = TRUE) %>% 
   kable_classic_2(full_width = F) %>%
  kable_styling(full_width = TRUE, font_size=10) %>%
   column_spec(2, width = "4cm") %>%
