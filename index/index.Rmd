@@ -42,7 +42,6 @@ abbreviations: |
 ---
 
 
-
 ```{r thesis-setup, include = FALSE}
 # you need these packages
 if(!require(devtools))

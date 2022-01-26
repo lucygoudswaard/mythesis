@@ -87,21 +87,21 @@ Participants displayed similar characteristics across control and intervention g
 
 (ref:caption-DiRECT-participants) **DiRECT participant characteristics**
 (ref:scaption-DiRECT-participants) DiRECT participant characteristics
-```{r DiRECT-participants,  echo=FALSE}
+```{r DiRECT-participants,  echo=FALSE, warning=FALSE}
 options(knitr.kable.NA = "")
-var = c("Age", "Sex", "Male", "Female", "Body mass index (kg/m^2^)", "Systolic Blood Pressue (mmHg)", "HbA1c (mmol/mol", "Glucose (mmol/l)", "Insulin (uu/ml)", "Cholesterol (mmol/l)", "HDL (mmol/l)", "Triglycerides (mmol/l)", "Diabetes duration (years)", "Number of antidiabetic medications", 0, 1, 2, 3, 4, "Centre", "Scotland", "Tyneside", "List size", ">5700", "=<5700")
+var = c("Age", "Sex", "Male", "Female", "Body mass index (kg/m2)", "Systolic Blood Pressue (mmHg)", "HbA1c (mmol/mol", "Glucose (mmol/l)", "Insulin (uu/ml)", "Cholesterol (mmol/l)", "HDL (mmol/l)", "Triglycerides (mmol/l)", "Diabetes duration (years)", "Number of antidiabetic medications", 0, 1, 2, 3, 4, "Centre", "Scotland", "Tyneside", "List size", ">5700", "=<5700")
 incmean = c('56.2 (6.9)',NA,'62 %','38 %','34.2 (4.3)','137 (15)','58 (11)','8.8 (2.5)','22 (14)','4.3 (1.1)','1.2 (0.3)','1.9 (0.9)','3.0 (1.7)', NA, '23 %','53 %','18 %','5 %','1 %', NA, '77 %','23 %', NA, '49 %','51 %')
 ninc = c(146, 146, NA, NA, 146, 146, 146,146, 146,146,146,146,146,146, NA, NA, NA, NA, NA, 146, NA, NA, 146, NA, NA)
 excmean = c('53.9 (7.1)', NA, '57 %','43 %','35.0 (4.6)','135 (17)','60 (13)','9.2 (3.2)','24 (15)','4.3 (1.1)','1.1 (0.3)','2.0 (1.4)','3.2 (1.6)', NA, '24 %','44 %','23 %','7 %','3 %', NA, '62 %','38 %', NA, '58 %','42 %')
 excn <- c(119,119,NA,NA,119,119,119,118,119,118,118,118,119,119,NA,NA,NA,NA,NA,119,NA,NA,119,NA,NA)
 ChiP <- c(0.01,0.54,NA,NA,0.19,0.19,0.15,0.24,0.27,0.90,0.04,0.48,0.37,0.50,NA,NA,NA,NA,NA,0.01,NA,NA,0.20,NA,NA)
 mytable = cbind(var, incmean, ninc, excmean, excn, ChiP)
-colnames(mytable) <- c("Variable",  "Control mean (SD) or %", "Control N", "Intervention mean (SD) or %", "Intervention N", "P value for difference (Two tailed t-test or Chi^2^ test)" )
-mytable %>% kable(caption = "(ref:caption-DiRECT-participants)", format = "latex", booktabs = TRUE, caption.short = "(ref:scaption-DiRECT-participants)") %>% 
+colnames(mytable) <- c("Variable",  "Control mean (SD) or %", "Control N", "Intervention mean (SD) or %", "Intervention N", "P value for difference (Two tailed t-test or Chi2 test)" )
+mytable %>% kable(caption = "(ref:caption-DiRECT-participants)", format = "latex", booktabs = TRUE, caption.short = "(ref:scaption-DiRECT-participants)") %>%
   kable_classic_2(full_width = F) %>%
-  #kable_paper("hover", full_width = F)
+  kable_paper("hover", full_width = F) %>%
    add_indent(c(3, 4, 15:19, 21, 22, 24, 25), level_of_indent = 1) %>%
- kable_styling(full_width = TRUE) %>%
+      kable_styling(full_width = TRUE) %>%
 column_spec(1, width = "6cm") %>%
   landscape()
 ```
@@ -129,7 +129,7 @@ Treatment group was used as an instrument for BMI change in a two-stage least sq
 
 (ref:scaption-qq) QQ-plots of the expected vs the observed -log~10~(p-values) for the BMI change-protein change effects
 (ref:caption-qq) **QQ-plots of the expected vs the observed -log~10~(p-values) for the BMI change-protein change effects**. A) Linear regression B) Instrumental variable two stage least squares analysis.
-```{r qq-plot-DiRECT, echo = FALSE, out.width="120%", fig.cap="(ref:caption-qq)", fig.scap= "(ref:scaption-qq)"}
+```{r qq-plot-DiRECT, echo = FALSE, out.width="100%", fig.cap="(ref:caption-qq)", fig.scap= "(ref:scaption-qq)"}
 include_graphics(path = "figure/DiRECT/QQ_plots_obs_IV.pdf", dpi = NA)
 ```
 
