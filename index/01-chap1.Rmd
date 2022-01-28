@@ -29,17 +29,17 @@ editor_options:
 ```{r, echo=FALSE, message=FALSE}
 source("~/OneDrive - University of Bristol/PhD/Main project/Thesis/index/packages.R")
 ```
-# Introduction
+# General information
 
-## Format of the introduction
-This section will provide some information about the PhD such as the approaches that have been integrated throughout the thesis. Details of publications from the PhD will be provided, along with details of presentations and various meetings and conferences as well as details of awards and prizes. The following chapter (Chapter \@ref(background)) will discuss the current literature surrounding the work in the thesis and introduce the hypotheses and aims of the thesis.
+## Format
+This chapter will provide general information about the PhD. This includes details regarding collaborations, publications, conference presentations and awards and prizes. 
 
-## Collaborations from the PhD
-This PhD project is part of the 4 year British Heart Foundation Integrative Cardiovascular Science Programme. My PhD project has made full use of interdisciplinary techniques to answer the research questions. In 2019 I spent seven weeks at the Wellcome Sanger Institute near Cambridge, where I joined the human genetics team led by Professor Nicole Soranzo and worked closely with other academics including Professor Adam Butterworth from the University of Cambridge. I have created and implemented a clinical study where I wrote the approved ethics application. This study was in collaboration with Dr Dimitri Pournaras, a bariatric surgeon at Southmead Hopsital. In light of the COVID-19 pandemic, I utilised the laboratory techniques developed to determine the effects of severe COVID-19 on platelet function by working with doctors on the COVID-19 including Dr David Arnold and Dr Fergus Hamilton. Other collaborations include Assistant Professor Michael Holmes from the University of Oxford and Professor Naveed Sattar from the University of Glasgow. This work will continue on as part of the British Heart Foundation Accelerator Award Transition Fellowship, where I have started a collaboration with Professor Karsten Suhre from Weill-Cornell Medicine, Qatar.
+## Collaborations 
+This PhD project is part of the 4 year British Heart Foundation Integrative Cardiovascular Science Programme and is funded by the University of Bristol alumni. My PhD project has made full use of interdisciplinary techniques to answer the research questions. In 2019 I spent seven weeks at the Wellcome Sanger Institute near Cambridge, where I joined the human genetics team led by Professor Nicole Soranzo and worked closely with other academics including Professor Adam Butterworth from the University of Cambridge. I have created and implemented a clinical study where I wrote the approved ethics application. This study was in collaboration with Dr Dimitri Pournaras, a bariatric surgeon at Southmead Hopsital. In light of the COVID-19 pandemic, I utilised the laboratory techniques developed to determine the effects of severe COVID-19 on platelet function by working with clinicians including Dr David Arnold and Dr Fergus Hamilton. Other collaborations include Assistant Professor Michael Holmes from the University of Oxford and Professor Naveed Sattar from the University of Glasgow. This work will continue as part of the British Heart Foundation Accelerator Award Transition Fellowship, where I have started a collaboration with Professor Karsten Suhre from Weill-Cornell Medicine, Qatar.
 
-## All publications from the duration of the PhD
+## Publications
 
-**Goudswaard L. J.**, Corbin L. J., Burley K. L., Mumford A., Akbari P., Soranzo N., Butterworth A. S., Watkins N. A., Pournaras D. J., Harris J., Timpson N. J., Hers I. Higher body mass index raises immature platelet count: potential contribution to obesity-related thrombosis. (2021) Platelets. doi:. 
+**Goudswaard L. J.**, Corbin L. J., Burley K. L., Mumford A., Akbari P., Soranzo N., Butterworth A. S., Watkins N. A., Pournaras D. J., Harris J., Timpson N. J., Hers I. Higher body mass index raises immature platelet count: potential contribution to obesity-related thrombosis. (2022) Platelets https://doi.org/10.1080/09537104.2021.2003317
 
 **Goudswaard L. J.**, Bell J. A., Hughes D. A., Corbin L. J., Walter K., Davey Smith G., Soranzo N., Danesh J., Di Angelantonio E., Ouwehand W. H., Watkins N. A., Roberts D. J., Butterworth A. S., Hers I., Timpson N. J. Effects of adiposity on the human plasma proteome: Observational and Mendelian randomisation estimates. (2021) Int J Obes https://doi.org/10.1038/s41366-021-00896-1
 
@@ -55,7 +55,7 @@ Sledz, K. M., Moore, S. F., Vijayaragavan, V., Mallah, S., **Goudswaard, L. J.**
 
 Constantinescu A. E., Bull C. J., **Goudswaard L. J.**, Zheng J., Elsworth B., Timpson N. J., Moore S. F., Hers I., Vincent E. E. Phenome-wide analysis to investigate deep vein thrombosis aetiology.
 
-## Presentations from the PhD
+## Presentations
 
 **Platelet Society meeting**, 2018, Cambridge, UK. Title: Do the chemokines MDC and TARC contribute to obesity related platelet hyperactivity and cardiovascular disease? (Oral presentation).
 
