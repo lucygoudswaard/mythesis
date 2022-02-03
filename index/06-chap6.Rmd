@@ -221,14 +221,14 @@ The unadjusted and confounder-adjusted regression coefficients for BMI and prote
 
 (ref:caption-Estimate-comparison-obs) **Scatter plot of the unadjusted (age and sex adjusted) observational estimates and the confounder-adjusted observational estimates for BMI and protein traits**. Regression line shown in blue.
 (ref:scaption-Estimate-comparison-obs) Scatter plot comparing the unadjusted and confounder-adjusted observational BMI-protein estimates
-```{r Estimate-comparison-obs, echo = FALSE, out.width = "90%", fig.cap="(ref:caption-Estimate-comparison-obs)", fig.scap="(ref:scaption-Estimate-comparison-obs)"}
+```{r Estimate-comparison-obs, echo = FALSE, out.width = "75%", fig.cap="(ref:caption-Estimate-comparison-obs)", fig.scap="(ref:scaption-Estimate-comparison-obs)"}
 include_graphics(path = "figure/BMI_protein_INTERVAL/obs_v_obs_adj_scatter.pdf", dpi = NA)
 
 ```
 
 (ref:caption-Estimate-comparison-obs-mr) **Scatter plot of the unadjusted (age and sex adjusted) observational estimates and the MR estimates for BMI and protein traits.** Regression line shown in blue.
 (ref:scaption-Estimate-comparison-obs-mr) Scatter plot comparing the observational and MR BMI-protein estimates
-```{r Estimate-comparison-obs-mr, echo = FALSE, out.width = "90%", fig.cap="(ref:caption-Estimate-comparison-obs-mr)", fig.scap = "(ref:scaption-Estimate-comparison-obs-mr)"}
+```{r Estimate-comparison-obs-mr, echo = FALSE, out.width = "75%", fig.cap="(ref:caption-Estimate-comparison-obs-mr)", fig.scap = "(ref:scaption-Estimate-comparison-obs-mr)"}
 include_graphics(path = "figure/BMI_protein_INTERVAL/unadj_obs_MR_scatter_small.pdf", dpi = NA)
 
 ```

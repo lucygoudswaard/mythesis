@@ -1,37 +1,34 @@
 ---
 author: 'Lucy Goudswaard'
-date: 'March 2022' # Month and year of submission
-title: "The association between adiposity and platelet function: implications for cardiovascular disease"
-university: "University of Bristol"
-faculty: "Life Sciences"
-school: "Physiology, Pharmacology and Neuroscience / Population Health Sciences"
-group: "Bristol Platelet Group / Team Timpson"
-degree: "PhD"
+date: 'March 2022'
+title: 'The association between adiposity and platelet function: implications for cardiovascular disease'
+university: 'University of Bristol'
+faculty: 'Life Sciences'
+school: 'Physiology, Pharmacology and Neuroscience / Population Health Sciences'
+group: 'Bristol Platelet Group / Team Timpson'
+degree: 'PhD Population Health Sciences'
 logo: figure/index/UoBcrest.pdf # logo will only show on PDF
-wordcount: "1"
-bibliography: bib/library.bib # location of your bibliography 
-csl: csl/nature.csl # location of your referencing style 
-knit: "bookdown::render_book" # doesnt need changing 
-site: "bookdown::bookdown_site" # doesnt need changing 
-lot: true 
+wordcount: '12,345'
+bibliography: bib/thesis.bib
+csl: csl/nature.csl
+knit: "bookdown::render_book"
+site: "bookdown::bookdown_site"
+lot: true
 lof: true
 space_between_paragraphs: true
 fig_caption: true
 always_allow_html: yes
 link-citations: true
 indent: true
-header-includes:
+header-includes: # include other LaTeX packages here
     \usepackage{float}
     \floatplacement{figure}{H}
-    \raggedbottom
+    \raggedbottom 
 output: 
-  thesisdown::thesis_pdf: 
-    toc: true
-    toc-depth: 3
-    latex_engine: pdflatex
-#  thesisdown::thesis_gitbook: default
-# thesisdown::thesis_word: default
-#  thesisdown::thesis_epub: default
+    thesisdown::thesis_pdf: 
+      toc: true
+      toc-depth: 3
+      latex_engine: pdflatex
 abstract: |
   `r if(knitr:::is_latex_output()) paste(readLines("00-abstract.Rmd"), collapse = '\n  ')`
 acknowledgements: |
@@ -40,7 +37,7 @@ declaration: |
   `r if(knitr:::is_latex_output()) paste(readLines("00-declaration.Rmd"), collapse = '\n  ')`
 abbreviations: |
   `r if(knitr:::is_latex_output()) paste(readLines("00-abbreviations.Rmd"), collapse = '\n  ')`
-editor_options:
+editor_options: 
   chunk_output_type: console
 ---
 

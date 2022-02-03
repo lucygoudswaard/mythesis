@@ -54,8 +54,8 @@ mytable %>% kable(caption = "(ref:caption-main-thesis-findings)", booktabs = TRU
   #kable_paper("hover", full_width = F)
  kable_styling(full_width = TRUE) %>%
 column_spec(2, width = "12cm") %>%
-  column_spec(1, width = "4cm") %>%
-  landscape()
+  column_spec(1, width = "4cm") 
+ ## landscape()
 ```
 
 ## Strengths 

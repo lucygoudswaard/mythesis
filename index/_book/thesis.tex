@@ -27,12 +27,14 @@
 \usepackage{indentfirst}
 \usepackage{tocloft}
 \usepackage{breakcites}
+\usepackage{tikz}
+
 
 % Package specific settings
 %% link colours
 \hypersetup{%
   colorlinks=true,
-  linkcolor=magenta,
+  linkcolor=black,
   anchorcolor=black,
   citecolor=green,
   filecolor=cyan,
@@ -90,8 +92,8 @@
 \faculty{Life Sciences}
 \school{Physiology, Pharmacology and Neuroscience / Population Health Sciences}
 \group{Bristol Platelet Group / Team Timpson}
-\wordcount{}
-\degree{PhD}
+\wordcount{12,345}
+\degree{PhD Population Health Sciences}
 \logo{figure/index/UoBcrest.pdf}
 %%%
 
@@ -353,7 +355,7 @@ WHRadjBMI & Waist-hip ratio adjusted for BMI\\
 \end{longtable}
 }
 
-	\usepackage{tikz} \usepackage{booktabs} \usepackage{longtable} \usepackage{siunitx} \usepackage{float} \floatplacement{figure}{H} \pagestyle{plain}
+	\usepackage{float} \floatplacement{figure}{H} \raggedbottom
 	\usepackage{booktabs}
  \usepackage{longtable}
  \usepackage{array}
@@ -748,6 +750,7 @@ Risk factors have often been identified through observational associations. Obse
 
 
 
+
 \begin{figure}
 \includegraphics{figure/Intro_background/BMI_MR_RCT_CVevent} \caption[Mendelian randomisation and randomised control trial example using body mass index and cardiovascular events]{\textbf{Example of how Mendelian randomisation and a randomised control trial can be used to determine whether higher BMI increases the risk of cardiovascular events}. Figure made using BioRender.com.}\label{fig:MR-CVevent}
 \end{figure}
@@ -762,6 +765,7 @@ As indicated above, Mendelian randomization can be used to estimate the causal r
 As indicated in section \ref{CVD-stats}, CHD and stroke affect millions of people worldwide every year. Cardiovascular disease is used as a term to describe the group of diseases which affect the heart or blood vessels. Within cardiovascular disease there are various diseases which range in their clinical presentation and pathology. CHD (also known as coronary artery disease (CAD) or ischaemic heart disease (IHD)) is caused by a build up of plaques in the arteries (atherosclerosis). These plaques are caused by low density lipoproteins (LDLs) accumulating in the intima of athe arteries, where they undergo oxidation\textsuperscript{\protect\hyperlink{ref-Bentzon2014}{22}}. This then activates immune response and macrophages and lymphocytes also accumulate within the intima\textsuperscript{\protect\hyperlink{ref-Badimon2012}{23}}. The plaques build in size and may eventually rupture the endothelium, initiating platelet activation and thrombus formation (arterial thrombosis, Figure \ref{fig:thrombi-cartoon}A), thereby causing a heart attack. Other types of cardiovascular disease include stroke, which can be either ischaemic (another form of arterial thrombosis) or haemorrhagic. Arterial thrombi are estimated to be composed of 31\% platelets\textsuperscript{\protect\hyperlink{ref-Chernysh2020}{24}}.
 
 Thrombi can also form in veins (venous thromboembolism/VTE), thereby causing deep venous thrombosis (DVT) when the thrombus is in the legs or pulmonary embolism when an embolus becomes lodged in the lungs. Unlike arterial thrombi, venous thrombi form low shear rates\textsuperscript{\protect\hyperlink{ref-Koupenova2017a}{25}}. DVT is thought to start in the legs close to the valves as these are areas of stasis and hypoxia\textsuperscript{\protect\hyperlink{ref-Esmon2009}{26},\protect\hyperlink{ref-Stone2017}{27}}. This slowing of the blood reduces oxygen tension and increases haematocrit\textsuperscript{\protect\hyperlink{ref-Stone2017}{27}}. The stasis and hypoxia also lead to downregulation of anticaogulant proteins such as thrombomodulin and endothelial protein C receptor (EPCR)\textsuperscript{\protect\hyperlink{ref-Stone2017}{27}} and an upregulation of procoagulant proteins such as the adhesion molecule P-selectin. Venous thrombi mainly consist of red cell dense fibrous clot (Figure \ref{fig:thrombi-cartoon}B). Despite not as highly present in venous thrombi as arterial thrombi, platelets still play a role and form an inner layer of the thrombus\textsuperscript{\protect\hyperlink{ref-Stone2017}{27}}.
+
 
 
 
@@ -785,6 +789,7 @@ Platelets are anucleate cells which are generated from megakaryocytes in the bon
 
 
 
+
 \begin{figure}
 \includegraphics{figure/Intro_background/Platelet_activation} \caption[Key platelet receptors for platelet activation]{\textbf{Key platelet receptors for platelet activation}. Figure made using BioRender.com.}\label{fig:platelet-activation-receptors}
 \end{figure}
@@ -799,6 +804,7 @@ As BMI is associated with increased rates of thrombotic events and platelets are
 \section{Experimental techniques to measure platelet function}\label{platelet-function-techniques}}
 
 Platelet function can be measured by various laboratory techniques. Light transmission aggregometry (LTA) quantifies platelet aggregation by how much light passes through the sample. The more aggregation, the clearer the solution and the more light passes through and is detected. Other techniques routinely used include using flow cytometry. Measuring resting levels of receptors using fluorescently labelled antibodies provides information about the function of the platelet\textsuperscript{\protect\hyperlink{ref-Hu2017}{52}}. Some receptors change conformation and become exposed in response to platelet agonists (such as the integrin α\textsubscript{IIb}β\textsubscript{3}). The adhesion receptor P-selectin is stored in α-granules and becomes rapidly expressed on the platelet plasma membrane in response to agonist stimulation. Such platelet agonists include as protease-activating receptor activating peptide 1 (PAR1-AP), adenosine diphosphate (ADP) and collagen-related peptide (CRP). Another technique which can provide useful information about platelets is measuring calcium mobilisation by using a fluorescent calcium indicator. Activation of various receptors causes downstream activation of phospholipase C (PLC). In turn, PLC produces inositol-1,4,5-trisphosphate (IP\textsubscript{3}), thereby releasing calcium from the intracellullar stores via IP\textsubscript{3} receptors (IP\textsubscript{3}-R) in the endoplasmic reticulum\textsuperscript{\protect\hyperlink{ref-Varga-Szabo2009}{53}}. Another marker of platelet activation and coagulation is phosphatidylserine (PS) exposure. Under basal conditions, PS is mainly present in the inner leaflet of the phospholipid bilayer. Upon activation (e.g.~by dual stimulation using collagen and thrombin), the PS is becomes exposed on the outer surface of the membrane, thereby providing a binding site for factor Xa (FXa) and thus fibrin formation\textsuperscript{\protect\hyperlink{ref-Bevers1983}{54}}. Therefore PS reflects the Changes in PS exposure can be measured using a fluorescently labelled antibody.
+
 
 
 
@@ -817,6 +823,7 @@ Western blotting requires a lot of material and is limited by the number of prot
 Although there are not many large studies directly exploring platelet function, other measures of platelet characteristics are widely used in the clinic and among cohort studies. These charactertics are often reported as part of a routine full blood count. These include platelet count (PLT, absolute number of platelets), plateletcrit (PCT, the volume occupied by platelets), mean platelet volume (MPV, a measurement of the average size of platelets) and platelet distribution width (PDW, a measure of how similar platelets are in size). These are often used as diagnostic tools, for example a low platelet count is demonstrative of thrombocytopenia and a high platelet count is known as thrombocytosis/thrombocythaemia. Platelet traits have also been implicated in cardiovascular disease: there is MR evidence that higher PLT contributes to the risk of ischaemic stroke\textsuperscript{\protect\hyperlink{ref-Gill2018}{61}}, thereby suggesting that these platelet parameters have functional and clinical relevance. There is also evidence that alterations in these parameters associate with platelet function. For example, higher platelet count has been shown to associate with increased platelet aggregation\textsuperscript{\protect\hyperlink{ref-Wurtz2012}{62},\protect\hyperlink{ref-Femia2013}{63}}. Previous studies have explored the association between BMI and platelet parameters. Some studies have found evidence for an association between BMI and both platelet count and mean platelet volume, however other studies have lacked evidence for an effect\textsuperscript{\protect\hyperlink{ref-Furuncuoglu2016}{64}--\protect\hyperlink{ref-Heffron2018}{67}}. These observational studies may be subject to confounding, bias and reverse causation, therefore it is unclear whether there is a causal effect of BMI on these platelet traits, or whether effects are due to other factors.
 
 More recent haematology analysers such as the Sysmex XN series analysers can provide additional information about platelet structure. They use a combination of fluorescence and impedence flow cyotemtry. Additional readouts provided by these analyzers include immature platelet count (IPC, the number of immature platelets) as well as immature platelet fraction (IPF, the fraction of platelets which are immature), based on a gating of their forward scatter (FSC, size) and side fluorescence (SFL, an indicator of mRNA content). Detection of PLT and IPF by flow cytometry is shown in Figure \ref{fig:sysmex-ipf}\textsuperscript{\protect\hyperlink{ref-Corpataux2020}{68}}. Immature platelets, or reticulated platelets, are the youngest platelets in circulation. They persist for between 24 and 36 hours\textsuperscript{\protect\hyperlink{ref-Corpataux2020}{68}}. Immature platelets are larger in size and have more mRNA than older circulating platelets. Over time the mRNA degrades and they gradually decrease in size. There are various studies which have suggested that a larger number of immature platelets may increase the risk of suffering from major adverse cardiovascular events (MACE)\textsuperscript{\protect\hyperlink{ref-Ibrahim2014}{69}}. This suggests that immature platelets may be more reactive.
+
 
 
 
@@ -864,6 +871,7 @@ The specific sub-aims of the thesis are:
 \item
   Determine the effects of adiposity on the plasma proteome and the potential contribution to platelet function.
 \end{enumerate}
+
 
 
 \begin{figure}
@@ -936,12 +944,11 @@ Participants completed online questionnaires wherein they reported their height 
 
 INTERVAL participant genotyping was performed on the Affymetrix GeneTitan Multi-Channel (MC) Instrument using the UK Biobank Axiom Array (ThermoFisher Scientific, Loughborough, UK) and the QC of genotype data was implemented as described by Astle et al..\textsuperscript{\protect\hyperlink{ref-Astle2016}{103}} The imputation panel used was the 1000 genomes phase-3-UK-10K\textsuperscript{\protect\hyperlink{ref-Astle2016}{103}}. A genetic instrument for BMI was constructed using 654 genetic variants that were associated with BMI at P\textless5x10\textsuperscript{-8} in the inverse variance weighted fixed-effect meta-analysis of GWAS of 700000 individuals of European ancestry\textsuperscript{\protect\hyperlink{ref-Yengo2018}{21}}. This meta-analysis consisted of around 250000 adults from the Genetic Investigation of ANthromopetric Traits (GIANT) consortium\textsuperscript{\protect\hyperlink{ref-Locke2015}{20}} and 450000 adults from the UK Biobank study. Only 0.05 \% of UK Biobank participants were included in the current INTERVAL study (of N=2737). These participants were not excluded to increase power. The weighted GRS was made using PLINK 2.0 software\textsuperscript{\protect\hyperlink{ref-Purcell2007a}{104}} using the effect alleles and beta coefficients from the source GWAS. The score was calculated by multiplying the number of effect alleles at each SNP by its effect estimate (beta), summing these, and dividing by the total number of SNPs included. The GRS therefore can be interpreted as the average per-SNP effect on BMI for each individual.
 
-\par
-
 \hypertarget{study-population}{%
 \subsection{Study population}\label{study-population}}
 
 The present study was conducted on up to 33388 European ancestry INTERVAL participants living in the United Kingdom. These were the participants who had genetic data, had basic phenotype data and full blood count measures (Figure \ref{fig:INTERVAL-STROBE}).
+
 
 
 
@@ -952,6 +959,7 @@ The present study was conducted on up to 33388 European ancestry INTERVAL partic
 \subsection{Measurement of platelet traits}\label{measurement-of-platelet-traits}}
 
 Blood was taken by venipuncture into 3mL ethylenediamine tetraacetic acid (EDTA) tubes. Platelet parameters were measured using the Sysmex XN-1000 instrument\textsuperscript{\protect\hyperlink{ref-Astle2016}{103}}. This analyzer provides information on cell counts by using a combination of fluorescence (PLT-F) and impedance (I) flow cytometry. The PLT-F channel used a Fluorocell fluorescent dye (oxazine), whereas the impedance method uses electrical resistance to detect platelets. Platelet indices included in the current study, along with the raw units, are provided in Table \ref{tab:Platelet-traits}. These measurements were pre-adjusted for technical covariates such as time between venipuncture and blood count, as well as instrument drift, seasonal and weekly variation\textsuperscript{\protect\hyperlink{ref-Astle2016}{103}}. Adjustment was performed with cyclic, thin-plate and P-splines in a generalized additive model (GAM)\textsuperscript{\protect\hyperlink{ref-Akbari2020}{105}}. Resulting platelet trait values along with their units of measurement are reported in Table \ref{tab:Platelet-traits}. These data were rank normal transformed to normalize the distribution of each trait. Therefore, each platelet index is measured in normalized standard deviation (SD) units.
+
 
 
 
@@ -1015,6 +1023,7 @@ Of INTERVAL participants included in the current study (N=33,388), 50.2 \% were 
 
 
 
+
 \begin{table}
 
 \caption[Characteristics of included INTERVAL participants for BMI-platelet analyses]{\label{tab:INT-participants-platelets}\textbf{Characteristics of included INTERVAL participants for BMI-platelet analyses}}
@@ -1052,6 +1061,7 @@ The Sysmex XN-1000 haematology analyzer measures multiple platelet traits, howev
 
 
 
+
 \begin{figure}
 \includegraphics[width=0.95\linewidth]{figure/BMI_platelets/Corrmatrix_dendrogram} \caption[Correlation matrix and dendrogram of the relationship between platelet traits]{\textbf{Correlation matrix and dendrogram of the relationship between platelet traits.} A) Correlation coefficients are provided within the matrix. Dark blue indicates a correlation coefficient (r) of 1, with dark red indicating a correlation coefficient of -1. B) A dendrogram showing the hierarchical relationship between platelet traits, where the height at which two platelet traits join is (1 -- Pearson correlation coefficient (r)). PCT = plateletcrit, PLT (F) = platelet count (PLT-F channel), PLT (I) = platelet count (impedance channel), SSC = side scatter, SFL = side fluorescence, FSC = side scatter, IPC = immature platelet count, H-IPF = high fluorescence immature platelet fraction, IPF = immature platelet fraction, MPV = mean platelet volume, P-LCR = platelet large cell ratio, PDW = platelet distribution width. Dashed red lines indicate a height of 0.2, 0.3 and 0.4.}\label{fig:Corr-mat-dend}
 \end{figure}
@@ -1059,6 +1069,7 @@ The Sysmex XN-1000 haematology analyzer measures multiple platelet traits, howev
 \subsection{Observational associations between BMI and platelet traits in INTERVAL}\label{observational-associations-between-bmi-and-platelet-traits-in-interval}}
 
 Linear regression was performed to determine whether a higher BMI was associated with a change in platelet characteristics. In the confounder adjusted linear regression (Table \ref{tab:BMI-platelets-adjust}), BMI was positively associated with PCT (0.12 SD higher per SD higher BMI, 95\% CI 0.11 to 0.13, P = 9.2 x 10\textsuperscript{-88}) and platelet count (PLT (I) 0.11 SD higher per SD higher BMI, 95\% CI 0.09 to 0.12, P = 1.0 x 10\textsuperscript{-67}). The next strongest association with BMI was the association with SFL (0.06 SD higher per SD increase in BMI, 95\% CI 0.05 to 0.07, P = 4.7x10\textsuperscript{-23}). BMI also showed a positive association with IPC (0.06 SD higher per SD increase in BMI, 95\% CI 0.05 to 0.08, P = 4.8x10\textsuperscript{-22}). These results demonstrate that BMI is positively associated with PCT, PLT (I), SFL and IPC in this population. These estimates were very similar to the age and sex only adjusted estimates (Table \ref{tab:BMI-platelets-unadjust}).
+
 
 
 
@@ -1088,6 +1099,7 @@ MPV & 24559 & 0.01 & 0.007 & 0.37 & 0.007 & 0.000 & 0.013 & -0.01 & 0.02\\
 \end{tabu}
 \end{table}
 \end{landscape}
+
 
 
 \begin{landscape}\begin{table}
@@ -1123,6 +1135,7 @@ The association of covariables (age, sex, smoking and alcohol) with BMI were eva
 
 
 
+
 \begin{landscape}\begin{table}
 
 \caption[Associations between age, sex, smoking and alcohol consumption (exposures) with standardised BMI (outcome).]{\label{tab:INT-confounders-BMI-platelets}\textbf{Associations between age, sex, smoking and alcohol consumption (exposures) with standardised BMI (outcome).} Beta coefficient is the change in BMI (normalized SDs) per unit increase in exposure.}
@@ -1141,6 +1154,7 @@ Smoking frequency (1=never, 2=occasinal, 3=most days/ every day) & 32867 & 0.073
 \end{landscape}
 
 
+
 \begin{figure}
 \includegraphics[width=0.8\linewidth]{figure/BMI_platelets/Confounders_platelet_forest_plot} \caption[Linear regression results for the association between age, sex, smoking and alcohol with platelet traits]{\textbf{Linear regression results for the association between age, sex, smoking and alcohol with platelet traits.} PCT = plateletcrit, PLT (F) = platelet count (PLT-F channel), PLT (I) = platelet count (impedance channel), SSC = side scatter, SFL = side fluorescence, FSC = side scatter, IPC = immature platelet count, H-IPF = high fluorescence immature platelet fraction, IPF = immature platelet fraction, MPV = mean platelet volume, P-LCR = platelet large cell ratio, PDW = platelet distribution width. For age: beta coefficient is the difference in platelet characteristics per 1 year increase in age. For sex: Beta coefficient is the difference in platelet measure in SDs in men compared with women (for sex, 1=female and 2=male). For smoking: beta coefficient is the change in platelet traits (SDs) per unit change in smoking category (1 = never, 2 = previous, 3 = current). For alcohol: beta coefficient is the change in platelet traits in SDs per unit increase in alcohol consumption (1=Rarely , 2= Less than weekly, 3=One or two weekly, 4= 3-5 weekly or every day)}\label{fig:confounder-platelets}
 \end{figure}
@@ -1148,6 +1162,7 @@ Smoking frequency (1=never, 2=occasinal, 3=most days/ every day) & 32867 & 0.073
 \subsection{GRS for BMI associations with BMI and covariables}\label{grs-for-bmi-associations-with-bmi-and-covariables}}
 
 To estimate the causal effect of BMI on platelet characteristics, MR was performed. The GRS for BMI (the average per SNP effect on BMI) showed a normal distribution (mean 0.08, SD 0.30, range -1.15 to 1.34) and was positively associated with BMI to the degree expected (R\textsuperscript{2} = 0.042, P = 2.3x10\textsuperscript{-312}, F=1458, Table \ref{tab:INT-GRS-confounders-platelets}). The GRS did not associate with sex, however weak associations were detected with alcohol consumption, age, and smoking status. The amount of variance explained by the GRS for BMI on any covariable included did not exceed R\textsuperscript{2} = 0.002 (Table \ref{tab:INT-GRS-confounders-platelets}). As the GRS associates with BMI but does not strongly associate with the measured covariables, it is thus likely a valid instrument to perform MR.
+
 
 
 
@@ -1173,6 +1188,7 @@ Alcohol intake frequency (1=rarely, 2=<1 a week, 3=1-2 times a week, 4=most days
 
 In the MR analyses, BMI was associated with fewer traits than in the observational analysis (Table \ref{tab:BMI-platelets-MR}, \ref{fig:BMI-platelet-forest}). The causal estimate for the effect of BMI on SFL was 0.08 SDs per SD increase in BMI (95\% CI 0.03 to 0.14, P = 0.003). This estimate was of larger magnitude than the observational estimate. The causal estimate for BMI and IPC was 0.06 SDs per SD increase in BMI (95\% CI 0.006 to 0.12, P = 0.03), a similar magnitude of effect to the observational estimate. In the MR analysis, unlike in the observational analysis, the causal estimate did not suggest an effect of BMI on either PCT or PLT. MR estimates did not provide evidence for associations between BMI and other platelet variables. The point estimates were consistently positive, aligning with the positive observational associations seen across the platelet traits. Across all but one (H-IPF) of the platelet phenotypes we did not observe differences in directionality of effect comparing observational effects and causal effects predicted by Mendelian randomization (Figure \ref{fig:BMI-platelet-forest}).
 The Wu-Hausman test suggested that observational and MR estimates were similar for the majority of platelet traits (P \textgreater{} 0.05), except for measures of platelet count and plateletcrit (P \textless{} 0.001) (Table \ref{tab:BMI-platelets-MR}).
+
 
 
 
@@ -1205,6 +1221,7 @@ High fluorescence immature platelet fraction & H-IPF & 29708 & 0.015 & 0.028 & 6
 \end{landscape}
 
 
+
 \begin{figure}
 \includegraphics[width=0.9\linewidth]{figure/BMI_platelets/BMI_platelet_forestplot} \caption[Forest plot of the Mendelian randomization and unadjusted observational estimates for the effect of BMI on platelet traits]{\textbf{Forest plot of the Mendelian randomization (MR) and unadjusted observational estimates for the effect of BMI on platelet traits.} Estimate points are filled where P \textless{} 0.05. SFL = side fluorescence, IPC = immature platelet count, H-IPF = high fluorescence immature platelet function, FSC = forward scatter, P-LCR = platelet large cell ratio, PDW = platelet distribution width, MPV = mean platelet volume, PCT = plateletcrit, PLT (I) = platelet count (impedance channel), PLT (F) = platelet count (PLT-F channel), SSC = side scatter.}\label{fig:BMI-platelet-forest}
 \end{figure}
@@ -1214,6 +1231,7 @@ High fluorescence immature platelet fraction & H-IPF & 29708 & 0.015 & 0.028 & 6
 We explored whether associations between BMI and IPC varied across NHS BMI groups (underweight \textless18.5 kg/m\textsuperscript{2}, healthy weight 18.5-24.9kg/m\textsuperscript{2}, overweight 25-29.9 kg/m\textsuperscript{2}, obesity 30+ kg/m\textsuperscript{2}). IPC had consistent BMI effects across observational and MR analyses. Stratifying by BMI category suggested that the strongest association between BMI and IPC was the overweight category (Table \ref{tab:BMI-platelets-stratified}).
 
 \blandscape
+
 
 
 
@@ -1262,6 +1280,7 @@ The total number of COPTIC participants was 2,541. Of these, 2,518 participants 
 
 
 
+
 \begin{table}
 
 \caption[Characteristics of COPTIC study participants]{\label{tab:COPTIC-participants-platelets}\textbf{Characteristics of COPTIC study participants}}
@@ -1305,6 +1324,7 @@ Immature platelet count (x 10E9/L) & 6.3 (3.4) & 2383 & 6.2 (3.3) & 629\\
 
 
 
+
 \begin{longtable}[]{@{}lllllllll@{}}
 \caption{\label{tab:BMI-platelets-COPTIC}\textbf{Association between BMI and platelet parameters in COPTIC (adjusted for age, sex, smoking).} Beta coefficient is the change in platelet measure ins SDs per SD higher BMI.}\tabularnewline
 \toprule
@@ -1327,6 +1347,7 @@ IPF & 621 & 0.03 & 0.04 & 0.36 & 0.014 & 0.07 & -0.04 & 0.11 \\
 \subsection{Association between IPC and aggregation in COPTIC cohort}\label{association-between-ipc-and-aggregation-in-coptic-cohort}}
 
 To determine the potential functional effects of variation in IPC, the COPTIC cohort was used to assess the observational association between IPC and whole blood platelet aggregation in response to a range of platelet agonists (Figure \ref{fig:IPC-aggregation}A). In participants who were not on antiplatelet therapy (up to N=655), there was evidence for a positive association between IPC and aggregation induced by adrenaline (0.13 SD increase per SD increase in IPC, 95\% CI 0.04 to 0.21, p=3.7x10\textsuperscript{-3}), TRAP-6 (0.11 SD increase per SD increase in IPC, 95\% 0.03 to 0.18, p=7.8x10\textsuperscript{-3}) and ADP (0.08 SD per SD increase in IPC, 95\% 0.01 to 0.0.15, p=0.04). As there was a high correlation among platelet traits (Figure \ref{fig:IPC-aggregation}A, Figure \ref{fig:IPC-aggregation}B), the effect of MPV, PLT and IPF were also assessed. PLT was associated with all four measures of aggregation, with a larger effect estimate than IPC (Figure \ref{fig:IPC-aggregation}A). The finding that IPC does not correlate with PLT however suggests that the effect of IPC on platelet aggregation is independent of the effect of PLT on platelet aggregation (Figure \ref{fig:IPC-aggregation}B). Fitting PLT alongside IPC as an additional predictor of aggregation had little effect on the IPC effect estimate providing further evidence of independent contributions from the two traits (Figure \ref{fig:IPC-aggregation}C). Adjustment for PLT in the regression model for the association between IPF and aggregation provided estimates of a similar magnitude to that of IPC and aggregation.
+
 
 
 
@@ -2109,12 +2130,12 @@ The unadjusted and confounder-adjusted regression coefficients for BMI and prote
 
 
 \begin{figure}
-\includegraphics[width=0.9\linewidth]{figure/BMI_protein_INTERVAL/obs_v_obs_adj_scatter} \caption[Scatter plot comparing the unadjusted and confounder-adjusted observational BMI-protein estimates]{\textbf{Scatter plot of the unadjusted (age and sex adjusted) observational estimates and the confounder-adjusted observational estimates for BMI and protein traits}. Regression line shown in blue.}\label{fig:Estimate-comparison-obs}
+\includegraphics[width=0.75\linewidth]{figure/BMI_protein_INTERVAL/obs_v_obs_adj_scatter} \caption[Scatter plot comparing the unadjusted and confounder-adjusted observational BMI-protein estimates]{\textbf{Scatter plot of the unadjusted (age and sex adjusted) observational estimates and the confounder-adjusted observational estimates for BMI and protein traits}. Regression line shown in blue.}\label{fig:Estimate-comparison-obs}
 \end{figure}
 
 
 \begin{figure}
-\includegraphics[width=0.9\linewidth]{figure/BMI_protein_INTERVAL/unadj_obs_MR_scatter_small} \caption[Scatter plot comparing the observational and MR BMI-protein estimates]{\textbf{Scatter plot of the unadjusted (age and sex adjusted) observational estimates and the MR estimates for BMI and protein traits.} Regression line shown in blue.}\label{fig:Estimate-comparison-obs-mr}
+\includegraphics[width=0.75\linewidth]{figure/BMI_protein_INTERVAL/unadj_obs_MR_scatter_small} \caption[Scatter plot comparing the observational and MR BMI-protein estimates]{\textbf{Scatter plot of the unadjusted (age and sex adjusted) observational estimates and the MR estimates for BMI and protein traits.} Regression line shown in blue.}\label{fig:Estimate-comparison-obs-mr}
 \end{figure}
 
 
@@ -2443,11 +2464,13 @@ Cardiovascular & 56 & 40 & 118 & 1214 & 3204 & 1.2 & 2.51E-02 & 3.68E-01\\
 Using StringDB and inputting p values for the association between BMI change and each protein change, there was evidence for enrichment of KEGG pathways. Using the UniProt IDs and p-values from the linear regression analysis for BMI change and protein change, there was evidence that proteins altered by protein change in the linear regression model were involved in cytokine-cytokine receptor interaction (enrichment score = 0.14, pathway size = 282, p = 2.4x10\textsuperscript{-4}) and complement and coagulation cascades (enrichment score = 0.36, pathway size = 82, p = 9.8x10\textsuperscript{-4}). These were the only pathways associated with the ``top of the input'', therefore indicating enrichment of proteins most strongly associated with BMI change. There was also enrichment for platelet activation, however the analysis suggested that this enrichment was at the bottom of the protein list (enrichment score 4.9, pathway size 122, p=6.5x10\textsuperscript{-5}), therefore more proteins involved in platelet activation were not associated with BMI change. The network of proteins involved in platelet activation is shown in Figure \ref{fig:platelet-enrichment}. KEGG enrichment results were not available by inputting the ranked p values for the proteins from the instrumental variable analysis.
 
 \blandscape
+\thispagestyle{empty}
+
 
 
 
 \begin{figure}
-\includegraphics[width=0.9\linewidth]{figure/DiRECT/string_platelet_activation_network} \caption[Network of proteins in DiRECT which are involved in platelet activation.]{\textbf{Network of proteins in DiRECT which are involved in platelet activation}. Nodes represent individual proteins. The halo colour represents the rank of the protein where blue indicates the top of the list (most strongly associated with BMI change) and red indicates the bottom of the list. The edges indicate known interactions between proteins. Figure from made using string-db.org}\label{fig:platelet-enrichment}
+\includegraphics[width=0.75\linewidth]{figure/DiRECT/string_platelet_activation_network} \caption[Network of proteins in DiRECT which are involved in platelet activation.]{\textbf{Network of proteins in DiRECT which are involved in platelet activation}. Nodes represent individual proteins. The halo colour represents the rank of the protein where blue indicates the top of the list (most strongly associated with BMI change) and red indicates the bottom of the list. The edges indicate known interactions between proteins. Figure from made using string-db.org}\label{fig:platelet-enrichment}
 \end{figure}
 \elandscape
 
@@ -2531,7 +2554,7 @@ BMI-protein estimates from this DiRECT were compared with effect estimates from 
 
 
 \begin{figure}
-\includegraphics[width=0.9\linewidth]{figure/DiRECT/DiRECT_INTERVAL_comparison} \caption[Scatter plot comparing the two stage least squares estimate for the effect of BMI change on protein change in DiRECT with the Mendelian randomisation estimate for the effect of BMI on protein levels in INTERVAL]{\textbf{Scatter plot comparing the two stage least squares estimate for the effect of BMI change on protein change in DiRECT with the Mendelian randomisation estimate for the effect of BMI on protein levels in INTERVAL.} Proteins that are similar across analyses with a large effect size in both studies are coloured in green, whereas those which display similar estimates across studies with small effect size are shown in blue. Proteins do not show similar effects across studies are shown in pink. A linear regression line is indicated in blue.}\label{fig:DiRECT-INTERVAL}
+\includegraphics[width=0.75\linewidth]{figure/DiRECT/DiRECT_INTERVAL_comparison} \caption[Scatter plot comparing the two stage least squares estimate for the effect of BMI change on protein change in DiRECT with the Mendelian randomisation estimate for the effect of BMI on protein levels in INTERVAL]{\textbf{Scatter plot comparing the two stage least squares estimate for the effect of BMI change on protein change in DiRECT with the Mendelian randomisation estimate for the effect of BMI on protein levels in INTERVAL.} Proteins that are similar across analyses with a large effect size in both studies are coloured in green, whereas those which display similar estimates across studies with small effect size are shown in blue. Proteins do not show similar effects across studies are shown in pink. A linear regression line is indicated in blue.}\label{fig:DiRECT-INTERVAL}
 \end{figure}
 \elandscape
 
@@ -2542,7 +2565,7 @@ The divergence in magnitude of estimates across study designs also suggests that
 
 
 \begin{figure}
-\includegraphics[width=0.9\linewidth]{figure/DiRECT/DiRECT_INTERVAL_comparison_groups} \caption[Scatter plot comparing the two stage least squares estimate for the effect of BMI change on protein change in DiRECT with the Mendelian randomisation estimate for the effect of BMI on protein levels in INTERVAL, with proteins that differ across models highlighted]{\textbf{Scatter plot comparing the two stage least squares estimate for the effect of BMI change on protein change in DiRECT with the Mendelian randomisation estimate for the effect of BMI on protein levels in INTERVAL, with proteins that differ across models highlighted.} Proteins that are similar across analyses with a large effect size in both studies are coloured in green, whereas those which display similar estimates across studies with small effect size are shown in blue. Proteins do not show similar effects across studies are shown in pink. A linear regression line is indicated in blue. Complement factors which group together are circled in red at the top. SCAR5 and CHAD are also indicated.}\label{fig:DiRECT-INTERVAL-group}
+\includegraphics[width=0.75\linewidth]{figure/DiRECT/DiRECT_INTERVAL_comparison_groups} \caption[Scatter plot comparing the two stage least squares estimate for the effect of BMI change on protein change in DiRECT with the Mendelian randomisation estimate for the effect of BMI on protein levels in INTERVAL, with proteins that differ across models highlighted]{\textbf{Scatter plot comparing the two stage least squares estimate for the effect of BMI change on protein change in DiRECT with the Mendelian randomisation estimate for the effect of BMI on protein levels in INTERVAL, with proteins that differ across models highlighted.} Proteins that are similar across analyses with a large effect size in both studies are coloured in green, whereas those which display similar estimates across studies with small effect size are shown in blue. Proteins do not show similar effects across studies are shown in pink. A linear regression line is indicated in blue. Complement factors which group together are circled in red at the top. SCAR5 and CHAD are also indicated.}\label{fig:DiRECT-INTERVAL-group}
 \end{figure}
 \elandscape
 
@@ -2551,7 +2574,7 @@ Across both INTERVAL and DiRECT, 170 unique platelet proteins were detected. The
 
 
 \begin{figure}
-\includegraphics[width=0.95\linewidth]{figure/DiRECT/Comparison_scatter_platelet_proteins} \caption[Scatter plot of the two stage least squares estimate in DiRECT and the Mendelian Randomisation estimates in INTERVAL and the for the effect of BMI on proteins involved in platelet pathways]{\textbf{Scatter plot of the two stage least squares estimate in DiRECT and the Mendelian Randomisation estimates in INTERVAL and the for the effect of BMI on proteins involved in platelet pathways}. .}\label{fig:DiRECT-INTERVAL-platelet}
+\includegraphics[width=0.75\linewidth]{figure/DiRECT/Comparison_scatter_platelet_proteins} \caption[Scatter plot of the two stage least squares estimate in DiRECT and the Mendelian Randomisation estimates in INTERVAL and the for the effect of BMI on proteins involved in platelet pathways]{\textbf{Scatter plot of the two stage least squares estimate in DiRECT and the Mendelian Randomisation estimates in INTERVAL and the for the effect of BMI on proteins involved in platelet pathways}. .}\label{fig:DiRECT-INTERVAL-platelet}
 \end{figure}
 \hypertarget{discussion-5}{%
 \section{Discussion}\label{discussion-5}}

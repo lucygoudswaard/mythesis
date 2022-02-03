@@ -175,7 +175,7 @@ Next, platelet-neutrophil interactions were explored to determine whether there 
 (ref:scaption2b) Comparison of neutrophil-platelet aggregates across bariatric and control groups.
 (ref:caption2b) **Comparison of neutrophil-platelet aggregates across bariatric and control groups.** Neutrophil-platelet aggregates were determined using CD45 and CD41 antibodies. Aggregates were compared across bariatric patient and control participant groups in unstimulated and stimulated (5 ug/mL CRP) conditions. N=4. P-values provided for the results of a two-way ANOVA with Sidak's multiple comparisons tests. Mean + SEM displayed.
 
-```{r platelet-neutrophil, echo = FALSE, out.width = "70%", fig.cap="(ref:caption2b)", fig.scap= "(ref:scaption2b)"}
+```{r platelet-neutrophil, echo = FALSE, out.width = "70%", fig.cap="(ref:caption2b)", fit.align = "center", fig.scap= "(ref:scaption2b)"}
 include_graphics(path = "figure/Bariatric_study/Plt-neu_aggregates.pdf", dpi = NA)
 
 ```

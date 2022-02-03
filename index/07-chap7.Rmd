@@ -199,9 +199,13 @@ mytable %>% kable(caption = "(ref:caption-DAVID-enrichment-DiRECT)", booktabs = 
 Using StringDB and inputting p values for the association between BMI change and each protein change, there was evidence for enrichment of KEGG pathways. Using the UniProt IDs and p-values from the linear regression analysis for BMI change and protein change, there was evidence that proteins altered by protein change in the linear regression model were involved in cytokine-cytokine receptor interaction (enrichment score = 0.14, pathway size = 282, p = 2.4x10^-4^) and complement and coagulation cascades (enrichment score = 0.36, pathway size = 82, p = 9.8x10^-4^). These were the only pathways associated with the "top of the input", therefore indicating enrichment of proteins most strongly associated with BMI change. There was also enrichment for platelet activation, however the analysis suggested that this enrichment was at the bottom of the protein list (enrichment score 4.9, pathway size 122, p=6.5x10^-5^), therefore more proteins involved in platelet activation were not associated with BMI change. The network of proteins involved in platelet activation is shown in Figure \@ref(fig:platelet-enrichment). KEGG enrichment results were not available by inputting the ranked p values for the proteins from the instrumental variable analysis.
 
 \blandscape
+\thispagestyle{empty}
+
 (ref:caption-platelet-enrichment) **Network of proteins in DiRECT which are involved in platelet activation**. Nodes represent individual proteins. The halo colour represents the rank of the protein where blue indicates the top of the list (most strongly associated with BMI change) and red indicates the bottom of the list. The edges indicate known interactions between proteins. Figure from made using string-db.org
+
 (ref:scaption-platelet-enrichment) Network of proteins in DiRECT which are involved in platelet activation. 
-```{r platelet-enrichment, echo = FALSE, out.width="90%", fig.cap= "(ref:caption-platelet-enrichment)", fig.scap= "(ref:scaption-platelet-enrichment)"}
+
+```{r platelet-enrichment, echo = FALSE, out.width="75%", fig.cap= "(ref:caption-platelet-enrichment)", fig.scap= "(ref:scaption-platelet-enrichment)"}
 include_graphics(path = "figure/DiRECT/string_platelet_activation_network.png", dpi = NA)
 ```
 \elandscape

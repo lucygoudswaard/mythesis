@@ -49,7 +49,7 @@ BMI-protein estimates from this DiRECT were compared with effect estimates from 
 \blandscape
 (ref:scaption-DiRECT-INTERVAL) Scatter plot comparing the two stage least squares estimate for the effect of BMI change on protein change in DiRECT with the Mendelian randomisation estimate for the effect of BMI on protein levels in INTERVAL
 (ref:caption-DIRECT-INTERVAL) **Scatter plot comparing the two stage least squares estimate for the effect of BMI change on protein change in DiRECT with the Mendelian randomisation estimate for the effect of BMI on protein levels in INTERVAL.** Proteins that are similar across analyses with a large effect size in both studies are coloured in green, whereas those which display similar estimates across studies with small effect size are shown in blue. Proteins do not show similar effects across studies are shown in pink. A linear regression line is indicated in blue. 
-```{r DiRECT-INTERVAL, echo = FALSE, out.width="90%", fig.cap="(ref:caption-DIRECT-INTERVAL)", fig.scap= "(ref:scaption-DiRECT-INTERVAL)"}
+```{r DiRECT-INTERVAL, echo = FALSE, out.width="75%", fig.cap="(ref:caption-DIRECT-INTERVAL)", fig.scap= "(ref:scaption-DiRECT-INTERVAL)"}
 include_graphics(path = "figure/DiRECT/DiRECT_INTERVAL_comparison.pdf", dpi = NA)
 
 ```
@@ -60,7 +60,7 @@ The divergence in magnitude of estimates across study designs also suggests that
 \blandscape
 (ref:scaption-DiRECT-INTERVAL-group) Scatter plot comparing the two stage least squares estimate for the effect of BMI change on protein change in DiRECT with the Mendelian randomisation estimate for the effect of BMI on protein levels in INTERVAL, with proteins that differ across models highlighted
 (ref:caption-DIRECT-INTERVAL-group) **Scatter plot comparing the two stage least squares estimate for the effect of BMI change on protein change in DiRECT with the Mendelian randomisation estimate for the effect of BMI on protein levels in INTERVAL, with proteins that differ across models highlighted.** Proteins that are similar across analyses with a large effect size in both studies are coloured in green, whereas those which display similar estimates across studies with small effect size are shown in blue. Proteins do not show similar effects across studies are shown in pink. A linear regression line is indicated in blue. Complement factors which group together are circled in red at the top. SCAR5 and CHAD are also indicated.
-```{r DiRECT-INTERVAL-group, echo = FALSE, out.width="90%", fig.cap="(ref:caption-DIRECT-INTERVAL-group)", fig.scap= "(ref:scaption-DiRECT-INTERVAL-group)"}
+```{r DiRECT-INTERVAL-group, echo = FALSE, out.width="75%", fig.cap="(ref:caption-DIRECT-INTERVAL-group)", fig.scap= "(ref:scaption-DiRECT-INTERVAL-group)"}
 include_graphics(path = "figure/DiRECT/DiRECT_INTERVAL_comparison_groups.png", dpi = NA)
 ```
 \elandscape
@@ -69,7 +69,7 @@ Across both INTERVAL and DiRECT, 170 unique platelet proteins were detected. The
 
 (ref:scaption-DiRECT-INTERVAL-platelet) Scatter plot of the two stage least squares estimate in DiRECT and the Mendelian Randomisation estimates in INTERVAL and the for the effect of BMI on proteins involved in platelet pathways
 (ref:caption-DiRECT-INTERVAL-platelet) **Scatter plot of the two stage least squares estimate in DiRECT and the Mendelian Randomisation estimates in INTERVAL and the for the effect of BMI on proteins involved in platelet pathways**. .
-```{r DiRECT-INTERVAL-platelet, echo = FALSE, out.width="95%", fig.cap="(ref:caption-DiRECT-INTERVAL-platelet)", fig.scap= "(ref:scaption-DiRECT-INTERVAL-platelet)"}
+```{r DiRECT-INTERVAL-platelet, echo = FALSE, out.width="75%", fig.cap="(ref:caption-DiRECT-INTERVAL-platelet)", fig.scap= "(ref:scaption-DiRECT-INTERVAL-platelet)"}
 include_graphics(path = "figure/DiRECT/Comparison_scatter_platelet_proteins.pdf", dpi = NA)
 ```
 
