@@ -41,7 +41,7 @@ Data from the INTERVAL study was used as was described in Chapter \@ref(BMI-prot
 
 (ref:leptin-lm-GAM-cap) **Linear model (blue) and nonlinear generalized additive model (red) of the association between BMI and leptin with 95% confidence intervals.** The vertical lines indicate the mean BMI for each BMI category (in order of underweight, healthy, all, overweight, obese).
 (ref:leptin-lm-GAM-scap) Linear model and generalized additive model of the association between BMI and leptin
-```{r leptin-lm-GAM, echo = FALSE, warning=FALSE, message=FALSE, out.width="90%", fig.cap='(ref:leptin-lm-GAM-cap)', fig.scap='(ref:leptin-lm-GAM-scap)'}
+```{r leptin-lm-GAM, echo = FALSE, warning=FALSE, message=FALSE, out.width="90%", fig.cap='(ref:leptin-lm-GAM-cap)', fig.align = "center", fig.scap='(ref:leptin-lm-GAM-scap)'}
 include_graphics(path = "figure/Appendix/leptin_nonlinear_obs.pdf", dpi = NA)
 ```
 
@@ -50,7 +50,7 @@ Nonlinearity can be easily implemented using observational methods. However due 
 
 (ref:leptin-lm-GAM-MR-cap) Linear model and generalized additive model of the association between BMI and leptin using Mendelian randomization. Linear model (blue) and generalized additive model (red) of the association between BMI and leptin with 95% confidence intervals. The vertical lines indicate the mean BMI for each BMI category (underweight, healthy, all, overweight, obese)
 (ref:leptin-lm-GAM-MR-scap) Linear model and generalized additive model of the association between BMI and leptin using Mendelian randomization
-```{r leptin-lm-GAM-MR, echo = FALSE, warning=FALSE, message=FALSE, out.width="90%", fig.cap='(ref:leptin-lm-GAM-MR-cap)', fig.scap='(ref:leptin-lm-GAM-MR-scap)'}
+```{r leptin-lm-GAM-MR, echo = FALSE, warning=FALSE, message=FALSE, out.width="90%", fig.cap='(ref:leptin-lm-GAM-MR-cap)', fig.align = "center", fig.scap='(ref:leptin-lm-GAM-MR-scap)'}
 include_graphics(path = "figure/Appendix/leptin_nonlinear_MR.pdf", dpi = NA)
 ```
 
@@ -59,7 +59,7 @@ The nonlinear MR package ("nlmr") was also utilised to overcome this issue. This
 
 (ref:leptin-nlmr-cap) **Effects of BMI on levels of leptin using nonlinear MR from the nlmr R package [@Staley2017].** A) fractional polynomial MR. B) Piecewise MR.
 (ref:leptin-nlmr-scap) Effects of BMI on levels of leptin using nonlinear MR
-```{r leptin-nlmr, echo = FALSE, warning=FALSE, message=FALSE, out.width="90%", fig.cap='(ref:leptin-nlmr-cap)', fig.scap='(ref:leptin-nlmr-scap)'}
+```{r leptin-nlmr, echo = FALSE, warning=FALSE, message=FALSE, out.width="90%", fig.cap='(ref:leptin-nlmr-cap)', fig.align = "center", fig.scap='(ref:leptin-nlmr-scap)'}
 include_graphics(path = "figure/Appendix/leptin_nlmr_fracpoly_piecewise.pdf", dpi = NA)
 ```
 
@@ -68,7 +68,7 @@ The issue with these methods is that it isn't possible to estimate the effect of
 
 (ref:leptin-glsmr-cap) **Observational and Mendelian randomization estimates for the effect of BMI (kg/m^2^) on leptin (SDs) stratified by BMI category.** Shaded areas display the ranges of BMI of each stratum: 18.5-25 (red), 25-30 (blue), 30-40 (green) A) Comparison between the fit of the nonlinear and linear generalized additive models (GAMs) with age and sex as covariables.  B) Comparison between the fit of the nonlinear and linear generalized additive models (GAMs) with age and sex as covariables for the two stage least squares Mendelian randomization (MR) analysis. C) Stratified estimates for the observational association between BMI and leptin (beta is SD change in leptin per 1 kg/m^2^ increase in BMI). D) Stratified estimates for the MR estimates for the effect of BMI on leptin (beta is SD change in leptin per 1 kg/m^2^ increase in BMI). Black indicates the estimate has a p value of >0.05 and red indicates p<0.05. Strata estimates are presented as circles with the estimate for the complete dataset represented by a square.
 (ref:leptin-glsmr-scap) Observational and Mendelian randomization estimates for the effect of BMI on leptin stratified by BMI category.
-```{r leptin-glsmr, echo = FALSE, warning=FALSE, message=FALSE, out.width="100%", fig.cap='(ref:leptin-glsmr-cap)', fig.scap='(ref:leptin-glsmr-scap)'}
+```{r leptin-glsmr, echo = FALSE, warning=FALSE, message=FALSE, out.width="100%", fig.cap='(ref:leptin-glsmr-cap)', fig.align = "center", fig.scap='(ref:leptin-glsmr-scap)'}
 include_graphics(path = "figure/Appendix/glsmr_plot_leptin.pdf", dpi = NA)
 ```
 

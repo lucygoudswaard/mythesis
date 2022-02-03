@@ -32,11 +32,11 @@ source("~/OneDrive - University of Bristol/PhD/Main project/Thesis/index/package
 # Discussion {#Discussion}
 
 ## Overall findings
-The work presented in this thesis brought together an interdisciplinary approach to expand on previous literature to further explore the contribution of platelet function and the plasma proteome to obesity-related cardiovascular disease (Figure \@ref(fig:Thesis-schematic-chaps). The results and limitations from each individual results chapter have been discussed in the relevant chapters. This overall discussion chapter will recap the main findings from the thesis, address the overall strengths and limitations, discuss the wider clinical implications of findings as well as suggest future research to expand this area of research.
+The work presented in this thesis brought together an interdisciplinary approach to expand on previous literature to further explore the contribution of platelet function and the plasma proteome to obesity-related cardiovascular disease (Figure \@ref(fig:Thesis-schematic-chaps)). The results and limitations from each individual results chapter have been discussed in the relevant chapters. This overall discussion chapter will recap the main findings from the thesis, address the overall strengths and limitations, discuss the wider clinical implications of findings as well as suggest future research to expand this area of research.
 
 (ref:caption-Thesis-schematic-chaps) **Schematic of the multi-step pathway addressed in the thesis with chapter numbers where associations are explored.** Figure made using BioRender.com.
 (ref:scaption-Thesis-schematic-chaps) Schematic of the multi-step pathway addressed in the thesis with chapter numbers where associations are explored
-```{r Thesis-schematic-chaps, echo = FALSE, out.width = "80%", fig.cap="(ref:caption-Thesis-schematic-chaps)", fig.scap="(ref:scaption-Thesis-schematic-chaps)"}
+```{r Thesis-schematic-chaps, echo = FALSE, out.width = "80%", fig.cap="(ref:caption-Thesis-schematic-chaps)", fig.align = "center", fig.scap="(ref:scaption-Thesis-schematic-chaps)"}
 include_graphics(path = "figure/General_discussion/Thesis_graphic_overview_chapters.png", dpi = NA)
 ```
 

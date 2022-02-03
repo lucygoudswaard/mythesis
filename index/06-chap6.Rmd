@@ -45,7 +45,7 @@ In this chapter, the aim is to measure associations between adiposity and the hu
 
 (ref:caption-BMI-protein-graphic-INT) **Schematic of the associations explored in Chapter \@ref(BMI-protein-MR).** This chapter explores the causal effect of BMI on the plasma proteome and explores whether these changes might contribute to cardiovascular diseases. Figure made using BioRender.com.
 (ref:scaption-BMI-protein-graphic-INT) Schematic of the associations explored in /@ref(BMI-protein-MR).
-```{r BMI-protein-graphic-INT, echo = FALSE , fig.scap="(ref:scaption-BMI-protein-graphic-INT)", fig.cap="(ref:caption-BMI-protein-graphic-INT)", out.width="90%"}
+```{r BMI-protein-graphic-INT, echo = FALSE , fig.align = "center", fig.scap="(ref:scaption-BMI-protein-graphic-INT)", fig.cap="(ref:caption-BMI-protein-graphic-INT)", out.width="90%"}
 include_graphics(path = "figure/BMI_protein_INTERVAL/Thesis_graphic_overview_BMI_protein_CVD.png", dpi = NA)
 ```
 
@@ -69,14 +69,14 @@ To account for multiple testing, a Bonferroni correction was used to adjust resu
 
 (ref:caption-Corr-mat-proteins) **Correlation matrix of all protein traits analysed by SomaLogic (4,034)**. The colour corresponds to the correlation coefficient ranging from 1 (dark blue) to -1 (dark red).
 (ref:scaption-Corr-mat-proteins) Correlation matrix of all protein traits analysed by SomaLogic
-```{r Corr-mat-proteins, echo = FALSE, out.width = "90%",fig.cap="(ref:caption-Corr-mat-proteins)", fig.scap="(ref:scaption-Corr-mat-proteins)"}
+```{r Corr-mat-proteins, echo = FALSE, out.width = "90%",fig.cap="(ref:caption-Corr-mat-proteins)", fig.align = "center", fig.scap="(ref:scaption-Corr-mat-proteins)"}
 include_graphics(path = "figure/BMI_protein_INTERVAL/Correlation_matrix_proteins.pdf", dpi = NA)
 ```
 
 \blandscape
 (ref:caption-Dend-proteins) **Cluster dendrogram showing the hierarchical relationship between protein levels.** Height is calculated as (1-correlation coefficient). At a height of 0.2 and 0.4 (red dashed lines), the number of independent proteins was 3,655 and 3,016 respectively
 (ref:scaption-Dend-proteins) Cluster dendrogram showing the hierarchical relationship between protein levels
-```{r Dend-proteins, echo = FALSE, out.width="95%", fig.cap="(ref:caption-Dend-proteins)", fig.scap = "(ref:scaption-Dend-proteins)"}
+```{r Dend-proteins, echo = FALSE, out.width="95%", fig.cap="(ref:caption-Dend-proteins)", fig.align = "center", fig.scap = "(ref:scaption-Dend-proteins)"}
 include_graphics(path = "figure/BMI_protein_INTERVAL/dendrogram.pdf", dpi = NA)
 ```
 \elandscape
@@ -88,7 +88,7 @@ To investigate whether any protein groups showed a particularly strong relations
 
 (ref:caption-PCs) **Principal component analysis (PCA) and k-means clustering of proteins.** Principal component analysis (PCA) and k-means clustering of proteins provide evidence for five clusters. A-D) Principal component (PC) 1 vs PC2-PC5 for the study protein data. Each dot represents a protein, and the colors represent the clusters identified by the k-means analysis (1=black, 2=red, 3=green, 4=dark blue, 5=light blue, 6=pink). E) PC scree plot displaying the proportion of variance explained by each of the first 20 PCs. F) K-means scree like plot displaying the variance explained by clusters for each of the 19 k-means analysis, where in each analysis k (the number of clusters) was set from two to 20.
 (ref:scaption-PCs) Principal component analysis (PCA) and k-means clustering of proteins
-```{r PCs, echo = FALSE, out.width = "90%", fig.cap="(ref:caption-PCs)", fig.scap = "(ref:scaption-PCs)"}
+```{r PCs, echo = FALSE, out.width = "90%", fig.cap="(ref:caption-PCs)", fig.align = "center", fig.scap = "(ref:scaption-PCs)"}
  include_graphics(path = "figure/BMI_protein_INTERVAL/PCs2to5v1.pdf", dpi = NA)
  
 ```
@@ -112,7 +112,7 @@ excmean = c('44.9 (14.2)', NA, '49.70%','50.30%','78.6 (16.0)','172.2 (9.6)','26
 excn <- c(30721, 30721, NA, NA, 30719, 30661, 30659, 29958, NA, NA, NA, 27124, NA, NA, NA, NA)
 ChiP <- c(0.76, 0.04, NA, NA, 0.26, 0.005, 0.66, 0.88, NA, NA, NA, 0.34, NA, NA, NA, NA)
 mytable = cbind(var, incmean, ninc, excmean, excn, ChiP)
-colnames(mytable) <- c("Variable",  "Included Mean (SD) or %", "Included N", "Excluded Mean (SD) or %", "Excluded N", "P value for difference (Two tailed t-test or Chi^2^ test)" )
+colnames(mytable) <- c("Variable",  "Included Mean (SD) or %", "Included N", "Excluded Mean (SD) or %", "Excluded N", "P value for difference (Two tailed t-test or Chi2 test)" )
 mytable %>% kable(caption = "(ref:caption-Inc-excl-part)", booktabs = TRUE, format = "latex", caption.short = "(ref:scaption-Inc-excl-part)") %>%
   kable_classic_2(full_width = F) %>%
   kable_paper("hover", full_width = F) %>%
@@ -158,7 +158,7 @@ column_spec(1, width = "4cm")   %>%
 
 (ref:caption-QQ-confounder-proteins) **Q-Q plots for the expected against observed -log~10~(pvalues) for associations of age (A), sex (B), smoking (C) and alcohol (D) with protein traits**
 (ref:scaption-QQ-confounder-proteins) Q-Q plots of the expected against observed -log~10~(pvalues) for the associations between covariables and protein traits
-```{r QQ-confounder-proteins, echo = FALSE, out.width = "95%", fig.cap="(ref:caption-QQ-confounder-proteins)", fig.scap="(ref:scaption-QQ-confounder-proteins)"}
+```{r QQ-confounder-proteins, echo = FALSE, out.width = "95%", fig.cap="(ref:caption-QQ-confounder-proteins)", fig.align = "center", fig.scap="(ref:scaption-QQ-confounder-proteins)"}
 include_graphics(path = "figure/BMI_protein_INTERVAL/QQ_confounder_proteins.pdf", dpi = NA)
 
 ```
@@ -193,7 +193,7 @@ In MR analyses, eight unique BMI-protein associations were detected at the level
 
 (ref:caption-ObsMRforestplot2) **Forest plot of the strongest BMI-protein Mendelian randomisation estimates and the corresponding observational estimates**
 (ref:scaption-ObsMRforestplot2) Forest plot of the strongest BMI-protein Mendelian randomisation estimates and the corresponding observational estimates
-```{r ObsMRforestplot2, echo = FALSE, out.width = "90%", fig.cap="(ref:caption-ObsMRforestplot2)", fig.scap = "(ref:scaption-ObsMRforestplot2)"}
+```{r ObsMRforestplot2, echo = FALSE, out.width = "90%", fig.cap="(ref:caption-ObsMRforestplot2)", fig.align = "center", fig.scap = "(ref:scaption-ObsMRforestplot2)"}
 include_graphics(path = "figure/BMI_protein_INTERVAL/MR_obs_compar_forestplot.pdf", dpi = NA)
 ```
 
@@ -201,7 +201,7 @@ The estimates for the effect of BMI on platelet specific proteins did not pass m
 
 (ref:caption-ObsMRforestplot-MDC-TARC) **Forest plot of the Mendelian randomisation estimates and the corresponding observational estimates for MDC and TARC**. Filled estimates indicate p<1.4x10^-5^.
 (ref:scaption-ObsMRforestplot-MDC-TARC) Forest plot of the strongest BMI-protein Mendelian randomisation estimates and the corresponding observational estimates
-```{r ObsMRforestplot-MDC-TARC, echo = FALSE, out.width = "90%", fig.cap="(ref:caption-ObsMRforestplot-MDC-TARC)", fig.scap = "(ref:scaption-ObsMRforestplot-MDC-TARC)"}
+```{r ObsMRforestplot-MDC-TARC, echo = FALSE, out.width = "90%", fig.cap="(ref:caption-ObsMRforestplot-MDC-TARC)", fig.align = "center", fig.scap = "(ref:scaption-ObsMRforestplot-MDC-TARC)"}
 include_graphics(path = "figure/BMI_protein_INTERVAL/BMI_MDC_TARC_forestplot.png", dpi = NA)
 ```
 
@@ -212,7 +212,7 @@ The distribution of P-values for associations between BMI and protein traits sug
 
 (ref:caption-QQ-obs-MR) **Q-Q plot of the expected against observed -log~10~(pvalues) for BMI-protein estimates.** A) Q-Q plot of expected against observed -log10(pvalues) for the unadjusted observational BMI-protein trait estimates B) Q-Q plot of expected against observed -log10(p) values for the Mendelian Randomization BMI-protein trait estimates.
 (ref:scaption-QQ-obs-MR) Q-Q plot of the expected against observed -log~10~(pvalues) for BMI-protein estimates
-```{r QQ-obs-MR, echo = FALSE, out.width = "95%", fig.cap="(ref:caption-QQ-obs-MR)", fig.scap = "(ref:scaption-QQ-obs-MR)"}
+```{r QQ-obs-MR, echo = FALSE, out.width = "95%", fig.cap="(ref:caption-QQ-obs-MR)", fig.align = "center", fig.scap = "(ref:scaption-QQ-obs-MR)"}
 include_graphics(path = "figure/BMI_protein_INTERVAL/QQ_obs_MR.pdf", dpi = NA)
 
 ```
@@ -221,21 +221,21 @@ The unadjusted and confounder-adjusted regression coefficients for BMI and prote
 
 (ref:caption-Estimate-comparison-obs) **Scatter plot of the unadjusted (age and sex adjusted) observational estimates and the confounder-adjusted observational estimates for BMI and protein traits**. Regression line shown in blue.
 (ref:scaption-Estimate-comparison-obs) Scatter plot comparing the unadjusted and confounder-adjusted observational BMI-protein estimates
-```{r Estimate-comparison-obs, echo = FALSE, out.width = "75%", fig.cap="(ref:caption-Estimate-comparison-obs)", fig.scap="(ref:scaption-Estimate-comparison-obs)"}
+```{r Estimate-comparison-obs, echo = FALSE, out.width = "65%", fig.cap="(ref:caption-Estimate-comparison-obs)", fig.align = "center", fig.scap="(ref:scaption-Estimate-comparison-obs)"}
 include_graphics(path = "figure/BMI_protein_INTERVAL/obs_v_obs_adj_scatter.pdf", dpi = NA)
 
 ```
 
 (ref:caption-Estimate-comparison-obs-mr) **Scatter plot of the unadjusted (age and sex adjusted) observational estimates and the MR estimates for BMI and protein traits.** Regression line shown in blue.
 (ref:scaption-Estimate-comparison-obs-mr) Scatter plot comparing the observational and MR BMI-protein estimates
-```{r Estimate-comparison-obs-mr, echo = FALSE, out.width = "75%", fig.cap="(ref:caption-Estimate-comparison-obs-mr)", fig.scap = "(ref:scaption-Estimate-comparison-obs-mr)"}
+```{r Estimate-comparison-obs-mr, echo = FALSE, out.width = "65%", fig.cap="(ref:caption-Estimate-comparison-obs-mr)", fig.align = "center", fig.scap = "(ref:scaption-Estimate-comparison-obs-mr)"}
 include_graphics(path = "figure/BMI_protein_INTERVAL/unadj_obs_MR_scatter_small.pdf", dpi = NA)
 
 ```
 
 (ref:caption-Obs-MR-without-top8) **Scatter plot comparing BMI-protein estimates across models with top eight BMI-associated proteins excluded.** A) Scatter plot of the unadjusted (age and sex adjusted) observational estimates and the confounder-adjusted observational estimates for BMI and protein traits with a regression line (blue) 6B) Scatter plot of the unadjusted (age and sex adjusted) observational estimates and the MR estimates for BMI and protein traits with a regression line (blue).
 (ref:scaption-Obs-MR-without-top8) Scatter plot comparing BMI-protein estimates across models with top eight BMI-associated proteins excluded
-```{r Obs-MR-without-top8, echo = FALSE, out.width = "80%", fig.cap="(ref:caption-Obs-MR-without-top8)", fig.scap="(ref:scaption-Obs-MR-without-top8)"}
+```{r Obs-MR-without-top8, echo = FALSE, out.width = "80%", fig.cap="(ref:caption-Obs-MR-without-top8)", fig.align = "center", fig.scap="(ref:scaption-Obs-MR-without-top8)"}
 include_graphics(path = "figure/BMI_protein_INTERVAL/Obs_MR_scatter_without_top8.pdf", dpi = NA)
 
 ```

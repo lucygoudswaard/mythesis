@@ -41,7 +41,7 @@ Upon activation, platelets adhere to the vessel endothelium, where they undergo 
 
 (ref:scaption-platelet-diagram) Cartoon of integrin α~IIb~β~3~ and P-selectin on platelets.
 (ref:caption-platelet-diagram) **Cartoon of integrin α~IIb~β~3~ activation and P-selectin expression on platelets.** Upon platelet activation by a strong agonist such as CRP, the integrin α~IIb~β~3~ exposes its binding site for fibrinogen and cross-links platelets. P-selectin is expressed in the membrane of alpha granules within platelets. Upon platelet activation, platelets secrete these granules and P-selectin is then expressed on the outer membrane. P-selectin on platelets can bind to PSGL-1 leukocytes. Figure made using BioRender.com.
-```{r platelet-activation-2, echo = FALSE, fig.cap="(ref:caption-platelet-diagram)", fig.scap="(ref:scaption-platelet-diagram)"}
+```{r platelet-activation-2, echo = FALSE, fig.cap="(ref:caption-platelet-diagram)", fig.align = "center", fig.scap="(ref:scaption-platelet-diagram)"}
 include_graphics(path = "figure/Bariatric_study/Platelet_activiation_integrin_p-selectin.png", dpi = NA)
 ```
 
@@ -54,7 +54,7 @@ The aims of this chapter were to:
 
 (ref:caption-BMI-platelet-overview2) **Schematic of the associations explored: this chapter explores the relationship between body mass index and platelet function.** Figure made using BioRender.com.
 (ref:scaption-BMI-platelet-overview2) Schematic of the associations explored in the current chapter
-```{r BMI-platelet-overview2, echo = FALSE , fig.scap="(ref:scaption-BMI-platelet-overview2)", fig.cap="(ref:caption-BMI-platelet-overview2)", out.width="90%"}
+```{r BMI-platelet-overview2, echo = FALSE , fig.align = "center", fig.scap="(ref:scaption-BMI-platelet-overview2)", fig.cap="(ref:caption-BMI-platelet-overview2)", out.width="90%"}
 include_graphics(path = "figure/Bariatric_study/Thesis_graphic_overview_BMI_platelets.png", dpi = NA)
 ```
 
@@ -150,7 +150,7 @@ Activation of the integrin α~IIb~β~3~ and expression of P-selectin were compar
 (ref:scaption1) Comparison of basal integrin α~IIb~β~3~ activation, P-selectin expression and surface receptors levels across control and bariatric patient groups
 (ref:caption1) **Comparison of basal integrin α~IIb~β~3~ activation, P-selectin expression and surface receptors levels across control and bariatric patient groups.** Diluted PRP was used for experiments, where platelets were incubated with antibodies for 10 minutes before fixing. Bar graphs comparing A) Basal integrin α~IIb~β~3~ activation B) Basal  P-selectin expression and C) Basal surface receptor expression across bariatric patient and control groups. Antibodies were used to detect surface expression of GPVI, CD42b (GP1bα), CD41 (integrin α~IIb~), CD61 (Integrin β~3~) and CD110 (thrombopoietin/TPO receptor). N=4. P-values indicated for unpaired t-test results. Mean + SEM displayed.
 
-```{r basal-integrin-pselectin-receptor-bariatric, out.width = "90%", echo = FALSE, fig.cap="(ref:caption1)", fig.scap= "(ref:scaption1)"}
+```{r basal-integrin-pselectin-receptor-bariatric, out.width = "90%", echo = FALSE, fig.cap="(ref:caption1)", fig.align = "center", fig.scap= "(ref:scaption1)"}
 include_graphics(path = "figure/Bariatric_study/Basal_surface_receptors.pdf", dpi = NA)
 
 ```
@@ -163,7 +163,7 @@ Markers of platelet activation were compared in response to different platelet a
 (ref:scaption2) Concentration-response curves of integrin α~IIb~β~3~ activation and P-selectin expression for bariatric patient and control groups
 (ref:caption2) **Concentration-response curves of integrin α~IIb~β~3~ activation and P-selectin expression for bariatric patient and control groups** in platelet rich plasma diluted in HEPES-Tyrode's. Integrin α~IIb~β~3~ activation in response to A) PAR1-AP, B) ADP and C) CRP. P-selectin expression in response to D) PAR1-AP, E) ADP, F) CRP. N=4. Mean ± SEM displayed. P values are the comparison of either the pEC50 or the maximum of the curve for the individual concentration-response curves across the bariatric patient and control groups. For CRP, the p value for an unpaired two-tailed t-test comparing the response to 1x10^-5^ g/mL CRP across the bariatric patient and control groups is displayed.
 
-```{r agonist-integrin-pselectin, out.width = "90%",echo = FALSE, fig.cap="(ref:caption2)", fig.scap= "(ref:scaption2)"}
+```{r agonist-integrin-pselectin, out.width = "90%",echo = FALSE, fig.cap="(ref:caption2)", fig.align = "center", fig.scap= "(ref:scaption2)"}
 include_graphics(path = "figure/Bariatric_study/Agonist_Integrin_Pselectin.pdf", dpi = NA)
 
 ```
@@ -175,7 +175,7 @@ Next, platelet-neutrophil interactions were explored to determine whether there 
 (ref:scaption2b) Comparison of neutrophil-platelet aggregates across bariatric and control groups.
 (ref:caption2b) **Comparison of neutrophil-platelet aggregates across bariatric and control groups.** Neutrophil-platelet aggregates were determined using CD45 and CD41 antibodies. Aggregates were compared across bariatric patient and control participant groups in unstimulated and stimulated (5 ug/mL CRP) conditions. N=4. P-values provided for the results of a two-way ANOVA with Sidak's multiple comparisons tests. Mean + SEM displayed.
 
-```{r platelet-neutrophil, echo = FALSE, out.width = "70%", fig.cap="(ref:caption2b)", fit.align = "center", fig.scap= "(ref:scaption2b)"}
+```{r platelet-neutrophil, echo = FALSE, out.width = "70%", fig.cap="(ref:caption2b)", fig.align = "center", fig.align = "center", fig.scap= "(ref:scaption2b)"}
 include_graphics(path = "figure/Bariatric_study/Plt-neu_aggregates.pdf", dpi = NA)
 
 ```
@@ -187,14 +187,14 @@ A total of 5318 proteins were detected from platelets of both groups of particip
 (ref:scaption-pca) Principal component analysis (PCA): scatter plot of PC1 and PC2
 (ref:caption-pca) **Principal component analysis (PCA): scatter plot of PC1 and PC2.** Each point represents a participant. Control samples are coloured red and bariatric samples coloured blue, with the pooled reference sample of both control and bariatric samples coloured in blue.
 
-```{r pca, echo = FALSE, out.width = "80%", fig.cap="(ref:caption-pca)", fig.scap= "(ref:scaption-pca)"}
+```{r pca, echo = FALSE, out.width = "80%", fig.cap="(ref:caption-pca)", fig.align = "center", fig.scap= "(ref:scaption-pca)"}
 include_graphics(path = "figure/Bariatric_study/Proteomic_PCA.pdf", dpi = NA)
 
 ```
 (ref:scaption-pca2) Principal component analysis (PCA): scatter plot of PC3 and PC4.
 (ref:caption-pca2) **Principal component analysis (PCA): scatter plot of PC3 and PC4.** Each point represents a participant. Control samples are coloured pink and bariatric samples coloured blue, with the pooled reference sample of both control and bariatric samples coloured in blue.
 
-```{r pca2, echo = FALSE, out.width = "80%", fig.cap="(ref:caption-pca2)", fig.scap= "(ref:scaption-pca2)"}
+```{r pca2, echo = FALSE, out.width = "80%", fig.cap="(ref:caption-pca2)", fig.align = "center", fig.scap= "(ref:scaption-pca2)"}
 include_graphics(path = "figure/Bariatric_study/PC3vPC4_proteomics.pdf", dpi = NA)
 
 ```
@@ -204,7 +204,7 @@ There was evidence (p<0.05) that 188 out of a total of 5318 detected platelet pr
 (ref:scaption-volcano) A volcano plot comparing the Log~2~ fold change in protein levels in bariatric patients compared to controls
 (ref:caption-volcano) **A volcano plot comparing the Log~2~ fold change in protein levels in bariatric patients compared to controls.** Dashed lines indicate a log~2~ fold change of 0.3 and a pvalue cut off of 0.05 (-Log~10~ pvalue of 1.3)
 
-```{r volcano, echo = FALSE, out.width="80%", fig.cap="(ref:caption-volcano)", fig.scap= "(ref:scaption-volcano)"}
+```{r volcano, echo = FALSE, out.width="80%", fig.cap="(ref:caption-volcano)", fig.align = "center", fig.scap= "(ref:scaption-volcano)"}
 include_graphics(path = "figure/Bariatric_study/volcano_proteomics_labelled.pdf", dpi = NA)
 
 ```

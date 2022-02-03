@@ -44,7 +44,7 @@ Risk factors have often been identified through observational associations. Obse
 
 (ref:caption-MR-CVevent) **Example of how Mendelian randomisation and a randomised control trial can be used to determine whether higher BMI increases the risk of cardiovascular events**. Figure made using BioRender.com.
 
-```{r MR-CVevent, echo = FALSE, fig.cap="(ref:caption-MR-CVevent)", fig.scap="(ref:scaption-MR-CVevent)"}
+```{r MR-CVevent, echo = FALSE, fig.cap="(ref:caption-MR-CVevent)", fig.align = "center", fig.scap="(ref:scaption-MR-CVevent)"}
 include_graphics(path = "figure/Intro_background/BMI_MR_RCT_CVevent.png", dpi = NA)
 ```
 
@@ -60,7 +60,7 @@ Thrombi can also form in veins (venous thromboembolism/VTE), thereby causing dee
 
 (ref:caption-thrombi-cartoon) **Cartoon of arterial and venous thrombosis**. A) Arterial thrombi form when atherosclerotic plaques rupture and are rich in platelets. B) Venous thrombi mostly occur with an intact endothelial wall and are rich in fibrin, with red blood cells and a smaller proportion of platelets. Figure from Koupenova et al.[@Koupenova2017a].
 
-```{r thrombi-cartoon, echo = FALSE, fig.cap="(ref:caption-thrombi-cartoon)", fig.scap="(ref:scaption-thrombi-cartoon)", out.width="80%"}
+```{r thrombi-cartoon, echo = FALSE, fig.cap="(ref:caption-thrombi-cartoon)", fig.align = "center", fig.scap="(ref:scaption-thrombi-cartoon)", out.width="80%"}
 include_graphics(path = "figure/Intro_background/Thrombosis_venous_arterial.jpg", dpi = NA)
 ```
 
@@ -77,7 +77,7 @@ Platelets are anucleate cells which are generated from megakaryocytes in the bon
 
 (ref:scaption-platelet-activation-receptors) Key platelet receptors for platelet activation
 
-```{r platelet-activation-receptors, echo = FALSE, fig.cap="(ref:caption-platelet-activation-receptors)", fig.scap="(ref:scaption-platelet-activation-receptors)"}
+```{r platelet-activation-receptors, echo = FALSE, fig.cap="(ref:caption-platelet-activation-receptors)", fig.align = "center", fig.scap="(ref:scaption-platelet-activation-receptors)"}
 include_graphics(path = "figure/Intro_background/Platelet_activation.png", dpi = NA)
 ```
 
@@ -93,7 +93,7 @@ Platelet function can be measured by various laboratory techniques. Light transm
 
 (ref:caption-platelet-diagram-background) **Cartoon of integrin α~IIb~β~3~ activation, P-selectin expression and platelet-leukocyte interactions.** Upon platelet activation by a strong agonist such as CRP, the integrin α~IIb~β~3~ exposes its binding site for fibrinogen and cross-links platelets. P-selectin is expressed in the membrane of alpha granules within platelets. Upon platelet activation, alpha granules fuse with the membrane and P-selectin is then expressed on the outer membrane. P-selectin on platelets can bind to P-selectin glycoprotein ligand-1 (PSGL-1) on leukocytes. Figure made using BioRender.com.
 
-```{r platelet-activation-background, echo = FALSE, fig.cap="(ref:caption-platelet-diagram-background)", out.width="80%", fig.scap="(ref:scaption-platelet-diagram-background)"}
+```{r platelet-activation-background, echo = FALSE, fig.cap="(ref:caption-platelet-diagram-background)", out.width="80%", fig.align = "center", fig.scap="(ref:scaption-platelet-diagram-background)"}
 include_graphics(path = "figure/Bariatric_study/Platelet_activiation_integrin_p-selectin.png", dpi = NA)
 ```
 
@@ -112,7 +112,7 @@ More recent haematology analysers such as the Sysmex XN series analysers can pro
 
 (ref:scaption-sysmex-ipf) Scatter plot indicating how platelets are immature platelets are detected using a Sysmex haematology analyser
 
-```{r sysmex-ipf, echo = FALSE, fig.cap="(ref:caption-sysmex-ipf)", out.width="70%", fig.scap="(ref:scaption-sysmex-ipf)"}
+```{r sysmex-ipf, echo = FALSE, fig.cap="(ref:caption-sysmex-ipf)", out.width="70%", fig.align = "center", fig.scap="(ref:scaption-sysmex-ipf)"}
 include_graphics(path = "figure/Intro_background/Sysmex_IPF.png", dpi = NA)
 ```
 
@@ -144,7 +144,7 @@ The specific sub-aims of the thesis are:
 
 (ref:scaption-Thesis-schematic) Schematic of the multi-step pathway addressed in the thesis
 
-```{r Thesis-schematic, echo = FALSE, fig.cap="(ref:caption-Thesis-schematic)", fig.scap="(ref:scaption-Thesis-schematic)"}
+```{r Thesis-schematic, echo = FALSE, fig.cap="(ref:caption-Thesis-schematic)", fig.align = "center", fig.scap="(ref:scaption-Thesis-schematic)"}
 include_graphics(path = "figure/Intro_background/Thesis_graphic_overview_without_chapters.png", dpi = NA)
 ```
 

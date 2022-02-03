@@ -39,7 +39,7 @@ Although MR helps to overcome issues inherent to observational studies such as c
 
 (ref:caption-BMI-protein-graphic2) **Schematic of the associations explored in Chapter \@ref(BMI-protein-RCT). This chapter explores the effect of caloric restriction-induced weight loss on the plasma proteome.** Figure made using BioRender.com.
 (ref:scaption-BMI-protein-graphic2) Schematic of the associations explored in Chapter \@ref(BMI-protein-RCT)
-```{r BMI-protein-graphic2, echo = FALSE , fig.scap="(ref:scaption-BMI-protein-graphic2)", fig.cap="(ref:caption-BMI-protein-graphic2)", out.width="80%"}
+```{r BMI-protein-graphic2, echo = FALSE , fig.align = "center", fig.scap="(ref:scaption-BMI-protein-graphic2)", fig.cap="(ref:caption-BMI-protein-graphic2)", out.width="80%"}
 include_graphics(path = "figure/DiRECT/Thesis_graphic_overview_BMI_protein_CVD.png", dpi = NA)
 ```
 
@@ -51,7 +51,7 @@ Samples analysed within this study were collected from participants enrolled in 
 (ref:scaption-direct) Overview of participants in the DiRECT trial
 (ref:caption-direct) **Overview of participants in the DiRECT trial.** Figure made using BioRender.com.
 
-```{r direct-participants, echo = FALSE, fig.cap="(ref:caption-direct)", fig.scap= "(ref:scaption-direct)"}
+```{r direct-participants, echo = FALSE, fig.cap="(ref:caption-direct)", fig.align = "center", fig.scap= "(ref:scaption-direct)"}
 include_graphics(path = "figure/DiRECT/DiRECT_study_summary.png", dpi = NA)
 
 ```
@@ -71,7 +71,7 @@ The association between BMI change and change in platelet proteins were also exa
 
 (ref:scaption-direct-tsls) Schematic of two stage least squares analysis performed using DiRECT data
 (ref:caption-direct-tsls) **Schematic of two stage least squares analysis performed in the current chapter.** Figure made using BioRender.com.
-```{r direct-tsls, echo = FALSE, fig.cap="(ref:caption-direct-tsls)", fig.scap= "(ref:scaption-direct-tsls)"}
+```{r direct-tsls, echo = FALSE, fig.cap="(ref:caption-direct-tsls)", fig.align = "center", fig.scap= "(ref:scaption-direct-tsls)"}
 include_graphics(path = "figure/DiRECT/DiRECT_analysis.png", dpi = NA)
 
 ```
@@ -119,7 +119,7 @@ Mean BMI change in all participants was -1.8kg/m^2^ (SD 2.5 kg/m^2^), with a mea
 
 (ref:scaption-box-BMI-change) Box plot of the distribution of BMI change (kg/m^2^) by treatment group
 (ref:caption-box-BMI-change) **Box plot of the distribution of BMI change (kg/m^2^) by treatment group**. Median and interquartile ranges displayed by the box. Dotted red line indicates where there is no change in BMI.
-```{r box-BMI-change, echo = FALSE, fig.cap="(ref:caption-box-BMI-change)", out.width="85%", fig.scap= "(ref:scaption-box-BMI-change)"}
+```{r box-BMI-change, echo = FALSE, fig.cap="(ref:caption-box-BMI-change)", out.width="85%", fig.align = "center", fig.scap= "(ref:scaption-box-BMI-change)"}
 include_graphics(path = "figure/DiRECT/Intervention_BMI_change_boxplot.png", dpi = NA)
 
 ```
@@ -129,7 +129,7 @@ Treatment group was used as an instrument for BMI change in a two-stage least sq
 
 (ref:scaption-qq) QQ-plots of the expected vs the observed -log~10~(p-values) for the BMI change-protein change effects
 (ref:caption-qq) **QQ-plots of the expected vs the observed -log~10~(p-values) for the BMI change-protein change effects**. A) Linear regression B) Instrumental variable two stage least squares analysis.
-```{r qq-plot-DiRECT, echo = FALSE, out.width="100%", fig.cap="(ref:caption-qq)", fig.scap= "(ref:scaption-qq)"}
+```{r qq-plot-DiRECT, echo = FALSE, out.width="100%", fig.cap="(ref:caption-qq)", fig.align = "center", fig.scap= "(ref:scaption-qq)"}
 include_graphics(path = "figure/DiRECT/QQ_plots_obs_IV.pdf", dpi = NA)
 ```
 
@@ -140,14 +140,14 @@ A total of 110 proteins were only associated within the observational linear reg
 
 (ref:scaption-circos) Circos plot of proteins associated with BMI change in DiRECT
 (ref:caption-circos) **Circos plot displaying the protein change (SDs) per SD increase in BMI in DiRECT**. Blue estimates are the two stage least squares estimates and the yellow estimates are from the linear regression. Proteins presented were associated in both models at p=5.8x10^-5^. Figure made using the EpiViz R package https://github.com/mattlee821/EpiViz. 
-```{r circos, echo = FALSE, out.width="80%", fig.cap="(ref:caption-circos)", fig.scap= "(ref:scaption-circos)"}
+```{r circos, echo = FALSE, out.width="80%", fig.cap="(ref:caption-circos)", fig.align = "center", fig.scap= "(ref:scaption-circos)"}
 include_graphics(path = "figure/DiRECT/circos_plot_BMI_change_protein_ols_tsls.pdf", dpi = NA)
 ```
 
 \blandscape
 (ref:scaption-scatter-DiRECT) Scatter plot comparing proteins association with BMI change across models in DiRECT
 (ref:caption-scatter-DiRECT) **Scatter plot displaying the estimate for the change in protein (SDs) per SD increase in BMI in the two stage least squares and linear regression models.** Points are coloured by which models the proteins were associated with BMI change (p<5.8x10^-5^).
-```{r scatter-DiRECT, echo = FALSE, out.width="95%", fig.cap="(ref:caption-scatter-DiRECT)", fig.scap= "(ref:scaption-scatter-DiRECT)"}
+```{r scatter-DiRECT, echo = FALSE, out.width="95%", fig.cap="(ref:caption-scatter-DiRECT)", fig.align = "center", fig.scap= "(ref:scaption-scatter-DiRECT)"}
 include_graphics(path = "figure/DiRECT/DiRECT_scatter_comparison.pdf", dpi = NA)
 ```
 \elandscape
@@ -158,7 +158,7 @@ Proteins which were associated with BMI change were compared across control and 
 
 (ref:caption-ApoF-carb-boxplot) **Sensitivity analysis: boxplot of the levels of Apolipoprotein F and Carbohydrate Sulfotransferase at baseline and endpoint, grouped by treatment group.** Median and IQR is indicated by the box. Units are not rank normal transformed.
 (ref:scaption-ApoF-carb-boxplot) Sensitivity analysis: boxplot of the levels of Apolipoprotein F and Carbohydrate Sulfotransferase at baseline and endpoint, grouped by treatment group.
-```{r ApoF-carb-boxplot, echo = FALSE, out.width="90%", fig.cap= "(ref:caption-ApoF-carb-boxplot)", fig.scap= "(ref:scaption-ApoF-carb-boxplot)"}
+```{r ApoF-carb-boxplot, echo = FALSE, out.width="90%", fig.cap= "(ref:caption-ApoF-carb-boxplot)", fig.align = "center", fig.scap= "(ref:scaption-ApoF-carb-boxplot)"}
 include_graphics(path = "figure/DiRECT/ApoF_carb_boxplots.jpeg", dpi = NA)
 ```
 
@@ -167,7 +167,7 @@ To account for individual protein levels at each timepoint, a linear mixed model
 
 (ref:caption-tsls-lmer) **Scatter plot of the estimates from the TSLS and linear mixed model analyses**. 
 (ref:scaption-tsls-lmer) Scatter plot of the estimates from the TSLS and linear mixed model analyses
-```{r tsls-lmer, echo = FALSE, out.width="90%", fig.cap= "(ref:caption-tsls-lmer)", fig.scap= "(ref:scaption-tsls-lmer)"}
+```{r tsls-lmer, echo = FALSE, out.width="90%", fig.cap= "(ref:caption-tsls-lmer)", fig.align = "center", fig.scap= "(ref:scaption-tsls-lmer)"}
 include_graphics(path = "figure/DiRECT/Comparison_TSLS_lmer.pdf", dpi = NA)
 ```
 
@@ -205,7 +205,7 @@ Using StringDB and inputting p values for the association between BMI change and
 
 (ref:scaption-platelet-enrichment) Network of proteins in DiRECT which are involved in platelet activation. 
 
-```{r platelet-enrichment, echo = FALSE, out.width="75%", fig.cap= "(ref:caption-platelet-enrichment)", fig.scap= "(ref:scaption-platelet-enrichment)"}
+```{r platelet-enrichment, echo = FALSE, out.width="75%", fig.cap= "(ref:caption-platelet-enrichment)", fig.align = "center", fig.scap= "(ref:scaption-platelet-enrichment)"}
 include_graphics(path = "figure/DiRECT/string_platelet_activation_network.png", dpi = NA)
 ```
 \elandscape

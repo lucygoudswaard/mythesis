@@ -49,7 +49,7 @@ BMI-protein estimates from this DiRECT were compared with effect estimates from 
 \blandscape
 (ref:scaption-DiRECT-INTERVAL) Scatter plot comparing the two stage least squares estimate for the effect of BMI change on protein change in DiRECT with the Mendelian randomisation estimate for the effect of BMI on protein levels in INTERVAL
 (ref:caption-DIRECT-INTERVAL) **Scatter plot comparing the two stage least squares estimate for the effect of BMI change on protein change in DiRECT with the Mendelian randomisation estimate for the effect of BMI on protein levels in INTERVAL.** Proteins that are similar across analyses with a large effect size in both studies are coloured in green, whereas those which display similar estimates across studies with small effect size are shown in blue. Proteins do not show similar effects across studies are shown in pink. A linear regression line is indicated in blue. 
-```{r DiRECT-INTERVAL, echo = FALSE, out.width="75%", fig.cap="(ref:caption-DIRECT-INTERVAL)", fig.scap= "(ref:scaption-DiRECT-INTERVAL)"}
+```{r DiRECT-INTERVAL, echo = FALSE, out.width="75%", fig.cap="(ref:caption-DIRECT-INTERVAL)", fig.align = "center", fig.scap= "(ref:scaption-DiRECT-INTERVAL)"}
 include_graphics(path = "figure/DiRECT/DiRECT_INTERVAL_comparison.pdf", dpi = NA)
 
 ```
@@ -60,7 +60,7 @@ The divergence in magnitude of estimates across study designs also suggests that
 \blandscape
 (ref:scaption-DiRECT-INTERVAL-group) Scatter plot comparing the two stage least squares estimate for the effect of BMI change on protein change in DiRECT with the Mendelian randomisation estimate for the effect of BMI on protein levels in INTERVAL, with proteins that differ across models highlighted
 (ref:caption-DIRECT-INTERVAL-group) **Scatter plot comparing the two stage least squares estimate for the effect of BMI change on protein change in DiRECT with the Mendelian randomisation estimate for the effect of BMI on protein levels in INTERVAL, with proteins that differ across models highlighted.** Proteins that are similar across analyses with a large effect size in both studies are coloured in green, whereas those which display similar estimates across studies with small effect size are shown in blue. Proteins do not show similar effects across studies are shown in pink. A linear regression line is indicated in blue. Complement factors which group together are circled in red at the top. SCAR5 and CHAD are also indicated.
-```{r DiRECT-INTERVAL-group, echo = FALSE, out.width="75%", fig.cap="(ref:caption-DIRECT-INTERVAL-group)", fig.scap= "(ref:scaption-DiRECT-INTERVAL-group)"}
+```{r DiRECT-INTERVAL-group, echo = FALSE, out.width="75%", fig.cap="(ref:caption-DIRECT-INTERVAL-group)", fig.align = "center", fig.scap= "(ref:scaption-DiRECT-INTERVAL-group)"}
 include_graphics(path = "figure/DiRECT/DiRECT_INTERVAL_comparison_groups.png", dpi = NA)
 ```
 \elandscape
@@ -68,8 +68,8 @@ include_graphics(path = "figure/DiRECT/DiRECT_INTERVAL_comparison_groups.png", d
 Across both INTERVAL and DiRECT, 170 unique platelet proteins were detected. The estimates for these proteins are shown in Figure \@ref(fig:DiRECT-INTERVAL-platelet). Overall, the estimates were associated with each other (R^2^=0.19, p=1.1x10^-9^), however there were divergences in estimates for some proteins. Despite this, there were consistencies for some proteins. PAFAH was associated with BMI in the observational analysis in INTERVAL. However, PAFAH did not pass multiple testing in the MR analysis. Despite this, the estimate was similar in magnitude to the observational estimate. PAFAH was also associated with BMI change in DiRECT in the instrumental variable analysis (Figure \@ref(DiRECT-INTERVAL-platelet)). The direction of the effect indicated that higher BMI is associated with reduction in circulating PAFAH. In agreement with this, a reduction in BMI lead to levels of PAFAH increasing. The estimates for PAFAH were similar and can be seen in Figure \@ref(fig:DiRECT-INTERVAL-platelet). Consistencies in the estimates across the two study designs for other proteins, such as for complement factor B, suggest other effects that may be mediated by BMI that could affect platelet function.
 
 (ref:scaption-DiRECT-INTERVAL-platelet) Scatter plot of the two stage least squares estimate in DiRECT and the Mendelian Randomisation estimates in INTERVAL and the for the effect of BMI on proteins involved in platelet pathways
-(ref:caption-DiRECT-INTERVAL-platelet) **Scatter plot of the two stage least squares estimate in DiRECT and the Mendelian Randomisation estimates in INTERVAL and the for the effect of BMI on proteins involved in platelet pathways**. .
-```{r DiRECT-INTERVAL-platelet, echo = FALSE, out.width="75%", fig.cap="(ref:caption-DiRECT-INTERVAL-platelet)", fig.scap= "(ref:scaption-DiRECT-INTERVAL-platelet)"}
+(ref:caption-DiRECT-INTERVAL-platelet) **Scatter plot of the two stage least squares estimate in DiRECT and the Mendelian Randomisation estimates in INTERVAL and the for the effect of BMI on proteins involved in platelet pathways**.
+```{r DiRECT-INTERVAL-platelet, echo = FALSE, out.width="75%", fig.cap="(ref:caption-DiRECT-INTERVAL-platelet)", fig.align = "center", fig.scap= "(ref:scaption-DiRECT-INTERVAL-platelet)"}
 include_graphics(path = "figure/DiRECT/Comparison_scatter_platelet_proteins.pdf", dpi = NA)
 ```
 
