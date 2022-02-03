@@ -1,8 +1,189 @@
 
-```{r abbreviations,  echo=FALSE, warning=TRUE}
-abbreviations <- read_xlsx("figure/Abbreviations/Abbreviations.xlsx")
-abbreviations <- abbreviations[order(abbreviations$Abbreviation),]
 
-abbreviations %>% kable(abbreviations, booktabs = T, format = "markdown", escape = F, caption = "Full list of abbreviations") #%>% 
-```
+<!-- ```{r abbreviations,  echo=FALSE, warning=TRUE} -->
+<!-- abbreviations <- read_xlsx("figure/Abbreviations/Abbreviations.xlsx") -->
+<!-- abbreviations <- abbreviations[order(abbreviations$Abbreviation),] -->
 
+<!-- abbreviations %>% kable(abbreviations, booktabs = T, longtable = T,  -->
+<!--                         format = "latex", escape = F, caption = "Full list of abbreviations") #%>% -->
+<!-- ``` -->
+
+
+\begin{longtable}[t]{ll}
+\caption{Full list of abbreviations}\\
+\toprule
+Abbreviation & Full name\\
+\midrule
+ACD & Acid citrate dextrose\\
+ACTB & Actin\\
+ADH & Alcohol dehydrogenase\\
+ADH4 & Alcohol dehydrogenase 4\\
+ADP & Adenosine diphosphate\\
+\addlinespace
+APMAP & Adipocyte plasma membrane-associated protein\\
+AU & Arbitrary Units\\
+AUC & Area under the curve\\
+BAT & Brown adipose tissue\\
+BCA & Bicinchoninic acid\\
+\addlinespace
+BMI & Body mass index\\
+BSA & Bovine serum albumin\\
+CAD & Coronary artery disease\\
+CBPM & Carboxypeptidase M\\
+CCR4 & C-C motif chemokine receptor 4\\
+\addlinespace
+CHAD & Chondroadherin\\
+CHD & Coronary heart disease\\
+CRP & C-reactive protein/collagen-related peptide\\
+DAPT & Dual antiplatelet therapy\\
+DAVID & Database for annotation, visualization and integrated discovery\\
+\addlinespace
+DiRECT & Diabetes REmission Clinical Trial\\
+DTT & Dithiothreitol\\
+DVT & Deep vein thrombosis\\
+DXA & Dual-energy X-ray Absorptiometry\\
+EC50 & Half maximal effective concentration\\
+\addlinespace
+EDTA & Ethylenediamine tetraacetic acid\\
+ELISA & Enzyme-linked immunosorbent assay\\
+ERK & Extracellular signal regulated kinase\\
+FAAA & Fumarylacetoacetase\\
+FABP & Fatty acid binding protein\\
+\addlinespace
+FABP & Fatty acid binding protein\\
+FDR & False discovery rate\\
+FHS & Framingham Heart Study\\
+FSC & Forward scatter\\
+GAD & Genetic association database\\
+\addlinespace
+GAM & Generalized additive model\\
+GHR & Growth hormone receptor\\
+GIANT & Genetic Investigation of Anthromopetric Traits\\
+GLSMR & GAM and linear stratified Mendelian randomisation\\
+GO & Gene ontology\\
+\addlinespace
+GP & Glycoprotein\\
+GPCR & G protein coupled receptor\\
+GRK6 & G protein-coupled receptor kinase 6\\
+GRS & Genetic risk score\\
+GWAS & Genome wide association study\\
+\addlinespace
+H-IPF & High fluorescence immature platelet fraction\\
+HbA1c & Glycated haemoglobin\\
+HDL & High density lipoprotein\\
+IGF-1 & Insulin-like growth factor 1\\
+IGFBP & Insulin-like growth factor binding protein\\
+\addlinespace
+IHD & Ischaemic heart disease\\
+IL-6 & Interleukin-6\\
+IL6R & Interleukin-6 receptor\\
+INHBC & Inhibin β C chain\\
+IP3 & Inositol trisphosphate\\
+\addlinespace
+IPC & Immature platelet count\\
+IPF & Immature platelet fraction\\
+IQR & Interquartile range\\
+IRAS & Integrated Research Application System\\
+IVW & Inverse variance weighted\\
+\addlinespace
+LACE & Localised average causal effect\\
+LDL & Low density lipoprotein\\
+LTA & Light transmittance aggregometry\\
+MACE & Major adverse cardiovascular event\\
+MAPK & Mitogen-activated protein kinase\\
+\addlinespace
+MDC & Macrophage derived chemokie\\
+MEA & Multiple electrode aggregometry\\
+MFI & Median fluorescence intensity\\
+MMP-2 & Metalloproteinase-2\\
+MPO & Myeloperoxidase\\
+\addlinespace
+MPV & Mean platelet volume\\
+MR & Mendelian randomization\\
+MS & Mass spectrometry\\
+MS & Metabolic syndrome\\
+NHSBT & NHS Blood and Transplant\\
+\addlinespace
+NHSBT & National Health Service Blood and Transplant\\
+NLMR & Nonlinear Mendelian randomisation\\
+NO & Nitric oxide\\
+NSAID & Non-steroidal anti-inflammatory drug\\
+OLS & Ordinary least squares\\
+\addlinespace
+P-LCR & Platelet large cell ratio\\
+PAFAH & Platelet-activating factor acetylhydrolase\\
+PAR-1 & Protease-activated receptor 1\\
+PAR1-AP/TRAP-6 & PAR1-activating peptide\\
+PBS & Phoshate-buffered saline\\
+\addlinespace
+PCA & Principal component analysis\\
+PCI & Percutaneous coronary intervention\\
+PCT & Plateletcrit\\
+PDGF & Platelet-derived growth factor\\
+PDVF & Poly(vinylidene fluoride)\\
+\addlinespace
+PDW & Platelet distribution width\\
+PE & Pulmonary embolism\\
+PEAR1 & Platelet endothelial aggregation receptor 1\\
+pEC50 & The negative logarithm of the EC50\\
+PECAM-1 & Platelet endothelial cell adhesion molecule-1\\
+\addlinespace
+PFA & Paraformaldehyde\\
+PGE1 & Prostaglandin E1\\
+PGI2 & Prostaglandin I2\\
+PI3K & Phosphoinositde-3-kinase\\
+PKA & Protien kinase A\\
+\addlinespace
+PKB & Protein kinase B\\
+PKC & Protein kinase C\\
+PLC & Phospholipase C\\
+PLT (F) & Platelet count (PLT-F channel)\\
+PLT (I) & Platelet count (impedance channel)\\
+\addlinespace
+PPP & Platelet poor plasma\\
+pQTL & Protein quantitative trait loci\\
+PROTACs & Proteolysis targeting chimeras\\
+PRP & Platelet rich plasma\\
+PS & Phosphatidylserine\\
+\addlinespace
+PSGL-1 & P-selectin glycoprotein ligand-1\\
+PTPRU & Receptor-type tyrosine-protein phosphatase U\\
+QC & Quality control\\
+RCT & Randomised control trial\\
+RFU & Relative fluorescent units\\
+\addlinespace
+RIPA & Radioimmunoprecipitation assay\\
+ROCK & Rho-associated protein kinase\\
+RPM & Revolutions per minute\\
+S100A9/MRP-14 & Myeloid-related protein-14\\
+SCAR5 & Scavenger receptor class A member 5\\
+\addlinespace
+SD & Standard deviation\\
+SDS & Sodium dodecyl sulphate\\
+SEM & Standard error of the mean\\
+SFL & Side fluorescence\\
+SHBG & Sex hormone binding globulin\\
+\addlinespace
+SNP & Single nucleotide polymorphism\\
+SOMAmer & Slow Off-rate Modified Aptamers\\
+SSC & Side scatter\\
+T2D & Type 2 Diabetes mellitus\\
+TARC & Thymus and activation regulated chemokine\\
+\addlinespace
+TBS & Tris buffered saline\\
+TEMED & Tetramethylethylenediamine\\
+TLS & Total least squares\\
+TMT-MS & Tandem mass tag mass spectrometry\\
+TNF-alpha & Tumour necrosis factor-alpha\\
+\addlinespace
+TPO & Thrombopoietin\\
+TSLS/2SLS & Two stage least squares\\
+TxA2 & Thromboxane A2\\
+VASP & Vasodilator-stimulator phosphoprotein\\
+VLED & Very low energy diet\\
+\addlinespace
+VTE & Venous thromboembolism\\
+WAT & White adipose tissue\\
+WHRadjBMI & Waist-hip ratio adjusted for BMI\\
+\bottomrule
+\end{longtable}

@@ -1,13 +1,14 @@
 ---
 output: 
-    thesisdown::thesis_pdf: default
-bibliography: bib/library.bib
+  thesisdown::thesis_pdf: 
+    toc: true
+    toc-depth: 2
+    latex: pdflatexbibliography: bib/library.bib
 csl: csl/nature.csl
 space_betwee_paragraphs: true
 fig_caption: true
 always_allow_html: yes
 link-citations: true
-toc-depth: 2
 lot: true
 lof: true
 indent: true

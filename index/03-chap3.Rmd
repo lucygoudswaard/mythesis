@@ -44,12 +44,14 @@ In this chapter, data from the INTERVAL prospective cohort (N=33388) was used to
 
 (ref:caption-BMI-platelet-overview) **Schematic of the associations explored in the current chapter: the relationship between body mass index and platelet traits.** Figure made using BioRender.com.
 (ref:scaption-BMI-platelet-overview) Schematic of the associations explored in the current chapter: the relationship between body mass index and platelet traits.
+
 ```{r BMI-platelet-overview, echo = FALSE , fig.scap="(ref:scaption-BMI-platelet-overview)", fig.cap="(ref:caption-BMI-platelet-overview)", out.width="80%"}
 include_graphics(path = "figure/BMI_platelets/Thesis_graphic_overview_BMI_platelets.png", dpi = NA)
 ```
 
 (ref:caption-Linear-reg-MR) **Schematic of linear regression and Mendelian randomization analyses. Linear regression assesses the association between BMI (exposure) and platelet traits (outcome), with adjustment for potential confounders.** Under the assumptions of Mendelian randomization (MR), the genetic risk score (GRS) for body mass index (BMI) does not associate with confounding variables, and if there is a causal association, the GRS should only associate with platelet outcomes through its association with body mass index.
 (ref:scaption-Linear-reg-MR) Schematic of linear regression and Mendelian randomization frameworks for BMI and platelet trait analyses
+
 ```{r Linear-reg-MR, echo = FALSE , fig.cap="(ref:caption-Linear-reg-MR)", out.width = "80%", fig.scap = "(ref:scaption-Linear-reg-MR)"}
 include_graphics(path = "figure/BMI_platelets/obsvMRexample.png", dpi = NA)
 ```
@@ -65,14 +67,16 @@ Participants completed online questionnaires wherein they reported their height 
 
 ### Genetic data and instrument for BMI
 
-INTERVAL participant genotyping was performed on the Affymetrix GeneTitan Multi-Channel (MC) Instrument using the UK Biobank Axiom Array (ThermoFisher Scientific, Loughborough, UK) and the QC of genotype data was implemented as described by Astle et al. [@Astle2016]. The imputation panel used was the 1000 genomes phase-3-UK-10K[@Astle2016]. A genetic instrument for BMI was constructed using 654 genetic variants that were associated with BMI at P<5x10^-8^ in the inverse variance weighted fixed-effect meta-analysis of GWAS of 700000 individuals of European ancestry[@Yengo2018]. This meta-analysis consisted of around 250000 adults from the Genetic Investigation of ANthromopetric Traits (GIANT) consortium[@Locke2015] and 450000 adults from the UK Biobank study. Only 0.05 % of UK Biobank participants were included in the current INTERVAL study (of N=2737). These participants were not excluded to increase power. The weighted GRS was made using PLINK 2.0 software[@Purcell2007a] using the effect alleles and beta coefficients from the source GWAS. The score was calculated by multiplying the number of effect alleles at each SNP by its effect estimate (beta), summing these, and dividing by the total number of SNPs included. The GRS therefore can be interpreted as the average per-SNP effect on BMI for each individual. \par
+INTERVAL participant genotyping was performed on the Affymetrix GeneTitan Multi-Channel (MC) Instrument using the UK Biobank Axiom Array (ThermoFisher Scientific, Loughborough, UK) and the QC of genotype data was implemented as described by Astle et al. [@Astle2016]. The imputation panel used was the 1000 genomes phase-3-UK-10K[@Astle2016]. A genetic instrument for BMI was constructed using 654 genetic variants that were associated with BMI at P<5x10^-8^ in the inverse variance weighted fixed-effect meta-analysis of GWAS of 700000 individuals of European ancestry[@Yengo2018]. This meta-analysis consisted of around 250000 adults from the Genetic Investigation of ANthromopetric Traits (GIANT) consortium[@Locke2015] and 450000 adults from the UK Biobank study. Only 0.05 % of UK Biobank participants were included in the current INTERVAL study (of N=2737). These participants were not excluded to increase power. The weighted GRS was made using PLINK 2.0 software[@Purcell2007a] using the effect alleles and beta coefficients from the source GWAS. The score was calculated by multiplying the number of effect alleles at each SNP by its effect estimate (beta), summing these, and dividing by the total number of SNPs included. The GRS therefore can be interpreted as the average per-SNP effect on BMI for each individual. 
 
 ### Study population
 
 The present study was conducted on up to 33388 European ancestry INTERVAL participants living in the United Kingdom. These were the participants who had genetic data, had basic phenotype data and full blood count measures (Figure \@ref(fig:INTERVAL-STROBE)).
 
 (ref:caption-INTERVAL-STROBE) **A STROBE diagram outlining participants included in the INTERVAL study for BMI and platelet trait analyses**.
+
 (ref:scaption-INTERVAL-STROBE) A STROBE diagram outlining participants included in the INTERVAL study for BMI and platelet trait analyses.
+
 ```{r INTERVAL-STROBE, echo = FALSE, out.width="60%", fig.cap="(ref:caption-INTERVAL-STROBE)", fig.scap="(ref:scaption-INTERVAL-STROBE)"}
 include_graphics(path = "figure/BMI_platelets/STROBE_diagram.pdf", dpi = NA)
 ```
@@ -81,9 +85,11 @@ include_graphics(path = "figure/BMI_platelets/STROBE_diagram.pdf", dpi = NA)
 Blood was taken by venipuncture into 3mL ethylenediamine tetraacetic acid (EDTA) tubes. Platelet parameters were measured using the Sysmex XN-1000 instrument[@Astle2016]. This analyzer provides information on cell counts by using a combination of fluorescence (PLT-F) and impedance (I) flow cytometry. The PLT-F channel used a Fluorocell fluorescent dye (oxazine), whereas the impedance method uses electrical resistance to detect platelets. Platelet indices included in the current study, along with the raw units, are provided in Table \@ref(tab:Platelet-traits). These measurements were pre-adjusted for technical covariates such as time between venipuncture and blood count, as well as instrument drift, seasonal and weekly variation[@Astle2016]. Adjustment was performed with cyclic, thin-plate and P-splines in a generalized additive model (GAM)[@Akbari2020]. Resulting platelet trait values along with their units of measurement are reported in Table \@ref(tab:Platelet-traits). These data were rank normal transformed to normalize the distribution of each trait. Therefore, each platelet index is measured in normalized standard deviation (SD) units.
 
 (ref:caption-Platelet-traits) **Platelet traits measured by Sysmex XN-1000**.
+
 (ref:scaption-Platelet-traits) Platelet traits measured by Sysmex XN-1000
+
 ```{r Platelet-traits,  echo=FALSE, warning=FALSE}
-options(knitr.kable.NA = "")
+# options(knitr.kable.NA = "")
 Name = c('P-LCR','H-IPF','PLT (F)','PLT (I)','PCT','PDW','IPC','IPF','MPV','SFL','FSC','SSC')
 FullName = c('Platelet large cell ratio','High fluorescence immature platelet fraction','Platelet count (PLT-F channel)','Platelet count (impedance channel)','Plateletcrit','Platelet distribution width' ,'Immature platelet count' ,'Immature platelet fraction','Mean platelet volume','Side fluorescence', 'Forward scatter','Side scatter')
 Deriv = c('(platelet number with volume>12 fL)/(platelet number of ordinary volume)  x 100', '(high fluorescence immature platelet number)/(platelet count)  x 100','Total number of platelets per litre','Total number of platelets per litre','Volume percentage of blood occupied by platelets','Standard deviation of platelet volume distribution, estimated as width at 20% modal height of platelet volume histogram','Immature platelet count','(Immature platelet number)/(platelet count)   x 100', 'Mean platelet volume','Side fluorescence measures the nucleic acid (mRNA) content of the platelet','Forward scatter is a measure of the size of the platelet' ,'Side scatter is a measure of the granularity of the platelet')
@@ -123,7 +129,9 @@ The COPTIC dataset in the current analysis included 2,518 participants (23 out o
 Of INTERVAL participants included in the current study (N=33,388), 50.2 % were female. The mean age was 45.3 years (SD of 14.2 years, Table \@ref(tab:INT-participants-platelets)). The mean BMI was 26.4 kg/m^2^ (SD of 4.7 kg/m^2^). The majority of participants were never smokers (58.9 %), with 33.3% and 7.8 % reported as previous and current smokers, respectively. Nearly a third (32.7 %) of participants reported drinking alcohol at least three times a week. 
 
 (ref:caption-INT-participants-platelets) **Characteristics of included INTERVAL participants for BMI-platelet analyses**
+
 (ref:scaption-INT-participants-platelets) Characteristics of included INTERVAL participants for BMI-platelet analyses
+
 ```{r INT-participants-platelets,  echo=FALSE, warning=FALSE}
 options(knitr.kable.NA = "")
 f = c("Age", "Sex", "Male", "Female", "Weight (kg)", "Height (cm)", "Body mass index (kg/m2)", "Smoking frequency", "Never", "Previous", "Current", "Alcohol intake frequency", "Rarely", "Less than once a week", "One or two times a week", "Three to five times a week / most days")
@@ -143,7 +151,9 @@ mytable %>% kable(caption = "(ref:caption-INT-participants-platelets)", format="
 The Sysmex XN-1000 haematology analyzer measures multiple platelet traits, however many of these traits are closely related measurements and therefore may not be completely independent. Indeed, platelet traits showed a high degree of correlation with each other (Figure \@ref(fig:Corr-mat-dend)), in particular among similar measures. For example, measures of PLT (PLT I/F) and PCT, the latter a measurement of platelet mass, were highly positively correlated with each other but were weakly inversely correlated with other platelet measures. Measures of platelet maturity (IPF, IPC, H-IPF) were highly correlated with each other. In addition, platelet size variables (MPV, P-LCR and PDW) showed strong positive correlations with each other as well as with measures of immature platelets. 
 
 (ref:caption-Corr-mat-dend) **Correlation matrix and dendrogram of the relationship between platelet traits.** A) Correlation coefficients are provided within the matrix. Dark blue indicates a correlation coefficient (r) of 1, with dark red indicating a correlation coefficient of -1. B) A dendrogram showing the hierarchical relationship between platelet traits, where the height at which two platelet traits join is (1 – Pearson correlation coefficient (r)). PCT = plateletcrit, PLT (F) = platelet count (PLT-F channel), PLT (I) = platelet count (impedance channel), SSC = side scatter, SFL = side fluorescence, FSC = side scatter, IPC = immature platelet count, H-IPF = high fluorescence immature platelet fraction, IPF = immature platelet fraction, MPV = mean platelet volume, P-LCR = platelet large cell ratio, PDW = platelet distribution width. Dashed red lines indicate a height of 0.2, 0.3 and 0.4.
+
 (ref:scaption-Corr-mat-dend) Correlation matrix and dendrogram of the relationship between platelet traits
+
 ```{r Corr-mat-dend, echo = FALSE, out.width="95%", fig.cap="(ref:caption-Corr-mat-dend)", fig.scap= "(ref:scaption-Corr-mat-dend)"}
 include_graphics(path = "figure/BMI_platelets/Corrmatrix_dendrogram.pdf", dpi = NA)
 ```
@@ -153,6 +163,7 @@ Linear regression was performed to determine whether a higher BMI was associated
 
 
 (ref:caption-BMI-platelets-adjust) **Observational associations between BMI and platelet measures adjusted for age, sex, smoking status and alcohol consumption.** Βeta coefficient is the change in platelet measure in SDs per normalized SD increase in BMI. PCT = plateletcrit, PLT (I) = platelet count (impedance channel), PLT (F) = platelet count (PLT-F channel), SFL = side fluorescence, IPC = immature platelet count, PDW = platelet distribution width, FSC = forward scatter, H-IPF = high fluorescence immature platelet fraction, IPF = immature platelet fraction, P-LCR = platelet large cell ration, SSC = side scatter, MPV = mean platelet volume. Eta squared is the proportion of variance explained by the platelet trait in an ANOVA, whereas adjusted R squared is the variance explained by all the predictor variables in the regression model.
+
 (ref:scaption-BMI-platelets-adjust) Observational associations between BMI and platelet measures adjusted for age, sex, smoking status and alcohol consumption
 
 ```{r BMI-platelets-adjust,  echo=FALSE, warning=FALSE}
@@ -176,7 +187,9 @@ mytable %>% kable(caption = "(ref:caption-BMI-platelets-adjust)", booktabs = TRU
 ```
 
 (ref:caption-BMI-platelets-unadjust) **Age and sex adjusted estimates for the association between BMI and platelet traits.** Βeta coefficient is the change in platelet measure in SDs per SD higher BMI. Eta squared is the proportion of variance explained by the platelet trait in an ANOVA, whereas adjusted R squared is the variance explained by all the predictor variables in the regression model.
+
 (ref:scaption-BMI-platelets-unadjust) Age and sex adjusted estimates for the association between BMI and platelet traits
+
 ```{r BMI-platelets-unadjust,  echo=FALSE, warning=FALSE}
 options(knitr.kable.NA = "")
 FullName <- c('Plateletcrit','Platelet count (impedence channel)','Platelet count (PLT-F channel)','Side fluorescence','Immature platelet count' ,'Platelet distribution width' ,'Forward scatter','High fluorescence immature platelet fraction','Immature platelet fraction','Side scatter','Platelet large cell ratio','Mean platelet volume')
@@ -203,7 +216,9 @@ mytable %>% kable(caption = "(ref:caption-BMI-platelets-unadjust)", booktabs = T
 The association of covariables (age, sex, smoking and alcohol) with BMI were evaluated (Table \@ref(tab:INT-confounders-BMI-platelets)). Included covariables in the analysis showed associations with BMI. Males had a higher BMI than females (0.18 SD, 95% CI 0.16 to 0.21, P = 9.64x10^-64^). Age was positively associated with BMI (0.011 SD higher per year older, 95% CI 0.010 to 0.012, P = 1.11x10^-182^). Alcohol showed an inverse association with BMI and smoking showed a weak positive association with BMI. Associations between covariables (age, sex, smoking, alcohol) and platelet traits were also explored (Figure \@ref(fig:confounder-platelets)). Higher age was generally inversely associated with platelet measures. Males had a lower platelet count and PCT compared to females (PLT-F was 0.57 lower 95% CI -0.60 to -0.55, P = 9.9x10^-324^). Weak associations were detected between smoking and platelet traits such as a positive association between smoking status and immature platelets. Higher alcohol consumption also showed inverse associations with measures of PCT and PLT.
 
 (ref:caption-INT-confounders-BMI-platelets) **Associations between age, sex, smoking and alcohol consumption (exposures) with standardised BMI (outcome).** Beta coefficient is the change in BMI (normalized SDs) per unit increase in exposure.
+
 (ref:scaption-INT-confounders-BMI-platelets)  Associations between age, sex, smoking and alcohol consumption (exposures) with standardised BMI (outcome). 
+
 ```{r INT-confounders-BMI-platelets,  echo=FALSE}
 options(knitr.kable.NA = "")
 V = c( "Sex (1=female, 2=male)", "Age (years)", "Alcohol intake frequency (1=rarely, 2=<1 a week, 3=1-2 times a week, 4=most days/every day)", "Smoking frequency (1=never, 2=occasinal, 3=most days/ every day)" )
@@ -228,7 +243,9 @@ column_spec(1, width = "4cm")   %>%
 
 
 (ref:caption-confounder-platelets) **Linear regression results for the association between age, sex, smoking and alcohol with platelet traits.** PCT = plateletcrit, PLT (F) = platelet count (PLT-F channel), PLT (I) = platelet count (impedance channel), SSC = side scatter, SFL = side fluorescence, FSC = side scatter, IPC = immature platelet count, H-IPF = high fluorescence immature platelet fraction, IPF = immature platelet fraction, MPV = mean platelet volume, P-LCR = platelet large cell ratio, PDW = platelet distribution width. For age: beta coefficient is the difference in platelet characteristics per 1 year increase in age. For sex: Beta coefficient is the difference in platelet measure in SDs in men compared with women (for sex, 1=female and 2=male). For smoking: beta coefficient is the change in platelet traits (SDs) per unit change in smoking category (1 = never, 2 = previous, 3 = current). For alcohol: beta coefficient is the change in platelet traits in SDs per unit increase in alcohol consumption (1=Rarely , 2= Less than weekly, 3=One or two weekly, 4= 3-5 weekly or every day)
+
 (ref:scaption-confounder-platelets) Linear regression results for the association between age, sex, smoking and alcohol with platelet traits
+
 ```{r confounder-platelets, echo = FALSE, fig.scap="(ref:scaption-confounder-platelets)", fig.cap="(ref:caption-confounder-platelets)", out.width="80%"}
 include_graphics(path = "figure/BMI_platelets/Confounders_platelet_forest_plot.pdf", dpi = NA)
 ```
@@ -238,7 +255,9 @@ include_graphics(path = "figure/BMI_platelets/Confounders_platelet_forest_plot.p
 To estimate the causal effect of BMI on platelet characteristics, MR was performed. The GRS for BMI (the average per SNP effect on BMI) showed a normal distribution (mean 0.08, SD 0.30, range -1.15 to 1.34) and was positively associated with BMI to the degree expected (R^2^ = 0.042, P = 2.3x10^-312^, F=1458, Table \@ref(tab:INT-GRS-confounders-platelets)). The GRS did not associate with sex, however weak associations were detected with alcohol consumption, age, and smoking status. The amount of variance explained by the GRS for BMI on any covariable included did not exceed R^2^ = 0.002 (Table \@ref(tab:INT-GRS-confounders-platelets)). As the GRS associates with BMI but does not strongly associate with the measured covariables, it is thus likely a valid instrument to perform MR.
 
 (ref:caption-INT-GRS-confounders-platelets) **Association between genetic risk score for BMI with both BMI and covariables.** Beta coefficient is the change in outcome variable per unit increase in the genetic risk score for BMI.
+
 (ref:scaption-INT-GRS-confounders-platelets) Association between genetic risk score for BMI with both BMI and covariables
+
 ```{r INT-GRS-confounders-platelets,  echo=FALSE, warning=FALSE}
 options(knitr.kable.NA = "")
 V = c("BMI (SDs)", "Age (years)", "Sex (1=female, 2=male)", "Smoking frequency (1=never, 2=previous, 3=current", "Alcohol intake frequency (1=rarely, 2=<1 a week, 3=1-2 times a week, 4=most days/every day)")
@@ -262,7 +281,9 @@ In the MR analyses, BMI was associated with fewer traits than in the observation
 The Wu-Hausman test suggested that observational and MR estimates were similar for the majority of platelet traits (P > 0.05), except for measures of platelet count and plateletcrit (P < 0.001) (Table \@ref(tab:BMI-platelets-MR)). 
 
 (ref:caption-BMI-platelets-MR) **Mendelian randomization estimates for the effect of BMI on platelet traits.** Beta coefficient is the change in platelet measure in SDs per SD higher BMI.
+
 (ref:scaption-BMI-platelets-MR) Mendelian randomization estimates for the effect of BMI on platelet traits
+
 ```{r BMI-platelets-MR,  echo=FALSE}
 options(knitr.kable.NA = "")
 FullName <- c('Side fluorescence','Immature platelet count' ,'Forward scatter','Plateletcrit','Immature platelet fraction','Platelet count (impedence channel)','Platelet large cell ratio','Platelet distribution width' ,'Mean platelet volume','Platelet count (PLT-F channel)','Side scatter','High fluorescence immature platelet fraction')
@@ -288,7 +309,9 @@ mytable %>% kable(caption = "(ref:caption-BMI-platelets-MR)", booktabs = TRUE, f
 ```
 
 (ref:caption-BMI-platelet-forest) **Forest plot of the Mendelian randomization (MR) and unadjusted observational estimates for the effect of BMI on platelet traits.** Estimate points are filled where P < 0.05. SFL = side fluorescence, IPC = immature platelet count, H-IPF = high fluorescence immature platelet function, FSC = forward scatter, P-LCR = platelet large cell ratio, PDW = platelet distribution width, MPV = mean platelet volume, PCT = plateletcrit, PLT (I) = platelet count (impedance channel), PLT (F) = platelet count (PLT-F channel), SSC = side scatter.
+
 (ref:scaption-BMI-platelet-forest) Forest plot of the Mendelian randomization and unadjusted observational estimates for the effect of BMI on platelet traits
+
 ```{r BMI-platelet-forest, out.width="90%", echo = FALSE, fig.cap="(ref:caption-BMI-platelet-forest)", fig.scap = "(ref:scaption-BMI-platelet-forest)"}
 include_graphics(path = "figure/BMI_platelets/BMI_platelet_forestplot.pdf", dpi = NA)
 ```
@@ -298,7 +321,10 @@ We explored whether associations between BMI and IPC varied across NHS BMI group
 
 \blandscape
 (ref:caption-BMI-platelets-stratified) **Associations between BMI and immature platelet count (IPC) stratified by NHS BMI category.** Beta coefficient is the change in IPC (SDs) per SD increase in BMI
+
 (ref:scaption-BMI-platelets-stratified) Associations between BMI and immature platelet count (IPC) stratified by NHS BMI category
+
+
 ```{r BMI-platelets-stratified,  echo=FALSE, warning=FALSE}
 options(knitr.kable.NA = "")
 Adjustment <- c('Age and sex','Age and sex','Age and sex','Age and sex','Fully adjusted','Fully adjusted','Fully adjusted','Fully adjusted' )
@@ -330,7 +356,9 @@ Given evidence for a causal effect of BMI on IPC in the MR analysis, we sought t
 The total number of COPTIC participants was 2,541. Of these, 2,518 participants gave consent for future research (Table \@ref(tab:COPTIC-participants-platelets)). Participants included in the analysis were those not on antiplatelet therapy (N=655). The majority of participants were male (61.8%), with a mean age of 63.9 years (SD of 16.1). Similar to the INTERVAL cohort, the mean BMI was in the overweight category (27.2 kg/m^2^ with a SD of 4.9 kg/m^2^). The majority of participants were either never smokers or ex-smokers for more than 5 years (89.2 %). The effect estimate for the effect of BMI on IPC was 0.06 (95% CI -0.01 to 0.14, P=0.09) and therefore consistent with that estimated in the INTERVAL cohort (Table \@ref(tab:BMI-platelets-COPTIC)).
 
 (ref:caption-COPTIC-participants-platelets) **Characteristics of COPTIC study participants**
+
 (ref:scaption-COPTIC-participants-platelets) Characteristics of COPTIC study participants
+
 ```{r COPTIC-participants-platelets,  echo=FALSE, warning=FALSE}
 options(knitr.kable.NA = "")
 f = c("Age", "Sex", "Female", "Male", "Body mass index (kg/m2)", "Smoking", "Never", "Ex-smoker (>5 years)", "Ex-smoker (1-5 years)", "Ex-smoker (30 days to 1 year)", "Current smoker", "Antiplatelet medications", "0", "1", "2", "3", 'ADP aggregation (AU)','Adrenaline aggregation (AU)','Arachidonic acid aggregation (AU)','TRAP-6 aggregation (AU)','Platelet count (x 10E9 /L)','Mean platelet volume (fL)','Immature platelet fraction (%)','Immature platelet count (x 10E9/L)')
@@ -350,7 +378,9 @@ mytable %>% kable(caption = "(ref:caption-COPTIC-participants-platelets)", bookt
 
 \blandscape
 (ref:caption-BMI-platelets-COPTIC) **Association between BMI and platelet parameters in COPTIC (adjusted for age, sex, smoking).** Beta coefficient is the change in platelet measure ins SDs per SD higher BMI.
+
 (ref:scaption-BMI-platelets-COPTIC) Association between BMI and platelet parameters in COPTIC (adjusted for age, sex, smoking)
+
 ```{r BMI-platelets-COPTIC,  echo=FALSE, warning=FALSE}
 options(knitr.kable.NA = "")
 Outcome <- c('MPV', 'IPC', 'PLT', 'IPF')
@@ -376,7 +406,9 @@ mytable %>% kable(caption = "(ref:caption-BMI-platelets-COPTIC)", format = "mark
 To determine the potential functional effects of variation in IPC, the COPTIC cohort was used to assess the observational association between IPC and whole blood platelet aggregation in response to a range of platelet agonists (Figure \@ref(fig:IPC-aggregation)A). In participants who were not on antiplatelet therapy (up to N=655), there was evidence for a positive association between IPC and aggregation induced by adrenaline (0.13 SD increase per SD increase in IPC, 95% CI 0.04 to 0.21, p=3.7x10^-3^), TRAP-6 (0.11 SD increase per SD increase in IPC, 95% 0.03 to 0.18, p=7.8x10^-3^) and ADP (0.08 SD per SD increase in IPC, 95% 0.01 to 0.0.15, p=0.04). As there was a high correlation among platelet traits (Figure \@ref(fig:IPC-aggregation)A, Figure \@ref(fig:IPC-aggregation)B), the effect of MPV, PLT and IPF were also assessed. PLT was associated with all four measures of aggregation, with a larger effect estimate than IPC (Figure \@ref(fig:IPC-aggregation)A). The finding that IPC does not correlate with PLT however suggests that the effect of IPC on platelet aggregation is independent of the effect of PLT on platelet aggregation (Figure \@ref(fig:IPC-aggregation)B). Fitting PLT alongside IPC as an additional predictor of aggregation had little effect on the IPC effect estimate providing further evidence of independent contributions from the two traits (Figure \@ref(fig:IPC-aggregation)C). Adjustment for PLT in the regression model for the association between IPF and aggregation provided estimates of a similar magnitude to that of IPC and aggregation.
 
 (ref:caption-IPC-aggregation) **Association between platelet measures and whole blood platelet aggregation in COPTIC trial participants.** A) Forest plot displaying the association between platelet measures (exposure) and aggregation (outcomes). B) Correlation matrix displaying the Pearson’s correlation coefficient (r) between platelet traits. C) Forest plot displaying the effect estimate for the association between immature platelet count (IPC) or immature platelet fraction (IPF) and measures of aggregation, with or without adjustment for platelet count (PLT). ADP = adenosine diphosphate, AA = arachidonic acid, MPV = mean platelet volume.
+
 (ref:scaption-IPC-aggregation) Association between platelet measures and whole blood platelet aggregation in COPTIC trial participants
+
 ```{r IPC-aggregation, echo = FALSE, out.width="85%", fig.cap="(ref:caption-IPC-aggregation)", fig.scap = "(ref:scaption-IPC-aggregation)"}
 include_graphics(path = "figure/BMI_platelets/IPC_aggregation.pdf", dpi = NA)
 
