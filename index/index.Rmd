@@ -1,7 +1,7 @@
 ---
 author: 'Lucy Goudswaard'
 date: 'March 2022'
-title: 'The association between adiposity and platelet function: implications for cardiovascular disease'
+title: 'Exploring the effect of adiposity on platelet function and related pathways: implications for cardiovascular disease'
 university: 'University of Bristol'
 faculty: 'Life Sciences'
 school: 'Physiology, Pharmacology and Neuroscience / Population Health Sciences'
