@@ -8,7 +8,7 @@ school: 'Physiology, Pharmacology and Neuroscience / Population Health Sciences'
 group: 'Bristol Platelet Group / Team Timpson'
 degree: 'PhD Population Health Sciences'
 logo: figure/index/UoBcrest.pdf # logo will only show on PDF
-wordcount: '12,345'
+wordcount: '41,126'
 bibliography: bib/thesis.bib
 csl: csl/nature.csl
 knit: "bookdown::render_book"
