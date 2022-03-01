@@ -69,7 +69,7 @@ Across both INTERVAL and DiRECT, 170 unique platelet proteins were detected. The
 
 (ref:scaption-DiRECT-INTERVAL-platelet) Scatter plot of the two stage least squares estimate in DiRECT and the Mendelian Randomisation estimates in INTERVAL and the for the effect of BMI on proteins involved in platelet pathways
 (ref:caption-DiRECT-INTERVAL-platelet) **Scatter plot of the two stage least squares estimate in DiRECT and the Mendelian Randomisation estimates in INTERVAL and the for the effect of BMI on proteins involved in platelet pathways**.
-```{r DiRECT-INTERVAL-platelet, echo = FALSE, out.width="75%", fig.cap="(ref:caption-DiRECT-INTERVAL-platelet)", fig.align = "center", fig.scap= "(ref:scaption-DiRECT-INTERVAL-platelet)"}
+```{r DiRECT-INTERVAL-platelet, echo = FALSE, out.width="90%", fig.cap="(ref:caption-DiRECT-INTERVAL-platelet)", fig.align = "center", fig.scap= "(ref:scaption-DiRECT-INTERVAL-platelet)"}
 include_graphics(path = "figure/DiRECT/Comparison_scatter_platelet_proteins_coloured.pdf", dpi = NA)
 ```
 
