@@ -29,9 +29,9 @@ editor_options:
 ```{r, echo=FALSE, message=FALSE}
 source("~/OneDrive - University of Bristol/PhD/Main project/Thesis/index/packages.R")
 ```
-# Exploring the plasma proteome as a link between adiposity and platelet function: Observational and Mendelian randomization estimates {#BMI-protein-MR}
+# Exploring the plasma proteome as a link between adiposity and platelet function: Observational and Mendelian randomisation estimates {#BMI-protein-MR}
 
-The work within this chapter has been published in the International Journal of Obesity[@Goudswaard2021]. I am the first author of the publication; I performed all analyses, created all figures and tables and wrote the manuscript. 
+The work within this chapter has been published in the International Journal of Obesity[@Goudswaard2021]. The preprint of this manuscript is also available on MedRXiV[@Goudswaard2020]. I am the first author of the publication: I performed all analyses, created all figures and tables and wrote the manuscript.
 
 Supplementary Tables 1-10 can be found here https://github.com/lucygoudswaard/mythesis/blob/master/index/figure/BMI_protein_INTERVAL/BMI_protein_supplementary_Tables.xlsx 
 
@@ -210,7 +210,7 @@ include_graphics(path = "figure/BMI_protein_INTERVAL/BMI_MDC_TARC_forestplot.png
 
 The distribution of P-values for associations between BMI and protein traits suggested an overrepresentation of signal for the observational estimates of BMI and protein traits; far more than expected from chance alone (Figure \@ref(fig:QQ-obs-MR)A). In contrast to this, the extent of this overrepresentation was reduced considerably in the MR (Figure \@ref(fig:QQ-obs-MR)B).
 
-(ref:caption-QQ-obs-MR) **Q-Q plot of the expected against observed -log~10~(pvalues) for BMI-protein estimates.** A) Q-Q plot of expected against observed -log10(pvalues) for the unadjusted observational BMI-protein trait estimates B) Q-Q plot of expected against observed -log10(p) values for the Mendelian Randomization BMI-protein trait estimates.
+(ref:caption-QQ-obs-MR) **Q-Q plot of the expected against observed -log~10~(pvalues) for BMI-protein estimates.** A) Q-Q plot of expected against observed -log10(pvalues) for the unadjusted observational BMI-protein trait estimates B) Q-Q plot of expected against observed -log10(p) values for the Mendelian randomisation BMI-protein trait estimates.
 (ref:scaption-QQ-obs-MR) Q-Q plot of the expected against observed -log~10~(pvalues) for BMI-protein estimates
 ```{r QQ-obs-MR, echo = FALSE, out.width = "95%", fig.cap="(ref:caption-QQ-obs-MR)", fig.align = "center", fig.scap = "(ref:scaption-QQ-obs-MR)"}
 include_graphics(path = "figure/BMI_protein_INTERVAL/QQ_obs_MR.pdf", dpi = NA)
