@@ -206,6 +206,7 @@ Upper <- c(0.137,0.121,0.116,0.076,0.079,0.041,0.034,'-0.005',0.027,0.022,0.021,
 mytable = data.frame(cbind(FullName, Name, N, Beta, SE, P, R, Eta, CI, Lower, Upper))
 colnames(mytable) <- c('Full name', 'Short Name',	'N',	'Beta coefficient',	'SE',	'P value',	'R2',	'Eta2',	'95% CI',	'Lower 95% CI',	'Upper 95% CI')
 mytable %>% kable(caption = "(ref:caption-BMI-platelets-unadjust)", booktabs = TRUE,  format = "latex", caption.short = "(ref:scaption-BMI-platelets-unadjust)") %>%
+  kable_classic_2(full_width = F, font_size = 9) %>%
   kable_classic_2(full_width = F) %>%
  kable_styling(full_width = TRUE) %>%
   column_spec(1, width = "3.5cm")   %>%
@@ -234,7 +235,7 @@ UpperCI <- c(0.205,0.012,'-0.085',0.090)
 mytable = data.frame(cbind(V, N, B, SE, P, AdjR, Fstat, CI, LowerCI, UpperCI))
 colnames(mytable) <- c('Variable',	'N',	'Beta coefficient per 1-unit increase in confounder (SDs)',	'Standard error',	'P value',	'Adjusted R2',	'F statistic' , "95% CI", "Lower 95% CI", "Upper 95% CI")
 mytable %>% kable(caption = "(ref:caption-INT-confounders-BMI-platelets)", booktabs = TRUE, format = "latex", caption.short = "(ref:scaption-INT-confounders-BMI-platelets)") %>%
-  kable_classic_2(full_width = F, font_size = 8) %>%
+  kable_classic_2(full_width = F, font_size = 7) %>%
  kable_styling(full_width = TRUE) %>%
 column_spec(1, width = "4cm")   %>%
   column_spec(3, width = "2cm") #  %>%
