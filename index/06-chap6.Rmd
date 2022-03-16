@@ -43,8 +43,8 @@ A benefit of studying the systematic effects of BMI on the circulating proteome 
 
 In this chapter, the aim was to measure associations between adiposity and the human proteome and to also estimate the underlying effects in a causal framework (Figure \@ref(fig:BMI-protein-graphic-INT)). Using data on 2737 participants from INTERVAL, the effects of BMI on 4034 (3622 unique) plasma protein traits will be estimated in both observational and MR frameworks. The specific effect of BMI on platelet proteins will be explored, as well as a disease enrichment analysis.
 
-(ref:caption-BMI-protein-graphic-INT) **Schematic of the associations explored in Chapter \@ref(BMI-protein-MR).** This chapter explores the causal effect of BMI on the plasma proteome and explores whether these changes might contribute to CVD. Figure made using BioRender.com.
-(ref:scaption-BMI-protein-graphic-INT) Schematic of the associations explored in /@ref(BMI-protein-MR).
+(ref:caption-BMI-protein-graphic-INT) **Schematic of the associations explored in Chapter \@ref(BMI-protein-MR)**. This chapter explores the causal effect of BMI on the plasma proteome and explores whether these changes might contribute to CVD. Figure made using BioRender.com.
+(ref:scaption-BMI-protein-graphic-INT) Schematic of the associations explored in \@ref(BMI-protein-MR).
 ```{r BMI-protein-graphic-INT, echo = FALSE , fig.align = "center", fig.scap="(ref:scaption-BMI-protein-graphic-INT)", fig.cap="(ref:caption-BMI-protein-graphic-INT)", out.width="90%"}
 include_graphics(path = "figure/BMI_protein_INTERVAL/Thesis_graphic_overview_BMI_protein_CVD.png", dpi = NA)
 ```
@@ -156,8 +156,8 @@ column_spec(1, width = "4cm")   %>%
   landscape()
 ```
 
-(ref:caption-QQ-confounder-proteins) **Q-Q plots for the expected against observed -log~10~(pvalues) for associations of age (A), sex (B), smoking (C) and alcohol (D) with protein traits**. The red line indicates where the expected vs observed p-values are equal. Each blue dot represents the expected vs observed p-value for each protein.
-(ref:scaption-QQ-confounder-proteins) Q-Q plots of the expected against observed -log~10~(pvalues) for the associations between covariables and protein traits
+(ref:caption-QQ-confounder-proteins) **Q-Q plots for the expected against observed -log~10~(p-values) for associations of age (A), sex (B), smoking (C) and alcohol (D) with protein traits**. The red line indicates where the expected vs observed p-values are equal. Each blue dot represents the expected vs observed p-value for each protein.
+(ref:scaption-QQ-confounder-proteins) Q-Q plots of the expected against observed -log~10~(p-values) for the associations between covariables and protein traits
 ```{r QQ-confounder-proteins, echo = FALSE, out.width = "95%", fig.cap="(ref:caption-QQ-confounder-proteins)", fig.align = "center", fig.scap="(ref:scaption-QQ-confounder-proteins)"}
 include_graphics(path = "figure/BMI_protein_INTERVAL/QQ_confounder_proteins.pdf", dpi = NA)
 

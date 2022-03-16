@@ -193,7 +193,7 @@
   \begin{center}
     \setcounter{page}{1}
     \includegraphics[scale=0.6] \@logo \\
-    {\fontsize{14}{14}\selectfont \@title}
+    {\fontsize{16}{16}\selectfont \@title}
     \vfil
     \centerline{\hbox to \wd0 {\hbox{}\hrulefill\hbox{}}}
     \vfil

@@ -3,13 +3,13 @@ body {
 text-align: justify}
 </style>
 
-First of all, I would like to say a huge thanks to my supervisors Inge and Nic for their guidance and advice throughout my PhD. I have felt supported when I have needed it, but also feel like I have been given the independence and academic freedom, which I will take forward into my career. I am excited to continue working with you during the Transition Fellowship.
+First of all, I would like to say a huge thanks to my supervisors Inge and Nic for their guidance and advice throughout my PhD. I have felt supported when I have needed it, but also feel like I have been given the independence and academic freedom which I will take forward into my career. I am excited to continue working with you during the Transition Fellowship.
 
 It goes without saying that this work would not have been possible without the British Heart Foundation Integrative Cardiovascular Science PhD programme, along with the funding I received from the University of Bristol alumni. I am very grateful for all the training and opportunities I've received as part of this programme. I have also greatly enjoyed the sense of community within this programme.
 
-Thank you to all the (past and present) members of Bristol Platelet Group who have helped me out in the lab so willingly - Samantha Moore, Tony Walsh, Chris Williams, Kamila Sledz, Lawrence Hutchinson, Kate Burley and Elizabeth Aitken among others. 
+Thank you to all the (past and present) members of Bristol Platelet Group who have helped me out in the lab so willingly - Samantha Moore, Tony Walsh, Chris Williams, Kamila Sledz, Lawrence Hutchinson, Kate Burley, Elizabeth Aitken, Alastair Poole and Stuart Mundell among others. 
 
-Thank you also to Team Timpson members who have been so encouraging and supportive especially in the early stages of my PhD - it was a tough transition as I started this PhD with no experience of epidemiology. I would like to thank David Hughes in particular for being the one who taught me R and kept me away from Stata! Other people who have helped massively include Laura Corbin, Caroline Bull, Kaitlin Wade, Emma Vincent.
+Thank you also to Team Timpson members who have been so encouraging and supportive especially in the early stages of my PhD - it was a tough transition as I started this PhD with no experience of epidemiology. I would like to thank David Hughes in particular for being the one who taught me R and kept me away from Stata! Other people who have helped massively include Laura Corbin, Caroline Bull, Kaitlin Wade and Emma Vincent.
 
 Matt Lee - thanks for gently pressuring me into using R Markdown to write my thesis and for being there to fix it when I couldn't! 
 

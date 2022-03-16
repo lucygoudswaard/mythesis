@@ -3,12 +3,12 @@ author: 'Lucy Goudswaard'
 date: 'March 2022'
 title: 'Exploring the effect of adiposity on platelet function and related pathways: implications for cardiovascular disease'
 university: 'University of Bristol'
-faculty: 'Life Sciences'
-school: 'Physiology, Pharmacology and Neuroscience / Population Health Sciences'
-group: 'Bristol Platelet Group / Team Timpson'
-degree: 'PhD Population Health Sciences'
+faculty: 'Life Sciences & Faculty of Health Sciences'
+school: 'Physiology, Pharmacology and Neuroscience & Population Health Sciences'
+group: 'Bristol Platelet Group & Team Timpson'
+degree: 'PhD Physiology, Pharmacology and Neuroscience & Population Health Sciences'
 logo: figure/index/UoBcrest.pdf # logo will only show on PDF
-wordcount: '41,548'
+wordcount: '42,999'
 bibliography: bib/thesis.bib
 csl: csl/nature.csl
 knit: "bookdown::render_book"
