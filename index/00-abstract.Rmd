@@ -3,9 +3,9 @@ body {
 text-align: justify}
 </style>
 
-Higher body mass index (BMI) is a risk factor for thrombosis. Mechanisms are unclear but it is likely that a change in platelet function (cells which are involved in clotting) mediate some of the risk. I aimed to assess the effect of BMI on platelet function and identify potential mechanisms which may mediate this effect by focusing on plasma proteins. 
+Higher body mass index (BMI) is a risk factor for thrombosis. Mechanisms are unclear but it is likely that a change in platelet function (cells which are involved in clotting) mediates some of the risk. I aimed to assess the effect of BMI on platelet function and identify potential mechanisms which may mediate this effect by focusing on plasma proteins. 
 
-I used data from INTERVAL, a UK study of blood donors to explore the effect of BMI on platelet traits measured by the Sysmex XN-1000 haematology analyser (**Chapter \@ref(BMI-platelets-INTERVAL)**). Observational and Mendelian randomization (MR) analyses in up to 33,388 participants suggested higher BMI raises immature platelet count (IPC), a measure of newly produced platelets. A follow-up analysis using a pre-cardiac surgery cohort (COPTIC) indicated that IPC was positively associated with whole blood platelet aggregation induced by platelet agonists (N=655).
+I used data from INTERVAL, a UK study of blood donors, to explore the effect of BMI on platelet traits measured by the Sysmex XN-1000 haematology analyser (**Chapter \@ref(BMI-platelets-INTERVAL)**). Observational and Mendelian randomization (MR) analyses in up to 33,388 participants suggested higher BMI raises immature platelet count (IPC), a measure of newly produced platelets. A follow-up analysis using a pre-cardiac surgery cohort (COPTIC) indicated that IPC was positively associated with whole blood platelet aggregation induced by platelet agonists (N=655).
 
 Following on from these findings, a pilot patient study was initiated to develop laboratory methods to explore the effect of BMI on platelet function and signalling (**Chapter \@ref(BMI-platelets-clinic)**). Patients due to undergo bariatric surgery (BMI >40 kg/m^2^), alongside age and sex matched controls (BMI 18.5-25 kg/m^2^), donated blood samples (N=4). Platelet function experiments were carried out on blood samples, and a platelet proteome analysis was performed on isolated platelets using mass spectrometry. Established methods need to replicated in a larger sample size.
 
@@ -17,4 +17,4 @@ A weight loss randomized control trial (RCT) called DiRECT was also implemented 
 
 Next the results of the two previous chapters were combined in attempt to identify consistent and divergent proteomic features across MR and weight loss RCT study designs (**Chapter \@ref(Comparison-proteome)**). This chapter indicated that proteins which are altered with higher BMI can be reversed with a reduction in BMI through an intervention. There was evidence that BMI affects levels of proteins which may be indicative of a change in platelet function.
 
-Finally, **Chapter \@ref(Discussion)** brings together the findings from the thesis and discusses how they relate back to the aims. The strengths and limitations of the work, the wider implications of the findings and future studies are also discussed. 
+Finally, I bring together the findings from the thesis and discuss how they relate back to the aims (**Chapter \@ref(Discussion)**). The strengths and limitations of the work, the wider implications of the findings and future studies are also discussed. 

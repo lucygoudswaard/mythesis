@@ -35,6 +35,7 @@ CCR4 & C-C motif chemokine receptor 4\\
 CHAD & Chondroadherin\\
 CHD & Coronary heart disease\\
 CRP & C-reactive protein/collagen-related peptide\\
+CVD & Cardiovascular disease\\
 DAPT & Dual antiplatelet therapy\\
 DAVID & Database for annotation, visualization and integrated discovery\\
 \addlinespace
@@ -50,7 +51,6 @@ ERK & Extracellular signal regulated kinase\\
 FAAA & Fumarylacetoacetase\\
 FABP & Fatty acid binding protein\\
 \addlinespace
-FABP & Fatty acid binding protein\\
 FDR & False discovery rate\\
 FHS & Framingham Heart Study\\
 FSC & Forward scatter\\
@@ -102,7 +102,6 @@ MPV & Mean platelet volume\\
 MR & Mendelian randomization\\
 MS & Mass spectrometry\\
 MS & Metabolic syndrome\\
-NHSBT & NHS Blood and Transplant\\
 \addlinespace
 NHSBT & National Health Service Blood and Transplant\\
 NLMR & Nonlinear Mendelian randomisation\\
@@ -111,7 +110,9 @@ NSAID & Non-steroidal anti-inflammatory drug\\
 OLS & Ordinary least squares\\
 \addlinespace
 P-LCR & Platelet large cell ratio\\
+PAF & Platelet-activating factor\\
 PAFAH & Platelet-activating factor acetylhydrolase\\
+PAI-1 & Plasminogen activator inhibitor-1\\
 PAR-1 & Protease-activated receptor 1\\
 PAR1-AP/TRAP-6 & PAR1-activating peptide\\
 PBS & Phoshate-buffered saline\\
@@ -137,7 +138,7 @@ PKA & Protien kinase A\\
 PKB & Protein kinase B\\
 PKC & Protein kinase C\\
 PLC & Phospholipase C\\
-PLT (F) & Platelet count (PLT-F channel)\\
+PLT (F) & Platelet count (fluorescence channel)\\
 PLT (I) & Platelet count (impedance channel)\\
 \addlinespace
 PPP & Platelet poor plasma\\
@@ -176,6 +177,7 @@ TLS & Total least squares\\
 TMT-MS & Tandem mass tag mass spectrometry\\
 TNF-alpha & Tumour necrosis factor-alpha\\
 \addlinespace
+tPA & Tissue plasminogen activator\\
 TPO & Thrombopoietin\\
 TSLS/2SLS & Two stage least squares\\
 TxA2 & Thromboxane A2\\
