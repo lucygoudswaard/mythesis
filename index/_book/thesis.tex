@@ -91,7 +91,7 @@
 \faculty{Life Sciences \& Faculty of Health Sciences}
 \school{Physiology, Pharmacology and Neuroscience \& Population Health Sciences}
 \group{Bristol Platelet Group \& Team Timpson}
-\wordcount{43,143}
+\wordcount{45,866}
 \degree{PhD Physiology, Pharmacology and Neuroscience \& Population Health Sciences}
 \logo{figure/index/UoBcrest.pdf}
 %%%
@@ -695,12 +695,7 @@ WHRadjBMI & Waist-hip ratio adjusted for BMI\\
 \spacing{1.5}
 \pagestyle{plain}
 \pagenumbering{arabic}
-\begin{verbatim}
-Warning: package 'tidyr' was built under R version 4.0.5
-\end{verbatim}
-\begin{verbatim}
-Warning: package 'readr' was built under R version 4.0.5
-\end{verbatim}
+
 \hypertarget{general-information}{%
 \chapter{General information}\label{general-information}}
 
@@ -1052,7 +1047,7 @@ The present study was conducted on up to 33388 European ancestry INTERVAL partic
 \hypertarget{measurement-of-platelet-traits}{%
 \subsection{Measurement of platelet traits}\label{measurement-of-platelet-traits}}
 
-Blood was taken by venipuncture into 3mL ethylenediamine tetraacetic acid (EDTA) tubes. Platelet parameters were measured using the Sysmex XN-1000 instrument\textsuperscript{\protect\hyperlink{ref-Astle2016}{114}}. This analyzer provides information on cell counts by using a combination of fluorescence (PLT-F) and impedance (I) flow cytometry. The PLT-F channel used a Fluorocell fluorescent dye (oxazine), whereas the impedance method uses electrical resistance to detect platelets. Platelet indices included in the current study, along with the raw units, are provided in Table \ref{tab:Platelet-traits}. Some measurements are measured by the Sysmex analyzer, whereas some measurements are derived from other platelet variables\textsuperscript{\protect\hyperlink{ref-Astle2016}{114}}. Details of how each platelet trait is measured or derived is indicated in Table \ref{tab:Platelet-traits}. These measurements were pre-adjusted for technical covariates such as time between venipuncture and blood count, as well as instrument drift, seasonal and weekly variation\textsuperscript{\protect\hyperlink{ref-Astle2016}{114}}. Adjustment was performed with cyclic, thin-plate and P-splines in a generalized additive model (GAM)\textsuperscript{\protect\hyperlink{ref-Akbari2020}{116}}. Resulting platelet trait values along with their units of measurement are reported in Table \ref{tab:Platelet-traits}. These data were rank normal transformed to normalize the distribution of each trait. Therefore, each platelet index is measured in normalized standard deviation (SD) units.
+Blood was taken by venipuncture into 3mL ethylenediamine tetraacetic acid (EDTA) tubes. Platelet parameters were measured using the Sysmex XN-1000 instrument\textsuperscript{\protect\hyperlink{ref-Astle2016}{114}}. This analyzer provides information on cell counts by using a combination of fluorescence (PLT-F) and impedance (I) flow cytometry. The PLT-F channel used a Fluorocell fluorescent dye (oxazine), whereas the impedance method uses electrical resistance to detect platelets. Platelet indices included in the current study, along with the raw units, are provided in Table \ref{tab:Platelet-traits}. Some parameters are measured by the Sysmex analyzer, whereas some parameters are derived from other platelet variables\textsuperscript{\protect\hyperlink{ref-Astle2016}{114}}. Details of how each platelet trait is measured or derived is indicated in Table \ref{tab:Platelet-traits}. These measurements were pre-adjusted for technical covariates such as time between venipuncture and blood count, as well as instrument drift, seasonal and weekly variation\textsuperscript{\protect\hyperlink{ref-Astle2016}{114}}. Adjustment was performed with cyclic, thin-plate and P-splines in a generalized additive model (GAM)\textsuperscript{\protect\hyperlink{ref-Akbari2020}{116}}. Resulting platelet trait values along with their units of measurement are reported in Table \ref{tab:Platelet-traits}. These data were rank normal transformed to normalize the distribution of each trait. Therefore, each platelet index is measured in normalized standard deviation (SD) units.
 
 
 
@@ -2147,13 +2142,13 @@ MDC and TARC were applied to washed platelets to determine whether they exert ef
 \hypertarget{effects-of-mdc-and-tarc-alone-on-aggregation-in-prp}{%
 \subsection{Effects of MDC and TARC alone on aggregation in PRP}\label{effects-of-mdc-and-tarc-alone-on-aggregation-in-prp}}
 
-MDC and TARC were applied on their own in PRP to see whether in the presence of plasma these chemokines could activate platelets. MDC and TARC elicited 38 \% (SEM 10 \%) and 35 \% (SEM 10 \%) aggregation respectively. PAR1-AP (1uM) induced 50 \% (SEM 14 \%) aggregation and 10 uM ADP induced 78 \% (SEM 3.5) aggregation.
+MDC and TARC were applied on their own in PRP to see whether in the presence of plasma these chemokines could activate platelets. MDC and TARC elicited 38 \% (SEM 10 \%) and 35 \% (SEM 10 \%) aggregation respectively. PAR1-AP (1uM) induced 50 \% (SEM 14 \%) aggregation and 10 uM ADP induced 78 \% (SEM 3.5 \%) aggregation.
 
 
 
 \begin{figure}
 
-{\centering \includegraphics[width=1\linewidth]{figure/Chemokines/PRP_MDC_TARC_plate_agg} 
+{\centering \includegraphics[width=0.85\linewidth]{figure/Chemokines/PRP_MDC_TARC_plate_agg} 
 
 }
 
@@ -2316,7 +2311,7 @@ The effects of these inhibitors on MDC-induced aggregation were then explored. M
 \hypertarget{two-sample-mendelian-randomisation-to-assess-the-role-of-mdc-ccl22-and-tarc-ccl17-in-disease}{%
 \subsection{Two sample Mendelian randomisation to assess the role of MDC (CCL22) and TARC (CCL17) in disease}\label{two-sample-mendelian-randomisation-to-assess-the-role-of-mdc-ccl22-and-tarc-ccl17-in-disease}}
 
-To estimate potential causal relationships bewteen circulating levels of MDC and TARC and disease, a two sample MR was performed using pQTL data for these chemokines and available disease outcome data. Results are displayed for estimates where p\textless0.05, however due to multiple testing, the p-value threshold was adjusted to 2.2x10\textsuperscript{-4}. Results are presented as the change in outcome per SD higher protein. There was evidence from the Wald ratio MR that higher MDC had a causal effect on three outcomes: high cholesterol (Effect size = 0.22 SD, SE = 0.02, p=2.2x10\textsuperscript{-26}), DVT (Effect size = 0.22, SE 0.021, p=2.2x10\textsuperscript{-26}) and pulmonary embolism (Effect size = 0.33, SE 0.08, p=2.0x10\textsuperscript{-5}). A colocalsation analysis can be used to try to distinguish whether causal effects are arising due to linkage disequilibrium\textsuperscript{\protect\hyperlink{ref-Zheng2020}{156}}. The association between MDC and self-reported high cholesterol had strong evidence (posterior probability \textgreater{} 0.8) of colocalization\textsuperscript{\protect\hyperlink{ref-Zheng2020}{156}}, suggesting that these two traits share the same causal variant. There was not strong evidence for an effect of higher levels of TARC on any of the included outcomes. Results of the two sample MR are shown for MDC and TARC in tables \ref{tab:MDC-disease-MR} and \ref{tab:TARC-disease-MR}.
+To estimate potential causal relationships bewteen circulating levels of MDC and TARC and disease, a two sample MR was performed using pQTL data for these chemokines and available disease outcome data. Results are displayed for estimates where p\textless0.05, however due to multiple testing, the p-value threshold was adjusted to 2.2x10\textsuperscript{-4}. Results are presented as the change in outcome per SD higher protein. There was evidence from the Wald ratio MR that higher MDC had a causal effect on three outcomes: high cholesterol (Effect size = 0.22 SD, SE = 0.02, p=2.2x10\textsuperscript{-26}), DVT (Effect size = 0.22, SE 0.021, p=2.2x10\textsuperscript{-26}) and pulmonary embolism (Effect size = 0.33, SE 0.08, p=2.0x10\textsuperscript{-5}). There was not strong evidence for an effect of higher levels of TARC on any of the included outcomes. Results of the two sample MR are shown for MDC and TARC in tables \ref{tab:MDC-disease-MR} and \ref{tab:TARC-disease-MR}.
 
 
 \begin{landscape}\begin{table}
@@ -2386,7 +2381,7 @@ Platelets express chemokine receptors as they are also key cells in inflammation
 
 As well as functional effects, this chapter aimed to assess whether effects are due to the CCR4 receptor and the downstream signalling involved. It has been reported that MDC inhibits calcium currents in HEK293 cells and barium currents dorsal root ganglia neurones and is therefore G\textsubscript{i/o} coupled\textsuperscript{\protect\hyperlink{ref-Oh2002}{161}}. MDC and TARC were not able to reduce VASP phosphorylation induced by PGE1, suggesting that the effects are not via G\textsubscript{i/o} in platelets. It is possible that this experiment was not sensitive enough to detect the reduction in VASP phosphorylation, as ADP did not reduce VASP levels as much as previous reports\textsuperscript{\protect\hyperlink{ref-Hezard2005}{66}}. Another study suggested that CCR4 is coupled to G\textsubscript{q} due to the calcium response observed by MDC\textsuperscript{\protect\hyperlink{ref-Kowalska2000}{86}}. Inhibiting G\textsubscript{q} coupling in the current study inhibited the aggregation induced by MDC. It is therefore likely that CCR4 couples to G\textsubscript{q}.
 
-MDC and TARC have been implicated in CVD such as atherosclerosis\textsuperscript{\protect\hyperlink{ref-Weber2004}{162}}, but experiments focusing on the effect of MDC and TARC on platelet function have not used genetic epidemiology to explore whether genetic variants which lead to alterations in the levels of circulating MDC and TARC in the plasma are associated with an increased risk of disease. As MDC and TARC can activate platelets, the effect of MDC and TARC on disease was explored using two sample MR. The SNP that was associated with levels of MDC, rs77542162, was also associated with increased risk of DVT and pulmonary embolism. This effect may occur due to increased platelet priming by higher levels of MDC. Patients at risk of developing VTE have a hypercoagulant state and are prescribed anticoagulants to reduce the risk. Experiments indicated that MDC could not potentiate PS exposure, a marker of coagulation, therefore suggesting that MDC does not increaes the risk through an increase in coagulation. Further experiments are required to determine how MDC could mediate the risk of VTE. Despite the evidence for a causal effect, it is possible that this SNP could affect the outcome through routes other than through the exposure (horizontal pleiotropy). For example, the SNP could also be associated with increased in number of red blood cells, thereby increased risk of VTE. This is also reflected by other outcomes being related to increased levels of MDC such as forced vital capacity (FVC). As there is only one SNP, sensitivity analyses cannot be performed to test this. Further analyses such as a colocalisation analysis could help determine whether the relationship between MDC and DVT/PE is causal as this method estimates whether an exposure and an outcome share a causal top signal in a particular genomic region\textsuperscript{\protect\hyperlink{ref-Giambartolomei2014}{163}}.
+MDC and TARC have been implicated in CVD such as atherosclerosis\textsuperscript{\protect\hyperlink{ref-Weber2004}{162}}, but experiments focusing on the effect of MDC and TARC on platelet function have not used genetic epidemiology to explore whether genetic variants which lead to alterations in the levels of circulating MDC and TARC in the plasma are associated with an increased risk of disease. As MDC and TARC can activate platelets, the effect of MDC and TARC on disease was explored using two sample MR. The SNP that was associated with levels of MDC, rs77542162, was also associated with increased risk of DVT and pulmonary embolism. This effect may occur due to increased platelet priming by higher levels of MDC. Patients at risk of developing VTE have a hypercoagulant state and are prescribed anticoagulants to reduce the risk. Experiments indicated that MDC could not potentiate PS exposure, a marker of coagulation, therefore suggesting that MDC does not increaes the risk through an increase in coagulation. Further experiments are required to determine how MDC could mediate the risk of VTE. Despite the evidence for a causal effect, it is possible that this SNP could affect the outcome through routes other than through the exposure (horizontal pleiotropy). For example, the SNP could also be associated with increased in number of red blood cells, thereby increased risk of VTE. This is also reflected by other outcomes being related to increased levels of MDC such as forced vital capacity (FVC). As there is only one SNP, sensitivity analyses cannot be performed to test this. Colocalisation analyses can help determine whether the relationship between MDC and an outcome is causal as this method estimates whether an exposure and an outcome share a causal top signal in a particular genomic region\textsuperscript{\protect\hyperlink{ref-Giambartolomei2014}{163}}. The association between MDC and self-reported high cholesterol had strong evidence (posterior probability \textgreater{} 0.8) of colocalization\textsuperscript{\protect\hyperlink{ref-Zheng2020}{156}}, suggesting that these two traits share the same causal variant. This requires further investigation.
 
 This chapter has provided evidence for a an effect of MDC and TARC on platelet function and indicated possible mechanisms of effect. As mentioned in the introduction of the current chapter, there is evidence that patients with obesity have higher circulating levels of MDC\textsuperscript{\protect\hyperlink{ref-Safa2016}{152}}, however the effect of BMI and levels of these chemokines needs to assessed in a larger cohort and using a causal framework. The SOMAScan proteomics panel detects these circulating chemokines, therefore further exploration of the effect of BMI on these chemokines will be presented in Chapter \ref{BMI-protein-MR} by using one sample MR and Chapter \ref{BMI-protein-RCT} which utilises a weight loss RCT.
 
@@ -2472,7 +2467,7 @@ The association between BMI and specific platelet proteins were also explored. H
 \hypertarget{sensitivity-analysis}{%
 \subsection{Sensitivity analysis}\label{sensitivity-analysis}}
 
-As a sensitivity analysis, for proteins which had evidence for a BMI effect, a two sample MR was performed using available summary statistics on MRBase\textsuperscript{\protect\hyperlink{ref-Hemani2018}{169}}. The summary statistics for BMI were obtained from Yengo et al., using the 656 near-independent SNPs associated with BMI in a population of 681275 individuals (the same ones used for the genetic risk score)\textsuperscript{\protect\hyperlink{ref-Yengo2018}{23}}. Summary statistics for proteins were obtained from the GWAS performed by Sun et al.\textsuperscript{\protect\hyperlink{ref-Sun2018}{37}}, where protein levels were measured in SD units in a total of 3301 participants. A total of 637 of the BMI SNPs were present in the protein summary statistics. The inverse-variance weighted (IVW) method, weighted median and weighted mode MR methods were used to estimate the causal effect using the TwoSampleMR R package\textsuperscript{\protect\hyperlink{ref-Hemani2018}{169},\protect\hyperlink{ref-Burgess2016}{171}}. The MR Egger method was also used to estimate the causal effect\textsuperscript{\protect\hyperlink{ref-Burgess2017}{173}}; this methods also tests for directional pleiotropy. Pleiotropy was determined usng the MR Egger intercept and heterogeneity was examined using Cochran's Q statisitc\textsuperscript{\protect\hyperlink{ref-Burgess2017}{173},\protect\hyperlink{ref-Greco2015}{174}}. Cis protein quantitative trait loci (pQTLs) for each protein were identified\textsuperscript{\protect\hyperlink{ref-Sun2018}{37}} and any BMI SNPs within ± 1 Mb of these loci were removed. The two sample MR estimate was recalculated without these BMI SNPs to determine whether effects still remain after removal of SNPs near the genes which encode the proteins and, where possible, the MR estimates for each protein were compared.
+A sensitivity analysis was performed to test whether any BMI-protein effects arise because the SNPs used for the for the BMI GRS are located near the genes which encode the protein outcomes. For proteins which had evidence for a BMI effect, a two sample MR was performed using available summary statistics on MRBase\textsuperscript{\protect\hyperlink{ref-Hemani2018}{169}}. The summary statistics for BMI were obtained from Yengo et al., using the 656 near-independent SNPs associated with BMI in a population of 681275 individuals (the same ones used for the genetic risk score)\textsuperscript{\protect\hyperlink{ref-Yengo2018}{23}}. Summary statistics for proteins were obtained from the GWAS performed by Sun et al.\textsuperscript{\protect\hyperlink{ref-Sun2018}{37}}, where plasma protein levels were measured in SD units in a total of 3301 participants. The overlap between these two GWAS is 0.05\% of UK Biobank participants. A total of 637 of the BMI SNPs were present in the protein summary statistics. The inverse-variance weighted (IVW) method, weighted median and weighted mode MR methods were used to estimate the causal effect using the TwoSampleMR R package\textsuperscript{\protect\hyperlink{ref-Hemani2018}{169},\protect\hyperlink{ref-Burgess2016}{171}}. These methods can be limited by the limited heritability of the protein outcomes, therefore the effects were compared with the one sample MR results. The MR Egger method was also used to estimate the causal effect\textsuperscript{\protect\hyperlink{ref-Burgess2017}{173}}; this method also tests for directional pleiotropy. Pleiotropy was explored using the MR Egger intercept and heterogeneity was examined using Cochran's Q statisitc\textsuperscript{\protect\hyperlink{ref-Burgess2017}{173},\protect\hyperlink{ref-Greco2015}{174}}. Cis protein quantitative trait loci (pQTLs) for each protein were identified\textsuperscript{\protect\hyperlink{ref-Sun2018}{37}} and any BMI SNPs within ± 1 Mb of these loci were removed. The two sample MR estimate was recalculated without these BMI SNPs to determine whether effects still remain after removal of SNPs near the genes which encode the proteins and, where possible, the MR estimates for each protein were compared.
 
 \hypertarget{enrichment-analysis}{%
 \subsection{Enrichment analysis}\label{enrichment-analysis}}
@@ -2672,16 +2667,16 @@ The unadjusted and confounder-adjusted regression coefficients for BMI and prote
 
 \caption[Scatter plot comparing BMI-protein estimates across models with top eight BMI-associated proteins excluded]{\textbf{Scatter plot comparing BMI-protein estimates across models with top eight BMI-associated proteins excluded.} A) Scatter plot of the unadjusted (age and sex adjusted) observational estimates and the confounder-adjusted observational estimates for BMI and protein traits with a regression line (blue) 6B) Scatter plot of the unadjusted (age and sex adjusted) observational estimates and the MR estimates for BMI and protein traits with a regression line (blue).}\label{fig:Obs-MR-without-top8}
 \end{figure}
-\hypertarget{sensitivity-analysis-of-bmi-protein-mr-effects}{%
-\subsection{Sensitivity analysis of BMI protein MR effects}\label{sensitivity-analysis-of-bmi-protein-mr-effects}}
+\hypertarget{sensitivity-analysis-1}{%
+\subsection{Sensitivity analysis}\label{sensitivity-analysis-1}}
 
-Summary statistics from Sun et al.~were available for six of the eight proteins determined as showing evidence for a causal relationship with BMI. These were available for FABP4, leptin, FAAA, INHBC, PILR-AA-NP and PTPRD, but not for Complement C5 and SHBG. FAAA, INHBC, Complement C5, SHBG and PILR-AA-NP had pQTLs, but of these only the pQTL for FAAA was within ± 1 Mb of a BMI SNP. A summary of this is provided in Table \ref{tab:pQTLs}.
+A sensitivity analysis was performed to try to establish whether BMI-protein effects are arising due to SNPs in the BMI GRS being in close proximity to the genes which encode the protein outcomes. This was performed by doing a two sample MR analysis. Summary statistics from Sun et al.~were available for six of the eight proteins determined as showing evidence for a causal relationship with BMI. These were available for FABP4, leptin, FAAA, INHBC, PILR-AA-NP and PTPRD, but not for Complement C5 and SHBG. FAAA, INHBC, Complement C5, SHBG and PILR-AA-NP had pQTLs, but of these only the pQTL for FAAA was within ± 1 Mb of a BMI SNP. A summary of this is provided in Table \ref{tab:pQTLs}.
 
 
 
 \begin{landscape}\begin{table}
 
-\caption[Summary of proteins which have summary statistics available in Sun et al.\textsuperscript{\protect\hyperlink{ref-Sun2018}{37}}, proteins which have cis pQTLs and which pQTLs are within 1 Mb from a BMI SNP]{\label{tab:pQTLs}\textbf{Summary of proteins which have summary statistics available in Sun et al.\textsuperscript{\protect\hyperlink{ref-Sun2018}{37}}, proteins which have cis pQTLs and which pQTLs are within 1 Mb from a BMI SNP}. Any SNPs which need to removed as a sensitivity analysis are highlighted.}
+\caption[Summary of proteins which have summary statistics available in Sun et al.\textsuperscript{\protect\hyperlink{ref-Sun2018}{37}}, proteins which have cis pQTLs and which pQTLs are within 1 Mb from a BMI SNP]{\label{tab:pQTLs}\textbf{Summary of proteins which have summary statistics available in Sun et al.\textsuperscript{\protect\hyperlink{ref-Sun2018}{37}}, proteins which have cis pQTLs and which pQTLs are within 1 Mb from a BMI SNP}. Any SNPs which need to removed as a sensitivity analysis are highlighted. FABP4 = Fatty acid binding protein 4, FAAA = fumarylacetoacetase, PTPRD = Receptor-type tyrosine-protein phosphatase delta, INHBC = Inhibin beta C chain, SHBG = sex hormone binding globulin, PILR A-A NP = PILR alpha-associated neural protein.}
 \centering
 \begin{tabu} to \linewidth {>{\raggedright}X>{\raggedright}X>{\raggedright}X>{\raggedright}X>{\raggedright}X>{\raggedright}X>{\raggedright}X}
 \toprule
@@ -2700,7 +2695,7 @@ PILR-AA-NP & Yes & Yes & rs11064321 & 12 & 6809896 & None\\
 \end{tabu}
 \end{table}
 \end{landscape}
-In general, the IVW two-sample MR estimates for BMI and plasma protein levels were similar in direction to the one sample MR estimates and provided evidence for a causal relationship with BMI (Figure \ref{fig:two-sample-forest}). These estimates, along with the MR-Egger, weighted median and weighted mode estimates, are presented in Table \ref{tab:Two-sample}. There was consistency across MR Egger, IVW, weighted median and weighted mode MR results for all proteins except INHBC, where the weighted mode estimate attenuated to the null. There was weak evidence for heterogeneity with leptin and PTPRD, however there was no evidence for horizontal pleiotropy as the MR Egger intercepts were all close to zero (P\textgreater0.05 for the Egger intercept). The single SNP analysis and leave-one-out analysis results are presented in Supplementary Tables 11 and 12. Removing one SNP at a time did not affect the overall IVW estimate for any protein.
+In general, the IVW two-sample MR estimates for BMI and plasma protein levels displayed the same direction of effect to the one sample MR estimates and provided evidence for a causal relationship with BMI (Figure \ref{fig:two-sample-forest}). These estimates, along with the MR-Egger, weighted median and weighted mode estimates, are presented in Table \ref{tab:Two-sample}. There was consistency across MR Egger, IVW, weighted median and weighted mode MR results for all proteins except INHBC, where the weighted mode estimate attenuated to the null. There was weak evidence for heterogeneity with leptin and PTPRD, however there was no evidence for horizontal pleiotropy as the MR Egger intercepts were all close to zero (P\textgreater0.05 for the Egger intercept). The single SNP analysis and leave-one-out analysis results are presented in Supplementary Tables 11 and 12. Removing one SNP at a time did not affect the overall IVW estimate for any protein.
 
 
 
@@ -2723,7 +2718,7 @@ In general, the IVW two-sample MR estimates for BMI and plasma protein levels we
 \fontsize{6.7}{8.7}\selectfont
 \begin{tabu} to \linewidth {>{\raggedright}X>{\raggedright}X>{\raggedright\arraybackslash}p{2cm}>{\raggedright\arraybackslash}p{2cm}>{\raggedright}X>{\raggedright}X>{\raggedright}X>{\raggedright}X>{\raggedright}X>{\raggedright}X>{\raggedright}X>{\raggedright}X>{\raggedright}X>{\raggedright}X}
 \toprule
-Exposure & Outcome & Outcome ID & Method & N SNP & Beta coefficient & SE & Pval & Q & Q df & Q pval & Egger intercept & SE & Pval\\
+Exposure & Outcome & Outcome ID & Method & N SNP & Beta coefficient & SE & Pval & Q & Q df & Q pval & Egger intercept & SE & Egger intercept Pval\\
 \midrule
 BMI & FABP4 & prot-a-1013 & MR Egger & 637 & 0.21 & 2.86E-03 & 8.71E-02 & 649 & 635 & 3.37E-01 & 4.89E-03 & 2.86E-03 & 8.71E-02\\
 BMI & FABP4 & prot-a-1013 & Inverse variance weighted & 637 & 0.48 &  &  & 652 & 636 & 3.18E-01 &  &  & \\
@@ -2757,7 +2752,7 @@ BMI & PTPRD & prot-a-2443 & Weighted mode & 637 & -0.56 &  &  &  &  &  &  &  & \
 \end{tabu}
 \end{table}
 \end{landscape}
-Only the cis pQTL for FAAA was within 1 Mb of a BMI SNP (\ref{tab:pQTLs}). After removal of the corresponding BMI SNP, the causal effects were re-estimated. Figure \ref{fig:FAA-forest} displays the comparison of MR estimates for the effect of BMI on FAAA, with and without rs12593036 as an instrument for BMI. There was still no evidence for heterogeneity (Q p-value = 0.08) or horizontal pleiotropy (MR Egger intercept p-value = 0.19). This comparison indicates that tMR estimates are unchanged even if the BMI SNP which is near the gene that encodes FAAA is included in the genetic instrument for BMI.
+Only the cis pQTL for FAAA was within 1 Mb of a BMI SNP (Table \ref{tab:pQTLs}). After removal of the corresponding BMI SNP, the causal effects were re-estimated. Figure \ref{fig:FAA-forest} displays the comparison of MR estimates for the effect of BMI on FAAA, with and without rs12593036 as an instrument for BMI. There was still no evidence for heterogeneity (Q p-value = 0.08) or horizontal pleiotropy (MR Egger intercept p-value = 0.19). This comparison indicates that MR estimates are unchanged even if the BMI SNP which is near the gene that encodes FAAA is included in the genetic instrument for BMI.
 
 
 
@@ -3073,8 +3068,8 @@ A total of 110 proteins were only associated within the observational linear reg
 \end{figure}
 \elandscape
 
-\hypertarget{sensitivity-analysis-1}{%
-\subsection{Sensitivity analysis}\label{sensitivity-analysis-1}}
+\hypertarget{sensitivity-analysis-2}{%
+\subsection{Sensitivity analysis}\label{sensitivity-analysis-2}}
 
 \hypertarget{comparison-of-protein-levels-at-baseline-by-treatment-group}{%
 \subsubsection{Comparison of protein levels at baseline by treatment group}\label{comparison-of-protein-levels-at-baseline-by-treatment-group}}
@@ -3216,7 +3211,7 @@ This overall shift in proteins in each study design provides important informati
 \hypertarget{methods-4}{%
 \section{Methods}\label{methods-4}}
 
-In efforts to further elucidate which proteins are altered by adiposity, a comparison between the BMI-protein associations in INTERVAL (Chapter \ref{BMI-protein-MR}) and the BMI change-protein change associations in Chapter \ref{BMI-protein-RCT} was performed. There were 2803 unique proteins (by UniProt ID) which were detected in both INTERVAL and DiRECT. Estimates across the two cohorts were compared using linear regression. The estimate in INTERVAL is the mean difference in protein levels per SD higher BMI in a cross-sectional framework, whereas the estimate in DiRECT is the SD change in protein levels after weight loss. Due to the nature of the output of linear regression, the beta coefficient is the SD change in protein per SD increase in BMI (therefore if weight loss reduces the protein, the beta coefficient is positive). To be able to compare whether estimates were similar across study designs, estimates from each analysis were scaled using the scale() function from the ``base'' R package. This function subtracts the mean from each value and divides by the standard deviation. Estimates were categorised as: ``same'' if the scaled estimates were within 1 SD of each other; ``different'' if estimates were more than 1 SD apart and ``extreme'' if within 1 SD of each other and with an absolute scaled estimate of more than 1 SD. Estimates from both studies were scaled as the beta coefficients for the regression analyses were using different units (INTERVAL units are SD difference in protein per SD higher BMI in a cross-sectional setting, whereas DiRECT is SD change in protein per SD increase in BMI).
+In efforts to further elucidate which proteins are altered by adiposity, a comparison between the BMI-protein associations in INTERVAL (Chapter \ref{BMI-protein-MR}) and the BMI change-protein change associations in Chapter \ref{BMI-protein-RCT} was performed. There were 2803 unique proteins (by UniProt ID) which were detected in both INTERVAL and DiRECT. Estimates across the two cohorts were compared using linear regression. The estimate in INTERVAL is the mean difference in protein levels per SD higher BMI in a cross-sectional framework, whereas the estimate in DiRECT is the SD change in protein levels after weight loss. Due to the nature of the output of linear regression, the beta coefficient is the SD change in protein per SD increase in BMI (therefore if weight loss reduces the protein, the beta coefficient is positive). To be able to compare whether estimates were similar across study designs, estimates from each analysis were scaled using the scale() function from the ``base'' R package. This function subtracts the mean from each value and divides by the standard deviation. Estimates were categorised as: ``same'' if the scaled estimates were within 1.5 SD of each other; ``different'' if estimates were more than 1.5 SD apart and ``extreme'' if within 1.5 SD of each other and with an absolute scaled estimate of more than 1 SD. Estimates from both studies were scaled as the beta coefficients for the regression analyses were using different units (INTERVAL units are SD difference in protein per SD higher BMI in a cross-sectional setting, whereas DiRECT is SD change in protein per SD increase in BMI).
 
 Estimates for the specific proteins involved in platelet GO pathways highlighted in Chapters \ref{BMI-protein-MR} and \ref{BMI-protein-RCT} (Supplementary Table 1 \url{https://github.com/lucygoudswaard/mythesis/blob/master/index/figure/BMI_protein_INTERVAL/BMI_protein_supplementary_Tables.xlsx}) were also extracted to evaluate the effect of BMI on platelet proteins. Estimates were extracted from the MR in INTERVAL and for the two stage least squares analysis in DiRECT as these were the most robust models.
 
@@ -3228,7 +3223,7 @@ The comparison of the magnitude of estimates across studies conveys important in
 \hypertarget{comparison-of-bmi-effects-across-direct-and-interval}{%
 \subsection{Comparison of BMI effects across DiRECT and INTERVAL}\label{comparison-of-bmi-effects-across-direct-and-interval}}
 
-The proteins with causal evidence in the MR analysis from Chapter \ref{BMI-protein-MR} were explored in the RCT results. Out of the eight unique proteins in INTERVAL, five of them were in the DiRECT SomaLogic panel. These were fumarylacetoacetase (FAH), Inhibin beta C chain (INHBC), Complement C5, SHBG and PILR. Three of these displayed consistent estimates across studies, whereas Complement C5 and PILR were not associated with BMI change in DiRECT (Figure \ref{fig:DiRECT-INTERVAL-signif}).
+The proteins with causal evidence in the MR analysis from Chapter \ref{BMI-protein-MR} were explored in the RCT results. Out of the eight unique proteins in INTERVAL, five of them were in the DiRECT SomaLogic panel. These were fumarylacetoacetase (FAAA), Inhibin beta C chain (INHBC), Complement C5, SHBG and PILR. Three of these displayed consistent estimates across studies, whereas Complement C5 and PILR were not associated with BMI change in DiRECT (Figure \ref{fig:DiRECT-INTERVAL-signif}).
 
 
 
@@ -3354,7 +3349,7 @@ It is unclear how these associations fit together and whether they are truly par
 
 As previously mentioned, this thesis has approached hypotheses using a range of study designs. Integrating clinical studies, basic science, cohort studies and trial data has been crucial to further understand the role of BMI in platelet function. Orthogonal evidence is when findings are replicated more than one study design. This thesis has provided orthogonal evidence such as through use of MR along with a weight loss RCT to determine effects of BMI on the plasma proteome. This is therefore a major strength of the current research. Using a combination of study designs is crucial to determine causal effects as each technique has its own set of strengths and limitations.
 
-One of the benefits of these techniques is that they are in line with the principles of the 3Rs (replacement, reduction and refinement). Instead of developing an animal study, I have created a patient study and have also found data sets which have the required variables to address my hypotheses (replacement). It is often the case that animal studies may be developed when researchers are not aware of human data sets. Some of the advantages of using human data sets for this research is that humans are able to consent and able to donate large blood volumes, without it being lethal. However, it is important to note that animal studies have their advantages. Analyses using human data sets are often limited by confounding factors such as lifestyle choices (such as smoking, drinking, eating habits). Within an animal experiment such as exploring the effect of obesity on platelet function in mice, there is the ability to give a normal diet to half of the mice, while providing the other half with a high fat diet. This can be done while keeping other environmental factors the same. These experiments can therefore help determine causality.
+One of the benefits of these techniques is that they are in line with the principles of the 3Rs (replacement, reduction and refinement). Instead of developing an animal study, I have created a patient study and have also found data sets which have the required variables to address my hypotheses (replacement). It is often the case that animal studies may be developed when researchers are not aware of human data sets. Some of the advantages of using human data sets for this research is that humans are able to consent and able to donate large blood volumes, without it being lethal. However, it is important to note that animal studies have their advantages. Analyses using human data sets are often limited by confounding factors such as lifestyle choices (such as smoking, drinking, eating habits). Within an animal experiment such as exploring the effect of obesity on platelet function in mice, there is the ability to give a normal diet to half of the mice, while providing the other half with a high fat diet. This can be done while keeping other environmental factors the same. These experiments can therefore help determine effects driven by adiposity.
 
 \hypertarget{limitations}{%
 \section{Limitations}\label{limitations}}
@@ -3479,675 +3474,675 @@ This appendix provided an example of how non-linearity between BMI and protein o
 \begin{CSLReferences}{0}{0}
 \leavevmode\hypertarget{ref-Blackburn2014}{}%
 \CSLLeftMargin{1. }
-\CSLRightInline{Blackburn, H. \& Jacobs, D. Commentary: Origins and evolution of body mass index (BMI): Continuing saga. \emph{International Journal of Epidemiology} (2014). doi:\href{https://doi.org/10.1093/ije/dyu061}{10.1093/ije/dyu061}}
+\CSLRightInline{Blackburn, H. \& Jacobs, D. {Commentary: Origins and evolution of Body Mass Index (BMI): Continuing saga}. (2014). doi:\href{https://doi.org/10.1093/ije/dyu061}{10.1093/ije/dyu061}}
 
 \leavevmode\hypertarget{ref-WHO1995}{}%
 \CSLLeftMargin{2. }
-\CSLRightInline{Physical status: The use and interpretation of anthropometry. \emph{World Health Organization - Technical Report Series} (1995). doi:\href{https://doi.org/10.1093/ajcn/64.5.830}{10.1093/ajcn/64.5.830}}
+\CSLRightInline{{Physical status: The use and interpretation of anthropometry}. (1995). doi:\href{https://doi.org/10.1093/ajcn/64.5.830}{10.1093/ajcn/64.5.830}}
 
 \leavevmode\hypertarget{ref-Wade2018}{}%
 \CSLLeftMargin{3. }
-\CSLRightInline{Wade, K. H., Carslake, D., Sattar, N., Smith, G. D. \& Timpson, N. J. BMI and mortality in UK biobank: Revised estimates using mendelian randomization. \emph{Obesity (Silver Spring)} \textbf{26}, 1796--1806 (2018).}
+\CSLRightInline{Wade, K. H., Carslake, D., Sattar, N., Davey Smith, G. \& Timpson, N. J. {BMI and Mortality in UK Biobank: Revised Estimates Using Mendelian Randomization}. \emph{Obesity (Silver Spring)} \textbf{26}, 1796--1806 (2018).}
 
 \leavevmode\hypertarget{ref-NCD-RisC2016}{}%
 \CSLLeftMargin{4. }
-\CSLRightInline{(NCD-RisC), N. C. D. R. F. C. Trends in adult body-mass index in 200 countries from 1975 to 2014: A pooled analysis of 1698 population-based measurement studies with 19·2 million participants. \emph{Lancet} \textbf{387}, 1377--1396 (2016).}
+\CSLRightInline{(NCD-RisC), N. C. D. R. F. C. {Trends in adult body-mass index in 200 countries from 1975 to 2014: a pooled analysis of 1698 population-based measurement studies with 19{{}}2 million participants}. \emph{Lancet} \textbf{387}, 1377--1396 (2016).}
 
 \leavevmode\hypertarget{ref-Templin2019}{}%
 \CSLLeftMargin{5. }
-\CSLRightInline{Templin, T., Hashiguchi, T. C. O., Thomson, B., Dieleman, J. \& Bendavid, E. The overweight and obesity transition from the wealthy to the poor in low- and middleincome countries: A survey of household data from 103 countries. \emph{PLoS Medicine} (2019). doi:\href{https://doi.org/10.1371/journal.pmed.1002968}{10.1371/journal.pmed.1002968}}
+\CSLRightInline{Templin, T., Hashiguchi, T. C. O., Thomson, B., Dieleman, J. \& Bendavid, E. {The overweight and obesity transition from the wealthy to the poor in low- And middleincome countries: A survey of household data from 103 countries}. \emph{PLoS Medicine} (2019). doi:\href{https://doi.org/10.1371/journal.pmed.1002968}{10.1371/journal.pmed.1002968}}
 
 \leavevmode\hypertarget{ref-Bluher2019}{}%
 \CSLLeftMargin{6. }
-\CSLRightInline{Blüher, M. Obesity: Global epidemiology and pathogenesis. \emph{Nat Rev Endocrinol} \textbf{15}, 288--298 (2019).}
+\CSLRightInline{Blüher, M. {Obesity: global epidemiology and pathogenesis}. \emph{Nat Rev Endocrinol} \textbf{15}, 288--298 (2019).}
 
 \leavevmode\hypertarget{ref-TheLancetPublicHealth2018}{}%
 \CSLLeftMargin{7. }
-\CSLRightInline{Health, T. L. P. Tackling obesity seriously: The time has come. \emph{The Lancet Public Health} (2018). doi:\href{https://doi.org/10.1016/S2468-2667(18)30053-7}{10.1016/S2468-2667(18)30053-7}}
+\CSLRightInline{The Lancet Public Health. {Tackling obesity seriously: the time has come}. (2018). doi:\href{https://doi.org/10.1016/S2468-2667(18)30053-7}{10.1016/S2468-2667(18)30053-7}}
 
 \leavevmode\hypertarget{ref-BritishHeartFoundation2021}{}%
 \CSLLeftMargin{8. }
-\CSLRightInline{Foundation, B. H. Heart \& circulatory disease statistics 2021. \emph{British Heart Foundation} (2021).}
+\CSLRightInline{British Heart Foundation. {Heart {\&} Circulatory Disease Statistics 2021}. (2021).}
 
 \leavevmode\hypertarget{ref-Virani2021}{}%
 \CSLLeftMargin{9. }
-\CSLRightInline{Virani, S. S. \emph{et al.} Heart disease and stroke statistics---2021 update. \emph{Circulation} (2021).}
+\CSLRightInline{Virani, S. S. \emph{et al.} {Heart Disease and Stroke Statistics---2021 Update}. \emph{Circulation} (2021).}
 
 \leavevmode\hypertarget{ref-Khan2018}{}%
 \CSLLeftMargin{10. }
-\CSLRightInline{Khan, S. S. \emph{et al.} Association of body mass index with lifetime risk of cardiovascular disease and compression of morbidity. \emph{JAMA Cardiol} \textbf{3}, 280--287 (2018).}
+\CSLRightInline{Khan, S. S. \emph{et al.} {Association of Body Mass Index With Lifetime Risk of Cardiovascular Disease and Compression of Morbidity}. \emph{JAMA Cardiol} \textbf{3}, 280--287 (2018).}
 
 \leavevmode\hypertarget{ref-Nordestgaard2012}{}%
 \CSLLeftMargin{11. }
-\CSLRightInline{Nordestgaard, B. G. \emph{et al.} The effect of elevated body mass index on ischemic heart disease risk: Causal estimates from a mendelian randomisation approach. \emph{PLoS Med} \textbf{9}, e1001212 (2012).}
+\CSLRightInline{Nordestgaard, B. G. \emph{et al.} {The effect of elevated body mass index on ischemic heart disease risk: causal estimates from a Mendelian randomisation approach}. \emph{PLoS Med} \textbf{9}, e1001212 (2012).}
 
 \leavevmode\hypertarget{ref-Davies2018}{}%
 \CSLLeftMargin{12. }
-\CSLRightInline{Davies, N. M., Holmes, M. V. \& Smith, G. D. Reading mendelian randomisation studies: A guide, glossary, and checklist for clinicians. \emph{BMJ (Online)} (2018). doi:\href{https://doi.org/10.1136/bmj.k601}{10.1136/bmj.k601}}
+\CSLRightInline{Davies, N. M., Holmes, M. V. \& Davey Smith, G. {Reading Mendelian randomisation studies: A guide, glossary, and checklist for clinicians}. \emph{BMJ (Online)} (2018). doi:\href{https://doi.org/10.1136/bmj.k601}{10.1136/bmj.k601}}
 
 \leavevmode\hypertarget{ref-Zheng2019a}{}%
 \CSLLeftMargin{13. }
-\CSLRightInline{Zheng, J. \emph{et al.} Use of mendelian randomization to examine causal inference in osteoporosis. \emph{Frontiers in Endocrinology} (2019). doi:\href{https://doi.org/10.3389/fendo.2019.00807}{10.3389/fendo.2019.00807}}
+\CSLRightInline{Zheng, J. \emph{et al.} {Use of Mendelian Randomization to Examine Causal Inference in Osteoporosis}. (2019). doi:\href{https://doi.org/10.3389/fendo.2019.00807}{10.3389/fendo.2019.00807}}
 
 \leavevmode\hypertarget{ref-Gill2020}{}%
 \CSLLeftMargin{14. }
-\CSLRightInline{Gill, D., Walker, V. M., Martin, R. M., Davies, N. M. \& Tzoulaki, I. Comparison with randomized controlled trials as a strategy for evaluating instruments in mendelian randomization. \emph{International Journal of Epidemiology} (2020). doi:\href{https://doi.org/10.1093/ije/dyz236}{10.1093/ije/dyz236}}
+\CSLRightInline{Gill, D., Walker, V. M., Martin, R. M., Davies, N. M. \& Tzoulaki, I. {Comparison with randomized controlled trials as a strategy for evaluating instruments in Mendelian randomization}. (2020). doi:\href{https://doi.org/10.1093/ije/dyz236}{10.1093/ije/dyz236}}
 
 \leavevmode\hypertarget{ref-Bycroft2018}{}%
 \CSLLeftMargin{15. }
-\CSLRightInline{Bycroft, C. \emph{et al.} The UK biobank resource with deep phenotyping and genomic data. \emph{Nature} (2018). doi:\href{https://doi.org/10.1038/s41586-018-0579-z}{10.1038/s41586-018-0579-z}}
+\CSLRightInline{Bycroft, C. \emph{et al.} {The UK Biobank resource with deep phenotyping and genomic data}. \emph{Nature} (2018). doi:\href{https://doi.org/10.1038/s41586-018-0579-z}{10.1038/s41586-018-0579-z}}
 
 \leavevmode\hypertarget{ref-Doney2009}{}%
 \CSLLeftMargin{16. }
-\CSLRightInline{Doney, A. S. F. \emph{et al.} The FTO gene is associated with an atherogenic lipid profile and myocardial infarction in patients with type 2 diabetes :a genetics of diabetes audit and research study in tayside scotland (go-DARTS) study. \emph{Circulation: Cardiovascular Genetics} (2009). doi:\href{https://doi.org/10.1161/CIRCGENETICS.108.822320}{10.1161/CIRCGENETICS.108.822320}}
+\CSLRightInline{Doney, A. S. F. \emph{et al.} {The FTO gene is associated with an atherogenic lipid profile and myocardial infarction in patients with type 2 diabetes :A Genetics of Diabetes Audit and Research Study in Tayside Scotland (Go-DARTS) Study}. \emph{Circulation: Cardiovascular Genetics} (2009). doi:\href{https://doi.org/10.1161/CIRCGENETICS.108.822320}{10.1161/CIRCGENETICS.108.822320}}
 
 \leavevmode\hypertarget{ref-Bennett2017}{}%
 \CSLLeftMargin{17. }
-\CSLRightInline{Bennett, D. A. \& Holmes, M. V. Mendelian randomisation in cardiovascular research: An introduction for clinicians. \emph{Heart} (2017). doi:\href{https://doi.org/10.1136/heartjnl-2016-310605}{10.1136/heartjnl-2016-310605}}
+\CSLRightInline{Bennett, D. A. \& Holmes, M. V. {Mendelian randomisation in cardiovascular research: An introduction for clinicians}. (2017). doi:\href{https://doi.org/10.1136/heartjnl-2016-310605}{10.1136/heartjnl-2016-310605}}
 
 \leavevmode\hypertarget{ref-Bell2018}{}%
 \CSLLeftMargin{18. }
-\CSLRightInline{Bell, J. A. \emph{et al.} Associations of body mass and fat~indexes~with cardiometabolic traits. \emph{J Am Coll Cardiol} \textbf{72}, 3142--3154 (2018).}
+\CSLRightInline{Bell, J. A. \emph{et al.} {Associations of Body Mass and Fat~Indexes~With Cardiometabolic Traits}. \emph{J Am Coll Cardiol} \textbf{72}, 3142--3154 (2018).}
 
 \leavevmode\hypertarget{ref-Zhang1994}{}%
 \CSLLeftMargin{19. }
-\CSLRightInline{Zhang, Y. \emph{et al.} Positional cloning of the mouse obese gene and its human homologue. \emph{Nature} (1994). doi:\href{https://doi.org/10.1038/372425a0}{10.1038/372425a0}}
+\CSLRightInline{Zhang, Y. \emph{et al.} {Positional cloning of the mouse obese gene and its human homologue}. \emph{Nature} (1994). doi:\href{https://doi.org/10.1038/372425a0}{10.1038/372425a0}}
 
 \leavevmode\hypertarget{ref-Friedman1998}{}%
 \CSLLeftMargin{20. }
-\CSLRightInline{Friedman, J. M. \& Halaas, J. L. Leptin and the regulation of body weight in mammals. \emph{Nature} (1998). doi:\href{https://doi.org/10.1038/27376}{10.1038/27376}}
+\CSLRightInline{Friedman, J. M. \& Halaas, J. L. {Leptin and the regulation of body weight in mammals}. (1998). doi:\href{https://doi.org/10.1038/27376}{10.1038/27376}}
 
 \leavevmode\hypertarget{ref-Scuteri2007}{}%
 \CSLLeftMargin{21. }
-\CSLRightInline{Scuteri, A. \emph{et al.} Genome-wide association scan shows genetic variants in the FTO gene are associated with obesity-related traits. \emph{PLoS Genetics} (2007). doi:\href{https://doi.org/10.1371/journal.pgen.0030115}{10.1371/journal.pgen.0030115}}
+\CSLRightInline{Scuteri, A. \emph{et al.} {Genome-wide association scan shows genetic variants in the FTO gene are associated with obesity-related traits}. \emph{PLoS Genetics} (2007). doi:\href{https://doi.org/10.1371/journal.pgen.0030115}{10.1371/journal.pgen.0030115}}
 
 \leavevmode\hypertarget{ref-Locke2015}{}%
 \CSLLeftMargin{22. }
-\CSLRightInline{Locke, A. E. \emph{et al.} Genetic studies of body mass index yield new insights for obesity biology. \emph{Nature} \textbf{518}, 197--206 (2015).}
+\CSLRightInline{Locke, A. E. \emph{et al.} {Genetic studies of body mass index yield new insights for obesity biology}. \emph{Nature} \textbf{518}, 197--206 (2015).}
 
 \leavevmode\hypertarget{ref-Yengo2018}{}%
 \CSLLeftMargin{23. }
-\CSLRightInline{Yengo, L. \emph{et al.} Meta-analysis of genome-wide association studies for height and body mass index in 700000 individuals of european ancestry. \emph{Hum Mol Genet} \textbf{27}, 3641--3649 (2018).}
+\CSLRightInline{Yengo, L. \emph{et al.} {Meta-analysis of genome-wide association studies for height and body mass index in 700000 individuals of European ancestry}. \emph{Hum Mol Genet} \textbf{27}, 3641--3649 (2018).}
 
 \leavevmode\hypertarget{ref-Bentzon2014}{}%
 \CSLLeftMargin{24. }
-\CSLRightInline{Bentzon, J. F., Otsuka, F., Virmani, R. \& Falk, E. Mechanisms of plaque formation and rupture. \emph{Circulation Research} (2014). doi:\href{https://doi.org/10.1161/CIRCRESAHA.114.302721}{10.1161/CIRCRESAHA.114.302721}}
+\CSLRightInline{Bentzon, J. F., Otsuka, F., Virmani, R. \& Falk, E. {Mechanisms of plaque formation and rupture}. \emph{Circulation Research} (2014). doi:\href{https://doi.org/10.1161/CIRCRESAHA.114.302721}{10.1161/CIRCRESAHA.114.302721}}
 
 \leavevmode\hypertarget{ref-Badimon2012}{}%
 \CSLLeftMargin{25. }
-\CSLRightInline{Badimon, L., Padró, T. \& Vilahur, G. Atherosclerosis, platelets and thrombosis in acute ischaemic heart disease. \emph{Eur Heart J Acute Cardiovasc Care} \textbf{1}, 60--74 (2012).}
+\CSLRightInline{Badimon, L., Padró, T. \& Vilahur, G. {Atherosclerosis, platelets and thrombosis in acute ischaemic heart disease}. \emph{Eur Heart J Acute Cardiovasc Care} \textbf{1}, 60--74 (2012).}
 
 \leavevmode\hypertarget{ref-Chernysh2020}{}%
 \CSLLeftMargin{26. }
-\CSLRightInline{Chernysh, I. N. \emph{et al.} The distinctive structure and composition of arterial and venous thrombi and pulmonary emboli. \emph{Scientific Reports} (2020). doi:\href{https://doi.org/10.1038/s41598-020-59526-x}{10.1038/s41598-020-59526-x}}
+\CSLRightInline{Chernysh, I. N. \emph{et al.} {The distinctive structure and composition of arterial and venous thrombi and pulmonary emboli}. \emph{Scientific Reports} (2020). doi:\href{https://doi.org/10.1038/s41598-020-59526-x}{10.1038/s41598-020-59526-x}}
 
 \leavevmode\hypertarget{ref-Koupenova2017a}{}%
 \CSLLeftMargin{27. }
-\CSLRightInline{Koupenova, M., Kehrel, B. E., Corkrey, H. A. \& Freedman, J. E. Thrombosis and platelets: An update. \emph{Eur Heart J} \textbf{38}, 785--791 (2017).}
+\CSLRightInline{Koupenova, M., Kehrel, B. E., Corkrey, H. A. \& Freedman, J. E. {Thrombosis and platelets: an update}. \emph{Eur Heart J} \textbf{38}, 785--791 (2017).}
 
 \leavevmode\hypertarget{ref-Esmon2009}{}%
 \CSLLeftMargin{28. }
-\CSLRightInline{Esmon, C. T. Basic mechanisms and pathogenesis of venous thrombosis. \emph{Blood Reviews} (2009). doi:\href{https://doi.org/10.1016/j.blre.2009.07.002}{10.1016/j.blre.2009.07.002}}
+\CSLRightInline{Esmon, C. T. {Basic mechanisms and pathogenesis of venous thrombosis}. \emph{Blood Reviews} (2009). doi:\href{https://doi.org/10.1016/j.blre.2009.07.002}{10.1016/j.blre.2009.07.002}}
 
 \leavevmode\hypertarget{ref-Stone2017}{}%
 \CSLLeftMargin{29. }
-\CSLRightInline{Stone, J. \emph{et al.} Deep vein thrombosis: Pathogenesis, diagnosis, and medical management. \emph{Cardiovascular Diagnosis and Therapy} (2017). doi:\href{https://doi.org/10.21037/cdt.2017.09.01}{10.21037/cdt.2017.09.01}}
+\CSLRightInline{Stone, J. \emph{et al.} {Deep vein thrombosis: Pathogenesis, diagnosis, and medical management}. (2017). doi:\href{https://doi.org/10.21037/cdt.2017.09.01}{10.21037/cdt.2017.09.01}}
 
 \leavevmode\hypertarget{ref-Dale2017}{}%
 \CSLLeftMargin{30. }
-\CSLRightInline{Dale, C. E. \emph{et al.} Causal associations of adiposity and body fat distribution with coronary heart disease, stroke subtypes, and type 2 diabetes mellitus: A mendelian randomization analysis. \emph{Circulation} \textbf{135}, 2373--2388 (2017).}
+\CSLRightInline{Dale, C. E. \emph{et al.} {Causal Associations of Adiposity and Body Fat Distribution With Coronary Heart Disease, Stroke Subtypes, and Type 2 Diabetes Mellitus: A Mendelian Randomization Analysis}. \emph{Circulation} \textbf{135}, 2373--2388 (2017).}
 
 \leavevmode\hypertarget{ref-Harshfield2021}{}%
 \CSLLeftMargin{31. }
-\CSLRightInline{Harshfield, E. L., Georgakis, M. K., Malik, R., Dichgans, M. \& Markus, H. S. Modifiable lifestyle factors and risk of stroke: A mendelian randomization analysis. \emph{Stroke} (2021). doi:\href{https://doi.org/10.1161/STROKEAHA.120.031710}{10.1161/STROKEAHA.120.031710}}
+\CSLRightInline{Harshfield, E. L., Georgakis, M. K., Malik, R., Dichgans, M. \& Markus, H. S. {Modifiable Lifestyle Factors and Risk of Stroke: A Mendelian Randomization Analysis}. \emph{Stroke} (2021). doi:\href{https://doi.org/10.1161/STROKEAHA.120.031710}{10.1161/STROKEAHA.120.031710}}
 
 \leavevmode\hypertarget{ref-Jimenez2021}{}%
 \CSLLeftMargin{32. }
-\CSLRightInline{Jiménez, A. \emph{et al.} Weight-loss thresholds after bariatric surgery and cardiovascular outcomes: More is better. \emph{International Journal of Obesity} (2021). doi:\href{https://doi.org/10.1038/s41366-021-00986-0}{10.1038/s41366-021-00986-0}}
+\CSLRightInline{Jiménez, A. \emph{et al.} {Weight-loss thresholds after bariatric surgery and cardiovascular outcomes: more is better}. \emph{International Journal of Obesity} (2021). doi:\href{https://doi.org/10.1038/s41366-021-00986-0}{10.1038/s41366-021-00986-0}}
 
 \leavevmode\hypertarget{ref-vanVeldhuisen2022}{}%
 \CSLLeftMargin{33. }
-\CSLRightInline{Veldhuisen, S. L. van \emph{et al.} Bariatric surgery and cardiovascular disease: A systematic review and meta-analysis. \emph{European Heart Journal} (2022). doi:\href{https://doi.org/10.1093/eurheartj/ehac071}{10.1093/eurheartj/ehac071}}
+\CSLRightInline{Veldhuisen, S. L. van \emph{et al.} {Bariatric surgery and cardiovascular disease: a systematic review and meta-analysis}. \emph{European Heart Journal} (2022). doi:\href{https://doi.org/10.1093/eurheartj/ehac071}{10.1093/eurheartj/ehac071}}
 
 \leavevmode\hypertarget{ref-Bell2018a}{}%
 \CSLLeftMargin{34. }
-\CSLRightInline{Bell, J. A. \emph{et al.} Associations of body mass and fat~indexes~with cardiometabolic traits. \emph{J Am Coll Cardiol} \textbf{72}, 3142--3154 (2018).}
+\CSLRightInline{Bell, J. A. \emph{et al.} {Associations of Body Mass and Fat~Indexes~With Cardiometabolic Traits}. \emph{J Am Coll Cardiol} \textbf{72}, 3142--3154 (2018).}
 
 \leavevmode\hypertarget{ref-Wurtz2014}{}%
 \CSLLeftMargin{35. }
-\CSLRightInline{Würtz, P. \emph{et al.} Metabolic signatures of adiposity in young adults: Mendelian randomization analysis and effects of weight change. \emph{PLoS Med} \textbf{11}, e1001765 (2014).}
+\CSLRightInline{Würtz, P. \emph{et al.} {Metabolic signatures of adiposity in young adults: Mendelian randomization analysis and effects of weight change}. \emph{PLoS Med} \textbf{11}, e1001765 (2014).}
 
 \leavevmode\hypertarget{ref-Lu2014}{}%
 \CSLLeftMargin{36. }
-\CSLRightInline{Lu, Y. \emph{et al.} Metabolic mediators of the effects of body-mass index, overweight, and obesity on coronary heart disease and stroke: A pooled analysis of 97 prospective cohorts with 1·8 million participants. \emph{The Lancet} (2014). doi:\href{https://doi.org/10.1016/S0140-6736(13)61836-X}{10.1016/S0140-6736(13)61836-X}}
+\CSLRightInline{Lu, Y. \emph{et al.} {Metabolic mediators of the effects of body-mass index, overweight, and obesity on coronary heart disease and stroke: A pooled analysis of 97 prospective cohorts with 1{{}}8 million participants}. \emph{The Lancet} (2014). doi:\href{https://doi.org/10.1016/S0140-6736(13)61836-X}{10.1016/S0140-6736(13)61836-X}}
 
 \leavevmode\hypertarget{ref-Sun2018}{}%
 \CSLLeftMargin{37. }
-\CSLRightInline{Sun, B. B. \emph{et al.} Genomic atlas of the human plasma proteome. \emph{Nature} \textbf{558}, 73--79 (2018).}
+\CSLRightInline{Sun, B. B. \emph{et al.} {Genomic atlas of the human plasma proteome}. \emph{Nature} \textbf{558}, 73--79 (2018).}
 
 \leavevmode\hypertarget{ref-Rivera2009}{}%
 \CSLLeftMargin{38. }
-\CSLRightInline{Rivera, J., Lozano, M. L., Navarro-Núñez, L. \& Vicente, V. Platelet receptors and signaling in the dynamics of thrombus formation. \emph{Haematologica} \textbf{94}, 700--711 (2009).}
+\CSLRightInline{Rivera, J., Lozano, M. L., Navarro-Núñez, L. \& Vicente, V. {Platelet receptors and signaling in the dynamics of thrombus formation}. \emph{Haematologica} \textbf{94}, 700--711 (2009).}
 
 \leavevmode\hypertarget{ref-Yau2015}{}%
 \CSLLeftMargin{39. }
-\CSLRightInline{Yau, J. W., Teoh, H. \& Verma, S. Endothelial cell control of thrombosis. \emph{BMC Cardiovasc Disord} \textbf{15}, 130 (2015).}
+\CSLRightInline{Yau, J. W., Teoh, H. \& Verma, S. {Endothelial cell control of thrombosis}. \emph{BMC Cardiovasc Disord} \textbf{15}, 130 (2015).}
 
 \leavevmode\hypertarget{ref-Gear2003}{}%
 \CSLLeftMargin{40. }
-\CSLRightInline{Gear, A. R. \& Camerini, D. Platelet chemokines and chemokine receptors: Linking hemostasis, inflammation, and host defense. \emph{Microcirculation} \textbf{10}, 335--350 (2003).}
+\CSLRightInline{Gear, A. R. \& Camerini, D. {Platelet chemokines and chemokine receptors: linking hemostasis, inflammation, and host defense}. \emph{Microcirculation} \textbf{10}, 335--350 (2003).}
 
 \leavevmode\hypertarget{ref-Durrant2017a}{}%
 \CSLLeftMargin{41. }
-\CSLRightInline{Durrant, T. N., Bosch, M. T. V. D. \& Hers, I. Integrin αIIbβ3 outside-in signaling. \emph{Blood} (2017). doi:\href{https://doi.org/10.1182/blood-2017-03-773614}{10.1182/blood-2017-03-773614}}
+\CSLRightInline{Durrant, T. N., Van Den Bosch, M. T. \& Hers, I. {Integrin \(\alpha\)IIb\(\beta\)3 outside-in signaling}. (2017). doi:\href{https://doi.org/10.1182/blood-2017-03-773614}{10.1182/blood-2017-03-773614}}
 
 \leavevmode\hypertarget{ref-Huang2019}{}%
 \CSLLeftMargin{42. }
-\CSLRightInline{Huang, J. \emph{et al.} Platelet integrin αiIbβ3: Signal transduction, regulation, and its therapeutic targeting. \emph{Journal of Hematology and Oncology} (2019). doi:\href{https://doi.org/10.1186/s13045-019-0709-6}{10.1186/s13045-019-0709-6}}
+\CSLRightInline{Huang, J. \emph{et al.} {Platelet integrin \(\alpha\)iIb\(\beta\)3: Signal transduction, regulation, and its therapeutic targeting}. (2019). doi:\href{https://doi.org/10.1186/s13045-019-0709-6}{10.1186/s13045-019-0709-6}}
 
 \leavevmode\hypertarget{ref-Mehrbod2013}{}%
 \CSLLeftMargin{43. }
-\CSLRightInline{Mehrbod, M., Trisno, S. \& Mofrad, M. R. K. On the activation of integrin αiIbβ3: Outside-in and inside-out pathways. \emph{Biophysical Journal} (2013). doi:\href{https://doi.org/10.1016/j.bpj.2013.07.055}{10.1016/j.bpj.2013.07.055}}
+\CSLRightInline{Mehrbod, M., Trisno, S. \& Mofrad, M. R. K. {On the activation of integrin \(\alpha\)iIb\(\beta\)3: Outside-in and inside-out pathways}. \emph{Biophysical Journal} (2013). doi:\href{https://doi.org/10.1016/j.bpj.2013.07.055}{10.1016/j.bpj.2013.07.055}}
 
 \leavevmode\hypertarget{ref-Durrant2017}{}%
 \CSLLeftMargin{44. }
-\CSLRightInline{Durrant, T. N. \emph{et al.} In-depth PtdIns(3,4,5)p. \emph{Blood Adv} \textbf{1}, 918--932 (2017).}
+\CSLRightInline{Durrant, T. N. \emph{et al.} In-depth PtdIns(3,4,5)P3 signalosome analysis identifies DAPP1 as a negative regulator of GPVI-driven platelet function. \emph{Blood Adv} \textbf{1}, 918--932 (2017).}
 
 \leavevmode\hypertarget{ref-Offermanns2006}{}%
 \CSLLeftMargin{45. }
-\CSLRightInline{Offermanns, S. Activation of platelet function through g protein-coupled receptors. \emph{Circulation Research} (2006). doi:\href{https://doi.org/10.1161/01.RES.0000251742.71301.16}{10.1161/01.RES.0000251742.71301.16}}
+\CSLRightInline{Offermanns, S. {Activation of platelet function through G protein-coupled receptors}. (2006). doi:\href{https://doi.org/10.1161/01.RES.0000251742.71301.16}{10.1161/01.RES.0000251742.71301.16}}
 
 \leavevmode\hypertarget{ref-Freynhofer2017a}{}%
 \CSLLeftMargin{46. }
-\CSLRightInline{Freynhofer, M. K. \emph{et al.} Platelet turnover predicts outcome after coronary intervention. \emph{Thromb Haemost} \textbf{117}, 923--933 (2017).}
+\CSLRightInline{Freynhofer, M. K. \emph{et al.} {Platelet turnover predicts outcome after coronary intervention}. \emph{Thromb Haemost} \textbf{117}, 923--933 (2017).}
 
 \leavevmode\hypertarget{ref-Nardin2015}{}%
 \CSLLeftMargin{47. }
-\CSLRightInline{Nardin, M. \emph{et al.} Body mass index and platelet reactivity during dual antiplatelet therapy with clopidogrel or ticagrelor. \emph{J Cardiovasc Pharmacol} \textbf{66}, 364--370 (2015).}
+\CSLRightInline{Nardin, M. \emph{et al.} {Body Mass Index and Platelet Reactivity During Dual Antiplatelet Therapy With Clopidogrel or Ticagrelor}. \emph{J Cardiovasc Pharmacol} \textbf{66}, 364--370 (2015).}
 
 \leavevmode\hypertarget{ref-Khan2020}{}%
 \CSLLeftMargin{48. }
-\CSLRightInline{Khan, S. U. \emph{et al.} Dual antiplatelet therapy after percutaneous coronary intervention and drug-eluting stents: A systematic review and network meta-analysis. \emph{Circulation} (2020). doi:\href{https://doi.org/10.1161/CIRCULATIONAHA.120.046308}{10.1161/CIRCULATIONAHA.120.046308}}
+\CSLRightInline{Khan, S. U. \emph{et al.} {Dual Antiplatelet Therapy after Percutaneous Coronary Intervention and Drug-Eluting Stents: A Systematic Review and Network Meta-Analysis}. \emph{Circulation} (2020). doi:\href{https://doi.org/10.1161/CIRCULATIONAHA.120.046308}{10.1161/CIRCULATIONAHA.120.046308}}
 
 \leavevmode\hypertarget{ref-Warner2011}{}%
 \CSLLeftMargin{49. }
-\CSLRightInline{Warner, T. D., Nylander, S. \& Whatling, C. Anti-platelet therapy: Cyclo-oxygenase inhibition and the use of aspirin with particular regard to dual anti-platelet therapy. \emph{British Journal of Clinical Pharmacology} (2011). doi:\href{https://doi.org/10.1111/j.1365-2125.2011.03943.x}{10.1111/j.1365-2125.2011.03943.x}}
+\CSLRightInline{Warner, T. D., Nylander, S. \& Whatling, C. {Anti-platelet therapy: Cyclo-oxygenase inhibition and the use of aspirin with particular regard to dual anti-platelet therapy}. (2011). doi:\href{https://doi.org/10.1111/j.1365-2125.2011.03943.x}{10.1111/j.1365-2125.2011.03943.x}}
 
 \leavevmode\hypertarget{ref-Degrauwe2017}{}%
 \CSLLeftMargin{50. }
-\CSLRightInline{Degrauwe, S. \emph{et al.} Dual antiplatelet therapy for secondary prevention of coronary artery disease. \emph{Open Heart} (2017). doi:\href{https://doi.org/10.1136/openhrt-2017-000651}{10.1136/openhrt-2017-000651}}
+\CSLRightInline{Degrauwe, S. \emph{et al.} {Dual antiplatelet therapy for secondary prevention of coronary artery disease}. \emph{Open Heart} (2017). doi:\href{https://doi.org/10.1136/openhrt-2017-000651}{10.1136/openhrt-2017-000651}}
 
 \leavevmode\hypertarget{ref-Grover2019}{}%
 \CSLLeftMargin{51. }
-\CSLRightInline{Grover, S. P. \& Mackman, N. Intrinsic pathway of coagulation and thrombosis. \emph{Arteriosclerosis, Thrombosis, and Vascular Biology} (2019). doi:\href{https://doi.org/10.1161/atvbaha.118.312130}{10.1161/atvbaha.118.312130}}
+\CSLRightInline{Grover, S. P. \& Mackman, N. {Intrinsic Pathway of Coagulation and Thrombosis}. \emph{Arteriosclerosis, Thrombosis, and Vascular Biology} (2019). doi:\href{https://doi.org/10.1161/atvbaha.118.312130}{10.1161/atvbaha.118.312130}}
 
 \leavevmode\hypertarget{ref-Mullen2021}{}%
 \CSLLeftMargin{52. }
-\CSLRightInline{Mullen, L. \emph{et al.} Risk of major bleeding with potent antiplatelet agents after an acute coronary event: A comparison of ticagrelor and clopidogrel in 5116 consecutive patients in clinical practice. \emph{Journal of the American Heart Association} (2021). doi:\href{https://doi.org/10.1161/JAHA.120.019467}{10.1161/JAHA.120.019467}}
+\CSLRightInline{Mullen, L. \emph{et al.} {Risk of major bleeding with potent antiplatelet agents after an acute coronary event: A comparison of ticagrelor and clopidogrel in 5116 consecutive patients in clinical practice}. \emph{Journal of the American Heart Association} (2021). doi:\href{https://doi.org/10.1161/JAHA.120.019467}{10.1161/JAHA.120.019467}}
 
 \leavevmode\hypertarget{ref-Deharo2014}{}%
 \CSLLeftMargin{53. }
-\CSLRightInline{Deharo, P. \emph{et al.} Body mass index has no impact on platelet inhibition induced by ticagrelor after acute coronary syndrome, conversely to prasugrel. \emph{Int J Cardiol} \textbf{176}, 1200--1202 (2014).}
+\CSLRightInline{Deharo, P. \emph{et al.} {Body mass index has no impact on platelet inhibition induced by ticagrelor after acute coronary syndrome, conversely to prasugrel}. \emph{Int J Cardiol} \textbf{176}, 1200--1202 (2014).}
 
 \leavevmode\hypertarget{ref-Sibbing2007}{}%
 \CSLLeftMargin{54. }
-\CSLRightInline{Sibbing, D., Beckerath, O. von, Schömig, A., Kastrati, A. \& Beckerath, N. von. Impact of body mass index on platelet aggregation after administration of a high loading dose of 600 mg of clopidogrel before percutaneous coronary intervention. \emph{Am J Cardiol} \textbf{100}, 203--205 (2007).}
+\CSLRightInline{Sibbing, D., Beckerath, O. von, Schömig, A., Kastrati, A. \& Beckerath, N. von. {Impact of body mass index on platelet aggregation after administration of a high loading dose of 600 mg of clopidogrel before percutaneous coronary intervention}. \emph{Am J Cardiol} \textbf{100}, 203--205 (2007).}
 
 \leavevmode\hypertarget{ref-Pankert2014}{}%
 \CSLLeftMargin{55. }
-\CSLRightInline{Pankert, M. \emph{et al.} Impact of obesity and the metabolic syndrome on response to clopidogrel or prasugrel and bleeding risk in patients treated after coronary stenting. \emph{Am J Cardiol} \textbf{113}, 54--59 (2014).}
+\CSLRightInline{Pankert, M. \emph{et al.} {Impact of obesity and the metabolic syndrome on response to clopidogrel or prasugrel and bleeding risk in patients treated after coronary stenting}. \emph{Am J Cardiol} \textbf{113}, 54--59 (2014).}
 
 \leavevmode\hypertarget{ref-Born1962}{}%
 \CSLLeftMargin{56. }
-\CSLRightInline{Born, G. V. R. Aggregation of blood platelets by adenosine diphosphate and its reversal. \emph{Nature} (1962). doi:\href{https://doi.org/10.1038/194927b0}{10.1038/194927b0}}
+\CSLRightInline{Born, G. V. R. {Aggregation of blood platelets by adenosine diphosphate and its reversal}. \emph{Nature} (1962). doi:\href{https://doi.org/10.1038/194927b0}{10.1038/194927b0}}
 
 \leavevmode\hypertarget{ref-Chan2018}{}%
 \CSLLeftMargin{57. }
-\CSLRightInline{Chan, M. V., Armstrong, P. C. \& Warner, T. D. 96-well plate-based aggregometry. \emph{Platelets} (2018). doi:\href{https://doi.org/10.1080/09537104.2018.1445838}{10.1080/09537104.2018.1445838}}
+\CSLRightInline{Chan, M. V., Armstrong, P. C. \& Warner, T. D. 96-well plate-based aggregometry. (2018). doi:\href{https://doi.org/10.1080/09537104.2018.1445838}{10.1080/09537104.2018.1445838}}
 
 \leavevmode\hypertarget{ref-Toth2006}{}%
 \CSLLeftMargin{58. }
-\CSLRightInline{Tóth, O., Calatzis, A., Penz, S., Losonczy, H. \& Siess, W. Multiple electrode aggregometry: A new device to measure platelet aggregation in whole blood. \emph{Thrombosis and Haemostasis} (2006). doi:\href{https://doi.org/10.1160/TH06-05-0242}{10.1160/TH06-05-0242}}
+\CSLRightInline{Tóth, O., Calatzis, A., Penz, S., Losonczy, H. \& Siess, W. {Multiple electrode aggregometry: A new device to measure platelet aggregation in whole blood}. \emph{Thrombosis and Haemostasis} (2006). doi:\href{https://doi.org/10.1160/TH06-05-0242}{10.1160/TH06-05-0242}}
 
 \leavevmode\hypertarget{ref-Hu2017}{}%
 \CSLLeftMargin{59. }
-\CSLRightInline{Hu, L. \emph{et al.} Platelets express activated P2Y12 receptor in patients with diabetes mellitus. \emph{Circulation} (2017). doi:\href{https://doi.org/10.1161/CIRCULATIONAHA.116.026995}{10.1161/CIRCULATIONAHA.116.026995}}
+\CSLRightInline{Hu, L. \emph{et al.} {Platelets express activated P2Y12 receptor in patients with diabetes mellitus}. \emph{Circulation} (2017). doi:\href{https://doi.org/10.1161/CIRCULATIONAHA.116.026995}{10.1161/CIRCULATIONAHA.116.026995}}
 
 \leavevmode\hypertarget{ref-Varga-Szabo2009}{}%
 \CSLLeftMargin{60. }
-\CSLRightInline{Varga-Szabo, D., Braun, A. \& Nieswandt, B. Calcium signaling in platelets. \emph{Journal of Thrombosis and Haemostasis} (2009). doi:\href{https://doi.org/10.1111/j.1538-7836.2009.03455.x}{10.1111/j.1538-7836.2009.03455.x}}
+\CSLRightInline{Varga-Szabo, D., Braun, A. \& Nieswandt, B. {Calcium signaling in platelets}. (2009). doi:\href{https://doi.org/10.1111/j.1538-7836.2009.03455.x}{10.1111/j.1538-7836.2009.03455.x}}
 
 \leavevmode\hypertarget{ref-Bevers1983}{}%
 \CSLLeftMargin{61. }
-\CSLRightInline{Bevers, E. M., Comfurius, P. \& Zwaal, R. F. A. Changes in membrane phospholipid distribution during platelet activation. \emph{BBA - Biomembranes} (1983). doi:\href{https://doi.org/10.1016/0005-2736(83)90169-4}{10.1016/0005-2736(83)90169-4}}
+\CSLRightInline{Bevers, E. M., Comfurius, P. \& Zwaal, R. F. A. {Changes in membrane phospholipid distribution during platelet activation}. \emph{BBA - Biomembranes} (1983). doi:\href{https://doi.org/10.1016/0005-2736(83)90169-4}{10.1016/0005-2736(83)90169-4}}
 
 \leavevmode\hypertarget{ref-Lisman2018}{}%
 \CSLLeftMargin{62. }
-\CSLRightInline{Lisman, T. Platelet--neutrophil interactions as drivers of inflammatory and thrombotic disease. \emph{Cell and Tissue Research} (2018). doi:\href{https://doi.org/10.1007/s00441-017-2727-4}{10.1007/s00441-017-2727-4}}
+\CSLRightInline{Lisman, T. {Platelet--neutrophil interactions as drivers of inflammatory and thrombotic disease}. (2018). doi:\href{https://doi.org/10.1007/s00441-017-2727-4}{10.1007/s00441-017-2727-4}}
 
 \leavevmode\hypertarget{ref-Zarbock2007}{}%
 \CSLLeftMargin{63. }
-\CSLRightInline{Zarbock, A., Polanowska-Grabowska, R. K. \& Ley, K. Platelet-neutrophil-interactions: Linking hemostasis and inflammation. \emph{Blood Reviews} (2007). doi:\href{https://doi.org/10.1016/j.blre.2006.06.001}{10.1016/j.blre.2006.06.001}}
+\CSLRightInline{Zarbock, A., Polanowska-Grabowska, R. K. \& Ley, K. {Platelet-neutrophil-interactions: Linking hemostasis and inflammation}. \emph{Blood Reviews} (2007). doi:\href{https://doi.org/10.1016/j.blre.2006.06.001}{10.1016/j.blre.2006.06.001}}
 
 \leavevmode\hypertarget{ref-Gerrits2016}{}%
 \CSLLeftMargin{64. }
-\CSLRightInline{Gerrits, A. J., Frelinger, A. L. \& Michelson, A. D. Whole blood analysis of leukocyte-platelet aggregates. \emph{Current Protocols in Cytometry} (2016). doi:\href{https://doi.org/10.1002/cpcy.8}{10.1002/cpcy.8}}
+\CSLRightInline{Gerrits, A. J., Frelinger, A. L. \& Michelson, A. D. {Whole blood analysis of leukocyte-platelet aggregates}. \emph{Current Protocols in Cytometry} (2016). doi:\href{https://doi.org/10.1002/cpcy.8}{10.1002/cpcy.8}}
 
 \leavevmode\hypertarget{ref-Braune2020}{}%
 \CSLLeftMargin{65. }
-\CSLRightInline{Braune, S., Küpper, J. H. \& Jung, F. Effect of prostanoids on human platelet function: An overview. \emph{International Journal of Molecular Sciences} (2020). doi:\href{https://doi.org/10.3390/ijms21239020}{10.3390/ijms21239020}}
+\CSLRightInline{Braune, S., Küpper, J. H. \& Jung, F. {Effect of prostanoids on human platelet function: An overview}. (2020). doi:\href{https://doi.org/10.3390/ijms21239020}{10.3390/ijms21239020}}
 
 \leavevmode\hypertarget{ref-Hezard2005}{}%
 \CSLLeftMargin{66. }
-\CSLRightInline{Hezard, N. \emph{et al.} Platelet VASP phosphorylation assessment in clopidogrel-treated patients: Lack of agreement between western blot and flow cytometry. \emph{Platelets} (2005). doi:\href{https://doi.org/10.1080/09537100500212551}{10.1080/09537100500212551}}
+\CSLRightInline{Hezard, N. \emph{et al.} {Platelet VASP phosphorylation assessment in clopidogrel-treated patients: Lack of agreement between Western blot and flow cytometry}. \emph{Platelets} (2005). doi:\href{https://doi.org/10.1080/09537100500212551}{10.1080/09537100500212551}}
 
 \leavevmode\hypertarget{ref-Horstrup1994}{}%
 \CSLLeftMargin{67. }
-\CSLRightInline{Horstrup, K. \emph{et al.} Phosphorylation of focal adhesion vasodilator-stimulated phosphoprotein at Ser157 in intact human platelets correlates with fibrinogen receptor inhibition. \emph{European journal of biochemistry} \textbf{225}, 21--27 (1994).}
+\CSLRightInline{Horstrup, K. \emph{et al.} {Phosphorylation of focal adhesion vasodilator-stimulated phosphoprotein at Ser157 in intact human platelets correlates with fibrinogen receptor inhibition.} \emph{European journal of biochemistry} \textbf{225}, 21--27 (1994).}
 
 \leavevmode\hypertarget{ref-Wang2013}{}%
 \CSLLeftMargin{68. }
-\CSLRightInline{Wang, P. \& Wilson, S. R. Mass spectrometry-based protein identification by integrating de novo sequencing with database searching. \emph{BMC bioinformatics} (2013). doi:\href{https://doi.org/10.1186/1471-2105-14-S2-S24}{10.1186/1471-2105-14-S2-S24}}
+\CSLRightInline{Wang, P. \& Wilson, S. R. {Mass spectrometry-based protein identification by integrating de novo sequencing with database searching.} \emph{BMC bioinformatics} (2013). doi:\href{https://doi.org/10.1186/1471-2105-14-S2-S24}{10.1186/1471-2105-14-S2-S24}}
 
 \leavevmode\hypertarget{ref-Huang2021}{}%
 \CSLLeftMargin{69. }
-\CSLRightInline{Huang, J. \emph{et al.} Assessment of a complete and classified platelet proteome from genome-wide transcripts of human platelets and megakaryocytes covering platelet functions. \emph{Scientific Reports} (2021). doi:\href{https://doi.org/10.1038/s41598-021-91661-x}{10.1038/s41598-021-91661-x}}
+\CSLRightInline{Huang, J. \emph{et al.} {Assessment of a complete and classified platelet proteome from genome-wide transcripts of human platelets and megakaryocytes covering platelet functions}. \emph{Scientific Reports} (2021). doi:\href{https://doi.org/10.1038/s41598-021-91661-x}{10.1038/s41598-021-91661-x}}
 
 \leavevmode\hypertarget{ref-Budak2016}{}%
 \CSLLeftMargin{70. }
-\CSLRightInline{Budak, Y. U., Polat, M. \& Huysal, K. The use of platelet indices, plateletcrit, mean platelet volume and platelet distribution width in emergency non-traumatic abdominal surgery: A systematic review. \emph{Biochemia Medica} (2016). doi:\href{https://doi.org/10.11613/BM.2016.020}{10.11613/BM.2016.020}}
+\CSLRightInline{Budak, Y. U., Polat, M. \& Huysal, K. {The use of platelet indices, plateletcrit, mean platelet volume and platelet distribution width in emergency non-traumatic abdominal surgery: A systematic review}. (2016). doi:\href{https://doi.org/10.11613/BM.2016.020}{10.11613/BM.2016.020}}
 
 \leavevmode\hypertarget{ref-Gill2018}{}%
 \CSLLeftMargin{71. }
-\CSLRightInline{Gill, D., Monori, G., Georgakis, M. K., Tzoulaki, I. \& Laffan, M. Genetically determined platelet count and risk of cardiovascular disease. \emph{Arterioscler Thromb Vasc Biol} \textbf{38}, 2862--2869 (2018).}
+\CSLRightInline{Gill, D., Monori, G., Georgakis, M. K., Tzoulaki, I. \& Laffan, M. {Genetically Determined Platelet Count and Risk of Cardiovascular Disease}. \emph{Arterioscler Thromb Vasc Biol} \textbf{38}, 2862--2869 (2018).}
 
 \leavevmode\hypertarget{ref-Wurtz2012}{}%
 \CSLLeftMargin{72. }
-\CSLRightInline{Würtz, M., Hvas, A. M., Kristensen, S. D. \& Grove, E. L. Platelet aggregation is dependent on platelet count in patients with coronary artery disease. \emph{Thromb Res} \textbf{129}, 56--61 (2012).}
+\CSLRightInline{Würtz, M., Hvas, A. M., Kristensen, S. D. \& Grove, E. L. {Platelet aggregation is dependent on platelet count in patients with coronary artery disease}. \emph{Thromb Res} \textbf{129}, 56--61 (2012).}
 
 \leavevmode\hypertarget{ref-Femia2013}{}%
 \CSLLeftMargin{73. }
-\CSLRightInline{Femia, E. A., Scavone, M., Lecchi, A. \& Cattaneo, M. Effect of platelet count on platelet aggregation measured with impedance aggregometry (multiplate™ analyzer) and with light transmission aggregometry. \emph{Journal of Thrombosis and Haemostasis} (2013). doi:\href{https://doi.org/10.1111/jth.12432}{10.1111/jth.12432}}
+\CSLRightInline{Femia, E. A., Scavone, M., Lecchi, A. \& Cattaneo, M. {Effect of platelet count on platelet aggregation measured with impedance aggregometry (Multiplate™ analyzer) and with light transmission aggregometry}. (2013). doi:\href{https://doi.org/10.1111/jth.12432}{10.1111/jth.12432}}
 
 \leavevmode\hypertarget{ref-Furuncuoglu2016}{}%
 \CSLLeftMargin{74. }
-\CSLRightInline{Furuncuoğlu, Y. \emph{et al.} How obesity affects the neutrophil/lymphocyte and platelet/lymphocyte ratio, systemic immune-inflammatory index and platelet indices: A retrospective study. \emph{Eur Rev Med Pharmacol Sci} \textbf{20}, 1300--1306 (2016).}
+\CSLRightInline{Furuncuoğlu, Y. \emph{et al.} {How obesity affects the neutrophil/lymphocyte and platelet/lymphocyte ratio, systemic immune-inflammatory index and platelet indices: a retrospective study}. \emph{Eur Rev Med Pharmacol Sci} \textbf{20}, 1300--1306 (2016).}
 
 \leavevmode\hypertarget{ref-Han2018a}{}%
 \CSLLeftMargin{75. }
-\CSLRightInline{Han, S. \emph{et al.} Associations of platelet indices with body fat mass and fat distribution. \emph{Obesity (Silver Spring)} \textbf{26}, 1637--1643 (2018).}
+\CSLRightInline{Han, S. \emph{et al.} {Associations of Platelet Indices with Body Fat Mass and Fat Distribution}. \emph{Obesity (Silver Spring)} \textbf{26}, 1637--1643 (2018).}
 
 \leavevmode\hypertarget{ref-Coban2005}{}%
 \CSLLeftMargin{76. }
-\CSLRightInline{Coban, E., Ozdogan, M., Yazicioglu, G. \& Akcit, F. The mean platelet volume in patients with obesity. \emph{Int J Clin Pract} \textbf{59}, 981--982 (2005).}
+\CSLRightInline{Coban, E., Ozdogan, M., Yazicioglu, G. \& Akcit, F. {The mean platelet volume in patients with obesity}. \emph{Int J Clin Pract} \textbf{59}, 981--982 (2005).}
 
 \leavevmode\hypertarget{ref-Heffron2018}{}%
 \CSLLeftMargin{77. }
-\CSLRightInline{Heffron, S. P., Marier, C., Parikh, M., Fisher, E. A. \& Berger, J. S. Severe obesity and bariatric surgery alter the platelet mRNA profile. \emph{Platelets} 1--8 (2018). doi:\href{https://doi.org/10.1080/09537104.2018.1536261}{10.1080/09537104.2018.1536261}}
+\CSLRightInline{Heffron, S. P., Marier, C., Parikh, M., Fisher, E. A. \& Berger, J. S. {Severe obesity and bariatric surgery alter the platelet mRNA profile}. \emph{Platelets} 1--8 (2018). doi:\href{https://doi.org/10.1080/09537104.2018.1536261}{10.1080/09537104.2018.1536261}}
 
 \leavevmode\hypertarget{ref-UnayDemirel2018a}{}%
 \CSLLeftMargin{78. }
-\CSLRightInline{Demirel, O. U., Ignak, S. \& Buyukuysal, M. C. Immature platelet count levels as a novel quality marker in plateletpheresis. \emph{Indian J Hematol Blood Transfus} \textbf{34}, 684--690 (2018).}
+\CSLRightInline{Unay Demirel, O., Ignak, S. \& Buyukuysal, M. C. {Immature Platelet Count Levels as a Novel Quality Marker in Plateletpheresis}. \emph{Indian J Hematol Blood Transfus} \textbf{34}, 684--690 (2018).}
 
 \leavevmode\hypertarget{ref-Corpataux2020}{}%
 \CSLLeftMargin{79. }
-\CSLRightInline{Corpataux, N. \emph{et al.} Reticulated platelets in medicine: Current evidence and further perspectives. \emph{Journal of Clinical Medicine} (2020). doi:\href{https://doi.org/10.3390/jcm9113737}{10.3390/jcm9113737}}
+\CSLRightInline{Corpataux, N. \emph{et al.} {Reticulated platelets in medicine: Current evidence and further perspectives}. (2020). doi:\href{https://doi.org/10.3390/jcm9113737}{10.3390/jcm9113737}}
 
 \leavevmode\hypertarget{ref-Ibrahim2014}{}%
 \CSLLeftMargin{80. }
-\CSLRightInline{Ibrahim, H. \emph{et al.} Association of immature platelets with adverse cardiovascular outcomes. \emph{J Am Coll Cardiol} \textbf{64}, 2122--2129 (2014).}
+\CSLRightInline{Ibrahim, H. \emph{et al.} {Association of immature platelets with adverse cardiovascular outcomes}. \emph{J Am Coll Cardiol} \textbf{64}, 2122--2129 (2014).}
 
 \leavevmode\hypertarget{ref-Maury2010a}{}%
 \CSLLeftMargin{81. }
-\CSLRightInline{Maury, E. \emph{et al.} Effect of obesity on growth-related oncogene factor-alpha, thrombopoietin, and tissue inhibitor metalloproteinase-1 serum levels. \emph{Obesity (Silver Spring)} \textbf{18}, 1503--1509 (2010).}
+\CSLRightInline{Maury, E. \emph{et al.} {Effect of obesity on growth-related oncogene factor-alpha, thrombopoietin, and tissue inhibitor metalloproteinase-1 serum levels}. \emph{Obesity (Silver Spring)} \textbf{18}, 1503--1509 (2010).}
 
 \leavevmode\hypertarget{ref-Frystyk1995}{}%
 \CSLLeftMargin{82. }
-\CSLRightInline{Frystyk, J., Vestbo, E., Skjaerbaek, C., Mogensen, C. E. \& Orskov, H. Free insulin-like growth factors in human obesity. \emph{Metabolism} \textbf{44}, 37--44 (1995).}
+\CSLRightInline{Frystyk, J., Vestbo, E., Skjaerbaek, C., Mogensen, C. E. \& Orskov, H. {Free insulin-like growth factors in human obesity}. \emph{Metabolism} \textbf{44}, 37--44 (1995).}
 
 \leavevmode\hypertarget{ref-Hers2007}{}%
 \CSLLeftMargin{83. }
-\CSLRightInline{Hers, I. Insulin-like growth factor-1 potentiates platelet activation via the IRS/PI3Kalpha pathway. \emph{Blood} \textbf{110}, 4243--4252 (2007).}
+\CSLRightInline{Hers, I. {Insulin-like growth factor-1 potentiates platelet activation via the IRS/PI3Kalpha pathway}. \emph{Blood} \textbf{110}, 4243--4252 (2007).}
 
 \leavevmode\hypertarget{ref-Blair2015}{}%
 \CSLLeftMargin{84. }
-\CSLRightInline{Blair, T. A., Moore, S. F. \& Hers, I. Circulating primers enhance platelet function and induce resistance to antiplatelet therapy. \emph{J Thromb Haemost} \textbf{13}, 1479--1493 (2015).}
+\CSLRightInline{Blair, T. A., Moore, S. F. \& Hers, I. {Circulating primers enhance platelet function and induce resistance to antiplatelet therapy}. \emph{J Thromb Haemost} \textbf{13}, 1479--1493 (2015).}
 
 \leavevmode\hypertarget{ref-Pasquet2000}{}%
 \CSLLeftMargin{85. }
-\CSLRightInline{Pasquet, J. M. \emph{et al.} Thrombopoietin potentiates collagen receptor signaling in platelets through a phosphatidylinositol 3-kinase-dependent pathway. \emph{Blood} \textbf{95}, 3429--3434 (2000).}
+\CSLRightInline{Pasquet, J. M. \emph{et al.} {Thrombopoietin potentiates collagen receptor signaling in platelets through a phosphatidylinositol 3-kinase-dependent pathway}. \emph{Blood} \textbf{95}, 3429--3434 (2000).}
 
 \leavevmode\hypertarget{ref-Kowalska2000}{}%
 \CSLLeftMargin{86. }
-\CSLRightInline{Kowalska, M. A. \emph{et al.} Stromal cell-derived factor-1 and macrophage-derived chemokine: 2 chemokines that activate platelets. \emph{Blood} (2000). doi:\href{https://doi.org/10.1182/blood.v96.1.50}{10.1182/blood.v96.1.50}}
+\CSLRightInline{Kowalska, M. A. \emph{et al.} {Stromal cell-derived factor-1 and macrophage-derived chemokine: 2 chemokines that activate platelets}. \emph{Blood} (2000). doi:\href{https://doi.org/10.1182/blood.v96.1.50}{10.1182/blood.v96.1.50}}
 
 \leavevmode\hypertarget{ref-Abi-Younes2001}{}%
 \CSLLeftMargin{87. }
-\CSLRightInline{Abi-Younes, S., Si-Tahar, M. \& Luster, A. D. The CC chemokines MDC and TARC induce platelet activation via CCR4. \emph{Thromb Res} \textbf{101}, 279--289 (2001).}
+\CSLRightInline{Abi-Younes, S., Si-Tahar, M. \& Luster, A. D. {The CC chemokines MDC and TARC induce platelet activation via CCR4}. \emph{Thromb Res} \textbf{101}, 279--289 (2001).}
 
 \leavevmode\hypertarget{ref-Kitahara2014}{}%
 \CSLLeftMargin{88. }
-\CSLRightInline{Kitahara, C. M. \emph{et al.} Body mass index, physical activity, and serum markers of inflammation, immunity, and insulin resistance. \emph{Cancer Epidemiology Biomarkers and Prevention} (2014). doi:\href{https://doi.org/10.1158/1055-9965.EPI-14-0699-T}{10.1158/1055-9965.EPI-14-0699-T}}
+\CSLRightInline{Kitahara, C. M. \emph{et al.} {Body mass index, physical activity, and serum markers of inflammation, immunity, and insulin resistance}. \emph{Cancer Epidemiology Biomarkers and Prevention} (2014). doi:\href{https://doi.org/10.1158/1055-9965.EPI-14-0699-T}{10.1158/1055-9965.EPI-14-0699-T}}
 
 \leavevmode\hypertarget{ref-Hemmings2015}{}%
 \CSLLeftMargin{89. }
-\CSLRightInline{Hemmings, B. A. \& Restuccia, D. F. The PI3K-PKB/akt pathway. \emph{Cold Spring Harb Perspect Biol} \textbf{7}, (2015).}
+\CSLRightInline{Hemmings, B. A. \& Restuccia, D. F. {The PI3K-PKB/Akt pathway}. \emph{Cold Spring Harb Perspect Biol} \textbf{7}, (2015).}
 
 \leavevmode\hypertarget{ref-Ezumi1998}{}%
 \CSLLeftMargin{90. }
-\CSLRightInline{Ezumi, Y., Uchiyama, T. \& Takayama, H. Thrombopoietin potentiates the protein-kinase-c-mediated activation of mitogen-activated protein kinase/ERK kinases and extracellular signal-regulated kinases in human platelets. \emph{Eur J Biochem} \textbf{258}, 976--985 (1998).}
+\CSLRightInline{Ezumi, Y., Uchiyama, T. \& Takayama, H. {Thrombopoietin potentiates the protein-kinase-C-mediated activation of mitogen-activated protein kinase/ERK kinases and extracellular signal-regulated kinases in human platelets}. \emph{Eur J Biochem} \textbf{258}, 976--985 (1998).}
 
 \leavevmode\hypertarget{ref-VanWilligen2000}{}%
 \CSLLeftMargin{91. }
-\CSLRightInline{Willigen, G. van, Gorter, G. \& Akkerman, J. W. Thrombopoietin increases platelet sensitivity to alpha-thrombin via activation of the ERK2-cPLA2 pathway. \emph{Thromb Haemost} \textbf{83}, 610--616 (2000).}
+\CSLRightInline{Willigen, G. van, Gorter, G. \& Akkerman, J. W. {Thrombopoietin increases platelet sensitivity to alpha-thrombin via activation of the ERK2-cPLA2 pathway}. \emph{Thromb Haemost} \textbf{83}, 610--616 (2000).}
 
 \leavevmode\hypertarget{ref-Cercato2019}{}%
 \CSLLeftMargin{92. }
-\CSLRightInline{Cercato, C. \& Fonseca, F. A. Cardiovascular risk and obesity. \emph{Diabetology and Metabolic Syndrome} (2019). doi:\href{https://doi.org/10.1186/s13098-019-0468-0}{10.1186/s13098-019-0468-0}}
+\CSLRightInline{Cercato, C. \& Fonseca, F. A. {Cardiovascular risk and obesity}. (2019). doi:\href{https://doi.org/10.1186/s13098-019-0468-0}{10.1186/s13098-019-0468-0}}
 
 \leavevmode\hypertarget{ref-Kern2001}{}%
 \CSLLeftMargin{93. }
-\CSLRightInline{Kern, P. A., Ranganathan, S., Li, C., Wood, L. \& Ranganathan, G. Adipose tissue tumor necrosis factor and interleukin-6 expression in human obesity and insulin resistance. \emph{American Journal of Physiology - Endocrinology and Metabolism} (2001). doi:\href{https://doi.org/10.1152/ajpendo.2001.280.5.e745}{10.1152/ajpendo.2001.280.5.e745}}
+\CSLRightInline{Kern, P. A., Ranganathan, S., Li, C., Wood, L. \& Ranganathan, G. {Adipose tissue tumor necrosis factor and interleukin-6 expression in human obesity and insulin resistance}. \emph{American Journal of Physiology - Endocrinology and Metabolism} (2001). doi:\href{https://doi.org/10.1152/ajpendo.2001.280.5.e745}{10.1152/ajpendo.2001.280.5.e745}}
 
 \leavevmode\hypertarget{ref-Esser2014}{}%
 \CSLLeftMargin{94. }
-\CSLRightInline{Esser, N., Legrand-Poels, S., Piette, J., Scheen, A. J. \& Paquot, N. Inflammation as a link between obesity, metabolic syndrome and type 2 diabetes. \emph{Diabetes Res Clin Pract} \textbf{105}, 141--150 (2014).}
+\CSLRightInline{Esser, N., Legrand-Poels, S., Piette, J., Scheen, A. J. \& Paquot, N. {Inflammation as a link between obesity, metabolic syndrome and type 2 diabetes}. \emph{Diabetes Res Clin Pract} \textbf{105}, 141--150 (2014).}
 
 \leavevmode\hypertarget{ref-Timpson2011}{}%
 \CSLLeftMargin{95. }
-\CSLRightInline{Timpson, N. J. \emph{et al.} C-reactive protein levels and body mass index: Elucidating direction of causation through reciprocal mendelian randomization. \emph{Int J Obes (Lond)} \textbf{35}, 300--308 (2011).}
+\CSLRightInline{Timpson, N. J. \emph{et al.} {C-reactive protein levels and body mass index: elucidating direction of causation through reciprocal Mendelian randomization}. \emph{Int J Obes (Lond)} \textbf{35}, 300--308 (2011).}
 
 \leavevmode\hypertarget{ref-Zaghlool2021}{}%
 \CSLLeftMargin{96. }
-\CSLRightInline{Zaghlool, S. B. \emph{et al.} Revealing the role of the human blood plasma proteome in obesity using genetic drivers. \emph{Nature Communications} (2021). doi:\href{https://doi.org/10.1038/s41467-021-21542-4}{10.1038/s41467-021-21542-4}}
+\CSLRightInline{Zaghlool, S. B. \emph{et al.} {Revealing the role of the human blood plasma proteome in obesity using genetic drivers}. \emph{Nature Communications} (2021). doi:\href{https://doi.org/10.1038/s41467-021-21542-4}{10.1038/s41467-021-21542-4}}
 
 \leavevmode\hypertarget{ref-Kalaoja2021}{}%
 \CSLLeftMargin{97. }
-\CSLRightInline{Kalaoja, M. \emph{et al.} The role of inflammatory cytokines as intermediates in the pathway from increased adiposity to disease. \emph{Obesity} (2021). doi:\href{https://doi.org/10.1002/oby.23060}{10.1002/oby.23060}}
+\CSLRightInline{Kalaoja, M. \emph{et al.} {The Role of Inflammatory Cytokines as Intermediates in the Pathway from Increased Adiposity to Disease}. \emph{Obesity} (2021). doi:\href{https://doi.org/10.1002/oby.23060}{10.1002/oby.23060}}
 
 \leavevmode\hypertarget{ref-Bretherick2020}{}%
 \CSLLeftMargin{98. }
-\CSLRightInline{Bretherick, A. D. \emph{et al.} Linking protein to phenotype with mendelian randomization detects 38 proteins with causal roles in human diseases and traits. \emph{PLoS Genetics} (2020). doi:\href{https://doi.org/10.1371/journal.pgen.1008785}{10.1371/journal.pgen.1008785}}
+\CSLRightInline{Bretherick, A. D. \emph{et al.} {Linking protein to phenotype with Mendelian Randomization detects 38 proteins with causal roles in human diseases and traits}. \emph{PLoS Genetics} (2020). doi:\href{https://doi.org/10.1371/journal.pgen.1008785}{10.1371/journal.pgen.1008785}}
 
 \leavevmode\hypertarget{ref-Noori2018}{}%
 \CSLLeftMargin{99. }
-\CSLRightInline{Noori, F., Naeimi, S., Zibaeenezhad, M. J. \& Gharemirshamlu, F. R. CCL22 and CCR4 gene polymorphisms in myocardial infarction: Risk assessment of rs4359426 and rs2228428 in iranian population. \emph{Clin Lab} \textbf{64}, 907--913 (2018).}
+\CSLRightInline{Noori, F., Naeimi, S., Zibaeenezhad, M. J. \& Gharemirshamlu, F. R. {CCL22 and CCR4 Gene Polymorphisms in Myocardial Infarction: Risk Assessment of rs4359426 and rs2228428 in Iranian Population}. \emph{Clin Lab} \textbf{64}, 907--913 (2018).}
 
 \leavevmode\hypertarget{ref-Gold2012}{}%
 \CSLLeftMargin{100. }
-\CSLRightInline{Gold, L., Walker, J. J., Wilcox, S. K. \& Williams, S. Advances in human proteomics at high scale with the SOMAscan proteomics platform. \emph{N Biotechnol} \textbf{29}, 543--549 (2012).}
+\CSLRightInline{Gold, L., Walker, J. J., Wilcox, S. K. \& Williams, S. {Advances in human proteomics at high scale with the SOMAscan proteomics platform}. \emph{N Biotechnol} \textbf{29}, 543--549 (2012).}
 
 \leavevmode\hypertarget{ref-Cominetti2018}{}%
 \CSLLeftMargin{101. }
-\CSLRightInline{Cominetti, O. \emph{et al.} Obesity shows preserved plasma proteome in large independent clinical cohorts. \emph{Sci Rep} \textbf{8}, 16981 (2018).}
+\CSLRightInline{Cominetti, O. \emph{et al.} {Obesity shows preserved plasma proteome in large independent clinical cohorts}. \emph{Sci Rep} \textbf{8}, 16981 (2018).}
 
 \leavevmode\hypertarget{ref-Imming2006}{}%
 \CSLLeftMargin{102. }
-\CSLRightInline{Imming, P., Sinning, C. \& Meyer, A. Drugs, their targets and the nature and number of drug targets. \emph{Nat Rev Drug Discov} \textbf{5}, 821--834 (2006).}
+\CSLRightInline{Imming, P., Sinning, C. \& Meyer, A. {Drugs, their targets and the nature and number of drug targets}. \emph{Nat Rev Drug Discov} \textbf{5}, 821--834 (2006).}
 
 \leavevmode\hypertarget{ref-Goudswaard2022}{}%
 \CSLLeftMargin{103. }
-\CSLRightInline{Goudswaard, L. J. \emph{et al.} Higher body mass index raises immature platelet count: Potential contribution to obesity-related thrombosis. \emph{Platelets} 1--10 (2022). doi:\href{https://doi.org/10.1080/09537104.2021.2003317}{10.1080/09537104.2021.2003317}}
+\CSLRightInline{Goudswaard, L. J. \emph{et al.} {Higher body mass index raises immature platelet count: potential contribution to obesity-related thrombosis}. \emph{Platelets} 1--10 (2022). doi:\href{https://doi.org/10.1080/09537104.2021.2003317}{10.1080/09537104.2021.2003317}}
 
 \leavevmode\hypertarget{ref-Goudswaard2021a}{}%
 \CSLLeftMargin{104. }
-\CSLRightInline{Goudswaard, L. J. \emph{et al.} Higher body mass index raises immature platelet count: Evidence from mendelian randomization analyses. \emph{medRxiv} (2021). doi:\href{https://doi.org/10.1101/2021.05.19.21257443}{10.1101/2021.05.19.21257443}}
+\CSLRightInline{Goudswaard, L. J. \emph{et al.} {Higher body mass index raises immature platelet count: evidence from Mendelian randomization analyses}. \emph{medRxiv} (2021). doi:\href{https://doi.org/10.1101/2021.05.19.21257443}{10.1101/2021.05.19.21257443}}
 
 \leavevmode\hypertarget{ref-Wolk2003a}{}%
 \CSLLeftMargin{105. }
-\CSLRightInline{Wolk, R., Berger, P., Lennon, R. J., Brilakis, E. S. \& Somers, V. K. Body mass index: A risk factor for unstable angina and myocardial infarction in patients with angiographically confirmed coronary artery disease. \emph{Circulation} \textbf{108}, 2206--2211 (2003).}
+\CSLRightInline{Wolk, R., Berger, P., Lennon, R. J., Brilakis, E. S. \& Somers, V. K. {Body mass index: a risk factor for unstable angina and myocardial infarction in patients with angiographically confirmed coronary artery disease}. \emph{Circulation} \textbf{108}, 2206--2211 (2003).}
 
 \leavevmode\hypertarget{ref-Puurunen2018}{}%
 \CSLLeftMargin{106. }
-\CSLRightInline{Puurunen, M. K. \emph{et al.} ADP platelet hyperreactivity predicts cardiovascular disease in the FHS (framingham heart study). \emph{J Am Heart Assoc} \textbf{7}, (2018).}
+\CSLRightInline{Puurunen, M. K. \emph{et al.} {ADP Platelet Hyperreactivity Predicts Cardiovascular Disease in the FHS (Framingham Heart Study)}. \emph{J Am Heart Assoc} \textbf{7}, (2018).}
 
 \leavevmode\hypertarget{ref-Barrachina2019}{}%
 \CSLLeftMargin{107. }
-\CSLRightInline{Barrachina, M. N. \emph{et al.} GPVI surface expression and signalling pathway activation are increased in platelets from obese patients: Elucidating potential anti-atherothrombotic targets in obesity. \emph{Atherosclerosis} \textbf{281}, 62--70 (2019).}
+\CSLRightInline{Barrachina, M. N. \emph{et al.} {GPVI surface expression and signalling pathway activation are increased in platelets from obese patients: Elucidating potential anti-atherothrombotic targets in obesity}. \emph{Atherosclerosis} \textbf{281}, 62--70 (2019).}
 
 \leavevmode\hypertarget{ref-Lev2016a}{}%
 \CSLLeftMargin{108. }
-\CSLRightInline{Lev, E. I. Immature platelets: Clinical relevance and research perspectives. \emph{Circulation} \textbf{134}, 987--988 (2016).}
+\CSLRightInline{Lev, E. I. {Immature Platelets: Clinical Relevance and Research Perspectives}. \emph{Circulation} \textbf{134}, 987--988 (2016).}
 
 \leavevmode\hypertarget{ref-Bernlochner2015a}{}%
 \CSLLeftMargin{109. }
-\CSLRightInline{Bernlochner, I. \emph{et al.} Impact of immature platelets on platelet response to ticagrelor and prasugrel in patients with acute coronary syndrome. \emph{Eur Heart J} \textbf{36}, 3202--3210 (2015).}
+\CSLRightInline{Bernlochner, I. \emph{et al.} {Impact of immature platelets on platelet response to ticagrelor and prasugrel in patients with acute coronary syndrome}. \emph{Eur Heart J} \textbf{36}, 3202--3210 (2015).}
 
 \leavevmode\hypertarget{ref-Ibrahim2012}{}%
 \CSLLeftMargin{110. }
-\CSLRightInline{Ibrahim, H., Nadipalli, S., DeLao, T., Guthikonda, S. \& Kleiman, N. S. Immature platelet fraction (IPF) determined with an automated method predicts clopidogrel hyporesponsiveness. \emph{Journal of Thrombosis and Thrombolysis} (2012). doi:\href{https://doi.org/10.1007/s11239-011-0665-7}{10.1007/s11239-011-0665-7}}
+\CSLRightInline{Ibrahim, H., Nadipalli, S., DeLao, T., Guthikonda, S. \& Kleiman, N. S. {Immature platelet fraction (IPF) determined with an automated method predicts clopidogrel hyporesponsiveness}. \emph{Journal of Thrombosis and Thrombolysis} (2012). doi:\href{https://doi.org/10.1007/s11239-011-0665-7}{10.1007/s11239-011-0665-7}}
 
 \leavevmode\hypertarget{ref-Vaduganathan2008a}{}%
 \CSLLeftMargin{111. }
-\CSLRightInline{Vaduganathan, M. \emph{et al.} Platelet reactivity and response to aspirin in subjects with the metabolic syndrome. \emph{Am Heart J} \textbf{156}, 1002.e1--1002.e7 (2008).}
+\CSLRightInline{Vaduganathan, M. \emph{et al.} {Platelet reactivity and response to aspirin in subjects with the metabolic syndrome}. \emph{Am Heart J} \textbf{156}, 1002.e1--1002.e7 (2008).}
 
 \leavevmode\hypertarget{ref-Mijovic2015a}{}%
 \CSLLeftMargin{112. }
-\CSLRightInline{Mijovic, R. \emph{et al.} Reticulated platelets and antiplatelet therapy response in diabetic patients. \emph{J Thromb Thrombolysis} \textbf{40}, 203--210 (2015).}
+\CSLRightInline{Mijovic, R. \emph{et al.} {Reticulated platelets and antiplatelet therapy response in diabetic patients}. \emph{J Thromb Thrombolysis} \textbf{40}, 203--210 (2015).}
 
 \leavevmode\hypertarget{ref-DiAngelantonio2017}{}%
 \CSLLeftMargin{113. }
-\CSLRightInline{Angelantonio, E. D. \emph{et al.} Efficiency and safety of varying the frequency of whole blood donation (INTERVAL): A randomised trial of 45 000 donors. \emph{Lancet} \textbf{390}, 2360--2371 (2017).}
+\CSLRightInline{Di Angelantonio, E. \emph{et al.} {Efficiency and safety of varying the frequency of whole blood donation (INTERVAL): a randomised trial of 45 000 donors}. \emph{Lancet} \textbf{390}, 2360--2371 (2017).}
 
 \leavevmode\hypertarget{ref-Astle2016}{}%
 \CSLLeftMargin{114. }
-\CSLRightInline{Astle, W. J. \emph{et al.} The allelic landscape of human blood cell trait variation and links to common complex disease. \emph{Cell} \textbf{167}, 1415--1429.e19 (2016).}
+\CSLRightInline{Astle, W. J. \emph{et al.} {The Allelic Landscape of Human Blood Cell Trait Variation and Links to Common Complex Disease}. \emph{Cell} \textbf{167}, 1415--1429.e19 (2016).}
 
 \leavevmode\hypertarget{ref-Purcell2007a}{}%
 \CSLLeftMargin{115. }
-\CSLRightInline{Purcell, S. \emph{et al.} PLINK: A tool set for whole-genome association and population-based linkage analyses. \emph{Am J Hum Genet} \textbf{81}, 559--575 (2007).}
+\CSLRightInline{Purcell, S. \emph{et al.} {PLINK: a tool set for whole-genome association and population-based linkage analyses}. \emph{Am J Hum Genet} \textbf{81}, 559--575 (2007).}
 
 \leavevmode\hypertarget{ref-Akbari2020}{}%
 \CSLLeftMargin{116. }
-\CSLRightInline{Akbari, P. \emph{et al.} Genetic analyses of blood cell structure for biological and pharmacological inference. \emph{bioRxiv} 2020.01.30.927483 (2020). doi:\href{https://doi.org/10.1101/2020.01.30.927483}{10.1101/2020.01.30.927483}}
+\CSLRightInline{Akbari, P. \emph{et al.} {Genetic Analyses of Blood Cell Structure for Biological and Pharmacological Inference}. \emph{bioRxiv} 2020.01.30.927483 (2020). doi:\href{https://doi.org/10.1101/2020.01.30.927483}{10.1101/2020.01.30.927483}}
 
 \leavevmode\hypertarget{ref-Team2019a}{}%
 \CSLLeftMargin{117. }
-\CSLRightInline{Team, R. C. R: A language and environment for statistical computing. R foundation~ for statistical computing, vienna, austria. URL https://www.r-project.org/. (2019).}
+\CSLRightInline{Team, R. C. {R: A language and environment for statistical computing. R Foundation~ for Statistical Computing, Vienna, Austria. URL https://www.R-project.org/.} (2019).}
 
 \leavevmode\hypertarget{ref-Henningsen2007}{}%
 \CSLLeftMargin{118. }
-\CSLRightInline{Henningsen, A. \& Hamann, J. D. Systemfit: A package for estimating systems of simultaneous equations in r. \emph{Journal of Statistical Software} (2007). doi:\href{https://doi.org/10.18637/jss.v023.i04}{10.18637/jss.v023.i04}}
+\CSLRightInline{Henningsen, A. \& Hamann, J. D. {Systemfit: A package for estimating systems of simultaneous equations in R}. \emph{Journal of Statistical Software} (2007). doi:\href{https://doi.org/10.18637/jss.v023.i04}{10.18637/jss.v023.i04}}
 
 \leavevmode\hypertarget{ref-Mumford2017}{}%
 \CSLLeftMargin{119. }
-\CSLRightInline{Mumford, A. D. \emph{et al.} Near-patient coagulation testing to predict bleeding after cardiac surgery: A cohort study. \emph{Research and Practice in Thrombosis and Haemostasis} (2017). doi:\href{https://doi.org/10.1002/rth2.12024}{10.1002/rth2.12024}}
+\CSLRightInline{Mumford, A. D. \emph{et al.} {Near-patient coagulation testing to predict bleeding after cardiac surgery: a cohort study}. \emph{Research and Practice in Thrombosis and Haemostasis} (2017). doi:\href{https://doi.org/10.1002/rth2.12024}{10.1002/rth2.12024}}
 
 \leavevmode\hypertarget{ref-Grove2011a}{}%
 \CSLLeftMargin{120. }
-\CSLRightInline{Grove, E. L., Hvas, A. M., Mortensen, S. B., Larsen, S. B. \& Kristensen, S. D. Effect of platelet turnover on whole blood platelet aggregation in patients with coronary artery disease. \emph{J Thromb Haemost} \textbf{9}, 185--191 (2011).}
+\CSLRightInline{Grove, E. L., Hvas, A. M., Mortensen, S. B., Larsen, S. B. \& Kristensen, S. D. {Effect of platelet turnover on whole blood platelet aggregation in patients with coronary artery disease}. \emph{J Thromb Haemost} \textbf{9}, 185--191 (2011).}
 
 \leavevmode\hypertarget{ref-Cohen2020}{}%
 \CSLLeftMargin{121. }
-\CSLRightInline{Cohen, A. \emph{et al.} Immature platelets in patients hospitalized with covid-19. \emph{J Thromb Thrombolysis} (2020). doi:\href{https://doi.org/10.1007/s11239-020-02290-6}{10.1007/s11239-020-02290-6}}
+\CSLRightInline{Cohen, A. \emph{et al.} {Immature platelets in patients hospitalized with Covid-19}. \emph{J Thromb Thrombolysis} (2020). doi:\href{https://doi.org/10.1007/s11239-020-02290-6}{10.1007/s11239-020-02290-6}}
 
 \leavevmode\hypertarget{ref-Klok2020}{}%
 \CSLLeftMargin{122. }
-\CSLRightInline{Klok, F. A. \emph{et al.} Incidence of thrombotic complications in critically ill ICU patients with COVID-19. \emph{Thrombosis Research} (2020). doi:\href{https://doi.org/10.1016/j.thromres.2020.04.013}{10.1016/j.thromres.2020.04.013}}
+\CSLRightInline{Klok, F. A. \emph{et al.} {Incidence of thrombotic complications in critically ill ICU patients with COVID-19}. \emph{Thrombosis Research} (2020). doi:\href{https://doi.org/10.1016/j.thromres.2020.04.013}{10.1016/j.thromres.2020.04.013}}
 
 \leavevmode\hypertarget{ref-Kaser2001}{}%
 \CSLLeftMargin{123. }
-\CSLRightInline{Kaser, A. \emph{et al.} Interleukin-6 stimulates thrombopoiesis through thrombopoietin: Role in inflammatory thrombocytosis. \emph{Blood} (2001). doi:\href{https://doi.org/10.1182/blood.V98.9.2720}{10.1182/blood.V98.9.2720}}
+\CSLRightInline{Kaser, A. \emph{et al.} {Interleukin-6 stimulates thrombopoiesis through thrombopoietin: Role in inflammatory thrombocytosis}. \emph{Blood} (2001). doi:\href{https://doi.org/10.1182/blood.V98.9.2720}{10.1182/blood.V98.9.2720}}
 
 \leavevmode\hypertarget{ref-Nikolaou2017}{}%
 \CSLLeftMargin{124. }
-\CSLRightInline{Nikolaou, C. K., Hankey, C. R. \& Lean, M. E. J. Accuracy of on-line self-reported weights and heights by young adults. \emph{Eur J Public Health} \textbf{27}, 898--903 (2017).}
+\CSLRightInline{Nikolaou, C. K., Hankey, C. R. \& Lean, M. E. J. {Accuracy of on-line self-reported weights and heights by young adults}. \emph{Eur J Public Health} \textbf{27}, 898--903 (2017).}
 
 \leavevmode\hypertarget{ref-Marcucci2015}{}%
 \CSLLeftMargin{125. }
-\CSLRightInline{Marcucci, C. E. \& Schoettker, P. \emph{Perioperative hemostasis: Coagulation for anesthesiologists}. \emph{Perioperative Hemostasis: Coagulation for Anesthesiologists} (2015). doi:\href{https://doi.org/10.1007/978-3-642-55004-1}{10.1007/978-3-642-55004-1}}
+\CSLRightInline{Marcucci, C. E. \& Schoettker, P. \emph{{Perioperative hemostasis: Coagulation for anesthesiologists}}. (2015). doi:\href{https://doi.org/10.1007/978-3-642-55004-1}{10.1007/978-3-642-55004-1}}
 
 \leavevmode\hypertarget{ref-Mannuuxdf2020}{}%
 \CSLLeftMargin{126. }
-\CSLRightInline{Mannuß, S. Influence of different methods and anticoagulants on platelet parameter measurement. \emph{Journal of Laboratory Medicine} (2020). doi:\href{https://doi.org/10.1515/labmed-2020-0037}{10.1515/labmed-2020-0037}}
+\CSLRightInline{Mannuß, S. {Influence of different methods and anticoagulants on platelet parameter measurement}. (2020). doi:\href{https://doi.org/10.1515/labmed-2020-0037}{10.1515/labmed-2020-0037}}
 
 \leavevmode\hypertarget{ref-Briggs2012}{}%
 \CSLLeftMargin{127. }
-\CSLRightInline{Briggs, C., Longair, I., Kumar, P., Singh, D. \& Machin, S. J. Performance evaluation of the sysmex haematology XN modular system. \emph{Journal of Clinical Pathology} (2012). doi:\href{https://doi.org/10.1136/jclinpath-2012-200930}{10.1136/jclinpath-2012-200930}}
+\CSLRightInline{Briggs, C., Longair, I., Kumar, P., Singh, D. \& Machin, S. J. {Performance evaluation of the Sysmex haematology XN modular system}. \emph{Journal of Clinical Pathology} (2012). doi:\href{https://doi.org/10.1136/jclinpath-2012-200930}{10.1136/jclinpath-2012-200930}}
 
 \leavevmode\hypertarget{ref-Dobrydneva2012}{}%
 \CSLLeftMargin{128. }
-\CSLRightInline{Dobrydneva, Y. \emph{et al.} Weight loss surgery decreases platelet activation in morbidly obese patients. \emph{The FASEB Journal} (2012). doi:\href{https://doi.org/10.1096/fasebj.26.1_supplement.876.2}{10.1096/fasebj.26.1\_supplement.876.2}}
+\CSLRightInline{Dobrydneva, Y. \emph{et al.} {Weight loss surgery decreases platelet activation in morbidly obese patients}. \emph{The FASEB Journal} (2012). doi:\href{https://doi.org/10.1096/fasebj.26.1_supplement.876.2}{10.1096/fasebj.26.1\_supplement.876.2}}
 
 \leavevmode\hypertarget{ref-Maciejewski2016}{}%
 \CSLLeftMargin{129. }
-\CSLRightInline{Maciejewski, M. L. \emph{et al.} Bariatric surgery and long-term durability of weight loss. \emph{JAMA Surgery} (2016). doi:\href{https://doi.org/10.1001/jamasurg.2016.2317}{10.1001/jamasurg.2016.2317}}
+\CSLRightInline{Maciejewski, M. L. \emph{et al.} {Bariatric surgery and long-term durability of weight loss}. \emph{JAMA Surgery} (2016). doi:\href{https://doi.org/10.1001/jamasurg.2016.2317}{10.1001/jamasurg.2016.2317}}
 
 \leavevmode\hypertarget{ref-Middeldorp2020}{}%
 \CSLLeftMargin{130. }
-\CSLRightInline{Middeldorp, S. \emph{et al.} Incidence of venous thromboembolism in hospitalized patients with COVID-19. \emph{Journal of Thrombosis and Haemostasis} (2020). doi:\href{https://doi.org/10.1111/jth.14888}{10.1111/jth.14888}}
+\CSLRightInline{Middeldorp, S. \emph{et al.} {Incidence of venous thromboembolism in hospitalized patients with COVID-19}. \emph{Journal of Thrombosis and Haemostasis} (2020). doi:\href{https://doi.org/10.1111/jth.14888}{10.1111/jth.14888}}
 
 \leavevmode\hypertarget{ref-Scully2021}{}%
 \CSLLeftMargin{131. }
-\CSLRightInline{Scully, M. \emph{et al.} Pathologic antibodies to platelet factor 4 after ChAdOx1 nCoV-19 vaccination. \emph{New England Journal of Medicine} (2021). doi:\href{https://doi.org/10.1056/nejmoa2105385}{10.1056/nejmoa2105385}}
+\CSLRightInline{Scully, M. \emph{et al.} {Pathologic Antibodies to Platelet Factor 4 after ChAdOx1 nCoV-19 Vaccination}. \emph{New England Journal of Medicine} (2021). doi:\href{https://doi.org/10.1056/nejmoa2105385}{10.1056/nejmoa2105385}}
 
 \leavevmode\hypertarget{ref-Durrant2020}{}%
 \CSLLeftMargin{132. }
-\CSLRightInline{Durrant, T. N. \emph{et al.} Identification of PtdIns(3,4)P2 effectors in human platelets using quantitative proteomics. \emph{Biochimica et Biophysica Acta (BBA) - Molecular and Cell Biology of Lipids} \textbf{1865}, 158575 (2020).}
+\CSLRightInline{Durrant, T. N. \emph{et al.} {Identification of PtdIns(3,4)P2 effectors in human platelets using quantitative proteomics}. \emph{Biochimica et Biophysica Acta (BBA) - Molecular and Cell Biology of Lipids} \textbf{1865}, 158575 (2020).}
 
 \leavevmode\hypertarget{ref-Sterne2001}{}%
 \CSLLeftMargin{133. }
-\CSLRightInline{Sterne, J. A. \& Smith, G. D. Sifting the evidence-what's wrong with significance tests? \emph{BMJ} \textbf{322}, 226--231 (2001).}
+\CSLRightInline{Sterne, J. A. \& Davey Smith, G. {Sifting the evidence-what's wrong with significance tests?} \emph{BMJ} \textbf{322}, 226--231 (2001).}
 
 \leavevmode\hypertarget{ref-Pascovici2016}{}%
 \CSLLeftMargin{134. }
-\CSLRightInline{Pascovici, D., Handler, D. C. L., Wu, J. X. \& Haynes, P. A. Multiple testing corrections in quantitative proteomics: A useful but blunt tool. \emph{Proteomics} (2016). doi:\href{https://doi.org/10.1002/pmic.201600044}{10.1002/pmic.201600044}}
+\CSLRightInline{Pascovici, D., Handler, D. C. L., Wu, J. X. \& Haynes, P. A. {Multiple testing corrections in quantitative proteomics: A useful but blunt tool}. \emph{Proteomics} (2016). doi:\href{https://doi.org/10.1002/pmic.201600044}{10.1002/pmic.201600044}}
 
 \leavevmode\hypertarget{ref-Freedman2010}{}%
 \CSLLeftMargin{135. }
-\CSLRightInline{Freedman, J. E. \emph{et al.} Relation of platelet and leukocyte inflammatory transcripts to body mass index in the framingham heart study. \emph{Circulation} (2010). doi:\href{https://doi.org/10.1161/CIRCULATIONAHA.109.928192}{10.1161/CIRCULATIONAHA.109.928192}}
+\CSLRightInline{Freedman, J. E. \emph{et al.} {Relation of platelet and leukocyte inflammatory transcripts to body mass index in the framingham heart study}. \emph{Circulation} (2010). doi:\href{https://doi.org/10.1161/CIRCULATIONAHA.109.928192}{10.1161/CIRCULATIONAHA.109.928192}}
 
 \leavevmode\hypertarget{ref-Taus2020}{}%
 \CSLLeftMargin{136. }
-\CSLRightInline{Taus, F. \emph{et al.} Platelets promote thromboinflammation in SARS-CoV-2 pneumonia. \emph{Arteriosclerosis, Thrombosis, and Vascular Biology} (2020). doi:\href{https://doi.org/10.1161/ATVBAHA.120.315175}{10.1161/ATVBAHA.120.315175}}
+\CSLRightInline{Taus, F. \emph{et al.} {Platelets Promote Thromboinflammation in SARS-CoV-2 Pneumonia}. \emph{Arteriosclerosis, Thrombosis, and Vascular Biology} (2020). doi:\href{https://doi.org/10.1161/ATVBAHA.120.315175}{10.1161/ATVBAHA.120.315175}}
 
 \leavevmode\hypertarget{ref-Moore2013}{}%
 \CSLLeftMargin{137. }
-\CSLRightInline{Moore, S. F. \emph{et al.} Dysfunction of the PI3 kinase/Rap1/integrin aIIbb3 pathway underlies ex vivo platelet hypoactivity in essential thrombocythemia. \emph{Blood} (2013). doi:\href{https://doi.org/10.1182/blood-2012-05-431288}{10.1182/blood-2012-05-431288}}
+\CSLRightInline{Moore, S. F. \emph{et al.} {Dysfunction of the PI3 kinase/Rap1/integrin aIIbb3 pathway underlies ex vivo platelet hypoactivity in essential thrombocythemia}. \emph{Blood} (2013). doi:\href{https://doi.org/10.1182/blood-2012-05-431288}{10.1182/blood-2012-05-431288}}
 
 \leavevmode\hypertarget{ref-McFadyen2020}{}%
 \CSLLeftMargin{138. }
-\CSLRightInline{McFadyen, J. D., Stevens, H. \& Peter, K. The emerging threat of (micro)thrombosis in COVID-19 and its therapeutic implications. \emph{Circulation Research} (2020). doi:\href{https://doi.org/10.1161/CIRCRESAHA.120.317447}{10.1161/CIRCRESAHA.120.317447}}
+\CSLRightInline{McFadyen, J. D., Stevens, H. \& Peter, K. {The Emerging Threat of (Micro)Thrombosis in COVID-19 and Its Therapeutic Implications}. (2020). doi:\href{https://doi.org/10.1161/CIRCRESAHA.120.317447}{10.1161/CIRCRESAHA.120.317447}}
 
 \leavevmode\hypertarget{ref-Wang2021}{}%
 \CSLLeftMargin{139. }
-\CSLRightInline{Wang, S. Y. \emph{et al.} Association of obesity with venous thromboembolism and myocardial injury in COVID-19. \emph{Obesity Research and Clinical Practice} (2021). doi:\href{https://doi.org/10.1016/j.orcp.2021.07.003}{10.1016/j.orcp.2021.07.003}}
+\CSLRightInline{Wang, S. Y. \emph{et al.} {Association of obesity with venous thromboembolism and myocardial injury in COVID-19}. (2021). doi:\href{https://doi.org/10.1016/j.orcp.2021.07.003}{10.1016/j.orcp.2021.07.003}}
 
 \leavevmode\hypertarget{ref-Grande2019}{}%
 \CSLLeftMargin{140. }
-\CSLRightInline{Grande, R. \emph{et al.} Platelet-derived microparticles from obese individuals: Characterization of number, size, proteomics, and crosstalk with cancer and endothelial cells. \emph{Frontiers in Pharmacology} (2019). doi:\href{https://doi.org/10.3389/fphar.2019.00007}{10.3389/fphar.2019.00007}}
+\CSLRightInline{Grande, R. \emph{et al.} {Platelet-derived microparticles from obese individuals: Characterization of number, size, proteomics, and crosstalk with cancer and endothelial cells}. \emph{Frontiers in Pharmacology} (2019). doi:\href{https://doi.org/10.3389/fphar.2019.00007}{10.3389/fphar.2019.00007}}
 
 \leavevmode\hypertarget{ref-Bearer2002}{}%
 \CSLLeftMargin{141. }
-\CSLRightInline{Bearer, E. L., Prakash, J. M. \& Li, Z. Actin dynamics in platelets. \emph{International Review of Cytology} (2002). doi:\href{https://doi.org/10.1016/S0074-7696(02)17014-8}{10.1016/S0074-7696(02)17014-8}}
+\CSLRightInline{Bearer, E. L., Prakash, J. M. \& Li, Z. {Actin dynamics in platelets}. (2002). doi:\href{https://doi.org/10.1016/S0074-7696(02)17014-8}{10.1016/S0074-7696(02)17014-8}}
 
 \leavevmode\hypertarget{ref-Latham2018}{}%
 \CSLLeftMargin{142. }
-\CSLRightInline{Latham, S. L. \emph{et al.} Variants in exons 5 and 6 of ACTB cause syndromic thrombocytopenia. \emph{Nature Communications} (2018). doi:\href{https://doi.org/10.1038/s41467-018-06713-0}{10.1038/s41467-018-06713-0}}
+\CSLRightInline{Latham, S. L. \emph{et al.} {Variants in exons 5 and 6 of ACTB cause syndromic thrombocytopenia}. \emph{Nature Communications} (2018). doi:\href{https://doi.org/10.1038/s41467-018-06713-0}{10.1038/s41467-018-06713-0}}
 
 \leavevmode\hypertarget{ref-Yue2011}{}%
 \CSLLeftMargin{143. }
-\CSLRightInline{Yue, L., Huijun, Y., Yuerong, J., Mei, X. \& Keji, C. Correlation between platelet gelsolin level and different types of coronary heart disease. \emph{Heart} (2011). doi:\href{https://doi.org/10.1136/heartjnl-2011-300867.400}{10.1136/heartjnl-2011-300867.400}}
+\CSLRightInline{Yue, L., Huijun, Y., Yuerong, J., Mei, X. \& Keji, C. {Correlation between platelet gelsolin level and different types of coronary heart disease}. \emph{Heart} (2011). doi:\href{https://doi.org/10.1136/heartjnl-2011-300867.400}{10.1136/heartjnl-2011-300867.400}}
 
 \leavevmode\hypertarget{ref-Gupta2019}{}%
 \CSLLeftMargin{144. }
-\CSLRightInline{Gupta, A. K. \emph{et al.} Protective effects of gelsolin in acute pulmonary thromboembolism and thrombosis in the carotid artery of mice. \emph{PLoS ONE} (2019). doi:\href{https://doi.org/10.1371/journal.pone.0215717}{10.1371/journal.pone.0215717}}
+\CSLRightInline{Gupta, A. K. \emph{et al.} {Protective effects of gelsolin in acute pulmonary thromboembolism and thrombosis in the carotid artery of mice}. \emph{PLoS ONE} (2019). doi:\href{https://doi.org/10.1371/journal.pone.0215717}{10.1371/journal.pone.0215717}}
 
 \leavevmode\hypertarget{ref-Kim2020}{}%
 \CSLLeftMargin{145. }
-\CSLRightInline{Weisel J Kim O, V. O., Mordakhanova E. Septins contribute to platelet shape and functionality. \emph{Res Pract Thromb Haemost} \textbf{4}, 832 (2020).}
+\CSLRightInline{Kim O, Mordakhanova E, Vagin O, Litvinov R, W. J. {Septins Contribute to Platelet Shape and Functionality}. \emph{Res Pract Thromb Haemost} \textbf{4}, 832 (2020).}
 
 \leavevmode\hypertarget{ref-Wang2014a}{}%
 \CSLLeftMargin{146. }
-\CSLRightInline{Wang, Y. \emph{et al.} Platelet-derived S100 family member myeloidrelated protein-14 regulates thrombosis. \emph{Journal of Clinical Investigation} (2014). doi:\href{https://doi.org/10.1172/JCI70966}{10.1172/JCI70966}}
+\CSLRightInline{Wang, Y. \emph{et al.} {Platelet-derived S100 family member myeloidrelated protein-14 regulates thrombosis}. \emph{Journal of Clinical Investigation} (2014). doi:\href{https://doi.org/10.1172/JCI70966}{10.1172/JCI70966}}
 
 \leavevmode\hypertarget{ref-Cai2020}{}%
 \CSLLeftMargin{147. }
-\CSLRightInline{Cai, Z. L. \emph{et al.} S100A8/A9 in myocardial infarction: A promising biomarker and therapeutic target. \emph{Frontiers in Cell and Developmental Biology} (2020). doi:\href{https://doi.org/10.3389/fcell.2020.603902}{10.3389/fcell.2020.603902}}
+\CSLRightInline{Cai, Z. L. \emph{et al.} {S100A8/A9 in Myocardial Infarction: A Promising Biomarker and Therapeutic Target}. (2020). doi:\href{https://doi.org/10.3389/fcell.2020.603902}{10.3389/fcell.2020.603902}}
 
 \leavevmode\hypertarget{ref-Gorudko2013}{}%
 \CSLLeftMargin{148. }
-\CSLRightInline{Gorudko, I. V. \emph{et al.} Myeloperoxidase modulates human platelet aggregation via actin cytoskeleton reorganization and store-operated calcium entry. \emph{Biology Open} (2013). doi:\href{https://doi.org/10.1242/bio.20135314}{10.1242/bio.20135314}}
+\CSLRightInline{Gorudko, I. V. \emph{et al.} {Myeloperoxidase modulates human platelet aggregation via actin cytoskeleton reorganization and store-operated calcium entry}. \emph{Biology Open} (2013). doi:\href{https://doi.org/10.1242/bio.20135314}{10.1242/bio.20135314}}
 
 \leavevmode\hypertarget{ref-Liu2021}{}%
 \CSLLeftMargin{149. }
-\CSLRightInline{Liu, Y. \emph{et al.} EpiGraphDB: A database and data mining platform for health data science. \emph{Bioinformatics} (2021). doi:\href{https://doi.org/10.1093/bioinformatics/btaa961}{10.1093/bioinformatics/btaa961}}
+\CSLRightInline{Liu, Y. \emph{et al.} {EpiGraphDB: A database and data mining platform for health data science}. \emph{Bioinformatics} (2021). doi:\href{https://doi.org/10.1093/bioinformatics/btaa961}{10.1093/bioinformatics/btaa961}}
 
 \leavevmode\hypertarget{ref-Chaudhary2020}{}%
 \CSLLeftMargin{150. }
-\CSLRightInline{Chaudhary, P. K. \emph{et al.} Role of GRK6 in the regulation of platelet activation through selective g protein-coupled receptor (GPCR) desensitization. \emph{International Journal of Molecular Sciences} (2020). doi:\href{https://doi.org/10.3390/ijms21113932}{10.3390/ijms21113932}}
+\CSLRightInline{Chaudhary, P. K. \emph{et al.} {Role of GRK6 in the regulation of platelet activation through selective g protein-coupled receptor (GPCR) desensitization}. \emph{International Journal of Molecular Sciences} (2020). doi:\href{https://doi.org/10.3390/ijms21113932}{10.3390/ijms21113932}}
 
 \leavevmode\hypertarget{ref-BelindeChantemele2012a}{}%
 \CSLLeftMargin{151. }
-\CSLRightInline{Chantemele, E. J. B. de \& Stepp, D. W. Influence of obesity and metabolic dysfunction on the endothelial control in the coronary circulation. \emph{J Mol Cell Cardiol} \textbf{52}, 840--847 (2012).}
+\CSLRightInline{Belin de Chantemele, E. J. \& Stepp, D. W. {Influence of obesity and metabolic dysfunction on the endothelial control in the coronary circulation}. \emph{J Mol Cell Cardiol} \textbf{52}, 840--847 (2012).}
 
 \leavevmode\hypertarget{ref-Safa2016}{}%
 \CSLLeftMargin{152. }
-\CSLRightInline{Safa, A. \emph{et al.} Higher circulating levels of chemokines CXCL10, CCL20 and CCL22 in patients with ischemic heart disease. \emph{Cytokine} \textbf{83}, 147--157 (2016).}
+\CSLRightInline{Safa, A. \emph{et al.} {Higher circulating levels of chemokines CXCL10, CCL20 and CCL22 in patients with ischemic heart disease}. \emph{Cytokine} \textbf{83}, 147--157 (2016).}
 
 \leavevmode\hypertarget{ref-Clemetson2000}{}%
 \CSLLeftMargin{153. }
-\CSLRightInline{Clemetson, K. J. \emph{et al.} Functional expression of CCR1, CCR3, CCR4, and CXCR4 chemokine receptors on human platelets. \emph{Blood} \textbf{96}, 4046--4054 (2000).}
+\CSLRightInline{Clemetson, K. J. \emph{et al.} {Functional expression of CCR1, CCR3, CCR4, and CXCR4 chemokine receptors on human platelets}. \emph{Blood} \textbf{96}, 4046--4054 (2000).}
 
 \leavevmode\hypertarget{ref-Gear2001}{}%
 \CSLLeftMargin{154. }
-\CSLRightInline{Gear, A. R. \emph{et al.} Adenosine diphosphate strongly potentiates the ability of the chemokines MDC, TARC, and SDF-1 to stimulate platelet function. \emph{Blood} \textbf{97}, 937--945 (2001).}
+\CSLRightInline{Gear, A. R. \emph{et al.} {Adenosine diphosphate strongly potentiates the ability of the chemokines MDC, TARC, and SDF-1 to stimulate platelet function}. \emph{Blood} \textbf{97}, 937--945 (2001).}
 
 \leavevmode\hypertarget{ref-Falcinelli2005}{}%
 \CSLLeftMargin{155. }
-\CSLRightInline{Falcinelli, E., Guglielmini, G., Torti, M. \& Gresele, P. Intraplatelet signaling mechanisms of the priming effect of matrix metalloproteinase-2 on platelet aggregation. \emph{J Thromb Haemost} \textbf{3}, 2526--2535 (2005).}
+\CSLRightInline{Falcinelli, E., Guglielmini, G., Torti, M. \& Gresele, P. {Intraplatelet signaling mechanisms of the priming effect of matrix metalloproteinase-2 on platelet aggregation}. \emph{J Thromb Haemost} \textbf{3}, 2526--2535 (2005).}
 
 \leavevmode\hypertarget{ref-Zheng2020}{}%
 \CSLLeftMargin{156. }
-\CSLRightInline{Zheng, J. \emph{et al.} Phenome-wide mendelian randomization mapping the influence of the plasma proteome on complex diseases. \emph{Nature Genetics} (2020). doi:\href{https://doi.org/10.1038/s41588-020-0682-6}{10.1038/s41588-020-0682-6}}
+\CSLRightInline{Zheng, J. \emph{et al.} {Phenome-wide Mendelian randomization mapping the influence of the plasma proteome on complex diseases}. \emph{Nature Genetics} (2020). doi:\href{https://doi.org/10.1038/s41588-020-0682-6}{10.1038/s41588-020-0682-6}}
 
 \leavevmode\hypertarget{ref-Lawlor2008}{}%
 \CSLLeftMargin{157. }
-\CSLRightInline{Lawlor, D. A., Harbord, R. M., Sterne, J. A. C., Timpson, N. \& Smith, G. D. Mendelian randomization: Using genes as instruments for making causal inferences in epidemiology. \emph{Statistics in Medicine} (2008). doi:\href{https://doi.org/10.1002/sim.3034}{10.1002/sim.3034}}
+\CSLRightInline{Lawlor, D. A., Harbord, R. M., Sterne, J. A. C., Timpson, N. \& Smith, G. D. {Mendelian randomization: Using genes as instruments for making causal inferences in epidemiology}. \emph{Statistics in Medicine} (2008). doi:\href{https://doi.org/10.1002/sim.3034}{10.1002/sim.3034}}
 
 \leavevmode\hypertarget{ref-Burgess2013}{}%
 \CSLLeftMargin{158. }
-\CSLRightInline{Burgess, S., Butterworth, A. \& Thompson, S. G. Mendelian randomization analysis with multiple genetic variants using summarized data. \emph{Genetic Epidemiology} (2013). doi:\href{https://doi.org/10.1002/gepi.21758}{10.1002/gepi.21758}}
+\CSLRightInline{Burgess, S., Butterworth, A. \& Thompson, S. G. {Mendelian randomization analysis with multiple genetic variants using summarized data}. \emph{Genetic Epidemiology} (2013). doi:\href{https://doi.org/10.1002/gepi.21758}{10.1002/gepi.21758}}
 
 \leavevmode\hypertarget{ref-Reddy2020}{}%
 \CSLLeftMargin{159. }
-\CSLRightInline{Reddy, E. C. \& Rand, M. L. Procoagulant phosphatidylserine-exposing platelets in vitro and in vivo. \emph{Frontiers in cardiovascular medicine} \textbf{7}, 15 (2020).}
+\CSLRightInline{Reddy, E. C. \& Rand, M. L. {Procoagulant Phosphatidylserine-Exposing Platelets in vitro and in vivo}. \emph{Frontiers in cardiovascular medicine} \textbf{7}, 15 (2020).}
 
 \leavevmode\hypertarget{ref-Petito2018}{}%
 \CSLLeftMargin{160. }
-\CSLRightInline{Petito, E. \emph{et al.} A dichotomy in platelet activation: Evidence of different functional platelet responses to inflammatory versus haemostatic stimuli. \emph{Thromb Res} \textbf{172}, 110--118 (2018).}
+\CSLRightInline{Petito, E. \emph{et al.} {A dichotomy in platelet activation: Evidence of different functional platelet responses to inflammatory versus haemostatic stimuli}. \emph{Thromb Res} \textbf{172}, 110--118 (2018).}
 
 \leavevmode\hypertarget{ref-Oh2002}{}%
 \CSLLeftMargin{161. }
-\CSLRightInline{Oh, S. B., Endoh, T., Simen, A. A., Ren, D. \& Miller, R. J. Regulation of calcium currents by chemokines and their receptors. \emph{J Neuroimmunol} \textbf{123}, 66--75 (2002).}
+\CSLRightInline{Oh, S. B., Endoh, T., Simen, A. A., Ren, D. \& Miller, R. J. {Regulation of calcium currents by chemokines and their receptors}. \emph{J Neuroimmunol} \textbf{123}, 66--75 (2002).}
 
 \leavevmode\hypertarget{ref-Weber2004}{}%
 \CSLLeftMargin{162. }
-\CSLRightInline{Weber, C., Schober, A. \& Zernecke, A. Key regulators of mononuclear cell recruitment in atherosclerotic vascular disease. \emph{Arteriosclerosis, Thrombosis, and Vascular Biology} (2004). doi:\href{https://doi.org/10.1161/01.ATV.0000142812.03840.6f}{10.1161/01.ATV.0000142812.03840.6f}}
+\CSLRightInline{Weber, C., Schober, A. \& Zernecke, A. {Key regulators of mononuclear cell recruitment in atherosclerotic vascular disease}. (2004). doi:\href{https://doi.org/10.1161/01.ATV.0000142812.03840.6f}{10.1161/01.ATV.0000142812.03840.6f}}
 
 \leavevmode\hypertarget{ref-Giambartolomei2014}{}%
 \CSLLeftMargin{163. }
-\CSLRightInline{Giambartolomei, C. \emph{et al.} Bayesian test for colocalisation between pairs of genetic association studies using summary statistics. \emph{PLoS Genetics} (2014). doi:\href{https://doi.org/10.1371/journal.pgen.1004383}{10.1371/journal.pgen.1004383}}
+\CSLRightInline{Giambartolomei, C. \emph{et al.} {Bayesian Test for Colocalisation between Pairs of Genetic Association Studies Using Summary Statistics}. \emph{PLoS Genetics} (2014). doi:\href{https://doi.org/10.1371/journal.pgen.1004383}{10.1371/journal.pgen.1004383}}
 
 \leavevmode\hypertarget{ref-Goudswaard2021}{}%
 \CSLLeftMargin{164. }
-\CSLRightInline{Goudswaard, L. J. \emph{et al.} Effects of adiposity on the human plasma proteome: Observational and mendelian randomisation estimates. \emph{International Journal of Obesity} (2021). doi:\href{https://doi.org/10.1038/s41366-021-00896-1}{10.1038/s41366-021-00896-1}}
+\CSLRightInline{Goudswaard, L. J. \emph{et al.} {Effects of adiposity on the human plasma proteome: observational and Mendelian randomisation estimates}. \emph{International Journal of Obesity} (2021). doi:\href{https://doi.org/10.1038/s41366-021-00896-1}{10.1038/s41366-021-00896-1}}
 
 \leavevmode\hypertarget{ref-Goudswaard2020}{}%
 \CSLLeftMargin{165. }
-\CSLRightInline{Goudswaard, L. J. \emph{et al.} Effects of adiposity on the human plasma proteome: Observational and mendelian randomization estimates. \emph{medRxiv} (2020). doi:\href{https://doi.org/10.1101/2020.06.01.20119081}{10.1101/2020.06.01.20119081}}
+\CSLRightInline{Goudswaard, L. J. \emph{et al.} {Effects of adiposity on the human plasma proteome: Observational and Mendelian randomization estimates}. \emph{medRxiv} (2020). doi:\href{https://doi.org/10.1101/2020.06.01.20119081}{10.1101/2020.06.01.20119081}}
 
 \leavevmode\hypertarget{ref-Rohloff2014}{}%
 \CSLLeftMargin{166. }
-\CSLRightInline{Rohloff, J. C. \emph{et al.} Nucleic acid ligands with protein-like side chains: Modified aptamers and their use as diagnostic and therapeutic agents. \emph{Mol Ther Nucleic Acids} \textbf{3}, e201 (2014).}
+\CSLRightInline{Rohloff, J. C. \emph{et al.} {Nucleic Acid Ligands With Protein-like Side Chains: Modified Aptamers and Their Use as Diagnostic and Therapeutic Agents}. \emph{Mol Ther Nucleic Acids} \textbf{3}, e201 (2014).}
 
 \leavevmode\hypertarget{ref-Constantinescu2018}{}%
 \CSLLeftMargin{167. }
-\CSLRightInline{Constantinescu, A.-E. \emph{et al.} Hypothesis-free analysis of deep vein thrombosis aetiology: A mendelian randomization study. \emph{bioRxiv} (2018). doi:\href{https://doi.org/10.1101/476135}{10.1101/476135}}
+\CSLRightInline{Constantinescu, A.-E. \emph{et al.} {Hypothesis-free analysis of deep vein thrombosis aetiology: a Mendelian randomization study}. \emph{bioRxiv} (2018). doi:\href{https://doi.org/10.1101/476135}{10.1101/476135}}
 
 \leavevmode\hypertarget{ref-Pain2018}{}%
 \CSLLeftMargin{168. }
-\CSLRightInline{Pain, O., Dudbridge, F. \& Ronald, A. Are your covariates under control? How normalization can re-introduce covariate effects. \emph{European Journal of Human Genetics} (2018). doi:\href{https://doi.org/10.1038/s41431-018-0159-6}{10.1038/s41431-018-0159-6}}
+\CSLRightInline{Pain, O., Dudbridge, F. \& Ronald, A. {Are your covariates under control? How normalization can re-introduce covariate effects}. \emph{European Journal of Human Genetics} (2018). doi:\href{https://doi.org/10.1038/s41431-018-0159-6}{10.1038/s41431-018-0159-6}}
 
 \leavevmode\hypertarget{ref-Hemani2018}{}%
 \CSLLeftMargin{169. }
@@ -4155,19 +4150,19 @@ This appendix provided an example of how non-linearity between BMI and protein o
 
 \leavevmode\hypertarget{ref-Burgess2016}{}%
 \CSLLeftMargin{171. }
-\CSLRightInline{Burgess, S., Dudbridge, F. \& Thompson, S. G. Combining information on multiple instrumental variables in mendelian randomization: Comparison of allele score and summarized data methods. \emph{Statistics in Medicine} \textbf{35}, (2016).}
+\CSLRightInline{Burgess, S., Davies, N. M. \& Thompson, S. G. {Bias due to participant overlap in two-sample Mendelian randomization}. \emph{Genetic Epidemiology} (2016). doi:\href{https://doi.org/10.1002/gepi.21998}{10.1002/gepi.21998}}
 
 \leavevmode\hypertarget{ref-Burgess2016}{}%
 \CSLLeftMargin{171. }
-\CSLRightInline{Burgess, S., Dudbridge, F. \& Thompson, S. G. Combining information on multiple instrumental variables in mendelian randomization: Comparison of allele score and summarized data methods. \emph{Statistics in Medicine} \textbf{35}, (2016).}
+\CSLRightInline{Burgess, S., Davies, N. M. \& Thompson, S. G. {Bias due to participant overlap in two-sample Mendelian randomization}. \emph{Genetic Epidemiology} (2016). doi:\href{https://doi.org/10.1002/gepi.21998}{10.1002/gepi.21998}}
 
 \leavevmode\hypertarget{ref-Burgess2017}{}%
 \CSLLeftMargin{173. }
-\CSLRightInline{Burgess, S. \& Thompson, S. G. Interpreting findings from mendelian randomization using the MR-egger method. \emph{European Journal of Epidemiology} \textbf{32}, (2017).}
+\CSLRightInline{Burgess, S. \& Davey Smith, G. {Mendelian Randomization Implicates High-Density Lipoprotein Cholesterol-Associated Mechanisms in Etiology of Age-Related Macular Degeneration}. \emph{Ophthalmology} \textbf{124}, 1165--1174 (2017).}
 
 \leavevmode\hypertarget{ref-Burgess2017}{}%
 \CSLLeftMargin{173. }
-\CSLRightInline{Burgess, S. \& Thompson, S. G. Interpreting findings from mendelian randomization using the MR-egger method. \emph{European Journal of Epidemiology} \textbf{32}, (2017).}
+\CSLRightInline{Burgess, S. \& Davey Smith, G. {Mendelian Randomization Implicates High-Density Lipoprotein Cholesterol-Associated Mechanisms in Etiology of Age-Related Macular Degeneration}. \emph{Ophthalmology} \textbf{124}, 1165--1174 (2017).}
 
 \leavevmode\hypertarget{ref-Greco2015}{}%
 \CSLLeftMargin{174. }
@@ -4175,267 +4170,267 @@ This appendix provided an example of how non-linearity between BMI and protein o
 
 \leavevmode\hypertarget{ref-Huang2009}{}%
 \CSLLeftMargin{175. }
-\CSLRightInline{W Huang, da, Sherman, B. T. \& Lempicki, R. A. Systematic and integrative analysis of large gene lists using DAVID bioinformatics resources. \emph{Nat Protoc} \textbf{4}, 44--57 (2009).}
+\CSLRightInline{Huang, da W., Sherman, B. T. \& Lempicki, R. A. {Systematic and integrative analysis of large gene lists using DAVID bioinformatics resources}. \emph{Nat Protoc} \textbf{4}, 44--57 (2009).}
 
 \leavevmode\hypertarget{ref-Becker2004a}{}%
 \CSLLeftMargin{176. }
-\CSLRightInline{Becker, K. G., Barnes, K. C., Bright, T. J. \& Wang, S. A. The genetic association database. \emph{Nat Genet} \textbf{36}, 431--432 (2004).}
+\CSLRightInline{Becker, K. G., Barnes, K. C., Bright, T. J. \& Wang, S. A. {The genetic association database}. \emph{Nat Genet} \textbf{36}, 431--432 (2004).}
 
 \leavevmode\hypertarget{ref-Klok2007}{}%
 \CSLLeftMargin{177. }
-\CSLRightInline{Klok, M. D., Jakobsdottir, S. \& Drent, M. L. The role of leptin and ghrelin in the regulation of food intake and body weight in humans: A review. \emph{Obes Rev} \textbf{8}, 21--34 (2007).}
+\CSLRightInline{Klok, M. D., Jakobsdottir, S. \& Drent, M. L. {The role of leptin and ghrelin in the regulation of food intake and body weight in humans: a review}. \emph{Obes Rev} \textbf{8}, 21--34 (2007).}
 
 \leavevmode\hypertarget{ref-Millard2015}{}%
 \CSLLeftMargin{178. }
-\CSLRightInline{Millard, L. A. \emph{et al.} MR-PheWAS: Hypothesis prioritization among potential causal effects of body mass index on many outcomes, using mendelian randomization. \emph{Sci Rep} \textbf{5}, 16645 (2015).}
+\CSLRightInline{Millard, L. A. \emph{et al.} {MR-PheWAS: hypothesis prioritization among potential causal effects of body mass index on many outcomes, using Mendelian randomization}. \emph{Sci Rep} \textbf{5}, 16645 (2015).}
 
 \leavevmode\hypertarget{ref-Gruzdeva2019a}{}%
 \CSLLeftMargin{179. }
-\CSLRightInline{Gruzdeva, O., Borodkina, D., Uchasova, E., Dyleva, Y. \& Barbarash, O. Leptin resistance: Underlying mechanisms and diagnosis. \emph{Diabetes Metab Syndr Obes} \textbf{12}, 191--198 (2019).}
+\CSLRightInline{Gruzdeva, O., Borodkina, D., Uchasova, E., Dyleva, Y. \& Barbarash, O. {Leptin resistance: underlying mechanisms and diagnosis}. \emph{Diabetes Metab Syndr Obes} \textbf{12}, 191--198 (2019).}
 
 \leavevmode\hypertarget{ref-Nakata1999}{}%
 \CSLLeftMargin{180. }
-\CSLRightInline{Nakata, M., Yada, T., Soejima, N. \& Maruyama, I. Leptin promotes aggregation of human platelets via the long form of its receptor. \emph{Diabetes} \textbf{48}, 426--429 (1999).}
+\CSLRightInline{Nakata, M., Yada, T., Soejima, N. \& Maruyama, I. {Leptin promotes aggregation of human platelets via the long form of its receptor}. \emph{Diabetes} \textbf{48}, 426--429 (1999).}
 
 \leavevmode\hypertarget{ref-Wallace2001}{}%
 \CSLLeftMargin{181. }
-\CSLRightInline{Wallace, A. M. \emph{et al.} Plasma leptin and the risk of cardiovascular disease in the west of scotland coronary prevention study (WOSCOPS). \emph{Circulation} \textbf{104}, 3052--3056 (2001).}
+\CSLRightInline{Wallace, A. M. \emph{et al.} {Plasma leptin and the risk of cardiovascular disease in the west of Scotland coronary prevention study (WOSCOPS)}. \emph{Circulation} \textbf{104}, 3052--3056 (2001).}
 
 \leavevmode\hypertarget{ref-Furuhashi2014}{}%
 \CSLLeftMargin{182. }
-\CSLRightInline{Furuhashi, M., Saitoh, S., Shimamoto, K. \& Miura, T. Fatty acid-binding protein 4 (FABP4): Pathophysiological insights and potent clinical biomarker of metabolic and cardiovascular diseases. \emph{Clin Med Insights Cardiol} \textbf{8}, 23--33 (2014).}
+\CSLRightInline{Furuhashi, M., Saitoh, S., Shimamoto, K. \& Miura, T. {Fatty Acid-Binding Protein 4 (FABP4): Pathophysiological Insights and Potent Clinical Biomarker of Metabolic and Cardiovascular Diseases}. \emph{Clin Med Insights Cardiol} \textbf{8}, 23--33 (2014).}
 
 \leavevmode\hypertarget{ref-Xu2006}{}%
 \CSLLeftMargin{183. }
-\CSLRightInline{Xu, A. \emph{et al.} Adipocyte fatty acid-binding protein is a plasma biomarker closely associated with obesity and metabolic syndrome. \emph{Clin Chem} \textbf{52}, 405--413 (2006).}
+\CSLRightInline{Xu, A. \emph{et al.} {Adipocyte fatty acid-binding protein is a plasma biomarker closely associated with obesity and metabolic syndrome}. \emph{Clin Chem} \textbf{52}, 405--413 (2006).}
 
 \leavevmode\hypertarget{ref-Gudmundsdottir2020}{}%
 \CSLLeftMargin{184. }
-\CSLRightInline{Gudmundsdottir, V. \emph{et al.} Circulating protein signatures and causal candidates for type 2 diabetes. \emph{Diabetes} (2020). doi:\href{https://doi.org/10.2337/db19-1070}{10.2337/db19-1070}}
+\CSLRightInline{Gudmundsdottir, V. \emph{et al.} {Circulating protein signatures and causal candidates for type 2 diabetes}. \emph{Diabetes} (2020). doi:\href{https://doi.org/10.2337/db19-1070}{10.2337/db19-1070}}
 
 \leavevmode\hypertarget{ref-Nakamura2017}{}%
 \CSLLeftMargin{185. }
-\CSLRightInline{Nakamura, R. \emph{et al.} Serum fatty acid-binding protein 4 (FABP4) concentration is associated with insulin resistance in peripheral tissues, a clinical study. \emph{PLoS One} \textbf{12}, e0179737 (2017).}
+\CSLRightInline{Nakamura, R. \emph{et al.} {Serum fatty acid-binding protein 4 (FABP4) concentration is associated with insulin resistance in peripheral tissues, A clinical study}. \emph{PLoS One} \textbf{12}, e0179737 (2017).}
 
 \leavevmode\hypertarget{ref-Yeung2007}{}%
 \CSLLeftMargin{186. }
-\CSLRightInline{Yeung, D. C. \emph{et al.} Serum adipocyte fatty acid-binding protein levels were independently associated with carotid atherosclerosis. \emph{Arterioscler Thromb Vasc Biol} \textbf{27}, 1796--1802 (2007).}
+\CSLRightInline{Yeung, D. C. \emph{et al.} {Serum adipocyte fatty acid-binding protein levels were independently associated with carotid atherosclerosis}. \emph{Arterioscler Thromb Vasc Biol} \textbf{27}, 1796--1802 (2007).}
 
 \leavevmode\hypertarget{ref-Wallace2013}{}%
 \CSLLeftMargin{187. }
-\CSLRightInline{Wallace, I. R., McKinley, M. C., Bell, P. M. \& Hunter, S. J. Sex hormone binding globulin and insulin resistance. \emph{Clin Endocrinol (Oxf)} \textbf{78}, 321--329 (2013).}
+\CSLRightInline{Wallace, I. R., McKinley, M. C., Bell, P. M. \& Hunter, S. J. {Sex hormone binding globulin and insulin resistance}. \emph{Clin Endocrinol (Oxf)} \textbf{78}, 321--329 (2013).}
 
 \leavevmode\hypertarget{ref-Cooper2015}{}%
 \CSLLeftMargin{188. }
-\CSLRightInline{Cooper, L. A., Page, S. T., Amory, J. K., Anawalt, B. D. \& Matsumoto, A. M. The association of obesity with sex hormone-binding globulin is stronger than the association with ageing--implications for the interpretation of total testosterone measurements. \emph{Clin Endocrinol (Oxf)} \textbf{83}, 828--833 (2015).}
+\CSLRightInline{Cooper, L. A., Page, S. T., Amory, J. K., Anawalt, B. D. \& Matsumoto, A. M. {The association of obesity with sex hormone-binding globulin is stronger than the association with ageing--implications for the interpretation of total testosterone measurements}. \emph{Clin Endocrinol (Oxf)} \textbf{83}, 828--833 (2015).}
 
 \leavevmode\hypertarget{ref-Goto2014}{}%
 \CSLLeftMargin{189. }
-\CSLRightInline{Goto, A. \emph{et al.} Age, body mass, usage of exogenous estrogen, and lifestyle factors in relation to circulating sex hormone-binding globulin concentrations in postmenopausal women. \emph{Clin Chem} \textbf{60}, 174--185 (2014).}
+\CSLRightInline{Goto, A. \emph{et al.} {Age, body mass, usage of exogenous estrogen, and lifestyle factors in relation to circulating sex hormone-binding globulin concentrations in postmenopausal women}. \emph{Clin Chem} \textbf{60}, 174--185 (2014).}
 
 \leavevmode\hypertarget{ref-Baglietto2009}{}%
 \CSLLeftMargin{190. }
-\CSLRightInline{Baglietto, L. \emph{et al.} Circulating steroid hormone concentrations in postmenopausal women in relation to body size and composition. \emph{Breast Cancer Res Treat} \textbf{115}, 171--179 (2009).}
+\CSLRightInline{Baglietto, L. \emph{et al.} {Circulating steroid hormone concentrations in postmenopausal women in relation to body size and composition}. \emph{Breast Cancer Res Treat} \textbf{115}, 171--179 (2009).}
 
 \leavevmode\hypertarget{ref-Ritchie2019}{}%
 \CSLLeftMargin{191. }
-\CSLRightInline{Ritchie, S. C. \emph{et al.} Integrative analysis of the plasma proteome and polygenic risk of cardiometabolic diseases. \emph{bioRxiv} (2021). doi:\href{https://doi.org/10.1101/2019.12.14.876474}{10.1101/2019.12.14.876474}}
+\CSLRightInline{Ritchie, S. C. \emph{et al.} {Integrative analysis of the plasma proteome and polygenic risk of cardiometabolic diseases}. \emph{bioRxiv} (2021). doi:\href{https://doi.org/10.1101/2019.12.14.876474}{10.1101/2019.12.14.876474}}
 
 \leavevmode\hypertarget{ref-Moro2005}{}%
 \CSLLeftMargin{192. }
-\CSLRightInline{Moro, L. \emph{et al.} Nongenomic effects of 17β-estradiol in human platelets: Potentiation of thrombin-induced aggregation through estrogen receptor β and src kinase. \emph{Blood} (2005). doi:\href{https://doi.org/10.1182/blood-2003-11-3840}{10.1182/blood-2003-11-3840}}
+\CSLRightInline{Moro, L. \emph{et al.} {Nongenomic effects of 17\(\beta\)-estradiol in human platelets: Potentiation of thrombin-induced aggregation through estrogen receptor \(\beta\) and Src kinase}. \emph{Blood} (2005). doi:\href{https://doi.org/10.1182/blood-2003-11-3840}{10.1182/blood-2003-11-3840}}
 
 \leavevmode\hypertarget{ref-Marathe2018}{}%
 \CSLLeftMargin{193. }
-\CSLRightInline{Marathe, G. K. \emph{et al.} \emph{Platelet-activating factor acetylhydrolase (pafah)}. \emph{Encyclopedia of Signaling Molecules} 4069--4077 (Springer International Publishing, 2018). doi:\href{https://doi.org/10.1007/978-3-319-67199-4_101737}{10.1007/978-3-319-67199-4\_101737}}
+\CSLRightInline{Marathe, G. K. \emph{et al.} {Platelet-Activating Factor Acetylhydrolase (Pafah)}. in \emph{Encyclopedia of signaling molecules} (ed. Choi, S.) 4069--4077 (Springer International Publishing, 2018). doi:\href{https://doi.org/10.1007/978-3-319-67199-4_101737}{10.1007/978-3-319-67199-4\_101737}}
 
 \leavevmode\hypertarget{ref-Lordan2019}{}%
 \CSLLeftMargin{194. }
-\CSLRightInline{Lordan, R., Tsoupras, A., Zabetakis, I. \& Demopoulos, C. A. Forty years since the structural elucidation of platelet-activating factor (PAF): Historical, current, and future research perspectives. \emph{Molecules} (2019). doi:\href{https://doi.org/10.3390/molecules24234414}{10.3390/molecules24234414}}
+\CSLRightInline{Lordan, R., Tsoupras, A., Zabetakis, I. \& Demopoulos, C. A. {Forty years since the structural elucidation of platelet-activating factor (PAF): Historical, current, and future research perspectives}. (2019). doi:\href{https://doi.org/10.3390/molecules24234414}{10.3390/molecules24234414}}
 
 \leavevmode\hypertarget{ref-Noto2003}{}%
 \CSLLeftMargin{195. }
-\CSLRightInline{Noto, H. \emph{et al.} Human plasma platelet-activating factor acetylhydrolase binds to all the murine lipoproteins, conferring protection against oxidative stress. \emph{Arteriosclerosis, Thrombosis, and Vascular Biology} (2003). doi:\href{https://doi.org/10.1161/01.ATV.0000067701.09398.18}{10.1161/01.ATV.0000067701.09398.18}}
+\CSLRightInline{Noto, H. \emph{et al.} {Human plasma platelet-activating factor acetylhydrolase binds to all the murine lipoproteins, conferring protection against oxidative stress}. \emph{Arteriosclerosis, Thrombosis, and Vascular Biology} (2003). doi:\href{https://doi.org/10.1161/01.ATV.0000067701.09398.18}{10.1161/01.ATV.0000067701.09398.18}}
 
 \leavevmode\hypertarget{ref-Kauskot2012}{}%
 \CSLLeftMargin{196. }
-\CSLRightInline{Kauskot, A. \emph{et al.} A novel mechanism of sustained platelet αIIbβ3 activation via PEAR1. \emph{Blood} \textbf{119}, 4056--4065 (2012).}
+\CSLRightInline{Kauskot, A. \emph{et al.} {A novel mechanism of sustained platelet \(\alpha\)IIb\(\beta\)3 activation via PEAR1.} \emph{Blood} \textbf{119}, 4056--4065 (2012).}
 
 \leavevmode\hypertarget{ref-Lang2003}{}%
 \CSLLeftMargin{197. }
-\CSLRightInline{Lang, C. H., Vary, T. C. \& Frost, R. A. Acute in vivo elevation of insulin-like growth factor (IGF) binding protein-1 decreases plasma free IGF-i and muscle protein synthesis. \emph{Endocrinology} (2003). doi:\href{https://doi.org/10.1210/en.2002-0192}{10.1210/en.2002-0192}}
+\CSLRightInline{Lang, C. H., Vary, T. C. \& Frost, R. A. {Acute in vivo elevation of insulin-like growth factor (IGF) binding protein-1 decreases plasma free IGF-I and muscle protein synthesis}. \emph{Endocrinology} (2003). doi:\href{https://doi.org/10.1210/en.2002-0192}{10.1210/en.2002-0192}}
 
 \leavevmode\hypertarget{ref-Brion2013}{}%
 \CSLLeftMargin{198. }
-\CSLRightInline{Brion, M. J. A., Shakhbazov, K. \& Visscher, P. M. Calculating statistical power in mendelian randomization studies. \emph{International Journal of Epidemiology} (2013). doi:\href{https://doi.org/10.1093/ije/dyt179}{10.1093/ije/dyt179}}
+\CSLRightInline{Brion, M. J. A., Shakhbazov, K. \& Visscher, P. M. {Calculating statistical power in Mendelian randomization studies}. \emph{International Journal of Epidemiology} (2013). doi:\href{https://doi.org/10.1093/ije/dyt179}{10.1093/ije/dyt179}}
 
 \leavevmode\hypertarget{ref-IGES2021}{}%
 \CSLLeftMargin{199. }
-\CSLRightInline{Abstracts. \emph{Genetic Epidemiology} \textbf{45}, 741--807 (2021).}
+\CSLRightInline{{Abstracts}. \emph{Genetic Epidemiology} \textbf{45}, 741--807 (2021).}
 
 \leavevmode\hypertarget{ref-Garg2014}{}%
 \CSLLeftMargin{200. }
-\CSLRightInline{Garg, S. K., Maurer, H., Reed, K. \& Selagamsetty, R. Diabetes and cancer: Two diseases with obesity as a common risk factor. \emph{Diabetes Obes Metab} \textbf{16}, 97--110 (2014).}
+\CSLRightInline{Garg, S. K., Maurer, H., Reed, K. \& Selagamsetty, R. {Diabetes and cancer: two diseases with obesity as a common risk factor}. \emph{Diabetes Obes Metab} \textbf{16}, 97--110 (2014).}
 
 \leavevmode\hypertarget{ref-Kortt2002}{}%
 \CSLLeftMargin{201. }
-\CSLRightInline{Kortt, M. \& Baldry, J. The association between musculoskeletal disorders and obesity. \emph{Aust Health Rev} \textbf{25}, 207--214 (2002).}
+\CSLRightInline{Kortt, M. \& Baldry, J. {The association between musculoskeletal disorders and obesity}. \emph{Aust Health Rev} \textbf{25}, 207--214 (2002).}
 
 \leavevmode\hypertarget{ref-Lawlor2016}{}%
 \CSLLeftMargin{202. }
-\CSLRightInline{Lawlor, D. A., Tilling, K. \& Smith, G. D. Triangulation in aetiological epidemiology. \emph{International Journal of Epidemiology} (2016). doi:\href{https://doi.org/10.1093/ije/dyw314}{10.1093/ije/dyw314}}
+\CSLRightInline{Lawlor, D. A., Tilling, K. \& Smith, G. D. {Triangulation in aetiological epidemiology}. \emph{International Journal of Epidemiology} (2016). doi:\href{https://doi.org/10.1093/ije/dyw314}{10.1093/ije/dyw314}}
 
 \leavevmode\hypertarget{ref-Lean2018}{}%
 \CSLLeftMargin{203. }
-\CSLRightInline{Lean, M. E. \emph{et al.} Primary care-led weight management for remission of type 2 diabetes (DiRECT): An open-label, cluster-randomised trial. \emph{The Lancet} (2018). doi:\href{https://doi.org/10.1016/S0140-6736(17)33102-1}{10.1016/S0140-6736(17)33102-1}}
+\CSLRightInline{Lean, M. E. \emph{et al.} {Primary care-led weight management for remission of type 2 diabetes (DiRECT): an open-label, cluster-randomised trial}. \emph{The Lancet} (2018). doi:\href{https://doi.org/10.1016/S0140-6736(17)33102-1}{10.1016/S0140-6736(17)33102-1}}
 
 \leavevmode\hypertarget{ref-Leslie2016}{}%
 \CSLLeftMargin{204. }
-\CSLRightInline{Leslie, W. S. \emph{et al.} The diabetes remission clinical trial (DiRECT): Protocol for a cluster randomised trial. \emph{BMC Fam Pract} \textbf{17}, 20 (2016).}
+\CSLRightInline{Leslie, W. S. \emph{et al.} {The Diabetes Remission Clinical Trial (DiRECT): protocol for a cluster randomised trial}. \emph{BMC Fam Pract} \textbf{17}, 20 (2016).}
 
 \leavevmode\hypertarget{ref-Lean2013}{}%
 \CSLLeftMargin{205. }
-\CSLRightInline{Lean, M. \emph{et al.} Feasibility and indicative results from a 12-month low-energy liquid diet treatment and maintenance programme for severe obesity. \emph{British Journal of General Practice} (2013). doi:\href{https://doi.org/10.3399/bjgp13X663073}{10.3399/bjgp13X663073}}
+\CSLRightInline{Lean, M. \emph{et al.} {Feasibility and indicative results from a 12-month low-energy liquid diet treatment and maintenance programme for severe obesity}. \emph{British Journal of General Practice} (2013). doi:\href{https://doi.org/10.3399/bjgp13X663073}{10.3399/bjgp13X663073}}
 
 \leavevmode\hypertarget{ref-Hughes2021}{}%
 \CSLLeftMargin{206. }
-\CSLRightInline{Hughes, D. A. \emph{et al.} Metaboprep: An r package for pre-analysis data description and processing. \emph{bioRxiv} 2021.07.07.451488 (2021). doi:\href{https://doi.org/10.1101/2021.07.07.451488}{10.1101/2021.07.07.451488}}
+\CSLRightInline{Hughes, D. A. \emph{et al.} {metaboprep: an R package for pre-analysis data description and processing}. \emph{bioRxiv} 2021.07.07.451488 (2021). doi:\href{https://doi.org/10.1101/2021.07.07.451488}{10.1101/2021.07.07.451488}}
 
 \leavevmode\hypertarget{ref-Figarska2020}{}%
 \CSLLeftMargin{207. }
-\CSLRightInline{Figarska, S. M. \emph{et al.} Proteomic profiles before and during weight loss: Results from randomized trial of dietary intervention. \emph{Sci Rep} \textbf{10}, 7913 (2020).}
+\CSLRightInline{Figarska, S. M. \emph{et al.} {Proteomic profiles before and during weight loss: Results from randomized trial of dietary intervention}. \emph{Sci Rep} \textbf{10}, 7913 (2020).}
 
 \leavevmode\hypertarget{ref-Szklarczyk2021}{}%
 \CSLLeftMargin{208. }
-\CSLRightInline{Szklarczyk, D. \emph{et al.} The STRING database in 2021: Customizable protein-protein networks, and functional characterization of user-uploaded gene/measurement sets. \emph{Nucleic Acids Research} (2021). doi:\href{https://doi.org/10.1093/nar/gkaa1074}{10.1093/nar/gkaa1074}}
+\CSLRightInline{Szklarczyk, D. \emph{et al.} {The STRING database in 2021: Customizable protein-protein networks, and functional characterization of user-uploaded gene/measurement sets}. \emph{Nucleic Acids Research} (2021). doi:\href{https://doi.org/10.1093/nar/gkaa1074}{10.1093/nar/gkaa1074}}
 
 \leavevmode\hypertarget{ref-Kanehisa2016}{}%
 \CSLLeftMargin{209. }
-\CSLRightInline{Kanehisa, M., Sato, Y., Kawashima, M., Furumichi, M. \& Tanabe, M. KEGG as a reference resource for gene and protein annotation. \emph{Nucleic Acids Research} (2016). doi:\href{https://doi.org/10.1093/nar/gkv1070}{10.1093/nar/gkv1070}}
+\CSLRightInline{Kanehisa, M., Sato, Y., Kawashima, M., Furumichi, M. \& Tanabe, M. {KEGG as a reference resource for gene and protein annotation}. \emph{Nucleic Acids Research} (2016). doi:\href{https://doi.org/10.1093/nar/gkv1070}{10.1093/nar/gkv1070}}
 
 \leavevmode\hypertarget{ref-Carayol2017}{}%
 \CSLLeftMargin{210. }
-\CSLRightInline{Carayol, J. \emph{et al.} Protein quantitative trait locus study in obesity during weight-loss identifies a leptin regulator. \emph{Nat Commun} \textbf{8}, 2084 (2017).}
+\CSLRightInline{Carayol, J. \emph{et al.} {Protein quantitative trait locus study in obesity during weight-loss identifies a leptin regulator}. \emph{Nat Commun} \textbf{8}, 2084 (2017).}
 
 \leavevmode\hypertarget{ref-Geyer2016}{}%
 \CSLLeftMargin{211. }
-\CSLRightInline{Geyer, P. E. \emph{et al.} Proteomics reveals the effects of sustained weight loss on the human plasma proteome. \emph{Mol Syst Biol} \textbf{12}, 901 (2016).}
+\CSLRightInline{Geyer, P. E. \emph{et al.} {Proteomics reveals the effects of sustained weight loss on the human plasma proteome}. \emph{Mol Syst Biol} \textbf{12}, 901 (2016).}
 
 \leavevmode\hypertarget{ref-OllerMoreno2018}{}%
 \CSLLeftMargin{212. }
-\CSLRightInline{Moreno, S. O. \emph{et al.} The differential plasma proteome of obese and overweight individuals undergoing a nutritional weight loss and maintenance intervention. \emph{Proteomics - Clinical Applications} (2018). doi:\href{https://doi.org/10.1002/prca.201600150}{10.1002/prca.201600150}}
+\CSLRightInline{Oller Moreno, S. \emph{et al.} {The differential plasma proteome of obese and overweight individuals undergoing a nutritional weight loss and maintenance intervention}. \emph{Proteomics - Clinical Applications} (2018). doi:\href{https://doi.org/10.1002/prca.201600150}{10.1002/prca.201600150}}
 
 \leavevmode\hypertarget{ref-Piening2018}{}%
 \CSLLeftMargin{213. }
-\CSLRightInline{Piening, B. D. \emph{et al.} Integrative personal omics profiles during periods of weight gain and loss. \emph{Cell Systems} (2018). doi:\href{https://doi.org/10.1016/j.cels.2017.12.013}{10.1016/j.cels.2017.12.013}}
+\CSLRightInline{Piening, B. D. \emph{et al.} {Integrative Personal Omics Profiles during Periods of Weight Gain and Loss}. \emph{Cell Systems} (2018). doi:\href{https://doi.org/10.1016/j.cels.2017.12.013}{10.1016/j.cels.2017.12.013}}
 
 \leavevmode\hypertarget{ref-Bruderer2019}{}%
 \CSLLeftMargin{214. }
-\CSLRightInline{Bruderer, R. \emph{et al.} Analysis of 1508 plasma samples by capillary-flow data-independent acquisition profiles proteomics of weight loss and maintenance. \emph{Molecular and Cellular Proteomics} (2019). doi:\href{https://doi.org/10.1074/mcp.RA118.001288}{10.1074/mcp.RA118.001288}}
+\CSLRightInline{Bruderer, R. \emph{et al.} {Analysis of 1508 plasma samples by capillary-flow data-independent acquisition profiles proteomics of weight loss and maintenance}. \emph{Molecular and Cellular Proteomics} (2019). doi:\href{https://doi.org/10.1074/mcp.RA118.001288}{10.1074/mcp.RA118.001288}}
 
 \leavevmode\hypertarget{ref-Lee2017a}{}%
 \CSLLeftMargin{215. }
-\CSLRightInline{Lee, H. \emph{et al.} SCARA5 plays a critical role in the commitment of mesenchymal stem cells to adipogenesis. \emph{Scientific Reports} (2017). doi:\href{https://doi.org/10.1038/s41598-017-12512-2}{10.1038/s41598-017-12512-2}}
+\CSLRightInline{Lee, H. \emph{et al.} {SCARA5 plays a critical role in the commitment of mesenchymal stem cells to adipogenesis}. \emph{Scientific Reports} (2017). doi:\href{https://doi.org/10.1038/s41598-017-12512-2}{10.1038/s41598-017-12512-2}}
 
 \leavevmode\hypertarget{ref-Hessle2013}{}%
 \CSLLeftMargin{216. }
-\CSLRightInline{Hessle, L. \emph{et al.} The skeletal phenotype of chondroadherin deficient mice. \emph{PLoS ONE} (2013). doi:\href{https://doi.org/10.1371/journal.pone.0063080}{10.1371/journal.pone.0063080}}
+\CSLRightInline{Hessle, L. \emph{et al.} {The Skeletal Phenotype of Chondroadherin Deficient Mice}. \emph{PLoS ONE} (2013). doi:\href{https://doi.org/10.1371/journal.pone.0063080}{10.1371/journal.pone.0063080}}
 
 \leavevmode\hypertarget{ref-Iozzo2015}{}%
 \CSLLeftMargin{217. }
-\CSLRightInline{Iozzo, R. V. \& Schaefer, L. Proteoglycan form and function: A comprehensive nomenclature of proteoglycans. \emph{Matrix Biology} (2015). doi:\href{https://doi.org/10.1016/j.matbio.2015.02.003}{10.1016/j.matbio.2015.02.003}}
+\CSLRightInline{Iozzo, R. V. \& Schaefer, L. {Proteoglycan form and function: A comprehensive nomenclature of proteoglycans}. (2015). doi:\href{https://doi.org/10.1016/j.matbio.2015.02.003}{10.1016/j.matbio.2015.02.003}}
 
 \leavevmode\hypertarget{ref-Maurice2006}{}%
 \CSLLeftMargin{218. }
-\CSLRightInline{Maurice, P. \emph{et al.} The platelet receptor for type III collagen (TIIICBP) is present in platelet membrane lipid microdomains (rafts). \emph{Histochemistry and Cell Biology} (2006). doi:\href{https://doi.org/10.1007/s00418-005-0076-y}{10.1007/s00418-005-0076-y}}
+\CSLRightInline{Maurice, P. \emph{et al.} {The platelet receptor for type III collagen (TIIICBP) is present in platelet membrane lipid microdomains (rafts)}. \emph{Histochemistry and Cell Biology} (2006). doi:\href{https://doi.org/10.1007/s00418-005-0076-y}{10.1007/s00418-005-0076-y}}
 
 \leavevmode\hypertarget{ref-Morrow2021}{}%
 \CSLLeftMargin{219. }
-\CSLRightInline{Morrow, G. B., Whyte, C. S. \& Mutch, N. J. A serpin with a finger in many PAIs: PAI-1's central function in thromboinflammation and cardiovascular disease. \emph{Frontiers in Cardiovascular Medicine} (2021). doi:\href{https://doi.org/10.3389/fcvm.2021.653655}{10.3389/fcvm.2021.653655}}
+\CSLRightInline{Morrow, G. B., Whyte, C. S. \& Mutch, N. J. {A Serpin With a Finger in Many PAIs: PAI-1's Central Function in Thromboinflammation and Cardiovascular Disease}. \emph{Frontiers in Cardiovascular Medicine} (2021). doi:\href{https://doi.org/10.3389/fcvm.2021.653655}{10.3389/fcvm.2021.653655}}
 
 \leavevmode\hypertarget{ref-Peerschke2008}{}%
 \CSLLeftMargin{220. }
-\CSLRightInline{Peerschke, E. I. B., Yin, W. \& Ghebrehiwet, B. Platelet mediated complement activation. \emph{Advances in Experimental Medicine and Biology} (2008). doi:\href{https://doi.org/10.1007/978-0-387-78952-1_7}{10.1007/978-0-387-78952-1\_7}}
+\CSLRightInline{Peerschke, E. I. B., Yin, W. \& Ghebrehiwet, B. {Platelet mediated complement activation}. (2008). doi:\href{https://doi.org/10.1007/978-0-387-78952-1_7}{10.1007/978-0-387-78952-1\_7}}
 
 \leavevmode\hypertarget{ref-Santanasto2011}{}%
 \CSLLeftMargin{221. }
-\CSLRightInline{Santanasto, A. J. \emph{et al.} Impact of weight loss on physical function with changes in strength, muscle mass, and muscle fat infiltration in overweight to moderately obese older adults: A randomized clinical trial. \emph{Journal of Obesity} (2011). doi:\href{https://doi.org/10.1155/2011/516576}{10.1155/2011/516576}}
+\CSLRightInline{Santanasto, A. J. \emph{et al.} {Impact of weight loss on physical function with changes in strength, muscle mass, and muscle fat infiltration in overweight to moderately obese older adults: A randomized clinical trial}. \emph{Journal of Obesity} (2011). doi:\href{https://doi.org/10.1155/2011/516576}{10.1155/2011/516576}}
 
 \leavevmode\hypertarget{ref-Backx2016}{}%
 \CSLLeftMargin{222. }
-\CSLRightInline{Backx, E. M. P. \emph{et al.} Protein intake and lean body mass preservation during energy intake restriction in overweight older adults. \emph{International Journal of Obesity} (2016). doi:\href{https://doi.org/10.1038/ijo.2015.182}{10.1038/ijo.2015.182}}
+\CSLRightInline{Backx, E. M. P. \emph{et al.} {Protein intake and lean body mass preservation during energy intake restriction in overweight older adults}. \emph{International Journal of Obesity} (2016). doi:\href{https://doi.org/10.1038/ijo.2015.182}{10.1038/ijo.2015.182}}
 
 \leavevmode\hypertarget{ref-Nakamura2021}{}%
 \CSLLeftMargin{223. }
-\CSLRightInline{Nakamura, Y. \emph{et al.} Deficiency of type i platelet-activating factor-acetylhydrolase catalytic subunits causes an increase in body weight. \emph{Biological and Pharmaceutical Bulletin} (2021). doi:\href{https://doi.org/10.1248/bpb.b20-00936}{10.1248/bpb.b20-00936}}
+\CSLRightInline{Nakamura, Y. \emph{et al.} {Deficiency of Type I platelet-activating factor-acetylhydrolase catalytic subunits causes an increase in body weight}. \emph{Biological and Pharmaceutical Bulletin} (2021). doi:\href{https://doi.org/10.1248/bpb.b20-00936}{10.1248/bpb.b20-00936}}
 
 \leavevmode\hypertarget{ref-Rodriguez2020}{}%
 \CSLLeftMargin{224. }
-\CSLRightInline{Rodriguez, B. A. T. \& Johnson, A. D. Platelet measurements and type 2 diabetes: Investigations in two population-based cohorts. \emph{Frontiers in Cardiovascular Medicine} (2020). doi:\href{https://doi.org/10.3389/fcvm.2020.00118}{10.3389/fcvm.2020.00118}}
+\CSLRightInline{Rodriguez, B. A. T. \& Johnson, A. D. {Platelet Measurements and Type 2 Diabetes: Investigations in Two Population-Based Cohorts}. \emph{Frontiers in Cardiovascular Medicine} (2020). doi:\href{https://doi.org/10.3389/fcvm.2020.00118}{10.3389/fcvm.2020.00118}}
 
 \leavevmode\hypertarget{ref-OKeeffe2022}{}%
 \CSLLeftMargin{225. }
-\CSLRightInline{O'Keeffe, L. M. \emph{et al.} Sex-specific associations of adiposity with cardiometabolic traits in the UK: A multi--life stage cohort study with repeat metabolomics. \emph{PLOS Medicine} \textbf{19}, 1--27 (2022).}
+\CSLRightInline{O'Keeffe, L. M. \emph{et al.} {Sex-specific associations of adiposity with cardiometabolic traits in the UK: A multi--life stage cohort study with repeat metabolomics}. \emph{PLOS Medicine} \textbf{19}, 1--27 (2022).}
 
 \leavevmode\hypertarget{ref-TerHorst2020}{}%
 \CSLLeftMargin{226. }
-\CSLRightInline{Horst, R. ter \emph{et al.} Sex-specific regulation of inflammation and metabolic syndrome in obesity. \emph{Arteriosclerosis, Thrombosis, and Vascular Biology} (2020). doi:\href{https://doi.org/10.1161/ATVBAHA.120.314508}{10.1161/ATVBAHA.120.314508}}
+\CSLRightInline{Horst, R. ter \emph{et al.} {Sex-specific regulation of inflammation and metabolic syndrome in obesity}. \emph{Arteriosclerosis, Thrombosis, and Vascular Biology} (2020). doi:\href{https://doi.org/10.1161/ATVBAHA.120.314508}{10.1161/ATVBAHA.120.314508}}
 
 \leavevmode\hypertarget{ref-Becker2006}{}%
 \CSLLeftMargin{227. }
-\CSLRightInline{Becker, D. M. \emph{et al.} Sex differences in platelet reactivity and response to low-dose aspirin therapy. \emph{Journal of the American Medical Association} (2006). doi:\href{https://doi.org/10.1001/jama.295.12.1420}{10.1001/jama.295.12.1420}}
+\CSLRightInline{Becker, D. M. \emph{et al.} {Sex differences in platelet reactivity and response to low-dose aspirin therapy}. \emph{Journal of the American Medical Association} (2006). doi:\href{https://doi.org/10.1001/jama.295.12.1420}{10.1001/jama.295.12.1420}}
 
 \leavevmode\hypertarget{ref-Waissi2020}{}%
 \CSLLeftMargin{228. }
-\CSLRightInline{Waissi, F. \emph{et al.} Sex differences in flow cytometry--based platelet reactivity in stable outpatients suspected of myocardial ischemia. \emph{Research and Practice in Thrombosis and Haemostasis} (2020). doi:\href{https://doi.org/10.1002/rth2.12344}{10.1002/rth2.12344}}
+\CSLRightInline{Waissi, F. \emph{et al.} {Sex differences in flow cytometry--based platelet reactivity in stable outpatients suspected of myocardial ischemia}. \emph{Research and Practice in Thrombosis and Haemostasis} (2020). doi:\href{https://doi.org/10.1002/rth2.12344}{10.1002/rth2.12344}}
 
 \leavevmode\hypertarget{ref-Friede2020}{}%
 \CSLLeftMargin{229. }
-\CSLRightInline{Friede, K. A. \emph{et al.} Influence of sex on platelet reactivity in response to aspirin. \emph{Journal of the American Heart Association} (2020). doi:\href{https://doi.org/10.1161/JAHA.119.014726}{10.1161/JAHA.119.014726}}
+\CSLRightInline{Friede, K. A. \emph{et al.} {Influence of sex on platelet reactivity in response to aspirin}. \emph{Journal of the American Heart Association} (2020). doi:\href{https://doi.org/10.1161/JAHA.119.014726}{10.1161/JAHA.119.014726}}
 
 \leavevmode\hypertarget{ref-Sledz2020}{}%
 \CSLLeftMargin{230. }
-\CSLRightInline{Sledz, K. Kinase inhibitors and degraders: Tools for discovery of novel antiplatelet therapies. 120 (University of Bristol, 2020).}
+\CSLRightInline{Sledz, K. {Kinase inhibitors and degraders: tools for discovery of novel antiplatelet therapies}. 120 (University of Bristol, 2020).}
 
 \leavevmode\hypertarget{ref-Carayol2017c}{}%
 \CSLLeftMargin{231. }
-\CSLRightInline{Carayol, M. \emph{et al.} Blood metabolic signatures of body mass index: A targeted metabolomics study in the EPIC cohort. \emph{Journal of Proteome Research} (2017). doi:\href{https://doi.org/10.1021/acs.jproteome.6b01062}{10.1021/acs.jproteome.6b01062}}
+\CSLRightInline{Carayol, M. \emph{et al.} {Blood Metabolic Signatures of Body Mass Index: A Targeted Metabolomics Study in the EPIC Cohort}. \emph{Journal of Proteome Research} (2017). doi:\href{https://doi.org/10.1021/acs.jproteome.6b01062}{10.1021/acs.jproteome.6b01062}}
 
 \leavevmode\hypertarget{ref-Fruhbeck2019}{}%
 \CSLLeftMargin{232. }
-\CSLRightInline{Fruhbeck, G. \emph{et al.} Adiponectin-leptin ratio is a functional biomarker of adipose tissue inflammation. \emph{Nutrients} (2019). doi:\href{https://doi.org/10.3390/nu11020454}{10.3390/nu11020454}}
+\CSLRightInline{Fruhbeck, G. \emph{et al.} {Adiponectin-leptin ratio is a functional biomarker of adipose tissue inflammation}. \emph{Nutrients} (2019). doi:\href{https://doi.org/10.3390/nu11020454}{10.3390/nu11020454}}
 
 \leavevmode\hypertarget{ref-Sun2019}{}%
 \CSLLeftMargin{233. }
-\CSLRightInline{Sun, Y. Q. \emph{et al.} Body mass index and all cause mortality in HUNT and UK biobank studies: Linear and non-linear mendelian randomisation analyses. \emph{BMJ (Online)} (2019). doi:\href{https://doi.org/10.1136/bmj.l1042}{10.1136/bmj.l1042}}
+\CSLRightInline{Sun, Y. Q. \emph{et al.} {Body mass index and all cause mortality in HUNT and UK Biobank studies: Linear and non-linear mendelian randomisation analyses}. \emph{BMJ (Online)} (2019). doi:\href{https://doi.org/10.1136/bmj.l1042}{10.1136/bmj.l1042}}
 
 \leavevmode\hypertarget{ref-Zhou2021}{}%
 \CSLLeftMargin{234. }
-\CSLRightInline{Zhou, A., Selvanayagam, J. B. \& Hyppönen, E. Non-linear mendelian randomization analyses support a role for vitamin d deficiency in cardiovascular disease risk. \emph{European Heart Journal} ehab809 (2021). doi:\href{https://doi.org/10.1093/eurheartj/ehab809}{10.1093/eurheartj/ehab809}}
+\CSLRightInline{Zhou, A., Selvanayagam, J. B. \& Hyppönen, E. {Non-linear Mendelian randomization analyses support a role for vitamin D deficiency in cardiovascular disease risk}. \emph{European Heart Journal} ehab809 (2021). doi:\href{https://doi.org/10.1093/eurheartj/ehab809}{10.1093/eurheartj/ehab809}}
 
 \leavevmode\hypertarget{ref-Ferkingstad2021}{}%
 \CSLLeftMargin{235. }
-\CSLRightInline{Ferkingstad, E. \emph{et al.} Large-scale integration of the plasma proteome with genetics and disease. \emph{Nature Genetics} \textbf{53}, 1712--1721 (2021).}
+\CSLRightInline{Ferkingstad, E. \emph{et al.} {Large-scale integration of the plasma proteome with genetics and disease}. \emph{Nature Genetics} \textbf{53}, 1712--1721 (2021).}
 
 \leavevmode\hypertarget{ref-AlKuwari2015}{}%
 \CSLLeftMargin{236. }
-\CSLRightInline{Kuwari, H. A. \emph{et al.} The qatar biobank: Background and methods. \emph{BMC Public Health} (2015). doi:\href{https://doi.org/10.1186/s12889-015-2522-7}{10.1186/s12889-015-2522-7}}
+\CSLRightInline{Al Kuwari, H. \emph{et al.} {The Qatar Biobank: background and methods}. \emph{BMC Public Health} (2015). doi:\href{https://doi.org/10.1186/s12889-015-2522-7}{10.1186/s12889-015-2522-7}}
 
 \leavevmode\hypertarget{ref-Inge2016}{}%
 \CSLLeftMargin{237. }
-\CSLRightInline{Inge, T. H. \emph{et al.} Weight loss and health status 3 years after bariatric surgery in adolescents. \emph{New England Journal of Medicine} (2016). doi:\href{https://doi.org/10.1056/nejmoa1506699}{10.1056/nejmoa1506699}}
+\CSLRightInline{Inge, T. H. \emph{et al.} {Weight Loss and Health Status 3 Years after Bariatric Surgery in Adolescents}. \emph{New England Journal of Medicine} (2016). doi:\href{https://doi.org/10.1056/nejmoa1506699}{10.1056/nejmoa1506699}}
 
 \leavevmode\hypertarget{ref-Li2021}{}%
 \CSLLeftMargin{238. }
-\CSLRightInline{Li, H. \emph{et al.} Sex differences in the non-linear association between BMI and LDL cholesterol in middle-aged and older adults: Findings from two nationally representative surveys in china. \emph{Lipids in Health and Disease} \textbf{20}, 162 (2021).}
+\CSLRightInline{Li, H. \emph{et al.} {Sex differences in the non-linear association between BMI and LDL cholesterol in middle-aged and older adults: findings from two nationally representative surveys in China}. \emph{Lipids in Health and Disease} \textbf{20}, 162 (2021).}
 
 \leavevmode\hypertarget{ref-Lim2017}{}%
 \CSLLeftMargin{239. }
-\CSLRightInline{Lim, S. Y. \emph{et al.} Evaluation of two high-throughput proteomic technologies for plasma biomarker discovery in immunotherapy-treated melanoma patients. \emph{Biomarker Research} (2017). doi:\href{https://doi.org/10.1186/s40364-017-0112-9}{10.1186/s40364-017-0112-9}}
+\CSLRightInline{Lim, S. Y. \emph{et al.} {Evaluation of two high-throughput proteomic technologies for plasma biomarker discovery in immunotherapy-treated melanoma patients}. \emph{Biomarker Research} (2017). doi:\href{https://doi.org/10.1186/s40364-017-0112-9}{10.1186/s40364-017-0112-9}}
 
 \leavevmode\hypertarget{ref-Staley2017}{}%
 \CSLLeftMargin{240. }
-\CSLRightInline{Staley, J. R. \& Burgess, S. Semiparametric methods for estimation of a nonlinear exposure-outcome relationship using instrumental variables with application to mendelian randomization. \emph{Genetic Epidemiology} (2017). doi:\href{https://doi.org/10.1002/gepi.22041}{10.1002/gepi.22041}}
+\CSLRightInline{Staley, J. R. \& Burgess, S. {Semiparametric methods for estimation of a nonlinear exposure-outcome relationship using instrumental variables with application to Mendelian randomization}. \emph{Genetic Epidemiology} (2017). doi:\href{https://doi.org/10.1002/gepi.22041}{10.1002/gepi.22041}}
 
 \end{CSLReferences}
 \end{document}

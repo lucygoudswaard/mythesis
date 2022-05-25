@@ -8,7 +8,7 @@ school: 'Physiology, Pharmacology and Neuroscience & Population Health Sciences'
 group: 'Bristol Platelet Group & Team Timpson'
 degree: 'PhD Physiology, Pharmacology and Neuroscience & Population Health Sciences'
 logo: figure/index/UoBcrest.pdf # logo will only show on PDF
-wordcount: '43,143'
+wordcount: '45,866'
 bibliography: bib/thesis.bib
 csl: csl/nature.csl
 knit: "bookdown::render_book"
@@ -63,6 +63,8 @@ library(ggplot2)
 library(knitr)
 library(readxl)
 library(kableExtra)
+library(readr)
+library(tidyr)
 
 # this will allow us to make word documents with relatively ok tables
 doc.type <- knitr::opts_knit$get('rmarkdown.pandoc.to')
